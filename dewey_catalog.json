@@ -50,8 +50,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 54884,
-    "modified": "2026-06-17T11:28:55.163233",
+    "size": 56609,
+    "modified": "2026-06-17T11:30:17.527633",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
   {
@@ -72,8 +72,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 21914,
-    "modified": "2026-06-17T11:30:06.807581",
+    "size": 21877,
+    "modified": "2026-06-17T11:30:37.307729",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
   {
@@ -339,6 +339,17 @@
     "size": 16,
     "modified": "2026-06-16T23:57:02.263419",
     "internal_key": "internal:657-Accounting_Finance/passcode_vault.salt"
+  },
+  {
+    "title": "contract-template-standard.html",
+    "section": "690-Building_Construction",
+    "dewey": "690",
+    "dewey_desc": "Construction",
+    "file": "690-Building_Construction/contract-template-standard.html",
+    "type": "web",
+    "size": 12318,
+    "modified": "2026-06-17T11:30:21.479652",
+    "internal_key": "internal:690-Building_Construction/contract-template-standard.html"
   },
   {
     "title": "contract_approval.py",

@@ -58,9 +58,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 54884,
-    "modified": "2026-06-17T11:28:55.163233",
-    "hash": "bde4ecc9343d194e7bcb5dc3bfdaeb5d8ac13356e395bbec86add19792495cfc",
+    "size": 56609,
+    "modified": "2026-06-17T11:30:17.527633",
+    "hash": "319ff9afc8fed6d211e9ef9d19498767f18920be14a5d2a2948fe85950b33f44",
     "description": "[   {     \"index\": 0,     \"timestamp\": \"2026-06-17T12:33:38.436459+00:00\",     \"action\": \"GENESIS\",     \"file\": \"000-General/dewey_blockchain.py\",    ",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
@@ -84,9 +84,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 21914,
-    "modified": "2026-06-17T11:30:06.807581",
-    "hash": "0b881d0607a81b6f921aa1ea97c9e800c78a6a8c35f6a19752bc30175aaacc1f",
+    "size": 21877,
+    "modified": "2026-06-17T11:30:37.307729",
+    "hash": "285a73ba916db6f94616e2453cead6a781c443accb1a539b60c8ae998c02aa3e",
     "description": "[   {     \"title\": \"README.md\",     \"section\": \"000-General\",     \"dewey\": \"000\",     \"dewey_desc\": \"General\",     \"file\": \"000-General/README.md\",   ",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
@@ -401,6 +401,19 @@
     "hash": "01e303f616d5f690741726056e1160cb64e998e69012dc5637d69b2ed8ada1a9",
     "description": "(binary/encrypted)",
     "internal_key": "internal:657-Accounting_Finance/passcode_vault.salt"
+  },
+  {
+    "title": "contract-template-standard.html",
+    "section": "690-Building_Construction",
+    "dewey": "690",
+    "dewey_desc": "Construction",
+    "file": "690-Building_Construction/contract-template-standard.html",
+    "type": "web",
+    "size": 12318,
+    "modified": "2026-06-17T11:30:21.479652",
+    "hash": "8430392ce8740e29d787805301adadbd9ee92ef384d2384c413e4159437d0864",
+    "description": "<!DOCTYPE html> <html lang=\"en\"> <head>   <meta charset=\"UTF-8\">   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">   <title>Con",
+    "internal_key": "internal:690-Building_Construction/contract-template-standard.html"
   },
   {
     "title": "contract_approval.py",
