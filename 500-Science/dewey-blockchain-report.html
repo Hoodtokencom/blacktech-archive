@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dewey Blockchain System — Architecture Report</title>
+<style>
+  :root {
+    --bt-navy: #002244;
+    --bt-green: #69BE28;
+    --bt-silver: #A5ACAF;
+    --bt-white: #ffffff;
+    --bt-red: #ef4444;
+    --bt-yellow: #fbbf24;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0a0a0a;
+    color: var(--bt-white);
+    line-height: 1.6;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* HEADER */
+  .header {
+    background: var(--bt-navy);
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid var(--bt-green);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .header-left { display: flex; align-items: center; gap: 15px; }
+  .logo-box {
+    background: #fff;
+    border-radius: 8px;
+    padding: 4px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo-box img { width: 90px; height: auto; border-radius: 4px; }
+  .brand-text h1 { color: var(--bt-green); font-size: 22pt; font-weight: 700; }
+  .brand-text p { color: #90b8d4; font-size: 10pt; }
+  .header-right { text-align: right; }
+  .doc-badge { color: var(--bt-green); font-size: 16pt; font-weight: 700; }
+  .doc-label { color: var(--bt-silver); font-size: 9pt; text-transform: uppercase; letter-spacing: 1px; }
+
+  /* CONTENT */
+  .content { max-width: 800px; margin: 0 auto; padding: 30px 20px; }
+
+  .section-title {
+    color: var(--bt-green);
+    font-size: 14pt;
+    font-weight: 700;
+    border-bottom: 2px solid var(--bt-green);
+    padding-bottom: 6px;
+    margin: 30px 0 15px 0;
+  }
+
+  /* ARCHITECTURE OVERVIEW */
+  .arch-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 15px 0;
+  }
+  .arch-card {
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 18px;
+    border-left: 4px solid var(--bt-green);
+  }
+  .arch-card h3 { color: var(--bt-green); font-size: 13pt; margin-bottom: 8px; }
+  .arch-card p { color: #ccc; font-size: 10pt; }
+  .arch-card .label { color: var(--bt-silver); font-size: 9pt; text-transform: uppercase; }
+
+  /* STATS TABLE */
+  .stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+  }
+  .stats-table th {
+    background: var(--bt-navy);
+    color: var(--bt-white);
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 10pt;
+    font-weight: 600;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .stats-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #222;
+    font-size: 10pt;
+  }
+  .stats-table tr:nth-child(even) td { background: #111; }
+  .stats-table tr:nth-child(odd) td { background: #0d0d0d; }
+  .stat-green { color: var(--bt-green); font-weight: 700; }
+
+  /* BLOCKCHAIN TABLE */
+  .chain-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 9pt;
+  }
+  .chain-table th {
+    background: var(--bt-navy);
+    color: var(--bt-white);
+    padding: 8px 10px;
+    text-align: left;
+    font-size: 9pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .chain-table td {
+    padding: 7px 10px;
+    border-bottom: 1px solid #222;
+    font-family: 'Courier New', monospace;
+    font-size: 8pt;
+  }
+  .chain-table tr:nth-child(even) td { background: #111; }
+  .chain-table tr:nth-child(odd) td { background: #0d0d0d; }
+
+  /* FLOW DIAGRAM */
+  .flow-diagram {
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    text-align: center;
+  }
+  .flow-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  .flow-box {
+    background: var(--bt-navy);
+    color: var(--bt-white);
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 11pt;
+    border: 2px solid var(--bt-green);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .flow-arrow {
+    color: var(--bt-green);
+    font-size: 18pt;
+    font-weight: 700;
+  }
+  .flow-label {
+    color: var(--bt-silver);
+    font-size: 8pt;
+    text-align: center;
+    margin-top: 4px;
+  }
+
+  /* STATUS BADGES */
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 9pt;
+    font-weight: 700;
+  }
+  .badge-green { background: #69BE2833; color: var(--bt-green); border: 1px solid var(--bt-green); }
+  .badge-blue { background: #00224444; color: #90b8d4; border: 1px solid #90b8d4; }
+
+  /* URL BOX */
+  .url-box {
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-family: 'Courier New', monospace;
+    font-size: 10pt;
+    color: var(--bt-green);
+    margin: 8px 0;
+    word-break: break-all;
+  }
+
+  /* FOOTER */
+  .footer {
+    background: var(--bt-navy);
+    padding: 15px 30px;
+    text-align: center;
+    border-top: 4px solid var(--bt-green);
+    margin-top: 30px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .footer .company { color: var(--bt-green); font-weight: 700; font-size: 11pt; }
+  .footer .info { color: var(--bt-silver); font-size: 9pt; margin-top: 4px; }
+
+  /* SECTION LIST */
+  .section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    margin: 10px 0;
+  }
+  .section-item {
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 9pt;
+  }
+  .section-item .dewey { color: var(--bt-green); font-weight: 700; }
+  .section-item .name { color: #ccc; }
+  .section-item .count { color: var(--bt-silver); font-size: 8pt; }
+
+  @media print {
+    body { background: #fff; }
+    .content { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-left">
+    <div class="logo-box">
+      <img src="file:///home/allenai/estimates/blacktech_logo.jpg" alt="Blacktech">
+    </div>
+    <div class="brand-text">
+      <h1>Blacktech Solutions Corp</h1>
+      <p>10052 S Forest Ave · Chicago IL 60628 · (773) 123-4567</p>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="doc-label">System Architecture Report</div>
+    <div class="doc-badge">DEWEY BLOCKCHAIN</div>
+    <div style="color:var(--bt-silver); font-size:9pt;">June 17, 2026</div>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+  <!-- 1. EXECUTIVE SUMMARY -->
+  <div class="section-title">📋 Executive Summary</div>
+  <p style="color:#ccc; font-size:10pt; margin:10px 0;">
+    The <strong style="color:var(--bt-green);">Dewey Blockchain System</strong> is a 4-part knowledge architecture 
+    for Blacktech Solutions Corp. It combines a <strong>3-Way Mirror</strong> (Google Drive → Internal Drive → GitHub) 
+    with an <strong>Immutable Blockchain Audit Trail</strong> that records every file event in a SHA256-chained ledger. 
+    A real-time dashboard, security guard, and sync pipeline complete the system.
+  </p>
+
+  <!-- STATUS BADGES -->
+  <div style="display:flex; gap:10px; flex-wrap:wrap; margin:15px 0;">
+    <span class="badge badge-green">✅ Chain Valid — 36 Blocks</span>
+    <span class="badge badge-green">🟢 Dashboard Live — Port 8104</span>
+    <span class="badge badge-green">🟢 Security Guard — Port 8096</span>
+    <span class="badge badge-blue">🔗 Cloudflare Tunnel Active</span>
+    <span class="badge badge-blue">📡 Google Drive Synced</span>
+    <span class="badge badge-blue">📦 GitHub Archive Pushed</span>
+  </div>
+
+  <!-- 2. 4-PART ARCHITECTURE -->
+  <div class="section-title">🧠 4-Part Architecture</div>
+
+  <div class="arch-grid">
+    <div class="arch-card">
+      <div class="label">Part 1 — Storefront</div>
+      <h3>🧠 Brain (Google Drive)</h3>
+      <p>Catalog, titles, metadata, and section mirrors. Anyone can browse the storefront — see what exists, but files are locked behind the Internal Drive key.</p>
+      <div class="url-box">Dewey Brain/ (Google Drive root)</div>
+    </div>
+    <div class="arch-card">
+      <div class="label">Part 2 — Vault</div>
+      <h3>💪 Body (Internal Drive)</h3>
+      <p>Actual files — the real content. Key-locked. Only accessible with the unlock key from the pipeline. 27 files across 13 Dewey sections.</p>
+      <div class="url-box">/home/allenai/blacktech_brain/</div>
+    </div>
+    <div class="arch-card">
+      <div class="label">Part 3 — Archive</div>
+      <h3>🗑️ Archive (GitHub)</h3>
+      <p>Full mirror + clutter staging. Files go here before permanent deletion — review, then restore or recycle. Complete history preserved.</p>
+      <div class="url-box">Hoodtokencom/blacktech-archive</div>
+    </div>
+    <div class="arch-card">
+      <div class="label">Part 4 — Audit Trail</div>
+      <h3>⛓️ Blockchain (Immutable)</h3>
+      <p>SHA256-chained ledger. Every CREATE, MODIFY, DELETE, and SYNC event is logged with hash verification. 36 blocks, genesis-seeded, fully valid.</p>
+      <div class="url-box">000-General/dewey_blockchain.json</div>
+    </div>
+  </div>
+
+  <!-- 3. DATA FLOW -->
+  <div class="section-title">🔄 Data Flow Pipeline</div>
+  <div class="flow-diagram">
+    <div class="flow-row">
+      <div class="flow-box">📝 File Created<br><span class="flow-label">on Internal Drive</span></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-box">🔍 dewey_sync.py<br><span class="flow-label">detects change</span></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-box">⛓️ Blockchain<br><span class="flow-label">logs event</span></div>
+    </div>
+    <div class="flow-row" style="margin-top:15px;">
+      <div class="flow-box">☁️ Google Drive<br><span class="flow-label">mirror uploaded</span></div>
+      <div class="flow-arrow">←</div>
+      <div class="flow-box">🔄 3-Way Sync<br><span class="flow-label">SHA256 change detection</span></div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-box">📦 GitHub Archive<br><span class="flow-label">mirror pushed</span></div>
+    </div>
+  </div>
+
+  <!-- 4. BLOCKCHAIN STATS -->
+  <div class="section-title">⛓️ Blockchain Statistics</div>
+  <table class="stats-table">
+    <tr><th>Metric</th><th>Value</th></tr>
+    <tr><td>Total Blocks</td><td class="stat-green">36</td></tr>
+    <tr><td>Genesis Block</td><td>✅ Present — 2026-06-17 12:33 UTC</td></tr>
+    <tr><td>Last Block</td><td>2026-06-17 12:36 UTC</td></tr>
+    <tr><td>Chain Integrity</td><td class="stat-green">✅ VALID — All hashes intact</td></tr>
+    <tr><td>Sections Tracked</td><td>15</td></tr>
+    <tr><td>CREATE Events</td><td>28</td></tr>
+    <tr><td>MODIFY Events</td><td>5</td></tr>
+    <tr><td>SYNC Events</td><td>2</td></tr>
+    <tr><td>Last Hash</td><td style="font-family:monospace; font-size:9pt;">302b36e6ca5383b7</td></tr>
+  </table>
+
+  <!-- 5. DASHBOARD -->
+  <div class="section-title">📊 Live Dashboard</div>
+  <table class="stats-table">
+    <tr><th>Feature</th><th>Detail</th></tr>
+    <tr><td>Local URL</td><td class="stat-green">http://localhost:8104</td></tr>
+    <tr><td>Public URL</td><td class="stat-green">https://blockchain.blacktechsolutionscorp.com</td></tr>
+    <tr><td>Server</td><td>dewey_blockchain_server.py</td></tr>
+    <tr><td>Auto-Refresh</td><td>Every 5 seconds</td></tr>
+    <tr><td>API Endpoints</td><td>/api/chain · /api/stats</td></tr>
+    <tr><td>Filters</td><td>All · CREATE · MODIFY · DELETE · SYNC</td></tr>
+    <tr><td>Search</td><td>By file, section, or action</td></tr>
+    <tr><td>Status</td><td class="stat-green">🟢 HTTP 200 — Live</td></tr>
+  </table>
+
+  <!-- 6. SECURITY GUARD -->
+  <div class="section-title">🛡️ Security Guard Dashboard</div>
+  <table class="stats-table">
+    <tr><th>Feature</th><th>Detail</th></tr>
+    <tr><td>Local URL</td><td class="stat-green">http://localhost:8096</td></tr>
+    <tr><td>Public URL</td><td class="stat-green">https://dewey.blacktechsolutionscorp.com</td></tr>
+    <tr><td>Server</td><td>dewey_security_server.py</td></tr>
+    <tr><td>Access Levels</td><td>Public · Key · Approval · Vault (4 tiers)</td></tr>
+    <tr><td>Tabs</td><td>Pending Requests · Audit Log · Permissions · System</td></tr>
+    <tr><td>Cloudflare Tunnel</td><td class="stat-green">✅ Configured in config.yml</td></tr>
+    <tr><td>DNS Note</td><td style="color:var(--bt-yellow);">⚠ CNAME record needs manual Cloudflare dashboard creation</td></tr>
+  </table>
+
+  <!-- 7. DEWEY SECTIONS -->
+  <div class="section-title">📚 Dewey Decimal Sections (13 Active)</div>
+  <div class="section-grid">
+    <div class="section-item"><span class="dewey">000</span> <span class="name">General</span> <span class="count">14 files</span></div>
+    <div class="section-item"><span class="dewey">100</span> <span class="name">Philosophy</span> <span class="count">1 file</span></div>
+    <div class="section-item"><span class="dewey">200</span> <span class="name">Religion</span> <span class="count">1 file</span></div>
+    <div class="section-item"><span class="dewey">300</span> <span class="name">Social Sciences</span> <span class="count">1 file</span></div>
+    <div class="section-item"><span class="dewey">400</span> <span class="name">Language</span> <span class="count">1 file</span></div>
+    <div class="section-item"><span class="dewey">500</span> <span class="name">Science</span> <span class="count">1 file</span></div>
+    <div class="section-item"><span class="dewey">600</span> <span class="name">Technology</span> <span class="count">1 file</span></div>
+    <div class="section-item"><span class="dewey">640</span> <span class="name">Household Favorites</span> <span class="count">1 file</span></div>
+    <div class="section-item"><span class="dewey">657</span> <span class="name">Accounting/Finance</span> <span class="count">2 files</span></div>
+    <div class="section-item"><span class="dewey">700</span> <span class="name">Arts & Recreation</span> <span class="count">1 file</span></div>
+    <div class="section-item"><span class="dewey">800</span> <span class="name">Literature</span> <span class="count">1 file</span></div>
+    <div class="section-item"><span class="dewey">900</span> <span class="name">History & Geography</span> <span class="count">1 file</span></div>
+    <div class="section-item"><span class="dewey">999</span> <span class="name">Decisions & Logs</span> <span class="count">1 file</span></div>
+  </div>
+
+  <!-- 8. KEY COMMANDS -->
+  <div class="section-title">🔑 Key Commands</div>
+  <table class="stats-table">
+    <tr><th>Operation</th><th>Command</th></tr>
+    <tr><td>Full 3-Way Sync</td><td style="font-family:monospace; font-size:9pt;">python3 dewey_sync.py</td></tr>
+    <tr><td>Blockchain Status</td><td style="font-family:monospace; font-size:9pt;">python3 dewey_blockchain.py status</td></tr>
+    <tr><td>Verify Chain</td><td style="font-family:monospace; font-size:9pt;">python3 dewey_blockchain.py verify</td></tr>
+    <tr><td>Search Blocks</td><td style="font-family:monospace; font-size:9pt;">python3 dewey_blockchain.py search &lt;keyword&gt;</td></tr>
+    <tr><td>Log Event</td><td style="font-family:monospace; font-size:9pt;">python3 dewey_blockchain.py log &lt;ACTION&gt; &lt;file&gt;</td></tr>
+    <tr><td>Search Brain</td><td style="font-family:monospace; font-size:9pt;">python3 dewey_pipeline.py search &lt;keyword&gt;</td></tr>
+    <tr><td>Get Unlock Key</td><td style="font-family:monospace; font-size:9pt;">python3 dewey_pipeline.py key &lt;entry&gt;</td></tr>
+    <tr><td>Start Dashboard</td><td style="font-family:monospace; font-size:9pt;">python3 dewey_blockchain_server.py &amp;</td></tr>
+  </table>
+
+  <!-- 9. CLOUDFLARE TUNNEL MAP -->
+  <div class="section-title">🌐 Cloudflare Tunnel Routing</div>
+  <table class="stats-table">
+    <tr><th>Domain</th><th>→</th><th>Local Port</th><th>Service</th></tr>
+    <tr><td>blockchain.blacktechsolutionscorp.com</td><td>→</td><td class="stat-green">8104</td><td>Blockchain Dashboard</td></tr>
+    <tr><td>dewey.blacktechsolutionscorp.com</td><td>→</td><td class="stat-green">8096</td><td>Security Guard</td></tr>
+    <tr><td>pi.blacktechsolutionscorp.com</td><td>→</td><td>8096</td><td>(shared — legacy)</td></tr>
+  </table>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="company">Blacktech Solutions Corp</div>
+  <div class="info">10052 S Forest Ave · Chicago IL 60628 · payroll@blacktechsolutionscorp.com · (773) 123-4567</div>
+  <div class="info" style="margin-top:6px; color:var(--bt-green);">Dewey Blockchain System · Architecture Report · June 17, 2026</div>
+</div>
+
+</body>
+</html>
