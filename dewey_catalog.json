@@ -50,8 +50,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 56609,
-    "modified": "2026-06-17T11:30:17.527633",
+    "size": 57889,
+    "modified": "2026-06-17T11:30:47.467779",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
   {
@@ -72,8 +72,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 21877,
-    "modified": "2026-06-17T11:30:37.307729",
+    "size": 33674,
+    "modified": "2026-06-17T11:49:54.957405",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
   {
@@ -149,8 +149,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_sync.py",
     "type": "code",
-    "size": 13371,
-    "modified": "2026-06-17T08:43:59.268238",
+    "size": 13715,
+    "modified": "2026-06-17T11:51:29.389881",
     "internal_key": "internal:000-General/dewey_sync.py"
   },
   {
@@ -372,6 +372,50 @@
     "size": 1296,
     "modified": "2026-06-17T08:35:39.810098",
     "internal_key": "internal:690-Building_Construction/contracts.json"
+  },
+  {
+    "title": "INDEX.md",
+    "section": "691-Building_Materials",
+    "dewey": "691",
+    "dewey_desc": "Building Materials",
+    "file": "691-Building_Materials/INDEX.md",
+    "type": "text",
+    "size": 30,
+    "modified": "2026-06-17T11:49:54.949405",
+    "internal_key": "internal:691-Building_Materials/INDEX.md"
+  },
+  {
+    "title": "INDEX.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/INDEX.md",
+    "type": "text",
+    "size": 31,
+    "modified": "2026-06-17T11:49:54.949405",
+    "internal_key": "internal:692-Auxiliary_Practices/INDEX.md"
+  },
+  {
+    "title": "INDEX.md",
+    "section": "696-Utilities",
+    "dewey": "696",
+    "dewey_desc": "Utilities",
+    "file": "696-Utilities/INDEX.md",
+    "type": "text",
+    "size": 21,
+    "modified": "2026-06-17T11:49:54.949405",
+    "internal_key": "internal:696-Utilities/INDEX.md"
+  },
+  {
+    "title": "INDEX.md",
+    "section": "697-HVAC",
+    "dewey": "697",
+    "dewey_desc": "HVAC",
+    "file": "697-HVAC/INDEX.md",
+    "type": "text",
+    "size": 16,
+    "modified": "2026-06-17T11:49:54.949405",
+    "internal_key": "internal:697-HVAC/INDEX.md"
   },
   {
     "title": "INDEX.md",

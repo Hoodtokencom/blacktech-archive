@@ -34,7 +34,11 @@ DRIVE_FOLDERS = {
     "700-Arts_Recreation": "173QcDBFQ0DHqI9uuATUmKr7rDuHC4Rxl",
     "800-Literature": "13KcU3vGRc8LuVMq7x4Q8ZETb2-FJHPSk",
     "900-History_Geography": "17rTzX9WK-7o6uqdMT2OXqcMX5XeS1ZIj",
-    "999-Decisions_Logs": "1UXERaufqG88H2Dtq1GjTEfLX7zpfWedx"
+    "999-Decisions_Logs": "1UXERaufqG88H2Dtq1GjTEfLX7zpfWedx",
+    "691-Building_Materials": "1ANvkl8Ch41m_ZGF-riMYR1T2t4qwe2vN",
+    "692-Auxiliary_Practices": "17d8iYEnE1xtGQpz2a4eNLUilDSi7WXkd",
+    "696-Utilities": "1iTnImXhY8cvuet3MBEEyBGpiyV6A_1oH",
+    "697-HVAC": "1108yebvK8GxxxoLdnNRG6TXMZHkkmv3u"
 }
 
 SECTIONS = {
@@ -42,7 +46,8 @@ SECTIONS = {
     "300": "Social Sciences", "400": "Language", "500": "Science",
     "600": "Technology", "620": "Engineering", "640": "Household Favorites",
     "650": "Management & Business", "657": "Accounting & Finance",
-    "690": "Construction", "700": "Arts", "800": "Literature",
+    "690": "Construction", "691": "Building Materials", "692": "Auxiliary Practices",
+    "696": "Utilities", "697": "HVAC", "700": "Arts", "800": "Literature",
     "900": "History & Geography", "910": "Travel", "920": "Biography",
     "930": "Genealogy", "999": "Decisions & Logs"
 }
