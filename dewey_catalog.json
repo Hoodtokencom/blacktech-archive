@@ -50,8 +50,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 33280,
-    "modified": "2026-06-17T08:44:15.720311",
+    "size": 48028,
+    "modified": "2026-06-17T08:45:03.496522",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
   {
@@ -72,8 +72,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 24293,
-    "modified": "2026-06-17T08:28:16.588391",
+    "size": 20723,
+    "modified": "2026-06-17T08:44:33.856391",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
   {
@@ -163,6 +163,17 @@
     "size": 3748,
     "modified": "2026-06-17T00:02:48.860820",
     "internal_key": "internal:000-General/find_brain.py"
+  },
+  {
+    "title": "passcode_vault.cpython-311.pyc",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/__pycache__/passcode_vault.cpython-311.pyc",
+    "type": "file",
+    "size": 6793,
+    "modified": "2026-06-17T08:48:37.913476",
+    "internal_key": "internal:000-General/__pycache__/passcode_vault.cpython-311.pyc"
   },
   {
     "title": "passcode_vault.py",

@@ -58,9 +58,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 33280,
-    "modified": "2026-06-17T08:44:15.720311",
-    "hash": "2039a6549388aa80aa37f381ce08d16c17126c17da22b9fec6da48e6dbf7cd0d",
+    "size": 48028,
+    "modified": "2026-06-17T08:45:03.496522",
+    "hash": "550f4ca121b9c200971f1830adf54cb4aacf2b996cf93d03150afb09384e0667",
     "description": "[   {     \"index\": 0,     \"timestamp\": \"2026-06-17T12:33:38.436459+00:00\",     \"action\": \"GENESIS\",     \"file\": \"000-General/dewey_blockchain.py\",    ",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
@@ -84,9 +84,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 24293,
-    "modified": "2026-06-17T08:28:16.588391",
-    "hash": "811350eb04975ed35fcc08ea18db6d5c795f7872e6d4c03dcde6f92357336b20",
+    "size": 20723,
+    "modified": "2026-06-17T08:44:33.856391",
+    "hash": "288774caf20e8aae58094d6fd08c00f83f0e8a4e41e4084d6163570c624dd073",
     "description": "[   {     \"title\": \"README.md\",     \"section\": \"000-General\",     \"dewey\": \"000\",     \"dewey_desc\": \"General\",     \"file\": \"000-General/README.md\",   ",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
@@ -193,6 +193,19 @@
     "hash": "1595dc349241c49d6f2a543f0016b12deb1edd214ea28b6cb34928bb71b7f383",
     "description": "#!/usr/bin/env python3 \"\"\" find_brain.py \u2014 search the Blacktech Library Brain.  Usage:   find_brain.py email               # full-text search   find_b",
     "internal_key": "internal:000-General/find_brain.py"
+  },
+  {
+    "title": "passcode_vault.cpython-311.pyc",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/__pycache__/passcode_vault.cpython-311.pyc",
+    "type": "file",
+    "size": 6793,
+    "modified": "2026-06-17T08:48:37.913476",
+    "hash": "0cb1d755d4f54d712dacc7d442d9fed00bac1467d49f622775ead99d9a995389",
+    "description": "(binary/encrypted)",
+    "internal_key": "internal:000-General/__pycache__/passcode_vault.cpython-311.pyc"
   },
   {
     "title": "passcode_vault.py",
