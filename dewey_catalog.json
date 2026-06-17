@@ -8,7 +8,6 @@
     "type": "text",
     "size": 1837,
     "modified": "2026-06-17T00:01:34.776457",
-    "description": "# Blacktech Brain \u2014 Dewey Decimal Library  A knowledge base organized like a library catalog.  ## Catalog  | Section | Class | Contents | |---------|-",
     "internal_key": "internal:000-General/README.md"
   },
   {
@@ -18,9 +17,8 @@
     "dewey_desc": "General",
     "file": "000-General/access_requests.json",
     "type": "data",
-    "size": 355,
-    "modified": "2026-06-17T06:10:47.442037",
-    "description": "[   {     \"id\": \"d20214c2\",     \"timestamp\": \"2026-06-17T06:10:44.253022\",     \"key\": \"internal:650-Management_Business/Final_Lien_Waiver_Elle_William",
+    "size": 668,
+    "modified": "2026-06-17T08:35:39.690097",
     "internal_key": "internal:000-General/access_requests.json"
   },
   {
@@ -30,10 +28,42 @@
     "dewey_desc": "General",
     "file": "000-General/audit_log.json",
     "type": "data",
-    "size": 1468,
-    "modified": "2026-06-17T06:53:35.077802",
-    "description": "[   {     \"timestamp\": \"2026-06-17T06:10:41.036378\",     \"action\": \"blocked\",     \"key\": \"internal:650-Management_Business/Final_Lien_Waiver_Elle_Will",
+    "size": 2390,
+    "modified": "2026-06-17T08:36:07.098211",
     "internal_key": "internal:000-General/audit_log.json"
+  },
+  {
+    "title": "dewey-constitutional.md",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/dewey-constitutional.md",
+    "type": "text",
+    "size": 13124,
+    "modified": "2026-06-17T08:44:15.592310",
+    "internal_key": "internal:000-General/dewey-constitutional.md"
+  },
+  {
+    "title": "dewey_blockchain.json",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/dewey_blockchain.json",
+    "type": "data",
+    "size": 33280,
+    "modified": "2026-06-17T08:44:15.720311",
+    "internal_key": "internal:000-General/dewey_blockchain.json"
+  },
+  {
+    "title": "dewey_blockchain.py",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/dewey_blockchain.py",
+    "type": "code",
+    "size": 9865,
+    "modified": "2026-06-17T08:22:12.898982",
+    "internal_key": "internal:000-General/dewey_blockchain.py"
   },
   {
     "title": "dewey_catalog.json",
@@ -42,9 +72,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 10939,
-    "modified": "2026-06-17T07:01:13.076094",
-    "description": "[   {     \"title\": \"README\",     \"dewey\": \"000\",     \"dewey_desc\": \"General/Computer Science\",     \"file\": \"000-General/README.md\",     \"type\": \"docum",
+    "size": 24293,
+    "modified": "2026-06-17T08:28:16.588391",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
   {
@@ -56,8 +85,29 @@
     "type": "data",
     "size": 11454727,
     "modified": "2026-06-17T07:01:06.016059",
-    "description": "[   {     \"title\": \"hood token logo\",     \"dewey\": \"000\",     \"dewey_desc\": \"General/Computer Science\",     \"file\": \"hood_token_logo.png\",     \"type\":",
     "internal_key": "internal:000-General/dewey_catalog_archive_2026-06-17.json"
+  },
+  {
+    "title": "dewey_code_changelog.json",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/dewey_code_changelog.json",
+    "type": "data",
+    "size": 22026,
+    "modified": "2026-06-17T08:44:15.680310",
+    "internal_key": "internal:000-General/dewey_code_changelog.json"
+  },
+  {
+    "title": "dewey_code_tracker.py",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/dewey_code_tracker.py",
+    "type": "code",
+    "size": 19771,
+    "modified": "2026-06-17T08:43:43.932171",
+    "internal_key": "internal:000-General/dewey_code_tracker.py"
   },
   {
     "title": "dewey_library_schematic.html",
@@ -68,7 +118,6 @@
     "type": "web",
     "size": 21079,
     "modified": "2026-06-17T06:01:50.683639",
-    "description": "<!DOCTYPE html> <html lang=\"en\"> <head>   <meta charset=\"UTF-8\">   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">   <title>Bla",
     "internal_key": "internal:000-General/dewey_library_schematic.html"
   },
   {
@@ -78,9 +127,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_pipeline.py",
     "type": "code",
-    "size": 15115,
-    "modified": "2026-06-17T06:10:32.189990",
-    "description": "#!/usr/bin/env python3 \"\"\" Dewey Pipeline \u2014 3-Part Knowledge System ========================================= Google Drive (Brain) \u2192 Internal Drive (B",
+    "size": 16230,
+    "modified": "2026-06-17T08:42:34.563866",
     "internal_key": "internal:000-General/dewey_pipeline.py"
   },
   {
@@ -90,10 +138,20 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_security.py",
     "type": "code",
-    "size": 15139,
-    "modified": "2026-06-17T06:10:10.185923",
-    "description": "#!/usr/bin/env python3 \"\"\" Dewey Security \u2014 The Guard at the Gate ====================================== Access control for the 3-part Dewey knowledge",
+    "size": 16941,
+    "modified": "2026-06-17T08:36:04.006198",
     "internal_key": "internal:000-General/dewey_security.py"
+  },
+  {
+    "title": "dewey_sync.py",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/dewey_sync.py",
+    "type": "code",
+    "size": 13371,
+    "modified": "2026-06-17T08:43:59.268238",
+    "internal_key": "internal:000-General/dewey_sync.py"
   },
   {
     "title": "find_brain.py",
@@ -104,7 +162,6 @@
     "type": "code",
     "size": 3748,
     "modified": "2026-06-17T00:02:48.860820",
-    "description": "#!/usr/bin/env python3 \"\"\" find_brain.py \u2014 search the Blacktech Library Brain.  Usage:   find_brain.py email               # full-text search   find_b",
     "internal_key": "internal:000-General/find_brain.py"
   },
   {
@@ -116,7 +173,6 @@
     "type": "code",
     "size": 2999,
     "modified": "2026-06-17T00:01:28.344424",
-    "description": "#!/usr/bin/env python3 \"\"\" Blacktech Passcode Vault  Simple encrypted key-value store for service credentials. Uses Fernet symmetric encryption. The k",
     "internal_key": "internal:000-General/passcode_vault.py"
   },
   {
@@ -126,10 +182,108 @@
     "dewey_desc": "General",
     "file": "000-General/permissions.json",
     "type": "data",
-    "size": 2,
-    "modified": "2026-06-17T06:10:12.725931",
-    "description": "{}",
+    "size": 1012,
+    "modified": "2026-06-17T08:32:04.133233",
     "internal_key": "internal:000-General/permissions.json"
+  },
+  {
+    "title": "INDEX.md",
+    "section": "100-Philosophy",
+    "dewey": "100",
+    "dewey_desc": "Philosophy",
+    "file": "100-Philosophy/INDEX.md",
+    "type": "text",
+    "size": 231,
+    "modified": "2026-06-17T07:28:37.128416",
+    "internal_key": "internal:100-Philosophy/INDEX.md"
+  },
+  {
+    "title": "INDEX.md",
+    "section": "200-Religion",
+    "dewey": "200",
+    "dewey_desc": "Religion",
+    "file": "200-Religion/INDEX.md",
+    "type": "text",
+    "size": 222,
+    "modified": "2026-06-17T07:28:37.216417",
+    "internal_key": "internal:200-Religion/INDEX.md"
+  },
+  {
+    "title": "INDEX.md",
+    "section": "300-Social_Sciences",
+    "dewey": "300",
+    "dewey_desc": "Social Sciences",
+    "file": "300-Social_Sciences/INDEX.md",
+    "type": "text",
+    "size": 219,
+    "modified": "2026-06-17T07:28:37.296417",
+    "internal_key": "internal:300-Social_Sciences/INDEX.md"
+  },
+  {
+    "title": "INDEX.md",
+    "section": "400-Language",
+    "dewey": "400",
+    "dewey_desc": "Language",
+    "file": "400-Language/INDEX.md",
+    "type": "text",
+    "size": 225,
+    "modified": "2026-06-17T07:28:37.428418",
+    "internal_key": "internal:400-Language/INDEX.md"
+  },
+  {
+    "title": "INDEX.md",
+    "section": "500-Science",
+    "dewey": "500",
+    "dewey_desc": "Science",
+    "file": "500-Science/INDEX.md",
+    "type": "text",
+    "size": 221,
+    "modified": "2026-06-17T07:28:37.512418",
+    "internal_key": "internal:500-Science/INDEX.md"
+  },
+  {
+    "title": "dewey-blockchain-report.html",
+    "section": "500-Science",
+    "dewey": "500",
+    "dewey_desc": "Science",
+    "file": "500-Science/dewey-blockchain-report.html",
+    "type": "web",
+    "size": 16885,
+    "modified": "2026-06-17T07:48:40.778449",
+    "internal_key": "internal:500-Science/dewey-blockchain-report.html"
+  },
+  {
+    "title": "dewey-blockchain-report.pdf",
+    "section": "500-Science",
+    "dewey": "500",
+    "dewey_desc": "Science",
+    "file": "500-Science/dewey-blockchain-report.pdf",
+    "type": "pdf",
+    "size": 85980,
+    "modified": "2026-06-17T07:48:40.778449",
+    "internal_key": "internal:500-Science/dewey-blockchain-report.pdf"
+  },
+  {
+    "title": "dewey-blockchain-schematic.html",
+    "section": "500-Science",
+    "dewey": "500",
+    "dewey_desc": "Science",
+    "file": "500-Science/dewey-blockchain-schematic.html",
+    "type": "web",
+    "size": 21412,
+    "modified": "2026-06-17T07:48:40.774449",
+    "internal_key": "internal:500-Science/dewey-blockchain-schematic.html"
+  },
+  {
+    "title": "dewey-blockchain-schematic.pdf",
+    "section": "500-Science",
+    "dewey": "500",
+    "dewey_desc": "Science",
+    "file": "500-Science/dewey-blockchain-schematic.pdf",
+    "type": "pdf",
+    "size": 544992,
+    "modified": "2026-06-17T07:48:40.778449",
+    "internal_key": "internal:500-Science/dewey-blockchain-schematic.pdf"
   },
   {
     "title": "hostgator_email.md",
@@ -140,7 +294,6 @@
     "type": "text",
     "size": 833,
     "modified": "2026-06-16T23:56:30.159201",
-    "description": "# Service: Blacktech HostGator Business Email  ## SMTP (Outgoing)  - Host: `mail.blacktechsolutionscorp.com` - Port: `587` - Encryption: `STARTTLS` - ",
     "internal_key": "internal:600-Technology/hostgator_email.md"
   },
   {
@@ -152,7 +305,6 @@
     "type": "text",
     "size": 629,
     "modified": "2026-06-17T06:55:22.546343",
-    "description": "# \ud83c\udfe0 My Favorites > Everything here is a favorite. Just find it.  ## \ud83e\udd6b Canned Goods - Green Beans \u2014 Pantry - Corn \u2014 Pantry - Black Beans \u2014 Pantry - Tun",
     "internal_key": "internal:640-Household_Favorites/INDEX.md"
   },
   {
@@ -164,7 +316,6 @@
     "type": "encrypted",
     "size": 204,
     "modified": "2026-06-16T23:57:03.423427",
-    "description": "gAAAAABqMikf7EXpkRkANgf6AuxSnM-84bbGR4PADLSe6VWgDMcepkvmt8K31d1XipNsrk_gzNChp39mH8wlrWHeEOE2H5nA3oehM6qzI-CeTHbgZliwQvsE0tC3sAviCGPggnE0IsRTcjWxKyg-iu",
     "internal_key": "internal:657-Accounting_Finance/passcode_vault.enc"
   },
   {
@@ -176,8 +327,62 @@
     "type": "encrypted",
     "size": 16,
     "modified": "2026-06-16T23:57:02.263419",
-    "description": "(binary/encrypted)",
     "internal_key": "internal:657-Accounting_Finance/passcode_vault.salt"
+  },
+  {
+    "title": "contract_approval.py",
+    "section": "690-Building_Construction",
+    "dewey": "690",
+    "dewey_desc": "Construction",
+    "file": "690-Building_Construction/contract_approval.py",
+    "type": "code",
+    "size": 17822,
+    "modified": "2026-06-17T08:26:43.080074",
+    "internal_key": "internal:690-Building_Construction/contract_approval.py"
+  },
+  {
+    "title": "contracts.json",
+    "section": "690-Building_Construction",
+    "dewey": "690",
+    "dewey_desc": "Construction",
+    "file": "690-Building_Construction/contracts.json",
+    "type": "data",
+    "size": 1296,
+    "modified": "2026-06-17T08:35:39.810098",
+    "internal_key": "internal:690-Building_Construction/contracts.json"
+  },
+  {
+    "title": "INDEX.md",
+    "section": "700-Arts_Recreation",
+    "dewey": "700",
+    "dewey_desc": "Arts",
+    "file": "700-Arts_Recreation/INDEX.md",
+    "type": "text",
+    "size": 225,
+    "modified": "2026-06-17T07:28:37.596418",
+    "internal_key": "internal:700-Arts_Recreation/INDEX.md"
+  },
+  {
+    "title": "INDEX.md",
+    "section": "800-Literature",
+    "dewey": "800",
+    "dewey_desc": "Literature",
+    "file": "800-Literature/INDEX.md",
+    "type": "text",
+    "size": 225,
+    "modified": "2026-06-17T07:28:37.680419",
+    "internal_key": "internal:800-Literature/INDEX.md"
+  },
+  {
+    "title": "INDEX.md",
+    "section": "900-History_Geography",
+    "dewey": "900",
+    "dewey_desc": "History & Geography",
+    "file": "900-History_Geography/INDEX.md",
+    "type": "text",
+    "size": 233,
+    "modified": "2026-06-17T07:28:37.756419",
+    "internal_key": "internal:900-History_Geography/INDEX.md"
   },
   {
     "title": "2026-06-16-system-cleanup.md",
@@ -188,7 +393,6 @@
     "type": "text",
     "size": 632,
     "modified": "2026-06-16T23:56:30.159201",
-    "description": "# Decision Log  ## 2026-06-16 \u2014 Disabled legacy watchdog + CICD cron  - **Context:** Legacy cron manually restarted Python scripts every 5 minutes, co",
     "internal_key": "internal:999-Decisions_Logs/2026-06-16-system-cleanup.md"
   }
 ]

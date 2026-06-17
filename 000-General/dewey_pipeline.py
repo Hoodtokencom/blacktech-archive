@@ -257,7 +257,7 @@ def cmd_trash(file_path):
     print(f"🗑️ TRASHED → GitHub Archive")
     print(f"   From: {file_path}")
     print(f"   To:   {dest}")
-    print(f"   Status: {'✅ Pushed' if result.returncode == 0 else '⚠️ Local only (push failed)'}")
+    print(f"   Push: {'✅ Pushed to GitHub' if result.returncode == 0 else '⚠️ Local only (push failed)'}")
     print(f"   To recycle: python3 dewey_pipeline.py recycle")
 
 
@@ -317,8 +317,18 @@ def cmd_map():
 
 
 def cmd_sync():
-    """Sync Brain catalog to Google Drive."""
+    """Sync Brain catalog to Google Drive + auto-log code changes."""
     print("🔄 Syncing Brain → Google Drive...")
+    
+    # ── CODE TRACKER: Log any code changes before sync ──────────────
+    code_tracker = f"{BRAIN_ROOT}/000-General/dewey_code_tracker.py"
+    if os.path.exists(code_tracker):
+        print("   📝 Checking code integrity...")
+        subprocess.run(
+            [sys.executable, code_tracker, "verify"],
+            capture_output=True, timeout=15
+        )
+    
     result = subprocess.run(
         ["rclone", "sync", BRAIN_ROOT, f"gdrive:{GDRIVE_BRAIN_PATH}",
          "--exclude", "*.enc", "--exclude", "*.salt",
@@ -329,6 +339,24 @@ def cmd_sync():
         print(f"✅ Synced to Google Drive: {GDRIVE_BRAIN_PATH}")
     else:
         print(f"❌ Sync failed: {result.stderr}")
+
+
+def cmd_code(subcmd=None, *args):
+    """Code Department — track, verify, and document code changes."""
+    code_tracker = f"{BRAIN_ROOT}/000-General/dewey_code_tracker.py"
+    if not os.path.exists(code_tracker):
+        print("❌ Code tracker not found. Run setup first.")
+        return
+    
+    tracker_args = [sys.executable, code_tracker]
+    if subcmd:
+        tracker_args.append(subcmd)
+        tracker_args.extend(args)
+    
+    result = subprocess.run(tracker_args, capture_output=True, text=True, timeout=30)
+    print(result.stdout)
+    if result.stderr:
+        print(result.stderr, file=sys.stderr)
 
 
 def cmd_index():
@@ -359,13 +387,14 @@ def main():
         "map": cmd_map,
         "sync": cmd_sync,
         "index": cmd_index,
+        "code": lambda: cmd_code(arg, *sys.argv[3:]),
     }
     
     if cmd in commands:
         commands[cmd]()
     else:
         print(f"❌ Unknown command: {cmd}")
-        print("Commands: search | key | unlock | trash | recycle | map | sync | index")
+        print("Commands: search | key | unlock | trash | recycle | map | sync | index | code")
 
 
 if __name__ == "__main__":

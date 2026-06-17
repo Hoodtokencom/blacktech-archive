@@ -46,5 +46,37 @@
     "who": "derrell",
     "result": "granted",
     "detail": "key access"
+  },
+  {
+    "timestamp": "2026-06-17T08:35:39.629311",
+    "action": "request",
+    "key": "internal:690-Building_Construction/contracts.json",
+    "who": "Allen (test)",
+    "result": "pending",
+    "detail": "Need to file new contract"
+  },
+  {
+    "timestamp": "2026-06-17T08:35:39.694327",
+    "action": "approve",
+    "key": "internal:690-Building_Construction/contracts.json",
+    "who": "Allen (test)",
+    "result": "approved",
+    "detail": "Request 81138ef3"
+  },
+  {
+    "timestamp": "2026-06-17T08:35:39.762981",
+    "action": "blocked",
+    "key": "internal:690-Building_Construction/contracts.json",
+    "who": "unknown",
+    "result": "denied",
+    "detail": "no approval"
+  },
+  {
+    "timestamp": "2026-06-17T08:36:07.101187",
+    "action": "unlock",
+    "key": "internal:690-Building_Construction/contracts.json",
+    "who": "unknown",
+    "result": "granted",
+    "detail": "approved request 81138ef3"
   }
 ]

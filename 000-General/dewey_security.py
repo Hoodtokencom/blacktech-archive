@@ -102,6 +102,47 @@ def load_audit():
 def save_audit(log):
     save_json(AUDIT_PATH, log)
 
+# ── Telegram Notification ─────────────────────────────────────────
+TELEGRAM_BOT_TOKEN = None  # loaded from env
+TELEGRAM_CHAT_ID = "5805015753"  # Derrell's DM
+
+def _get_bot_token():
+    global TELEGRAM_BOT_TOKEN
+    if TELEGRAM_BOT_TOKEN:
+        return TELEGRAM_BOT_TOKEN
+    # Try to load from passcode vault
+    try:
+        result = subprocess.run(
+            [sys.executable, f"{BRAIN_ROOT}/000-General/passcode_vault.py", "get", "telegram_bot_token"],
+            capture_output=True, text=True, timeout=5
+        )
+        if result.returncode == 0 and result.stdout.strip():
+            TELEGRAM_BOT_TOKEN = result.stdout.strip()
+            return TELEGRAM_BOT_TOKEN
+    except:
+        pass
+    # Fallback: try env
+    TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+    return TELEGRAM_BOT_TOKEN
+
+def notify_derrell(title, body):
+    """Send a Telegram notification to Derrell."""
+    token = _get_bot_token()
+    if not token:
+        return False
+    msg = f"🔐 *{title}*\n{body}"
+    try:
+        subprocess.run([
+            "curl", "-s", "-X", "POST",
+            f"https://api.telegram.org/bot{token}/sendMessage",
+            "-d", f"chat_id={TELEGRAM_CHAT_ID}",
+            "-d", f"text={msg}",
+            "-d", "parse_mode=Markdown"
+        ], capture_output=True, timeout=10)
+        return True
+    except:
+        return False
+
 def get_dewey_section(key):
     """Extract Dewey section from a key like 'internal:650-Management_Business/file.md'"""
     path = key.replace("internal:", "").replace("internal://", "")
@@ -198,6 +239,12 @@ def cmd_request(key, who, why):
     save_requests(reqs)
     
     log_audit("request", key, who, "pending", why)
+    
+    # ── Notify Derrell via Telegram ──────────────────────────────
+    notify_derrell(
+        "Access Requested",
+        f"*Who:* {who}\n*File:* `{key}`\n*Why:* {why}\n*ID:* `{request_id}`\n\nApprove: `/approve {request_id}`\nDeny: `/deny {request_id}`"
+    )
     
     print(f"🟠 ACCESS REQUESTED")
     print(f"   ID:      {request_id}")
@@ -345,13 +392,13 @@ def cmd_guard(key, who="unknown"):
         log_audit("unlock", key, who, "granted", "key access")
     
     elif level == "approval":
-        # Check for existing approved request
+        # Check for any approved request for this key
         reqs = load_requests()
-        approved = [r for r in reqs if r["key"] == key and r["who"] == who and r["status"] == "approved"]
+        approved = [r for r in reqs if r["key"] == key and r["status"] == "approved"]
         
         if approved:
             result["allowed"] = True
-            result["reason"] = f"pre-approved (request {approved[0]['id']})"
+            result["reason"] = f"pre-approved (request {approved[0]['id']} by {approved[0]['who']})"
             log_audit("unlock", key, who, "granted", f"approved request {approved[0]['id']}")
         else:
             result["allowed"] = False

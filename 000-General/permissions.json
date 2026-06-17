@@ -1,1 +1,35 @@
-{}
+{
+  "rules": [
+    {
+      "pattern": "690-Building_Construction/*",
+      "level": "approval",
+      "reason": "Construction documents \u2014 estimates, contracts, permits require Derrell's approval"
+    },
+    {
+      "pattern": "657-Accounting_Finance/*",
+      "level": "approval",
+      "reason": "Financial documents \u2014 invoices, passcodes, payroll require Derrell's approval"
+    },
+    {
+      "pattern": "650-Management_Business/*",
+      "level": "approval",
+      "reason": "Business documents \u2014 SOPs, HR, legal require Derrell's approval"
+    },
+    {
+      "pattern": "200-Religion/*",
+      "level": "vault",
+      "reason": "Trust documents \u2014 encrypted vault access only"
+    },
+    {
+      "pattern": "000-General/passcode_vault*",
+      "level": "vault",
+      "reason": "Encrypted credentials \u2014 master passphrase required"
+    },
+    {
+      "pattern": "*",
+      "level": "key",
+      "reason": "Standard access \u2014 key required to unlock"
+    }
+  ],
+  "default": "key"
+}
