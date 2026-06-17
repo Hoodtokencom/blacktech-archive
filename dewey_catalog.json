@@ -50,8 +50,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 49764,
-    "modified": "2026-06-17T09:01:28.850050",
+    "size": 51044,
+    "modified": "2026-06-17T09:23:22.003703",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
   {
@@ -73,7 +73,7 @@
     "file": "000-General/dewey_catalog.json",
     "type": "data",
     "size": 21219,
-    "modified": "2026-06-17T09:01:22.006022",
+    "modified": "2026-06-17T09:23:17.151682",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
   {
