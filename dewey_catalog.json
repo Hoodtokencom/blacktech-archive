@@ -50,8 +50,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 57889,
-    "modified": "2026-06-17T11:30:47.467779",
+    "size": 74025,
+    "modified": "2026-06-17T13:27:14.490828",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
   {
@@ -72,8 +72,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 33674,
-    "modified": "2026-06-17T11:49:54.957405",
+    "size": 24090,
+    "modified": "2026-06-17T12:13:19.076282",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
   {
@@ -108,6 +108,28 @@
     "size": 19771,
     "modified": "2026-06-17T08:43:43.932171",
     "internal_key": "internal:000-General/dewey_code_tracker.py"
+  },
+  {
+    "title": "dewey_inbox_router.cpython-311.pyc",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/__pycache__/dewey_inbox_router.cpython-311.pyc",
+    "type": "file",
+    "size": 20365,
+    "modified": "2026-06-17T12:13:23.352303",
+    "internal_key": "internal:000-General/__pycache__/dewey_inbox_router.cpython-311.pyc"
+  },
+  {
+    "title": "dewey_inbox_router.py",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/dewey_inbox_router.py",
+    "type": "code",
+    "size": 15196,
+    "modified": "2026-06-17T12:13:15.148262",
+    "internal_key": "internal:000-General/dewey_inbox_router.py"
   },
   {
     "title": "dewey_library_schematic.html",
@@ -240,6 +262,17 @@
     "size": 225,
     "modified": "2026-06-17T07:28:37.428418",
     "internal_key": "internal:400-Language/INDEX.md"
+  },
+  {
+    "title": "contract-invoice-template.html",
+    "section": "400-Language",
+    "dewey": "400",
+    "dewey_desc": "Language",
+    "file": "400-Language/contract-invoice-template.html",
+    "type": "web",
+    "size": 15641,
+    "modified": "2026-06-17T13:40:23.560149",
+    "internal_key": "internal:400-Language/contract-invoice-template.html"
   },
   {
     "title": "INDEX.md",
@@ -405,6 +438,17 @@
     "size": 21,
     "modified": "2026-06-17T11:49:54.949405",
     "internal_key": "internal:696-Utilities/INDEX.md"
+  },
+  {
+    "title": "comed-eesp-completion-certificate-template.html",
+    "section": "696-Utilities",
+    "dewey": "696",
+    "dewey_desc": "Utilities",
+    "file": "696-Utilities/comed-eesp-completion-certificate-template.html",
+    "type": "web",
+    "size": 7969,
+    "modified": "2026-06-17T13:40:23.560149",
+    "internal_key": "internal:696-Utilities/comed-eesp-completion-certificate-template.html"
   },
   {
     "title": "INDEX.md",

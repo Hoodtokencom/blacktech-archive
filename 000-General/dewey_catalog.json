@@ -58,9 +58,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 57889,
-    "modified": "2026-06-17T11:30:47.467779",
-    "hash": "68ec2afcc3422eb347d7da869a9e46da2b6144b6f51183cd5dad5ed66ddb4b7c",
+    "size": 74025,
+    "modified": "2026-06-17T13:27:14.490828",
+    "hash": "2882e6d30161a79e93277ef03aea5f8497cc87d2fe8e24354fa1b4c48b25ac3b",
     "description": "[   {     \"index\": 0,     \"timestamp\": \"2026-06-17T12:33:38.436459+00:00\",     \"action\": \"GENESIS\",     \"file\": \"000-General/dewey_blockchain.py\",    ",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
@@ -84,9 +84,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 33674,
-    "modified": "2026-06-17T11:49:54.957405",
-    "hash": "1db176792dfa4b248349df00cc3c96a4c2a8f596dabe2e7900bcda8fbd8cf05e",
+    "size": 24090,
+    "modified": "2026-06-17T12:13:19.076282",
+    "hash": "2245e15c65f4cc106858e560f38efb60cc9350b7605a9df6a131a82d5d1f6eb1",
     "description": "[   {     \"title\": \"README.md\",     \"section\": \"000-General\",     \"dewey\": \"000\",     \"dewey_desc\": \"General\",     \"file\": \"000-General/README.md\",   ",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
@@ -128,6 +128,32 @@
     "hash": "74c111f152533bde3e54f26be4a277a96aac17566d4937e62ed81cbdf9f2a68d",
     "description": "#!/usr/bin/env python3 \"\"\" Dewey Code Tracker \u2014 Automatic Code Change Documentation ========================================================= Every co",
     "internal_key": "internal:000-General/dewey_code_tracker.py"
+  },
+  {
+    "title": "dewey_inbox_router.cpython-311.pyc",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/__pycache__/dewey_inbox_router.cpython-311.pyc",
+    "type": "file",
+    "size": 20365,
+    "modified": "2026-06-17T12:13:23.352303",
+    "hash": "6eef8b53a924e1ccc9c80caeaf95b3af50a31667be280047afdb82904d0a861e",
+    "description": "(binary/encrypted)",
+    "internal_key": "internal:000-General/__pycache__/dewey_inbox_router.cpython-311.pyc"
+  },
+  {
+    "title": "dewey_inbox_router.py",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/dewey_inbox_router.py",
+    "type": "code",
+    "size": 15196,
+    "modified": "2026-06-17T12:13:15.148262",
+    "hash": "5dbb13fe8dd9ef2e98b93a8fa43d2f35ac3e22f3bbd807fc60092d1762b50397",
+    "description": "#!/usr/bin/env python3 \"\"\" Dewey Inbox Router \u2014 Two-tier classification + 3-way mirror sync. =========================================================",
+    "internal_key": "internal:000-General/dewey_inbox_router.py"
   },
   {
     "title": "dewey_library_schematic.html",
@@ -284,6 +310,19 @@
     "hash": "a918011b4274af0e6d4cd4dbb8731637aa87edad4e1fd2fd2b397279bbf6b8c9",
     "description": "# 400-Language  > Language, Linguistics, Communication \u2014 scripts, templates, brand voice, messaging  ## Contents  *This section is ready for files. Ad",
     "internal_key": "internal:400-Language/INDEX.md"
+  },
+  {
+    "title": "contract-invoice-template.html",
+    "section": "400-Language",
+    "dewey": "400",
+    "dewey_desc": "Language",
+    "file": "400-Language/contract-invoice-template.html",
+    "type": "web",
+    "size": 15641,
+    "modified": "2026-06-17T13:40:23.560149",
+    "hash": "174edcf369eabf4b5b871cb5225f999746545804f4e4a217738c118aa82d856c",
+    "description": "<!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>Blacktech",
+    "internal_key": "internal:400-Language/contract-invoice-template.html"
   },
   {
     "title": "INDEX.md",
@@ -479,6 +518,19 @@
     "hash": "684796cfab35b975fba9019b173b5609dc4881488e8ec178a9f3a49e7e691921",
     "description": "# 696 \u2014 Utilities",
     "internal_key": "internal:696-Utilities/INDEX.md"
+  },
+  {
+    "title": "comed-eesp-completion-certificate-template.html",
+    "section": "696-Utilities",
+    "dewey": "696",
+    "dewey_desc": "Utilities",
+    "file": "696-Utilities/comed-eesp-completion-certificate-template.html",
+    "type": "web",
+    "size": 7969,
+    "modified": "2026-06-17T13:40:23.560149",
+    "hash": "3f451025b1169842fcec78fecab5211b185956c3d0882b4d590eef91a109c254",
+    "description": "<!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>Blacktech",
+    "internal_key": "internal:696-Utilities/comed-eesp-completion-certificate-template.html"
   },
   {
     "title": "INDEX.md",
