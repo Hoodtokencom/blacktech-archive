@@ -150,5 +150,45 @@
     "who": "ssbn-bridge",
     "result": "denied",
     "detail": "no approval"
+  },
+  {
+    "timestamp": "2026-06-18T12:10:08.135672",
+    "action": "blocked",
+    "key": "internal:690-Building_Construction/contracts.json",
+    "who": "derrell",
+    "result": "denied",
+    "detail": "no approval"
+  },
+  {
+    "timestamp": "2026-06-18T12:10:09.373549",
+    "action": "check",
+    "key": "internal:400-Language/contract-invoice-template.html",
+    "who": "derrell",
+    "result": "granted",
+    "detail": "key-level access"
+  },
+  {
+    "timestamp": "2026-06-18T12:10:14.181270",
+    "action": "check",
+    "key": "internal:400-Language/contract-invoice-template.html",
+    "who": "derrell",
+    "result": "granted",
+    "detail": "key-level access"
+  },
+  {
+    "timestamp": "2026-06-18T12:10:17.125511",
+    "action": "request",
+    "key": "internal:690-Building_Construction/contracts.json",
+    "who": "test-user",
+    "result": "pending",
+    "detail": "Need to file a new contract"
+  },
+  {
+    "timestamp": "2026-06-18T12:10:20.488146",
+    "action": "approve",
+    "key": "internal:690-Building_Construction/contracts.json",
+    "who": "test-user",
+    "result": "approved",
+    "detail": "Request 57842e1d"
   }
 ]

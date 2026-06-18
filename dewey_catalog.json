@@ -17,8 +17,8 @@
     "dewey_desc": "General",
     "file": "000-General/access_requests.json",
     "type": "data",
-    "size": 1333,
-    "modified": "2026-06-17T13:52:44.445098",
+    "size": 1645,
+    "modified": "2026-06-18T12:10:20.484848",
     "internal_key": "internal:000-General/access_requests.json"
   },
   {
@@ -28,8 +28,8 @@
     "dewey_desc": "General",
     "file": "000-General/audit_log.json",
     "type": "data",
-    "size": 4496,
-    "modified": "2026-06-17T13:59:11.580760",
+    "size": 5633,
+    "modified": "2026-06-18T12:10:20.484848",
     "internal_key": "internal:000-General/audit_log.json"
   },
   {
@@ -50,8 +50,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 89799,
-    "modified": "2026-06-18T09:42:29.609543",
+    "size": 91947,
+    "modified": "2026-06-18T11:59:56.814489",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
   {
@@ -83,8 +83,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 27785,
-    "modified": "2026-06-18T08:10:01.494229",
+    "size": 28785,
+    "modified": "2026-06-18T11:59:48.338457",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
   {
@@ -171,8 +171,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_security.py",
     "type": "code",
-    "size": 16941,
-    "modified": "2026-06-17T08:36:04.006198",
+    "size": 10038,
+    "modified": "2026-06-18T12:10:00.384773",
     "internal_key": "internal:000-General/dewey_security.py"
   },
   {
