@@ -1,0 +1,154 @@
+[
+  {
+    "timestamp": "2026-06-17T06:10:41.036378",
+    "action": "blocked",
+    "key": "internal:650-Management_Business/Final_Lien_Waiver_Elle_William.md",
+    "who": "test-user",
+    "result": "denied",
+    "detail": "no approval"
+  },
+  {
+    "timestamp": "2026-06-17T06:10:44.253324",
+    "action": "request",
+    "key": "internal:650-Management_Business/Final_Lien_Waiver_Elle_William.md",
+    "who": "test-user",
+    "result": "pending",
+    "detail": "Need to review lien waiver for Elle William project"
+  },
+  {
+    "timestamp": "2026-06-17T06:10:47.445466",
+    "action": "approve",
+    "key": "internal:650-Management_Business/Final_Lien_Waiver_Elle_William.md",
+    "who": "test-user",
+    "result": "approved",
+    "detail": "Request d20214c2"
+  },
+  {
+    "timestamp": "2026-06-17T06:10:50.034671",
+    "action": "unlock",
+    "key": "internal:650-Management_Business/Final_Lien_Waiver_Elle_William.md",
+    "who": "test-user",
+    "result": "granted",
+    "detail": "approved request d20214c2"
+  },
+  {
+    "timestamp": "2026-06-17T06:22:44.182087",
+    "action": "unlock",
+    "key": "internal:1-Admin/Contracts/Final_Lien_Waiver_Elle_William.md",
+    "who": "derrell",
+    "result": "granted",
+    "detail": "key access"
+  },
+  {
+    "timestamp": "2026-06-17T06:53:35.080772",
+    "action": "unlock",
+    "key": "internal:640-Household_Favorites/Canned_Goods/INDEX.md",
+    "who": "derrell",
+    "result": "granted",
+    "detail": "key access"
+  },
+  {
+    "timestamp": "2026-06-17T08:35:39.629311",
+    "action": "request",
+    "key": "internal:690-Building_Construction/contracts.json",
+    "who": "Allen (test)",
+    "result": "pending",
+    "detail": "Need to file new contract"
+  },
+  {
+    "timestamp": "2026-06-17T08:35:39.694327",
+    "action": "approve",
+    "key": "internal:690-Building_Construction/contracts.json",
+    "who": "Allen (test)",
+    "result": "approved",
+    "detail": "Request 81138ef3"
+  },
+  {
+    "timestamp": "2026-06-17T08:35:39.762981",
+    "action": "blocked",
+    "key": "internal:690-Building_Construction/contracts.json",
+    "who": "unknown",
+    "result": "denied",
+    "detail": "no approval"
+  },
+  {
+    "timestamp": "2026-06-17T08:36:07.101187",
+    "action": "unlock",
+    "key": "internal:690-Building_Construction/contracts.json",
+    "who": "unknown",
+    "result": "granted",
+    "detail": "approved request 81138ef3"
+  },
+  {
+    "timestamp": "2026-06-17T13:52:17.382030",
+    "action": "request",
+    "key": "internal:650-Management_Business/sop_template.md",
+    "who": "TestUser",
+    "result": "pending",
+    "detail": "Testing the Dewey approval pipeline"
+  },
+  {
+    "timestamp": "2026-06-17T13:52:22.893454",
+    "action": "approve",
+    "key": "internal:650-Management_Business/sop_template.md",
+    "who": "TestUser",
+    "result": "approved",
+    "detail": "Request 128aab87"
+  },
+  {
+    "timestamp": "2026-06-17T13:52:25.656177",
+    "action": "unlock",
+    "key": "internal:650-Management_Business/sop_template.md",
+    "who": "TestUser",
+    "result": "granted",
+    "detail": "approved request 128aab87"
+  },
+  {
+    "timestamp": "2026-06-17T13:52:38.631572",
+    "action": "request",
+    "key": "internal:690-Building_Construction/estimate_template.xlsx",
+    "who": "Derrell",
+    "result": "pending",
+    "detail": "Second test \u2014 verifying 690 approval flow"
+  },
+  {
+    "timestamp": "2026-06-17T13:52:41.217970",
+    "action": "approve",
+    "key": "internal:690-Building_Construction/estimate_template.xlsx",
+    "who": "Derrell",
+    "result": "approved",
+    "detail": "Request 4ce2720c"
+  },
+  {
+    "timestamp": "2026-06-17T13:52:41.297212",
+    "action": "unlock",
+    "key": "internal:690-Building_Construction/estimate_template.xlsx",
+    "who": "Derrell",
+    "result": "granted",
+    "detail": "approved request 4ce2720c"
+  },
+  {
+    "timestamp": "2026-06-17T13:59:11.405101",
+    "action": "unlock",
+    "key": "internal:600-Technology_Applied_Sciences/pi_setup.md",
+    "who": "ssbn-bridge",
+    "result": "granted",
+    "detail": "key access"
+  },
+  {
+    "timestamp": "2026-06-17T13:59:11.448230",
+    "action": "unlock",
+    "key": "internal:600-Technology_Applied_Sciences/pi_setup.md",
+    "who": "Derrell Black",
+    "result": "granted",
+    "detail": "key access"
+  },
+  {
+    "timestamp": "2026-06-17T13:59:11.582754",
+    "action": "blocked",
+    "key": "internal:650-Management_Business/sop.md",
+    "who": "ssbn-bridge",
+    "result": "denied",
+    "detail": "no approval"
+  }
+]

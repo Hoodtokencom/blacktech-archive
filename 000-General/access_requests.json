@@ -1,0 +1,42 @@
+[
+  {
+    "id": "d20214c2",
+    "timestamp": "2026-06-17T06:10:44.253022",
+    "key": "internal:650-Management_Business/Final_Lien_Waiver_Elle_William.md",
+    "who": "test-user",
+    "why": "Need to review lien waiver for Elle William project",
+    "status": "approved",
+    "approved_by": "Derrell",
+    "approved_at": "2026-06-17T06:10:47.445135"
+  },
+  {
+    "id": "81138ef3",
+    "timestamp": "2026-06-17T08:35:39.629003",
+    "key": "internal:690-Building_Construction/contracts.json",
+    "who": "Allen (test)",
+    "why": "Need to file new contract",
+    "status": "approved",
+    "approved_by": "Derrell",
+    "approved_at": "2026-06-17T08:35:39.694003"
+  },
+  {
+    "id": "128aab87",
+    "timestamp": "2026-06-17T13:52:17.381685",
+    "key": "internal:650-Management_Business/sop_template.md",
+    "who": "TestUser",
+    "why": "Testing the Dewey approval pipeline",
+    "status": "resolved_test",
+    "approved_by": "Derrell",
+    "approved_at": "2026-06-17T13:52:22.893090"
+  },
+  {
+    "id": "4ce2720c",
+    "timestamp": "2026-06-17T13:52:38.631211",
+    "key": "internal:690-Building_Construction/estimate_template.xlsx",
+    "who": "Derrell",
+    "why": "Second test \u2014 verifying 690 approval flow",
+    "status": "resolved_test",
+    "approved_by": "Derrell",
+    "approved_at": "2026-06-17T13:52:41.217607"
+  }
+]

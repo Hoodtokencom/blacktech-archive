@@ -1,0 +1,39 @@
+{
+  "BSC-C-2026-001": {
+    "contract_id": "BSC-C-2026-001",
+    "file": "/home/allenai/blacktech_brain/000-General/dewey-constitutional.md",
+    "file_hash": "077afbde0a8b6629b506499add279bd74106f70cd6633a862bf1a19a4c0866aa",
+    "stage": "draft",
+    "history": [
+      {
+        "stage": "draft",
+        "timestamp": "2026-06-17T13:23:36.061168+00:00",
+        "by": "system",
+        "note": "Contract initialized",
+        "block_index": 46
+      }
+    ],
+    "created": "2026-06-17T13:23:36.061168+00:00",
+    "updated": "2026-06-17T13:23:36.061168+00:00"
+  },
+  "BSC-C-2026-PR001": {
+    "contract_id": "BSC-C-2026-PR001",
+    "file": "/home/allenai/estimates/BSC-E-2026-PR001.html",
+    "file_hash": "17655d1e50c88773b3e1bb31f280123ae207539c57c92d36d287ef212c5ff995",
+    "stage": "draft",
+    "estimate_number": "BSC-E-2026-PR001",
+    "invoice_number": "BSC-E-2026-PR002",
+    "address": "4823 S Prairie Ave, Chicago, IL",
+    "history": [
+      {
+        "stage": "draft",
+        "timestamp": "2026-06-17T13:26:55.925911+00:00",
+        "by": "system",
+        "note": "Contract initialized \u2014 linked to estimate BSC-E-2026-PR001",
+        "block_index": 47
+      }
+    ],
+    "created": "2026-06-17T13:26:55.925911+00:00",
+    "updated": "2026-06-17T13:35:39.811417+00:00"
+  }
+}
