@@ -58,9 +58,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 85124,
-    "modified": "2026-06-18T08:06:06.665171",
-    "hash": "46a4ad8e651d5eb09f1a4e5321467b806d4b9dac581523f6aaa125e61730caa2",
+    "size": 89799,
+    "modified": "2026-06-18T09:42:29.609543",
+    "hash": "1a62bd91bb5147b9cf3f99eddaec284769eedee36f9f21d5fa58bee0bfb4bb8e",
     "description": "[   {     \"index\": 0,     \"timestamp\": \"2026-06-17T12:33:38.436459+00:00\",     \"action\": \"GENESIS\",     \"file\": \"000-General/dewey_blockchain.py\",    ",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
@@ -98,8 +98,8 @@
     "file": "000-General/dewey_catalog.json",
     "type": "data",
     "size": 27785,
-    "modified": "2026-06-18T08:06:00.545144",
-    "hash": "658543ee4475b97371b7abf04ab783ad5ab1bffcb192815c774ba1be5e852584",
+    "modified": "2026-06-18T08:10:01.494229",
+    "hash": "ee7869e483981c5487f817501438c8d1ff58436f8389ea541393746f540dfcb6",
     "description": "[   {     \"title\": \"README.md\",     \"section\": \"000-General\",     \"dewey\": \"000\",     \"dewey_desc\": \"General\",     \"file\": \"000-General/README.md\",   ",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
@@ -245,6 +245,32 @@
     "hash": "1fa76a2e0172bada91b64b448284ad65d8a92a8ca4764591eb213275d93b0fd7",
     "description": "#!/usr/bin/env python3 \"\"\" Dewey 3-Way Mirror Sync Pipeline ================================= Internal Drive (Body) \u2192 Google Drive (Brain) \u2192 GitHub (A",
     "internal_key": "internal:000-General/dewey_sync.py"
+  },
+  {
+    "title": "dewey_trash_log.json",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/dewey_trash_log.json",
+    "type": "data",
+    "size": 2,
+    "modified": "2026-06-18T08:10:33.642374",
+    "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "description": "[]",
+    "internal_key": "internal:000-General/dewey_trash_log.json"
+  },
+  {
+    "title": "dewey_trash_purge.py",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/dewey_trash_purge.py",
+    "type": "code",
+    "size": 7566,
+    "modified": "2026-06-18T08:10:28.990353",
+    "hash": "b83c8d9ee110dad7f373c64d2ad171065f5ea91fd2173ebbadf5741e1b5960aa",
+    "description": "#!/usr/bin/env python3 \"\"\" Dewey 45-Day Trash Purge ======================== GitHub Archive holds a full mirror of the Body. When files are deleted fr",
+    "internal_key": "internal:000-General/dewey_trash_purge.py"
   },
   {
     "title": "find_brain.py",

@@ -50,8 +50,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 85124,
-    "modified": "2026-06-18T08:06:06.665171",
+    "size": 89799,
+    "modified": "2026-06-18T09:42:29.609543",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
   {
@@ -84,7 +84,7 @@
     "file": "000-General/dewey_catalog.json",
     "type": "data",
     "size": 27785,
-    "modified": "2026-06-18T08:06:00.545144",
+    "modified": "2026-06-18T08:10:01.494229",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
   {
@@ -207,6 +207,28 @@
     "size": 13626,
     "modified": "2026-06-18T08:09:58.530216",
     "internal_key": "internal:000-General/dewey_sync.py"
+  },
+  {
+    "title": "dewey_trash_log.json",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/dewey_trash_log.json",
+    "type": "data",
+    "size": 2,
+    "modified": "2026-06-18T08:10:33.642374",
+    "internal_key": "internal:000-General/dewey_trash_log.json"
+  },
+  {
+    "title": "dewey_trash_purge.py",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/dewey_trash_purge.py",
+    "type": "code",
+    "size": 7566,
+    "modified": "2026-06-18T08:10:28.990353",
+    "internal_key": "internal:000-General/dewey_trash_purge.py"
   },
   {
     "title": "find_brain.py",
