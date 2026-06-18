@@ -78,5 +78,77 @@
     "who": "unknown",
     "result": "granted",
     "detail": "approved request 81138ef3"
+  },
+  {
+    "timestamp": "2026-06-17T13:52:17.382030",
+    "action": "request",
+    "key": "internal:650-Management_Business/sop_template.md",
+    "who": "TestUser",
+    "result": "pending",
+    "detail": "Testing the Dewey approval pipeline"
+  },
+  {
+    "timestamp": "2026-06-17T13:52:22.893454",
+    "action": "approve",
+    "key": "internal:650-Management_Business/sop_template.md",
+    "who": "TestUser",
+    "result": "approved",
+    "detail": "Request 128aab87"
+  },
+  {
+    "timestamp": "2026-06-17T13:52:25.656177",
+    "action": "unlock",
+    "key": "internal:650-Management_Business/sop_template.md",
+    "who": "TestUser",
+    "result": "granted",
+    "detail": "approved request 128aab87"
+  },
+  {
+    "timestamp": "2026-06-17T13:52:38.631572",
+    "action": "request",
+    "key": "internal:690-Building_Construction/estimate_template.xlsx",
+    "who": "Derrell",
+    "result": "pending",
+    "detail": "Second test \u2014 verifying 690 approval flow"
+  },
+  {
+    "timestamp": "2026-06-17T13:52:41.217970",
+    "action": "approve",
+    "key": "internal:690-Building_Construction/estimate_template.xlsx",
+    "who": "Derrell",
+    "result": "approved",
+    "detail": "Request 4ce2720c"
+  },
+  {
+    "timestamp": "2026-06-17T13:52:41.297212",
+    "action": "unlock",
+    "key": "internal:690-Building_Construction/estimate_template.xlsx",
+    "who": "Derrell",
+    "result": "granted",
+    "detail": "approved request 4ce2720c"
+  },
+  {
+    "timestamp": "2026-06-17T13:59:11.405101",
+    "action": "unlock",
+    "key": "internal:600-Technology_Applied_Sciences/pi_setup.md",
+    "who": "ssbn-bridge",
+    "result": "granted",
+    "detail": "key access"
+  },
+  {
+    "timestamp": "2026-06-17T13:59:11.448230",
+    "action": "unlock",
+    "key": "internal:600-Technology_Applied_Sciences/pi_setup.md",
+    "who": "Derrell Black",
+    "result": "granted",
+    "detail": "key access"
+  },
+  {
+    "timestamp": "2026-06-17T13:59:11.582754",
+    "action": "blocked",
+    "key": "internal:650-Management_Business/sop.md",
+    "who": "ssbn-bridge",
+    "result": "denied",
+    "detail": "no approval"
   }
 ]

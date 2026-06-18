@@ -295,7 +295,7 @@ if __name__ == "__main__":
     # Sync to Google Drive
     if "--catalog" not in sys.argv:
         print(f"\n☁️  Google Drive sync:")
-        drive_results = sync_to_drive(entries, changes if not "--drive" in sys.argv else None)
+        drive_results = sync_to_drive(entries, changes)
         for r in drive_results:
             print(r)
     
