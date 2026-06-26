@@ -126,8 +126,39 @@ def cmd_key(entry_id):
     print(f"\n   To unlock: python3 dewey_pipeline.py unlock {entry['internal_key']}")
 
 
-def cmd_unlock(key):
+def cmd_unlock(key, who="unknown"):
     """Use the key to retrieve the actual file from Internal Drive."""
+    # ── SECURITY GUARD ──────────────────────────────────────────
+    # Check permission level before unlocking
+    security_script = f"{BRAIN_ROOT}/000-General/dewey_security.py"
+    guard_result = subprocess.run(
+        [sys.executable, security_script, "guard", key, who],
+        capture_output=True, text=True, timeout=10
+    )
+    try:
+        guard = json.loads(guard_result.stdout.strip())
+    except json.JSONDecodeError:
+        print(f"⚠️  Security guard unavailable — proceeding with unlock")
+        guard = {"allowed": True, "level": "unknown", "reason": "guard bypassed"}
+    
+    if not guard.get("allowed", False):
+        level = guard.get("level", "unknown")
+        reason = guard.get("reason", "access denied")
+        
+        if level == "approval":
+            print(f"🟠 LOCKED — This file requires Derrell's approval.")
+            print(f"   Reason: {reason}")
+            print(f"   To request access:")
+            print(f"   python3 dewey_security.py request {key} <your_name> <why you need it>")
+        elif level == "vault":
+            print(f"🔴 LOCKED — This file is in the encrypted vault.")
+            print(f"   Reason: {reason}")
+            print(f"   Use passcode_vault.py to access encrypted files.")
+        else:
+            print(f"🚫 ACCESS DENIED — {reason}")
+        return
+    
+    # ── UNLOCK ──────────────────────────────────────────────────
     # Parse the key: "internal:section/filename" or "internal:path/to/file"
     if key.startswith("internal:"):
         rel_path = key.replace("internal:", "", 1)
@@ -211,18 +242,22 @@ def cmd_trash(file_path):
     dest = os.path.join(GITHUB_ARCHIVE_DIR, f"trash_{datetime.now().strftime('%Y%m%d_%H%M')}_{filename}")
     shutil.move(file_path, dest)
     
-    # Commit to GitHub
+    # Commit to GitHub (use gh token for HTTPS auth)
     subprocess.run(["git", "add", "."], cwd=GITHUB_ARCHIVE_DIR, capture_output=True)
     subprocess.run(
         ["git", "commit", "-m", f"🗑️ Trash: {filename} — {datetime.now().strftime('%Y-%m-%d')}"],
         cwd=GITHUB_ARCHIVE_DIR, capture_output=True
     )
+    # Use gh auth token for push
+    token = subprocess.run(["gh", "auth", "token"], capture_output=True, text=True).stdout.strip()
+    remote_url = f"https://{token}@github.com/Hoodtokencom/blacktech-archive.git"
+    subprocess.run(["git", "remote", "set-url", "origin", remote_url], cwd=GITHUB_ARCHIVE_DIR, capture_output=True)
     result = subprocess.run(["git", "push"], cwd=GITHUB_ARCHIVE_DIR, capture_output=True, text=True)
     
     print(f"🗑️ TRASHED → GitHub Archive")
     print(f"   From: {file_path}")
     print(f"   To:   {dest}")
-    print(f"   Status: {'✅ Pushed' if result.returncode == 0 else '⚠️ Local only (push failed)'}")
+    print(f"   Push: {'✅ Pushed to GitHub' if result.returncode == 0 else '⚠️ Local only (push failed)'}")
     print(f"   To recycle: python3 dewey_pipeline.py recycle")
 
 
@@ -282,8 +317,18 @@ def cmd_map():
 
 
 def cmd_sync():
-    """Sync Brain catalog to Google Drive."""
+    """Sync Brain catalog to Google Drive + auto-log code changes."""
     print("🔄 Syncing Brain → Google Drive...")
+    
+    # ── CODE TRACKER: Log any code changes before sync ──────────────
+    code_tracker = f"{BRAIN_ROOT}/000-General/dewey_code_tracker.py"
+    if os.path.exists(code_tracker):
+        print("   📝 Checking code integrity...")
+        subprocess.run(
+            [sys.executable, code_tracker, "verify"],
+            capture_output=True, timeout=15
+        )
+    
     result = subprocess.run(
         ["rclone", "sync", BRAIN_ROOT, f"gdrive:{GDRIVE_BRAIN_PATH}",
          "--exclude", "*.enc", "--exclude", "*.salt",
@@ -294,6 +339,24 @@ def cmd_sync():
         print(f"✅ Synced to Google Drive: {GDRIVE_BRAIN_PATH}")
     else:
         print(f"❌ Sync failed: {result.stderr}")
+
+
+def cmd_code(subcmd=None, *args):
+    """Code Department — track, verify, and document code changes."""
+    code_tracker = f"{BRAIN_ROOT}/000-General/dewey_code_tracker.py"
+    if not os.path.exists(code_tracker):
+        print("❌ Code tracker not found. Run setup first.")
+        return
+    
+    tracker_args = [sys.executable, code_tracker]
+    if subcmd:
+        tracker_args.append(subcmd)
+        tracker_args.extend(args)
+    
+    result = subprocess.run(tracker_args, capture_output=True, text=True, timeout=30)
+    print(result.stdout)
+    if result.stderr:
+        print(result.stderr, file=sys.stderr)
 
 
 def cmd_index():
@@ -313,23 +376,25 @@ def main():
     
     cmd = sys.argv[1].lower()
     arg = sys.argv[2] if len(sys.argv) > 2 else None
+    who = sys.argv[3] if len(sys.argv) > 3 else "unknown"
     
     commands = {
         "search": lambda: cmd_search(arg),
         "key": lambda: cmd_key(arg),
-        "unlock": lambda: cmd_unlock(arg),
+        "unlock": lambda: cmd_unlock(arg, who),
         "trash": lambda: cmd_trash(arg),
         "recycle": cmd_recycle,
         "map": cmd_map,
         "sync": cmd_sync,
         "index": cmd_index,
+        "code": lambda: cmd_code(arg, *sys.argv[3:]),
     }
     
     if cmd in commands:
         commands[cmd]()
     else:
         print(f"❌ Unknown command: {cmd}")
-        print("Commands: search | key | unlock | trash | recycle | map | sync | index")
+        print("Commands: search | key | unlock | trash | recycle | map | sync | index | code")
 
 
 if __name__ == "__main__":
