@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blacktech Solutions Corp — Estimate BSC-E-2026-PR001-B</title>
+<style>
+  @page { size: letter; margin: 0.5in; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: #222; background: #fff; font-size: 11pt; line-height: 1.4; }
+  
+  .header { background: linear-gradient(135deg, #002244 0%, #001a33 100%); color: #fff; padding: 24px 32px; display: flex; justify-content: space-between; align-items: center; }
+  .header .company { font-size: 22pt; font-weight: 700; color: #69BE28; letter-spacing: 1px; }
+  .header .subtitle { font-size: 10pt; color: #90b8d4; margin-top: 4px; }
+  .header .est-info { text-align: right; }
+  .header .est-label { font-size: 9pt; color: #90b8d4; text-transform: uppercase; }
+  .header .est-num { font-size: 16pt; font-weight: 700; color: #69BE28; }
+  
+  .option-badge { background: #ffab40; color: #002244; padding: 6px 16px; border-radius: 20px; font-weight: 700; font-size: 10pt; display: inline-block; margin-top: 8px; }
+  
+  .info-bar { display: flex; justify-content: space-between; padding: 16px 32px; background: #f4f7fa; border-bottom: 2px solid #002244; }
+  .info-bar .col { flex: 1; }
+  .info-bar .label { font-size: 8pt; text-transform: uppercase; color: #666; font-weight: 600; }
+  .info-bar .value { font-size: 10pt; color: #002244; font-weight: 600; }
+  
+  .section { padding: 12px 32px; }
+  .section-title { font-size: 13pt; font-weight: 700; color: #002244; border-bottom: 2px solid #69BE28; padding-bottom: 4px; margin: 16px 0 8px 0; }
+  
+  table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 10pt; }
+  th { background: #002244; color: #fff; padding: 8px 10px; text-align: left; font-size: 9pt; text-transform: uppercase; }
+  td { padding: 6px 10px; border-bottom: 1px solid #e0e0e0; }
+  tr:nth-child(even) { background: #f9fbfd; }
+  .subtotal-row td { font-weight: 700; background: #eef3f8; border-top: 2px solid #002244; }
+  .total-row td { font-weight: 700; background: #002244; color: #69BE28; font-size: 12pt; }
+  .right { text-align: right; }
+  
+  .progress-section { margin: 12px 0; }
+  .progress-bar-bg { background: #e0e0e0; border-radius: 8px; height: 18px; width: 100%; }
+  .progress-bar-fill { background: linear-gradient(90deg, #69BE28, #4a9e1a); height: 18px; border-radius: 8px; text-align: center; color: #fff; font-size: 9pt; font-weight: 700; line-height: 18px; }
+  
+  .floor-progress { display: flex; gap: 16px; margin: 8px 0; }
+  .floor-card { flex: 1; background: #f4f7fa; border-radius: 8px; padding: 10px; border-left: 4px solid #ffab40; }
+  .floor-card .floor-name { font-weight: 700; color: #002244; font-size: 10pt; }
+  .floor-card .floor-pct { font-size: 18pt; font-weight: 700; color: #ffab40; }
+  .floor-card .floor-detail { font-size: 8pt; color: #555; }
+  
+  .footer { background: #002244; color: #90b8d4; padding: 16px 32px; font-size: 8pt; text-align: center; margin-top: 20px; }
+  .footer .green { color: #69BE28; font-weight: 700; }
+  
+  .terms { font-size: 8.5pt; color: #555; padding: 8px 32px; }
+  .terms li { margin: 3px 0; }
+  
+  .payment-schedule { background: #f4f7fa; border-radius: 8px; padding: 12px; margin: 8px 0; }
+  .payment-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #d0d8e0; }
+  .payment-row:last-child { border-bottom: none; }
+  .payment-row .milestone { font-weight: 600; color: #002244; }
+  .payment-row .amount { font-weight: 700; color: #ffab40; }
+  
+  .savings-banner { background: linear-gradient(90deg, #69BE28, #4a9e1a); color: #fff; padding: 12px 32px; font-weight: 700; text-align: center; font-size: 11pt; }
+</style>
+</head>
+<body>
+
+<div class="savings-banner">
+  💰 SAVE $11,326 vs Option A — Value Engineering with Standard Materials
+</div>
+
+<!-- HEADER -->
+<div class="header">
+  <div>
+    <div class="company">BLACKTECH SOLUTIONS CORP</div>
+    <div class="subtitle">Licensed Electrical Contractor — Chicago, IL</div>
+    <div class="option-badge">OPTION B — VALUE</div>
+  </div>
+  <div class="est-info">
+    <div class="est-label">Estimate Number</div>
+    <div class="est-num">BSC-E-2026-PR001-B</div>
+    <div class="est-label" style="margin-top:6px;">Date</div>
+    <div class="value" style="color:#fff;">June 14, 2026</div>
+  </div>
+</div>
+
+<!-- PROJECT INFO -->
+<div class="info-bar">
+  <div class="col">
+    <div class="label">Project</div>
+    <div class="value">Two-Flat Electrical Rehab</div>
+    <div class="value" style="font-weight:400;">4823 S Prairie Ave</div>
+  </div>
+  <div class="col">
+    <div class="label">Site Address</div>
+    <div class="value">4823 S Prairie Ave</div>
+    <div class="value" style="font-weight:400;">Chicago, IL 60615</div>
+  </div>
+  <div class="col">
+    <div class="label">Client</div>
+    <div class="value">Alain David Carranza</div>
+    <div class="value" style="font-weight:400;">(773) 414-1473</div>
+  </div>
+</div>
+
+<!-- CURRENT PROGRESS -->
+<div class="section">
+  <div class="section-title">📊 Current Electrical Progress — As of June 14, 2026</div>
+  
+  <div class="progress-section">
+    <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+      <span style="font-weight:700; color:#002244;">Overall Electrical Completion</span>
+      <span style="font-weight:700; color:#ffab40;">~52%</span>
+    </div>
+    <div class="progress-bar-bg">
+      <div class="progress-bar-fill" style="width:52%; background: linear-gradient(90deg, #ffab40, #e69500);">52%</div>
+    </div>
+  </div>
+  
+  <div class="floor-progress">
+    <div class="floor-card">
+      <div class="floor-name">Basement</div>
+      <div class="floor-pct">20%</div>
+      <div class="floor-detail">Panel mounted, box placement, can layout</div>
+    </div>
+    <div class="floor-card">
+      <div class="floor-name">1st Floor</div>
+      <div class="floor-pct">90%</div>
+      <div class="floor-detail">Living, dining, bath, 2 BR roughed</div>
+    </div>
+    <div class="floor-card">
+      <div class="floor-name">2nd Floor</div>
+      <div class="floor-pct">10%</div>
+      <div class="floor-detail">Box layout only</div>
+    </div>
+    <div class="floor-card">
+      <div class="floor-name">3rd Floor</div>
+      <div class="floor-pct">90%</div>
+      <div class="floor-detail">Full rough-in nearly complete</div>
+    </div>
+  </div>
+</div>
+
+<!-- SCOPE OF WORK -->
+<div class="section">
+  <div class="section-title">📋 Scope of Work — Option B (Value)</div>
+  
+  <table>
+    <thead>
+      <tr>
+        <th style="width:50%;">Description</th>
+        <th class="right">Labor Hrs</th>
+        <th class="right">Materials</th>
+        <th class="right">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background:#002244; color:#fff;">
+        <td colspan="4" style="font-weight:700;">1. SERVICE ENTRANCE & PANEL DISTRIBUTION</td>
+      </tr>
+      <tr>
+        <td>200A Main Service Panel — Eaton BR (includes meter base, mast, weatherhead)</td>
+        <td class="right">24</td>
+        <td class="right">$1,950</td>
+        <td class="right">$5,550</td>
+      </tr>
+      <tr>
+        <td>(2) 100A Sub-Panels — One per unit (Eaton BR 20-space)</td>
+        <td class="right">16</td>
+        <td class="right">$850</td>
+        <td class="right">$3,250</td>
+      </tr>
+      <tr>
+        <td>Service entrance conductors (2/0 AWG aluminum, EMT conduit)</td>
+        <td class="right">12</td>
+        <td class="right">$520</td>
+        <td class="right">$2,320</td>
+      </tr>
+      <tr class="subtotal-row">
+        <td>Subtotal — Service & Distribution</td>
+        <td class="right">52</td>
+        <td class="right">$3,320</td>
+        <td class="right">$11,120</td>
+      </tr>
+      
+      <tr style="background:#002244; color:#fff;">
+        <td colspan="4" style="font-weight:700;">2. BASEMENT ELECTRICAL</td>
+      </tr>
+      <tr>
+        <td>General lighting (4× LED ceiling mounts), receptacles, switches</td>
+        <td class="right">14</td>
+        <td class="right">$280</td>
+        <td class="right">$2,380</td>
+      </tr>
+      <tr>
+        <td>Laundry circuit (20A dedicated), utility sink GFCI</td>
+        <td class="right">6</td>
+        <td class="right">$180</td>
+        <td class="right">$1,080</td>
+      </tr>
+      <tr>
+        <td>Smoke/CO detectors (hardwired, interconnected — 4 units)</td>
+        <td class="right">8</td>
+        <td class="right">$240</td>
+        <td class="right">$1,440</td>
+      </tr>
+      <tr class="subtotal-row">
+        <td>Subtotal — Basement</td>
+        <td class="right">28</td>
+        <td class="right">$700</td>
+        <td class="right">$4,900</td>
+      </tr>
+      
+      <tr style="background:#002244; color:#fff;">
+        <td colspan="4" style="font-weight:700;">3. FIRST FLOOR UNIT (2BR/1BA)</td>
+      </tr>
+      <tr>
+        <td>Living Room — LED ceiling mounts (4×), standard switches, 6× receptacles</td>
+        <td class="right">16</td>
+        <td class="right">$420</td>
+        <td class="right">$2,820</td>
+      </tr>
+      <tr>
+        <td>Dining Room — LED ceiling mount (2×), ceiling fan box, 4× receptacles</td>
+        <td class="right">10</td>
+        <td class="right">$240</td>
+        <td class="right">$1,740</td>
+      </tr>
+      <tr>
+        <td>Kitchen — (3) small appliance circuits, range circuit, dishwasher/disposal combo circuit, LED ceiling mount</td>
+        <td class="right">24</td>
+        <td class="right">$980</td>
+        <td class="right">$4,580</td>
+      </tr>
+      <tr>
+        <td>Bathroom — GFCI vanity circuit, exhaust fan, vanity lighting</td>
+        <td class="right">14</td>
+        <td class="right">$380</td>
+        <td class="right">$2,480</td>
+      </tr>
+      <tr>
+        <td>Bedrooms (2) — Ceiling boxes, standard switches, 8× receptacles</td>
+        <td class="right">18</td>
+        <td class="right">$380</td>
+        <td class="right">$3,080</td>
+      </tr>
+      <tr class="subtotal-row">
+        <td>Subtotal — 1st Floor Unit</td>
+        <td class="right">82</td>
+        <td class="right">$2,400</td>
+        <td class="right">$14,700</td>
+      </tr>
+      
+      <tr style="background:#002244; color:#fff;">
+        <td colspan="4" style="font-weight:700;">4. SECOND FLOOR UNIT (2BR/1BA) — IDENTICAL SCOPE</td>
+      </tr>
+      <tr>
+        <td>Complete electrical rough-in + trim (same as 1st floor unit)</td>
+        <td class="right">82</td>
+        <td class="right">$2,400</td>
+        <td class="right">$14,700</td>
+      </tr>
+      <tr class="subtotal-row">
+        <td>Subtotal — 2nd Floor Unit</td>
+        <td class="right">82</td>
+        <td class="right">$2,400</td>
+        <td class="right">$14,700</td>
+      </tr>
+      
+      <tr style="background:#002244; color:#fff;">
+        <td colspan="4" style="font-weight:700;">5. COMMON AREAS & EXTERIOR</td>
+      </tr>
+      <tr>
+        <td>Front porch (2 units) — Weatherproof receptacles, ceiling boxes</td>
+        <td class="right">10</td>
+        <td class="right">$280</td>
+        <td class="right">$1,780</td>
+      </tr>
+      <tr>
+        <td>Rear yard — (2) weatherproof receptacles, 1× security light circuit</td>
+        <td class="right">6</td>
+        <td class="right">$160</td>
+        <td class="right">$1,060</td>
+      </tr>
+      <tr>
+        <td>Stairwell lighting (3 floors) — LED wall packs, 3-way switching</td>
+        <td class="right">12</td>
+        <td class="right">$280</td>
+        <td class="right">$2,080</td>
+      </tr>
+      <tr class="subtotal-row">
+        <td>Subtotal — Common & Exterior</td>
+        <td class="right">28</td>
+        <td class="right">$720</td>
+        <td class="right">$4,920</td>
+      </tr>
+      
+      <tr style="background:#002244; color:#fff;">
+        <td colspan="4" style="font-weight:700;">6. PERMITS & INSPECTIONS</td>
+      </tr>
+      <tr>
+        <td>City of Chicago Electrical Permit (Two-Flat Rehab)</td>
+        <td class="right">—</td>
+        <td class="right">$850</td>
+        <td class="right">$850</td>
+      </tr>
+      <tr>
+        <td>Inspection coordination (rough-in + final)</td>
+        <td class="right">6</td>
+        <td class="right">$—</td>
+        <td class="right">$900</td>
+      </tr>
+      <tr class="subtotal-row">
+        <td>Subtotal — Permits & Inspections</td>
+        <td class="right">6</td>
+        <td class="right">$850</td>
+        <td class="right">$1,750</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr class="total-row">
+        <td>GRAND TOTAL — OPTION B (VALUE)</td>
+        <td class="right">278 HRS</td>
+        <td class="right">$10,390</td>
+        <td class="right">$54,020</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+<!-- OPTION B VALUE NOTES -->
+<div class="section">
+  <div class="section-title">💡 What's Different in Option B</div>
+  <ul style="font-size: 9.5pt; color: #444; padding-left: 20px; line-height: 1.6;">
+    <li><strong>Panels:</strong> Eaton BR (residential grade) vs Square D QO — saves $1,400</li>
+    <li><strong>Service conductors:</strong> Aluminum vs Copper — saves $370</li>
+    <li><strong>Lighting:</strong> Standard LED ceiling mounts vs recessed cans — saves $1,200</li>
+    <li><strong>Kitchen circuits:</strong> 3 small appliance circuits vs 4 — saves $450</li>
+    <li><strong>Receptacles/Switches:</strong> Standard grade vs decorator grade — saves $680</li>
+    <li><strong>Labor reduction:</strong> 58 fewer hours (simpler installs) — saves $8,700</li>
+  </ul>
+  <p style="font-size: 9pt; color: #666; margin-top: 12px;"><strong>Note:</strong> Both options meet Chicago Electrical Code. Option A uses premium materials and more fixtures for enhanced aesthetics and functionality.</p>
+</div>
+
+<!-- PAYMENT SCHEDULE -->
+<div class="section">
+  <div class="section-title">💰 Payment Schedule</div>
+  <div class="payment-schedule">
+    <div class="payment-row">
+      <span class="milestone">25% — Upon signing (deposit to start)</span>
+      <span class="amount">$13,505</span>
+    </div>
+    <div class="payment-row">
+      <span class="milestone">25% — Rough-in 50% complete</span>
+      <span class="amount">$13,505</span>
+    </div>
+    <div class="payment-row">
+      <span class="milestone">25% — Rough-in inspection passed</span>
+      <span class="amount">$13,505</span>
+    </div>
+    <div class="payment-row">
+      <span class="milestone">25% — Final inspection passed</span>
+      <span class="amount">$13,505</span>
+    </div>
+  </div>
+</div>
+
+<!-- TERMS -->
+<div class="terms">
+  <strong>Terms & Conditions:</strong>
+  <ul>
+    <li>Estimate valid for 30 days from date above</li>
+    <li>All work performed per Chicago Electrical Code (EMT conduit throughout)</li>
+    <li>1-year warranty on labor and materials</li>
+    <li>Does not include HVAC, plumbing, low-voltage, or drywall repair</li>
+    <li>Utility company fees (ComEd) not included</li>
+    <li>Work schedule subject to permit approval and inspection availability</li>
+  </ul>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <span class="green">BLACKTECH SOLUTIONS CORP</span> &nbsp;|&nbsp; 14076 Lincoln Ave, Dolton, IL &nbsp;|&nbsp; payroll@blacktechsolutionscorp.com &nbsp;|&nbsp; EIN: 82-3394717
+  <br>Licensed Electrical Contractor — City of Chicago
+</div>
+
+</body>
+</html>

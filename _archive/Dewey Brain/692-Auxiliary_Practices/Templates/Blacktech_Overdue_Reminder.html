@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Overdue Invoice Reminder — Blacktech Solutions Corp</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 24px;
+      background: #f8f9fa;
+    }
+    .email-box {
+      background: #ffffff;
+      border-top: 4px solid #69BE28;
+      padding: 32px;
+      border-radius: 4px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    .brand img {
+      height: 50px;
+      margin-right: 12px;
+    }
+    .brand-text h1 {
+      margin: 0;
+      font-size: 20px;
+      color: #002244;
+      letter-spacing: 1px;
+    }
+    .brand-text p {
+      margin: 4px 0 0 0;
+      font-size: 12px;
+      color: #69BE28;
+      font-weight: bold;
+    }
+    h2 {
+      color: #002244;
+      font-size: 18px;
+      margin-top: 0;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 8px;
+    }
+    .highlight {
+      background: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 12px 16px;
+      margin: 16px 0;
+      border-radius: 2px;
+    }
+    .amount {
+      font-size: 22px;
+      font-weight: bold;
+      color: #002244;
+    }
+    .status {
+      color: #dc3545;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .footer {
+      margin-top: 32px;
+      padding-top: 16px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 13px;
+      color: #666;
+    }
+    .footer strong {
+      color: #002244;
+    }
+    a {
+      color: #69BE28;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-box">
+    <div class="brand">
+      <img src="Photos/blacktech_logo.jpg" alt="Blacktech Solutions Corp">
+      <div class="brand-text">
+        <h1>BLACKTECH SOLUTIONS CORP</h1>
+        <p>Powering Communities, Empowering Lives</p>
+      </div>
+    </div>
+
+    <h2>Invoice #[INVOICE_NUMBER] — REVISED & OVERDUE</h2>
+
+    <p>Hi <strong>[CONTACT_NAME]</strong>,</p>
+
+    <p>This is a follow-up on <strong>Invoice #[INVOICE_NUMBER]</strong> dated <strong>[INVOICE_DATE]</strong>, for electrical work at <strong>[PROJECT_NAME]</strong>.</p>
+
+    <div class="highlight">
+      <p>Revised amount due: <span class="amount">$[AMOUNT_DUE]</span></p>
+      <p>Status: <span class="status">OVERDUE</span></p>
+    </div>
+
+    <p>This revised invoice reflects any agreed scope adjustments. If payment has already been sent, please reply with confirmation and disregard this notice. If there are questions or disputes, reach out directly and we'll resolve it quickly.</p>
+
+    <p><strong>Payment methods:</strong> Check payable to Blacktech Solutions Corp, or wire transfer details available upon request.</p>
+
+    <div class="footer">
+      <p><strong>Contact:</strong><br>
+      📞 <a href="tel:3129652782">(312) 965-2782</a><br>
+      📧 <a href="mailto:support@blacktechsolutionscorp.com">support@blacktechsolutionscorp.com</a></p>
+
+      <p>Thanks,<br>
+      <strong>Derrell Black</strong><br>
+      Blacktech Solutions Corp</p>
+    </div>
+  </div>
+</body>
+</html>

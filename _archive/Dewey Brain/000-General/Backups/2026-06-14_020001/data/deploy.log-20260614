@@ -1,0 +1,13 @@
+[2026-06-07 08:51:43] ═══ CI/CD Deploy Check Started ═══
+[2026-06-07 08:51:44] GitHub API error: 404
+[2026-06-07 08:51:44] Failed to get remote SHA. Aborting.
+[2026-06-07 08:53:19] ═══ CI/CD Deploy Check Started ═══
+[2026-06-07 08:53:19] GitHub API error: 422
+[2026-06-07 08:53:19] Failed to get remote SHA. Aborting.
+[2026-06-07 08:53:34] ═══ CI/CD Deploy Check Started ═══
+[2026-06-07 08:53:34] Remote SHA: ce3c29cf...
+[2026-06-07 08:53:34] Local SHA:  None
+[2026-06-07 08:53:34] 🚀 NEW COMMIT DETECTED! Starting deploy...
+[2026-06-07 08:53:34] Cloning repo to /home/allenai/blacktech-repo...
+[2026-06-07 08:55:34] Clone failed: Command '['git', 'clone', 'https://github.com/Hoodtokencom/assets.git', '/home/allenai/blacktech-repo']' timed out after 120 seconds
+[2026-06-07 08:55:34] Repo setup failed. Aborting.

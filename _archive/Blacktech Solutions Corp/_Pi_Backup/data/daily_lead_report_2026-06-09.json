@@ -1,0 +1,110 @@
+{
+  "date": "2026-06-09",
+  "report_type": "daily_lead_processing",
+  "new_leads_today": [
+    {
+      "name": "Marcus Johnson",
+      "source": "referral",
+      "interest": "EV Charger Level 2 + Panel Upgrade to 200A",
+      "address": "5642 S Cottage Grove Ave, Chicago IL 60637",
+      "phone": "773-555-0192",
+      "email": "marcus.johnson@email.com",
+      "estimated_value": 5300,
+      "priority": "A-Lead",
+      "action": "Quote prep needed \u2014 EV Charger $1,800 + 200A upgrade $3,500",
+      "assigned_to": "Derrell Black"
+    }
+  ],
+  "email_leads_screened": [
+    {
+      "name": "Justin Moore / W.M. Jordan Company",
+      "email": "purchasing@wmjordann.com",
+      "interest": "Commercial solar: 540 panels, 24\u00d710KW inverters, 120 batteries",
+      "location": "Newport News, VA (Southeast)",
+      "qualification": "OUTSIDE SERVICE AREA \u2014 Possible supplier partnership or referral",
+      "action": "Flag for Derrell review \u2014 potential Think Energy supplier connection",
+      "priority": "B-Lead"
+    },
+    {
+      "name": "Wentworth Gardens Rebid",
+      "contact": "Felecia Lofton <flofton@eastlakemgmt.com>",
+      "interest": "Water spigot repair + hose installation \u2014 NOT electrical",
+      "location": "3770 S Wentworth, Chicago (CHA property)",
+      "qualification": "Plumbing scope only \u2014 outside Blacktech core service",
+      "action": "Archive \u2014 not in scope",
+      "priority": "C-Lead"
+    }
+  ],
+  "active_think_energy_leads": [
+    {
+      "name": "Patricia Johnson",
+      "address": "7845 S Cottage Grove Ave",
+      "phone": "(773) 555-0847",
+      "status": "assessment",
+      "days_since_created": 1,
+      "services": [
+        "Panel Upgrade",
+        "Heat Pump",
+        "Water Heater"
+      ],
+      "estimated_value_blacktech": 10000,
+      "qualifies_income_program": true,
+      "action": "Schedule site visit \u2014 gas home, income qualifies WHE program",
+      "priority": "A-Lead"
+    },
+    {
+      "name": "Marcus Williams",
+      "address": "9234 S Halsted St",
+      "phone": "(773) 555-0192",
+      "status": "closeout_complete",
+      "permit": "CHI-2026-ELC-88421",
+      "comed_ref": "EESP-WHE-60628-0042",
+      "action": "Update status to CLOSED \u2014 permit filed, COMED ref on file",
+      "priority": "Housekeeping"
+    },
+    {
+      "name": "Maria Montgomery",
+      "phone": "7735551234",
+      "email": "maria@test.com",
+      "zip": "60619",
+      "status": "new",
+      "days_since_created": 14,
+      "monthly_savings": 45.0,
+      "action": "OVERDUE follow-up \u2014 14 days no contact \u2014 call or text today",
+      "priority": "B-Lead"
+    }
+  ],
+  "invoices_due_soon": [
+    {
+      "customer": "Ms. Williams",
+      "invoice": "BSC-INV-7458-2026",
+      "amount": 1462.48,
+      "due_date": "2026-06-20",
+      "days_until_due": 11,
+      "action": "Monitor \u2014 11 days out"
+    },
+    {
+      "customer": "Monster Construction / Rob Moore",
+      "invoice": "BSC20266515",
+      "amount": 24990,
+      "due_date": "2026-06-21",
+      "days_until_due": 12,
+      "action": "Monitor \u2014 12 days out"
+    }
+  ],
+  "open_estimates_needing_follow_up": [
+    {
+      "customer": "LaKiesha Johnson",
+      "scope": "Electrical Demo and Installation",
+      "amount": 555.8,
+      "action": "Follow-up on estimate"
+    },
+    {
+      "customer": "Victoria Young",
+      "address": "10150 S Luella",
+      "scope": "Electrical",
+      "amount": 12500,
+      "action": "Follow-up on estimate \u2014 $12,500 high priority"
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blacktech Solutions Corp — Warranty Certificate</title>
+<style>
+  :root {
+    --bt-navy: #002244;
+    --bt-green: #69BE28;
+    --bt-silver: #A5ACAF;
+    --bt-white: #ffffff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background: #f0f2f5;
+    color: #1a1a1a;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .header {
+    background: var(--bt-navy);
+    padding: 24px 28px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .header-left { display: flex; align-items: center; gap: 14px; }
+  .logo-img { height: 72px; border-radius: 6px; background: #fff; padding: 3px; }
+  .warranty-badge {
+    background: var(--bt-green);
+    color: var(--bt-navy);
+    font-weight: 700;
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  .body-section {
+    background: #fff;
+    padding: 32px 28px;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+  }
+  .certificate-title {
+    text-align: center;
+    color: var(--bt-navy);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .certificate-subtitle {
+    text-align: center;
+    color: var(--bt-silver);
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+  .info-card {
+    background: #f8f9fa;
+    border-left: 4px solid var(--bt-green);
+    padding: 14px 16px;
+    border-radius: 4px;
+  }
+  .info-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--bt-silver);
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+  .info-value {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--bt-navy);
+  }
+  .warranty-box {
+    background: linear-gradient(135deg, #f0f7ff 0%, #e8f5e9 100%);
+    border: 2px solid var(--bt-green);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+  .warranty-box h3 {
+    color: var(--bt-navy);
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .coverage-list {
+    list-style: none;
+    padding: 0;
+  }
+  .coverage-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .coverage-list li:last-child { border-bottom: none; }
+  .check-icon {
+    color: var(--bt-green);
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .terms-section {
+    background: #fff;
+    padding: 24px 28px;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+  }
+  .terms-section h3 {
+    color: var(--bt-navy);
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .terms-section p {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  .footer {
+    background: var(--bt-navy);
+    padding: 20px 28px;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .footer-text {
+    color: var(--bt-silver);
+    font-size: 12px;
+  }
+  .footer-green {
+    color: var(--bt-green);
+    font-weight: 600;
+  }
+  .seal-section {
+    text-align: center;
+    padding: 20px;
+  }
+  .seal {
+    display: inline-block;
+    border: 3px solid var(--bt-green);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: var(--bt-green);
+    font-weight: 900;
+    font-size: 13px;
+    transform: rotate(-15deg);
+    opacity: 0.85;
+  }
+  @media print {
+    body { background: #fff; padding: 0; }
+    .header, .footer { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <img src="file:///home/allenai/estimates/blacktech_logo.jpg" class="logo-img" alt="Blacktech">
+  </div>
+  <div class="header-right">
+    <div class="warranty-badge">WARRANTY #BSC-W-1360</div>
+  </div>
+</div>
+
+<div class="body-section">
+  <div class="certificate-title">CERTIFICATE OF WARRANTY</div>
+  <div class="certificate-subtitle">Issued by Blacktech Solutions Corp — Licensed Electrical Contractor</div>
+
+  <div class="info-grid">
+    <div class="info-card">
+      <div class="info-label">Client</div>
+      <div class="info-value">Phil Powell</div>
+    </div>
+    <div class="info-card">
+      <div class="info-label">Project</div>
+      <div class="info-value">Eco School — Ceiling Tile R&R</div>
+    </div>
+    <div class="info-card">
+      <div class="info-label">Location</div>
+      <div class="info-value">Veteran Prestige / Eco School</div>
+    </div>
+    <div class="info-card">
+      <div class="info-label">Invoice Reference</div>
+      <div class="info-value">#1360 — 06/02/2026</div>
+    </div>
+    <div class="info-card">
+      <div class="info-label">Warranty Issued</div>
+      <div class="info-value">June 17, 2026</div>
+    </div>
+    <div class="info-card">
+      <div class="info-label">Warranty Expires</div>
+      <div class="info-value">June 17, 2027</div>
+    </div>
+  </div>
+
+  <div class="warranty-box">
+    <h3>🛡️ Workmanship Warranty Coverage</h3>
+    <ul class="coverage-list">
+      <li><span class="check-icon">✓</span> <strong>Electrical Workmanship</strong> — All labor performed by Blacktech Solutions Corp is warranted against defects in workmanship for a period of <strong>one (1) year</strong> from the date of substantial completion.</li>
+      <li><span class="check-icon">✓</span> <strong>Materials &amp; Equipment</strong> — All materials and equipment installed carry the manufacturer's standard warranty. Manufacturer warranty terms apply and are passed through to the client.</li>
+      <li><span class="check-icon">✓</span> <strong>Code Compliance</strong> — All work was performed in accordance with the National Electrical Code (NEC) and local Chicago building codes in effect at the time of installation.</li>
+      <li><span class="check-icon">✓</span> <strong>Permit &amp; Inspection</strong> — Work was performed under applicable permits and passed final electrical inspection by the City of Chicago Department of Buildings.</li>
+      <li><span class="check-icon">✓</span> <strong>Call-Back Service</strong> — Warranty service calls are prioritized. Contact Derrell Black directly at <strong>payroll@blacktechsolutionscorp.com</strong> or call for immediate dispatch.</li>
+    </ul>
+  </div>
+
+  <div class="seal-section">
+    <div class="seal">BLACKTECH<br>WARRANTY<br>SEAL</div>
+  </div>
+</div>
+
+<div class="terms-section">
+  <h3>📋 Warranty Terms &amp; Conditions</h3>
+  <p><strong>1. Scope.</strong> This warranty covers electrical workmanship only. It does not cover damage resulting from misuse, alteration, improper maintenance, natural disasters, or work performed by other contractors after our completion.</p>
+  <p><strong>2. Manufacturer Warranties.</strong> Fixtures, panels, breakers, and equipment are covered by their respective manufacturer warranties. Blacktech facilitates manufacturer claims but is not the warrantor of manufactured products.</p>
+  <p><strong>3. Exclusions.</strong> This warranty excludes: (a) damage from power surges, lightning, or utility grid events; (b) alterations made by others; (c) normal wear and tear; (d) consumable items (bulbs, batteries).</p>
+  <p><strong>4. Claim Process.</strong> To make a warranty claim, contact Blacktech Solutions Corp in writing within the warranty period. We will inspect within 10 business days and repair or replace covered defects at no charge.</p>
+  <p><strong>5. Transferability.</strong> This warranty is transferable to a new property owner within the warranty period upon written notice to Blacktech Solutions Corp.</p>
+  <p><strong>6. Governing Law.</strong> This warranty is governed by the laws of the State of Illinois. Any disputes shall be resolved in Cook County, Illinois.</p>
+</div>
+
+<div class="footer">
+  <div class="footer-text">
+    <span class="footer-green">Blacktech Solutions Corp</span> — Licensed Electrical Contractor<br>
+    10052 S Forest Ave, Chicago, IL 60628<br>
+    payroll@blacktechsolutionscorp.com | blacktechsolutionscorp.com
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+- [2026-06-26 07:04:07] Inbox route [🔑 keyword 'contract']: contract-invoice-template.html → 690-Building_Construction (SHA256: 174edcf369ea...)
+- [2026-06-26 07:04:07] Inbox route [🔑 keyword 'catalog']: dewey_catalog_archive_2026-06-17.json → 691-Building_Materials (SHA256: b82e57a05acc...)

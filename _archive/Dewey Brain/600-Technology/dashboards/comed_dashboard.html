@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blacktech Solutions — ComEd EESP Dashboard</title>
+<style>
+:root {
+  --bg: #0a0e1a;
+  --card: #111827;
+  --border: #1e2d40;
+  --blue: #1a73e8;
+  --cyan: #00bcd4;
+  --green: #22c55e;
+  --yellow: #f59e0b;
+  --red: #ef4444;
+  --purple: #a855f7;
+  --orange: #f97316;
+  --text: #e2e8f0;
+  --muted: #64748b;
+  --accent: #0ea5e9;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; min-height: 100vh; }
+
+/* HEADER */
+.header {
+  background: linear-gradient(135deg, #0a0e1a 0%, #0f1c2e 100%);
+  border-bottom: 2px solid var(--blue);
+  padding: 12px 20px;
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;
+}
+.header-left { display: flex; align-items: center; gap: 12px; }
+.logo { width: 42px; height: 42px; background: var(--blue); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 20px; }
+.header-title { font-size: 1.1rem; font-weight: 700; color: #fff; }
+.header-sub { font-size: 0.72rem; color: var(--cyan); letter-spacing: 1px; text-transform: uppercase; }
+.eesp-badge { background: linear-gradient(135deg, #1a73e8, #00bcd4); color: #fff; font-size: 0.7rem; font-weight: 700; padding: 4px 10px; border-radius: 20px; letter-spacing: 1px; }
+
+/* NAV TABS */
+.nav-tabs { background: #0d1520; border-bottom: 1px solid var(--border); display: flex; overflow-x: auto; gap: 0; }
+.nav-tab { padding: 12px 18px; font-size: 0.82rem; font-weight: 600; color: var(--muted); cursor: pointer; border-bottom: 3px solid transparent; white-space: nowrap; transition: all 0.2s; }
+.nav-tab:hover { color: var(--text); background: #111827; }
+.nav-tab.active { color: var(--cyan); border-bottom-color: var(--cyan); background: #111827; }
+
+/* MAIN */
+.main { padding: 20px; max-width: 1400px; margin: 0 auto; }
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* STAT CARDS */
+.stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; margin-bottom: 24px; }
+.stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; text-align: center; }
+.stat-num { font-size: 2rem; font-weight: 800; }
+.stat-label { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; margin-top: 4px; }
+.stat-card.blue .stat-num { color: var(--blue); }
+.stat-card.green .stat-num { color: var(--green); }
+.stat-card.yellow .stat-num { color: var(--yellow); }
+.stat-card.cyan .stat-num { color: var(--cyan); }
+.stat-card.purple .stat-num { color: var(--purple); }
+.stat-card.red .stat-num { color: var(--red); }
+
+/* SECTION HEADERS */
+.section-title { font-size: 1rem; font-weight: 700; color: var(--cyan); margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+
+/* PIPELINE STAGES */
+.pipeline-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 24px; }
+.stage-box { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px; text-align: center; cursor: pointer; transition: all 0.2s; }
+.stage-box:hover { border-color: var(--cyan); }
+.stage-box.active-stage { border-color: var(--cyan); box-shadow: 0 0 12px rgba(0,188,212,0.3); }
+.stage-icon { font-size: 1.5rem; }
+.stage-name { font-size: 0.72rem; font-weight: 600; margin-top: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+.stage-count { font-size: 1.4rem; font-weight: 800; margin-top: 4px; }
+
+/* JOB CARDS */
+.jobs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+.job-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; transition: border-color 0.2s; }
+.job-card:hover { border-color: var(--blue); }
+.job-card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
+.job-name { font-weight: 700; font-size: 1rem; }
+.job-addr { font-size: 0.78rem; color: var(--muted); margin-top: 2px; }
+.status-badge { font-size: 0.68rem; font-weight: 700; padding: 3px 8px; border-radius: 12px; white-space: nowrap; }
+.status-new       { background: #1e3a5f; color: #60a5fa; }
+.status-contacted { background: #1a2e1a; color: #4ade80; }
+.status-walkthrough { background: #2d2000; color: #fbbf24; }
+.status-assessment  { background: #2d1a00; color: #fb923c; }
+.status-contract  { background: #2a1040; color: #c084fc; }
+.status-active    { background: #1a2e1a; color: #22c55e; }
+.status-complete  { background: #0a2010; color: #86efac; }
+.status-cancelled { background: #2a0a0a; color: #f87171; }
+
+.services-tags { display: flex; flex-wrap: wrap; gap: 5px; margin: 8px 0; }
+.svc-tag { font-size: 0.66rem; background: #1e2d40; color: var(--cyan); border-radius: 8px; padding: 2px 8px; }
+.job-meta { font-size: 0.72rem; color: var(--muted); display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
+.job-actions { display: flex; gap: 6px; flex-wrap: wrap; }
+.btn { padding: 6px 12px; border-radius: 6px; font-size: 0.72rem; font-weight: 600; border: none; cursor: pointer; transition: opacity 0.2s; }
+.btn:hover { opacity: 0.85; }
+.btn-blue   { background: var(--blue); color: #fff; }
+.btn-green  { background: #166534; color: #86efac; }
+.btn-yellow { background: #78350f; color: #fde68a; }
+.btn-cyan   { background: #0e4f5e; color: #67e8f9; }
+.btn-red    { background: #7f1d1d; color: #fca5a5; }
+.btn-purple { background: #3b0764; color: #d8b4fe; }
+.btn-orange { background: #7c2d12; color: #fed7aa; }
+.btn-sm     { padding: 4px 8px; font-size: 0.68rem; }
+
+/* FORMS */
+.form-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-bottom: 20px; }
+.form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+.form-group { display: flex; flex-direction: column; gap: 5px; }
+.form-group label { font-size: 0.75rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+.form-group input, .form-group select, .form-group textarea {
+  background: #0d1520; border: 1px solid var(--border); color: var(--text);
+  border-radius: 8px; padding: 9px 12px; font-size: 0.85rem; outline: none;
+  transition: border-color 0.2s;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--blue); }
+.form-group textarea { resize: vertical; min-height: 80px; }
+.services-check { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 8px; }
+.check-item { display: flex; align-items: center; gap: 8px; font-size: 0.82rem; cursor: pointer; padding: 6px 10px; background: #0d1520; border: 1px solid var(--border); border-radius: 8px; transition: border-color 0.2s; }
+.check-item:hover { border-color: var(--cyan); }
+.check-item input[type=checkbox] { width: 15px; height: 15px; accent-color: var(--cyan); }
+.form-actions { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
+.btn-primary { padding: 10px 24px; background: var(--blue); color: #fff; border: none; border-radius: 8px; font-size: 0.88rem; font-weight: 700; cursor: pointer; }
+.btn-primary:hover { background: #1557b0; }
+.btn-secondary { padding: 10px 20px; background: #1e2d40; color: var(--text); border: 1px solid var(--border); border-radius: 8px; font-size: 0.88rem; cursor: pointer; }
+
+/* PHOTO UPLOAD */
+.photo-upload-zone { border: 2px dashed var(--border); border-radius: 12px; padding: 30px; text-align: center; cursor: pointer; transition: border-color 0.2s; }
+.photo-upload-zone:hover, .photo-upload-zone.drag-over { border-color: var(--cyan); background: rgba(0,188,212,0.05); }
+.photo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; margin-top: 14px; }
+.photo-thumb { border-radius: 8px; overflow: hidden; position: relative; aspect-ratio: 1; background: #0d1520; border: 1px solid var(--border); }
+.photo-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.photo-label { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.75); font-size: 0.65rem; padding: 3px 6px; text-align: center; }
+
+/* WORK ORDER */
+.work-order-card { background: var(--card); border: 1px solid var(--blue); border-radius: 12px; padding: 20px; margin-bottom: 16px; }
+.wo-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px; }
+.wo-num { font-size: 0.75rem; color: var(--cyan); font-weight: 700; letter-spacing: 1px; }
+.wo-title { font-size: 1.1rem; font-weight: 800; }
+.wo-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; margin: 12px 0; }
+.wo-table th { background: #0d1520; color: var(--muted); padding: 8px 10px; text-align: left; font-size: 0.72rem; text-transform: uppercase; border-bottom: 1px solid var(--border); }
+.wo-table td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+.wo-table tr:last-child td { border-bottom: none; }
+.wo-total { text-align: right; font-size: 0.9rem; font-weight: 700; color: var(--green); margin-top: 10px; }
+
+/* MODAL */
+.modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.75); z-index: 999; align-items: center; justify-content: center; padding: 16px; }
+.modal-overlay.open { display: flex; }
+.modal { background: var(--card); border: 1px solid var(--border); border-radius: 14px; width: 100%; max-width: 680px; max-height: 90vh; overflow-y: auto; padding: 24px; position: relative; }
+.modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+.modal-title { font-size: 1.1rem; font-weight: 700; }
+.modal-close { background: none; border: none; color: var(--muted); font-size: 1.4rem; cursor: pointer; padding: 4px 8px; }
+.modal-close:hover { color: var(--text); }
+
+/* FILTER BAR */
+.filter-bar { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; align-items: center; }
+.filter-bar input, .filter-bar select { background: #0d1520; border: 1px solid var(--border); color: var(--text); border-radius: 8px; padding: 8px 12px; font-size: 0.82rem; outline: none; }
+.filter-bar input:focus, .filter-bar select:focus { border-color: var(--blue); }
+.filter-bar input { flex: 1; min-width: 180px; }
+
+/* PROGRAM INFO CARDS */
+.program-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; margin-bottom: 24px; }
+.prog-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+.prog-icon { font-size: 2rem; margin-bottom: 8px; }
+.prog-title { font-size: 0.9rem; font-weight: 700; margin-bottom: 4px; }
+.prog-desc { font-size: 0.78rem; color: var(--muted); line-height: 1.5; }
+.prog-badge { display: inline-block; margin-top: 8px; font-size: 0.68rem; font-weight: 700; padding: 3px 9px; border-radius: 10px; }
+.free-badge { background: #0a2010; color: #22c55e; }
+.elec-badge { background: #1a1a40; color: #818cf8; }
+
+/* CHECKLIST */
+.checklist { display: flex; flex-direction: column; gap: 8px; }
+.check-row { display: flex; align-items: center; gap: 10px; padding: 10px 14px; background: #0d1520; border: 1px solid var(--border); border-radius: 8px; }
+.check-row input[type=checkbox] { width: 16px; height: 16px; accent-color: var(--green); flex-shrink: 0; }
+.check-row label { font-size: 0.82rem; cursor: pointer; flex: 1; }
+.check-row .check-note { font-size: 0.7rem; color: var(--muted); }
+
+/* TIMELINE */
+.timeline { position: relative; padding-left: 24px; }
+.timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: var(--border); }
+.tl-item { position: relative; padding: 10px 0 10px 16px; }
+.tl-dot { position: absolute; left: -20px; top: 14px; width: 12px; height: 12px; border-radius: 50%; background: var(--blue); border: 2px solid var(--bg); }
+.tl-dot.green { background: var(--green); }
+.tl-dot.yellow { background: var(--yellow); }
+.tl-dot.cyan { background: var(--cyan); }
+.tl-date { font-size: 0.7rem; color: var(--muted); }
+.tl-text { font-size: 0.82rem; font-weight: 600; }
+.tl-detail { font-size: 0.75rem; color: var(--muted); }
+
+/* EMPTY STATE */
+.empty-state { text-align: center; padding: 50px 20px; color: var(--muted); }
+.empty-state .icon { font-size: 3rem; margin-bottom: 12px; }
+
+/* DIVIDER */
+.divider { border: none; border-top: 1px solid var(--border); margin: 20px 0; }
+
+/* ALERT */
+.alert { padding: 12px 16px; border-radius: 8px; font-size: 0.82rem; margin-bottom: 14px; }
+.alert-info { background: #0e2040; border-left: 3px solid var(--blue); color: #93c5fd; }
+.alert-success { background: #0a2010; border-left: 3px solid var(--green); color: #86efac; }
+.alert-warn { background: #2d1a00; border-left: 3px solid var(--yellow); color: #fde68a; }
+
+/* RESPONSIVE */
+@media(max-width: 600px) {
+  .header { padding: 10px 14px; }
+  .header-title { font-size: 0.95rem; }
+  .main { padding: 12px; }
+  .jobs-grid { grid-template-columns: 1fr; }
+  .stats-row { grid-template-columns: repeat(3, 1fr); }
+  .pipeline-row { grid-template-columns: repeat(3, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-left">
+    <div class="logo">⚡</div>
+    <div>
+      <div class="header-title">Blacktech Solutions Corp</div>
+      <div class="header-sub">ComEd Whole Home Electric — EESP Contractor</div>
+    </div>
+  </div>
+  <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+    <span class="eesp-badge">✅ EESP CERTIFIED</span>
+    <button class="btn btn-blue" onclick="openModal('intakeModal')">+ New Job</button>
+  </div>
+</div>
+
+<!-- NAV TABS -->
+<div class="nav-tabs">
+  <div class="nav-tab active" onclick="switchTab('dashboard')">📊 Dashboard</div>
+  <div class="nav-tab" onclick="switchTab('jobs')">📋 All Jobs</div>
+  <div class="nav-tab" onclick="switchTab('intake')">➕ New Intake</div>
+  <div class="nav-tab" onclick="switchTab('workorders')">🔧 Work Orders</div>
+  <div class="nav-tab" onclick="switchTab('photos')">📸 Photos</div>
+  <div class="nav-tab" onclick="switchTab('program')">📘 Program Info</div>
+  <div class="nav-tab" onclick="switchTab('closeout')">✅ Closeout</div>
+</div>
+
+<!-- ═══════════════════ DASHBOARD TAB ═══════════════════ -->
+<div class="main">
+<div id="tab-dashboard" class="tab-panel active">
+  <div id="statsRow" class="stats-row">
+    <div class="stat-card blue"><div class="stat-num" id="statTotal">0</div><div class="stat-label">Total Jobs</div></div>
+    <div class="stat-card cyan"><div class="stat-num" id="statNew">0</div><div class="stat-label">New Leads</div></div>
+    <div class="stat-card yellow"><div class="stat-num" id="statActive">0</div><div class="stat-label">Active Jobs</div></div>
+    <div class="stat-card green"><div class="stat-num" id="statComplete">0</div><div class="stat-label">Complete</div></div>
+    <div class="stat-card purple"><div class="stat-num" id="statContract">0</div><div class="stat-label">In Contract</div></div>
+    <div class="stat-card red"><div class="stat-num" id="statCancelled">0</div><div class="stat-label">Cancelled</div></div>
+  </div>
+
+  <div class="section-title">⚡ Job Pipeline</div>
+  <div class="pipeline-row" id="pipelineRow">
+    <div class="stage-box" onclick="filterByStatus('new')"><div class="stage-icon">🆕</div><div class="stage-name">New Lead</div><div class="stage-count" id="p-new">0</div></div>
+    <div class="stage-box" onclick="filterByStatus('contacted')"><div class="stage-icon">📞</div><div class="stage-name">Contacted</div><div class="stage-count" id="p-contacted">0</div></div>
+    <div class="stage-box" onclick="filterByStatus('assessment')"><div class="stage-icon">🏠</div><div class="stage-name">Assessment</div><div class="stage-count" id="p-assessment">0</div></div>
+    <div class="stage-box" onclick="filterByStatus('walkthrough')"><div class="stage-icon">🚶</div><div class="stage-name">Walkthrough</div><div class="stage-count" id="p-walkthrough">0</div></div>
+    <div class="stage-box" onclick="filterByStatus('contract')"><div class="stage-icon">📋</div><div class="stage-name">Contract</div><div class="stage-count" id="p-contract">0</div></div>
+    <div class="stage-box" onclick="filterByStatus('active')"><div class="stage-icon">🔨</div><div class="stage-name">Active Install</div><div class="stage-count" id="p-active">0</div></div>
+    <div class="stage-box" onclick="filterByStatus('complete')"><div class="stage-icon">✅</div><div class="stage-name">Complete</div><div class="stage-count" id="p-complete">0</div></div>
+  </div>
+
+  <div class="section-title">🗂 Recent Jobs</div>
+  <div id="recentJobs" class="jobs-grid"></div>
+</div>
+
+<!-- ═══════════════════ ALL JOBS TAB ═══════════════════ -->
+<div id="tab-jobs" class="tab-panel">
+  <div class="filter-bar">
+    <input type="text" id="searchInput" placeholder="🔍 Search name, address, phone…" oninput="renderJobs()">
+    <select id="filterStatus" onchange="renderJobs()">
+      <option value="">All Statuses</option>
+      <option value="new">New Lead</option>
+      <option value="contacted">Contacted</option>
+      <option value="assessment">Assessment</option>
+      <option value="walkthrough">Walkthrough</option>
+      <option value="contract">Contract</option>
+      <option value="active">Active Install</option>
+      <option value="complete">Complete</option>
+      <option value="cancelled">Cancelled</option>
+    </select>
+    <select id="filterService" onchange="renderJobs()">
+      <option value="">All Services</option>
+      <option value="Heat Pump">Heat Pump</option>
+      <option value="Mini Split">Mini Split</option>
+      <option value="Water Heater">Water Heater</option>
+      <option value="Induction Stove">Induction Stove</option>
+      <option value="Electric Dryer">Electric Dryer</option>
+      <option value="Panel Upgrade">Panel Upgrade</option>
+      <option value="Wiring">Electrical Wiring</option>
+      <option value="Weatherization">Weatherization</option>
+      <option value="EV Charger">EV Charger</option>
+      <option value="Battery Storage">Battery Storage</option>
+      <option value="HVAC">HVAC</option>
+      <option value="Plumbing">Plumbing</option>
+      <option value="Gas Line">Gas Line</option>
+      <option value="Solar">Solar</option>
+      <option value="Lighting">LED Lighting</option>
+    </select>
+    <button class="btn btn-blue" onclick="openModal('intakeModal')">+ New Job</button>
+  </div>
+  <div id="allJobsGrid" class="jobs-grid"></div>
+</div>
+
+<!-- ═══════════════════ INTAKE TAB ═══════════════════ -->
+<div id="tab-intake" class="tab-panel">
+  <div class="alert alert-info">📋 Complete all sections. Customer must be income-eligible for free ComEd WHE program. Panel upgrade required for all induction/heat pump installs.</div>
+
+  <div class="form-card">
+    <div class="section-title">👤 Customer Information</div>
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Customer Full Name *</label>
+        <input type="text" id="i-name" placeholder="First Last">
+      </div>
+      <div class="form-group">
+        <label>Phone *</label>
+        <input type="tel" id="i-phone" placeholder="(312) 000-0000">
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="i-email" placeholder="customer@email.com">
+      </div>
+      <div class="form-group">
+        <label>Street Address *</label>
+        <input type="text" id="i-address" placeholder="1234 S Main St">
+      </div>
+      <div class="form-group">
+        <label>City</label>
+        <input type="text" id="i-city" placeholder="Chicago" value="Chicago">
+      </div>
+      <div class="form-group">
+        <label>ZIP Code</label>
+        <input type="text" id="i-zip" placeholder="60628">
+      </div>
+    </div>
+  </div>
+
+  <div class="form-card">
+    <div class="section-title">🏠 Home Assessment</div>
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Home Type</label>
+        <select id="i-hometype">
+          <option>Single Family</option>
+          <option>Multi-Family (2 units)</option>
+          <option>Multi-Family (3+ units)</option>
+          <option>Condo/Townhome</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Current Heating</label>
+        <select id="i-heating">
+          <option>Gas Furnace</option>
+          <option>Electric Resistance/Baseboard</option>
+          <option>Heat Pump (existing)</option>
+          <option>Boiler</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Current Water Heater</label>
+        <select id="i-waterheater">
+          <option>Gas Tank</option>
+          <option>Electric Tank</option>
+          <option>Heat Pump Water Heater</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Current Cooking</label>
+        <select id="i-cooking">
+          <option>Gas Range/Stove</option>
+          <option>Electric Coil</option>
+          <option>Electric Smooth Top</option>
+          <option>Induction (existing)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Panel Size (Amps)</label>
+        <select id="i-panel">
+          <option>100A</option>
+          <option>150A</option>
+          <option>200A</option>
+          <option>400A</option>
+          <option>Unknown</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Square Footage (approx)</label>
+        <input type="text" id="i-sqft" placeholder="e.g. 1,200">
+      </div>
+    </div>
+  </div>
+
+  <div class="form-card">
+    <div class="section-title">⚡ Services Requested</div>
+    <div class="services-check">
+      <label class="check-item"><input type="checkbox" value="Heat Pump"> 🌡️ Air Source Heat Pump</label>
+      <label class="check-item"><input type="checkbox" value="Mini Split"> ❄️ Mini Split Heat Pump</label>
+      <label class="check-item"><input type="checkbox" value="Water Heater"> 💧 Heat Pump Water Heater</label>
+      <label class="check-item"><input type="checkbox" value="Induction Stove"> 🍳 Induction Stovetop</label>
+      <label class="check-item"><input type="checkbox" value="Electric Dryer"> 🔄 Electric Dryer</label>
+      <label class="check-item"><input type="checkbox" value="Panel Upgrade"> 🔌 Electrical Panel Upgrade</label>
+      <label class="check-item"><input type="checkbox" value="Wiring"> 🔧 Electrical Wiring / Circuits</label>
+      <label class="check-item"><input type="checkbox" value="Weatherization"> 🏠 Weatherization / Insulation</label>
+      <label class="check-item"><input type="checkbox" value="EV Charger"> 🚗 EV Charger (Level 2)</label>
+      <label class="check-item"><input type="checkbox" value="Battery Storage"> 🔋 Battery Storage</label>
+      <label class="check-item"><input type="checkbox" value="Lighting"> 💡 LED Lighting</label>
+      <label class="check-item"><input type="checkbox" value="HVAC"> 🌀 HVAC (All Weather Specialist)</label>
+      <label class="check-item"><input type="checkbox" value="Plumbing"> 🚿 Plumbing</label>
+      <label class="check-item"><input type="checkbox" value="Gas Line"> 🔥 Gas Line Disconnect / Cap</label>
+      <label class="check-item"><input type="checkbox" value="Solar"> ☀️ Solar Panels</label>
+    </div>
+  </div>
+
+  <div class="form-card">
+    <div class="section-title">💰 Income Eligibility</div>
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Household Size</label>
+        <select id="i-household">
+          <option>1</option><option>2</option><option>3</option>
+          <option>4</option><option>5</option><option>6+</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Income Verified?</label>
+        <select id="i-income">
+          <option value="">Select…</option>
+          <option>Yes — Qualifies WHE (≤80% AMI)</option>
+          <option>Yes — Qualifies CARE (≤200% FPL)</option>
+          <option>No — Does not qualify</option>
+          <option>Pending — Needs verification</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>ComEd Account #</label>
+        <input type="text" id="i-comed" placeholder="ComEd account number">
+      </div>
+      <div class="form-group">
+        <label>Referral Source</label>
+        <select id="i-source">
+          <option>Walk-in / Cold</option>
+          <option>Think Energy Referral</option>
+          <option>BFN / Blue Wednesday</option>
+          <option>Door-to-door</option>
+          <option>Repeat Customer</option>
+          <option>Comcast / Google Ad</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-card">
+    <div class="section-title">📝 Notes</div>
+    <div class="form-group">
+      <textarea id="i-notes" placeholder="Site notes, access instructions, customer concerns, special requirements…" style="min-height:100px;width:100%"></textarea>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <button class="btn-primary" onclick="submitIntake()">✅ Save Job / Create Work Order</button>
+    <button class="btn-secondary" onclick="clearIntake()">🗑 Clear Form</button>
+  </div>
+</div>
+
+<!-- ═══════════════════ WORK ORDERS TAB ═══════════════════ -->
+<div id="tab-workorders" class="tab-panel">
+  <div class="alert alert-info">Work orders are auto-generated when a job is created. Select a job below to view or print its work order.</div>
+  <div class="filter-bar">
+    <input type="text" id="woSearch" placeholder="🔍 Search work orders…" oninput="renderWorkOrders()">
+    <select id="woStatus" onchange="renderWorkOrders()">
+      <option value="">All Statuses</option>
+      <option value="active">Active</option>
+      <option value="contract">In Contract</option>
+      <option value="complete">Complete</option>
+    </select>
+  </div>
+  <div id="workOrdersContainer"></div>
+</div>
+
+<!-- ═══════════════════ PHOTOS TAB ═══════════════════ -->
+<div id="tab-photos" class="tab-panel">
+  <div class="alert alert-warn">⚠️ Before AND After photos are REQUIRED for ComEd closeout. Jobs without both photos cannot be closed out.</div>
+
+  <div class="form-card" id="photoSelectArea">
+    <div class="section-title">📸 Select Job to Upload Photos</div>
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Select Job</label>
+        <select id="photoJobSelect" onchange="loadJobPhotos()">
+          <option value="">Choose a job…</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Photo Type</label>
+        <select id="photoType">
+          <option value="before">Before (Pre-Installation)</option>
+          <option value="after">After (Post-Installation)</option>
+          <option value="panel">Electrical Panel</option>
+          <option value="permit">Permit / Inspection</option>
+          <option value="equipment">Equipment Label / Serial #</option>
+          <option value="site">Site Condition</option>
+        </select>
+      </div>
+    </div>
+    <div style="margin-top:14px;">
+      <div class="photo-upload-zone" id="dropZone" onclick="document.getElementById('photoFileInput').click()" ondragover="handleDrag(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)">
+        <div style="font-size:2.5rem;margin-bottom:8px;">📷</div>
+        <div style="font-weight:700;margin-bottom:4px;">Tap to upload or drag photos here</div>
+        <div style="font-size:0.78rem;color:var(--muted);">JPG, PNG, HEIC supported · Multiple files OK</div>
+        <input type="file" id="photoFileInput" accept="image/*" multiple style="display:none" onchange="handlePhotoSelect(event)">
+      </div>
+      <div id="uploadPreview" class="photo-grid"></div>
+      <div id="uploadProgress" style="margin-top:12px;display:none;">
+        <div class="alert alert-info" id="uploadMsg">Uploading…</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="jobPhotosArea" style="display:none;">
+    <div class="section-title">📁 Job Photo Log — <span id="photoJobName"></span></div>
+    <div id="beforePhotos">
+      <div style="color:var(--cyan);font-weight:700;margin-bottom:8px;">📷 Before Photos</div>
+      <div id="beforeGrid" class="photo-grid"></div>
+    </div>
+    <hr class="divider">
+    <div id="afterPhotos">
+      <div style="color:var(--green);font-weight:700;margin-bottom:8px;">✅ After Photos</div>
+      <div id="afterGrid" class="photo-grid"></div>
+    </div>
+    <hr class="divider">
+    <div>
+      <div style="color:var(--yellow);font-weight:700;margin-bottom:8px;">📁 Other Documentation</div>
+      <div id="otherGrid" class="photo-grid"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════ PROGRAM INFO TAB ═══════════════════ -->
+<div id="tab-program" class="tab-panel">
+  <div class="alert alert-success">✅ Blacktech Solutions Corp is a registered ComEd Energy Efficiency Service Provider (EESP). You perform the actual installation work for the Whole Home Electric program.</div>
+
+  <div class="section-title">🏠 ComEd Whole Home Electric — Free Programs</div>
+  <div class="program-cards">
+    <div class="prog-card">
+      <div class="prog-icon">🌡️</div>
+      <div class="prog-title">Air Source Heat Pump</div>
+      <div class="prog-desc">Replaces gas furnace. Works in Chicago sub-zero temps. Requires 240V circuit + panel capacity check.</div>
+      <span class="prog-badge free-badge">FREE to customer</span>
+      <span class="prog-badge elec-badge">240V circuit required</span>
+    </div>
+    <div class="prog-card">
+      <div class="prog-icon">❄️</div>
+      <div class="prog-title">Mini Split Heat Pump</div>
+      <div class="prog-desc">Ductless option — ideal for additions, single rooms, or homes without ductwork.</div>
+      <span class="prog-badge free-badge">FREE to customer</span>
+      <span class="prog-badge elec-badge">240V dedicated circuit</span>
+    </div>
+    <div class="prog-card">
+      <div class="prog-icon">💧</div>
+      <div class="prog-title">Heat Pump Water Heater</div>
+      <div class="prog-desc">Replaces gas or electric resistance water heater. 3–4x more efficient. Requires 240V, adequate space + clearance.</div>
+      <span class="prog-badge free-badge">FREE to customer</span>
+      <span class="prog-badge elec-badge">240V dedicated circuit</span>
+    </div>
+    <div class="prog-card">
+      <div class="prog-icon">🍳</div>
+      <div class="prog-title">Induction Stovetop</div>
+      <div class="prog-desc">Replaces gas range. Cool surface, faster cooking, no open flame. All new cookware may be needed.</div>
+      <span class="prog-badge free-badge">FREE to customer</span>
+      <span class="prog-badge elec-badge">40–50A 240V circuit</span>
+    </div>
+    <div class="prog-card">
+      <div class="prog-icon">🔄</div>
+      <div class="prog-title">Electric Dryer</div>
+      <div class="prog-desc">Replaces gas dryer. Heat pump dryer option available. Simple swap if 240V outlet exists.</div>
+      <span class="prog-badge free-badge">FREE to customer</span>
+      <span class="prog-badge elec-badge">240V outlet required</span>
+    </div>
+    <div class="prog-card">
+      <div class="prog-icon">🔌</div>
+      <div class="prog-title">Panel Upgrade (Blacktech Core Work)</div>
+      <div class="prog-desc">Required for most installs. 100A → 200A upgrade enables all new appliances. This is Blacktech's primary electrical scope.</div>
+      <span class="prog-badge free-badge">FREE (ComEd funded)</span>
+      <span class="prog-badge" style="background:#2d1a00;color:#fb923c;">BLACKTECH PERFORMS</span>
+    </div>
+    <div class="prog-card">
+      <div class="prog-icon">🏠</div>
+      <div class="prog-title">Weatherization</div>
+      <div class="prog-desc">Insulation, air sealing. Often bundled with heat pump install to ensure efficiency targets are met.</div>
+      <span class="prog-badge free-badge">FREE to customer</span>
+    </div>
+    <div class="prog-card">
+      <div class="prog-icon">🚗</div>
+      <div class="prog-title">EV Charger (Level 2)</div>
+      <div class="prog-desc">EVSE installation. Requires 240V 50A dedicated circuit to garage or parking area.</div>
+      <span class="prog-badge free-badge">FREE / Rebate</span>
+      <span class="prog-badge elec-badge">240V 50A circuit</span>
+    </div>
+  </div>
+
+  <hr class="divider">
+  <div class="section-title">📋 Eligibility Requirements</div>
+  <div class="form-card">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;">
+      <div>
+        <div style="color:var(--cyan);font-weight:700;margin-bottom:8px;">Income Limits (WHE Program)</div>
+        <div style="font-size:0.82rem;color:var(--muted);line-height:1.8;">
+          Household 1: ≤ $54,360 / yr (80% AMI)<br>
+          Household 2: ≤ $62,120 / yr<br>
+          Household 3: ≤ $69,880 / yr<br>
+          Household 4: ≤ $77,640 / yr<br>
+          <span style="color:var(--yellow);">Funded by IL Climate & Equitable Jobs Act</span>
+        </div>
+      </div>
+      <div>
+        <div style="color:var(--cyan);font-weight:700;margin-bottom:8px;">Customer Requirements</div>
+        <div style="font-size:0.82rem;color:var(--muted);line-height:1.8;">
+          ✅ Adult (18+) present at all appointments<br>
+          ✅ Pets secured during assessment<br>
+          ✅ Access to HVAC, water heater, panel<br>
+          ✅ All rooms with major appliances accessible<br>
+          ✅ ComEd account holder
+        </div>
+      </div>
+      <div>
+        <div style="color:var(--cyan);font-weight:700;margin-bottom:8px;">EESP Contractor (Blacktech) Requirements</div>
+        <div style="font-size:0.82rem;color:var(--muted);line-height:1.8;">
+          ✅ Licensed electrical contractor<br>
+          ✅ ComEd EESP registration active<br>
+          ✅ Before + after photos per job<br>
+          ✅ Equipment serial numbers documented<br>
+          ✅ Permit pulled for panel/circuit work
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+  <div class="section-title">📞 ComEd Program Contacts</div>
+  <div class="program-cards">
+    <div class="prog-card">
+      <div class="prog-title">ComEd WHE Program Line</div>
+      <div class="prog-desc">1-877-4-ComEd-1</div>
+    </div>
+    <div class="prog-card">
+      <div class="prog-title">Income Assistance (PIPP/LIHEAP)</div>
+      <div class="prog-desc">(877) 411-WARM · HelpIllinoisFamilies.com</div>
+    </div>
+    <div class="prog-card">
+      <div class="prog-title">Keep Cool Illinois</div>
+      <div class="prog-desc">(800) 843-6154 — cooling centers + energy assist</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════ CLOSEOUT TAB ═══════════════════ -->
+<div id="tab-closeout" class="tab-panel">
+  <div class="alert alert-warn">⚠️ All items below must be completed before marking a job COMPLETE and submitting to ComEd.</div>
+
+  <div class="filter-bar">
+    <select id="closeoutJobSelect" onchange="loadCloseout()">
+      <option value="">Select a job to close out…</option>
+    </select>
+  </div>
+
+  <div id="closeoutArea" style="display:none;">
+    <div class="form-card">
+      <div class="section-title">✅ Closeout Checklist — <span id="closeoutJobName" style="color:var(--text);"></span></div>
+      <div class="checklist" id="closeoutChecklist">
+        <div class="check-row"><input type="checkbox" id="cc1"><label for="cc1">Before photos uploaded (each work area)</label><span class="check-note">Required</span></div>
+        <div class="check-row"><input type="checkbox" id="cc2"><label for="cc2">After photos uploaded (each completed area)</label><span class="check-note">Required</span></div>
+        <div class="check-row"><input type="checkbox" id="cc3"><label for="cc3">Equipment model & serial numbers documented</label><span class="check-note">Required</span></div>
+        <div class="check-row"><input type="checkbox" id="cc4"><label for="cc4">Permit pulled and inspection passed</label><span class="check-note">Panel/circuit work</span></div>
+        <div class="check-row"><input type="checkbox" id="cc5"><label for="cc5">Customer signed off on completed work</label><span class="check-note">Required</span></div>
+        <div class="check-row"><input type="checkbox" id="cc6"><label for="cc6">ComEd EESP completion form submitted</label><span class="check-note">Submit via EESP portal</span></div>
+        <div class="check-row"><input type="checkbox" id="cc7"><label for="cc7">All appliances tested and operational</label><span class="check-note">Required</span></div>
+        <div class="check-row"><input type="checkbox" id="cc8"><label for="cc8">Customer briefed on new equipment operation</label><span class="check-note">Best practice</span></div>
+        <div class="check-row"><input type="checkbox" id="cc9"><label for="cc9">Lien waiver signed</label><span class="check-note">Required</span></div>
+        <div class="check-row"><input type="checkbox" id="cc10"><label for="cc10">Job file updated in system (serial #s, notes)</label><span class="check-note">Internal</span></div>
+      </div>
+
+      <div class="form-grid" style="margin-top:16px;">
+        <div class="form-group">
+          <label>Equipment Installed (list model/serial)</label>
+          <textarea id="equipNotes" placeholder="e.g. Carrier heat pump Model #38MURA-09 SN:12345&#10;AO Smith HPWH Model #HPTS-50 SN:67890"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Permit Number</label>
+          <input type="text" id="permitNum" placeholder="City of Chicago permit #">
+        </div>
+        <div class="form-group">
+          <label>Inspection Date</label>
+          <input type="date" id="inspDate">
+        </div>
+        <div class="form-group">
+          <label>ComEd Submission Ref #</label>
+          <input type="text" id="comedRef" placeholder="EESP portal reference #">
+        </div>
+      </div>
+
+      <!-- LIEN WAIVER SECTION -->
+      <hr class="divider">
+      <div class="section-title">📄 Lien Waiver</div>
+      <div class="alert alert-info">Generate and print the lien waiver for this job. Fill in the contract amount and owner name, then click Generate.</div>
+      <div class="form-grid" style="margin-top:10px;">
+        <div class="form-group">
+          <label>Owner / Customer Name</label>
+          <input type="text" id="lw-owner" placeholder="Auto-filled from job">
+        </div>
+        <div class="form-group">
+          <label>Property Address</label>
+          <input type="text" id="lw-address" placeholder="Auto-filled from job">
+        </div>
+        <div class="form-group">
+          <label>Contract / Job Amount ($)</label>
+          <input type="text" id="lw-amount" placeholder="e.g. 4,500.00">
+        </div>
+        <div class="form-group">
+          <label>Waiver Date</label>
+          <input type="date" id="lw-date">
+        </div>
+      </div>
+      <div class="form-actions" style="margin-top:12px;">
+        <button class="btn btn-cyan" onclick="generateLienWaiver()">📄 Preview Lien Waiver</button>
+        <button class="btn btn-green" onclick="downloadLienWaiver()">⬇️ Download Real PDF</button>
+      </div>
+      <div id="lienWaiverPreview" style="display:none;margin-top:16px;"></div>
+
+      <div class="form-actions" style="margin-top:16px;">
+        <button class="btn-primary" onclick="saveCloseout()" style="background:#166534;">✅ Mark Job COMPLETE</button>
+        <button class="btn-secondary" onclick="saveCloseoutDraft()">💾 Save Draft</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ═══════════════════ INTAKE MODAL ═══════════════════ -->
+<div class="modal-overlay" id="intakeModal">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title">➕ Quick Job Intake</div>
+      <button class="modal-close" onclick="closeModal('intakeModal')">✕</button>
+    </div>
+    <div class="form-grid">
+      <div class="form-group">
+        <label>Customer Name *</label>
+        <input type="text" id="m-name" placeholder="Full name">
+      </div>
+      <div class="form-group">
+        <label>Phone *</label>
+        <input type="tel" id="m-phone" placeholder="(312) 000-0000">
+      </div>
+      <div class="form-group">
+        <label>Address *</label>
+        <input type="text" id="m-address" placeholder="Street address">
+      </div>
+      <div class="form-group">
+        <label>City</label>
+        <input type="text" id="m-city" value="Chicago">
+      </div>
+    </div>
+    <div style="margin:14px 0 6px;font-size:0.75rem;color:var(--muted);font-weight:700;text-transform:uppercase;">Services</div>
+    <div class="services-check" style="margin-bottom:14px;">
+      <label class="check-item"><input type="checkbox" class="m-svc" value="Heat Pump"> 🌡️ Heat Pump</label>
+      <label class="check-item"><input type="checkbox" class="m-svc" value="Water Heater"> 💧 Water Heater</label>
+      <label class="check-item"><input type="checkbox" class="m-svc" value="Induction Stove"> 🍳 Induction Stove</label>
+      <label class="check-item"><input type="checkbox" class="m-svc" value="Panel Upgrade"> 🔌 Panel Upgrade</label>
+      <label class="check-item"><input type="checkbox" class="m-svc" value="Weatherization"> 🏠 Weatherization</label>
+      <label class="check-item"><input type="checkbox" class="m-svc" value="EV Charger"> 🚗 EV Charger</label>
+      <label class="check-item"><input type="checkbox" class="m-svc" value="HVAC"> 🌀 HVAC</label>
+      <label class="check-item"><input type="checkbox" class="m-svc" value="Plumbing"> 🚿 Plumbing</label>
+      <label class="check-item"><input type="checkbox" class="m-svc" value="Battery Storage"> 🔋 Battery Storage</label>
+      <label class="check-item"><input type="checkbox" class="m-svc" value="Gas Line"> 🔥 Gas Line</label>
+    </div>
+    <div class="form-group">
+      <label>Notes</label>
+      <input type="text" id="m-notes" placeholder="Quick note…">
+    </div>
+    <div class="form-actions" style="margin-top:16px;">
+      <button class="btn-primary" onclick="submitQuickIntake()">✅ Create Job</button>
+      <button class="btn-secondary" onclick="closeModal('intakeModal')">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════ JOB DETAIL MODAL ═══════════════════ -->
+<div class="modal-overlay" id="jobModal">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title" id="jobModalTitle">Job Detail</div>
+      <button class="modal-close" onclick="closeModal('jobModal')">✕</button>
+    </div>
+    <div id="jobModalBody"></div>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════════════
+// DATA
+// ═══════════════════════════════════════════════════════════════
+let allLeads = [];
+let currentLead = null;
+
+const STATUS_LABELS = {
+  new:'New Lead', contacted:'Contacted', assessment:'Assessment',
+  walkthrough:'Walkthrough', contract:'Contract', active:'Active Install',
+  complete:'Complete', cancelled:'Cancelled'
+};
+
+const SVC_ICONS = {
+  'Heat Pump':'🌡️','Mini Split':'❄️','Water Heater':'💧',
+  'Induction Stove':'🍳','Electric Dryer':'🔄','Panel Upgrade':'🔌',
+  'Wiring':'🔧','Weatherization':'🏠','EV Charger':'🚗',
+  'Battery Storage':'🔋','Lighting':'💡','HVAC':'🌀',
+  'Plumbing':'🚿','Gas Line':'🔥','Solar':'☀️'
+};
+
+async function loadLeads() {
+  try {
+    const r = await fetch('/api/leads');
+    allLeads = await r.json();
+  } catch(e) {
+    allLeads = JSON.parse(localStorage.getItem('comed_leads') || '[]');
+  }
+  renderAll();
+}
+
+async function saveLeadRemote(lead) {
+  try {
+    await fetch('/api/leads', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify(lead)
+    });
+    await loadLeads();
+  } catch(e) {
+    const leads = JSON.parse(localStorage.getItem('comed_leads') || '[]');
+    leads.unshift(lead);
+    localStorage.setItem('comed_leads', JSON.stringify(leads));
+    await loadLeads();
+  }
+}
+
+async function updateStatus(id, status) {
+  try {
+    await fetch(`/api/leads/${id}/status`, {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({status})
+    });
+  } catch(e) {
+    const leads = JSON.parse(localStorage.getItem('comed_leads') || '[]');
+    const l = leads.find(x => String(x.id) === String(id));
+    if(l) { l.status = status; localStorage.setItem('comed_leads', JSON.stringify(leads)); }
+  }
+  await loadLeads();
+  closeModal('jobModal');
+}
+
+// ═══════════════════════════════════════════════════════════════
+// RENDER
+// ═══════════════════════════════════════════════════════════════
+function renderAll() {
+  renderStats();
+  renderPipeline();
+  renderJobs();
+  renderWorkOrders();
+  populateSelects();
+}
+
+function renderStats() {
+  const counts = {};
+  allLeads.forEach(l => { counts[l.status] = (counts[l.status]||0)+1; });
+  document.getElementById('statTotal').textContent = allLeads.length;
+  document.getElementById('statNew').textContent = counts['new']||0;
+  document.getElementById('statActive').textContent = counts['active']||0;
+  document.getElementById('statComplete').textContent = counts['complete']||0;
+  document.getElementById('statContract').textContent = counts['contract']||0;
+  document.getElementById('statCancelled').textContent = counts['cancelled']||0;
+}
+
+function renderPipeline() {
+  const stages = ['new','contacted','assessment','walkthrough','contract','active','complete'];
+  const counts = {};
+  allLeads.forEach(l => { counts[l.status] = (counts[l.status]||0)+1; });
+  stages.forEach(s => {
+    const el = document.getElementById('p-'+s);
+    if(el) el.textContent = counts[s]||0;
+  });
+}
+
+function getFiltered() {
+  const q = (document.getElementById('searchInput')||{value:''}).value.toLowerCase();
+  const st = (document.getElementById('filterStatus')||{value:''}).value;
+  const sv = (document.getElementById('filterService')||{value:''}).value;
+  return allLeads.filter(l => {
+    const text = `${l.name} ${l.address} ${l.phone} ${l.email}`.toLowerCase();
+    const matchQ = !q || text.includes(q);
+    const matchSt = !st || l.status === st;
+    const matchSv = !sv || (l.services||[]).some(s => s.includes(sv));
+    return matchQ && matchSt && matchSv;
+  });
+}
+
+function renderJobs() {
+  const grid = document.getElementById('allJobsGrid');
+  const recent = document.getElementById('recentJobs');
+  const filtered = getFiltered();
+  if(grid) grid.innerHTML = filtered.length ? filtered.map(jobCard).join('') : emptyState('No jobs found');
+  if(recent) recent.innerHTML = allLeads.slice(0,6).map(jobCard).join('') || emptyState('No jobs yet — add your first job');
+}
+
+function jobCard(l) {
+  const svcs = (l.services||[]).map(s=>`<span class="svc-tag">${SVC_ICONS[s]||'⚡'} ${s}</span>`).join('');
+  return `
+  <div class="job-card">
+    <div class="job-card-header">
+      <div>
+        <div class="job-name">${l.name||'—'}</div>
+        <div class="job-addr">📍 ${l.address||''}${l.city?', '+l.city:''}</div>
+      </div>
+      <span class="status-badge status-${l.status||'new'}">${STATUS_LABELS[l.status]||l.status}</span>
+    </div>
+    <div class="services-tags">${svcs||'<span style="color:var(--muted);font-size:0.75rem;">No services selected</span>'}</div>
+    <div class="job-meta">
+      ${l.phone?`<span>📞 ${l.phone}</span>`:''}
+      ${l.created?`<span>📅 ${l.created}</span>`:''}
+      ${l.source?`<span>🔗 ${l.source}</span>`:''}
+    </div>
+    <div class="job-actions">
+      <button class="btn btn-blue btn-sm" onclick="openJob(${l.id})">View</button>
+      <button class="btn btn-cyan btn-sm" onclick="goPhotos(${l.id})">📸 Photos</button>
+      <button class="btn btn-purple btn-sm" onclick="goCloseout(${l.id})">✅ Closeout</button>
+      ${l.status!=='complete'&&l.status!=='cancelled'?`<button class="btn btn-green btn-sm" onclick="advanceStatus(${l.id})">➡️ Advance</button>`:''}
+    </div>
+  </div>`;
+}
+
+function emptyState(msg) {
+  return `<div class="empty-state" style="grid-column:1/-1;"><div class="icon">📋</div><div>${msg}</div></div>`;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// WORK ORDERS
+// ═══════════════════════════════════════════════════════════════
+function renderWorkOrders() {
+  const q = (document.getElementById('woSearch')||{value:''}).value.toLowerCase();
+  const st = (document.getElementById('woStatus')||{value:''}).value;
+  const container = document.getElementById('workOrdersContainer');
+  if(!container) return;
+
+  const filtered = allLeads.filter(l => {
+    const match = !q || `${l.name} ${l.address}`.toLowerCase().includes(q);
+    const matchSt = !st || l.status === st;
+    return match && matchSt && l.status !== 'cancelled' && l.status !== 'new';
+  });
+
+  if(!filtered.length) {
+    container.innerHTML = `<div class="empty-state"><div class="icon">🔧</div><div>No work orders yet. Advance a job past "New Lead" to generate a work order.</div></div>`;
+    return;
+  }
+
+  container.innerHTML = filtered.map(l => {
+    const wo_num = `WO-${String(l.id).slice(-6)}`;
+    const services = (l.services||['Assessment Required']);
+    const svcRows = services.map(s => `
+      <tr>
+        <td>${SVC_ICONS[s]||'⚡'} ${s}</td>
+        <td>${getElecReq(s)}</td>
+        <td><span class="status-badge status-${l.status}">${STATUS_LABELS[l.status]}</span></td>
+      </tr>`).join('');
+
+    return `
+    <div class="work-order-card">
+      <div class="wo-header">
+        <div>
+          <div class="wo-num">WORK ORDER ${wo_num}</div>
+          <div class="wo-title">${l.name||'Customer'}</div>
+          <div style="color:var(--muted);font-size:0.78rem;margin-top:2px;">📍 ${l.address||''}${l.city?', '+l.city:''} · 📞 ${l.phone||'—'} · Created: ${l.created||'—'}</div>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <button class="btn btn-blue btn-sm" onclick="printWO('${wo_num}','${l.name||''}','${l.address||''}')">🖨 Print</button>
+          <button class="btn btn-green btn-sm" onclick="updateStatus(${l.id},'complete')">✅ Mark Complete</button>
+        </div>
+      </div>
+      <table class="wo-table">
+        <thead><tr><th>Service / Scope</th><th>Electrical Requirement</th><th>Status</th></tr></thead>
+        <tbody>${svcRows}</tbody>
+      </table>
+      ${l.notes?`<div style="font-size:0.78rem;color:var(--muted);margin-top:8px;">📝 Notes: ${l.notes}</div>`:''}
+      <div class="wo-total">Contractor: Blacktech Solutions Corp · EESP — ComEd Authorized</div>
+    </div>`;
+  }).join('');
+}
+
+function getElecReq(svc) {
+  const map = {
+    'Heat Pump':       '240V / 30–60A dedicated circuit',
+    'Mini Split':      '240V / 20–30A dedicated circuit',
+    'Water Heater':    '240V / 30A dedicated circuit',
+    'Induction Stove': '240V / 40–50A dedicated circuit',
+    'Electric Dryer':  '240V / 30A dedicated outlet',
+    'Panel Upgrade':   '100A → 200A service upgrade',
+    'Wiring':          '120V/240V circuits — assess on site',
+    'Weatherization':  'No electrical requirement',
+    'EV Charger':      '240V / 50A dedicated circuit to garage',
+    'Battery Storage': '240V / 50A + transfer switch',
+    'Lighting':        '120V existing circuit',
+    'HVAC':            '240V circuit — coordinate w/ All Weather Specialist',
+    'Plumbing':        'No electrical req — coordinate licensed plumber',
+    'Gas Line':        'Gas shutoff + cap — coordinate with gas co.',
+    'Solar':           '240V inverter circuit + net metering interconnect'
+  };
+  return map[svc] || '240V circuit — assess on site';
+}
+
+function printWO(num, name, addr) {
+  window.print();
+}
+
+// ═══════════════════════════════════════════════════════════════
+// PHOTO UPLOAD
+// ═══════════════════════════════════════════════════════════════
+function populateSelects() {
+  const photoSel = document.getElementById('photoJobSelect');
+  const closeoutSel = document.getElementById('closeoutJobSelect');
+  const active = allLeads.filter(l => l.status !== 'cancelled');
+
+  if(photoSel) {
+    photoSel.innerHTML = '<option value="">Choose a job…</option>' +
+      active.map(l => `<option value="${l.id}">${l.name} — ${l.address}</option>`).join('');
+  }
+  if(closeoutSel) {
+    closeoutSel.innerHTML = '<option value="">Select a job to close out…</option>' +
+      active.map(l => `<option value="${l.id}">${l.name} — ${l.address}</option>`).join('');
+  }
+}
+
+function handleDrag(e) {
+  e.preventDefault();
+  document.getElementById('dropZone').classList.add('drag-over');
+}
+function handleDragLeave(e) {
+  document.getElementById('dropZone').classList.remove('drag-over');
+}
+function handleDrop(e) {
+  e.preventDefault();
+  document.getElementById('dropZone').classList.remove('drag-over');
+  const files = Array.from(e.dataTransfer.files).filter(f => f.type.startsWith('image/'));
+  uploadPhotos(files);
+}
+function handlePhotoSelect(e) {
+  uploadPhotos(Array.from(e.target.files));
+}
+
+async function uploadPhotos(files) {
+  const jobId = document.getElementById('photoJobSelect').value;
+  const photoType = document.getElementById('photoType').value;
+  if(!jobId) { alert('Please select a job first.'); return; }
+  if(!files.length) return;
+
+  const prog = document.getElementById('uploadProgress');
+  const msg = document.getElementById('uploadMsg');
+  const preview = document.getElementById('uploadPreview');
+  prog.style.display = 'block';
+
+  for(let i = 0; i < files.length; i++) {
+    const f = files[i];
+    msg.textContent = `Uploading ${i+1}/${files.length}: ${f.name}…`;
+    const fd = new FormData();
+    fd.append('photo', f);
+    fd.append('type', photoType);
+    fd.append('filename', f.name);
+
+    try {
+      const r = await fetch(`/api/photos/${jobId}`, { method:'POST', body: fd });
+      const data = await r.json();
+      if(data.ok) {
+        const url = URL.createObjectURL(f);
+        preview.innerHTML += `<div class="photo-thumb"><img src="${url}"><div class="photo-label">${photoType}</div></div>`;
+      }
+    } catch(e) {
+      msg.textContent = `Error uploading ${f.name}`;
+    }
+  }
+
+  msg.textContent = `✅ ${files.length} photo(s) uploaded successfully!`;
+  msg.parentElement.className = 'alert alert-success';
+  setTimeout(() => { prog.style.display='none'; preview.innerHTML=''; }, 3000);
+  loadJobPhotos();
+}
+
+async function loadJobPhotos() {
+  const jobId = document.getElementById('photoJobSelect').value;
+  if(!jobId) { document.getElementById('jobPhotosArea').style.display='none'; return; }
+
+  const lead = allLeads.find(l => String(l.id) === String(jobId));
+  if(lead) document.getElementById('photoJobName').textContent = `${lead.name} — ${lead.address}`;
+
+  try {
+    const r = await fetch(`/api/photos/${jobId}`);
+    const photos = await r.json();
+
+    const before = photos.filter(p => p.type === 'before');
+    const after = photos.filter(p => p.type === 'after');
+    const other = photos.filter(p => p.type !== 'before' && p.type !== 'after');
+
+    renderPhotoGrid('beforeGrid', before);
+    renderPhotoGrid('afterGrid', after);
+    renderPhotoGrid('otherGrid', other);
+    document.getElementById('jobPhotosArea').style.display = 'block';
+  } catch(e) {
+    document.getElementById('jobPhotosArea').style.display = 'block';
+  }
+}
+
+function renderPhotoGrid(id, photos) {
+  const grid = document.getElementById(id);
+  if(!grid) return;
+  if(!photos.length) {
+    grid.innerHTML = '<div style="color:var(--muted);font-size:0.78rem;padding:10px;">No photos yet</div>';
+    return;
+  }
+  grid.innerHTML = photos.map(p => `
+    <div class="photo-thumb">
+      <img src="/api/photo-file/${p.path}" onerror="this.src='data:image/svg+xml,<svg xmlns=\\'http://www.w3.org/2000/svg\\'/>'" alt="${p.type}">
+      <div class="photo-label">${p.type} · ${p.uploaded||''}</div>
+    </div>`).join('');
+}
+
+// ═══════════════════════════════════════════════════════════════
+// INTAKE
+// ═══════════════════════════════════════════════════════════════
+async function submitIntake() {
+  const name = document.getElementById('i-name').value.trim();
+  const phone = document.getElementById('i-phone').value.trim();
+  const address = document.getElementById('i-address').value.trim();
+  if(!name || !address) { alert('Name and address are required.'); return; }
+
+  const services = Array.from(document.querySelectorAll('.services-check input[type=checkbox]:checked')).map(c=>c.value);
+
+  const lead = {
+    name, phone,
+    email: document.getElementById('i-email').value.trim(),
+    address,
+    city: document.getElementById('i-city').value.trim(),
+    zip: document.getElementById('i-zip').value.trim(),
+    hometype: document.getElementById('i-hometype').value,
+    heating: document.getElementById('i-heating').value,
+    waterheater: document.getElementById('i-waterheater').value,
+    cooking: document.getElementById('i-cooking').value,
+    panel: document.getElementById('i-panel').value,
+    sqft: document.getElementById('i-sqft').value.trim(),
+    household: document.getElementById('i-household').value,
+    income: document.getElementById('i-income').value,
+    comed_account: document.getElementById('i-comed').value.trim(),
+    source: document.getElementById('i-source').value,
+    notes: document.getElementById('i-notes').value.trim(),
+    services,
+    status: 'new'
+  };
+
+  await saveLeadRemote(lead);
+  alert(`✅ Job created for ${name}!`);
+  clearIntake();
+  switchTab('dashboard');
+}
+
+function clearIntake() {
+  ['i-name','i-phone','i-email','i-address','i-zip','i-sqft','i-comed','i-notes'].forEach(id => {
+    const el = document.getElementById(id);
+    if(el) el.value = '';
+  });
+  document.querySelectorAll('.services-check input[type=checkbox]').forEach(c => c.checked = false);
+}
+
+async function submitQuickIntake() {
+  const name = document.getElementById('m-name').value.trim();
+  const address = document.getElementById('m-address').value.trim();
+  if(!name || !address) { alert('Name and address required.'); return; }
+  const services = Array.from(document.querySelectorAll('.m-svc:checked')).map(c=>c.value);
+  const lead = {
+    name, address,
+    phone: document.getElementById('m-phone').value.trim(),
+    city: document.getElementById('m-city').value.trim(),
+    notes: document.getElementById('m-notes').value.trim(),
+    services, status: 'new', source: 'quick-intake'
+  };
+  await saveLeadRemote(lead);
+  closeModal('intakeModal');
+  alert(`✅ Job created for ${name}`);
+}
+
+// ═══════════════════════════════════════════════════════════════
+// JOB DETAIL / ADVANCE
+// ═══════════════════════════════════════════════════════════════
+function openJob(id) {
+  const l = allLeads.find(x => String(x.id) === String(id));
+  if(!l) return;
+  currentLead = l;
+  const svcs = (l.services||[]).map(s=>`<span class="svc-tag">${SVC_ICONS[s]||'⚡'} ${s}</span>`).join(' ') || '—';
+  const nextStatus = getNextStatus(l.status);
+
+  document.getElementById('jobModalTitle').textContent = `${l.name} — ${l.address}`;
+  document.getElementById('jobModalBody').innerHTML = `
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px;">
+      <div>
+        <div style="color:var(--muted);font-size:0.72rem;">STATUS</div>
+        <span class="status-badge status-${l.status}" style="font-size:0.82rem;">${STATUS_LABELS[l.status]}</span>
+      </div>
+      <div>
+        <div style="color:var(--muted);font-size:0.72rem;">PHONE</div>
+        <div style="font-size:0.88rem;">${l.phone||'—'}</div>
+      </div>
+      <div>
+        <div style="color:var(--muted);font-size:0.72rem;">EMAIL</div>
+        <div style="font-size:0.88rem;">${l.email||'—'}</div>
+      </div>
+      <div>
+        <div style="color:var(--muted);font-size:0.72rem;">SOURCE</div>
+        <div style="font-size:0.88rem;">${l.source||'—'}</div>
+      </div>
+      <div>
+        <div style="color:var(--muted);font-size:0.72rem;">HOME TYPE</div>
+        <div style="font-size:0.88rem;">${l.hometype||'—'}</div>
+      </div>
+      <div>
+        <div style="color:var(--muted);font-size:0.72rem;">PANEL</div>
+        <div style="font-size:0.88rem;">${l.panel||'—'}</div>
+      </div>
+      <div>
+        <div style="color:var(--muted);font-size:0.72rem;">INCOME STATUS</div>
+        <div style="font-size:0.82rem;">${l.income||'—'}</div>
+      </div>
+      <div>
+        <div style="color:var(--muted);font-size:0.72rem;">COMED ACCOUNT</div>
+        <div style="font-size:0.88rem;">${l.comed_account||'—'}</div>
+      </div>
+    </div>
+    <div style="margin-bottom:14px;">
+      <div style="color:var(--muted);font-size:0.72rem;margin-bottom:6px;">SERVICES</div>
+      <div class="services-tags">${svcs}</div>
+    </div>
+    ${l.notes?`<div style="margin-bottom:14px;"><div style="color:var(--muted);font-size:0.72rem;margin-bottom:4px;">NOTES</div><div style="font-size:0.82rem;background:#0d1520;padding:10px;border-radius:8px;">${l.notes}</div></div>`:''}
+    <hr class="divider">
+    <div style="color:var(--muted);font-size:0.72rem;margin-bottom:10px;">UPDATE STATUS</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;">
+      ${Object.entries(STATUS_LABELS).map(([k,v]) =>
+        `<button class="btn btn-sm ${l.status===k?'btn-cyan':'btn-secondary'}" onclick="updateStatus(${l.id},'${k}')">${v}</button>`
+      ).join('')}
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;">
+      <button class="btn btn-cyan btn-sm" onclick="closeModal('jobModal');goPhotos(${l.id})">📸 Upload Photos</button>
+      <button class="btn btn-purple btn-sm" onclick="closeModal('jobModal');goCloseout(${l.id})">✅ Closeout</button>
+      ${nextStatus?`<button class="btn btn-green" onclick="updateStatus(${l.id},'${nextStatus}')">➡️ Advance to ${STATUS_LABELS[nextStatus]}</button>`:''}
+    </div>`;
+
+  openModal('jobModal');
+}
+
+function getNextStatus(s) {
+  const flow = ['new','contacted','assessment','walkthrough','contract','active','complete'];
+  const i = flow.indexOf(s);
+  return i >= 0 && i < flow.length-1 ? flow[i+1] : null;
+}
+
+function advanceStatus(id) {
+  const l = allLeads.find(x => String(x.id) === String(id));
+  if(!l) return;
+  const next = getNextStatus(l.status);
+  if(next) updateStatus(id, next);
+}
+
+function filterByStatus(status) {
+  switchTab('jobs');
+  document.getElementById('filterStatus').value = status;
+  renderJobs();
+}
+
+function goPhotos(id) {
+  switchTab('photos');
+  document.getElementById('photoJobSelect').value = id;
+  loadJobPhotos();
+}
+
+function goCloseout(id) {
+  switchTab('closeout');
+  document.getElementById('closeoutJobSelect').value = id;
+  loadCloseout();
+}
+
+// ═══════════════════════════════════════════════════════════════
+// CLOSEOUT
+// ═══════════════════════════════════════════════════════════════
+function loadCloseout() {
+  const id = document.getElementById('closeoutJobSelect').value;
+  if(!id) { document.getElementById('closeoutArea').style.display='none'; return; }
+  const l = allLeads.find(x => String(x.id) === String(id));
+  if(l) {
+    document.getElementById('closeoutJobName').textContent = `${l.name} — ${l.address}`;
+    // Auto-fill lien waiver fields
+    document.getElementById('lw-owner').value   = l.name || '';
+    document.getElementById('lw-address').value = (l.address||'') + (l.city ? ', '+l.city : '');
+    document.getElementById('lw-date').value    = new Date().toISOString().split('T')[0];
+    if(l.closeout) {
+      document.getElementById('equipNotes').value = l.closeout.equipment||'';
+      document.getElementById('permitNum').value   = l.closeout.permit||'';
+      document.getElementById('comedRef').value    = l.closeout.comed_ref||'';
+      if(l.closeout.insp_date) document.getElementById('inspDate').value = l.closeout.insp_date;
+      if(l.closeout.lw_amount) document.getElementById('lw-amount').value = l.closeout.lw_amount;
+      const checks = l.closeout.checks||[];
+      checks.forEach((v,i) => { const el = document.getElementById('cc'+(i+1)); if(el) el.checked = v; });
+    }
+  }
+  document.getElementById('closeoutArea').style.display='block';
+  document.getElementById('lienWaiverPreview').style.display='none';
+}
+
+function generateLienWaiver() {
+  const owner   = document.getElementById('lw-owner').value.trim()   || 'Property Owner';
+  const address = document.getElementById('lw-address').value.trim() || 'Property Address';
+  const amount  = document.getElementById('lw-amount').value.trim()  || '___________';
+  const date    = document.getElementById('lw-date').value || new Date().toISOString().split('T')[0];
+  const fmtDate = date ? new Date(date+'T12:00:00').toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'}) : '';
+  const today   = new Date().toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});
+
+  const html = `
+  <div id="lwDoc" style="background:#fff;color:#111;padding:40px;border-radius:8px;font-family:Georgia,serif;max-width:700px;margin:0 auto;border:2px solid #333;">
+    <div style="text-align:center;margin-bottom:24px;">
+      <div style="font-size:1.4rem;font-weight:900;letter-spacing:1px;text-transform:uppercase;">BLACKTECH SOLUTIONS CORP</div>
+      <div style="font-size:0.85rem;color:#555;">Licensed Electrical Contractor — ComEd EESP | Chicago, IL</div>
+      <hr style="margin:12px 0;border-color:#333;">
+      <div style="font-size:1.2rem;font-weight:800;text-transform:uppercase;letter-spacing:2px;">UNCONDITIONAL LIEN WAIVER</div>
+      <div style="font-size:0.8rem;color:#555;">Upon Final Payment</div>
+    </div>
+
+    <p style="line-height:1.9;font-size:0.92rem;">
+      The undersigned, <strong>Blacktech Solutions Corp</strong> ("Contractor"), in consideration of the sum of
+      <strong>$${amount}</strong> and other good and valuable consideration, the receipt and sufficiency of which is hereby acknowledged,
+      does hereby waive and release any and all lien rights, claims, or rights to file a mechanic's lien against the property
+      described below, and against the owner, for labor performed and/or materials furnished through the date of this waiver.
+    </p>
+
+    <div style="background:#f5f5f5;border:1px solid #ccc;border-radius:6px;padding:16px;margin:16px 0;font-size:0.9rem;">
+      <div style="margin-bottom:6px;"><strong>Property Owner:</strong> ${owner}</div>
+      <div style="margin-bottom:6px;"><strong>Property Address:</strong> ${address}</div>
+      <div style="margin-bottom:6px;"><strong>Contract / Job Amount:</strong> $${amount}</div>
+      <div style="margin-bottom:6px;"><strong>Work Completed Through:</strong> ${fmtDate}</div>
+      <div><strong>Program:</strong> ComEd Whole Home Electric — EESP Installation</div>
+    </div>
+
+    <p style="line-height:1.9;font-size:0.88rem;color:#444;">
+      This Waiver and Release covers all labor, services, equipment, and materials furnished to the above-referenced
+      property by Blacktech Solutions Corp. The undersigned certifies that all subcontractors and material suppliers
+      through the above date have been paid or will be paid from funds received pursuant to this waiver.
+    </p>
+
+    <div style="margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:40px;">
+      <div>
+        <div style="border-bottom:1px solid #333;height:40px;margin-bottom:6px;"></div>
+        <div style="font-size:0.8rem;"><strong>Contractor Signature</strong></div>
+        <div style="font-size:0.8rem;margin-top:4px;">Derrell Black, Owner</div>
+        <div style="font-size:0.8rem;">Blacktech Solutions Corp</div>
+      </div>
+      <div>
+        <div style="border-bottom:1px solid #333;height:40px;margin-bottom:6px;"></div>
+        <div style="font-size:0.8rem;"><strong>Date Signed</strong></div>
+        <div style="font-size:0.8rem;margin-top:4px;">${today}</div>
+      </div>
+    </div>
+
+    <div style="margin-top:36px;display:grid;grid-template-columns:1fr 1fr;gap:40px;">
+      <div>
+        <div style="border-bottom:1px solid #333;height:40px;margin-bottom:6px;"></div>
+        <div style="font-size:0.8rem;"><strong>Owner / Authorized Agent Signature</strong></div>
+        <div style="font-size:0.8rem;margin-top:4px;">${owner}</div>
+      </div>
+      <div>
+        <div style="border-bottom:1px solid #333;height:40px;margin-bottom:6px;"></div>
+        <div style="font-size:0.8rem;"><strong>Date Signed</strong></div>
+      </div>
+    </div>
+
+    <div style="margin-top:30px;text-align:center;font-size:0.72rem;color:#888;border-top:1px solid #ccc;padding-top:10px;">
+      Blacktech Solutions Corp · leads@blacktechsolutionscorp.com · Chicago, IL · ComEd EESP Authorized Contractor
+    </div>
+
+    <div style="margin-top:16px;text-align:center;">
+      <button onclick="window.print()" style="padding:10px 28px;background:#1a73e8;color:#fff;border:none;border-radius:6px;font-size:0.9rem;font-weight:700;cursor:pointer;">🖨️ Print / Save PDF</button>
+    </div>
+  </div>`;
+
+  const preview = document.getElementById('lienWaiverPreview');
+  preview.innerHTML = html;
+  preview.style.display = 'block';
+  preview.scrollIntoView({behavior:'smooth'});
+  // Auto-check the lien waiver checkbox
+  const cc9 = document.getElementById('cc9');
+  if(cc9) cc9.checked = true;
+}
+
+async function downloadLienWaiver() {
+  const id = document.getElementById('closeoutJobSelect').value;
+  if(!id) { alert('Please select a job first.'); return; }
+  const amount = document.getElementById('lw-amount').value.trim();
+  if(!amount) { alert('Please enter the contract amount first.'); return; }
+  // Save amount to closeout data first
+  try {
+    await fetch(`/api/leads/${id}/closeout`, {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({closeout:{lw_amount: amount}})
+    });
+  } catch(e){}
+  // Download the real PDF
+  const url = `/api/lien-waiver/${id}`;
+  const a = document.createElement('a');
+  a.href = url; a.target = '_blank'; a.click();
+}
+
+async function saveCloseout() {
+  const id = document.getElementById('closeoutJobSelect').value;
+  if(!id) return;
+  const checks = Array.from({length:10},(_,i)=>(document.getElementById('cc'+(i+1))||{}).checked||false);
+  const closeout = {
+    equipment: document.getElementById('equipNotes').value,
+    permit: document.getElementById('permitNum').value,
+    insp_date: document.getElementById('inspDate').value,
+    comed_ref: document.getElementById('comedRef').value,
+    checks,
+    completed: new Date().toISOString().split('T')[0]
+  };
+  try {
+    await fetch(`/api/leads/${id}/closeout`, {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({closeout})
+    });
+  } catch(e) {}
+  await updateStatus(id, 'complete');
+  alert('✅ Job marked COMPLETE!');
+}
+
+async function saveCloseoutDraft() {
+  const id = document.getElementById('closeoutJobSelect').value;
+  if(!id) return;
+  const checks = Array.from({length:10},(_,i)=>(document.getElementById('cc'+(i+1))||{}).checked||false);
+  try {
+    await fetch(`/api/leads/${id}/closeout`, {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({closeout:{
+        equipment: document.getElementById('equipNotes').value,
+        permit: document.getElementById('permitNum').value,
+        insp_date: document.getElementById('inspDate').value,
+        comed_ref: document.getElementById('comedRef').value,
+        checks
+      }})
+    });
+    alert('💾 Draft saved!');
+  } catch(e) { alert('Saved locally.'); }
+}
+
+// ═══════════════════════════════════════════════════════════════
+// MODALS / TABS
+// ═══════════════════════════════════════════════════════════════
+function openModal(id) { document.getElementById(id).classList.add('open'); }
+function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+
+function switchTab(name) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('tab-'+name).classList.add('active');
+  const tabs = ['dashboard','jobs','intake','workorders','photos','program','closeout'];
+  const idx = tabs.indexOf(name);
+  document.querySelectorAll('.nav-tab')[idx].classList.add('active');
+}
+
+// Close modals on overlay click
+document.querySelectorAll('.modal-overlay').forEach(o => {
+  o.addEventListener('click', e => { if(e.target === o) o.classList.remove('open'); });
+});
+
+// ═══════════════════════════════════════════════════════════════
+// BOOT
+// ═══════════════════════════════════════════════════════════════
+loadLeads();
+</script>
+</body>
+</html>

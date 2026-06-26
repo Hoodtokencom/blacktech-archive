@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1050, initial-scale=0.45, maximum-scale=2.0">
+<title>Blacktech Solutions — RFP 66215 EV Charging Proposal</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Arial', sans-serif; background:#fff; color:#111; font-size:11pt; }
+
+  /* COVER PAGE */
+  .cover { 
+    min-height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center;
+    background: linear-gradient(135deg, #001a33 0%, #003366 60%, #0055a5 100%);
+    color:#fff; text-align:center; padding:60px 40px; page-break-after:always;
+  }
+  .cover .logo-box {
+    width:160px; height:130px;
+    background:url('/media/allenai/Expansion/Blacktech_Drive/Home_Backup/Blacktech_Reports/Photos/blacktech_logo.jpg') center/contain no-repeat white;
+    border-radius:12px; margin:0 auto 28px;
+  }
+  .cover h1 { font-size:2rem; font-weight:900; letter-spacing:1px; margin-bottom:8px; }
+  .cover h2 { font-size:1.2rem; font-weight:400; color:#90caf9; margin-bottom:32px; }
+  .cover .divider { width:80px; height:3px; background:#69BE28; margin:0 auto 32px; border-radius:2px; }
+  .cover .rfp-box {
+    background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.3);
+    border-radius:12px; padding:24px 40px; margin-bottom:40px; min-width:420px;
+  }
+  .cover .rfp-box p { font-size:1rem; margin-bottom:8px; color:#e3f2fd; }
+  .cover .rfp-box .big { font-size:1.4rem; font-weight:700; color:#fff; }
+  .cover .contact { font-size:0.9rem; color:#90caf9; line-height:1.8; }
+  .cover .contact strong { color:#fff; }
+  .cover .badge {
+    display:inline-block; background:#69BE28; color:#001a33;
+    font-weight:700; font-size:0.8rem; padding:4px 14px; border-radius:20px; margin:4px;
+  }
+
+  /* PAGE SECTIONS */
+  .page { padding:50px 60px; page-break-inside:avoid; }
+  .page-break { page-break-before:always; }
+
+  h1.section-title {
+    font-size:1.5rem; color:#001a33; border-bottom:3px solid #003366;
+    padding-bottom:8px; margin-bottom:20px; font-weight:900;
+  }
+  h2.sub-title {
+    font-size:1.1rem; color:#003366; margin:20px 0 10px;
+    font-weight:700; border-left:4px solid #69BE28; padding-left:10px;
+  }
+  h3.item-title { font-size:0.95rem; color:#001a33; font-weight:700; margin:14px 0 6px; }
+
+  p { margin-bottom:10px; line-height:1.7; }
+  ul { margin:8px 0 12px 24px; }
+  ul li { margin-bottom:5px; line-height:1.6; }
+
+  /* INFO TABLE */
+  .info-table { width:100%; border-collapse:collapse; margin-bottom:20px; }
+  .info-table td { padding:8px 12px; border:1px solid #ddd; font-size:0.9rem; }
+  .info-table td:first-child { background:#003366; color:#fff; font-weight:700; width:200px; }
+
+  /* DATA TABLE */
+  table.data { width:100%; border-collapse:collapse; margin:12px 0 20px; font-size:0.88rem; }
+  table.data th { background:#003366; color:#fff; padding:8px 10px; text-align:left; }
+  table.data td { padding:7px 10px; border-bottom:1px solid #eee; }
+  table.data tr:nth-child(even) td { background:#f5f8ff; }
+  table.data td.center { text-align:center; }
+  table.data td.right { text-align:right; }
+  table.data td.highlight { color:#003366; font-weight:700; }
+
+  /* SCORE BOX */
+  .score-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin:16px 0; }
+  .score-card { background:#f0f4ff; border:1px solid #c0d0f0; border-radius:8px; padding:14px; text-align:center; }
+  .score-card .pct { font-size:1.8rem; font-weight:900; color:#003366; }
+  .score-card .label { font-size:0.75rem; color:#555; margin-top:4px; }
+
+  /* CALLOUT BOX */
+  .callout { background:#e8f0e8; border-left:4px solid #2e7d32; padding:14px 16px; margin:16px 0; border-radius:4px; }
+  .callout.blue { background:#e3f0ff; border-left-color:#003366; }
+  .callout.gold { background:#fffde7; border-left-color:#f57f17; }
+  .callout strong { color:#001a33; }
+
+  /* FOOTER */
+  .footer { 
+    text-align:center; font-size:0.75rem; color:#666; 
+    border-top:1px solid #ddd; padding:16px 60px; margin-top:20px;
+  }
+
+  @media print {
+    body { font-size:10pt; }
+    .cover { min-height:100vh; }
+    .no-print { display:none !important; }
+  }
+
+  /* PRINT BUTTON */
+  .print-bar {
+    position:fixed; top:0; left:0; right:0; z-index:999;
+    background:#001a33; padding:10px 20px;
+    display:flex; align-items:center; gap:12px;
+  }
+  .print-bar button {
+    background:#69BE28; color:#001a33; border:none;
+    font-weight:700; padding:8px 20px; border-radius:6px; cursor:pointer; font-size:0.9rem;
+  }
+  .print-bar span { color:#90caf9; font-size:0.85rem; }
+  @media print { .print-bar { display:none !important; } }
+  .print-spacer { height:50px; }
+</style>
+</head>
+<body>
+
+<div class="print-bar no-print">
+  <button onclick="window.print()">🖨️ Print / Save PDF</button>
+  <span>Blacktech Solutions Corp — City of Chicago RFP #66215 — EV Charging Stations</span>
+</div>
+<div class="print-spacer no-print"></div>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  COVER PAGE                                 -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="cover">
+  <div class="logo-box"></div>
+  <h1>BLACKTECH SOLUTIONS CORP</h1>
+  <h2>Licensed Electrical Contractor — Chicagoland</h2>
+  <div class="divider"></div>
+
+  <div class="rfp-box">
+    <p>In Response To</p>
+    <p class="big">City of Chicago RFP #66215</p>
+    <p style="margin-top:8px; font-size:1.1rem;">EV Charging Stations</p>
+    <p style="color:#90caf9; font-size:0.85rem; margin-top:8px;">Specification No. 1332033</p>
+    <div style="margin-top:16px;">
+      <span class="badge">Category A — 2FM Fleet Facilities</span>
+      <span class="badge">Category B — CDOT Public Sites</span>
+    </div>
+  </div>
+
+  <div class="contact">
+    <strong>Submitted by:</strong> Derrell Black, Owner<br>
+    <strong>Company:</strong> Blacktech Solutions Corp<br>
+    <strong>Phone:</strong> (312) 965-2782<br>
+    <strong>Email:</strong> leads@blacktechsolutionscorp.com<br>
+    <strong>Submission Date:</strong> June 13, 2026<br>
+    <strong>Proposal Deadline:</strong> June 16, 2026 @ 3:00 PM CT
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  TABLE OF CONTENTS                          -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="page page-break">
+  <h1 class="section-title">Table of Contents</h1>
+  <table class="data">
+    <tr><th>#</th><th>Section</th><th>Page</th></tr>
+    <tr><td>1</td><td>Cover Page</td><td>1</td></tr>
+    <tr><td>2</td><td>Table of Contents</td><td>2</td></tr>
+    <tr><td>3</td><td>Executive Summary</td><td>3</td></tr>
+    <tr><td>4</td><td>Company Overview & Qualifications</td><td>4</td></tr>
+    <tr><td>5</td><td>Category A — 2FM Technical Approach</td><td>5</td></tr>
+    <tr><td>6</td><td>Category B — CDOT Technical Approach</td><td>7</td></tr>
+    <tr><td>7</td><td>Key Personnel & Staffing Plan</td><td>9</td></tr>
+    <tr><td>8</td><td>Project References</td><td>10</td></tr>
+    <tr><td>9</td><td>Implementation Schedule</td><td>11</td></tr>
+    <tr><td>10</td><td>Schedule of Compensation — Cat. A (Exhibit A8)</td><td>12</td></tr>
+    <tr><td>11</td><td>Schedule of Compensation — Cat. B (Exhibit B6)</td><td>13</td></tr>
+    <tr><td>12</td><td>Insurance & Bonding Commitment</td><td>14</td></tr>
+    <tr><td>13</td><td>Prevailing Wage Compliance</td><td>15</td></tr>
+    <tr><td>14</td><td>Buy America Certification (Cat. B)</td><td>15</td></tr>
+    <tr><td>15</td><td>Exceptions to Sample Agreement</td><td>16</td></tr>
+    <tr><td>16</td><td>Conflict of Interest Disclosure</td><td>16</td></tr>
+    <tr><td>17</td><td>Sexual Harassment Policy Affidavit</td><td>16</td></tr>
+  </table>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SECTION 3: EXECUTIVE SUMMARY               -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="page page-break">
+  <h1 class="section-title">Section 3 — Executive Summary</h1>
+
+  <p>Blacktech Solutions Corp is a licensed electrical contracting firm headquartered in Chicago, Illinois. We are submitting this proposal in response to the City of Chicago's Request for Proposals No. 66215 for EV Charging Station procurement, installation, and maintenance services. We are bidding on <strong>both Category A (2FM Fleet Facilities)</strong> and <strong>Category B (CDOT Public Charging)</strong>.</p>
+
+  <div class="callout blue">
+    <strong>Our Value Proposition:</strong> Blacktech Solutions Corp brings Chicagoland-based electrical contracting expertise, a commitment to prevailing wage compliance, and deep community ties to the 60628 ZIP code and South Side communities — directly aligning with the City's goals of equity-driven infrastructure deployment.
+  </div>
+
+  <h2 class="sub-title">Why Blacktech Solutions Corp</h2>
+  <ul>
+    <li><strong>Chicago-based contractor</strong> — local workforce, fast mobilization, city knowledge</li>
+    <li><strong>Licensed electrical contractor</strong> — full compliance with City of Chicago electrical permitting</li>
+    <li><strong>Prevailing wage compliant</strong> — committed to Illinois Prevailing Wage Act and Davis-Bacon compliance on all City work</li>
+    <li><strong>Equity-focused</strong> — South Side Chicago base supports the City's environmental justice priorities</li>
+    <li><strong>Turnkey capability</strong> — electrical design, permitting, installation, and long-term maintenance</li>
+    <li><strong>Partnerships</strong> — established relationships with EVSE manufacturers and electrical suppliers for competitive hardware sourcing</li>
+  </ul>
+
+  <h2 class="sub-title">Proposal Summary</h2>
+  <table class="info-table">
+    <tr><td>Respondent</td><td>Blacktech Solutions Corp</td></tr>
+    <tr><td>Owner</td><td>Derrell Black</td></tr>
+    <tr><td>License</td><td>Illinois Licensed Electrical Contractor</td></tr>
+    <tr><td>City</td><td>Chicago, IL</td></tr>
+    <tr><td>Categories Bid</td><td>Category A (2FM) and Category B (CDOT)</td></tr>
+    <tr><td>Contract Term</td><td>60 months (5 years) + 2 option years</td></tr>
+    <tr><td>Prevailing Wage</td><td>Full compliance committed</td></tr>
+    <tr><td>Buy America</td><td>All EVSE hardware sourced from U.S. manufacturers</td></tr>
+    <tr><td>Bonding Capacity</td><td>100% of contract value — Performance & Payment Bond</td></tr>
+  </table>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SECTION 4: COMPANY OVERVIEW                -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="page page-break">
+  <h1 class="section-title">Section 4 — Company Overview & Qualifications</h1>
+
+  <h2 class="sub-title">About Blacktech Solutions Corp</h2>
+  <p>Blacktech Solutions Corp is a Chicago-based licensed electrical contracting company specializing in residential, commercial, and municipal electrical infrastructure. Founded and led by Derrell Black, we serve clients across the Chicagoland area with a focus on quality workmanship, code compliance, and community impact.</p>
+
+  <p>Our team is experienced in large-scale electrical installations, service upgrades, ComEd coordination, and infrastructure projects requiring coordination with municipal departments. We are committed to hiring local workers and supporting the South Side Chicago community through every project we undertake.</p>
+
+  <h2 class="sub-title">Core Capabilities</h2>
+  <ul>
+    <li>Electrical service upgrades (100A – 400A)</li>
+    <li>Commercial and industrial power distribution</li>
+    <li>EV charger rough-in, panel upgrades, and dedicated circuit installation</li>
+    <li>Conduit installation (EMT, rigid, PVC) — underground and above-grade</li>
+    <li>ComEd utility coordination and service entrance work</li>
+    <li>City of Chicago permit filing and inspection management</li>
+    <li>Prevailing wage and Davis-Bacon compliant workforce</li>
+    <li>Low voltage systems, data, and control wiring</li>
+  </ul>
+
+  <h2 class="sub-title">Licenses & Certifications</h2>
+  <table class="info-table">
+    <tr><td>Electrical Contractor License</td><td>State of Illinois — Licensed Electrical Contractor</td></tr>
+    <tr><td>City of Chicago</td><td>City of Chicago Electrical Contractor License</td></tr>
+    <tr><td>Insurance</td><td>General Liability, Workers' Compensation, Auto — on file</td></tr>
+    <tr><td>EVITP</td><td>EV Infrastructure Training Program Certification — Key personnel certified / in process</td></tr>
+    <tr><td>OSHA</td><td>OSHA 10/30 — All field personnel</td></tr>
+  </table>
+
+  <h2 class="sub-title">Service Area</h2>
+  <p>Blacktech Solutions Corp operates throughout the City of Chicago and surrounding Chicagoland municipalities, with particular depth in the South Side and Southwest Side communities. Our Phase I priority sites (2352 S Ashland, 3638 S Iron, 65th & State, 10408 S Vincennes) are within our primary service zone — enabling rapid mobilization and minimal travel overhead.</p>
+
+  <div class="callout gold">
+    <strong>Community Connection:</strong> Blacktech Solutions Corp is rooted in the 60628 ZIP code (Roseland/West Pullman). Our team lives and works in the communities where this infrastructure will be deployed — creating genuine local investment in the success of the City's EV charging program.
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SECTION 5: CATEGORY A TECHNICAL APPROACH   -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="page page-break">
+  <h1 class="section-title">Section 5 — Category A: 2FM Fleet Facilities Technical Approach</h1>
+
+  <h2 class="sub-title">Understanding of Scope</h2>
+  <p>Blacktech Solutions Corp understands that Category A requires procurement, installation, configuration, and ongoing maintenance of EV charging stations at approximately 66 City-owned fleet facility sites over a 60-month contract term. The City (2FM) will provide all electrical wiring and infrastructure at each site; Blacktech will supply and install EVSE hardware, integrate with the AssetWorks FuelFocus platform, and provide 24/7 monitoring and support.</p>
+
+  <h2 class="sub-title">EVSE Hardware Partners</h2>
+  <p>Blacktech Solutions Corp will source EVSE hardware from U.S.-based manufacturers meeting all City specifications. Our proposed hardware partners include established brands offering:</p>
+  <ul>
+    <li><strong>Level 2 AC Chargers:</strong> Min. 208V/30A, SAE J1772, dual-port, 15 ft. retractable cable, OCPP 1.6/2.0 compliant</li>
+    <li><strong>Level 3 DC Fast Chargers:</strong> Min. 208V/180A, CHAdeMO + CCS connectors, ≥22 kWh capacity, cloud-managed</li>
+    <li><strong>Solar Canopy Chargers:</strong> Min. 4 kW, 20'L × 10'W canopy, 100 mph wind rating, 8 ft. clearance, CHAdeMO + CCS</li>
+  </ul>
+
+  <h2 class="sub-title">AssetWorks FuelFocus Integration</h2>
+  <p>All installed EVSE units will be configured for full integration with the City's AssetWorks FuelFocus fleet management platform. Integration will deliver:</p>
+  <ul>
+    <li>Real-time kWh consumption per vehicle/unit</li>
+    <li>Odometer and timestamp data capture at each charge event</li>
+    <li>Unit ID and site location tagging</li>
+    <li>Remote shutoff capability via networked software</li>
+    <li>API data feed compatible with AssetWorks reporting requirements</li>
+  </ul>
+
+  <h2 class="sub-title">Phase I Installation Plan — 10 Priority Sites</h2>
+  <p>Blacktech commits to completing all Phase I installations within <strong>6 months of contract award</strong>, as required. Our approach:</p>
+
+  <table class="data">
+    <tr><th>Site Address</th><th>Charger Type</th><th>Target Completion</th></tr>
+    <tr><td>2352 S Ashland</td><td>Level 2 AC</td><td>Month 2</td></tr>
+    <tr><td>4211 W Ferdinand</td><td>Level 2 AC</td><td>Month 2</td></tr>
+    <tr><td>3638 S Iron</td><td>Level 2 AC</td><td>Month 3</td></tr>
+    <tr><td>4243 Neenah</td><td>Level 2 AC</td><td>Month 3</td></tr>
+    <tr><td>4808 W Wilson</td><td>Level 2 AC</td><td>Month 3</td></tr>
+    <tr><td>4900 W Sunnyside</td><td>Level 2 AC</td><td>Month 4</td></tr>
+    <tr><td>10408 S Vincennes</td><td>Level 2 AC</td><td>Month 4</td></tr>
+    <tr><td>6445 N Ravenswood</td><td>Level 2 AC</td><td>Month 5</td></tr>
+    <tr><td>1869 W Pershing</td><td>Level 2 AC</td><td>Month 5</td></tr>
+    <tr><td>65th &amp; State</td><td>Level 2 AC</td><td>Month 6</td></tr>
+  </table>
+
+  <h2 class="sub-title">Maintenance & Support Plan</h2>
+  <ul>
+    <li><strong>24/7 Remote Monitoring:</strong> All units networked to cloud dashboard; alerts triggered on fault or downtime</li>
+    <li><strong>Response Time:</strong> 4-hour response for critical faults; 24-hour for non-critical</li>
+    <li><strong>Preventive Maintenance:</strong> Quarterly inspections per unit per City schedule</li>
+    <li><strong>Parts Inventory:</strong> Local Chicago warehouse stock of common replacement parts (cables, connectors, control boards)</li>
+    <li><strong>Transportation:</strong> Blacktech vehicles equipped for unit transport City facility ↔ contractor shop</li>
+    <li><strong>Uptime Commitment:</strong> ≥95% uptime target across all installed units</li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SECTION 6: CATEGORY B TECHNICAL APPROACH   -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="page page-break">
+  <h1 class="section-title">Section 6 — Category B: CDOT Public Charging Technical Approach</h1>
+
+  <h2 class="sub-title">Understanding of Scope</h2>
+  <p>Category B requires a fully turnkey solution across 7 identified CDOT public locations — including design, utility coordination, civil and electrical construction, EVSE procurement, installation, commissioning, and ongoing operations & maintenance. Blacktech Solutions Corp will serve as the prime electrical contractor, self-performing all electrical work and partnering with civil/structural subcontractors as needed for canopy and site work.</p>
+
+  <h2 class="sub-title">Turnkey Delivery Approach</h2>
+
+  <h3 class="item-title">Phase 1 — Design & Permitting (Months 1–3)</h3>
+  <ul>
+    <li>Site survey and load analysis for each of the 7 locations</li>
+    <li>Electrical design drawings stamped by licensed Illinois PE</li>
+    <li>City of Chicago building and electrical permit applications</li>
+    <li>ComEd utility coordination — service upgrade requests, transformer sizing</li>
+    <li>ADA compliance review per ADAAG standards</li>
+    <li>Phase 1 Environmental Site Assessment where required</li>
+  </ul>
+
+  <h3 class="item-title">Phase 2 — Site Preparation & Construction (Months 3–9)</h3>
+  <ul>
+    <li>Electrical trenching and conduit installation (underground service runs)</li>
+    <li>Service entrance upgrades and panel installation</li>
+    <li>Transformer coordination with ComEd</li>
+    <li>Site prep: bollards, signage, ADA-compliant surfaces, lighting</li>
+    <li>Cable management and weatherproof enclosures</li>
+    <li>All work performed by EVITP-certified Illinois licensed electricians</li>
+    <li>Davis-Bacon prevailing wages paid to all workers</li>
+  </ul>
+
+  <h3 class="item-title">Phase 3 — EVSE Installation & Commissioning (Months 8–12)</h3>
+  <ul>
+    <li>EVSE hardware delivery and installation (pedestal/wall mount per site)</li>
+    <li>Network configuration, OCPI integration, and software commissioning</li>
+    <li>Load testing and ComEd final inspection</li>
+    <li>City inspection and certificate of occupancy/completion</li>
+    <li>Staff training for City personnel on charger operation and monitoring</li>
+  </ul>
+
+  <h3 class="item-title">Phase 4 — Operations & Maintenance (Months 12–60)</h3>
+  <ul>
+    <li>Minimum <strong>80% station uptime</strong> guaranteed (target: 90%+)</li>
+    <li>Real-time monitoring: utilization, energy, uptime dashboards</li>
+    <li>Preventive maintenance schedule per City approval</li>
+    <li>Corrective maintenance within 4 hours (critical) / 24 hours (non-critical)</li>
+    <li>Annual uptime and performance reporting to CDOT</li>
+    <li>Decommissioning plan available at end of pilot</li>
+  </ul>
+
+  <h2 class="sub-title">Buy America Compliance</h2>
+  <div class="callout">
+    <strong>Blacktech Solutions Corp commits to 100% Buy America compliance for all EVSE hardware:</strong>
+    All charging stations will be sourced from U.S. manufacturers with domestic component content exceeding 55% of total component cost, in accordance with DOE Grant Term 45 and IIJA Buy America requirements. Documentation and manufacturer certifications will be provided prior to procurement.
+  </div>
+
+  <h2 class="sub-title">Equity & Environmental Justice</h2>
+  <p>Blacktech Solutions Corp strongly supports CDOT's equity goals for the EV Charging Pilot Program. Our team will prioritize:</p>
+  <ul>
+    <li>Hiring local Chicago residents for construction and maintenance roles</li>
+    <li>Targeting South Side and West Side sites for community workforce development</li>
+    <li>Partnering with EVITP training programs to build local EV electrician capacity</li>
+    <li>Transparent community engagement during site construction</li>
+  </ul>
+
+  <h2 class="sub-title">Cybersecurity Controls</h2>
+  <ul>
+    <li>All EVSE units OCPP 1.6/2.0 compliant with TLS 1.2+ encryption</li>
+    <li>Network segmentation between EVSE management and public internet</li>
+    <li>Firmware update management via vendor-managed secure channel</li>
+    <li>Incident response plan in place for cyber events</li>
+    <li>Annual penetration testing of EVSE management platform</li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SECTION 7: KEY PERSONNEL                   -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="page page-break">
+  <h1 class="section-title">Section 7 — Key Personnel & Staffing Plan</h1>
+
+  <table class="data">
+    <tr>
+      <th>Name</th>
+      <th>Title / Role</th>
+      <th>Certifications</th>
+      <th>Availability</th>
+    </tr>
+    <tr>
+      <td class="highlight">Derrell Black</td>
+      <td>Owner / Project Executive</td>
+      <td>IL Licensed Electrical Contractor, OSHA 30</td>
+      <td>100% — Chicago, IL</td>
+    </tr>
+    <tr>
+      <td>[Field Supervisor TBD]</td>
+      <td>Lead Electrician / Field Supervisor</td>
+      <td>IL Journeyman Electrician, EVITP, OSHA 30</td>
+      <td>100% — Chicago, IL</td>
+    </tr>
+    <tr>
+      <td>[Project Manager TBD]</td>
+      <td>Project Manager</td>
+      <td>PMP or equivalent, OSHA 10</td>
+      <td>100% — Chicago, IL</td>
+    </tr>
+    <tr>
+      <td>[Engineer TBD]</td>
+      <td>Electrical Engineer (PE)</td>
+      <td>Illinois PE License — Electrical</td>
+      <td>Contract basis</td>
+    </tr>
+    <tr>
+      <td>[O&M Tech TBD]</td>
+      <td>O&M Technician</td>
+      <td>EVITP Certified, OSHA 10</td>
+      <td>100% — Chicago, IL</td>
+    </tr>
+  </table>
+
+  <div class="callout gold">
+    <strong>Note:</strong> Blacktech Solutions Corp is actively recruiting EVITP-certified electricians for this contract. Final staffing plan with full resumes will be provided upon contract award or upon City request during evaluation.
+  </div>
+
+  <h2 class="sub-title">Workforce Development Commitment</h2>
+  <p>Blacktech Solutions Corp is committed to building EV infrastructure workforce capacity on the South Side of Chicago. We will partner with local EVITP training programs to certify additional electricians during the first 6 months of the contract, ensuring all field personnel meet the City's EVITP certification requirement for Category B work.</p>
+
+  <h2 class="sub-title">Organizational Structure</h2>
+  <ul>
+    <li><strong>Project Executive (Derrell Black)</strong> — overall contract accountability, City liaison, financial oversight</li>
+    <li><strong>Project Manager</strong> — day-to-day scheduling, permitting, subcontractor coordination</li>
+    <li><strong>Field Supervisor</strong> — on-site electrical work, crew management, safety compliance</li>
+    <li><strong>PE Engineer</strong> — stamped drawings, utility coordination, technical review</li>
+    <li><strong>O&M Technician</strong> — ongoing monitoring, maintenance, and repair response</li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SECTION 8: REFERENCES                      -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="page page-break">
+  <h1 class="section-title">Section 8 — Project References</h1>
+
+  <p>The following references demonstrate Blacktech Solutions Corp's experience with electrical contracting, service upgrades, and infrastructure projects in the Chicago area. Additional references available upon request.</p>
+
+  <h2 class="sub-title">Reference 1</h2>
+  <table class="info-table">
+    <tr><td>Project</td><td>400A Electrical Service Upgrade — Residential</td></tr>
+    <tr><td>Client</td><td>[Client Name — available upon request]</td></tr>
+    <tr><td>Address</td><td>6515 S Drexel Ave, Chicago, IL</td></tr>
+    <tr><td>Scope</td><td>Complete 400A service upgrade including demo, labor, and materials. $24,990 project value.</td></tr>
+    <tr><td>Contact</td><td>Available upon request</td></tr>
+  </table>
+
+  <h2 class="sub-title">Reference 2</h2>
+  <table class="info-table">
+    <tr><td>Project</td><td>Electrical Labor — 10150 S Luella Ave</td></tr>
+    <tr><td>Client</td><td>[Client Name — available upon request]</td></tr>
+    <tr><td>Address</td><td>10150 S Luella Ave, Chicago, IL</td></tr>
+    <tr><td>Scope</td><td>$12,500 electrical labor proposal — residential commercial scope</td></tr>
+    <tr><td>Contact</td><td>Available upon request</td></tr>
+  </table>
+
+  <h2 class="sub-title">Reference 3</h2>
+  <table class="info-table">
+    <tr><td>Project</td><td>ComEd Electrification Program — Multiple Properties</td></tr>
+    <tr><td>Client</td><td>Elevate Energy / ComEd Electrification Partners</td></tr>
+    <tr><td>Scope</td><td>Multi-unit electrical upgrades, panel replacements, and electrification retrofits in Cook County under ComEd Electrification Program</td></tr>
+    <tr><td>Contact</td><td>Available upon request</td></tr>
+  </table>
+
+  <div class="callout gold">
+    <strong>Note to Evaluators:</strong> Blacktech Solutions Corp is a growing contractor actively expanding into municipal EV infrastructure. Our strong foundation in electrical contracting, ComEd coordination, and Chicago-area permitting provides the technical base for this contract. We welcome the opportunity to demonstrate our capabilities on Phase I sites.
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SECTION 9: IMPLEMENTATION SCHEDULE         -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="page page-break">
+  <h1 class="section-title">Section 9 — Implementation Schedule</h1>
+
+  <h2 class="sub-title">Category A — 2FM Fleet Facilities</h2>
+  <table class="data">
+    <tr><th>Month</th><th>Activity</th><th>Milestone</th></tr>
+    <tr><td>1–2</td><td>Contract mobilization, EVSE vendor procurement, staff onboarding</td><td>Vendor POs issued</td></tr>
+    <tr><td>2–3</td><td>Phase I site surveys, equipment delivery, begin installations (Sites 1–4)</td><td>4 sites complete</td></tr>
+    <tr><td>3–4</td><td>Phase I installations continue (Sites 5–7), AssetWorks integration testing</td><td>7 sites complete</td></tr>
+    <tr><td>4–6</td><td>Complete Phase I (Sites 8–10), commissioning, City inspection, handover</td><td>✅ Phase I complete</td></tr>
+    <tr><td>6–12</td><td>Phase II site planning (90 days after award), begin Phase II installations</td><td>Phase II underway</td></tr>
+    <tr><td>12–60</td><td>Ongoing installations, maintenance, monitoring, annual reporting</td><td>Steady-state O&M</td></tr>
+  </table>
+
+  <h2 class="sub-title">Category B — CDOT Public Sites (7 Locations)</h2>
+  <table class="data">
+    <tr><th>Month</th><th>Activity</th><th>Milestone</th></tr>
+    <tr><td>1–2</td><td>Site surveys, utility assessment, preliminary design for all 7 sites</td><td>Survey complete</td></tr>
+    <tr><td>2–3</td><td>PE-stamped design drawings, permit applications filed</td><td>Permits submitted</td></tr>
+    <tr><td>3–5</td><td>ComEd utility coordination, transformer orders, civil contractor mobilization</td><td>Utility confirmed</td></tr>
+    <tr><td>3–8</td><td>Site preparation: trenching, conduit, electrical rough-in, ADA work</td><td>Rough-in complete</td></tr>
+    <tr><td>6–10</td><td>EVSE hardware delivery, installation, network configuration</td><td>Hardware installed</td></tr>
+    <tr><td>10–12</td><td>Final inspections, commissioning, City acceptance testing, handover</td><td>✅ All 7 sites live</td></tr>
+    <tr><td>12–60</td><td>O&M services: monitoring, PM, corrective maintenance, annual reporting</td><td>Steady-state O&M</td></tr>
+  </table>
+
+  <div class="callout">
+    <strong>Commitment:</strong> Blacktech Solutions Corp commits to full delivery and commissioning of all Category B sites within <strong>12 months of contract execution</strong>, as required by the RFP.
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SECTION 10: SCHEDULE OF COMPENSATION — A   -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="page page-break">
+  <h1 class="section-title">Section 10 — Schedule of Compensation: Category A (Exhibit A8)</h1>
+
+  <div class="callout blue">
+    <strong>Note:</strong> Per RFP instructions, unit price placeholder of <strong>$0.01</strong> has been entered in the iSupplier e-procurement system. Actual pricing is submitted herein as an attachment and will not be evaluated through the system.
+  </div>
+
+  <table class="data">
+    <tr>
+      <th>Line Item</th>
+      <th>UOM</th>
+      <th>Est. Qty</th>
+      <th>Unit Price</th>
+      <th>Notes</th>
+    </tr>
+    <tr>
+      <td>Level 2 EV Charging Stations (Supply & Install)</td>
+      <td>Each</td>
+      <td>2,600</td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">$_____</td>
+      <td>Dual-port, SAE J1772, 208V/30A</td>
+    </tr>
+    <tr>
+      <td>DC Fast Charging Stations — Level 3 (Supply & Install)</td>
+      <td>Each</td>
+      <td>37</td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">$_____</td>
+      <td>CHAdeMO + CCS, 208V/180A</td>
+    </tr>
+    <tr>
+      <td>Solar EV Charging Stations (Supply & Install)</td>
+      <td>Each</td>
+      <td>16</td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">$_____</td>
+      <td>4kW min., canopy style, wind-rated</td>
+    </tr>
+    <tr>
+      <td>Parts — Mechanical &amp; Electrical (L2)</td>
+      <td>Disc. from List</td>
+      <td>280,000</td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">____% disc.</td>
+      <td>Discount from manufacturer list</td>
+    </tr>
+    <tr>
+      <td>Parts — Mechanical &amp; Electrical (L3)</td>
+      <td>Disc. from List</td>
+      <td>500,000</td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">____% disc.</td>
+      <td>Discount from manufacturer list</td>
+    </tr>
+    <tr>
+      <td>Maintenance Labor — Regular Hours (7am–3pm)</td>
+      <td>Hour</td>
+      <td>1,000</td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">$_____</td>
+      <td>Prevailing wage rate applies</td>
+    </tr>
+    <tr>
+      <td>Transportation (City Facility ↔ Shop, each way)</td>
+      <td>Each</td>
+      <td>2,000</td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">$_____</td>
+      <td>Per trip, both directions</td>
+    </tr>
+    <tr>
+      <td>Annual Service Agreement — L2 (per unit)</td>
+      <td>Unit/Year</td>
+      <td>TBD</td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">$_____</td>
+      <td>Preventive + reactive maintenance</td>
+    </tr>
+    <tr>
+      <td>Annual Service Agreement — L3 (per unit)</td>
+      <td>Unit/Year</td>
+      <td>TBD</td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">$_____</td>
+      <td>Preventive + reactive maintenance</td>
+    </tr>
+  </table>
+
+  <div class="callout gold">
+    <strong>Pricing Note:</strong> Unit prices in the table above require your EVSE vendor quotes before submission. Contact your EVSE hardware partners (e.g., ChargePoint, Blink, Enel X, Clipper Creek) for current pricing. Maintenance labor rates must meet or exceed Cook County prevailing wage rates for electricians.
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SECTION 11: SCHEDULE OF COMPENSATION — B   -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="page page-break">
+  <h1 class="section-title">Section 11 — Schedule of Compensation: Category B (Exhibit B6)</h1>
+
+  <p>Per-site not-to-exceed cost table for all 7 CDOT EV charging pilot locations. Costs are submitted as not-to-exceed amounts per cost category.</p>
+
+  <table class="data">
+    <tr>
+      <th>Cost Category</th>
+      <th>Basis</th>
+      <th>Per-Site NTE</th>
+      <th>7-Site Total NTE</th>
+    </tr>
+    <tr>
+      <td>Design (engineering &amp; permitting prep)</td>
+      <td>Per site</td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">$_____</td>
+      <td>$_____</td>
+    </tr>
+    <tr>
+      <td>Permitting</td>
+      <td>Per site</td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">$_____</td>
+      <td>$_____</td>
+    </tr>
+    <tr>
+      <td>Phase 1 Environmental Site Assessment</td>
+      <td>If required</td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">$_____</td>
+      <td>$_____</td>
+    </tr>
+    <tr>
+      <td>Surety / Bonding</td>
+      <td>Per site</td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">$_____</td>
+      <td>$_____</td>
+    </tr>
+    <tr>
+      <td>Utility Infrastructure (make-ready, service, transformer)</td>
+      <td>Per site</td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">$_____</td>
+      <td>$_____</td>
+    </tr>
+    <tr>
+      <td>Site Prep &amp; Construction (civil, signage, bollards, ADA)</td>
+      <td>Per site</td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">$_____</td>
+      <td>$_____</td>
+    </tr>
+    <tr>
+      <td>EVSE Hardware &amp; Software (supply, warranty, licenses)</td>
+      <td>Per site</td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">$_____</td>
+      <td>$_____</td>
+    </tr>
+    <tr>
+      <td>Networking &amp; Data Services</td>
+      <td>Per site / year</td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">$_____</td>
+      <td>$_____</td>
+    </tr>
+    <tr>
+      <td>Maintenance Services (preventive &amp; corrective, 2-yr)</td>
+      <td>Per site</td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">$_____</td>
+      <td>$_____</td>
+    </tr>
+    <tr style="background:#e3f0ff; font-weight:700;">
+      <td colspan="2"><strong>TOTAL PROJECT COST</strong></td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">$_____</td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">$_____</td>
+    </tr>
+    <tr>
+      <td colspan="2">Total Cost per Port (÷ # of charging ports)</td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">$_____</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td colspan="2">Total Cost per kWh (÷ projected Year 1 kWh capacity)</td>
+      <td contenteditable="true" style="border-bottom:1.5px dashed #003366;">$_____</td>
+      <td>—</td>
+    </tr>
+  </table>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SECTION 12: INSURANCE & BONDING            -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="page page-break">
+  <h1 class="section-title">Section 12 — Insurance & Bonding Commitment</h1>
+
+  <p>Blacktech Solutions Corp commits to maintaining all required insurance coverage for the full term of the contract, naming the City of Chicago as additional insured on a primary, non-contributory basis.</p>
+
+  <table class="data">
+    <tr><th>Coverage Type</th><th>Required Limit</th><th>Status</th></tr>
+    <tr><td>Workers' Compensation</td><td>Statutory / $1M Employer's Liability</td><td>✅ In Place</td></tr>
+    <tr><td>Commercial General Liability</td><td>$1M per occurrence / $2M aggregate</td><td>✅ In Place</td></tr>
+    <tr><td>Automobile Liability</td><td>$1M per accident</td><td>✅ In Place</td></tr>
+    <tr><td>Umbrella / Excess Liability</td><td>$10M per occurrence</td><td>Will obtain prior to award</td></tr>
+    <tr><td>Pollution Liability</td><td>$5M per occurrence</td><td>Will obtain prior to award</td></tr>
+    <tr><td>Professional Liability / Tech E&O</td><td>$3M per claim</td><td>Will obtain prior to award</td></tr>
+    <tr><td>Cyber Liability</td><td>$5M per incident</td><td>Will obtain prior to award</td></tr>
+    <tr><td>Builders Risk (Cat. B)</td><td>Replacement cost, all-risk</td><td>Will obtain prior to award</td></tr>
+  </table>
+
+  <h2 class="sub-title">Bonding</h2>
+  <p>Blacktech Solutions Corp will provide a <strong>Performance and Payment Bond at 100% of the contract value</strong> within 5–7 calendar days of written notice from the City, as required. Surety will be selected from the current U.S. Treasury Department Circular 570 list with underwriting limitation exceeding the contract amount.</p>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SECTION 13–17: COMPLIANCE SECTIONS         -->
+<!-- ═══════════════════════════════════════════ -->
+  <h1 class="section-title" style="margin-top:30px;">Section 13 — Prevailing Wage Compliance</h1>
+  <p>Blacktech Solutions Corp commits to full compliance with the <strong>Illinois Prevailing Wage Act (820 ILCS 130/.01 et seq.)</strong> for all Category A (2FM) work, and the <strong>Davis-Bacon Act (40 U.S.C. § 276)</strong> for all Category B (CDOT) federally funded construction work. All workers will be paid at or above the prevailing rate of wages for Cook County. Certified payroll records will be maintained and available for City audit upon request. The Davis-Bacon wage determination poster (WH-1321) will be posted at all Category B work sites.</p>
+
+  <h1 class="section-title" style="margin-top:30px;">Section 14 — Buy America Certification (Category B)</h1>
+  <p>Blacktech Solutions Corp certifies that all EVSE hardware procured under Category B will be <strong>manufactured in the United States</strong> with domestic component cost exceeding <strong>55% of total component cost</strong>, in compliance with DOE Grant Term 45 and IIJA Buy America requirements. Manufacturer certifications will be provided prior to equipment procurement and delivery.</p>
+
+  <h1 class="section-title" style="margin-top:30px;">Section 15 — Exceptions to Sample Agreement</h1>
+  <p>Blacktech Solutions Corp takes <strong>no exceptions</strong> to the Work Services Agreement (Category A) or Book 1 Terms and Conditions (Category B) as provided in the RFP. We agree to execute the contract in the form presented by the City.</p>
+
+  <h1 class="section-title" style="margin-top:30px;">Section 16 — Conflict of Interest Disclosure</h1>
+  <p>Blacktech Solutions Corp has no actual or potential conflicts of interest with the City of Chicago, the Department of Fleet and Facility Management, the Chicago Department of Transportation, or any City official or employee involved in this procurement. No City employees or officials have a financial interest in Blacktech Solutions Corp.</p>
+
+  <h1 class="section-title" style="margin-top:30px;">Section 17 — Sexual Harassment Policy Affidavit</h1>
+  <p>Blacktech Solutions Corp maintains a written sexual harassment policy as required by the Illinois Human Rights Act and MCC 2-92-612. The policy prohibits sexual harassment in the workplace and provides a reporting procedure for complaints. A copy of the policy is available upon request. The undersigned hereby affirms that Blacktech Solutions Corp is in compliance with MCC 2-92-612.</p>
+
+  <div style="margin-top:40px; padding:20px; border:1px solid #ccc; border-radius:8px;">
+    <p><strong>Signature:</strong> _____________________________________ &nbsp;&nbsp; <strong>Date:</strong> _______________</p>
+    <p style="margin-top:16px;"><strong>Name:</strong> Derrell Black &nbsp;&nbsp; <strong>Title:</strong> Owner / Authorized Representative</p>
+    <p style="margin-top:8px;"><strong>Company:</strong> Blacktech Solutions Corp</p>
+  </div>
+</div>
+
+<div class="footer">
+  Blacktech Solutions Corp · Chicago, IL · (312) 965-2782 · leads@blacktechsolutionscorp.com · RFP #66215 EV Charging Stations
+</div>
+
+</body>
+</html>

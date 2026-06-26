@@ -1,0 +1,138 @@
+{
+  "date": "2026-06-10",
+  "report_type": "daily_lead_processing",
+  "processing_time": "5:06 PM CDT",
+  "new_leads_today": [
+    {
+      "name": "Felecia Lofton / Eastlake Management",
+      "source": "email_rfq",
+      "email": "flofton@eastlakemgmt.com",
+      "interest": "Biannual Dryer Exhaust Duct Cleaning @ Long Life Apts — Event# 342-26-JX-024",
+      "location": "Chicago (CHA property)",
+      "qualification": "MAINTENANCE scope — not core electrical, but potential relationship for future electrical work at CHA properties",
+      "priority": "C-Lead",
+      "action": "Review if worth bidding to build CHA relationship — Derrell decision needed"
+    },
+    {
+      "name": "Felecia Lofton / Eastlake Management (3 additional RFQs)",
+      "source": "email_rfq",
+      "email": "flofton@eastlakemgmt.com",
+      "interest": "Water Spigots @ Wentworth Gardens, Irrigation @ Washington Park Homes, Irrigation @ Judge Slater/Annex",
+      "qualification": "PLUMBING/IRRIGATION scope — outside Blacktech core service",
+      "priority": "C-Lead",
+      "action": "Archive — not in scope (plumbing/irrigation, not electrical)"
+    }
+  ],
+  "email_system_status": {
+    "support_inbox": "242 unread messages — significant backlog",
+    "leads_inbox": "AUTHENTICATION FAILED — password change needed in HostGator cPanel",
+    "quotes_inbox": "AUTHENTICATION FAILED — password change needed in HostGator cPanel",
+    "action_required": "CRITICAL: Reset passwords for leads@ and quotes@ in HostGator cPanel"
+  },
+  "telegram_bot_status": {
+    "status": "DEGRADED — running but failing to reach Telegram API",
+    "errors": ["409 Conflict (competing instances)", "429 Rate Limit", "DNS resolution failures"],
+    "leads_received_today": 0,
+    "action_required": "CRITICAL: Bot needs restart (requires sudo). No exponential backoff — causing API hammering"
+  },
+  "active_pipeline_leads": [
+    {
+      "name": "Marcus Johnson",
+      "source": "referral",
+      "interest": "EV Charger Level 2 + Panel Upgrade to 200A",
+      "address": "5642 S Cottage Grove Ave, Chicago IL 60637",
+      "phone": "773-555-0192",
+      "estimated_value": 5300,
+      "priority": "A-Lead",
+      "status": "QUOTE PREP NEEDED",
+      "days_in_pipeline": 1,
+      "action": "Derrell: Prep and send quote — EV Charger $1,800 + 200A upgrade $3,500"
+    },
+
+
+    {
+      "name": "Victoria Young",
+      "address": "10150 S Luella",
+      "interest": "Electrical gut rehab",
+      "estimated_value": 12500,
+      "priority": "A-Lead",
+      "status": "ESTIMATE SENT — awaiting response",
+      "action": "Follow-up call on $12,500 estimate"
+    },
+    {
+      "name": "IPA Express",
+      "interest": "LED Retrofit — ComEd rebate $52K, customer net ~$32.5K",
+      "estimated_value": 84512,
+      "priority": "A-Lead",
+      "status": "ESTIMATE SENT — new (06/10)",
+      "action": "Monitor — just sent, allow 3-5 days before follow-up"
+    }
+  ],
+  "active_project_follow_ups": [
+    {
+      "customer": "Todd Watkins / KM Printing",
+      "project": "400 E. Randolph St Low Voltage Project",
+      "amount": 1950,
+      "status": "Email received today — wants to schedule start date",
+      "action": "Derrell: Reply to Todd's email about start date scheduling",
+      "due_date": "2026-06-20"
+    }
+  ],
+"missed_communications": [],
+  "invoices_due_soon": [
+    {
+      "customer": "Ms. Williams",
+      "invoice": "BSC-INV-7458-2026",
+      "amount": 1462.48,
+      "due_date": "2026-06-20",
+      "days_until_due": 10,
+      "action": "Monitor — 10 days out"
+    },
+    {
+      "customer": "Monster Construction / Rob Moore",
+      "invoice": "BSC20266515",
+      "amount": 24990,
+      "due_date": "2026-06-21",
+      "days_until_due": 11,
+      "action": "Monitor — 11 days out, awaiting 50% deposit"
+    },
+    {
+      "customer": "Todd / KM Printing",
+      "amount": 1950,
+      "due_date": "2026-06-20",
+      "days_until_due": 10,
+      "action": "Coordinate with start date scheduling"
+    },
+    {
+      "customer": "Charles Ockerlund / Baird & Warner",
+      "amount": 2817.89,
+      "due_date": "2026-06-24",
+      "days_until_due": 14,
+      "action": "Monitor"
+    }
+  ],
+  "qbo_overdue_invoices": {
+    "total_overdue": 8635.00,
+    "count": 3,
+    "details": [
+      {"customer": "Production Down Inc", "invoice": "1353", "amount": 135.00, "days_overdue": 33},
+      {"customer": "Simply E & C", "invoice": "1355", "amount": 5000.00, "days_overdue": 15},
+      {"customer": "Simply E & C", "invoice": "1356", "amount": 3500.00, "days_overdue": 15}
+    ]
+  },
+  "total_pipeline_value": 346604,
+  "closed_leads": [
+    {
+      "name": "Marcus Williams",
+      "status": "CLOSED",
+      "permit": "CHI-2026-ELC-88421",
+      "comed_ref": "EESP-WHE-60628-0042"
+    }
+  ],
+  "system_issues": [
+    "leads@blacktechsolutionscorp.com — IMAP auth failing, password needs reset",
+    "quotes@blacktechsolutionscorp.com — IMAP auth failing, password needs reset",
+    "Telegram bot — stuck in error loop, needs sudo restart + backoff logic",
+    "support@ inbox — 242 unread emails, needs triage"
+  ]
+}

@@ -1,0 +1,26 @@
+From: leads@blacktechsolutionscorp.com
+Subject: QBO Expense Entry: PZS Project Receipt 80
+Date: 
+==================================================
+
+QBO Expense Entry Details
+
+Vendor: PZS Project & Concierge Services LLC
+Date: 05/27/2026
+
+Category: Subcontractors
+Description: Shields & Eberhart site evaluation + contractor meeting (Zelle #1251)
+QTY: 1
+Rate: $580.00
+Amount: $580.00
+
+Total: $580.00
+Memo: Expense — NOT income. Site eval for project bidding.
+
+How to enter in QBO:
+1. + New → Expense
+2. Payee: PZS Project & Concierge Services LLC
+3. Payment method: Zelle #1251
+4. Account: Subcontractors
+5. Amount: $580.00
+6. Me

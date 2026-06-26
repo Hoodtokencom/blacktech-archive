@@ -1,1 +1,291 @@
-[]
+[
+  {
+    "file": "697-HVAC/INDEX.md",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366595",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/README.md",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366605",
+    "status": "pending"
+  },
+  {
+    "file": "100-Philosophy/INDEX.md",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366608",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/find_brain.py",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366611",
+    "status": "pending"
+  },
+  {
+    "file": "800-Literature/INDEX.md",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366614",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/dewey-constitutional.md",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366616",
+    "status": "pending"
+  },
+  {
+    "file": "500-Science/dewey-blockchain-report.html",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366619",
+    "status": "pending"
+  },
+  {
+    "file": "690-Building_Construction/contract-template-standard.html",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366624",
+    "status": "pending"
+  },
+  {
+    "file": "690-Building_Construction/contracts.json",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366628",
+    "status": "pending"
+  },
+  {
+    "file": "690-Building_Construction/contract_approval.py",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366630",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/audit_log.json",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366633",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/dewey_trash_log.json",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366635",
+    "status": "restored",
+    "restored_at": "2026-06-25T11:31:36.414299"
+  },
+  {
+    "file": "000-General/dewey_pipeline.py",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366638",
+    "status": "pending"
+  },
+  {
+    "file": "400-Language/INDEX.md",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366640",
+    "status": "pending"
+  },
+  {
+    "file": "500-Science/dewey-blockchain-schematic.html",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366643",
+    "status": "pending"
+  },
+  {
+    "file": "999-Decisions_Logs/2026-06-16-system-cleanup.md",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366645",
+    "status": "pending"
+  },
+  {
+    "file": "657-Accounting_Finance/passcode_vault.salt",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366647",
+    "status": "pending"
+  },
+  {
+    "file": "500-Science/dewey-blockchain-schematic.pdf",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366650",
+    "status": "pending"
+  },
+  {
+    "file": "300-Social_Sciences/INDEX.md",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366652",
+    "status": "pending"
+  },
+  {
+    "file": "400-Language/contract-invoice-template.html",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366654",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/dewey_ssbn_bridge.py",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366657",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/dewey_brain_pull.py",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366659",
+    "status": "pending"
+  },
+  {
+    "file": "696-Utilities/INDEX.md",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366661",
+    "status": "pending"
+  },
+  {
+    "file": "640-Household_Favorites/INDEX.md",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366664",
+    "status": "pending"
+  },
+  {
+    "file": "200-Religion/INDEX.md",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366666",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/dewey_code_tracker.py",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366669",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/dewey_code_changelog.json",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366671",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/access_requests.json",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366674",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/dewey_library_schematic.html",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366676",
+    "status": "pending"
+  },
+  {
+    "file": "691-Building_Materials/INDEX.md",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366679",
+    "status": "pending"
+  },
+  {
+    "file": "500-Science/INDEX.md",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366691",
+    "status": "pending"
+  },
+  {
+    "file": "692-Auxiliary_Practices/INDEX.md",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366694",
+    "status": "pending"
+  },
+  {
+    "file": "900-History_Geography/INDEX.md",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366696",
+    "status": "pending"
+  },
+  {
+    "file": "696-Utilities/comed-eesp-completion-certificate-template.html",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366699",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/permissions.json",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366702",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/dewey_ssbn_bridge_log.json",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366704",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/dewey_security.py",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366707",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/__pycache__/dewey_inbox_router.cpython-311.pyc",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366709",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/dewey_blockchain.py",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366712",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/dewey_inbox_router.py",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366714",
+    "status": "pending"
+  },
+  {
+    "file": "500-Science/dewey-blockchain-report.pdf",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366716",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/dewey_catalog.json",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366719",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/passcode_vault.py",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366722",
+    "status": "pending"
+  },
+  {
+    "file": "657-Accounting_Finance/passcode_vault.enc",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366724",
+    "status": "pending"
+  },
+  {
+    "file": "600-Technology/hostgator_email.md",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366727",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/dewey_sync.py",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366729",
+    "status": "pending"
+  },
+  {
+    "file": "700-Arts_Recreation/INDEX.md",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366732",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/__pycache__/passcode_vault.cpython-311.pyc",
+    "deleted_at": "2026-06-25T11:31:36.366572",
+    "purge_due": "2026-08-09T11:31:36.366734",
+    "status": "pending"
+  }
+]

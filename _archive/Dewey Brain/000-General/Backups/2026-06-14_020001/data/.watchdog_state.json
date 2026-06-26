@@ -1,0 +1,63 @@
+{
+  "checked_at": "2026-06-14T02:00:01.587113",
+  "total": 8,
+  "down": 2,
+  "services": [
+    {
+      "name": "Kanban Board",
+      "script": "energy_board_server.py",
+      "running": true,
+      "pid": "1144",
+      "port_ok": true
+    },
+    {
+      "name": "Command Center",
+      "script": "command_center_server.py",
+      "running": true,
+      "pid": "2987",
+      "port_ok": true
+    },
+    {
+      "name": "Blockchain Listener",
+      "script": "scripts/blockchain_listener.py",
+      "running": false,
+      "pid": "",
+      "port_ok": true
+    },
+    {
+      "name": "Budget",
+      "script": "money_budget_server.py",
+      "running": true,
+      "pid": "1151",
+      "port_ok": true
+    },
+    {
+      "name": "ComEd",
+      "script": "comed_server.py",
+      "running": true,
+      "pid": "1139",
+      "port_ok": true
+    },
+    {
+      "name": "Leads",
+      "script": "lead_intake_bot.py",
+      "running": false,
+      "pid": "",
+      "port_ok": true
+    },
+    {
+      "name": "Finance",
+      "script": "finance_server.py",
+      "running": true,
+      "pid": "1149",
+      "port_ok": true
+    },
+    {
+      "name": "BlueWed",
+      "script": "bluewednesday_server.py",
+      "running": true,
+      "pid": "2954",
+      "port_ok": true
+    }
+  ]
+}

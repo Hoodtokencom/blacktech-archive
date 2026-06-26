@@ -1,0 +1,34 @@
+{
+  "zip": "60628",
+  "neighborhood": "Roseland Community",
+  "twin_city": "Dallas, TX",
+  "streets": ["95th", "99th", "103rd", "106th", "109th", "112th"],
+  "corridors": [
+    "Halsted / Emerald / Union / Lowe",
+    "Wallace / Parnell / Normal / Eggleston",
+    "Stewart / Princeton / Yale / Wentworth",
+    "Perry / Lafayette / State / Michigan"
+  ],
+  "villages": {
+    "v75": { "street": "95th", "corridor": 0, "name": "Village 75", "schools": ["Evers School 434"], "churches": 1, "biz": [] },
+    "v68": { "street": "95th", "corridor": 1, "name": "Village 68", "schools": [], "churches": 3, "biz": [] },
+    "v10": { "street": "95th", "corridor": 2, "name": "Village 10", "schools": [], "churches": 0, "biz": [] },
+    "v09": { "street": "95th", "corridor": 3, "name": "Village 09", "schools": [], "churches": 2, "biz": ["1 liquor store"] },
+    "v76": { "street": "99th", "corridor": 0, "name": "Village 76", "schools": [], "churches": 2, "biz": [] },
+    "v69": { "street": "99th", "corridor": 1, "name": "Village 69", "schools": [], "churches": 4, "biz": [] },
+    "v11": { "street": "99th", "corridor": 2, "name": "Village 11", "schools": [], "churches": 0, "biz": [] },
+    "v21": { "street": "99th", "corridor": 3, "name": "Village 21", "schools": [], "churches": 2, "biz": [] },
+    "v77": { "street": "103rd", "corridor": 0, "name": "Village 77", "schools": [], "churches": 3, "biz": [] },
+    "v70": { "street": "103rd", "corridor": 1, "name": "Village 70", "schools": [], "churches": 2, "biz": [] },
+    "v12": { "street": "103rd", "corridor": 2, "name": "Village 12", "schools": [], "churches": 0, "biz": [] },
+    "v07": { "street": "103rd", "corridor": 3, "name": "Village 07", "schools": ["Kohn School 768"], "churches": 5, "biz": [] },
+    "v78": { "street": "106th", "corridor": 0, "name": "Village 78", "schools": [], "churches": 2, "biz": [] },
+    "v71": { "street": "106th", "corridor": 1, "name": "Village 71", "schools": [], "churches": 0, "biz": [] },
+    "v13": { "street": "106th", "corridor": 2, "name": "Village 13", "schools": ["Lavizzo School 675"], "churches": 0, "biz": [] },
+    "v06": { "street": "106th", "corridor": 3, "name": "Village 06", "schools": [], "churches": 8, "biz": ["1 liquor store"] },
+    "v79": { "street": "109th", "corridor": 0, "name": "Village 79", "schools": [], "churches": 2, "biz": [] },
+    "v72": { "street": "109th", "corridor": 1, "name": "Village 72", "schools": [], "churches": 0, "biz": [] },
+    "v18": { "street": "109th", "corridor": 2, "name": "Village 18", "schools": ["Hughes School 458"], "churches": 6, "biz": [] },
+    "v01": { "street": "109th", "corridor": 3, "name": "Village 01", "schools": ["Curtiss School 602"], "churches": 6, "biz": [] }
+  }
+}

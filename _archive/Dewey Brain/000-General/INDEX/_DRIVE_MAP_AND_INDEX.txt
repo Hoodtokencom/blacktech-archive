@@ -1,0 +1,52 @@
+╔══════════════════════════════════════════════════════════════╗
+║    BLACKTECH SOLUTIONS CORP - DRIVE INDEX (TABLE OF         ║
+║                  CONTENTS DIRECTORY)                         ║
+╚══════════════════════════════════════════════════════════════╝
+
+WHAT IS THIS?
+-------------
+This 00-INDEX folder is your quick-reference table of contents.
+Each numbered folder here matches a real folder on this drive.
+Open the folder to see a short README of what goes inside.
+
+DRIVE MAP
+---------
+01_ADMIN           → Contracts, active invoices, permits, insurance docs
+02_PROJECTS        → Active jobs, archived work, estimates, bids, site photos
+03_ACCOUNTING      → QBO reports, expense receipts, payroll, tax documents
+04_VENDORS         → Vendor price sheets, POs, delivery receipts, inventory
+05_MARKETING       → Flyers, Think Energy calculator, leads, social media, QR
+06_OPERATIONS      → Safety docs, employee files, equipment manuals, training
+07_VAULT           → Business docs, credential backups, meeting notes
+08_BACKUP          → Old Downloads, Desktop files, Documents, reports archive
+
+ACTUAL WORKING FOLDERS (use these for saving):
+  → Blacktech_Drive/1-Admin/
+  → Blacktech_Drive/2-Projects/
+  → Blacktech_Drive/3-Accounting/
+  → Blacktech_Drive/4-Vendor_Materials/
+  → Blacktech_Drive/5-Marketing/
+  → Blacktech_Drive/6-Operations/
+  → Blacktech_Drive/7-Personal_The_Vault/
+  → Blacktech_Drive/Home_Backup/
+
+WHERE TO PUT NEW FILES
+----------------------
+Contract out for signature?       → 1-Admin/Contracts
+Job in progress?                  → 2-Projects/Active/[Job_Name]
+Job finished, billed, paid?       → 2-Projects/Archived/[Job_Name]
+Monthly QBO export?               → 3-Accounting/QuickBooks_Reports
+Vendor sent a new price list?     → 4-Vendor_Materials/Vendor_Price_Sheets
+Updated Think Energy flyer?       → 5-Marketing/Flyers_Branding
+Tool manual PDF?                  → 6-Operations/Equipment_Manuals
+Password list backup?             → 7-Personal_The_Vault/Credentials_Backups
+
+ACCESS FROM
+-----------
+  Windows laptop:  Z:\  (\\\\10.0.0.100\\Blacktech_Drive)
+  iPad Files app:  smb://10.0.0.100
+  Pi terminal:     /media/allenai/Expansion/Blacktech_Drive/
+
+NEED HELP?
+  Full guide: 7-Personal_The_Vault/Business_Documents/Storage_System_Guide.md
+  Ask Hermes to explain any folder

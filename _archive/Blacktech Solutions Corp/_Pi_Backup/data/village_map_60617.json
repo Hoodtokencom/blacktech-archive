@@ -1,0 +1,42 @@
+{
+  "zip": "60617",
+  "neighborhood": "South Chicago",
+  "twin_city": "TBD",
+  "streets": ["83rd", "87th", "91st", "95th"],
+  "corridors": [
+    "Commercial Ave",
+    "Exchange Ave",
+    "Houston Ave",
+    "Brandon Ave"
+  ],
+  "villages": {
+    "v01": { "street": "83rd", "corridor": 0, "name": "Village 01", "schools": [], "churches": 0, "biz": [] },
+    "v02": { "street": "83rd", "corridor": 1, "name": "Village 02", "schools": [], "churches": 0, "biz": [] },
+    "v03": { "street": "83rd", "corridor": 2, "name": "Village 03", "schools": [], "churches": 0, "biz": [] },
+    "v04": { "street": "83rd", "corridor": 3, "name": "Village 04", "schools": [], "churches": 0, "biz": [] },
+    "v05": { "street": "87th", "corridor": 0, "name": "Village 05", "schools": [], "churches": 0, "biz": [] },
+    "v06": { "street": "87th", "corridor": 1, "name": "Village 06", "schools": [], "churches": 0, "biz": [] },
+    "v07": { "street": "87th", "corridor": 2, "name": "Village 07", "schools": [], "churches": 0, "biz": [] },
+    "v08": { "street": "87th", "corridor": 3, "name": "Village 08", "schools": [], "churches": 0, "biz": [] },
+    "v09": { "street": "91st", "corridor": 0, "name": "Village 09", "schools": [], "churches": 0, "biz": [] },
+    "v10": { "street": "91st", "corridor": 1, "name": "Village 10", "schools": [], "churches": 0, "biz": [] },
+    "v11": { "street": "91st", "corridor": 2, "name": "Village 11", "schools": [], "churches": 0, "biz": [] },
+    "v12": { "street": "91st", "corridor": 3, "name": "Village 12", "schools": [], "churches": 0, "biz": [] },
+    "v13": { "street": "95th", "corridor": 0, "name": "Village 13", "schools": [], "churches": 0, "biz": [] },
+    "v14": { "street": "95th", "corridor": 1, "name": "Village 14", "schools": [], "churches": 0, "biz": [] },
+    "v15": { "street": "95th", "corridor": 2, "name": "Village 15", "schools": [], "churches": 0, "biz": [] },
+    "v16": { "street": "95th", "corridor": 3, "name": "Village 16", "schools": [], "churches": 0, "biz": [] }
+  },
+  "pinned_businesses": [
+    {
+      "name": "Naturally Urban Environmental Inc.",
+      "address": "8915 S Commercial Ave, Suite 200, Chicago, IL 60617",
+      "lat": 41.7332384,
+      "lng": -87.5510349,
+      "phone": "708-529-8762",
+      "email": "naturallyurban.green.co@gmail.com",
+      "category": "Environmental / Sustainability",
+      "village": "v06"
+    }
+  ]
+}

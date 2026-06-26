@@ -1,0 +1,22 @@
+# BlackTech Security - Global Blocked Categories
+# Applied to ALL devices on the network
+
+# Drugs
+molly.com
+darkweb.com
+onion.com
+tor2web.org
+drug marketplaces
+
+# Adult/Porn
+# Already covered by StevenBlack porn list (164,309 domains)
+# Add custom exceptions here if needed
+
+# Gambling
+gambling.com
+bet365.com
+draftkings.com
+fan duel.com
+
+# Malware/Phishing
+# Already covered by default blocklists

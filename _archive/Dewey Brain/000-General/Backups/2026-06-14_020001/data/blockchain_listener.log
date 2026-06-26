@@ -1,0 +1,1111 @@
+[00:00:04] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[00:00:04] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[00:00:04] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[00:00:16] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:00:16] 🔗    ✅ Saved to DB | Cost: $0.000314 | Output: **PREMIER ELECTRICAL SOLUTIONS**
+123 Main St, Chicago, IL 60601
+(312) 555-1234 | info@premierelectri...
+[00:00:16] 🔗 
+[00:00:19] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[00:00:19] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[00:00:19] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[00:00:36] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:00:36] 🔗    ✅ Saved to DB | Cost: $0.00 | Output: **Summary:**
+The lead is CAIC contact from 60628 with phone number 773-785-8076. They are interested...
+[00:00:36] 🔗 
+[00:00:39] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[00:00:39] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[00:00:39] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[00:01:12] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:01:12] 🔗    ✅ Saved to DB | Cost: $0.00 | Output: **Blacktech Solutions Weekly Business Report: June 1-7, 2026**
+
+**Revenue:**
+- Total Revenue for the...
+[00:01:12] 🔗 
+[00:01:15] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[00:01:15] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[00:01:15] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[00:01:32] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:01:32] 🔗    ✅ Saved to DB | Cost: $0.00 | Output: Subject: Thank You for the Roseland/West Pullman Business Directory Listing
+
+Dear CAIC,
+
+Thank you s...
+[00:01:32] 🔗 
+[00:01:35] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[00:01:35] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[00:01:35] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[00:03:11] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:03:11] 🔗    ✅ Saved to DB | Cost: $0.000109 | Output: Certainly! Below is a complete Python script that reads ComEd rate data from an API and alerts when ...
+[00:03:11] 🔗 
+[00:03:11] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[00:05:02] 🔗 ✅ Vault loaded
+[00:05:02] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[00:05:02] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[00:05:05] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[00:05:05] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[00:05:05] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[00:05:12] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:05:12] 🔗    ✅ Saved to DB | Cost: $0.000300 | Output: **PREMIER ELECTRICAL SOLUTIONS**
+123 Main Street, Chicago, IL 60601
+Phone: (312) 555-1234 | Email: i...
+[00:05:12] 🔗 
+[00:05:15] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[00:05:15] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[00:05:15] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[00:05:19] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:05:19] 🔗    ✅ Saved to DB | Cost: $0.000063 | Output: **Summary:** CAIC (773-785-8076, 60628 area) has expressed direct interest in an energy audit.
+**Urg...
+[00:05:19] 🔗 
+[00:05:22] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[00:05:22] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[00:05:22] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[00:05:53] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:05:53] 🔗    ✅ Saved to DB | Cost: $0.000098 | Output: **Weekly Business Report - Blacktech Solutions**
+**Week of June 1-7, 2026**
+
+---
+
+### Revenue:
+* Inv...
+[00:05:53] 🔗 
+[00:05:56] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[00:05:56] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[00:05:56] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[00:06:01] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:06:01] 🔗    ✅ Saved to DB | Cost: $0.000130 | Output: **Subject: Thank You for Roseland/West Pullman Directory Listing - [Your Business Name]**
+
+Dear CAIC...
+[00:06:01] 🔗 
+[00:06:04] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[00:06:04] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[00:06:04] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[00:07:46] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:07:46] 🔗    ✅ Saved to DB | Cost: $0.000111 | Output: Certainly! Below is the complete solution for your request:
+
+### Problem Description:
+You need to wr...
+[00:07:46] 🔗 
+[00:07:46] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[00:10:01] 🔗 ✅ Vault loaded
+[00:10:01] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[00:10:01] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[00:10:04] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[00:10:04] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[00:10:04] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[00:10:21] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:10:21] 🔗    ✅ Saved to DB | Cost: $0.000094 | Output: **Spark Electric Solutions**
+123 Main Street, Anytown, IL 60007
+(555) 123-4567 | info@sparkelectric....
+[00:10:21] 🔗 
+[00:10:24] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[00:10:24] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[00:10:24] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[00:10:28] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:10:28] 🔗    ✅ Saved to DB | Cost: $0.000083 | Output: **Summary:** CAIC, located in Chicago (60628), has expressed interest in an energy audit. Contact vi...
+[00:10:28] 🔗 
+[00:10:31] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[00:10:31] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[00:10:31] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[00:10:39] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:10:39] 🔗    ✅ Saved to DB | Cost: $0.000100 | Output: **Weekly Business Report - Blacktech Solutions**
+**Week of June 1-7, 2026**
+
+**Summary:**
+*   Jobs C...
+[00:10:39] 🔗 
+[00:10:42] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[00:10:42] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[00:10:42] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[00:10:48] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:10:48] 🔗    ✅ Saved to DB | Cost: $0.000124 | Output: Subject: Thank You for Roseland/West Pullman Directory Listing - [Your Business Name]
+
+Dear CAIC Tea...
+[00:10:48] 🔗 
+[00:10:51] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[00:10:51] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[00:10:51] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[00:13:05] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:13:05] 🔗    ✅ Saved to DB | Cost: $0.000109 | Output: Certainly! Below is a Python function that fetches ComEd Time-of-Use (TOU) schedule data from an API...
+[00:13:05] 🔗 
+[00:13:05] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[00:15:01] 🔗 ✅ Vault loaded
+[00:15:01] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[00:15:01] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[00:15:04] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[00:15:04] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[00:15:04] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[00:15:11] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:15:11] 🔗    ✅ Saved to DB | Cost: $0.000237 | Output: **ELECTRO SOLUTIONS INC.**
+123 Main Street, Suite 400
+Chicago, IL 60601
+(312) 555-1234
+info@electros...
+[00:15:11] 🔗 
+[00:15:14] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[00:15:14] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[00:15:14] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[00:15:18] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:15:18] 🔗    ✅ Saved to DB | Cost: $0.000066 | Output: **Summary:** CAIC, located in 60628 (Chicago, IL), has expressed direct interest in an energy audit ...
+[00:15:18] 🔗 
+[00:15:21] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[00:15:21] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[00:15:21] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[00:15:30] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:15:30] 🔗    ✅ Saved to DB | Cost: $0.000125 | Output: **Blacktech Solutions - Weekly Business Report**
+**Week of June 1-7, 2026**
+
+**Summary:**
+*   Jobs C...
+[00:15:30] 🔗 
+[00:15:33] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[00:15:33] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[00:15:33] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[00:15:38] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:15:38] 🔗    ✅ Saved to DB | Cost: $0.000134 | Output: Subject: Thank You for Roseland/West Pullman Directory Listing - [Your Business Name]
+
+Dear CAIC Tea...
+[00:15:38] 🔗 
+[00:15:41] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[00:15:41] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[00:15:41] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[00:18:01] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:18:01] 🔗    ✅ Saved to DB | Cost: $0.000109 | Output: ```python
+import requests
+from datetime import datetime, time, timedelta
+import json
+
+# --- MOCK API...
+[00:18:01] 🔗 
+[00:18:01] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[00:20:01] 🔗 ✅ Vault loaded
+[00:20:01] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[00:20:01] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[00:20:04] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[00:20:04] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[00:20:04] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[00:20:11] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:20:11] 🔗    ✅ Saved to DB | Cost: $0.000299 | Output: **Spark Innovations Electrical**
+123 Main St, Chicago, IL 60601
+(312) 555-1234 | info@sparkinnovatio...
+[00:20:11] 🔗 
+[00:20:14] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[00:20:14] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[00:20:14] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[00:20:17] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:20:17] 🔗    ✅ Saved to DB | Cost: $0.000077 | Output: **Summary:** CAIC, located in the 60628 zip code (Chicago area), has proactively expressed interest ...
+[00:20:17] 🔗 
+[00:20:20] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[00:20:20] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[00:20:20] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[00:20:26] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:20:26] 🔗    ✅ Saved to DB | Cost: $0.000101 | Output: **Blacktech Solutions**
+**Weekly Business Report**
+**Week of June 1-7, 2026**
+
+**Summary:**
+*   Jobs...
+[00:20:26] 🔗 
+[00:20:29] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[00:20:29] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[00:20:29] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[00:20:34] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:20:34] 🔗    ✅ Saved to DB | Cost: $0.000110 | Output: Subject: Thank You for Roseland/West Pullman Directory Listing - [Your Business Name]
+
+Dear CAIC Tea...
+[00:20:34] 🔗 
+[00:20:37] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[00:20:37] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[00:20:37] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[00:22:42] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:22:42] 🔗    ✅ Saved to DB | Cost: $0.000111 | Output: Certainly! Below is a complete Python solution that reads ComEd rate data from an API and alerts whe...
+[00:22:42] 🔗 
+[00:22:42] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[00:25:01] 🔗 ✅ Vault loaded
+[00:25:01] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[00:25:01] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[00:25:04] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[00:25:04] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[00:25:04] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[00:25:13] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:25:13] 🔗    ✅ Saved to DB | Cost: $0.000383 | Output: **PREMIER ELECTRICAL SOLUTIONS**
+123 Main Street, Anytown, IL 60001
+(555) 123-4567 | info@premierele...
+[00:25:13] 🔗 
+[00:25:16] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[00:25:16] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[00:25:16] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[00:25:20] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:25:20] 🔗    ✅ Saved to DB | Cost: $0.000060 | Output: **Summary:** CAIC (60628, 773-785-8076) is a new lead expressing direct interest in an energy audit....
+[00:25:20] 🔗 
+[00:25:23] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[00:25:23] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[00:25:23] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[00:25:51] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:25:51] 🔗    ✅ Saved to DB | Cost: $0.000092 | Output: Certainly! Here is a revised and polished version of your weekly business report:
+
+---
+
+**Blacktech ...
+[00:25:51] 🔗 
+[00:25:54] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[00:25:54] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[00:25:54] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[00:26:00] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:26:00] 🔗    ✅ Saved to DB | Cost: $0.000110 | Output: Subject: Thank You: Roseland/West Pullman Business Directory Listing - [Your Company Name]
+
+Dear CAI...
+[00:26:00] 🔗 
+[00:26:03] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[00:26:03] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[00:26:03] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[00:27:23] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:27:23] 🔗    ✅ Saved to DB | Cost: $0.000111 | Output: Certainly! Below is a complete Python script that reads ComEd rate data from an API and alerts when ...
+[00:27:23] 🔗 
+[00:27:23] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[00:30:02] 🔗 ✅ Vault loaded
+[00:30:02] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[00:30:02] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[00:30:05] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[00:30:05] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[00:30:05] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[00:30:14] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:30:14] 🔗    ✅ Saved to DB | Cost: $0.000218 | Output: **Premier Electrical Solutions**
+123 Main Street, Chicago, IL 60601
+(312) 555-1234 | info@premierele...
+[00:30:14] 🔗 
+[00:30:17] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[00:30:17] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[00:30:17] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[00:30:21] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:30:21] 🔗    ✅ Saved to DB | Cost: $0.000057 | Output: **Summary:** CAIC, located in Chicago (60628), has expressed direct interest in an energy audit.
+**U...
+[00:30:21] 🔗 
+[00:30:24] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[00:30:24] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[00:30:24] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[00:30:30] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:30:30] 🔗    ✅ Saved to DB | Cost: $0.000107 | Output: **Blacktech Solutions - Weekly Business Report**
+**Week of June 1-7, 2026**
+
+**Key Metrics:**
+*   Jo...
+[00:30:30] 🔗 
+[00:30:33] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[00:30:33] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[00:30:33] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[00:30:40] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:30:40] 🔗    ✅ Saved to DB | Cost: $0.000124 | Output: Subject: Thank You: Roseland/West Pullman Business Directory Listing - [Your Company Name]
+
+Dear CAI...
+[00:30:40] 🔗 
+[00:30:43] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[00:30:43] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[00:30:43] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[00:32:56] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:32:56] 🔗    ✅ Saved to DB | Cost: $0.000180 | Output: Certainly! Below is the complete solution for your task:
+
+```python
+import datetime
+
+# --- API Simul...
+[00:32:56] 🔗 
+[00:32:56] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[00:35:01] 🔗 ✅ Vault loaded
+[00:35:01] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[00:35:01] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[00:35:04] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[00:35:04] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[00:35:04] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[00:35:13] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:35:13] 🔗    ✅ Saved to DB | Cost: $0.000222 | Output: **PREMIER ELECTRICAL SOLUTIONS**
+123 Main Street, Chicago, IL 60601
+(555) 123-4567 | info@premierele...
+[00:35:13] 🔗 
+[00:35:16] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[00:35:16] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[00:35:16] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[00:35:22] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:35:22] 🔗    ✅ Saved to DB | Cost: $0.000060 | Output: Summary: New lead, CAIC (773-785-8076) from Chicago, IL (60628), has expressed direct interest in an...
+[00:35:22] 🔗 
+[00:35:25] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[00:35:25] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[00:35:25] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[00:35:35] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:35:35] 🔗    ✅ Saved to DB | Cost: $0.000100 | Output: Weekly Business Report - Blacktech Solutions
+Week of June 1-7, 2026
+
+**Summary:**
+*   Jobs Completed...
+[00:35:35] 🔗 
+[00:35:39] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[00:35:39] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[00:35:39] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[00:35:46] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:35:46] 🔗    ✅ Saved to DB | Cost: $0.000099 | Output: Subject: Appreciation: Roseland/West Pullman Business Directory Listing
+
+Dear CAIC Team,
+
+Thank you ...
+[00:35:46] 🔗 
+[00:35:49] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[00:35:49] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[00:35:49] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[00:37:51] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:37:51] 🔗    ✅ Saved to DB | Cost: $0.000109 | Output: Certainly! Below is the complete solution for reading ComEd rate data from an API and alerting when ...
+[00:37:51] 🔗 
+[00:37:51] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[00:40:02] 🔗 ✅ Vault loaded
+[00:40:02] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[00:40:02] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[00:40:05] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[00:40:05] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[00:40:05] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[00:40:21] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:40:21] 🔗    ✅ Saved to DB | Cost: $0.001084 | Output: **Sparky Electric Solutions**
+123 Main St, Chicago, IL 60601
+(312) 555-1234 | info@sparkyelectric.co...
+[00:40:21] 🔗 
+[00:40:24] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[00:40:24] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[00:40:24] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[00:40:27] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:40:27] 🔗    ✅ Saved to DB | Cost: $0.000062 | Output: **Summary:** New lead, CAIC (60628), interested in an energy audit. Contact phone: 773-785-8076.
+
+**...
+[00:40:27] 🔗 
+[00:40:30] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[00:40:30] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[00:40:30] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[00:40:39] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:40:39] 🔗    ✅ Saved to DB | Cost: $0.000100 | Output: **Blacktech Solutions - Weekly Business Report**
+**Week of June 1-7, 2026**
+
+**Summary:**
+*   Jobs C...
+[00:40:39] 🔗 
+[00:40:42] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[00:40:42] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[00:40:42] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[00:40:46] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:40:46] 🔗    ✅ Saved to DB | Cost: $0.000121 | Output: **Subject: Thank You: Roseland/West Pullman Business Directory Listing - [Your Company Name]**
+
+Dear...
+[00:40:46] 🔗 
+[00:40:49] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[00:40:49] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[00:40:49] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[00:42:49] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:42:49] 🔗    ✅ Saved to DB | Cost: $0.000111 | Output: Certainly! Below is a Python function that reads ComEd rate data from an API and alerts when off-pea...
+[00:42:49] 🔗 
+[00:42:49] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[00:45:01] 🔗 ✅ Vault loaded
+[00:45:01] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[00:45:01] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[00:45:04] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[00:45:04] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[00:45:04] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[00:45:12] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:45:12] 🔗    ✅ Saved to DB | Cost: $0.000186 | Output: **[YOUR COMPANY NAME]**
+[Your Company Address]
+[Your City, State, Zip]
+[Your Phone Number]
+[Your Ema...
+[00:45:12] 🔗 
+[00:45:15] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[00:45:15] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[00:45:15] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[00:45:18] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:45:18] 🔗    ✅ Saved to DB | Cost: $0.000068 | Output: **Summary:** CAIC (60628, 773-785-8076) has expressed direct interest in an energy audit.
+**Urgency ...
+[00:45:18] 🔗 
+[00:45:21] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[00:45:21] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[00:45:21] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[00:45:30] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:45:30] 🔗    ✅ Saved to DB | Cost: $0.000110 | Output: Blacktech Solutions - Weekly Business Report
+Week of June 1-7, 2026
+
+**Key Metrics:**
+*   Jobs Compl...
+[00:45:30] 🔗 
+[00:45:33] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[00:45:33] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[00:45:33] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[00:45:39] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:45:39] 🔗    ✅ Saved to DB | Cost: $0.000115 | Output: Subject: Thank You: Roseland/West Pullman Business Directory Listing - [Your Company Name]
+
+Dear CAI...
+[00:45:39] 🔗 
+[00:45:42] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[00:45:42] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[00:45:42] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[00:48:01] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:48:01] 🔗    ✅ Saved to DB | Cost: $0.000616 | Output: ```python
+import datetime
+
+# --- Mock ComEd Rate Schedule (as if fetched from an API or configuratio...
+[00:48:01] 🔗 
+[00:48:01] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[00:50:01] 🔗 ✅ Vault loaded
+[00:50:01] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[00:50:01] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[00:50:04] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[00:50:04] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[00:50:04] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[00:50:12] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:50:12] 🔗    ✅ Saved to DB | Cost: $0.000340 | Output: **Spark Innovations Electrical Services**
+123 Main St, Chicago, IL 60601
+Phone: (312) 555-1234 | Ema...
+[00:50:12] 🔗 
+[00:50:15] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[00:50:15] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[00:50:15] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[00:50:21] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:50:21] 🔗    ✅ Saved to DB | Cost: $0.000066 | Output: **Summary:** CAIC (60628) has expressed direct interest in an energy audit.
+**Urgency:** 8/10. Direc...
+[00:50:21] 🔗 
+[00:50:24] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[00:50:24] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[00:50:24] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[00:51:10] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:51:10] 🔗    ✅ Saved to DB | Cost: $0.00 | Output: **Blacktech Solutions Weekly Business Report: Week of June 1-7, 2026**
+
+---
+
+### Revenue Summary
+
+**...
+[00:51:10] 🔗 
+[00:51:13] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[00:51:13] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[00:51:13] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[00:51:19] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:51:19] 🔗    ✅ Saved to DB | Cost: $0.000126 | Output: Subject: Thank You for Roseland/West Pullman Listing – Let's Connect!
+
+Dear CAIC Team,
+
+We are writi...
+[00:51:19] 🔗 
+[00:51:22] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[00:51:22] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[00:51:22] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[00:53:14] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:53:14] 🔗    ✅ Saved to DB | Cost: $0.000109 | Output: Certainly! Below is a complete Python function that reads ComEd rate data from an API and alerts whe...
+[00:53:14] 🔗 
+[00:53:14] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[00:55:02] 🔗 ✅ Vault loaded
+[00:55:02] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[00:55:02] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[00:55:05] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[00:55:05] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[00:55:05] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[00:55:10] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:55:10] 🔗    ✅ Saved to DB | Cost: $0.000151 | Output: **Sparky Electric Co.**
+123 Main St, Chicago, IL 60601
+(555) 123-4567 | info@sparkyelectric.com
+
+**I...
+[00:55:10] 🔗 
+[00:55:13] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[00:55:13] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[00:55:13] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[00:55:18] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:55:18] 🔗    ✅ Saved to DB | Cost: $0.000072 | Output: **Summary:** CAIC, located in the 60628 ZIP code, has expressed direct interest in an energy audit.
+...
+[00:55:18] 🔗 
+[00:55:21] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[00:55:21] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[00:55:21] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[00:55:57] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:55:57] 🔗    ✅ Saved to DB | Cost: $0.000096 | Output: Certainly! Below is a revised version of your weekly business report for Blacktech Solutions:
+
+---
+
+...
+[00:55:57] 🔗 
+[00:56:00] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[00:56:00] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[00:56:00] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[00:56:06] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:56:06] 🔗    ✅ Saved to DB | Cost: $0.000106 | Output: Subject: Thank You: Roseland/West Pullman Business Directory Listing - [Your Business Name]
+
+Dear CA...
+[00:56:06] 🔗 
+[00:56:09] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[00:56:09] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[00:56:09] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[00:57:50] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[00:57:50] 🔗    ✅ Saved to DB | Cost: $0.000109 | Output: Certainly! Below is a complete Python function that reads ComEd rate data from an API and alerts whe...
+[00:57:50] 🔗 
+[00:57:50] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[01:00:01] 🔗 ✅ Vault loaded
+[01:00:01] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[01:00:01] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[01:00:04] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[01:00:04] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[01:00:04] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[01:00:10] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:00:10] 🔗    ✅ Saved to DB | Cost: $0.000212 | Output: **ELECTROPRO SOLUTIONS INC.**
+123 Main Street, Chicago, IL 60601
+Phone: (312) 555-1234 | Email: info...
+[01:00:10] 🔗 
+[01:00:13] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[01:00:13] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[01:00:13] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[01:00:17] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:00:17] 🔗    ✅ Saved to DB | Cost: $0.000064 | Output: **Summary:** New lead, CAIC (60628), interested in an energy audit. Contact phone: 773-785-8076.
+**U...
+[01:00:17] 🔗 
+[01:00:20] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[01:00:20] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[01:00:20] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[01:00:30] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:00:30] 🔗    ✅ Saved to DB | Cost: $0.000118 | Output: **Blacktech Solutions**
+**Weekly Business Report**
+**Week of June 1-7, 2026**
+
+**Key Metrics:**
+*   ...
+[01:00:30] 🔗 
+[01:00:33] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[01:00:33] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[01:00:33] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[01:00:39] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:00:39] 🔗    ✅ Saved to DB | Cost: $0.000119 | Output: Subject: Thank You: Roseland/West Pullman Business Directory Listing - [Your Business Name]
+
+Dear CA...
+[01:00:39] 🔗 
+[01:00:42] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[01:00:42] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[01:00:42] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[01:01:42] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:01:42] 🔗    ✅ Saved to DB | Cost: $0.00 | Output: Certainly! Below is a Python script that uses `requests` to fetch ComEd rate data from an API and al...
+[01:01:42] 🔗 
+[01:01:42] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[01:05:02] 🔗 ✅ Vault loaded
+[01:05:02] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[01:05:02] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[01:05:05] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[01:05:05] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[01:05:05] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[01:05:11] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:05:11] 🔗    ✅ Saved to DB | Cost: $0.000189 | Output: **Spark Innovations Electric**
+123 Main Street, Anytown, IL 60601
+(555) 123-4567 | info@sparkinnovat...
+[01:05:11] 🔗 
+[01:05:14] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[01:05:14] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[01:05:14] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[01:05:18] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:05:18] 🔗    ✅ Saved to DB | Cost: $0.000064 | Output: **Summary:** CAIC, located in Chicago, IL (60628), is a new lead interested in an energy audit.
+**Ur...
+[01:05:18] 🔗 
+[01:05:21] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[01:05:21] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[01:05:21] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[01:05:26] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:05:26] 🔗    ✅ Saved to DB | Cost: $0.000091 | Output: **Blacktech Solutions**
+**Weekly Business Report**
+**Week of June 1-7, 2026**
+
+**Revenue:**
+*   Invo...
+[01:05:26] 🔗 
+[01:05:29] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[01:05:29] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[01:05:29] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[01:05:34] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:05:34] 🔗    ✅ Saved to DB | Cost: $0.000116 | Output: Subject: Thank You: Roseland/West Pullman Business Directory Listing - [Your Company Name]
+
+Dear CAI...
+[01:05:34] 🔗 
+[01:05:37] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[01:05:37] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[01:05:37] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[01:07:30] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:07:30] 🔗    ✅ Saved to DB | Cost: $0.000109 | Output: Certainly! Below is a complete solution for your request:
+
+```python
+import datetime
+from requests i...
+[01:07:30] 🔗 
+[01:07:30] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[01:10:01] 🔗 ✅ Vault loaded
+[01:10:01] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[01:10:01] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[01:10:04] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[01:10:04] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[01:10:04] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[01:10:09] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:10:09] 🔗    ✅ Saved to DB | Cost: $0.000186 | Output: **INVOICE**
+
+**Spark Electric Solutions**
+123 Main Street
+Chicago, IL 60601
+(312) 555-1234
+info@spar...
+[01:10:09] 🔗 
+[01:10:12] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[01:10:12] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[01:10:12] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[01:10:18] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:10:18] 🔗    ✅ Saved to DB | Cost: $0.000073 | Output: **Summary:** CAIC, located in 60628 (Chicago, IL), phone 773-785-8076, has expressed direct interest...
+[01:10:18] 🔗 
+[01:10:21] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[01:10:21] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[01:10:21] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[01:10:43] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:10:43] 🔗    ✅ Saved to DB | Cost: $0.000097 | Output: Certainly! Below is a revised version of your weekly business report for Blacktech Solutions:
+
+---
+
+...
+[01:10:43] 🔗 
+[01:10:46] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[01:10:46] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[01:10:46] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[01:10:51] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:10:51] 🔗    ✅ Saved to DB | Cost: $0.000100 | Output: Subject: Thank You: Roseland/West Pullman Business Directory Listing
+
+Dear CAIC Team,
+
+We sincerely ...
+[01:10:51] 🔗 
+[01:10:54] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[01:10:54] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[01:10:54] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[01:12:40] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:12:40] 🔗    ✅ Saved to DB | Cost: $0.000109 | Output: Certainly! Below is a complete Python solution that reads ComEd rate data from an API and alerts whe...
+[01:12:40] 🔗 
+[01:12:40] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[01:15:01] 🔗 ✅ Vault loaded
+[01:15:01] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[01:15:01] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[01:15:04] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[01:15:04] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[01:15:04] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[01:15:11] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:15:11] 🔗    ✅ Saved to DB | Cost: $0.000256 | Output: **[Your Company Name]**
+[Your Company Address]
+[Your City, State, Zip]
+[Your Phone Number]
+[Your Ema...
+[01:15:11] 🔗 
+[01:15:14] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[01:15:14] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[01:15:14] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[01:15:18] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:15:18] 🔗    ✅ Saved to DB | Cost: $0.000063 | Output: **Summary:** CAIC, located in 60628 (Chicago, IL), has expressed interest in an energy audit.
+**Urge...
+[01:15:18] 🔗 
+[01:15:21] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[01:15:21] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[01:15:21] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[01:16:24] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:16:24] 🔗    ✅ Saved to DB | Cost: $0.00 | Output: **Blacktech Solutions Weekly Business Report: Week of June 1-7, 2026**
+
+---
+
+### Revenue Summary
+
+**...
+[01:16:24] 🔗 
+[01:16:27] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[01:16:27] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[01:16:27] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[01:16:41] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:16:41] 🔗    ✅ Saved to DB | Cost: $0.00 | Output: Subject: Thank You for the Roseland/West Pullman Business Directory Listing
+
+Dear CAIC,
+
+Thank you s...
+[01:16:41] 🔗 
+[01:16:44] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[01:16:44] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[01:16:44] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[01:18:38] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:18:38] 🔗    ✅ Saved to DB | Cost: $0.000109 | Output: Certainly! Below is a complete Python script that reads ComEd rate data from an API and alerts when ...
+[01:18:38] 🔗 
+[01:18:38] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[01:20:02] 🔗 ✅ Vault loaded
+[01:20:02] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[01:20:02] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[01:20:05] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[01:20:05] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[01:20:05] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[01:20:12] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:20:12] 🔗    ✅ Saved to DB | Cost: $0.000233 | Output: **Elite Electrical Solutions**
+123 Main St, Anytown, IL 60001
+(555) 123-4567 | info@eliteelectrical....
+[01:20:12] 🔗 
+[01:20:15] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[01:20:15] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[01:20:15] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[01:20:20] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:20:20] 🔗    ✅ Saved to DB | Cost: $0.000065 | Output: **Summary:** New lead, CAIC (60628, 773-785-8076), expressed direct interest in an energy audit.
+**U...
+[01:20:20] 🔗 
+[01:20:23] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[01:20:23] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[01:20:23] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[01:20:29] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:20:29] 🔗    ✅ Saved to DB | Cost: $0.000118 | Output: Blacktech Solutions - Weekly Business Report
+Week of June 1-7, 2026
+
+**Key Metrics:**
+*   Jobs Compl...
+[01:20:29] 🔗 
+[01:20:32] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[01:20:32] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[01:20:32] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[01:20:38] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:20:38] 🔗    ✅ Saved to DB | Cost: $0.000117 | Output: Subject: Thank You: Roseland/West Pullman Business Directory Listing - [Your Company Name]
+
+Dear CAI...
+[01:20:38] 🔗 
+[01:20:41] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[01:20:41] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[01:20:41] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[01:22:32] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:22:32] 🔗    ✅ Saved to DB | Cost: $0.000111 | Output: Certainly! Below is a Python solution that reads ComEd rate data from an API and alerts when off-pea...
+[01:22:32] 🔗 
+[01:22:32] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[01:25:01] 🔗 ✅ Vault loaded
+[01:25:01] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[01:25:01] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[01:25:04] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[01:25:04] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[01:25:04] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[01:25:11] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:25:11] 🔗    ✅ Saved to DB | Cost: $0.000263 | Output: **Spark Electric Solutions**
+123 Main St
+Chicago, IL 60601
+(312) 555-1234
+info@sparkelectric.com
+
+**...
+[01:25:11] 🔗 
+[01:25:14] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[01:25:14] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[01:25:14] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[01:25:19] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:25:19] 🔗    ✅ Saved to DB | Cost: $0.000075 | Output: **Summary:** CAIC, located in 60628 (Chicago, IL), is a new lead interested in an energy audit. Cont...
+[01:25:19] 🔗 
+[01:25:22] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[01:25:22] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[01:25:22] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[01:25:28] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:25:28] 🔗    ✅ Saved to DB | Cost: $0.000104 | Output: **Blacktech Solutions - Weekly Business Report**
+**Week of June 1-7, 2026**
+
+**Key Metrics:**
+*   Jo...
+[01:25:28] 🔗 
+[01:25:31] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[01:25:31] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[01:25:31] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[01:25:37] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:25:37] 🔗    ✅ Saved to DB | Cost: $0.000118 | Output: Subject: Thank You for Roseland/West Pullman Business Directory Listing - [Your Company Name]
+
+Dear ...
+[01:25:37] 🔗 
+[01:25:40] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[01:25:40] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[01:25:40] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[01:27:57] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:27:57] 🔗    ✅ Saved to DB | Cost: $0.001021 | Output: ```python
+import requests
+import datetime
+import time
+
+# --- Configuration and Mock Data (for demons...
+[01:27:57] 🔗 
+[01:27:57] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[01:30:02] 🔗 ✅ Vault loaded
+[01:30:02] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[01:30:02] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[01:30:05] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[01:30:05] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[01:30:05] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[01:30:13] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:30:13] 🔗    ✅ Saved to DB | Cost: $0.000262 | Output: **Elite Electrical Solutions**
+123 Main St, Chicago, IL 60601
+Phone: (555) 123-4567 | Email: info@el...
+[01:30:13] 🔗 
+[01:30:16] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[01:30:16] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[01:30:16] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[01:30:20] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:30:20] 🔗    ✅ Saved to DB | Cost: $0.000064 | Output: **Summary:** CAIC, located in Chicago (60628), has expressed interest in an energy audit for their f...
+[01:30:20] 🔗 
+[01:30:23] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[01:30:23] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[01:30:23] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[01:30:29] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:30:29] 🔗    ✅ Saved to DB | Cost: $0.000117 | Output: **Blacktech Solutions**
+**Weekly Business Report**
+**Week of June 1-7, 2026**
+
+**Key Metrics:**
+*   ...
+[01:30:29] 🔗 
+[01:30:32] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[01:30:32] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[01:30:32] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[01:30:36] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:30:36] 🔗    ✅ Saved to DB | Cost: $0.000114 | Output: Subject: Thank You: Roseland/West Pullman Business Directory Listing
+
+Dear CAIC Team,
+
+We are writin...
+[01:30:36] 🔗 
+[01:30:39] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[01:30:39] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[01:30:39] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[01:32:02] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:32:02] 🔗    ✅ Saved to DB | Cost: $0.000109 | Output: Certainly! Below is a complete Python function that reads ComEd rate data from an API and alerts whe...
+[01:32:02] 🔗 
+[01:32:02] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[01:35:01] 🔗 ✅ Vault loaded
+[01:35:01] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[01:35:01] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[01:35:04] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[01:35:04] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[01:35:04] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[01:35:12] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:35:12] 🔗    ✅ Saved to DB | Cost: $0.000177 | Output: **[Your Electrical Company Name]**
+[Your Company Address]
+[Your Company Phone Number] | [Your Compan...
+[01:35:12] 🔗 
+[01:35:15] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[01:35:15] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[01:35:15] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[01:35:21] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:35:21] 🔗    ✅ Saved to DB | Cost: $0.000071 | Output: **Summary:** New lead, CAIC (Chicago, IL 60628, 773-785-8076), has expressed interest in an energy a...
+[01:35:21] 🔗 
+[01:35:24] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[01:35:24] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[01:35:24] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[01:35:28] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:35:28] 🔗    ✅ Saved to DB | Cost: $0.000121 | Output: **Blacktech Solutions - Weekly Business Report**
+**Week of June 1-7, 2026**
+
+**Key Metrics:**
+*   Jo...
+[01:35:28] 🔗 
+[01:35:31] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[01:35:31] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[01:35:31] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[01:35:37] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:35:37] 🔗    ✅ Saved to DB | Cost: $0.000126 | Output: Subject: Thank You for Roseland/West Pullman Business Directory Listing - [Your Business Name]
+
+Dear...
+[01:35:37] 🔗 
+[01:35:40] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[01:35:40] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[01:35:40] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[01:37:32] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:37:32] 🔗    ✅ Saved to DB | Cost: $0.000109 | Output: Certainly! Below is a complete solution for your request. This script will read ComEd rate data from...
+[01:37:32] 🔗 
+[01:37:32] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[01:40:01] 🔗 ✅ Vault loaded
+[01:40:01] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[01:40:01] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[01:40:04] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[01:40:04] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[01:40:04] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[01:40:11] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:40:11] 🔗    ✅ Saved to DB | Cost: $0.000258 | Output: **[Your Company Name]**
+[Your Company Address]
+[Your Company Phone Number]
+[Your Company Email]
+
+**I...
+[01:40:11] 🔗 
+[01:40:14] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[01:40:14] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[01:40:14] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[01:40:18] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:40:18] 🔗    ✅ Saved to DB | Cost: $0.000062 | Output: **Summary:** CAIC (773-785-8076, 60628) is a new lead directly interested in an energy audit.
+**Urge...
+[01:40:18] 🔗 
+[01:40:21] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[01:40:21] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[01:40:21] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[01:40:49] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:40:49] 🔗    ✅ Saved to DB | Cost: $0.000110 | Output: Certainly! Below is a revised version of your weekly business report for Blacktech Solutions:
+
+---
+
+...
+[01:40:49] 🔗 
+[01:40:52] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[01:40:52] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[01:40:52] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[01:40:58] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:40:58] 🔗    ✅ Saved to DB | Cost: $0.000121 | Output: Subject: Thank You - Roseland/West Pullman Business Directory Listing & Partnership
+
+Dear CAIC Team,...
+[01:40:58] 🔗 
+[01:41:01] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[01:41:01] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[01:41:01] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[01:42:53] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:42:53] 🔗    ✅ Saved to DB | Cost: $0.000109 | Output: Certainly! Below is a complete Python script that reads ComEd rate data from an API and alerts when ...
+[01:42:53] 🔗 
+[01:42:53] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[01:45:01] 🔗 ✅ Vault loaded
+[01:45:01] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[01:45:01] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[01:45:04] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[01:45:04] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[01:45:04] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[01:45:11] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:45:11] 🔗    ✅ Saved to DB | Cost: $0.000172 | Output: **Professional Electrical Services**
+123 Main St, Anytown, IL 60007
+(555) 123-4567 | info@proelectri...
+[01:45:11] 🔗 
+[01:45:14] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[01:45:14] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[01:45:14] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[01:45:41] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:45:41] 🔗    ✅ Saved to DB | Cost: $0.00 | Output: ### Summary
+
+**Name:** CAIC Contact from 60628  
+**Phone:** 773-785-8076  
+**Interest:** Energy Audi...
+[01:45:41] 🔗 
+[01:45:44] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[01:45:44] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[01:45:44] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[01:45:51] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:45:51] 🔗    ✅ Saved to DB | Cost: $0.000111 | Output: **Blacktech Solutions**
+**Weekly Business Report**
+**Week of June 1-7, 2026**
+
+**Summary:**
+Jobs Com...
+[01:45:51] 🔗 
+[01:45:54] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[01:45:54] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[01:45:54] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[01:45:59] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:45:59] 🔗    ✅ Saved to DB | Cost: $0.000130 | Output: Subject: Thank You: Roseland/West Pullman Business Directory Listing - [Your Company Name]
+
+Dear CAI...
+[01:45:59] 🔗 
+[01:46:02] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[01:46:02] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[01:46:02] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[01:48:08] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:48:08] 🔗    ✅ Saved to DB | Cost: $0.000109 | Output: Certainly! Below is a complete Python solution that reads ComEd rate data from an API and alerts whe...
+[01:48:08] 🔗 
+[01:48:08] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[01:50:01] 🔗 ✅ Vault loaded
+[01:50:01] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[01:50:01] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[01:50:04] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[01:50:04] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[01:50:04] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[01:50:10] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:50:10] 🔗    ✅ Saved to DB | Cost: $0.000157 | Output: Spark Electric Solutions
+123 Main St, Chicago, IL 60601
+(312) 555-1234 | info@sparkelectric.com
+
+INV...
+[01:50:10] 🔗 
+[01:50:13] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[01:50:13] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[01:50:13] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[01:50:42] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:50:42] 🔗    ✅ Saved to DB | Cost: $0.00 | Output: ### Summary
+
+**Lead Qualification:**
+- **Name:** CAIC Contact from 60628
+- **Phone Number:** 773-785...
+[01:50:42] 🔗 
+[01:50:45] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[01:50:45] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[01:50:45] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[01:50:50] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:50:50] 🔗    ✅ Saved to DB | Cost: $0.000097 | Output: **Blacktech Solutions: Weekly Business Report**
+**Week:** June 1-7, 2026
+
+**Summary:**
+*   **Jobs Co...
+[01:50:50] 🔗 
+[01:50:53] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[01:50:53] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[01:50:53] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[01:50:59] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:50:59] 🔗    ✅ Saved to DB | Cost: $0.000107 | Output: Subject: Thank You: Roseland/West Pullman Business Directory Listing
+
+Dear CAIC Team,
+
+Thank you sin...
+[01:50:59] 🔗 
+[01:51:02] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[01:51:02] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[01:51:02] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[01:52:10] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:52:10] 🔗    ✅ Saved to DB | Cost: $0.00 | Output: To achieve this task, we will create a Python function that interacts with ComEd's API to fetch rate...
+[01:52:10] 🔗 
+[01:52:10] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[01:55:02] 🔗 ✅ Vault loaded
+[01:55:02] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[01:55:02] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══
+[01:55:05] 🔗 🚨 TASK EMITTED — ID: 1 | INVOICE | Priority: low
+[01:55:05] 🔗 🤖 Routing to Triple-Play Pipeline: INVOICE
+[01:55:05] 🔗    Prompt: Generate a professional electrical contractor invoice for client Taurus Williams...
+[01:55:13] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:55:13] 🔗    ✅ Saved to DB | Cost: $0.000315 | Output: **ELECTRICAL CONTRACTOR INVOICE**
+
+**[Your Company Name]**
+[Your Company Address]
+[Your Company Phon...
+[01:55:13] 🔗 
+[01:55:16] 🔗 🚨 TASK EMITTED — ID: 2 | LEAD | Priority: high
+[01:55:16] 🔗 🤖 Routing to Triple-Play Pipeline: LEAD
+[01:55:16] 🔗    Prompt: Qualify this new lead for Think Energy: CAIC contact from 60628, phone 773-785-8...
+[01:55:36] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:55:36] 🔗    ✅ Saved to DB | Cost: $0.00 | Output: ### Summary
+
+**Lead Qualification: CAIC Contact from 60628**
+
+#### Lead Information:
+
+- **Name:** No...
+[01:55:36] 🔗 
+[01:55:39] 🔗 🚨 TASK EMITTED — ID: 3 | REPORT | Priority: med
+[01:55:39] 🔗 🤖 Routing to Triple-Play Pipeline: REPORT
+[01:55:39] 🔗    Prompt: Create a weekly business report for Blacktech Solutions: Week of June 1-7, 2026....
+[01:55:45] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:55:45] 🔗    ✅ Saved to DB | Cost: $0.000106 | Output: Blacktech Solutions
+Weekly Business Report
+Week of June 1-7, 2026
+
+**Summary:**
+Jobs Completed: 3
+In...
+[01:55:45] 🔗 
+[01:55:48] 🔗 🚨 TASK EMITTED — ID: 4 | EMAIL | Priority: low
+[01:55:48] 🔗 🤖 Routing to Triple-Play Pipeline: EMAIL
+[01:55:48] 🔗    Prompt: Draft a professional follow-up email: Thank CAIC for the Roseland/West Pullman a...
+[01:55:55] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:55:55] 🔗    ✅ Saved to DB | Cost: $0.000106 | Output: Subject: Thank You for Roseland/West Pullman Listing – Exploring Collaboration
+
+Dear CAIC Team,
+
+We ...
+[01:55:55] 🔗 
+[01:55:58] 🔗 🚨 TASK EMITTED — ID: 5 | CODE | Priority: high
+[01:55:58] 🔗 🤖 Routing to Triple-Play Pipeline: CODE
+[01:55:58] 🔗    Prompt: Write a Python function that reads ComEd rate data from an API and alerts when o...
+[01:57:52] 🔗 ⚠️ Telegram alert skipped — BOT or CHAT missing
+[01:57:52] 🔗    ✅ Saved to DB | Cost: $0.000109 | Output: Certainly! Below is a complete Python solution that reads ComEd rate data from an API and alerts whe...
+[01:57:52] 🔗 
+[01:57:52] 🔗 ═══ All 5 demo tasks processed. Check /home/allenai/data/blacktech.db for results. ═══
+[02:00:01] 🔗 ✅ Vault loaded
+[02:00:01] 🔗 📲 Telegram: BOT=❌ CHAT=✅
+[02:00:01] 🔗 ═══ DEMO MODE: Blockchain → AI Pipeline ═══

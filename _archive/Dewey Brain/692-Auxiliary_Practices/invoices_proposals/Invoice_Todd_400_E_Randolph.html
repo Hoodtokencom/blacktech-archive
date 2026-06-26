@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=1050, initial-scale=0.45, maximum-scale=2.0"/>
+<title>Invoice — 400 E Randolph St, Unit 270</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f4f4; }
+  .page { background: #fff; max-width: 1050px; margin: 0 auto; padding: 0; }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, #002244 0%, #001a33 100%);
+    padding: 28px 36px 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .logo-box {
+    width: 140px; height: 120px;
+    background: url('/media/allenai/Expansion/Blacktech_Drive/Home_Backup/Blacktech_Reports/Photos/blacktech_logo.jpg') center center no-repeat;
+    background-size: contain;
+    background-color: #fff;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+  .company-info { color: #fff; }
+  .company-info h1 { font-size: 1.5rem; font-weight: 900; color: #69BE28; letter-spacing: 2px; margin-bottom: 4px; }
+  .company-info .tagline { font-size: 0.78rem; color: #90b8d4; font-style: italic; margin-bottom: 8px; }
+  .company-info p { font-size: 0.82rem; color: #cde; line-height: 1.6; }
+  .inv-label { margin-left: auto; text-align: right; color: #fff; }
+  .inv-label h2 { font-size: 2.2rem; font-weight: 900; color: #69BE28; letter-spacing: 4px; }
+  .inv-label .inv-num { font-size: 0.85rem; color: #90b8d4; margin-top: 4px; }
+
+  /* BILL TO / JOB INFO */
+  .info-row { display: flex; gap: 0; border-bottom: 2px solid #002244; }
+  .info-box { flex: 1; padding: 18px 24px; }
+  .info-box:first-child { border-right: 1px solid #dde; }
+  .info-box h4 { font-size: 0.68rem; font-weight: 900; color: #002244; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
+  .info-box p { font-size: 0.88rem; color: #222; line-height: 1.7; }
+  .info-box .highlight { font-weight: 700; color: #002244; }
+
+  /* DATE ROW */
+  .date-row { display: flex; background: #002244; }
+  .date-cell { flex: 1; padding: 10px 24px; text-align: center; }
+  .date-cell .label { font-size: 0.62rem; color: #90b8d4; letter-spacing: 2px; text-transform: uppercase; }
+  .date-cell .val { font-size: 0.92rem; font-weight: 800; color: #fff; margin-top: 2px; }
+
+  /* TABLE */
+  .inv-table { width: 100%; border-collapse: collapse; }
+  .inv-table thead tr { background: #002244; }
+  .inv-table thead th { padding: 10px 16px; font-size: 0.72rem; font-weight: 800; color: #fff; letter-spacing: 1px; text-transform: uppercase; text-align: left; }
+  .inv-table thead th.num { width: 40px; text-align: center; }
+  .inv-table thead th.qty { width: 70px; text-align: center; }
+  .inv-table thead th.rate { width: 120px; text-align: right; }
+  .inv-table thead th.amt { width: 130px; text-align: right; }
+  .inv-table tbody tr { border-bottom: 1px solid #eef; }
+  .inv-table tbody tr:nth-child(even) { background: #f8fbff; }
+  .inv-table tbody td { padding: 12px 16px; font-size: 0.88rem; color: #222; vertical-align: top; }
+  .inv-table tbody td.num { text-align: center; color: #666; font-size: 0.78rem; }
+  .inv-table tbody td.qty { text-align: center; }
+  .inv-table tbody td.rate { text-align: right; white-space: nowrap; }
+  .inv-table tbody td.amt { text-align: right; font-weight: 700; white-space: nowrap; }
+  .inv-table tbody td.desc { font-weight: 600; }
+  .inv-table tbody td.sub-desc { font-size: 0.78rem; color: #555; }
+
+  /* SECTION ROW */
+  .section-row td { background: #e8f0e0; color: #002244; font-size: 0.75rem; font-weight: 900; letter-spacing: 1px; padding: 7px 16px; }
+
+  /* SUMMARY */
+  .summary-wrap { display: flex; justify-content: flex-end; padding: 16px 24px; }
+  .summary-box { min-width: 280px; }
+  .sum-row { display: flex; justify-content: space-between; padding: 6px 0; font-size: 0.88rem; border-bottom: 1px solid #eef; }
+  .sum-row.total { border-bottom: none; border-top: 3px solid #002244; padding-top: 10px; margin-top: 4px; }
+  .sum-row .sum-label { color: #555; }
+  .sum-row .sum-val { font-weight: 700; color: #222; }
+  .sum-row.total .sum-label { font-size: 1rem; font-weight: 900; color: #002244; }
+  .sum-row.total .sum-val { font-size: 1.2rem; font-weight: 900; color: #002244; }
+
+  /* PAYMENT / NOTES */
+  .footer-section { padding: 18px 24px; background: #f8fbff; border-top: 2px solid #002244; }
+  .footer-section h4 { font-size: 0.72rem; font-weight: 900; color: #002244; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
+  .footer-section p { font-size: 0.82rem; color: #444; line-height: 1.7; }
+  .footer-section .pay-highlight { color: #002244; font-weight: 700; }
+
+  /* SIGNATURE */
+  .sig-row { display: flex; gap: 40px; padding: 20px 24px; border-top: 1px solid #dde; }
+  .sig-box { flex: 1; }
+  .sig-line { border-bottom: 1.5px solid #333; margin-bottom: 6px; height: 36px; }
+  .sig-label { font-size: 0.72rem; color: #666; }
+
+  @media print {
+    body { background: #fff; }
+    .page { max-width: 100%; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo-box"></div>
+    <div class="company-info">
+      <h1>BLACKTECH SOLUTIONS CORP</h1>
+      <div class="tagline">Professional Electrical Contracting Services</div>
+      <p>
+        14076 Lincoln Ave · Dolton, IL 60419<br/>
+        📞 (312) 965-2782<br/>
+        ✉ invoices@blacktechsolutionscorp.com
+      </p>
+    </div>
+    <div class="inv-label">
+      <h2>INVOICE</h2>
+      <div class="inv-num">BSC-INV-0400RANDOLPH-2026</div>
+    </div>
+  </div>
+
+  <!-- DATES -->
+  <div class="date-row">
+    <div class="date-cell">
+      <div class="label">Invoice Date</div>
+      <div class="val">June 3, 2026</div>
+    </div>
+    <div class="date-cell">
+      <div class="label">Due Date</div>
+      <div class="val">June 18, 2026</div>
+    </div>
+    <div class="date-cell">
+      <div class="label">Terms</div>
+      <div class="val">Net 15</div>
+    </div>
+  </div>
+
+  <!-- BILL TO / JOB INFO -->
+  <div class="info-row">
+    <div class="info-box">
+      <h4>Bill To</h4>
+      <p>
+        <span class="highlight">Todd</span><br/>
+        400 E. Randolph Street, Unit 270<br/>
+        Chicago, IL 60601
+      </p>
+    </div>
+    <div class="info-box">
+      <h4>Job Site</h4>
+      <p>
+        400 E. Randolph Street, Unit 270<br/>
+        Chicago, IL 60601<br/>
+        <span class="highlight">Low Voltage / Data Cabling</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- LINE ITEMS -->
+  <table class="inv-table">
+    <thead>
+      <tr>
+        <th class="num">#</th>
+        <th>Description</th>
+        <th class="qty">Qty/hrs</th>
+        <th class="rate">Rate</th>
+        <th class="amt">Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="section-row">
+        <td colspan="5">📡 Low Voltage / Data Cabling</td>
+      </tr>
+      <tr>
+        <td class="num">1</td>
+        <td class="desc">Demo — 25-Pair Cabling &amp; Pipe (30 ft)<br/>
+          <span class="sub-desc">Demolition and removal of existing CAT3 25-pair cabling and conduit/pipe — 30 linear feet</span>
+        </td>
+        <td class="qty">1</td>
+        <td class="rate">—</td>
+        <td class="amt"></td>
+      </tr>
+      <tr>
+        <td class="num">2</td>
+        <td class="desc">Installation — 5 × CAT5e Cables<br/>
+          <span class="sub-desc">Supply and install 5 runs of CAT5e data cable, 30 ft each, terminated and tested</span>
+        </td>
+        <td class="qty">1</td>
+        <td class="rate">—</td>
+        <td class="amt"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- SUMMARY -->
+  <div class="summary-wrap">
+    <div class="summary-box">
+      <div class="sum-row">
+        <span class="sum-label">Subtotal</span>
+        <span class="sum-val">$1,950.00</span>
+      </div>
+      <div class="sum-row">
+        <span class="sum-label">Tax</span>
+        <span class="sum-val">$0.00</span>
+      </div>
+      <div class="sum-row total">
+        <span class="sum-label">TOTAL DUE</span>
+        <span class="sum-val">$1,950.00</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAYMENT INFO -->
+  <div class="footer-section">
+    <h4>Payment Methods</h4>
+    <p>
+      💳 <span class="pay-highlight">Zelle:</span> support@blacktechsolutionscorp.com &nbsp;|&nbsp;
+      💵 <span class="pay-highlight">Check payable to:</span> Blacktech Solutions Corp<br/>
+      Late payments subject to 1.5% monthly fee after due date.
+    </p>
+  </div>
+
+  <!-- SIGNATURE -->
+  <div class="sig-row">
+    <div class="sig-box">
+      <div class="sig-line"></div>
+      <div class="sig-label">Authorized Signature — Blacktech Solutions Corp</div>
+    </div>
+    <div class="sig-box">
+      <div class="sig-line"></div>
+      <div class="sig-label">Customer Acceptance</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

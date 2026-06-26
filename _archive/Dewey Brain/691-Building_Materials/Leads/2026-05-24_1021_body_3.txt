@@ -1,0 +1,13 @@
+From: META Contractor Portal <noreplyportal@hvac.mea.com>
+Subject: =?UTF-8?Q?Finish_changing_your_META_Contrac?=
+ =?UTF-8?Q?tor_Portal_account=E2=80=99s_email_address?=
+Date: Wed, 1 May 2024 03:08:06 +0000 (GMT)
+==================================================
+
+We recently received a request to change your META Contractor Portal account’s email address for username derrellblack@blacktechsolutionscorp.com.
+
+Previous email address: derrellblack@blacktechsolutionscorp.com
+New email address: leads@blacktechsolutionscorp.com
+
+To finish changing your email address, go to the following link. This link expires in 72 hours.
+https://meta-hvac.my.site.com/Contractor/setup/emailverif?oid=00Di0000000kuH1&k=Cj4KNQoPMDBEaTAwMDAwMDBrdUgxEg8wMkcwWjAwMDAwMEQ5Y1IaD

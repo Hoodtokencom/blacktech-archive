@@ -1,0 +1,12 @@
+
+--- 2026-05-24 09:06:07.262529 ---
+firstName=Test&lastName=Lead&phone=3125559999&estimatedKwh=950&currentBill=145.00&newBill=66.50&estimatedSavings=78.50
+
+--- 2026-06-16 23:10:21.672944 ---
+firstName=Test&lastName=User&phone=3125550000&estimatedKwh=500&currentBill=150&newBill=120&estimatedSavings=30&notes=test
+
+--- 2026-06-16 23:10:56.479304 ---
+firstName=Test&lastName=User&phone=3125550000&estimatedKwh=500&currentBill=150&newBill=120&estimatedSavings=30&notes=test
+
+--- 2026-06-16 23:12:19.661550 ---
+firstName=Test&lastName=User&phone=3125550000&estimatedKwh=500&currentBill=150&newBill=120&estimatedSavings=30&notes=test

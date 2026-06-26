@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1050, initial-scale=0.45, maximum-scale=2.0">
+<title>Invoice — Ms. Williams — 7458 S Euclid Ave</title>
+<style>
+*{ box-sizing:border-box; margin:0; padding:0; }
+body{ font-family:'Segoe UI',Arial,sans-serif; background:#f4f6f9; color:#1a1a2e; }
+#edit-bar{ background:#1a1a2e; color:#fff; padding:10px 20px; display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+#edit-bar button{ background:#69BE28; color:#000; border:none; border-radius:6px; padding:8px 18px; font-weight:700; font-size:0.9rem; cursor:pointer; }
+.page{ max-width:1050px; margin:20px auto; background:#fff; border-radius:12px; box-shadow:0 4px 24px rgba(0,0,0,0.12); overflow:hidden; }
+.header{ background:linear-gradient(135deg,#002244 0%,#1a4a8a 60%,#69BE28 100%); padding:28px 32px; display:flex; align-items:flex-start; justify-content:space-between; gap:20px; }
+.logo-box{ width:140px; height:120px; background:#fff; border-radius:8px; display:flex; align-items:center; justify-content:center; overflow:hidden; flex-shrink:0; }
+.logo-box img{ width:100%; height:100%; object-fit:contain; }
+.header-right{ text-align:right; color:#fff; }
+.header-right .inv-label{ font-size:2rem; font-weight:900; letter-spacing:2px; color:#69BE28; }
+.header-right .inv-num{ font-size:1rem; font-weight:700; margin-top:4px; }
+.header-right .inv-meta{ font-size:0.82rem; color:rgba(255,255,255,0.8); margin-top:3px; }
+.header-right [contenteditable]{ display:inline-block; border-bottom:1.5px dashed #69BE28; min-width:80px; outline:none; }
+.company-name{ color:#fff; font-size:1.2rem; font-weight:800; margin-bottom:3px; }
+.company-sub{ color:rgba(255,255,255,0.75); font-size:0.75rem; letter-spacing:1px; }
+.body{ padding:28px 32px; }
+.bill-row{ display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-bottom:24px; }
+.bill-box h4{ font-size:0.7rem; text-transform:uppercase; letter-spacing:1px; color:#888; margin-bottom:8px; }
+.bill-box p{ font-size:0.88rem; line-height:1.7; }
+.bill-box [contenteditable]{ border-bottom:1.5px dashed #69BE28; outline:none; display:inline-block; min-width:40px; }
+table.inv-table{ width:100%; border-collapse:collapse; margin-bottom:20px; font-size:0.85rem; }
+table.inv-table thead tr{ background:#002244; color:#fff; }
+table.inv-table thead th{ padding:10px 12px; text-align:left; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.5px; }
+table.inv-table thead th.num{ width:40px; text-align:center; }
+table.inv-table thead th.qty{ width:70px; text-align:center; }
+table.inv-table thead th.rate{ width:110px; text-align:right; }
+table.inv-table thead th.amt{ width:120px; text-align:right; }
+table.inv-table tbody tr{ border-bottom:1px solid #e8edf3; }
+table.inv-table tbody tr:hover{ background:#f8faff; }
+table.inv-table tbody td{ padding:11px 12px; vertical-align:top; }
+table.inv-table tbody td.num{ text-align:center; color:#888; }
+table.inv-table tbody td.qty{ text-align:center; }
+table.inv-table tbody td.rate{ text-align:right; white-space:nowrap; }
+table.inv-table tbody td.amount{ text-align:right; font-weight:700; white-space:nowrap; }
+table.inv-table tbody td [contenteditable]{ outline:none; border-bottom:1.5px dashed #69BE28; min-width:20px; display:inline-block; }
+.desc-main{ font-weight:600; }
+.desc-sub{ font-size:0.75rem; color:#666; margin-top:3px; }
+.del-row{ background:none; border:none; color:#ccc; cursor:pointer; font-size:1rem; padding:2px 6px; }
+.del-row:hover{ color:#ef4444; }
+.add-row-btn{ background:#f0f7ff; border:1px dashed #1a4a8a; color:#1a4a8a; border-radius:6px; padding:7px 16px; font-size:0.8rem; font-weight:600; cursor:pointer; margin-bottom:16px; }
+.summary-box{ margin-left:auto; width:320px; background:#f8faff; border:1px solid #dde6f5; border-radius:10px; padding:16px 20px; }
+.summary-row{ display:flex; justify-content:space-between; font-size:0.85rem; padding:5px 0; border-bottom:1px solid #e8edf3; }
+.summary-row:last-child{ border-bottom:none; font-size:1.05rem; font-weight:800; color:#002244; padding-top:10px; }
+.summary-row.total-row{ color:#002244; }
+.notes-box{ margin-top:24px; background:#fffbf0; border-left:4px solid #69BE28; border-radius:6px; padding:14px 18px; font-size:0.82rem; color:#555; line-height:1.6; }
+.footer{ background:#002244; color:rgba(255,255,255,0.65); text-align:center; padding:14px; font-size:0.72rem; margin-top:28px; }
+@media print{
+  #edit-bar,.del-row,.add-row-btn{ display:none !important; }
+  body{ background:#fff; }
+  .page{ box-shadow:none; margin:0; border-radius:0; }
+  [contenteditable]{ border-bottom:none !important; }
+}
+</style>
+</head>
+<body>
+
+<div id="edit-bar">
+  <span style="font-weight:700;">✏️ Tap any field to edit</span>
+  <button onclick="window.print()">🖨️ Print / Save PDF</button>
+</div>
+
+<div class="page">
+  <!-- HEADER -->
+  <div class="header">
+    <div>
+      <div class="logo-box">
+        <img src="/media/allenai/Expansion/Blacktech_Drive/Home_Backup/Blacktech_Reports/Photos/blacktech_logo.jpg" alt="Blacktech Logo">
+      </div>
+      <div style="margin-top:10px;">
+        <div class="company-name">BLACKTECH SOLUTIONS CORP</div>
+        <div class="company-sub">LICENSED ELECTRICAL CONTRACTOR</div>
+        <div style="color:rgba(255,255,255,0.7);font-size:0.73rem;margin-top:4px;">14076 Lincoln Ave, Dolton, IL 60419</div>
+        <div style="color:rgba(255,255,255,0.7);font-size:0.73rem;">(312) 965-2782 · invoices@blacktechsolutionscorp.com</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="inv-label">INVOICE</div>
+      <div class="inv-num">BSC-INV-7458-2026</div>
+      <div class="inv-meta">Date: <span contenteditable="true">06/05/2026</span></div>
+      <div class="inv-meta">Due: <span contenteditable="true">06/20/2026</span></div>
+    </div>
+  </div>
+
+  <div class="body">
+    <!-- BILL TO / JOB SITE -->
+    <div class="bill-row">
+      <div class="bill-box">
+        <h4>Bill To</h4>
+        <p>
+          <strong contenteditable="true">Ms. Williams</strong><br>
+          <span contenteditable="true">7458 S Euclid Ave</span><br>
+          <span contenteditable="true">Chicago, IL 60649</span>
+        </p>
+      </div>
+      <div class="bill-box">
+        <h4>Job Site</h4>
+        <p>
+          <span contenteditable="true">7458 S Euclid Ave</span><br>
+          <span contenteditable="true">Chicago, IL 60649</span><br>
+          <span style="font-size:0.8rem;color:#888;">Scope: <span contenteditable="true">10 Outlet Installation</span></span>
+        </p>
+      </div>
+    </div>
+
+    <!-- LINE ITEMS TABLE -->
+    <table class="inv-table">
+      <thead>
+        <tr>
+          <th class="num">#</th>
+          <th>Description</th>
+          <th class="qty">Qty / Hrs</th>
+          <th class="rate">Rate</th>
+          <th class="amt">Amount</th>
+          <th class="del-row" style="width:36px;"></th>
+        </tr>
+      </thead>
+      <tbody id="inv-body">
+        <tr>
+          <td class="num">1</td>
+          <td>
+            <div class="desc-main" contenteditable="true">Demolition — Labor</div>
+            <div class="desc-sub" contenteditable="true">Demo and removal of existing outlets, boxes, and associated wiring as required prior to new installation</div>
+          </td>
+          <td class="qty"><span contenteditable="true">1</span> hr</td>
+          <td class="rate">$<span contenteditable="true">113.49</span>/hr</td>
+          <td class="amount">$<span class="amount-val" contenteditable="true">133.35</span></td>
+          <td><button class="del-row" onclick="delRow(this)" title="Delete">✕</button></td>
+        </tr>
+        <tr>
+          <td class="num">2</td>
+          <td>
+            <div class="desc-main" contenteditable="true">Outlet Installation — Labor</div>
+            <div class="desc-sub" contenteditable="true">Supply and install 10 duplex electrical outlets; includes wiring, boxes, covers, and connection to existing circuits</div>
+          </td>
+          <td class="qty"><span contenteditable="true">7.5</span> hrs</td>
+          <td class="rate">$<span contenteditable="true">113.49</span>/hr</td>
+          <td class="amount">$<span class="amount-val" contenteditable="true">1,000.13</span></td>
+          <td><button class="del-row" onclick="delRow(this)" title="Delete">✕</button></td>
+        </tr>
+        <tr>
+          <td class="num">3</td>
+          <td>
+            <div class="desc-main" contenteditable="true">Materials</div>
+            <div class="desc-sub" contenteditable="true">10 × duplex outlets, electrical boxes, wire, covers, fasteners, and miscellaneous hardware — $28.00/unit</div>
+          </td>
+          <td class="qty"><span contenteditable="true">10</span> units</td>
+          <td class="rate">$<span contenteditable="true">32.90</span>/ea</td>
+          <td class="amount">$<span class="amount-val" contenteditable="true">329.00</span></td>
+          <td><button class="del-row" onclick="delRow(this)" title="Delete">✕</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button class="add-row-btn" onclick="addRow()">+ Add Line Item</button>
+
+    <!-- SUMMARY -->
+    <div class="summary-box">
+      <div class="summary-row"><span>Subtotal</span><span id="sub-display">$1,235.12</span></div>
+      <div class="summary-row"><span>Tax</span><span>$0.00</span></div>
+      <div class="summary-row total-row"><span>TOTAL DUE</span><span id="total-display">$1,235.12</span></div>
+    </div>
+
+    <!-- NOTES -->
+    <div class="notes-box">
+      <strong>Payment Terms:</strong> Payment due within 15 days of invoice date.<br>
+      <strong>Payment Methods:</strong> Zelle: support@blacktechsolutionscorp.com · Check payable to Blacktech Solutions Corp<br>
+      <strong>Late Fee:</strong> 1.5% per month on balances past due.<br>
+      <strong contenteditable="true">Notes:</strong> <span contenteditable="true">Thank you for your business. Please contact us with any questions regarding this invoice.</span>
+    </div>
+  </div>
+
+  <div class="footer">
+    Blacktech Solutions Corp · 14076 Lincoln Ave, Dolton, IL 60419 · (312) 965-2782 · invoices@blacktechsolutionscorp.com
+  </div>
+</div>
+
+<script>
+function recalc() {
+  let total = 0;
+  document.querySelectorAll('#inv-body .amount-val').forEach(el => {
+    const val = parseFloat(el.textContent.replace(/,/g,'')) || 0;
+    total += val;
+  });
+  const fmt = n => n.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+  document.getElementById('sub-display').textContent = '$' + fmt(total);
+  document.getElementById('total-display').textContent = '$' + fmt(total);
+}
+
+document.getElementById('inv-body').addEventListener('input', function(e) {
+  if(e.target.classList.contains('amount-val')) recalc();
+});
+
+function delRow(btn) {
+  btn.closest('tr').remove();
+  renumber(); recalc();
+}
+
+function renumber() {
+  document.querySelectorAll('#inv-body tr').forEach((tr, i) => {
+    const numCell = tr.querySelector('td.num');
+    if(numCell) numCell.textContent = i + 1;
+  });
+}
+
+function addRow() {
+  const tbody = document.getElementById('inv-body');
+  const n = tbody.rows.length + 1;
+  const tr = document.createElement('tr');
+  tr.innerHTML = `
+    <td class="num">${n}</td>
+    <td><div class="desc-main" contenteditable="true">Description</div><div class="desc-sub" contenteditable="true">Details</div></td>
+    <td class="qty"><span contenteditable="true">1</span></td>
+    <td class="rate">$<span contenteditable="true">0.00</span></td>
+    <td class="amount">$<span class="amount-val" contenteditable="true">0.00</span></td>
+    <td><button class="del-row" onclick="delRow(this)">✕</button></td>`;
+  tbody.appendChild(tr);
+}
+</script>
+</body>
+</html>

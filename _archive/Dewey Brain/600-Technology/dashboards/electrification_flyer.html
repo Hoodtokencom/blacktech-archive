@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Electrification Flyer — Blacktech Solutions</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #f0f0f0; font-family: 'Segoe UI', Arial, sans-serif; }
+
+  .page {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 0 auto;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* HEADER BAND */
+  .header {
+    background: linear-gradient(135deg, #002244 0%, #003366 60%, #004080 100%);
+    padding: 32px 40px 24px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -40px; left: -40px; right: -40px; bottom: -40px;
+    background: radial-gradient(ellipse at 50% 0%, #1e90ff22 0%, transparent 70%);
+  }
+  .header .logo-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 16px;
+  }
+  .logo-box {
+    width: 80px; height: 70px;
+    background: url('/media/allenai/Expansion/Blacktech_Drive/Home_Backup/Blacktech_Reports/Photos/blacktech_logo.jpg') center center no-repeat;
+    background-size: contain;
+    background-color: #fff;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+  .header h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #69BE28;
+    letter-spacing: 3px;
+    line-height: 1.1;
+    text-align: left;
+  }
+  .header h1 span { color: #fff; display: block; font-size: 0.9rem; letter-spacing: 4px; font-weight: 400; margin-bottom: 2px; }
+
+  .headline {
+    background: #69BE28;
+    color: #002244;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .sub-headline {
+    background: #002244;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 8px 40px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  /* INTRO */
+  .intro {
+    padding: 22px 40px 10px;
+    border-bottom: 2px solid #e8f4e8;
+  }
+  .intro p {
+    font-size: 0.92rem;
+    color: #222;
+    line-height: 1.7;
+    text-align: center;
+    max-width: 6in;
+    margin: 0 auto;
+  }
+  .intro strong { color: #002244; }
+
+  /* WHAT WE DO */
+  .section { padding: 18px 40px; }
+  .section-title {
+    font-size: 0.72rem;
+    font-weight: 900;
+    color: #002244;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-left: 4px solid #69BE28;
+    padding-left: 10px;
+    margin-bottom: 14px;
+  }
+
+  /* SERVICES GRID */
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .service-card {
+    border: 2px solid #e0e8e0;
+    border-radius: 10px;
+    padding: 14px;
+    background: #f8fdf8;
+  }
+  .service-card .s-icon { font-size: 1.6rem; margin-bottom: 6px; }
+  .service-card h4 { font-size: 0.82rem; font-weight: 900; color: #002244; margin-bottom: 4px; }
+  .service-card p { font-size: 0.72rem; color: #555; line-height: 1.5; }
+
+  /* HOW IT WORKS */
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 0 40px 18px;
+  }
+  .step {
+    text-align: center;
+    padding: 12px 8px;
+    background: #f0f6ff;
+    border-radius: 10px;
+    border: 1px solid #c8ddf0;
+    position: relative;
+  }
+  .step .step-num {
+    width: 28px; height: 28px;
+    background: #002244;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 8px;
+  }
+  .step h5 { font-size: 0.72rem; font-weight: 900; color: #002244; margin-bottom: 4px; }
+  .step p { font-size: 0.65rem; color: #555; line-height: 1.4; }
+
+  /* SAVINGS BANNER */
+  .savings {
+    background: linear-gradient(135deg, #003300 0%, #004400 100%);
+    margin: 0 40px 18px;
+    border-radius: 12px;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .savings-icon { font-size: 2.5rem; flex-shrink: 0; }
+  .savings h3 { font-size: 1.1rem; font-weight: 900; color: #69BE28; margin-bottom: 4px; }
+  .savings p { font-size: 0.78rem; color: #a0d0a0; line-height: 1.6; }
+  .savings .tag {
+    margin-left: auto;
+    background: #69BE28;
+    color: #002244;
+    font-size: 0.7rem;
+    font-weight: 900;
+    border-radius: 20px;
+    padding: 6px 14px;
+    text-align: center;
+    flex-shrink: 0;
+    letter-spacing: 1px;
+  }
+
+  /* ELIGIBILITY */
+  .eligibility {
+    padding: 0 40px 18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .elig-box {
+    border: 1.5px solid #69BE28;
+    border-radius: 10px;
+    padding: 14px;
+    background: #f8fdf8;
+  }
+  .elig-box h4 { font-size: 0.78rem; font-weight: 900; color: #002244; margin-bottom: 8px; letter-spacing: 1px; }
+  .elig-box ul { list-style: none; }
+  .elig-box ul li { font-size: 0.72rem; color: #333; padding: 3px 0; border-bottom: 1px solid #e0e8e0; }
+  .elig-box ul li:last-child { border-bottom: none; }
+  .elig-box ul li::before { content: '✓ '; color: #69BE28; font-weight: 900; }
+
+  /* CTA FOOTER */
+  .cta {
+    background: linear-gradient(135deg, #002244 0%, #001a33 100%);
+    padding: 22px 40px;
+    text-align: center;
+    margin-top: auto;
+  }
+  .cta h3 { font-size: 1.2rem; font-weight: 900; color: #69BE28; margin-bottom: 6px; letter-spacing: 2px; }
+  .cta p { font-size: 0.82rem; color: #90b8d4; margin-bottom: 14px; }
+  .cta-row { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+  .cta-item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 18px;
+    text-align: center;
+    min-width: 140px;
+  }
+  .cta-item .ci-label { font-size: 0.6rem; font-weight: 900; color: #002244; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 3px; }
+  .cta-item .ci-val { font-size: 0.88rem; font-weight: 800; color: #002244; }
+
+  .disclaimer {
+    text-align: center;
+    font-size: 0.6rem;
+    color: #7090a0;
+    padding: 8px 40px;
+    background: #001428;
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page { width: 100%; min-height: auto; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo-row">
+      <div class="logo-box"></div>
+      <h1>
+        <span>BLACKTECH SOLUTIONS CORP</span>
+        ELECTRIFICATION<br/>SERVICES
+      </h1>
+    </div>
+  </div>
+
+  <div class="headline">⚡ Upgrade Your Home — Lower Your Bills</div>
+  <div class="sub-headline">ComEd Approved · Certified Contractor · Serving Chicagoland</div>
+
+  <!-- INTRO -->
+  <div class="intro">
+    <p>
+      Are you a <strong>ComEd customer</strong> ready to reduce your energy costs, eliminate gas bills, and upgrade your home to clean, efficient electricity? <strong>Blacktech Solutions Corp</strong> is your certified electrification contractor — we handle everything from start to finish.
+    </p>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="section">
+    <div class="section-title">What We Do</div>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="s-icon">⚡</div>
+        <h4>Electrical Infrastructure</h4>
+        <p>Panel upgrades, new circuits, wiring, and service upgrades to support modern electrification equipment.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="s-icon">🌡️</div>
+        <h4>HVAC / Heat Pump</h4>
+        <p>High-efficiency heat pump installation — replaces gas furnace & central AC with one clean electric system.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="s-icon">💧</div>
+        <h4>Electric Water Heater</h4>
+        <p>Heat pump water heater installation — uses 70% less energy than a standard electric water heater.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="s-icon">🏠</div>
+        <h4>Weatherization</h4>
+        <p>Home sealing, insulation, and air sealing — keeps conditioned air in and reduces energy waste.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="s-icon">🔋</div>
+        <h4>Battery Storage</h4>
+        <p>EcoFlow home battery backup — store solar or off-peak energy, keep the lights on during outages.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="s-icon">📋</div>
+        <h4>Full Paperwork Handled</h4>
+        <p>We manage all program enrollment, permits, ComEd sign-up forms, lien waivers, and LCP tracking.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <div class="section" style="padding-bottom:8px;">
+    <div class="section-title">How It Works</div>
+  </div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h5>Sign Up</h5>
+      <p>Fill out the enrollment form — takes 5 minutes</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h5>Walk Through</h5>
+      <p>We assess your home and recommend upgrades</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h5>Installation</h5>
+      <p>Our certified team installs all approved equipment</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <h5>Save Money</h5>
+      <p>Lower bills, rebates, and energy independence</p>
+    </div>
+  </div>
+
+  <!-- SAVINGS BANNER -->
+  <div class="savings">
+    <div class="savings-icon">💰</div>
+    <div>
+      <h3>Rebates & Incentives Available</h3>
+      <p>Federal tax credits up to 30% · Illinois rebates · ComEd program incentives · Income-qualified discounts may apply</p>
+    </div>
+    <div class="tag">ASK US<br/>TODAY</div>
+  </div>
+
+  <!-- ELIGIBILITY -->
+  <div class="section" style="padding-bottom:8px;">
+    <div class="section-title">Who Qualifies</div>
+  </div>
+  <div class="eligibility">
+    <div class="elig-box">
+      <h4>✅ YOU MAY QUALIFY IF YOU HAVE:</h4>
+      <ul>
+        <li>A ComEd electric account</li>
+        <li>A gas furnace, boiler, or water heater</li>
+        <li>A home older than 10 years</li>
+        <li>Interest in reducing monthly bills</li>
+        <li>Interest in backup power / battery</li>
+      </ul>
+    </div>
+    <div class="elig-box">
+      <h4>📋 WE HANDLE FOR YOU:</h4>
+      <ul>
+        <li>All program sign-up forms</li>
+        <li>ComEd enrollment paperwork</li>
+        <li>City permits &amp; inspections</li>
+        <li>Rebate &amp; incentive applications</li>
+        <li>LCP compliance tracking</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">
+    <h3>📞 READY TO GET STARTED?</h3>
+    <p>Contact Blacktech Solutions Corp today — no obligation, free assessment</p>
+    <div class="cta-row">
+      <div class="cta-item">
+        <div class="ci-label">📞 Call / Text</div>
+        <div class="ci-val">(312) 965-2782</div>
+      </div>
+      <div class="cta-item">
+        <div class="ci-label">✉ Email</div>
+        <div class="ci-val">leads@blacktechsolutionscorp.com</div>
+      </div>
+      <div class="cta-item">
+        <div class="ci-label">🌐 Website</div>
+        <div class="ci-val">blacktechsolutionscorp.com</div>
+      </div>
+      <div class="cta-item">
+        <div class="ci-label">📋 Sign Up Portal</div>
+        <div class="ci-val">comed.blacktechsolutionscorp.com</div>
+        <img src="/static/comed_qr.png" style="width:80px;height:80px;margin-top:6px;border-radius:6px;" alt="QR Code"/>
+      </div>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    Blacktech Solutions Corp · Licensed Electrical Contractor · Chicagoland, IL · 
+    Program availability subject to ComEd eligibility requirements. Rebates vary. Ask for details.
+  </div>
+
+</div>
+</body>
+</html>

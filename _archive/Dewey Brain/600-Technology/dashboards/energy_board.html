@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blacktech AI Board</title>
+<link rel="manifest" href="/kanban_manifest.json"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="Job Board"/>
+<meta name="theme-color" content="#22c55e"/>
+<link rel="apple-touch-icon" href="/icons/kanban-192.png"/>
+<script>
+if('serviceWorker' in navigator){
+  window.addEventListener('load',()=>{
+    navigator.serviceWorker.register('/sw_kanban.js').catch(()=>{});
+  });
+}
+</script>
+<style>
+  :root {
+    --bg: #121212;
+    --card-bg: #1e1e1e;
+    --accent: #128c7e;
+    --accent2: #1a5f7a;
+    --yellow: #f5e6a3;
+    --orange: #ffab40;
+    --text: #e0e0e0;
+    --muted: #888;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--bg); color: var(--text);
+    overflow-x: hidden;
+  }
+  header {
+    background: linear-gradient(90deg, var(--accent2), var(--accent));
+    padding: 8px 16px;
+    display: flex; align-items: center; gap: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+  header h1 { margin: 0; font-size: 18px; }
+  .board-tabs {
+    display: flex; gap: 6px; padding: 8px 16px; background: #1a1a1a;
+    border-bottom: 1px solid #333;
+  }
+  .board-tab {
+    padding: 6px 14px; border-radius: 20px; cursor: pointer;
+    background: #2a2a2a; border: 1px solid #333; color: var(--muted);
+    font-size: 12px; transition: 0.2s;
+  }
+  .board-tab.active {
+    background: var(--accent); color: #fff; border-color: var(--accent);
+  }
+  .columns {
+    display: flex; gap: 12px; padding: 12px 16px;
+    overflow-x: auto; min-height: 80vh;
+  }
+  .column {
+    min-width: 260px; width: 280px;
+    background: #1a1a1a; border-radius: 8px;
+    border: 1px solid #2a2a2a;
+    display: flex; flex-direction: column;
+  }
+  .col-header {
+    padding: 10px 12px; font-weight: bold; font-size: 13px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    border-radius: 8px 8px 0 0;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .col-header .count {
+    background: rgba(255,255,255,0.15); border-radius: 10px;
+    padding: 2px 8px; font-size: 11px; font-weight: normal;
+  }
+  .col-body {
+    padding: 8px; min-height: 120px; flex-grow: 1;
+    overflow: visible;
+  }
+  .note {
+    background: var(--card-bg); border-radius: 6px;
+    padding: 10px; margin-bottom: 8px;
+    border-left: 4px solid var(--accent);
+    cursor: grab; box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    transition: transform 0.15s, box-shadow 0.15s; position: relative;
+  }
+  .note:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.5); }
+  .note.dragging { opacity: 0.5; transform: rotate(3deg); }
+  .note-title { font-weight: bold; font-size: 13px; margin-bottom: 4px; }
+  .note-desc { font-size: 12px; color: var(--muted); line-height: 1.3; }
+  .note-tags { margin-top: 6px; display: flex; gap: 4px; flex-wrap: wrap; }
+  .tag {
+    font-size: 10px; padding: 2px 6px; border-radius: 4px; background: #2a2a2a; color: var(--muted);
+  }
+  .tag.urgent      { background: #a83232; color: #fff; }
+  .tag.think       { background: #2a4a6a; color: #fff; }
+  .tag.admin       { background: #4a3a6a; color: #e0c8ff; }
+  .tag.suppliers   { background: #2a4a2a; color: #a8e6a8; }
+  .tag.projects    { background: #1a3a5a; color: #93c5fd; }
+
+  /* ── Status badges on cards ── */
+  .status-badge {
+    display: inline-block; font-size: 10px; font-weight: 700;
+    padding: 3px 10px; border-radius: 12px; letter-spacing: 0.6px;
+    text-transform: uppercase; margin-bottom: 6px;
+  }
+  .badge-newlead  { background: #003a3a; color: #22d3ee; border: 1px solid #06b6d4; }
+  .badge-inprog   { background: #3a2800; color: #fbbf24; border: 1px solid #d97706; }
+  .badge-complete { background: #0d3320; color: #34d399; border: 1px solid #059669; }
+  .badge-closed   { background: #3a0d0d; color: #f87171; border: 1px solid #dc2626; }
+  .badge-archived { background: #1a1a2e; color: #94a3b8; border: 1px solid #475569; }
+
+  /* card border by status */
+  .note[data-status="backlog"] { border-left-color: #0ea5e9 !important; }
+  .note[data-status="todo"]    { border-left-color: #0ea5e9 !important; }
+  .note[data-status="inprog"]  { border-left-color: #d97706 !important; }
+  .note[data-status="done"]    { border-left-color: #dc2626 !important; }
+  .note[data-status="complete"]{ border-left-color: #059669 !important; }
+  .note[data-status="archived"]{ border-left-color: #475569 !important; }
+  .add-btn {
+    width: 100%; padding: 8px; border: 1px dashed #444;
+    background: transparent; color: var(--muted);
+    border-radius: 6px; cursor: pointer; font-size: 12px;
+    margin-bottom: 6px;
+  }
+  .add-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .modal-overlay {
+    display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8);
+    justify-content: center; align-items: center; z-index: 100;
+  }
+  .modal { background: #1e1e1e; border-radius: 10px; padding: 20px; width: 320px; border: 1px solid #333; }
+  .modal h3 { margin: 0 0 12px; font-size: 15px; }
+  .modal input, .modal textarea, .modal select {
+    width: 100%; background: #2a2a2a; border: 1px solid #333;
+    color: var(--text); padding: 8px; border-radius: 6px;
+    margin-bottom: 10px; font-family: inherit;
+  }
+  .modal textarea { min-height: 80px; resize: vertical; }
+  .modal .btn-row { display: flex; gap: 8px; justify-content: flex-end; }
+  .modal button { padding: 8px 16px; border-radius: 6px; border: none; cursor: pointer; }
+  .modal .save { background: var(--accent); color: #fff; }
+  .modal .cancel { background: #333; color: var(--text); }
+  .note-menu {
+    position: absolute; top: 6px; right: 6px; cursor: pointer; color: var(--muted); font-size: 14px;
+  }
+  .note-menu:hover { color: #fff; }
+  .note-actions {
+    display: none;
+    position: fixed;
+    background: #1e1e1e;
+    border: 1px solid #555;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 9999;
+    min-width: 160px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.7);
+  }
+  .note-actions div { padding: 9px 14px; font-size: 13px; cursor: pointer; white-space: nowrap; }
+  .note-actions div:hover { background: #2a2a2a; }
+  .note-actions hr { border: none; border-top: 1px solid #333; margin: 2px 0; }
+
+  .col-backlog .col-header  { background: #003a3a; }
+  .col-todo    .col-header  { background: #1a3a4a; }
+  .col-inprog  .col-header  { background: #2a1a00; }
+  .col-done    .col-header  { background: #3a0d0d; }
+  .col-complete .col-header { background: #0d3320; }
+  .col-archived .col-header { background: #1a1a2e; }
+
+  .status-dot {
+    width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 4px;
+  }
+  .dot-backlog  { background: #22d3ee; }
+  .dot-todo     { background: #60a5fa; }
+  .dot-inprog   { background: #fbbf24; }
+  .dot-done     { background: #f87171; }
+  .dot-complete { background: #34d399; }
+  .dot-archived { background: #94a3b8; }
+</style>
+</head>
+<body>
+<header><h1>🗂️  Project Board</h1></header>
+<div class="board-tabs">
+  <div class="board-tab active" data-board="main">All Projects</div>
+  <div class="board-tab" data-board="think">⚡ Think Energy</div>
+  <div class="board-tab" data-board="admin">🗂️ Administration</div>
+  <div class="board-tab" data-board="suppliers">🏭 Suppliers</div>
+  <div class="board-tab" data-board="projects">📁 Projects</div>
+</div>
+<div class="columns" id="board">
+  <div class="column col-backlog" data-status="backlog">
+    <div class="col-header"><span><span class="status-dot dot-backlog"></span>🆕 New Lead</span><span class="count" id="count-backlog">0</span></div>
+    <div class="col-body" id="col-backlog"><button class="add-btn" onclick="openModal('backlog')">+ Add Lead</button></div>
+  </div>
+  <div class="column col-todo" data-status="todo">
+    <div class="col-header"><span><span class="status-dot dot-todo"></span>📞 Contacted</span><span class="count" id="count-todo">0</span></div>
+    <div class="col-body" id="col-todo"><button class="add-btn" onclick="openModal('todo')">+ Add</button></div>
+  </div>
+  <div class="column col-inprog" data-status="inprog">
+    <div class="col-header"><span><span class="status-dot dot-inprog"></span>🔧 In Progress</span><span class="count" id="count-inprog">0</span></div>
+    <div class="col-body" id="col-inprog"><button class="add-btn" onclick="openModal('inprog')">+ Add</button></div>
+  </div>
+  <div class="column col-done" data-status="done">
+    <div class="col-header"><span><span class="status-dot dot-done"></span>🔴 Closed</span><span class="count" id="count-done">0</span></div>
+    <div class="col-body" id="col-done"><button class="add-btn" onclick="openModal('done')">+ Add</button></div>
+  </div>
+  <div class="column col-complete" data-status="complete">
+    <div class="col-header"><span><span class="status-dot dot-complete"></span>🟢 Complete</span><span class="count" id="count-complete">0</span></div>
+    <div class="col-body" id="col-complete"><button class="add-btn" onclick="openModal('complete')">+ Add</button></div>
+  </div>
+  <div class="column col-archived" data-status="archived">
+    <div class="col-header"><span><span class="status-dot dot-archived"></span>🗄️ Archived</span><span class="count" id="count-archived">0</span></div>
+    <div class="col-body" id="col-archived"><button class="add-btn" onclick="openModal('archived')">+ Add</button></div>
+  </div>
+</div>
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <h3 id="modalTitle">New Note</h3>
+    <input type="text" id="noteTitle" placeholder="Title">
+    <textarea id="noteDesc" placeholder="Details..."></textarea>
+    <select id="noteStatus" style="display:none">
+      <option value="backlog">🆕 New Lead</option>
+      <option value="todo">📞 Contacted</option>
+      <option value="inprog">🟡 In Progress</option>
+      <option value="done">🔴 Closed</option>
+      <option value="complete">🟢 Complete</option>
+      <option value="archived">🗄️ Archived</option>
+    </select>
+    <select id="noteTag">
+      <option value="">No Tag</option>
+      <option value="think">⚡ Think Energy</option>
+      <option value="admin">🗂️ Administration</option>
+      <option value="suppliers">🏭 Suppliers</option>
+      <option value="projects">📁 Projects</option>
+      <option value="urgent">🔴 Urgent</option>
+    </select>
+    <div class="btn-row">
+      <button class="cancel" onclick="closeModal()">Cancel</button>
+      <button class="save" onclick="saveNote()">Save</button>
+    </div>
+  </div>
+</div>
+<script>
+let notes = [];
+let currentStatus = 'backlog';
+let currentBoard = 'main';
+let editingId = null;
+
+const ALL_STATUSES = ['backlog','todo','inprog','done','complete','archived'];
+
+function render() {
+  ALL_STATUSES.forEach(st => {
+    const col = document.getElementById('col-' + st);
+    if (!col) return;
+    const addBtn = col.querySelector('.add-btn');
+    col.innerHTML = '';
+    col.appendChild(addBtn);
+    const count = notes.filter(n => n.status === st && (currentBoard === 'main' || n.tag === currentBoard)).length;
+    const cntEl = document.getElementById('count-' + st);
+    if (cntEl) cntEl.textContent = count;
+  });
+
+  notes.forEach(n => {
+    if (currentBoard !== 'main' && n.tag !== currentBoard) return;
+    const col = document.getElementById('col-' + n.status);
+    if (!col) return;
+    const el = document.createElement('div');
+    el.className = 'note';
+    el.draggable = true;
+    el.dataset.id = n.id;
+    el.dataset.status = n.status;
+    const desc = n.desc || n.notes || '';
+    const badgeMap = {
+      backlog:  ['badge-newlead',  '🆕 New Lead'],
+      todo:     ['badge-newlead',  '📞 Contacted'],
+      inprog:   ['badge-inprog',   '🟡 In Progress'],
+      done:     ['badge-closed',   '🔴 Closed'],
+      complete: ['badge-complete', '🟢 Complete'],
+      archived: ['badge-archived', '🗄️ Archived'],
+    };
+    const [badgeClass, badgeLabel] = badgeMap[n.status] || ['badge-newlead','🆕 New Lead'];
+    const borderMap = { backlog:'#22d3ee', todo:'#60a5fa', inprog:'#d97706', done:'#dc2626', complete:'#059669', archived:'#475569' };
+    el.style.borderLeftColor = borderMap[n.status] || '#22d3ee';
+    const safeId = JSON.stringify(n.id);
+    el.innerHTML = `
+      <div class="note-menu" data-id="${n.id}">⋯</div>
+      <div class="note-actions" id="menu-${n.id}">
+        <div class="menu-action" data-action="edit" data-id="${n.id}">✏️ Edit</div>
+        <hr style="margin:2px 0;border-color:#444">
+        <div class="menu-action" data-action="move" data-status="backlog" data-id="${n.id}">🆕 New Lead</div>
+        <div class="menu-action" data-action="move" data-status="todo" data-id="${n.id}">📞 Contacted</div>
+        <div class="menu-action" data-action="move" data-status="inprog" data-id="${n.id}">🟡 In Progress</div>
+        <div class="menu-action" data-action="move" data-status="done" data-id="${n.id}">🔴 Closed</div>
+        <div class="menu-action" data-action="move" data-status="complete" data-id="${n.id}">🟢 Complete</div>
+        <div class="menu-action" data-action="move" data-status="archived" data-id="${n.id}">🗄️ Archived</div>
+        <hr style="margin:2px 0;border-color:#444">
+        <div class="menu-action" data-action="delete" data-id="${n.id}" style="color:#f87171">🗑️ Delete</div>
+      </div>
+      <span class="status-badge ${badgeClass}">${badgeLabel}</span>
+      <div class="note-title">${escapeHtml(n.title)}</div>
+      <div class="note-desc">${escapeHtml(desc)}</div>
+      ${n.tag ? `<div class="note-tags"><span class="tag ${n.tag}">${n.tag}</span></div>` : ''}
+    `;
+    el.addEventListener('dragstart', dragStart);
+    el.addEventListener('dragend', dragEnd);
+    col.appendChild(el);
+  });
+
+  saveKanban();
+}
+
+function escapeHtml(t) { return String(t||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function openModal(status) {
+  currentStatus = status;
+  editingId = null;
+  document.getElementById('noteTitle').value = '';
+  document.getElementById('noteDesc').value = '';
+  document.getElementById('noteTag').value = '';
+  document.getElementById('noteStatus').value = status;
+  document.getElementById('noteStatus').style.display = 'none';
+  document.getElementById('modalTitle').textContent = 'New Card';
+  document.getElementById('modal').style.display = 'flex';
+}
+
+function closeModal() { document.getElementById('modal').style.display = 'none'; }
+
+function saveNote() {
+  const title = document.getElementById('noteTitle').value.trim();
+  const desc  = document.getElementById('noteDesc').value.trim();
+  const tag   = document.getElementById('noteTag').value;
+  const status = document.getElementById('noteStatus').value || currentStatus;
+  if (!title) return;
+  if (editingId !== null) {
+    const n = notes.find(x => x.id === editingId);
+    if (n) { n.title = title; n.desc = desc; n.notes = desc; n.tag = tag; n.status = status; }
+  } else {
+    notes.push({ id: crypto.randomUUID(), title, desc, notes: desc, tag, status, board: currentBoard, created: new Date().toISOString() });
+  }
+  closeModal();
+  render();
+}
+
+function deleteNote(id) { if (!confirm('Delete this card?')) return; notes = notes.filter(n => n.id !== id); render(); }
+
+function moveNote(id, status) {
+  const n = notes.find(x => x.id === id);
+  if (n) { n.status = status; render(); }
+  document.querySelectorAll('.note-actions').forEach(x => x.style.display = 'none');
+}
+
+function editNote(id) {
+  const n = notes.find(x => x.id === id);
+  if (!n) return;
+  editingId = id;
+  document.getElementById('noteTitle').value = n.title || '';
+  document.getElementById('noteDesc').value  = n.desc || n.notes || '';
+  document.getElementById('noteTag').value   = n.tag || '';
+  document.getElementById('noteStatus').value = n.status || 'backlog';
+  document.getElementById('noteStatus').style.display = 'block';
+  document.getElementById('modalTitle').textContent = '✏️ Edit Card';
+  document.getElementById('modal').style.display = 'flex';
+  const m = document.getElementById('menu-' + id);
+  if (m) m.style.display = 'none';
+}
+
+function moveNote(id, status) {
+  const n = notes.find(x => x.id === id);
+  if (n) { n.status = status; render(); }
+  document.querySelectorAll('.note-actions').forEach(x => x.style.display = 'none');
+}
+
+document.addEventListener('click', (e) => {
+  // Toggle menu on ⋯ click
+  const menuBtn = e.target.closest('.note-menu');
+  if (menuBtn) {
+    e.stopPropagation();
+    const id = menuBtn.dataset.id;
+    const m  = document.getElementById('menu-' + id);
+    const all = document.querySelectorAll('.note-actions');
+    all.forEach(x => { if (x !== m) x.style.display = 'none'; });
+
+    if (m.style.display === 'block') {
+      m.style.display = 'none';
+      return;
+    }
+
+    // Position menu using fixed coords from the button
+    m.style.display = 'block';
+    const rect = menuBtn.getBoundingClientRect();
+    const menuW = m.offsetWidth || 160;
+    const menuH = m.offsetHeight;
+    const vw    = window.innerWidth;
+    const vh    = window.innerHeight;
+
+    // On mobile (narrow screen) always open upward — menu items start from top
+    // On desktop open downward unless near bottom
+    let top, left;
+    const isMobile = vw < 600;
+
+    if (isMobile) {
+      // Always open upward on mobile so all items stay visible
+      top = rect.top - menuH - 4;
+      // If that goes off the top, just pin to top of screen with small margin
+      if (top < 8) top = 8;
+    } else {
+      // Desktop: open downward, flip up if near bottom
+      top = rect.bottom + 4;
+      if (top + menuH > vh - 10) top = rect.top - menuH - 4;
+    }
+
+    // Horizontal: right-align to button, clamp to screen edges
+    left = rect.right - menuW;
+    if (left < 8) left = 8;
+    if (left + menuW > vw - 8) left = vw - menuW - 8;
+
+    m.style.top  = top  + 'px';
+    m.style.left = left + 'px';
+    return;
+  }
+
+  // Handle menu actions
+  const action = e.target.closest('.menu-action');
+  if (action) {
+    e.stopPropagation();
+    const id  = action.dataset.id;
+    const act = action.dataset.action;
+    if (act === 'edit')   { editNote(id); }
+    if (act === 'move')   { moveNote(id, action.dataset.status); }
+    if (act === 'delete') { deleteNote(id); }
+    return;
+  }
+
+  // Click outside — close all menus
+  document.querySelectorAll('.note-actions').forEach(x => x.style.display = 'none');
+});
+
+async function loadKanban() {
+  let serverNotes = null;
+  try {
+    const res = await fetch('/api/kanban');
+    if (res.ok) serverNotes = await res.json();
+  } catch (e) { console.warn('loadKanban: server unreachable', e); }
+  if (serverNotes && Array.isArray(serverNotes)) {
+    const serverIds = new Set(serverNotes.map(n => n.id));
+    const localFallback = JSON.parse(localStorage.getItem('board_notes_v1') || '[]');
+    const localOnly = localFallback.filter(n => !serverIds.has(n.id));
+    notes = [...serverNotes, ...localOnly];
+  } else {
+    notes = JSON.parse(localStorage.getItem('board_notes_v1') || '[]');
+  }
+  render();
+}
+
+async function saveKanban() {
+  localStorage.setItem('board_notes_v1', JSON.stringify(notes));
+  try {
+    await fetch('/api/kanban/all', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(notes)
+    });
+  } catch (e) { console.warn('saveKanban: server sync failed', e); }
+}
+
+let draggedId = null;
+function dragStart(e) { draggedId = this.dataset.id; this.classList.add('dragging'); e.dataTransfer.effectAllowed = 'move'; }
+function dragEnd(e)   { this.classList.remove('dragging'); }
+
+document.querySelectorAll('.col-body').forEach(col => {
+  col.addEventListener('dragover', e => { e.preventDefault(); e.dataTransfer.dropEffect = 'move'; });
+  col.addEventListener('drop', e => {
+    e.preventDefault();
+    const status = col.parentElement.dataset.status;
+    const n = notes.find(x => x.id === draggedId);
+    if (n) { n.status = status; render(); }
+  });
+});
+
+document.querySelectorAll('.board-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.board-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    currentBoard = tab.dataset.board;
+    render();
+  });
+});
+
+loadKanban();
+</script>
+</body>
+</html>

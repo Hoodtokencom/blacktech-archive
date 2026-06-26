@@ -1,0 +1,24 @@
+[
+  {
+    "id": "BSC-CUST-IPA001",
+    "name": "Richelle Moreno",
+    "company": "IPA Express / 8711 LLC",
+    "phone": "(708) 200-9981",
+    "email": "richelle@axiomcontractors.net",
+    "address": "8711 S 77th Ave, Bridgeview IL 60455",
+    "status": "lead",
+    "source": "Direct Outreach",
+    "lastContact": "2026-06-09",
+    "notes": "Estimate BSC-E-2026-IPA001 sent 2026-06-09. Full building LED retrofit. Option A $84,512 / Option B $88,638. ComEd rebate $52K. Awaiting response."
+  },
+  {
+    "name": "Charles Robinson",
+    "email": "robinson.charles@yahoo.com",
+    "phone": "",
+    "address": "10059 S Forest Ave, Chicago, IL 60628",
+    "category": "Residential",
+    "source": "Neighbor",
+    "notes": "1hr electrical work - $75 invoice sent 2026-06-10",
+    "added": "2026-06-10"
+  }
+]

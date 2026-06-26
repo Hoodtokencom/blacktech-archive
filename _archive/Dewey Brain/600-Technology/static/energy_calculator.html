@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Think Energy — Bill Saver Calculator</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #002244;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.5;
+  }
+  .container {
+    max-width: 420px;
+    margin: 0 auto;
+    background: #0b2e4f;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .header h1 {
+    font-size: 1.5rem;
+    color: #69BE28;
+    margin-bottom: 4px;
+  }
+  .header p {
+    font-size: 0.9rem;
+    color: #a0c4e8;
+  }
+  .input-group {
+    margin-bottom: 16px;
+  }
+  .input-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #c0ddff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .input-group input, .input-group select {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    background: #001833;
+    color: #ffffff;
+    border: 1px solid #1a4a7a;
+  }
+  .input-group input:focus, .input-group select:focus {
+    outline: none;
+    border-color: #69BE28;
+    box-shadow: 0 0 0 3px rgba(105,190,40,0.15);
+  }
+  .row {
+    display: flex;
+    gap: 12px;
+  }
+  .row .input-group {
+    flex: 1;
+  }
+  .results {
+    margin-top: 24px;
+    padding: 20px;
+    background: #001833;
+    border-radius: 12px;
+    border: 1px solid #1a4a7a;
+  }
+  .results-header {
+    text-align: center;
+    margin-bottom: 16px;
+    color: #69BE28;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .result-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #1a4a7a;
+    font-size: 0.95rem;
+  }
+  .result-line:last-child {
+    border-bottom: none;
+  }
+  .result-line .label {
+    color: #a0c4e8;
+  }
+  .result-line .value {
+    font-weight: 700;
+    color: #ffffff;
+  }
+  .highlight {
+    color: #69BE28;
+    font-size: 1.1rem;
+  }
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 8px;
+  }
+  .badge-green {
+    background: rgba(105,190,40,0.2);
+    color: #69BE28;
+  }
+  .badge-yellow {
+    background: rgba(255,215,0,0.2);
+    color: #ffd700;
+  }
+  .badge-blue {
+    background: rgba(30,144,255,0.2);
+    color: #1e90ff;
+  }
+  .badge-purple {
+    background: rgba(138,43,226,0.2);
+    color: #8a2be2;
+  }
+  .disclaimer {
+    margin-top: 20px;
+    font-size: 0.7rem;
+    color: #6d8eb5;
+    text-align: center;
+    line-height: 1.4;
+  }
+  .cta {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 16px;
+    text-align: center;
+    background: linear-gradient(135deg, #69BE28, #4a9e18);
+    color: #002244;
+    font-weight: 800;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+  }
+  .cta:active {
+    transform: scale(0.98);
+  }
+  .thank-you {
+    display: none;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  .thank-you h2 {
+    color: #69BE28;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+  .thank-you p {
+    color: #a0c4e8;
+    font-size: 0.95rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="container" id="calcPage">
+  <div class="header">
+    <h1>⚡ Think Energy</h1>
+    <p>Real-Time Bill Savings Calculator</p>
+  </div>
+
+  <div class="input-group">
+    <label>Current Electric Bill ($)</label>
+    <input type="number" id="billAmount" placeholder="265" value="265" oninput="calculate()">
+  </div>
+
+  <div class="row">
+    <div class="input-group">
+      <label>Rate ($/kWh)</label>
+      <input type="number" id="rate" placeholder="0.105" step="0.001" value="0.105" oninput="calculate()">
+    </div>
+    <div class="input-group">
+      <label>Est. Usage (kWh)</label>
+      <input type="number" id="usage" placeholder="auto" readonly style="background:#001220; color:#6d8eb5;">
+    </div>
+  </div>
+
+  <div style="font-size:0.75rem; color:#6d8eb5; text-align:center; margin-bottom:16px;">
+    Based on actual ComEd rates (Nov 2023). Supply ~2.6¢ + delivery + taxes = ~10.5¢/kWh blended.
+  </div>
+
+  <div class="input-group">
+    <label>
+      Auto Save
+      <span class="badge badge-green">Save 5–15%</span>
+    </label>
+    <select id="autoSave" onchange="calculate()">
+      <option value="0">No Auto Save</option>
+      <option value="5" selected>5% off</option>
+      <option value="10">10% off</option>
+      <option value="15">15% off</option>
+    </select>
+  </div>
+
+  <div class="input-group">
+    <label>
+      Battery Storage
+      <span class="badge badge-yellow">Save 20–30%</span>
+    </label>
+    <select id="batteryStorage" onchange="calculate()">
+      <option value="0">No Battery Storage</option>
+      <option value="20" selected>20% off</option>
+      <option value="25">25% off</option>
+      <option value="30">30% off</option>
+    </select>
+  </div>
+
+  <div class="input-group">
+    <label>
+      Community Solar — Block 1
+      <span class="badge badge-blue">Save up to 20%</span>
+    </label>
+    <select id="communitySolar1" onchange="calculate()">
+      <option value="0">No Block 1</option>
+      <option value="10">10% off</option>
+      <option value="15">15% off</option>
+      <option value="20" selected>20% off</option>
+    </select>
+  </div>
+
+  <div class="input-group">
+    <label>
+      Community Solar — Block 2
+      <span class="badge badge-blue">Save up to 20%</span>
+    </label>
+    <select id="communitySolar2" onchange="calculate()">
+      <option value="0">No Block 2</option>
+      <option value="10">10% off</option>
+      <option value="15">15% off</option>
+      <option value="20" selected>20% off</option>
+    </select>
+  </div>
+
+  <div class="input-group">
+    <label>
+      Community Solar — Block 3
+      <span class="badge badge-blue">Save up to 20%</span>
+    </label>
+    <select id="communitySolar3" onchange="calculate()">
+      <option value="0">No Block 3</option>
+      <option value="10">10% off</option>
+      <option value="15">15% off</option>
+      <option value="20" selected>20% off</option>
+    </select>
+  </div>
+
+  <div class="input-group">
+    <label>
+      Think Smart
+      <span class="badge badge-purple">Save 5–10%</span>
+    </label>
+    <select id="thinkSmart" onchange="calculate()">
+      <option value="0">No Think Smart</option>
+      <option value="5" selected>5% off</option>
+      <option value="7">7% off</option>
+      <option value="10">10% off</option>
+    </select>
+  </div>
+
+  <div class="results">
+    <div class="results-header">📊 YOUR SAVINGS</div>
+
+    <div class="result-line">
+      <span class="label">Current Monthly Bill</span>
+      <span class="value" id="currentBill">$265.00</span>
+    </div>
+
+    <div class="result-line">
+      <span class="label">Auto Save Savings</span>
+      <span class="value" style="color:#69BE28;" id="autoSaveSavings">-$13.25</span>
+    </div>
+
+    <div class="result-line">
+      <span class="label">Battery Storage Savings</span>
+      <span class="value" style="color:#ffd700;" id="batterySavings">-$62.94</span>
+    </div>
+
+    <div class="result-line">
+      <span class="label">Community Solar Savings</span>
+      <span class="value" style="color:#1e90ff;" id="solarSavings">-$37.77</span>
+    </div>
+
+    <div class="result-line">
+      <span class="label">Think Smart Savings</span>
+      <span class="value" style="color:#8a2be2;" id="smartSavings">-$12.11</span>
+    </div>
+
+    <div class="result-line" style="padding-top:14px;">
+      <span class="label highlight">🎯 NEW BILL</span>
+      <span class="value highlight" id="newBill">$138.93</span>
+    </div>
+
+    <div class="result-line">
+      <span class="label">Total Monthly Saved</span>
+      <span class="value" style="color:#69BE28; font-size:1.2rem;" id="monthlySaved">$126.07</span>
+    </div>
+
+    <div class="result-line">
+      <span class="label">Yearly Savings</span>
+      <span class="value" style="color:#69BE28; font-size:1.2rem;" id="yearlySaved">$1,512.84</span>
+    </div>
+
+    <div class="result-line">
+      <span class="label">Total % Off</span>
+      <span class="value" id="percentOff">47.6%</span>
+    </div>
+  </div>
+
+  <!-- REAL BILL TESTIMONIAL -->
+  <div style="margin-top: 20px; padding: 16px; background: #001833; border-radius: 12px; border: 1px solid #1a4a7a;">
+    <p style="font-size: 0.8rem; color: #69BE28; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">📸 Real ComEd Bill — Woodridge, IL 2026</p>
+    <p style="font-size: 0.85rem; color: #a0c4e8; line-height: 1.5;">
+      <strong>344 kWh used. Bill was $89.49.</strong> Community Solar credits from <strong>Genoa Road Solar II LLC</strong> applied <strong>-$319.77</strong>. <strong style="color:#69BE28;">$0.00 due — "No Payment is Due."</strong>
+    </p>
+    <p style="font-size: 0.8rem; color: #6d8eb5; margin-top: 8px;">Excess credits roll over to future months. Actual bill, actual result.</p>
+  </div>
+
+  <!-- LEAD CAPTURE FORM -->
+  <div style="margin-top: 28px; border-top: 1px solid #1a4a7a; padding-top: 20px;">
+    <p style="text-align:center; color:#69BE28; font-weight:700; font-size:1rem; margin-bottom:16px;">
+      📱 Want these savings? Send me your info:
+    </p>
+
+    <form id="leadForm" onsubmit="submitLead(event)">
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" id="leadName" required placeholder="Your name">
+      </div>
+      <div class="input-group">
+        <label>Phone Number</label>
+        <input type="tel" id="leadPhone" required placeholder="(312) 555-1234">
+      </div>
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" id="leadEmail" required placeholder="you@email.com">
+      </div>
+      <div class="input-group">
+        <label>ZIP Code</label>
+        <input type="text" id="leadZip" required placeholder="60619">
+      </div>
+
+      <!-- Hidden fields with calculated values -->
+      <input type="hidden" id="hfCurrentBill">
+      <input type="hidden" id="hfNewBill">
+      <input type="hidden" id="hfMonthlySaved">
+      <input type="hidden" id="hfYearlySaved">
+      <input type="hidden" id="hfPercentOff">
+      <input type="hidden" id="hfAutoSave">
+      <input type="hidden" id="hfBattery">
+      <input type="hidden" id="hfSolar1">
+      <input type="hidden" id="hfSolar2">
+      <input type="hidden" id="hfSolar3">
+      <input type="hidden" id="hfSmart">
+
+      <button type="submit" class="cta">Send My Savings Details</button>
+    </form>
+  </div>
+
+  <div class="disclaimer">
+    Estimated savings based on current ComEd rates. All discounts (Auto Save, Battery Storage, Community Solar, Think Smart) are applied sequentially. Your actual savings may vary.
+  </div>
+</div>
+
+<!-- Thank you screen -->
+<div class="container thank-you" id="thankYouPage">
+  <h2>✅ Sent!</h2>
+  <p>Derrell will text you within 24 hours with your custom savings plan.</p>
+  <p style="margin-top:16px; color:#69BE28;">Or call/text now: (312) 965-2782</p>
+</div>
+
+
+<script>
+function calculate() {
+  const bill = parseFloat(document.getElementById('billAmount').value) || 0;
+  const rate = parseFloat(document.getElementById('rate').value) || 0.12;
+  const autoPct = parseFloat(document.getElementById('autoSave').value) || 0;
+  const batteryPct = parseFloat(document.getElementById('batteryStorage').value) || 0;
+  const solar1 = parseFloat(document.getElementById('communitySolar1').value) || 0;
+  const solar2 = parseFloat(document.getElementById('communitySolar2').value) || 0;
+  const solar3 = parseFloat(document.getElementById('communitySolar3').value) || 0;
+  const solarPct = Math.min(solar1 + solar2 + solar3, 100); // cap at 100%
+  const smartPct = parseFloat(document.getElementById('thinkSmart').value) || 0;
+
+  const usage = rate > 0 ? Math.round(bill / rate) : 0;
+  document.getElementById('usage').value = usage > 0 ? usage : '—';
+
+  // Sequential discounts
+  const afterAutoSave = bill * (1 - autoPct / 100);
+  const autoSaveSavings = bill - afterAutoSave;
+
+  const afterBattery = afterAutoSave * (1 - batteryPct / 100);
+  const batterySavings = afterAutoSave - afterBattery;
+
+  const afterSolar = afterBattery * (1 - solarPct / 100);
+  const solarSavings = afterBattery - afterSolar;
+
+  const afterSmart = afterSolar * (1 - smartPct / 100);
+  const smartSavings = afterSolar - afterSmart;
+
+  const newBill = Math.max(afterSmart, 0); // never negative
+  const totalSaved = bill - newBill;
+  const yearlySaved = totalSaved * 12;
+  const percentOff = bill > 0 ? (totalSaved / bill * 100) : 0;
+
+  document.getElementById('currentBill').textContent = '$' + bill.toFixed(2);
+  document.getElementById('autoSaveSavings').textContent = autoSaveSavings >= 0 ? '-$' + autoSaveSavings.toFixed(2) : '$0.00';
+  document.getElementById('batterySavings').textContent = batterySavings >= 0 ? '-$' + batterySavings.toFixed(2) : '$0.00';
+  document.getElementById('solarSavings').textContent = solarSavings >= 0 ? '-$' + solarSavings.toFixed(2) : '$0.00';
+  document.getElementById('smartSavings').textContent = smartSavings >= 0 ? '-$' + smartSavings.toFixed(2) : '$0.00';
+  document.getElementById('newBill').textContent = '$' + newBill.toFixed(2);
+  document.getElementById('monthlySaved').textContent = '$' + totalSaved.toFixed(2);
+  document.getElementById('yearlySaved').textContent = '$' + yearlySaved.toFixed(2);
+  document.getElementById('percentOff').textContent = percentOff.toFixed(1) + '%';
+
+  // Update hidden fields
+  document.getElementById('hfCurrentBill').value = bill.toFixed(2);
+  document.getElementById('hfNewBill').value = newBill.toFixed(2);
+  document.getElementById('hfMonthlySaved').value = totalSaved.toFixed(2);
+  document.getElementById('hfYearlySaved').value = yearlySaved.toFixed(2);
+  document.getElementById('hfPercentOff').value = percentOff.toFixed(1);
+  document.getElementById('hfAutoSave').value = autoPct;
+  document.getElementById('hfBattery').value = batteryPct;
+  document.getElementById('hfSolar1').value = solar1;
+  document.getElementById('hfSolar2').value = solar2;
+  document.getElementById('hfSolar3').value = solar3;
+  document.getElementById('hfSmart').value = smartPct;
+}
+
+async function submitLead(e) {
+  e.preventDefault();
+
+  const payload = {
+    source: "think-energy-calculator",
+    name: document.getElementById('leadName').value,
+    phone: document.getElementById('leadPhone').value,
+    email: document.getElementById('leadEmail').value,
+    zip: document.getElementById('leadZip').value,
+    current_bill: document.getElementById('hfCurrentBill').value,
+    new_bill: document.getElementById('hfNewBill').value,
+    monthly_saved: document.getElementById('hfMonthlySaved').value,
+    yearly_saved: document.getElementById('hfYearlySaved').value,
+    percent_off: document.getElementById('hfPercentOff').value,
+    auto_save_pct: document.getElementById('hfAutoSave').value,
+    battery_pct: document.getElementById('hfBattery').value,
+    solar_block_1: document.getElementById('hfSolar1').value,
+    solar_block_2: document.getElementById('hfSolar2').value,
+    solar_block_3: document.getElementById('hfSolar3').value,
+    smart_pct: document.getElementById('hfSmart').value,
+    timestamp: new Date().toISOString()
+  };
+
+  try {
+    const resp = await fetch('/lead-capture', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    const data = await resp.json();
+    console.log('Lead submitted:', data);
+
+    // Show thank you
+    document.getElementById('calcPage').style.display = 'none';
+    document.getElementById('thankYouPage').style.display = 'block';
+  } catch (err) {
+    alert('Something went wrong. Call or text (312) 965-2782 instead.');
+    console.error(err);
+  }
+}
+
+// Run on load
+calculate();
+</script>
+
+</body>
+</html>

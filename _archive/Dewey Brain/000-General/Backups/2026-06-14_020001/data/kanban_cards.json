@@ -1,0 +1,66 @@
+[
+  {
+    "id": "BSC-KANBAN-IPA001",
+    "title": "IPA Express \u2014 LED Lighting Retrofit",
+    "status": "inprog",
+    "tag": "estimate",
+    "amount": "$84,512",
+    "color": "#002244",
+    "notes": "Estimate BSC-E-2026-IPA001 sent 2026-06-09 to richelle@axiomcontractors.net. Option A $84,512 / Option B $88,638. After ComEd rebate: $32,512 / $36,638. Awaiting signed estimate + deposit.\n---\nContact: Richelle Moreno | IPA Express / 8711 LLC\n\ud83d\udce7 Email: richelle@axiomcontractors.net\n\ud83d\udcde Phone: (708) 200-9981",
+    "contact_id": "BSC-CUST-IPA001"
+  },
+  {
+    "id": "57f6d1d1-7bb2-4bb2-b64e-95f95292a53b",
+    "title": "Phil Powell \u2014 Eco School",
+    "notes": "\ud83d\udd27 Electrical\n\ud83d\udcde (312) 801-0549\n\ud83d\udccb Ceiling tile lighting R&R\n---\nContact: Phil Powell | Veteran Prestige\n\ud83d\udce7 Email: Pvbuilders2@aol.com\n\ud83d\udcde Phone: (312) 801-0549\n---\nContact: Phil Powell | Veteran Prestige\n\ud83d\udce7 Email: Pvbuilders2@aol.com\n\ud83d\udcde Phone: (312) 801-0549",
+    "status": "inprog",
+    "tag": "projects",
+    "color": "",
+    "created_at": "2026-06-02T23:55:15.137105+00:00"
+  },
+  {
+    "id": "d730dbc3-81ca-4508-9907-0f49d8d2222a",
+    "title": "Rob Moore \u2014 6515 S Drexel Ave",
+    "notes": "Invoice BSC20266515 sent 06/04/2026. Total $24,990.00. Awaiting 50% deposit to start work.\n---\nContact: Rob Moore | Monster Construction\n\ud83d\udce7 Email: Info@monsterroofingconstruction.com\n\ud83d\udcde Phone: (630) 886-2486\n---\nContact: Rob Moore | Monster Construction\n\ud83d\udce7 Email: Info@monsterroofingconstruction.com\n\ud83d\udcde Phone: (630) 886-2486",
+    "status": "inprog",
+    "tag": "invoiced",
+    "color": "#1e3a1e",
+    "created_at": "2026-06-03T01:08:21.130583+00:00"
+  },
+  {
+    "id": "5f249a6a-b9cc-4510-aa64-2849b8cfe4e8",
+    "title": "Todd \u2014 400 E. Randolph St",
+    "notes": "Low voltage \u2014 CAT3 demo + 5\u00d7CAT5e install\n\ud83d\udccb Invoice BSC-INV-400-RANDOLPH-2026\n\ud83d\udcb0 $1,950.00\n\ud83d\udcc5 Due 06/20/2026\n\ud83d\udce7 Todd@KMPrinting.com\n\u23f3 Awaiting payment\n---\nContact: Todd \u2014 KM Printing\n\ud83d\udce7 Email: Todd@KMPrinting.com\n\ud83d\udcde Phone: (312) 965-2782\n---\nContact: Todd \u2014 KM Printing\n\ud83d\udce7 Email: Todd@KMPrinting.com\n\ud83d\udcde Phone: (312) 965-2782",
+    "status": "inprog",
+    "tag": "projects",
+    "color": "#1e3a1e",
+    "created_at": "2026-06-06T01:57:16.329481+00:00"
+  },
+  {
+    "id": "charles-6647-camera",
+    "title": "Charles Ockerlund \u2014 6647 S Saint Lawrence",
+    "notes": "Camera install \u2014 $2,817.89\n\ud83d\udce7 Email: Charles.ockerlund@baird-warner.com\n\ud83d\udcde Phone: (630) 742-0041\n\ud83c\udfe2 Baird & Warner\n---\nContact: Charles Ockerlund | Baird & Warner\n\ud83d\udce7 Email: Charles.ockerlund@baird-warner.com\n\ud83d\udcde Phone: (630) 742-0041",
+    "status": "inprog",
+    "tag": "invoiced",
+    "color": "",
+    "created_at": "2026-06-09 23:16:08"
+  },
+  {
+    "id": "luella-10150-victoria-young",
+    "title": "Victoria young",
+    "notes": "Full electrical gut rehab. Proposal sent 06/04/2026. Labor-only $12,500 + materials TBD.\n---\nContact: Victoria Young\n\ud83d\udce7 Email: Naturallyurban.green.co@gmail.com\n\ud83d\udcde Phone: (773) 392-4546\n---\nContact: Victoria Young\n\ud83d\udce7 Email: Naturallyurban.green.co@gmail.com\n\ud83d\udcde Phone: (773) 392-4546",
+    "status": "inprog",
+    "tag": "projects",
+    "color": "",
+    "created_at": "2026-06-09T09:03:50"
+  },
+  {
+    "id": "c5275996-f967-44e8-b62e-4ce11163eeee",
+    "title": "IPA Express \u2014 LED Lighting Retrofit",
+    "notes": "Estimate BSC-E-2026-IPA001 sent. Option A $84,512 / Option B $88,638. After ComEd rebate: $32,512/$36,638. Awaiting signed estimate.",
+    "status": "inprog",
+    "tag": "estimate",
+    "color": "#002244",
+    "created": "2026-06-09T20:38:51.697948+00:00"
+  }
+]

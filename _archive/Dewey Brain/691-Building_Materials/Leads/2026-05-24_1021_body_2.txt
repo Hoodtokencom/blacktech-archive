@@ -1,0 +1,13 @@
+From: Pro Referral <proreferralsalesforcedevsupport@homedepot.com>
+Subject: =?UTF-8?Q?Finish_changing_your_Pro_Ref?=
+ =?UTF-8?Q?erral_account=E2=80=99s_email_address?=
+Date: Wed, 1 May 2024 02:51:35 +0000 (GMT)
+==================================================
+
+We recently received a request to change your Pro Referral account’s email address for username derrellblack@blacktechsolutionscorp.com.sp.proref.71121.
+
+Previous email address: derrellblack@blacktechsolutionscorp.com
+New email address: leads@blacktechsolutionscorp.com
+
+To finish changing your email address, go to the following link. This link expires in 72 hours.
+https://thdserviceprovider.my.site.com/pro/setup/emailverif?oid=00D50000000ao7Z&k=Cj4KNQoPMDBENTAwMDAwMDBhbzdaEg8wMkc1MDAwMDAwM

@@ -1,0 +1,301 @@
+# DIGITAL CONTINUITY & MISSION SUCCESSION TRUST
+## Blacktech Solutions Corp — Dewey System & Infrastructure
+
+---
+
+### ARTICLE I — GRANTOR & BENEFICIARY
+
+**Grantor:** Derrell A Black  
+**Date of Birth:** 03/07/1977  
+**Address:** 10052 S Forest Ave, Chicago, IL 60628  
+**State Republic:** Illinois  
+
+**Beneficiaries (in order of succession):**
+
+| Order | Name | Relationship | Role | Share |
+|-------|------|-------------|------|-------|
+| 1 | Markecia King | Wife | Primary Digital Executor | 50.00% |
+| 2 | Gloria Black | Mother | Alternate Digital Executor | 7.14% |
+| 3 | Destiny Black | Daughter | Successor Beneficiary | 7.14% |
+| 4 | Derrell Black Jr | Son | Successor Beneficiary | 7.14% |
+| 5 | Kylie Jointer | — | Successor Beneficiary | 7.14% |
+| 6 | Kaylen Jointer | — | Successor Beneficiary | 7.14% |
+| 7 | Khloe Jointer | — | Successor Beneficiary | 7.14% |
+| 8 | Taria Black | — | Successor Beneficiary | 7.16% |
+
+**Total: 100.00%** (50.00 + 7.14×6 + 7.16 = 100.00)
+
+**Contact Information:**
+- Markecia King: 708-275-2725 | Thankful2407@gmail.com
+- Gloria Black: Gloriablack54@gmail.com | Phone: TBD
+- *(Remaining contacts to be filled by Grantor)*  
+
+---
+
+### ARTICLE II — PURPOSE & MISSION
+
+This Trust conveys the digital infrastructure, knowledge systems, and operational
+automation of Blacktech Solutions Corp to the Beneficiary upon the Grantor's
+incapacity or passing. The mission is to:
+
+1. **Preserve** the Dewey Decimal knowledge library (Brain → Body → Archive)
+2. **Operate** the Raspberry Pi command center and all business automation
+3. **Continue** the Think Energy advisor network and community platforms
+4. **Maintain** the South Side Business Network (SSBN) and Tribal Vue platform
+5. **Protect** the wealth sovereignty systems (crypto, passcodes, vault)
+
+This is NOT just asset transfer — it is a **mission handoff** with operational
+instructions to ensure the systems continue serving the community.
+
+---
+
+### ARTICLE III — THE DEWEY 3-PART KNOWLEDGE SYSTEM
+
+The Beneficiary inherits stewardship of the Dewey Decimal knowledge library:
+
+```
+🧠 GOOGLE DRIVE (Brain/Storefront)
+   → Stores titles, descriptions, metadata ONLY
+   → Files are LOCKED — you see the cover, not the contents
+   → Path: Blacktech_Drive/6-Operations/Brain
+   → Access: Google account derrellblack@blacktechsolutionscorp.com
+
+💾 INTERNAL DRIVE (Body — Actual Files)
+   → /media/allenai/Expansion/Blacktech_Drive/
+   → All real files live here, organized by Dewey sections
+   → Requires a KEY to unlock any file
+   → Security guard: dewey_security.py gates access by level
+
+🗑️ GITHUB ARCHIVE (Trash Before Recycling)
+   → github.com/Hoodtokencom/blacktech-archive
+   → Clutter staging — review before permanent deletion
+   → 30-day auto-backup snapshots catalog + security files
+```
+
+**Pipeline Commands (run from /home/allenai/blacktech_brain/000-General/):**
+```
+python3 dewey_pipeline.py search <keyword>    — Browse Brain catalog
+python3 dewey_pipeline.py key <entry_id>      — Get unlock key
+python3 dewey_pipeline.py unlock <key> <who>  — Retrieve actual file
+python3 dewey_pipeline.py trash <file_path>    — Move clutter to archive
+python3 dewey_pipeline.py recycle             — Review archive before purge
+python3 dewey_pipeline.py map                 — Show full Dewey map
+python3 dewey_pipeline.py sync               — Sync Brain → Google Drive
+```
+
+**Security Levels:**
+- `public` — Anyone can view (000-General, 400-Language, 700-Arts)
+- `key` — Requires key but auto-approved (500-Science, 600-Technology, 800-Literature)
+- `approval` — Requires Derrell's (now Beneficiary's) approval (650-Management, 657-Accounting, 690-Construction, 200-Religion)
+- `vault` — Encrypted, requires passcode_vault.py (7-Personal_The_Vault)
+
+---
+
+### ARTICLE IV — RASPBERRY PI COMMAND CENTER
+
+**Hardware:** Raspberry Pi with Waveshare UPS (21700 batteries) + metal case  
+**Location:** 10052 S Forest Ave, Chicago IL 60628  
+**WiFi:** XFSETUP-DE18, IP 10.0.0.100  
+
+**Critical Services (all systemd --user managed):**
+
+| Port | Service | Purpose |
+|------|---------|---------|
+| 8090 | Command Center | Main dashboard |
+| 8091 | Money Budget | Invoice tracking |
+| 8094 | BW3 | Blue Wave 3 |
+| 8095 | ComEd EESP | Energy savings |
+| 8096 | Dewey Security | Knowledge guard |
+| 8097 | Social | FB/IG automation |
+| 8098 | Field Tracker | Projects/contracts/leads |
+| 8099 | SSBN | South Side Business Network |
+| 8101 | Date Night | Marriage enrichment |
+| 8103 | LCP Calculator | IBEW 134 rates |
+
+**Restart a service:** `systemctl --user restart <service-name>.service`  
+**Check all:** `systemctl --user list-units --type=service`  
+
+**Cloudflare Tunnel:** `/etc/cloudflared/config.yml`  
+All subdomains route through `blacktechsolutionscorp.com`.  
+DNS managed in Cloudflare dashboard — CNAME records point to tunnel.
+
+---
+
+### ARTICLE V — TELEGRAM BOTS & COMMUNICATION
+
+**Primary Bot:** @Blacktech1bot (8023778412)  
+**Lead Bot:** @Blacktechenergybot  
+**Derrell's DM:** 5805015753  
+**Team Group:** -1002987688577  
+
+**Hermes AI Agent:** The AI assistant running on the Pi. It manages all
+automation, cron jobs, and multi-agent workflows. The Beneficiary should
+learn to communicate with it via Telegram DM to the primary bot.
+
+---
+
+### ARTICLE VI — GOOGLE WORKSPACE & DRIVE
+
+**Account:** derrellblack@blacktechsolutionscorp.com  
+**OAuth token:** /home/allenai/.hermes/profiles/derrell-black/google_token.json  
+
+**Drive Filing Rules:**
+- Invoices → Project folder → "Blacktech Solutions Corp" → "Invoices and Receipts"
+- Estimates/Contracts → "Blacktech Solutions Corp/02_CONTRACTS_LEGAL" (flat)
+- Brain catalog → "Blacktech_Drive/6-Operations/Brain"
+
+**rclone sync:** `rclone sync /home/allenai/blacktech_brain gdrive:Blacktech_Drive/6-Operations/Brain`
+
+---
+
+### ARTICLE VII — CRON JOBS & AUTOMATION
+
+**Active scheduled jobs (check with Hermes: `cronjob action=list`):**
+
+| Job | Schedule | Purpose |
+|-----|----------|---------|
+| Dewey 30-Day Backup | Every 30 days, 3AM | Snapshot catalog → GitHub |
+| *(others as configured)* | | |
+
+**To view all:** Ask Hermes: "list all cron jobs"  
+**To pause:** Ask Hermes: "pause cron job <name>"  
+
+---
+
+### ARTICLE VIII — FINANCIAL & CRYPTO SOVEREIGNTY
+
+**Payroll:** 7 employees (emp-001 through emp-007)  
+**QBO:** QuickBooks Online — access via Hermes MCP tools  
+**HostGator Email:** payroll@blacktechsolutionscorp.com  
+
+**Crypto Wallets:** MetaMask + Trust Wallet  
+**Sepolia Test:** 0x312fC758b9e6C7F38Ee3E8563B45a9937eaf59B4  
+
+⚠️ **CRITICAL:** Wallet seed phrases and passcodes are stored in the encrypted
+vault at `/media/allenai/Expansion/Blacktech_Drive/7-Personal_The_Vault/`.
+Access requires `passcode_vault.py` with the master passcode known only to
+the Grantor and conveyed separately to the Beneficiary.
+
+---
+
+### ARTICLE IX — THINK ENERGY & COMMUNITY PLATFORMS
+
+**Think Energy:** Energy advisor network — MLM opportunity, team building  
+**ComEd Auto Save:** Customer savings program  
+**SSBN (South Side Business Network):** port 8099, ssbn.db  
+**Tribal Vue:** Community platform — FEED·POST·HOOD·GLOBAL·DONATE·VILLAGE  
+
+**Subcontractor Network:** Field Tracker (8098) + SSBN member directory  
+**Anthony Collins:** Hy-Tech (#7) + NuVision  
+
+---
+
+### ARTICLE X — EMERGENCY CONTACTS
+
+| Role | Name | Contact |
+|------|------|---------|
+| Electrician (1099) | David Johnson (emp-007) | Distinctive Electrical |
+| HVAC/Weather | All Weather Specialist | hvacr@allweatherspecialist.com |
+| LCP Tracker | — | Derrellblack@blacktechsolutionscorp.com |
+
+---
+
+### ARTICLE XI — BENEFICIARY INSTRUCTIONS (STEP-BY-STEP)
+
+Upon activation of this Trust, the Beneficiary shall:
+
+**IMMEDIATE (Day 1-3):**
+1. ☐ Secure physical access to the Raspberry Pi at 10052 S Forest Ave
+2. ☐ Verify Pi is powered on (Waveshare UPS, WiFi: XFSETUP-DE18)
+3. ☐ Open Telegram and message @Blacktech1bot: "status"
+4. ☐ Ask Hermes: "list all services and cron jobs"
+5. ☐ Check Command Center: http://app.blacktechsolutionscorp.com
+
+**WEEK 1:**
+6. ☐ Review all active cron jobs — pause any that are non-critical
+7. ☐ Run `dewey_pipeline.py map` to verify knowledge library intact
+8. ☐ Test unlock flow: search → key → unlock a known file
+9. ☐ Verify Google Drive sync: `dewey_pipeline.py sync`
+10. ☐ Check GitHub archive: `dewey_pipeline.py recycle`
+
+**ONGOING:**
+11. ☐ Learn to communicate with Hermes AI for all system management
+12. ☐ Maintain the 30-day backup cycle
+13. ☐ Continue Think Energy team building and SSBN community
+14. ☐ File all new estimates/contracts per Drive filing rules
+15. ☐ Keep the vault passcode secure — it unlocks everything
+
+---
+
+### ARTICLE XII — DECLARATION OF TRUST
+
+I, Derrell A Black, being of sound mind and body, do hereby declare and
+create this Digital Continuity & Mission Succession Trust. I transfer to
+the Trustee (Beneficiary named above) all rights, titles, and interests in
+the digital infrastructure, knowledge systems, automation, and operational
+procedures described herein.
+
+This Trust shall be governed by the laws of the Illinois State Republic
+and shall take effect upon my incapacity or passing as determined by
+the Beneficiary with reasonable evidence.
+
+The Beneficiary accepts the sacred duty of continuing the mission:
+**Knowledge preserved. Community served. Systems maintained.**
+
+---
+
+### SIGNATURES
+
+**Grantor:**
+Signature: ___________________________  
+Print Name: Derrell A Black  
+Date: ___________________________  
+
+**Primary Beneficiary (Digital Executor):**
+Signature: ___________________________  
+Print Name: ___________________________  
+Date: ___________________________  
+
+**Witness 1:**
+Signature: ___________________________  
+Print Name: ___________________________  
+Date: ___________________________  
+
+**Witness 2:**
+Signature: ___________________________  
+Print Name: ___________________________  
+Date: ___________________________  
+
+---
+
+### NOTARY ACKNOWLEDGMENT
+
+**State of Illinois**  
+**County of Cook**
+
+Subscribed and sworn to before me on this ______ day of _______________, 20____.
+
+Notary Public Signature: ___________________________  
+Notary Seal:  
+My Commission Expires: ___________________________
+
+---
+
+### NEXT STEPS CHECKLIST
+
+☐ 1. Name your Primary Beneficiary and Alternate Beneficiary above  
+☐ 2. Print this document (keep digital copy as backup only)  
+☐ 3. Review all instructions with your Beneficiary IN PERSON  
+☐ 4. Walk them through the Pi, Telegram bot, and Dewey pipeline  
+☐ 5. Convey vault passcode separately (verbal + sealed envelope)  
+☐ 6. Sign before 2 witnesses (not beneficiaries)  
+☐ 7. Notarize at bank (free) or UPS Store (~$10)  
+☐ 8. Store original in fireproof safe at 10052 S Forest Ave  
+☐ 9. Give Beneficiary a copy with emergency access instructions  
+☐ 10. Update annually or when systems change significantly  
+
+---
+
+*Drafted by Hermes AI Agent for Derrell A Black*  
+*Blacktech Solutions Corp — Dewey Digital Continuity Trust*  
+*June 17, 2026*

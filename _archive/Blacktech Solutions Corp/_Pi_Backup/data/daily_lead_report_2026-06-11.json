@@ -1,0 +1,181 @@
+{
+  "date": "2026-06-11",
+  "report_type": "daily_lead_processing",
+  "processing_time": "2:15 PM CDT",
+  "new_leads_today": [
+    {
+      "name": "Alain David Carranza",
+      "source": "email_lead_inbox",
+      "email": "alaindavidcarranza@gmail.com",
+      "cc": "Keila Torres, Daniel May, nelson@investforgelead.com",
+      "interest": "Property at 4823 S Prairie — real estate/renovation lead",
+      "location": "4823 S Prairie, Chicago",
+      "qualification": "POTENTIAL — property-related inquiry sent to leads@ inbox with investor/realtor CCs. Likely gut rehab or renovation electrical work. Needs follow-up to determine scope.",
+      "priority": "B-Lead",
+      "action": "Derrell: Reply to Alain re: 4823 S Prairie — clarify scope (electrical? full rehab?) and schedule site visit"
+    }
+  ],
+  "lost_leads_today": [
+    {
+      "name": "Todd Watkins / KM Printing",
+      "project": "400 E. Randolph St Low Voltage Project",
+      "amount": 1950,
+      "reason": "Client found alternative solution — declined quote",
+      "email_id": 11708,
+      "action": "Archive — opportunity lost. Maintain relationship for future work."
+    }
+  ],
+  "email_system_status": {
+    "support_inbox": "Active — receiving emails normally",
+    "blacktech_inbox": "Active — 11725 messages, current",
+    "leads_inbox": "AUTHENTICATION FAILED — still needs HostGator cPanel password reset",
+    "quotes_inbox": "AUTHENTICATION FAILED — still needs HostGator cPanel password reset",
+    "gmail_inbox": "Active — operational",
+    "action_required": "CRITICAL (Day 2): Reset passwords for leads@ and quotes@ in HostGator cPanel"
+  },
+  "telegram_bot_status": {
+    "status": "HEALTHY — running since 09:02 CDT",
+    "pid": 850591,
+    "uptime_hours": 5,
+    "errors": "5 minor read timeouts (non-critical, auto-recovered). Earlier 409 conflict storm self-resolved via auto-restart.",
+    "leads_received_today": 0,
+    "action_required": "None — bot is operational"
+  },
+  "active_pipeline_leads": [
+    {
+      "name": "Victoria Young / Naturally Urban Environmental Inc",
+      "project": "Robbins Community Center — Electrical Gut Rehab",
+      "address": "8915 S Commercial Ave Suite 200, Chicago IL 60617",
+      "estimated_value": 12500,
+      "priority": "A-Lead",
+      "status": "ACTIVE — NUE sent invoices + EEF report today. Phase 1 budget discussion needed.",
+      "days_in_pipeline": 2,
+      "action": "Derrell: Review NUE invoices ($8K NUE + $9K JLL + $1K mold assessment). Discuss remaining Phase 1 budget and $21,250 scope addition. Respond to Victoria.",
+      "urgency": "HIGH — vendor invoices submitted, client expecting response"
+    },
+    {
+      "name": "IPA Express / Richelle Moreno",
+      "project": "LED Lighting Retrofit",
+      "interest": "ComEd rebate $52K, customer net ~$32.5K",
+      "estimated_value": 84512,
+      "priority": "A-Lead",
+      "status": "ESTIMATE SENT — sent 06/10",
+      "days_in_pipeline": 2,
+      "action": "Monitor — just sent, allow 3-5 days before follow-up. First follow-up target: June 15"
+    },
+    {
+      "name": "Marcus Johnson",
+      "source": "referral",
+      "interest": "EV Charger Level 2 + Panel Upgrade to 200A",
+      "address": "5642 S Cottage Grove Ave, Chicago IL 60637",
+      "phone": "773-555-0192",
+      "estimated_value": 5300,
+      "priority": "A-Lead",
+      "status": "QUOTE PREP NEEDED",
+      "days_in_pipeline": 2,
+      "action": "Derrell: Prep and send quote — EV Charger $1,800 + 200A upgrade $3,500"
+    },
+    {
+      "name": "Alain David Carranza",
+      "project": "4823 S Prairie property",
+      "estimated_value": null,
+      "priority": "B-Lead",
+      "status": "NEW — needs qualification",
+      "days_in_pipeline": 0,
+      "action": "Derrell: Reply to clarify scope and schedule site visit"
+    },
+    {
+      "name": "Patricia Johnson",
+      "interest": "Panel Upgrade, Heat Pump, Water Heater",
+      "address": "7845 S Cottage Grove, Chicago 60619",
+      "priority": "B-Lead",
+      "status": "ASSESSMENT phase",
+      "days_in_pipeline": 3,
+      "action": "Schedule site assessment"
+    }
+  ],
+  "active_project_follow_ups": [
+    {
+      "customer": "Felecia Lofton / Eastlake Management",
+      "project": "Biannual Dryer Exhaust Duct Cleaning @ Long Life Apts",
+      "event": "342-26-JX-024",
+      "status": "Bid acknowledged by Eastlake. MANDATORY site visit June 17 @ 1:00 PM at 344 W. 28th Place. Documentation due June 23.",
+      "priority": "B-Lead",
+      "action": "Derrell: Calendar block June 17, 1:00 PM — site visit at 344 W. 28th Place. Prepare bid documentation by June 23."
+    }
+  ],
+  "invoices_due_soon": [
+    {
+      "customer": "Ms. Williams",
+      "invoice": "BSC-INV-7458-2026",
+      "amount": 1462.48,
+      "due_date": "2026-06-20",
+      "days_until_due": 9,
+      "action": "Monitor — 9 days out"
+    },
+    {
+      "customer": "Monster Construction / Rob Moore",
+      "invoice": "BSC20266515",
+      "amount": 24990,
+      "due_date": "2026-06-21",
+      "days_until_due": 10,
+      "action": "Monitor — awaiting 50% deposit"
+    },
+    {
+      "customer": "Charles Ockerlund / Baird & Warner",
+      "amount": 2817.89,
+      "due_date": "2026-06-24",
+      "days_until_due": 13,
+      "action": "Monitor"
+    }
+  ],
+  "qbo_overdue_invoices": {
+    "total_overdue": 8635.00,
+    "count": 3,
+    "details": [
+      {"customer": "Production Down Inc", "invoice": "1353", "amount": 135.00, "days_overdue": 34},
+      {"customer": "Simply E & C", "invoice": "1355", "amount": 5000.00, "days_overdue": 16},
+      {"customer": "Simply E & C", "invoice": "1356", "amount": 3500.00, "days_overdue": 16}
+    ]
+  },
+  "total_pipeline_value": 349512,
+  "closed_leads": [
+    {
+      "name": "Marcus Williams",
+      "status": "CLOSED",
+      "permit": "CHI-2026-ELC-88421",
+      "comed_ref": "EESP-WHE-60628-0042"
+    }
+  ],
+  "commission_tracking": {
+    "advisors_registered": 1,
+    "customers_enrolled": 0,
+    "commissions_pending": 0,
+    "action": "Commission database structure ready — needs customer enrollment data"
+  },
+  "social_media_status": {
+    "today_posts": ["Twitter (Week 24 Thursday post ready)", "LinkedIn (Week 24 Thursday post ready)"],
+    "scheduled": "Twitter and LinkedIn posts queued for today"
+  },
+  "system_health": {
+    "command_center_8090": "RUNNING — PID 847358",
+    "n8n_5678": "RUNNING — PID 1314834",
+    "telegram_bot": "HEALTHY — PID 850591",
+    "himalaya_email": "Operational (gmail + blacktech accounts)"
+  },
+  "system_issues": [
+    "leads@blacktechsolutionscorp.com — IMAP auth still failing (Day 2), password needs HostGator cPanel reset",
+    "quotes@blacktechsolutionscorp.com — IMAP auth still failing (Day 2), password needs HostGator cPanel reset",
+    "team@blacktechsolutionscorp.com — NOT CONFIGURED anywhere, mailbox needs to be created in HostGator cPanel",
+    "QBO running in demo mode — live qbo_invoice_checker.py scraper not connected"
+  ],
+  "derrell_action_items": [
+    "🔴 URGENT: Reply to Victoria Young / NUE — review invoices ($18K in vendor costs submitted), discuss Phase 1 budget + $21.25K scope addition",
+    "🟡 HIGH: Prep & send quote to Marcus Johnson — EV Charger + 200A panel upgrade ($5,300)",
+    "🟡 HIGH: Reply to Alain Carranza re: 4823 S Prairie — qualify scope",
+    "🟡 HIGH: Calendar June 17 @ 1:00 PM — Eastlake Management site visit at 344 W. 28th Place",
+    "🟠 MEDIUM: Follow up on Simply E & C overdue invoices — $8,500 (16 days overdue)",
+    "🟠 MEDIUM: Reset leads@ and quotes@ passwords in HostGator cPanel (Day 2 of failure)",
+    "⚪ NOTE: Todd Watkins / KM Printing declined 400 E. Randolph project — found alternative solution"
+  ]
+}

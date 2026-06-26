@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f4f4; color: #1a1a1a; font-size: 13px; }
+  .page { background: #fff; max-width: 1050px; margin: 0 auto; padding: 0; }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, #002244 0%, #001a33 100%);
+    padding: 28px 36px 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .logo-box {
+    width: 120px; height: 100px;
+    background: url('/media/allenai/Expansion/Blacktech_Drive/Home_Backup/Blacktech_Reports/Photos/blacktech_logo.jpg') center center no-repeat;
+    background-size: contain;
+    background-color: #fff;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+  .company-info { color: #fff; flex: 1; }
+  .company-info h1 { font-size: 1.5rem; font-weight: 900; color: #69BE28; letter-spacing: 2px; margin-bottom: 4px; }
+  .company-info .tagline { font-size: 0.78rem; color: #90b8d4; font-style: italic; margin-bottom: 8px; }
+  .company-info p { font-size: 0.82rem; color: #cde; line-height: 1.6; }
+  .proposal-label { margin-left: auto; text-align: right; color: #fff; }
+  .proposal-label h2 { font-size: 1.6rem; font-weight: 900; color: #69BE28; letter-spacing: 3px; }
+  .proposal-label .prop-num { font-size: 0.82rem; color: #90b8d4; margin-top: 4px; }
+  .proposal-label .prop-date { font-size: 0.82rem; color: #90b8d4; margin-top: 2px; }
+
+  /* GREEN BANNER */
+  .banner {
+    background: #69BE28;
+    color: #001a33;
+    padding: 10px 36px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  /* DATE ROW */
+  .date-row { display: flex; background: #002244; }
+  .date-cell { flex: 1; padding: 10px 24px; text-align: center; }
+  .date-cell .label { font-size: 0.62rem; color: #90b8d4; letter-spacing: 2px; text-transform: uppercase; }
+  .date-cell .val { font-size: 0.92rem; font-weight: 800; color: #fff; margin-top: 2px; }
+
+  /* INFO ROW */
+  .info-row { display: flex; gap: 0; border-bottom: 2px solid #002244; }
+  .info-box { flex: 1; padding: 16px 24px; }
+  .info-box:first-child { border-right: 1px solid #dde; }
+  .info-box h4 { font-size: 0.68rem; font-weight: 900; color: #002244; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
+  .info-box p { font-size: 0.88rem; color: #222; line-height: 1.7; }
+  .info-box .highlight { font-weight: 700; color: #002244; }
+
+  /* BODY */
+  .body { padding: 24px 36px; }
+
+  /* SECTION TITLE */
+  .section-title {
+    font-size: 0.68rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #002244;
+    border-bottom: 2px solid #69BE28;
+    padding-bottom: 5px;
+    margin: 22px 0 12px;
+  }
+
+  /* INTRO */
+  .intro { font-size: 0.88rem; color: #333; line-height: 1.75; margin-bottom: 10px; }
+
+  /* SCOPE TABLE */
+  .scope-table { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
+  .scope-table thead tr { background: #002244; }
+  .scope-table thead th { padding: 9px 12px; font-size: 0.7rem; font-weight: 800; color: #fff; letter-spacing: 1px; text-transform: uppercase; text-align: left; }
+  .scope-table thead th.amt { text-align: right; width: 100px; }
+  .scope-table thead th.hrs { text-align: center; width: 110px; }
+  .scope-table tbody tr { border-bottom: 1px solid #eef; }
+  .scope-table tbody tr:nth-child(even) { background: #f8fbff; }
+  .scope-table tbody td { padding: 10px 12px; font-size: 0.85rem; color: #222; vertical-align: top; }
+  .scope-table tbody td.amt { text-align: right; font-weight: 700; white-space: nowrap; color: #002244; }
+  .scope-table tbody td.hrs { text-align: center; color: #555; font-size: 0.8rem; }
+  .scope-table tbody td ul { padding-left: 16px; margin: 4px 0 0; }
+  .scope-table tbody td ul li { font-size: 0.8rem; color: #444; line-height: 1.65; }
+  .scope-table tbody td strong { color: #002244; }
+
+  /* TOTALS */
+  .totals-section { display: flex; justify-content: flex-end; margin: 10px 0 20px; }
+  .totals-box { background: linear-gradient(135deg, #002244 0%, #001a33 100%); color: #fff; padding: 18px 24px; border-radius: 6px; min-width: 320px; }
+  .totals-box table { width: 100%; }
+  .totals-box table td { padding: 4px 6px; font-size: 0.85rem; }
+  .totals-box table td.lbl { color: #90b8d4; }
+  .totals-box table td.amt { text-align: right; color: #fff; font-weight: 600; }
+  .totals-box table tr.grand td { color: #69BE28; font-size: 1.1rem; font-weight: 900; padding-top: 10px; border-top: 1px solid #334; }
+
+  /* DELIVERABLES GRID */
+  .deliv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 16px; }
+  .deliv-item { display: flex; align-items: flex-start; gap: 10px; padding: 9px 12px; background: #f8fbff; border-left: 3px solid #69BE28; border-radius: 0 4px 4px 0; font-size: 0.85rem; }
+  .deliv-item .check { color: #69BE28; font-weight: 900; font-size: 1rem; line-height: 1.2; }
+
+  /* TIMELINE */
+  .timeline { list-style: none; padding: 0; margin: 0; }
+  .timeline li { display: flex; gap: 14px; margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #eef; }
+  .timeline li:last-child { border-bottom: none; }
+  .week-badge { background: #002244; color: #69BE28; font-weight: 900; font-size: 0.68rem; letter-spacing: 1px; padding: 5px 10px; border-radius: 4px; white-space: nowrap; height: fit-content; min-width: 76px; text-align: center; }
+  .week-content h4 { font-size: 0.88rem; font-weight: 700; color: #002244; margin-bottom: 4px; }
+  .week-content ul { padding-left: 16px; margin: 0; }
+  .week-content ul li { font-size: 0.8rem; color: #555; line-height: 1.65; }
+
+  /* MILESTONES */
+  .milestone-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+  .milestone-chip { border: 1.5px solid #002244; border-radius: 20px; padding: 5px 14px; font-size: 0.78rem; color: #002244; }
+  .milestone-chip span { font-weight: 900; color: #69BE28; }
+
+  /* PAYMENT */
+  .payment-grid { display: flex; gap: 10px; margin-bottom: 16px; }
+  .payment-card { flex: 1; border: 2px solid #002244; border-radius: 6px; padding: 14px 10px; text-align: center; }
+  .payment-card .pct { font-size: 1.6rem; font-weight: 900; color: #69BE28; }
+  .payment-card .when { font-size: 0.68rem; color: #666; text-transform: uppercase; letter-spacing: 0.5px; margin: 3px 0; }
+  .payment-card .amt { font-size: 1rem; font-weight: 800; color: #002244; }
+
+  /* NOTE BOX */
+  .note-box { background: #f0f7ff; border-left: 4px solid #002244; padding: 10px 14px; font-size: 0.82rem; color: #444; margin: 12px 0; border-radius: 0 4px 4px 0; line-height: 1.65; }
+
+  /* SIGNATURE */
+  .sig-section { display: flex; gap: 40px; margin-top: 28px; padding-top: 20px; border-top: 2px solid #002244; }
+  .sig-col { flex: 1; }
+  .sig-col .sig-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 1px; color: #90b8d4; margin-bottom: 4px; background: #002244; padding: 4px 10px; border-radius: 3px; display: inline-block; }
+  .sig-col .sig-name { font-size: 0.9rem; font-weight: 700; margin: 8px 0 28px; color: #002244; }
+  .sig-col .sig-line { border-bottom: 1px solid #333; margin-bottom: 5px; }
+  .sig-col .sig-sub { font-size: 0.72rem; color: #888; }
+
+  /* FOOTER */
+  .footer { background: linear-gradient(135deg, #002244 0%, #001a33 100%); color: #90b8d4; padding: 14px 36px; font-size: 0.72rem; display: flex; justify-content: space-between; align-items: center; margin-top: 36px; }
+  .footer .green { color: #69BE28; font-weight: bold; }
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- HEADER -->
+<div class="header">
+  <div class="logo-box"></div>
+  <div class="company-info">
+    <h1>BLACKTECH SOLUTIONS CORP</h1>
+    <div class="tagline">Licensed Electrical Contractor | Chicago, Illinois</div>
+    <p>10052 S Forest Ave, Chicago, IL 60628</p>
+    <p>payroll@blacktechsolutionscorp.com</p>
+    <p>EIN: 82-3394717</p>
+  </div>
+  <div class="proposal-label">
+    <h2>PROPOSAL</h2>
+    <div class="prop-num">BSC-P-2026-NV001</div>
+    <div class="prop-date">Date: June 10, 2026</div>
+    <div class="prop-date">Valid: 30 Days</div>
+  </div>
+</div>
+
+<!-- GREEN BANNER -->
+<div class="banner">Feasibility Study &amp; Engineering Assessment — Pre-Construction Phase</div>
+
+<!-- DATE ROW -->
+<div class="date-row">
+  <div class="date-cell"><div class="label">Project</div><div class="val">7546–7548 S. Peoria St</div></div>
+  <div class="date-cell"><div class="label">Type</div><div class="val">18-Unit Rehab</div></div>
+  <div class="date-cell"><div class="label">Service</div><div class="val">1,600A Main</div></div>
+  <div class="date-cell"><div class="label">Timeline</div><div class="val">8–12 Weeks</div></div>
+  <div class="date-cell"><div class="label">Total Value</div><div class="val" style="color:#69BE28;">$23,529.00</div></div>
+</div>
+
+<!-- BILL TO / SUBMITTED TO -->
+<div class="info-row">
+  <div class="info-box">
+    <h4>Submitted To</h4>
+    <p><span class="highlight">NuVision Development</span><br>
+    Chicago, Illinois<br>
+    7546–7548 S. Peoria Street, Chicago, IL 60621</p>
+  </div>
+  <div class="info-box">
+    <h4>Submitted By</h4>
+    <p><span class="highlight">Derrell A. Black</span><br>
+    Blacktech Solutions Corp<br>
+    10052 S Forest Ave, Chicago, IL 60628<br>
+    payroll@blacktechsolutionscorp.com</p>
+  </div>
+</div>
+
+<!-- BODY -->
+<div class="body">
+
+  <!-- EXECUTIVE SUMMARY -->
+  <div class="section-title">Executive Summary</div>
+  <p class="intro">
+    Blacktech Solutions Corp proposes to manage a full multi-discipline engineering feasibility study for the rehabilitation of <strong>7546–7548 S. Peoria Street</strong> — an 18-unit residential building in Chicago's Englewood neighborhood. This pre-construction phase establishes the technical foundation required to produce permit-ready working drawings and a reliable construction bid package for NuVision Development.
+  </p>
+  <p class="intro">
+    The scope includes coordinated site walks and stamped drawing sets across three engineering disciplines: <strong>Electrical, Mechanical, and Structural</strong> — along with Blacktech's project coordination, ComEd utility engagement, and final presentation to NuVision's development team.
+  </p>
+
+  <!-- SCOPE OF SERVICES -->
+  <div class="section-title">Scope of Engineering Services</div>
+  <table class="scope-table">
+    <thead>
+      <tr>
+        <th style="width:20%">Discipline</th>
+        <th>Scope of Work</th>
+        <th class="hrs">Hours / Rate</th>
+        <th class="amt">Fee</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>⚡ Electrical Engineer</strong></td>
+        <td>
+          <ul>
+            <li>Site walk &amp; load assessment (1,600A service feasibility)</li>
+            <li>ComEd utility coordination &amp; service entrance evaluation</li>
+            <li>Panel schedule &amp; riser diagram (18 units + common areas)</li>
+            <li>Chicago Electrical Code compliance review</li>
+            <li>Stamped electrical drawings for City of Chicago permit</li>
+          </ul>
+        </td>
+        <td class="hrs">40 hrs<br>@ $175/hr</td>
+        <td class="amt">$7,000.00</td>
+      </tr>
+      <tr>
+        <td><strong>🔧 Mechanical Engineer</strong></td>
+        <td>
+          <ul>
+            <li>HVAC system assessment (existing vs. new requirements)</li>
+            <li>Plumbing rough-in review per unit</li>
+            <li>Ventilation &amp; exhaust requirements per unit</li>
+            <li>IECC 2021 energy code compliance review</li>
+            <li>Stamped mechanical drawings for permit</li>
+          </ul>
+        </td>
+        <td class="hrs">35 hrs<br>@ $165/hr</td>
+        <td class="amt">$5,775.00</td>
+      </tr>
+      <tr>
+        <td><strong>🏛️ Structural Engineer</strong></td>
+        <td>
+          <ul>
+            <li>Foundation &amp; load-bearing wall condition assessment</li>
+            <li>Floor/ceiling framing condition report</li>
+            <li>Roof structural review &amp; rating</li>
+            <li>Demo/shoring requirements identification</li>
+            <li>Stamped structural drawings for permit</li>
+          </ul>
+        </td>
+        <td class="hrs">30 hrs<br>@ $185/hr</td>
+        <td class="amt">$5,550.00</td>
+      </tr>
+      <tr>
+        <td><strong>📋 Blacktech Coordination</strong></td>
+        <td>
+          <ul>
+            <li>Project coordination &amp; site escort — all 3 disciplines</li>
+            <li>Report compilation &amp; cross-discipline review</li>
+            <li>NuVision presentation &amp; feasibility summary document</li>
+            <li>City of Chicago pre-application meeting (if required)</li>
+          </ul>
+        </td>
+        <td class="hrs">28 hrs<br>@ $95/hr</td>
+        <td class="amt">$2,660.00</td>
+      </tr>
+      <tr>
+        <td><strong>🚗 Reimbursables</strong></td>
+        <td>
+          <ul>
+            <li>Mileage / travel — 3 site visits</li>
+            <li>Printing &amp; binding of report sets</li>
+            <li>Miscellaneous (parking, supplies)</li>
+          </ul>
+        </td>
+        <td class="hrs">—</td>
+        <td class="amt">$405.00</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- TOTALS -->
+  <div class="totals-section">
+    <div class="totals-box">
+      <table>
+        <tr><td class="lbl">Engineering Fees</td><td class="amt">$18,325.00</td></tr>
+        <tr><td class="lbl">Blacktech Coordination</td><td class="amt">$2,660.00</td></tr>
+        <tr><td class="lbl">Reimbursables</td><td class="amt">$405.00</td></tr>
+        <tr><td class="lbl">Subtotal</td><td class="amt">$21,390.00</td></tr>
+        <tr><td class="lbl">Contingency (10%)</td><td class="amt">$2,139.00</td></tr>
+        <tr class="grand"><td class="lbl">TOTAL PROPOSAL VALUE</td><td class="amt">$23,529.00</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- DELIVERABLES -->
+  <div class="section-title">Deliverables</div>
+  <div class="deliv-grid">
+    <div class="deliv-item"><span class="check">✓</span> Feasibility report — written summary per discipline</div>
+    <div class="deliv-item"><span class="check">✓</span> Stamped drawings — Electrical, Mechanical, Structural</div>
+    <div class="deliv-item"><span class="check">✓</span> Permit-ready drawing set for City of Chicago</div>
+    <div class="deliv-item"><span class="check">✓</span> ComEd utility coordination documentation</div>
+    <div class="deliv-item"><span class="check">✓</span> Preliminary construction budget recommendation</div>
+    <div class="deliv-item"><span class="check">✓</span> NuVision presentation deck + full bid package</div>
+  </div>
+
+  <!-- TIMELINE -->
+  <div class="section-title">Project Timeline — 8 to 12 Weeks</div>
+  <ul class="timeline">
+    <li>
+      <div class="week-badge">WEEK 1–2</div>
+      <div class="week-content">
+        <h4>Initial Site Walk — All Disciplines On-Site</h4>
+        <ul>
+          <li>Electrical, Mechanical &amp; Structural engineers on-site simultaneously</li>
+          <li>Photo documentation, field measurements, condition assessments</li>
+          <li>Derrell coordinates building access with NuVision</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="week-badge">WEEK 3–4</div>
+      <div class="week-content">
+        <h4>Data Collection &amp; Analysis</h4>
+        <ul>
+          <li>ComEd utility coordination — 1,600A service entrance feasibility</li>
+          <li>City of Chicago zoning &amp; permit code research</li>
+          <li>Soil/foundation testing (if required by structural)</li>
+          <li>Existing MEP systems testing and documentation</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="week-badge">WEEK 5–7</div>
+      <div class="week-content">
+        <h4>Draft Drawings &amp; Engineering Reports</h4>
+        <ul>
+          <li>Electrical: riser diagram, panel schedule, load calculations, service entrance design</li>
+          <li>Mechanical: HVAC layout per unit, plumbing schematic, ventilation plan</li>
+          <li>Structural: framing plan, load path diagram, demo/shoring scope</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="week-badge">WEEK 8–10</div>
+      <div class="week-content">
+        <h4>Revisions &amp; NuVision Coordination</h4>
+        <ul>
+          <li>Cross-discipline coordination meetings</li>
+          <li>NuVision team review &amp; feedback session</li>
+          <li>City of Chicago pre-application meeting (optional)</li>
+          <li>Incorporate all revisions across drawing sets</li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="week-badge">WEEK 11–12</div>
+      <div class="week-content">
+        <h4>Final Stamp &amp; Delivery</h4>
+        <ul>
+          <li>All drawings stamped &amp; signed by licensed engineers</li>
+          <li>Permit-ready drawing set submitted to City of Chicago</li>
+          <li>Final feasibility report &amp; construction budget delivered</li>
+          <li>NuVision presentation — bid package ready for GC selection</li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+
+  <!-- MILESTONES -->
+  <div class="section-title">Key Milestones</div>
+  <div class="milestone-row">
+    <div class="milestone-chip"><span>Week 2 — </span>Site walk complete, field notes delivered</div>
+    <div class="milestone-chip"><span>Week 4 — </span>Utility &amp; code research complete</div>
+    <div class="milestone-chip"><span>Week 7 — </span>Draft drawings delivered to NuVision</div>
+    <div class="milestone-chip"><span>Week 10 — </span>Revised drawings after NuVision feedback</div>
+    <div class="milestone-chip"><span>Week 12 — </span>Stamped drawings + full bid package ready</div>
+  </div>
+
+  <!-- PAYMENT SCHEDULE -->
+  <div class="section-title">Payment Schedule</div>
+  <div class="payment-grid">
+    <div class="payment-card">
+      <div class="pct">25%</div>
+      <div class="when">Contract Signing</div>
+      <div class="amt">$5,882</div>
+    </div>
+    <div class="payment-card">
+      <div class="pct">25%</div>
+      <div class="when">Week 4 Milestone</div>
+      <div class="amt">$5,882</div>
+    </div>
+    <div class="payment-card">
+      <div class="pct">25%</div>
+      <div class="when">Week 7 — Draft Drawings</div>
+      <div class="amt">$5,882</div>
+    </div>
+    <div class="payment-card">
+      <div class="pct">25%</div>
+      <div class="when">Week 12 — Final Delivery</div>
+      <div class="amt">$5,883</div>
+    </div>
+  </div>
+
+  <!-- NOTE -->
+  <div class="note-box">
+    <strong>Phase 2 Notice:</strong> This proposal covers the feasibility and engineering assessment phase only. Upon completion of stamped drawings, Blacktech Solutions Corp will provide a full construction bid for the electrical scope — including 1,600A service upgrade, 18-unit 100A panel installations, full unit rewire, and common area electrical work <strong>(Phase 2 estimated value: $165,346)</strong>.
+  </div>
+
+  <!-- SIGNATURE -->
+  <div class="section-title">Acceptance &amp; Authorization</div>
+  <p class="intro" style="margin-bottom:18px;">
+    By signing below, NuVision Development authorizes Blacktech Solutions Corp to proceed with the feasibility study and engineering coordination as described in this proposal. A 25% deposit of <strong>$5,882</strong> is due upon signing to mobilize the engineering team.
+  </p>
+  <div class="sig-section">
+    <div class="sig-col">
+      <div class="sig-label">Blacktech Solutions Corp</div>
+      <div class="sig-name">Derrell A. Black — Authorized Representative</div>
+      <div class="sig-line"></div>
+      <div class="sig-sub">Signature &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date</div>
+    </div>
+    <div class="sig-col">
+      <div class="sig-label">NuVision Development</div>
+      <div class="sig-name">&nbsp;</div>
+      <div class="sig-line"></div>
+      <div class="sig-sub">Authorized Signature &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div><span class="green">Blacktech Solutions Corp</span> &nbsp;|&nbsp; 10052 S Forest Ave, Chicago, IL 60628 &nbsp;|&nbsp; EIN: 82-3394717</div>
+  <div>Proposal #BSC-P-2026-NV001 &nbsp;|&nbsp; Valid 30 Days from Issue Date</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "biz": [
+    {
+      "id": 999,
+      "date": "2026-06-03",
+      "amt": 25.0,
+      "desc": "SYNC TEST - Delete Me",
+      "cat": "fuel",
+      "notes": "testing sync"
+    }
+  ],
+  "per": [],
+  "bizBudget": 0,
+  "perBudget": 0,
+  "bizCatBudget": {},
+  "perCatBudget": {}
+}

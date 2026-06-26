@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blacktech Solutions Corp — Professional Invoice</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f5f5;
+    padding: 20px;
+    line-height: 1.6;
+  }
+
+  .invoice-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+
+  /* Header */
+  .invoice-header {
+    background: linear-gradient(135deg, #0033CC 0%, #0055FF 50%, #00AA44 100%);
+    color: white;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .logo-section img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    background: white;
+    padding: 5px;
+  }
+
+  .company-info h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+  }
+
+  .company-info p {
+    font-size: 0.75rem;
+    opacity: 0.9;
+    letter-spacing: 0.5px;
+  }
+
+  .invoice-meta {
+    text-align: right;
+  }
+
+  .invoice-meta h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+  }
+
+  .meta-row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    font-size: 0.85rem;
+  }
+
+  .meta-item {
+    text-align: right;
+  }
+
+  .meta-item .label {
+    font-size: 0.7rem;
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .meta-item .value {
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+
+  /* Body */
+  .invoice-body {
+    padding: 40px;
+  }
+
+  .two-column {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 40px;
+  }
+
+  .bill-box {
+    flex: 1;
+  }
+
+  .bill-box h3 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #0033CC;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #00AA44;
+  }
+
+  .bill-box p {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  .bill-box .company-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #0033CC;
+    margin-bottom: 8px;
+  }
+
+  /* Job Details */
+  .job-details {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-left: 4px solid #00AA44;
+  }
+
+  .job-details h3 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #0033CC;
+    margin-bottom: 12px;
+  }
+
+  .job-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+  }
+
+  .job-item .label {
+    font-size: 0.7rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .job-item .value {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.9rem;
+  }
+
+  /* Table */
+  .line-items {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+
+  .line-items thead {
+    background: linear-gradient(135deg, #0033CC, #0055FF);
+    color: white;
+  }
+
+  .line-items th {
+    padding: 14px 12px;
+    text-align: left;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+  .line-items th:last-child,
+  .line-items td:last-child {
+    text-align: right;
+  }
+
+  .line-items td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+    color: #333;
+  }
+
+  .line-items tbody tr:hover {
+    background: #f8f9fa;
+  }
+
+  .line-items .desc-cell {
+    font-weight: 500;
+  }
+
+  .line-items .amount-cell {
+    font-weight: 700;
+    color: #0033CC;
+  }
+
+  /* Summary */
+  .summary-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+  }
+
+  .summary-box {
+    width: 300px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+  }
+
+  .summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+  }
+
+  .summary-row.total {
+    border-top: 3px solid #00AA44;
+    padding-top: 12px;
+    margin-top: 12px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #0033CC;
+  }
+
+  /* Payment */
+  .payment-section {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-left: 4px solid #0033CC;
+  }
+
+  .payment-section h3 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #0033CC;
+    margin-bottom: 12px;
+  }
+
+  .payment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .payment-item {
+    font-size: 0.85rem;
+  }
+
+  .payment-item strong {
+    color: #0033CC;
+  }
+
+  /* Terms */
+  .terms {
+    font-size: 0.75rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    padding: 15px;
+    background: #fafafa;
+    border-radius: 6px;
+  }
+
+  .terms strong {
+    color: #0033CC;
+  }
+
+  /* Signature */
+  .signature-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .signature-box {
+    flex: 1;
+  }
+
+  .signature-box h3 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #0033CC;
+    margin-bottom: 20px;
+  }
+
+  .signature-line {
+    border-bottom: 1px solid #333;
+    height: 40px;
+    margin-bottom: 5px;
+  }
+
+  .signature-label {
+    font-size: 0.75rem;
+    color: #666;
+  }
+
+  /* Footer */
+  .invoice-footer {
+    background: #0033CC;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+  }
+
+  .invoice-footer a {
+    color: #00AA44;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  /* Print styles */
+  @media print {
+    body {
+      background: white;
+      padding: 0;
+    }
+    .invoice-container {
+      box-shadow: none;
+      border-radius: 0;
+    }
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .two-column,
+    .signature-section {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .job-grid,
+    .payment-grid {
+      grid-template-columns: 1fr;
+    }
+    .invoice-header {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+    .invoice-meta {
+      text-align: center;
+    }
+    .meta-row {
+      justify-content: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="invoice-container">
+
+  <!-- HEADER -->
+  <div class="invoice-header">
+    <div class="logo-section">
+      <div style="width:70px;height:50px;border-radius:6px;background:white url('/media/allenai/Expansion/Blacktech_Drive/1-Admin/Branding/Blacktech_Solutions_Logo.jpg') no-repeat center top;background-size:100% auto;"></div>
+    </div>
+    
+    <div class="invoice-meta">
+      <h2>INVOICE</h2>
+      <div class="meta-row">
+        <div class="meta-item">
+          <div class="label">Invoice #</div>
+          <div class="value">BSC-INV-_____-2026</div>
+        </div>
+        <div class="meta-item">
+          <div class="label">Date</div>
+          <div class="value">__/__/2026</div>
+        </div>
+        <div class="meta-item">
+          <div class="label">Due Date</div>
+          <div class="value">__/__/2026</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div class="invoice-body">
+
+    <!-- BILL FROM / BILL TO -->
+    <div class="two-column">
+      <div class="bill-box">
+        <h3>Bill From</h3>
+        <p class="company-name">Blacktech Solutions Corp</p>
+        <p>14076 Lincoln Ave</p>
+        <p>Dolton, IL 60419</p>
+        <p>(773) 449-9396</p>
+        <p>invoices@blacktechsolutionscorp.com</p>
+      </div>
+      
+      <div class="bill-box">
+        <h3>Bill To</h3>
+        <p class="company-name">___________________________</p>
+        <p>___________________________</p>
+        <p>___________________________</p>
+        <p>___________________________</p>
+      </div>
+    </div>
+
+    <!-- JOB DETAILS -->
+    <div class="job-details">
+      <h3>Job Details</h3>
+      <div class="job-grid">
+        <div class="job-item">
+          <div class="label">Job Address</div>
+          <div class="value">___________________________</div>
+        </div>
+        <div class="job-item">
+          <div class="label">PO / Estimate #</div>
+          <div class="value">___________________________</div>
+        </div>
+        <div class="job-item">
+          <div class="label">Date Completed</div>
+          <div class="value">__/__/2026</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LINE ITEMS TABLE -->
+    <table class="line-items">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Description</th>
+          <th>Qty</th>
+          <th>Unit</th>
+          <th>Rate</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td class="desc-cell">_________________________________________</td>
+          <td>___</td>
+          <td>___</td>
+          <td>$____.__</td>
+          <td class="amount-cell">$____.__</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td class="desc-cell">_________________________________________</td>
+          <td>___</td>
+          <td>___</td>
+          <td>$____.__</td>
+          <td class="amount-cell">$____.__</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td class="desc-cell">_________________________________________</td>
+          <td>___</td>
+          <td>___</td>
+          <td>$____.__</td>
+          <td class="amount-cell">$____.__</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td class="desc-cell">_________________________________________</td>
+          <td>___</td>
+          <td>___</td>
+          <td>$____.__</td>
+          <td class="amount-cell">$____.__</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td class="desc-cell">_________________________________________</td>
+          <td>___</td>
+          <td>___</td>
+          <td>$____.__</td>
+          <td class="amount-cell">$____.__</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- SUMMARY -->
+    <div class="summary-section">
+      <div class="summary-box">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span>$__________</span>
+        </div>
+        <div class="summary-row">
+          <span>Tax (if applicable)</span>
+          <span>$__________</span>
+        </div>
+        <div class="summary-row total">
+          <span>TOTAL DUE</span>
+          <span>$__________</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAYMENT -->
+    <div class="payment-section">
+      <h3>Payment Information</h3>
+      <div class="payment-grid">
+        <div class="payment-item">
+          <strong>Make checks payable to:</strong><br>
+          Blacktech Solutions Corp
+        </div>
+        <div class="payment-item">
+          <strong>Online payment:</strong><br>
+          QuickBooks Online (link sent separately)
+        </div>
+        <div class="payment-item">
+          <strong>Bank transfer:</strong><br>
+          ACH / Wire available upon request
+        </div>
+        <div class="payment-item">
+          <strong>Questions?</strong><br>
+          Call (773) 449-9396
+        </div>
+      </div>
+    </div>
+
+    <!-- TERMS -->
+    <div class="terms">
+      <strong>Terms & Conditions:</strong> Payment due within 15 days of invoice date. Late payments subject to 1.5% monthly service charge. All work warranted for 1 year from completion date. Lien rights reserved per Illinois Mechanics Lien Act.
+    </div>
+
+    <!-- SIGNATURES -->
+    <div class="signature-section">
+      <div class="signature-box">
+        <h3>Customer Acceptance</h3>
+        <div class="signature-line"></div>
+        <div class="signature-label">Signature</div>
+        <div class="signature-line" style="margin-top:20px;"></div>
+        <div class="signature-label">Print Name & Date</div>
+      </div>
+      
+      <div class="signature-box">
+        <h3>Authorized By</h3>
+        <div class="signature-line"></div>
+        <div class="signature-label">Derrell Black, Blacktech Solutions Corp</div>
+        <div class="signature-line" style="margin-top:20px;"></div>
+        <div class="signature-label">Date</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="invoice-footer">
+    <p>Thank you for your business! | <a href="tel:7734499396">(773) 449-9396</a> | <a href="mailto:invoices@blacktechsolutionscorp.com">invoices@blacktechsolutionscorp.com</a></p>
+    <p style="margin-top:5px;opacity:0.7;font-size:0.7rem;">© 2026 Blacktech Solutions Corp | Licensed & Insured Electrical Contractor</p>
+  </div>
+
+</div>
+
+</body>
+</html>

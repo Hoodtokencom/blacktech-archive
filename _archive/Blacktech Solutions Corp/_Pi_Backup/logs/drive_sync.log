@@ -1,0 +1,8 @@
+[2026-06-16 08:49:13] === Pi → Drive Backup START ===
+[2026-06-16 08:49:57] Databases: OK — <3>ERROR : Using --filter is recommended instead of both --include and --exclude as the order they are parsed in is indeterminate
+<6>INFO  : .watchdog_state.json: Copied (new)
+<6>INFO  : bfn_shared.js
+[2026-06-16 08:50:02] Estimates: OK — <6>INFO  : 4823-prairie-option-a.html: Copied (new)
+<6>INFO  : 4823-prairie-option-b.html: Copied (new)
+<6>INFO  : 4823-prairie-option-a.pdf: Copied (new)
+<6>INFO  : 4823-prairie-option-b.pdf: Copied 

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1050, initial-scale=0.45, maximum-scale=2.0">
+<title>Invoice PHIL-LV — Phil Powell | Echo School</title>
+<style>
+  @page { size: letter; margin: 0.5in; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f4f8; padding: 20px; color: #1a1a2e; }
+
+  /* ---- EDIT BAR ---- */
+  #edit-bar {
+    max-width: 900px; margin: 0 auto 12px;
+    display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+  }
+  #edit-bar button {
+    padding: 10px 20px; border: none; border-radius: 8px; font-size: 14px; font-weight: 700; cursor: pointer;
+  }
+  #btn-print { background: #002244; color: #fff; }
+  #btn-print:hover { background: #69BE28; }
+  #edit-hint { font-size: 13px; color: #64748b; }
+  .add-row-btn {
+    background: #69BE28; color: #fff; padding: 6px 14px; border: none; border-radius: 6px;
+    font-size: 12px; font-weight: 700; cursor: pointer; margin: 6px 0 0 32px;
+    display: block;
+  }
+  .add-row-btn:hover { background: #002244; }
+
+  /* ---- EDITABLE FIELDS ---- */
+  [contenteditable="true"] {
+    outline: none;
+    border-bottom: 1.5px dashed #69BE28;
+    min-width: 40px;
+    display: inline-block;
+    cursor: text;
+  }
+  [contenteditable="true"]:focus {
+    background: #fffde7;
+    border-radius: 3px;
+    border-bottom: 2px solid #69BE28;
+  }
+  @media print {
+    #edit-bar, .add-row-btn, .del-row { display: none !important; }
+    body { background: #fff; padding: 0; }
+    [contenteditable="true"] { border-bottom: none; }
+    .invoice-container { box-shadow: none; border-radius: 0; }
+  }
+
+  /* ---- INVOICE LAYOUT ---- */
+  .invoice-container {
+    max-width: 900px; margin: 0 auto; background: #fff;
+    border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.10); overflow: hidden;
+  }
+  .header {
+    background: linear-gradient(135deg, #002244 0%, #69BE28 100%);
+    color: #fff; padding: 28px 32px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .header-left .brand h1 { font-size: 22px; font-weight: 700; letter-spacing: 1px; }
+  .header-left .brand .subtitle { font-size: 12px; opacity: 0.85; margin-top: 3px; }
+  .header-center h2 { font-size: 36px; font-weight: 800; letter-spacing: 2px; text-align: center; }
+  .header-right { text-align: right; }
+  .header-right .row { display: flex; gap: 24px; justify-content: flex-end; }
+  .header-right .col .label { font-size: 10px; opacity: 0.7; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 3px; }
+  .header-right .col .value { font-size: 15px; font-weight: 700; }
+
+  .billing-section { display: flex; justify-content: space-between; padding: 24px 32px; gap: 24px; }
+  .billing-box { flex: 1; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 16px 20px; }
+  .billing-box h3 { font-size: 11px; text-transform: uppercase; color: #64748b; letter-spacing: 1.5px; margin-bottom: 10px; font-weight: 700; }
+  .billing-box p { font-size: 13px; line-height: 1.9; color: #334155; }
+  .billing-box p strong { color: #1a1a2e; font-size: 14px; }
+
+  .job-details {
+    margin: 0 32px 20px; background: #f8fafc;
+    border-left: 4px solid #69BE28; border-radius: 0 8px 8px 0; padding: 16px 20px;
+    display: flex; gap: 32px;
+  }
+  .job-col .label { font-size: 10px; text-transform: uppercase; color: #64748b; letter-spacing: 1px; margin-bottom: 4px; font-weight: 600; }
+  .job-col .value { font-size: 14px; font-weight: 700; color: #1a1a2e; }
+
+  .line-items { padding: 0 32px 16px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  thead th {
+    background: #002244; color: #fff; padding: 12px 10px;
+    text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;
+  }
+  thead th:nth-child(1) { width: 4%; text-align: center; }
+  thead th:nth-child(2) { width: 42%; }
+  thead th:nth-child(3) { width: 8%; text-align: center; }
+  thead th:nth-child(4) { width: 8%; text-align: center; }
+  thead th:nth-child(5) { width: 13%; text-align: right; }
+  thead th:nth-child(6) { width: 13%; text-align: right; }
+  thead th:nth-child(7) { width: 4%; text-align: center; }
+  tbody tr { border-bottom: 1px solid #e2e8f0; }
+  tbody tr:last-child { border-bottom: none; }
+  tbody td { padding: 10px; vertical-align: middle; color: #334155; }
+  tbody td:nth-child(1) { text-align: center; font-weight: 600; color: #64748b; }
+  tbody td:nth-child(3), tbody td:nth-child(4) { text-align: center; }
+  tbody td:nth-child(5), tbody td:nth-child(6) { text-align: right; font-weight: 600; }
+  tbody td:nth-child(6) { color: #002244; font-size: 14px; }
+  tbody td:nth-child(7) { text-align: center; }
+  .item-name { font-weight: 700; color: #1a1a2e; }
+  .item-desc { font-size: 12px; color: #64748b; margin-top: 2px; }
+  .section-row { background: #e8f0e0 !important; }
+  .section-row td { font-weight: 700; color: #002244; text-transform: uppercase; font-size: 11px; letter-spacing: 0.5px; }
+  .del-row { background: none; border: none; color: #ef4444; font-size: 16px; cursor: pointer; padding: 2px 6px; border-radius: 4px; }
+  .del-row:hover { background: #fee2e2; }
+
+  .summary { padding: 16px 32px 24px; display: flex; justify-content: flex-end; border-top: 2px solid #002244; margin: 0 32px; }
+  .summary-box { min-width: 300px; }
+  .summary-row { display: flex; justify-content: space-between; margin-bottom: 6px; font-size: 13px; }
+  .summary-row .s-label { color: #64748b; }
+  .summary-row .s-value { font-weight: 600; color: #334155; }
+  .summary-row.total { font-size: 20px; font-weight: 800; color: #1a1a2e; margin-top: 8px; padding-top: 8px; border-top: 2px solid #002244; }
+  .summary-row.total .s-value { color: #69BE28; }
+
+  .payment-info {
+    margin: 24px 32px 20px; background: #f8fafc;
+    border-left: 4px solid #69BE28; border-radius: 0 8px 8px 0; padding: 16px 20px;
+  }
+  .payment-info h3 { font-size: 12px; text-transform: uppercase; color: #64748b; letter-spacing: 1px; margin-bottom: 10px; font-weight: 700; }
+  .payment-info p { font-size: 13px; line-height: 1.8; color: #334155; }
+  .payment-info p strong { color: #1a1a2e; }
+
+  .terms { margin: 0 32px 20px; padding: 16px 20px; background: #fffbeb; border: 1px solid #fcd34d; border-radius: 8px; }
+  .terms h3 { font-size: 12px; text-transform: uppercase; color: #b45309; letter-spacing: 1px; margin-bottom: 8px; font-weight: 700; }
+  .terms p { font-size: 12px; line-height: 1.7; color: #78350f; }
+
+  .signatures { display: flex; justify-content: space-between; padding: 0 32px 24px; gap: 32px; }
+  .sig-box { flex: 1; border-top: 2px solid #002244; padding-top: 12px; }
+  .sig-box h4 { font-size: 12px; text-transform: uppercase; color: #64748b; letter-spacing: 1px; margin-bottom: 24px; font-weight: 700; }
+  .sig-line { border-bottom: 1px solid #94a3b8; height: 32px; margin-bottom: 6px; }
+  .sig-label { font-size: 11px; color: #64748b; margin-bottom: 16px; }
+
+  .footer {
+    background: linear-gradient(135deg, #002244 0%, #69BE28 100%);
+    color: #fff; padding: 20px 32px; font-size: 12px; text-align: center; line-height: 1.8;
+  }
+  .footer .top { font-weight: 600; margin-bottom: 4px; }
+  .footer .bottom { opacity: 0.85; font-size: 11px; }
+</style>
+</head>
+<body>
+
+<!-- EDIT BAR -->
+<div id="edit-bar">
+  <button id="btn-print" onclick="window.print()">🖨️ Print / Save PDF</button>
+  <span id="edit-hint">✏️ Tap any field to edit · Totals recalculate automatically</span>
+</div>
+
+<div class="invoice-container">
+
+  <div class="header">
+    <div class="header-left">
+      <div class="brand">
+        <h1>BLACKTECH SOLUTIONS CORP</h1>
+        <div class="subtitle">Electrical Contractor · Chicago, IL</div>
+      </div>
+    </div>
+    <div class="header-center"><h2>INVOICE</h2></div>
+    <div class="header-right">
+      <div class="row">
+        <div class="col">
+          <div class="label">Invoice #</div>
+          <div class="value" contenteditable="true">PHIL-LV</div>
+        </div>
+        <div class="col">
+          <div class="label">Date</div>
+          <div class="value" contenteditable="true">06/01/2026</div>
+        </div>
+        <div class="col">
+          <div class="label">Due Date</div>
+          <div class="value" contenteditable="true">06/15/2026</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="billing-section">
+    <div class="billing-box">
+      <h3>Bill From</h3>
+      <p contenteditable="true"><strong>Blacktech Solutions Corp</strong><br>
+      14076 Lincoln Ave<br>
+      Dolton, IL 60419<br>
+      (312) 965-2782<br>
+      invoices@blacktechsolutionscorp.com</p>
+    </div>
+    <div class="billing-box">
+      <h3>Bill To</h3>
+      <p contenteditable="true"><strong>Phil Powell</strong><br>
+      Echo School<br>
+      350 W 154th St<br>
+      South Holland, IL 60473</p>
+    </div>
+  </div>
+
+  <div class="job-details">
+    <div class="job-col">
+      <div class="label">Job Name</div>
+      <div class="value" contenteditable="true">Echo School — Electrical &amp; Low Voltage</div>
+    </div>
+    <div class="job-col">
+      <div class="label">Estimate #</div>
+      <div class="value" contenteditable="true">BSC-E-2026-PHIL-001-EL / LV</div>
+    </div>
+    <div class="job-col">
+      <div class="label">Completion Date</div>
+      <div class="value" contenteditable="true">___/___/2026</div>
+    </div>
+  </div>
+
+  <div class="line-items">
+    <table id="inv-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Description</th>
+          <th>Qty</th>
+          <th>Unit</th>
+          <th>Rate</th>
+          <th>Amount</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="inv-body">
+
+        <!-- ELECTRICAL SECTION -->
+        <tr class="section-row">
+          <td colspan="6"><div class="item-name" contenteditable="true">⚡ Electrical Work</div></td>
+          <td></td>
+        </tr>
+        <tr data-section="electrical">
+          <td class="row-num">1</td>
+          <td>
+            <div class="item-name" contenteditable="true">Exit Sign R&amp;R</div>
+            <div class="item-desc" contenteditable="true">Surface/flush mount, 120V hardwired</div>
+          </td>
+          <td class="qty" contenteditable="true">6</td>
+          <td class="unit" contenteditable="true">Ea</td>
+          <td class="rate" contenteditable="true">—</td>
+          <td class="amount" contenteditable="true">—</td>
+          <td><button class="del-row" title="Delete row">✕</button></td>
+        </tr>
+        <tr data-section="electrical">
+          <td class="row-num">2</td>
+          <td>
+            <div class="item-name" contenteditable="true">Emergency Lighting R&amp;R</div>
+            <div class="item-desc" contenteditable="true">Surface/flush mount, 120V hardwired</div>
+          </td>
+          <td class="qty" contenteditable="true">4</td>
+          <td class="unit" contenteditable="true">Ea</td>
+          <td class="rate" contenteditable="true">—</td>
+          <td class="amount" contenteditable="true">—</td>
+          <td><button class="del-row" title="Delete row">✕</button></td>
+        </tr>
+        <tr data-section="electrical">
+          <td class="row-num">3</td>
+          <td>
+            <div class="item-name" contenteditable="true">General Lighting R&amp;R</div>
+            <div class="item-desc" contenteditable="true">Recessed/surface mount, 120V</div>
+          </td>
+          <td class="qty" contenteditable="true">12</td>
+          <td class="unit" contenteditable="true">Ea</td>
+          <td class="rate" contenteditable="true">—</td>
+          <td class="amount" contenteditable="true">—</td>
+          <td><button class="del-row" title="Delete row">✕</button></td>
+        </tr>
+        <tr data-section="electrical">
+          <td class="row-num">4</td>
+          <td>
+            <div class="item-name" contenteditable="true">System Test &amp; Commissioning</div>
+            <div class="item-desc" contenteditable="true">Electrical systems verification</div>
+          </td>
+          <td class="qty" contenteditable="true">1</td>
+          <td class="unit" contenteditable="true">Lot</td>
+          <td class="rate" contenteditable="true">—</td>
+          <td class="amount" contenteditable="true">0.00</td>
+          <td><button class="del-row" title="Delete row">✕</button></td>
+        </tr>
+        <tr data-section="electrical">
+          <td class="row-num">5</td>
+          <td>
+            <div class="item-name" contenteditable="true">Electrical Labor</div>
+            <div class="item-desc" contenteditable="true">15 hrs @ $113.49/hr — all electrical work</div>
+          </td>
+          <td class="qty" contenteditable="true">15</td>
+          <td class="unit" contenteditable="true">Hrs</td>
+          <td class="rate" contenteditable="true">113.49</td>
+          <td class="amount" contenteditable="true">1702.35</td>
+          <td><button class="del-row" title="Delete row">✕</button></td>
+        </tr>
+        <tr data-section="electrical">
+          <td class="row-num">6</td>
+          <td>
+            <div class="item-name" contenteditable="true">Electrical Margin (17.5%)</div>
+            <div class="item-desc" contenteditable="true">Overhead &amp; profit</div>
+          </td>
+          <td class="qty" contenteditable="true">1</td>
+          <td class="unit" contenteditable="true">Lot</td>
+          <td class="rate" contenteditable="true">—</td>
+          <td class="amount" contenteditable="true">297.91</td>
+          <td><button class="del-row" title="Delete row">✕</button></td>
+        </tr>
+
+        <!-- LOW VOLTAGE SECTION -->
+        <tr class="section-row">
+          <td colspan="6"><div class="item-name" contenteditable="true">📡 Low Voltage / Fire Alarm</div></td>
+          <td></td>
+        </tr>
+        <tr data-section="lv">
+          <td class="row-num">7</td>
+          <td>
+            <div class="item-name" contenteditable="true">CO/Smoke Detector R&amp;R</div>
+            <div class="item-desc" contenteditable="true">Ceiling mount, low-voltage loop</div>
+          </td>
+          <td class="qty" contenteditable="true">30</td>
+          <td class="unit" contenteditable="true">Ea</td>
+          <td class="rate" contenteditable="true">—</td>
+          <td class="amount" contenteditable="true">—</td>
+          <td><button class="del-row" title="Delete row">✕</button></td>
+        </tr>
+        <tr data-section="lv">
+          <td class="row-num">8</td>
+          <td>
+            <div class="item-name" contenteditable="true">Speaker R&amp;R</div>
+            <div class="item-desc" contenteditable="true">Ceiling/surface mount, voice evacuation</div>
+          </td>
+          <td class="qty" contenteditable="true">10</td>
+          <td class="unit" contenteditable="true">Ea</td>
+          <td class="rate" contenteditable="true">—</td>
+          <td class="amount" contenteditable="true">—</td>
+          <td><button class="del-row" title="Delete row">✕</button></td>
+        </tr>
+        <tr data-section="lv">
+          <td class="row-num">9</td>
+          <td>
+            <div class="item-name" contenteditable="true">Security Camera R&amp;R</div>
+            <div class="item-desc" contenteditable="true">Ceiling/wall mount, CAT6/IP</div>
+          </td>
+          <td class="qty" contenteditable="true">8</td>
+          <td class="unit" contenteditable="true">Ea</td>
+          <td class="rate" contenteditable="true">—</td>
+          <td class="amount" contenteditable="true">—</td>
+          <td><button class="del-row" title="Delete row">✕</button></td>
+        </tr>
+        <tr data-section="lv">
+          <td class="row-num">10</td>
+          <td>
+            <div class="item-name" contenteditable="true">System Test &amp; Commissioning</div>
+            <div class="item-desc" contenteditable="true">Fire alarm &amp; low voltage systems verification</div>
+          </td>
+          <td class="qty" contenteditable="true">1</td>
+          <td class="unit" contenteditable="true">Lot</td>
+          <td class="rate" contenteditable="true">—</td>
+          <td class="amount" contenteditable="true">0.00</td>
+          <td><button class="del-row" title="Delete row">✕</button></td>
+        </tr>
+        <tr data-section="lv">
+          <td class="row-num">11</td>
+          <td>
+            <div class="item-name" contenteditable="true">Low Voltage Labor</div>
+            <div class="item-desc" contenteditable="true">60 hrs @ $107.75/hr — all LV/fire alarm work</div>
+          </td>
+          <td class="qty" contenteditable="true">60</td>
+          <td class="unit" contenteditable="true">Hrs</td>
+          <td class="rate" contenteditable="true">107.75</td>
+          <td class="amount" contenteditable="true">6465.00</td>
+          <td><button class="del-row" title="Delete row">✕</button></td>
+        </tr>
+        <tr data-section="lv">
+          <td class="row-num">12</td>
+          <td>
+            <div class="item-name" contenteditable="true">Low Voltage Margin (17.5%)</div>
+            <div class="item-desc" contenteditable="true">Overhead &amp; profit</div>
+          </td>
+          <td class="qty" contenteditable="true">1</td>
+          <td class="unit" contenteditable="true">Lot</td>
+          <td class="rate" contenteditable="true">—</td>
+          <td class="amount" contenteditable="true">1131.38</td>
+          <td><button class="del-row" title="Delete row">✕</button></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <!-- ADD ROW BUTTONS -->
+    <button class="add-row-btn" onclick="addRow('electrical')">+ Add Electrical Line</button>
+    <button class="add-row-btn" onclick="addRow('lv')">+ Add Low Voltage Line</button>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="summary">
+    <div class="summary-box">
+      <div class="summary-row">
+        <span class="s-label">Electrical Subtotal</span>
+        <span class="s-value" id="el-sub">$1,702.35</span>
+      </div>
+      <div class="summary-row">
+        <span class="s-label">Electrical Margin (17.5%)</span>
+        <span class="s-value" id="el-margin">$297.91</span>
+      </div>
+      <div class="summary-row">
+        <span class="s-label">Electrical Total</span>
+        <span class="s-value" id="el-total">$2,000.26</span>
+      </div>
+      <div class="summary-row" style="margin-top:8px;">
+        <span class="s-label">Low Voltage Subtotal</span>
+        <span class="s-value" id="lv-sub">$6,465.00</span>
+      </div>
+      <div class="summary-row">
+        <span class="s-label">Low Voltage Margin (17.5%)</span>
+        <span class="s-value" id="lv-margin">$1,131.38</span>
+      </div>
+      <div class="summary-row">
+        <span class="s-label">Low Voltage Total</span>
+        <span class="s-value" id="lv-total">$7,596.38</span>
+      </div>
+      <div class="summary-row total">
+        <span class="s-label">TOTAL DUE</span>
+        <span class="s-value" id="grand-total">$9,596.64</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="payment-info">
+    <h3>Payment Information</h3>
+    <p contenteditable="true">
+      <strong>Make checks payable to:</strong> Blacktech Solutions Corp<br>
+      <strong>Zelle / Cash App:</strong> (312) 965-2782<br>
+      <strong>Mail to:</strong> 14076 Lincoln Ave, Dolton, IL 60419<br>
+      <strong>Email:</strong> invoices@blacktechsolutionscorp.com
+    </p>
+  </div>
+
+  <div class="terms">
+    <h3>Terms &amp; Notes</h3>
+    <p contenteditable="true">· Payment due within 15 days of invoice date<br>
+      · Ceiling tile work excluded — performed by General Contractor<br>
+      · All electrical work code-compliant per NEC 2023<br>
+      · All low voltage / fire alarm work NICET-certified per NFPA 72<br>
+      · Materials customer-supplied or TBD — not included in this invoice<br>
+      · Warranty: 1-year labor on all installed fixtures and devices</p>
+  </div>
+
+  <div class="signatures">
+    <div class="sig-box">
+      <h4>Customer Acceptance</h4>
+      <div class="sig-line"></div>
+      <div class="sig-label" contenteditable="true">Phil Powell — Date: _______________</div>
+    </div>
+    <div class="sig-box">
+      <h4>Contractor</h4>
+      <div class="sig-line"></div>
+      <div class="sig-label" contenteditable="true">Derrell Black, Blacktech Solutions Corp — Date: _______________</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="top">Blacktech Solutions Corp · (312) 965-2782 · invoices@blacktechsolutionscorp.com</div>
+    <div class="bottom">14076 Lincoln Ave, Dolton, IL 60419 · Thank you for your business!</div>
+  </div>
+
+</div>
+
+<script>
+// ---- PARSE DOLLAR VALUE ----
+function parseMoney(str) {
+  if (!str) return 0;
+  var s = str.replace(/[$,\s]/g, '').trim();
+  if (s === '—' || s === '' || isNaN(parseFloat(s))) return 0;
+  return parseFloat(s);
+}
+
+function fmt(n) {
+  return '$' + n.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+}
+
+// ---- RECALCULATE TOTALS ----
+function recalc() {
+  var rows = document.querySelectorAll('#inv-body tr[data-section]');
+  var elSum = 0, lvSum = 0;
+  rows.forEach(function(row) {
+    var amtCell = row.querySelector('.amount');
+    if (!amtCell) return;
+    var val = parseMoney(amtCell.innerText);
+    if (row.dataset.section === 'electrical') elSum += val;
+    if (row.dataset.section === 'lv') lvSum += val;
+  });
+  var elMarg = elSum * 0; // amounts already include margin in this invoice structure
+  var lvMarg = lvSum * 0;
+  document.getElementById('el-sub').innerText = fmt(elSum);
+  document.getElementById('el-margin').innerText = '—';
+  document.getElementById('el-total').innerText = fmt(elSum);
+  document.getElementById('lv-sub').innerText = fmt(lvSum);
+  document.getElementById('lv-margin').innerText = '—';
+  document.getElementById('lv-total').innerText = fmt(lvSum);
+  document.getElementById('grand-total').innerText = fmt(elSum + lvSum);
+}
+
+// Listen for edits on amount cells
+document.getElementById('inv-body').addEventListener('input', function(e) {
+  if (e.target.classList.contains('amount')) recalc();
+});
+
+// ---- DELETE ROW ----
+document.getElementById('inv-body').addEventListener('click', function(e) {
+  if (e.target.classList.contains('del-row')) {
+    if (confirm('Delete this line?')) {
+      e.target.closest('tr').remove();
+      renumberRows();
+      recalc();
+    }
+  }
+});
+
+// ---- RENUMBER ROWS ----
+function renumberRows() {
+  var nums = document.querySelectorAll('#inv-body tr[data-section] .row-num');
+  nums.forEach(function(cell, i) { cell.innerText = i + 1; });
+}
+
+// ---- ADD ROW ----
+function addRow(section) {
+  var tbody = document.getElementById('inv-body');
+  // Find the last row of that section to insert after
+  var sectionRows = tbody.querySelectorAll('tr[data-section="' + section + '"]');
+  var lastRow = sectionRows[sectionRows.length - 1];
+  var newRow = document.createElement('tr');
+  newRow.dataset.section = section;
+  newRow.innerHTML = `
+    <td class="row-num">?</td>
+    <td>
+      <div class="item-name" contenteditable="true">New Item</div>
+      <div class="item-desc" contenteditable="true">Description</div>
+    </td>
+    <td class="qty" contenteditable="true">1</td>
+    <td class="unit" contenteditable="true">Ea</td>
+    <td class="rate" contenteditable="true">—</td>
+    <td class="amount" contenteditable="true">0.00</td>
+    <td><button class="del-row" title="Delete row">✕</button></td>
+  `;
+  if (lastRow) {
+    lastRow.after(newRow);
+  } else {
+    tbody.appendChild(newRow);
+  }
+  renumberRows();
+  recalc();
+  newRow.querySelector('.item-name').focus();
+}
+
+// Initial recalc on load
+recalc();
+</script>
+</body>
+</html>

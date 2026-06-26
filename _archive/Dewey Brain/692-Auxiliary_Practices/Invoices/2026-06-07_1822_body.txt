@@ -1,0 +1,9 @@
+From: QuickBooks Time <noreply@tsheets.com>
+Subject: [QuickBooks Time] Your weekly digest for Blacktech Solutions Corp
+Date: Sun, 07 Jun 2026 18:22:09 +0000 (UTC)
+==================================================
+
+<style>a,a:link,a:visited{font-weight:normal;color:#3178C6;text-decoration:none}a:hover{text-decoration:underline}</style>
+<div class="body" style="margin: 0; padding: 0; background-color: #ececec;" marginheight="0" topmargin="0" marginwidth="0" leftmargin="0">
+<span style="font-size: 0; color: #ececec">Hope you had a fantastic week! Here are the hours your team worked this week.</span>
+<table align="center" bgcolor="#eeeeee" border="0" cellpadding="0" cellspacing="0" height="100% !important"

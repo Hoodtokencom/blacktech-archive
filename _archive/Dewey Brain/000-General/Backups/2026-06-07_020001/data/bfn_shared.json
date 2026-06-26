@@ -1,0 +1,260 @@
+{
+  "members": [
+    {
+      "name": "Test Member",
+      "month": 6,
+      "added": "2026-06-04T02:32:19.870807Z"
+    }
+  ],
+  "rsvp": [
+    {
+      "name": "Derrell Black",
+      "biz": "Electrical",
+      "contact": "7734499396",
+      "status": "going",
+      "date": "2026-06-05T02:44:00.185830Z"
+    }
+  ],
+  "funding": {},
+  "tformation": {
+    "5": [
+      "Derrell Black (7734499396)"
+    ]
+  },
+  "director": {
+    "name": "Derrell Black",
+    "biz": "Blacktech Solutions Corp",
+    "phone": "312-965-2782",
+    "email": "support@blacktechsolutionscorp.com",
+    "note": "60628 Coordinator for business in the pullman/rosemoor/roseland community",
+    "set": "2026-06-04T12:05:43.153848Z"
+  },
+  "businesses": [],
+  "telemetry": [
+    {
+      "date": "2026-06-07T03:20:21.214217Z",
+      "model": "ollama-phi3",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-07T03:18:50.877475Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 54,
+      "tokens_out": 4,
+      "cost": 1e-05,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-07T00:21:40.345030Z",
+      "model": "claude-sonnet-4-6",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "skipped",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-07T00:21:40.342647Z",
+      "model": "ollama-phi3",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-07T00:19:40.242896Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 164,
+      "tokens_out": 185,
+      "cost": 0.000136,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-07T00:15:12.811599Z",
+      "model": "claude-sonnet-4-6",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "skipped",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-07T00:15:12.808091Z",
+      "model": "ollama-phi3",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-07T00:13:12.706959Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 157,
+      "tokens_out": 172,
+      "cost": 0.000127,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-06T23:52:11.427772Z",
+      "model": "ollama-phi3",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-06T23:51:41.415918Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 51,
+      "tokens_out": 2,
+      "cost": 9e-06,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-06T23:51:26.137503Z",
+      "model": "claude-sonnet-4-6",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "skipped",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-06T23:51:26.135244Z",
+      "model": "ollama-phi3",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-06T23:49:26.032690Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-06T23:46:46.784868Z",
+      "model": "claude-sonnet-4-6",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "skipped",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-06T23:46:46.782376Z",
+      "model": "ollama-phi3",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-06T23:44:46.673744Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-06T23:02:21.585708Z",
+      "model": "llama-3.1-8b-instant",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "skipped",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-06T22:36:06.944311Z",
+      "model": "claude-sonnet-4-6",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "skipped",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-06T22:36:06.942657Z",
+      "model": "ollama-phi3",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-06T22:34:06.843563Z",
+      "model": "gemini-2.0-flash-lite",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-06T22:33:24.020048Z",
+      "model": "gemini-2.0-flash-lite",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-06T22:33:00.708760Z",
+      "model": "ollama-phi3",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-06T22:31:56.705258Z",
+      "model": "gemini",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "skipped",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-06T22:28:46.881129Z",
+      "model": "gemini",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "skipped",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-06T16:51:45.595827Z",
+      "model": "gemini-2.0-flash-lite",
+      "tokens_in": 150,
+      "tokens_out": 45,
+      "cost": 2.4e-05,
+      "status": "completed",
+      "payload": ""
+    }
+  ]
+}

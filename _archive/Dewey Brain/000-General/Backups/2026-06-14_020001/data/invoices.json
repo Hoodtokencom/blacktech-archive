@@ -1,0 +1,210 @@
+[
+  {
+    "num": "1360",
+    "customer": "Phil Powell",
+    "address": "Veteran Prestige / Eco School",
+    "job": "Eco School \u2014 Ceiling Tile R&R",
+    "date": "06/02/2026",
+    "due": "07/02/2026",
+    "status": "invoiced",
+    "notes": "Net 30. Lighting and Low Voltage remove and replace in new ceiling tiles.",
+    "htmlFile": "/Invoice_1360_Phil_Powell_Eco_School.html",
+    "lines": [
+      {
+        "desc": "Administration \u2014 01-005 Office",
+        "qty": 6,
+        "rate": 46.35
+      },
+      {
+        "desc": "Ceiling Tile (labor) \u2014 Cut opening for existing devices",
+        "qty": 1,
+        "rate": 0
+      },
+      {
+        "desc": "Can Lighting \u2014 Remove and Replace in new ceiling tiles",
+        "qty": 1,
+        "rate": 0
+      },
+      {
+        "desc": "Exit Light \u2014 Remove and Replace in new ceiling tiles",
+        "qty": 1,
+        "rate": 0
+      },
+      {
+        "desc": "Electrical Labor \u2014 Lighting R&R in ceiling tiles",
+        "qty": 48,
+        "rate": 113.49
+      },
+      {
+        "desc": "Camera \u2014 Remove and replace existing device outlet",
+        "qty": 1,
+        "rate": 0
+      },
+      {
+        "desc": "Speaker \u2014 Remove and replace existing device outlet",
+        "qty": 1,
+        "rate": 0
+      },
+      {
+        "desc": "Fire Alarm / Smoke Detector \u2014 Remove and replace",
+        "qty": 1,
+        "rate": 0
+      },
+      {
+        "desc": "Low Voltage Labor Total \u2014 R&R outlets in ceiling tile",
+        "qty": 40,
+        "rate": 107.7
+      },
+      {
+        "desc": "Material",
+        "qty": 1,
+        "rate": 0
+      }
+    ]
+  },
+  {
+    "num": "BSC-2026-004",
+    "customer": "London Town Home",
+    "address": "Chicago, IL 60619",
+    "job": "1348-LONDON \u2014 All Weather Specialist",
+    "date": "2026-06-03",
+    "due": "2026-06-18",
+    "notes": "Payment due within 15 days of invoice date.",
+    "status": "draft",
+    "lines": [
+      {
+        "desc": "All Weather Specialist",
+        "qty": 1,
+        "rate": 221456.8
+      }
+    ]
+  },
+  {
+    "num": "BSC20266515",
+    "customer": "Rob Moore",
+    "address": "6515 S Drexel Ave",
+    "job": "LEAD-260602200821 \u2014 Electrical Distribution 400a",
+    "date": "2026-06-04",
+    "due": "2026-06-21",
+    "notes": "Payment due within 15 days of invoice date.",
+    "status": "sent",
+    "lines": [
+      {
+        "desc": "Electrical Labor \u2014 400A Service Installation",
+        "qty": 1,
+        "rate": 15500
+      },
+      {
+        "desc": "Materials \u2014 400A Service Equipment",
+        "qty": 1,
+        "rate": 9000
+      },
+      {
+        "desc": "Demo \u2014 Existing 100A Service",
+        "qty": 4,
+        "rate": 275
+      }
+    ],
+    "total": 24990
+  },
+  {
+    "num": "BSC-2026-005",
+    "customer": "Kiesha Johnson",
+    "address": "1023 e 161st Ave",
+    "job": "LEAD-260602214943 \u2014 Electrical Demo and Installation",
+    "date": "2026-06-03",
+    "due": "2026-06-18",
+    "notes": "Payment due within 15 days of invoice date.",
+    "status": "draft",
+    "lines": [
+      {
+        "desc": "electrical Demo",
+        "qty": 3,
+        "rate": 107.7
+      },
+      {
+        "desc": "Electrical outlet installation",
+        "qty": 3,
+        "rate": 107.7
+      },
+      {
+        "desc": "Electrical Material( reaceway,boxes and wire",
+        "qty": 1,
+        "rate": 90
+      }
+    ]
+  },
+  {
+    "id": "BSC-INV-7458-2026",
+    "customer": "Ms. Williams",
+    "address": "7458 S Euclid Ave, Chicago, IL 60649",
+    "invoiceNum": "BSC-INV-7458-2026",
+    "date": "2026-06-05",
+    "due": "2026-06-20",
+    "status": "sent",
+    "total": 1462.48,
+    "lineItems": [
+      {
+        "desc": "Demo \u2014 Labor (1 hr)",
+        "qty": 1,
+        "rate": 113.49,
+        "amount": 133.35
+      },
+      {
+        "desc": "Outlet Installation \u2014 Labor (10 \u00d7 0.75 hr)",
+        "qty": 7.5,
+        "rate": 113.49,
+        "amount": 1000.13
+      },
+      {
+        "desc": "Materials (10 \u00d7 $28 + markup)",
+        "qty": 10,
+        "rate": 32.9,
+        "amount": 329
+      }
+    ]
+  },
+  {
+    "id": "BSC-INV-400-RANDOLPH-2026",
+    "customer": "Todd \u2014 KM Printing",
+    "address": "400 E. Randolph Street, Unit 270, Chicago, IL 60601",
+    "invoiceNum": "BSC-INV-400-RANDOLPH-2026",
+    "date": "2026-06-05",
+    "due": "2026-06-20",
+    "status": "sent",
+    "total": 1950,
+    "email": "Todd@KMPrinting.com",
+    "lineItems": [
+      {
+        "desc": "Demo \u2014 25-Pair CAT3 Cabling & Pipe (30 ft)",
+        "qty": 1,
+        "rate": 0,
+        "amount": 975
+      },
+      {
+        "desc": "Installation \u2014 5 \u00d7 CAT5e Cables (30 ft each)",
+        "qty": 5,
+        "rate": 0,
+        "amount": 975
+      }
+    ],
+    "num": "\u2014",
+    "job": "Job Name",
+    "notes": "Payment due within 15 days of invoice date.",
+    "lines": []
+  },
+  {
+    "invoice_number": "INV-2026-CR001",
+    "customer": "Charles Robinson",
+    "email": "robinson.charles@yahoo.com",
+    "address": "10059 S Forest Ave, Chicago, IL 60628",
+    "description": "1 Hour Electrical Work",
+    "amount": 75.0,
+    "date": "2026-06-10",
+    "due_date": "2026-06-25",
+    "status": "sent",
+    "sent_date": "2026-06-10",
+    "payment_method": "",
+    "notes": "Neighbor - no profit markup"
+  }
+]

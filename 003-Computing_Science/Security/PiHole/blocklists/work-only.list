@@ -1,0 +1,99 @@
+# BlackTech Security - Work-Only Blocklist
+# Blocks entertainment, streaming, gaming, and social media
+# For business/contractor devices only
+
+# Social Media
+tiktok.com
+snapchat.com
+instagram.com
+facebook.com
+meta.com
+threads.net
+x.com
+twitter.com
+reddit.com
+tumblr.com
+pinterest.com
+linkedin.com
+
+# Streaming / Video
+netflix.com
+hulu.com
+disneyplus.com
+hbomax.com
+max.com
+primevideo.com
+youtube.com
+youtu.be
+twitch.tv
+roku.com
+peacocktv.com
+paramountplus.com
+apple.tv
+tv.apple.com
+
+# Music / Audio
+spotify.com
+pandora.com
+soundcloud.com
+tidal.com
+applemusic.com
+music.amazon.com
+iheart.com
+
+# Gaming
+steamcommunity.com
+steampowered.com
+epicgames.com
+xbox.com
+playstation.com
+nintendo.com
+twitch.tv
+discord.com
+discord.gg
+roblox.com
+minecraft.net
+fortnite.com
+
+# Sports / Betting
+espn.com
+nfl.com
+nba.com
+mlb.com
+cbs.sportsline.com
+draftkings.com
+fanduel.com
+bet365.com
+caesars.com
+
+# Shopping (non-business)
+amazon.com
+ebay.com
+walmart.com
+target.com
+etsy.com
+shein.com
+temu.com
+aliexpress.com
+
+# News / Entertainment (time wasters)
+buzzfeed.com
+tmz.com
+vice.com
+complex.com
+worldstarhiphop.com
+
+# Dating
+tinder.com
+bumble.com
+match.com
+okcupid.com
+hinge.co
+eharmony.com
+plentyoffish.com
+
+# Gambling (already in global, added here for redundancy)
+bet365.com
+caesars.com
+fanduel.com
+draftkings.com

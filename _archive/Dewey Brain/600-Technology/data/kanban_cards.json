@@ -1,0 +1,56 @@
+[
+  {
+    "id": "57f6d1d1-7bb2-4bb2-b64e-95f95292a53b",
+    "title": "Phil Powell \u2014 Eco School",
+    "notes": "\ud83d\udd27 Electrical\n\ud83d\udcde (312) 801-0549\n\ud83d\udccb Ceiling tile lighting R&R",
+    "status": "inprog",
+    "tag": "blacktech",
+    "color": "",
+    "created": "2026-06-02T23:55:15.137105+00:00"
+  },
+  {
+    "id": "d730dbc3-81ca-4508-9907-0f49d8d2222a",
+    "title": "Rob Moore \u2014 6515 S Drexel Ave",
+    "notes": "Invoice BSC20266515 sent 06/04/2026. Total $24,990.00. Awaiting 50% deposit to start work.",
+    "status": "inprogress",
+    "tag": "invoiced",
+    "color": "#1e3a1e",
+    "created": "2026-06-03T01:08:21.130583+00:00",
+    "name": "Rob Moore \u2014 6515 S Drexel Ave",
+    "amount": "$24,990.00"
+  },
+  {
+    "id": "02753755-0f9e-4961-a079-b2f6186c0208",
+    "title": "LaKiesha Johnson \u2014 1023 e 161st Ave",
+    "notes": "Bathroom outlet relocation \u2014 Option B bid sent to Fiona 06/04/2026.",
+    "status": "todo",
+    "tag": "projects",
+    "color": "#1e3a1e",
+    "created": "2026-06-03T02:49:43.654961+00:00",
+    "desc": "\ud83d\udcde 773 123 4578\n\ud83d\udcdd \ud83d\udccd South Holland",
+    "name": "LaKiesha Johnson \u2014 1023 E 161st Ave",
+    "amount": "$555.80"
+  },
+  {
+    "id": "ms-williams-7458-euclid",
+    "name": "Ms. Williams \u2014 7458 S Euclid Ave",
+    "status": "todo",
+    "amount": "$562.15",
+    "notes": "Electrical Demo & Installation \u2014 2 outlets. Invoice sent to Fiona 06/04/2026.",
+    "phone": "",
+    "tag": "projects",
+    "title": "MS Williams",
+    "desc": "Electrical Demo & Installation \u2014 2 outlets. Invoice sent to Fiona 06/04/2026."
+  },
+  {
+    "id": "luella-10150-victoria-young",
+    "name": "Victoria Young \u2014 10150 S Luella Ave",
+    "status": "todo",
+    "amount": "$12,500.00",
+    "notes": "Full electrical gut rehab. Proposal sent 06/04/2026. Labor-only $12,500 + materials TBD.",
+    "phone": "",
+    "tag": "projects",
+    "title": "Victoria young",
+    "desc": "Full electrical gut rehab. Proposal sent 06/04/2026. Labor-only $12,500 + materials TBD."
+  }
+]

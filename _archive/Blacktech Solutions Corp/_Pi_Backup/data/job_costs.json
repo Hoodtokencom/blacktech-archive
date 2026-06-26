@@ -1,0 +1,52 @@
+{
+  "jobs": [
+    {
+      "id": "BSC-2026-001",
+      "customer": "Phil Powell",
+      "address": "Veteran Prestige / Eco School",
+      "description": "Ceiling Tile R&R",
+      "date": "2026-06-02",
+      "status": "invoiced",
+      "invoiced": 10034,
+      "paid": 0,
+      "material_cost": 0,
+      "labor_cost": 0,
+      "contractor_cost": 0,
+      "other_costs": 0,
+      "total_cost": 0,
+      "profit": 0,
+      "margin": 0
+    },
+    {
+      "id": "BSC-2026-002",
+      "customer": "London Town Home",
+      "address": "Chicago, IL 60619",
+      "description": "All Weather Specialist",
+      "status": "draft",
+      "invoiced": 188000,
+      "paid": 0,
+      "material_cost": 80000,
+      "labor_cost": 100000,
+      "contractor_cost": 0,
+      "other_costs": 0,
+      "date": "2026-06-08"
+    },
+    {
+      "id": "BSC-2026-003",
+      "customer": "Rob Moore",
+      "address": "6515 S Drexel Ave",
+      "description": "400A Service Installation",
+      "date": "2026-06-04",
+      "status": "sent",
+      "invoiced": 24990,
+      "paid": 0,
+      "material_cost": 9000,
+      "labor_cost": 15500,
+      "contractor_cost": 0,
+      "other_costs": 275,
+      "total_cost": 24775,
+      "profit": 215,
+      "margin": 0.86
+    }
+  ]
+}

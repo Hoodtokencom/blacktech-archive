@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1050, initial-scale=0.45, maximum-scale=2.0">
+<title>Invoice — Ms. Williams · 7458 S Euclid Ave</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f0f4f8;
+    padding: 30px;
+    color: #1a1a2e;
+  }
+  .invoice-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+    overflow: hidden;
+  }
+  .header {
+    background: linear-gradient(135deg, #002244 0%, #69BE28 100%);
+    color: #fff;
+    padding: 28px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-left { display: flex; align-items: flex-start; gap: 16px; }
+  .header-left img {
+    width: 140px; height: 120px; object-fit: contain;
+    border-radius: 8px; background: #fff; padding: 4px;
+  }
+  .header-left .brand h1 { font-size: 22px; font-weight: 700; letter-spacing: 1px; }
+  .header-left .brand .subtitle { font-size: 12px; opacity: 0.85; margin-top: 3px; }
+  .header-center { text-align: center; }
+  .header-center h2 { font-size: 36px; font-weight: 800; letter-spacing: 2px; margin-bottom: 4px; }
+  .header-right { text-align: right; }
+  .header-right .row { display: flex; gap: 24px; justify-content: flex-end; }
+  .header-right .col { text-align: left; }
+  .header-right .col .label { font-size: 10px; opacity: 0.7; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 3px; }
+  .header-right .col .value { font-size: 15px; font-weight: 700; }
+
+  .billing-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 32px;
+    gap: 24px;
+  }
+  .billing-box {
+    flex: 1;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 16px 20px;
+  }
+  .billing-box h3 { font-size: 11px; text-transform: uppercase; color: #64748b; letter-spacing: 1.5px; margin-bottom: 10px; font-weight: 700; }
+  .billing-box p { font-size: 13px; line-height: 1.7; color: #334155; }
+  .billing-box p strong { color: #1a1a2e; font-size: 14px; }
+
+  .job-details {
+    margin: 0 32px 20px;
+    background: #f8fafc;
+    border-left: 4px solid #128c7e;
+    border-radius: 0 8px 8px 0;
+    padding: 16px 20px;
+    display: flex;
+    gap: 32px;
+  }
+  .job-col { flex: 1; }
+  .job-col .label { font-size: 10px; text-transform: uppercase; color: #64748b; letter-spacing: 1px; margin-bottom: 4px; font-weight: 600; }
+  .job-col .value { font-size: 14px; font-weight: 700; color: #1a1a2e; }
+
+  .line-items { padding: 0 32px 16px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  thead th {
+    background: #002244;
+    color: #fff;
+    padding: 12px 10px;
+    text-align: left;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  thead th:nth-child(1) { width: 5%; text-align: center; }
+  thead th:nth-child(2) { width: 45%; }
+  thead th:nth-child(3) { width: 10%; text-align: center; }
+  thead th:nth-child(4) { width: 10%; text-align: center; }
+  thead th:nth-child(5) { width: 15%; text-align: right; }
+  thead th:nth-child(6) { width: 15%; text-align: right; }
+  tbody tr { border-bottom: 1px solid #e2e8f0; }
+  tbody tr:last-child { border-bottom: none; }
+  tbody td { padding: 10px; vertical-align: top; color: #334155; white-space: nowrap; }
+  tbody td:nth-child(1) { text-align: center; font-weight: 600; color: #64748b; }
+  tbody td:nth-child(2) { white-space: normal; }
+  tbody td:nth-child(3), tbody td:nth-child(4) { text-align: center; }
+  tbody td:nth-child(5), tbody td:nth-child(6) { text-align: right; font-weight: 600; }
+  tbody td:nth-child(6) { color: #128c7e; font-size: 14px; }
+  .item-name { font-weight: 700; color: #1a1a2e; }
+  .item-desc { font-size: 12px; color: #64748b; margin-top: 2px; }
+  .section-row { background: #f1f5f9 !important; }
+  .section-row td { font-weight: 700; color: #475569; text-transform: uppercase; font-size: 11px; letter-spacing: 0.5px; }
+
+  .summary {
+    padding: 16px 32px 24px;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 2px solid #002244;
+    margin: 0 32px;
+  }
+  .summary-box { min-width: 260px; }
+  .summary-row { display: flex; justify-content: space-between; margin-bottom: 6px; font-size: 13px; }
+  .summary-row .label { color: #64748b; }
+  .summary-row .value { font-weight: 600; color: #334155; }
+  .summary-row.total { font-size: 18px; font-weight: 800; color: #1a1a2e; margin-top: 8px; padding-top: 8px; border-top: 2px solid #002244; }
+  .summary-row.total .value { color: #128c7e; }
+
+  .payment-info {
+    margin: 24px 32px 20px;
+    background: #f8fafc;
+    border-left: 4px solid #128c7e;
+    border-radius: 0 8px 8px 0;
+    padding: 16px 20px;
+  }
+  .payment-info h3 { font-size: 12px; text-transform: uppercase; color: #64748b; letter-spacing: 1px; margin-bottom: 10px; font-weight: 700; }
+  .payment-info p { font-size: 13px; line-height: 1.8; color: #334155; }
+  .payment-info p strong { color: #1a1a2e; }
+
+  .terms {
+    margin: 0 32px 20px;
+    padding: 16px 20px;
+    background: #fffbeb;
+    border: 1px solid #fcd34d;
+    border-radius: 8px;
+  }
+  .terms h3 { font-size: 12px; text-transform: uppercase; color: #b45309; letter-spacing: 1px; margin-bottom: 8px; font-weight: 700; }
+  .terms p { font-size: 12px; line-height: 1.7; color: #78350f; }
+
+  .signatures {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px 24px;
+    gap: 32px;
+  }
+  .sig-box {
+    flex: 1;
+    border-top: 2px solid #002244;
+    padding-top: 12px;
+  }
+  .sig-box h4 { font-size: 12px; text-transform: uppercase; color: #64748b; letter-spacing: 1px; margin-bottom: 24px; font-weight: 700; }
+  .sig-line { border-bottom: 1px solid #94a3b8; height: 32px; margin-bottom: 6px; }
+  .sig-label { font-size: 11px; color: #64748b; margin-bottom: 16px; }
+
+  .footer {
+    background: linear-gradient(135deg, #002244 0%, #69BE28 100%);
+    color: #fff;
+    padding: 20px 32px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.8;
+  }
+  .footer .top { font-weight: 600; margin-bottom: 4px; }
+  .footer .bottom { opacity: 0.85; font-size: 11px; }
+
+  @media print { body { padding: 0; background: #fff; } }
+</style>
+</head>
+<body>
+<div class="invoice-container">
+
+  <div class="header">
+    <div class="header-left">
+      <img src="/media/allenai/Expansion/Blacktech_Drive/Home_Backup/Blacktech_Reports/Photos/blacktech_logo.jpg" alt="Blacktech Logo">
+      <div class="brand">
+        <h1>BLACKTECH SOLUTIONS CORP</h1>
+        <div class="subtitle">Electrical Contractor · Chicago, IL</div>
+      </div>
+    </div>
+    <div class="header-center">
+      <h2>INVOICE</h2>
+    </div>
+    <div class="header-right">
+      <div class="row">
+        <div class="col">
+          <div class="label">Invoice #</div>
+          <div class="value">BSC-2026-7458</div>
+        </div>
+        <div class="col">
+          <div class="label">Date</div>
+          <div class="value">06/04/2026</div>
+        </div>
+        <div class="col">
+          <div class="label">Due Date</div>
+          <div class="value">06/19/2026</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="billing-section">
+    <div class="billing-box">
+      <h3>Bill From</h3>
+      <p><strong>Blacktech Solutions Corp</strong><br>
+      14076 Lincoln Ave<br>
+      Dolton, IL 60419<br>
+      (312) 965-2782<br>
+      invoices@blacktechsolutionscorp.com</p>
+    </div>
+    <div class="billing-box">
+      <h3>Bill To</h3>
+      <p><strong>Ms. Williams</strong><br>
+      7458 S Euclid Ave<br>
+      Chicago, IL</p>
+    </div>
+  </div>
+
+  <div class="job-details">
+    <div class="job-col">
+      <div class="label">Job Address</div>
+      <div class="value">7458 S Euclid Ave</div>
+    </div>
+    <div class="job-col">
+      <div class="label">Estimate #</div>
+      <div class="value">BSC-E-2026-7458-001</div>
+    </div>
+    <div class="job-col">
+      <div class="label">Date Completed</div>
+      <div class="value">06/04/2026</div>
+    </div>
+  </div>
+
+  <div class="line-items">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Description</th>
+          <th>Qty/hrs</th>
+          <th>Unit</th>
+          <th>Rate</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="section-row">
+          <td colspan="6">⚡ Electrical Work</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            <div class="item-name">Electrical Demo &amp; Installation</div>
+            <div class="item-desc">2 outlet pipe installations on exterior wall in basement, 30–40 ft from panel</div>
+          </td>
+          <td>3</td>
+          <td>hrs</td>
+          <td>$107.70</td>
+          <td>$323.10</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            <div class="item-name">Demo — Box Removal &amp; Flexible Metal Conduit</div>
+            <div class="item-desc">Remove demo box; remove 40 ft of flexible metal conduit</div>
+          </td>
+          <td>1.5</td>
+          <td>hrs</td>
+          <td>$107.70</td>
+          <td>$161.55</td>
+        </tr>
+        <tr class="section-row">
+          <td colspan="6">🔩 Materials</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>
+            <div class="item-name">Materials</div>
+            <div class="item-desc">Conduit, pipe fittings, boxes, and miscellaneous materials</div>
+          </td>
+          <td>1</td>
+          <td>Lot</td>
+          <td>$60.00</td>
+          <td>$60.00</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>
+            <div class="item-name">Disposal Fee</div>
+            <div class="item-desc">Demo material disposal</div>
+          </td>
+          <td>1</td>
+          <td>Lot</td>
+          <td>$17.50</td>
+          <td>$17.50</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="summary">
+    <div class="summary-box">
+      <div class="summary-row">
+        <span class="label">Labor Subtotal</span>
+        <span class="value">$484.65</span>
+      </div>
+      <div class="summary-row">
+        <span class="label">Materials</span>
+        <span class="value">$77.50</span>
+      </div>
+      <div class="summary-row">
+        <span class="label">Tax</span>
+        <span class="value">$0.00</span>
+      </div>
+      <div class="summary-row total">
+        <span class="label">TOTAL DUE</span>
+        <span class="value">$562.15</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="payment-info">
+    <h3>💳 Payment Information</h3>
+    <p><strong>Make checks payable to:</strong> Blacktech Solutions Corp<br>
+    <strong>Zelle:</strong> support@blacktechsolutionscorp.com<br>
+    <strong>Questions?</strong> Call (312) 965-2782</p>
+  </div>
+
+  <div class="terms">
+    <h3>Terms &amp; Conditions</h3>
+    <p>Payment due within 15 days of invoice date. Late payments subject to 1.5% monthly service charge.
+    All labor warranted for 1 year from completion date. Lien rights reserved per Illinois Mechanics Lien Act.</p>
+  </div>
+
+  <div class="signatures">
+    <div class="sig-box">
+      <h4>Customer Acceptance</h4>
+      <div class="sig-line"></div>
+      <div class="sig-label">Signature</div>
+      <div class="sig-line"></div>
+      <div class="sig-label">Print Name &amp; Date</div>
+    </div>
+    <div class="sig-box">
+      <h4>Authorized By</h4>
+      <div class="sig-line"></div>
+      <div class="sig-label">Derrell Black — Blacktech Solutions Corp</div>
+      <div class="sig-line"></div>
+      <div class="sig-label">Date</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="top">Thank you for your business! &nbsp;|&nbsp; (312) 965-2782 &nbsp;|&nbsp; invoices@blacktechsolutionscorp.com</div>
+    <div class="bottom">© 2026 Blacktech Solutions Corp &nbsp;|&nbsp; Licensed &amp; Insured Electrical Contractor</div>
+  </div>
+
+</div>
+</body>
+</html>

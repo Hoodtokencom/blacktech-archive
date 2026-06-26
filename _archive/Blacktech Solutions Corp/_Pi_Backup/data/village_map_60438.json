@@ -1,0 +1,50 @@
+{
+  "zip": "60438",
+  "neighborhood": "Lansing",
+  "twin_city": "TBD",
+  "streets": ["Ridge Rd", "170th", "171st", "172nd", "173rd", "174th"],
+  "corridors": [
+    "Torrence Ave",
+    "Wentworth Ave",
+    "Burnham Ave",
+    "State Line Rd"
+  ],
+  "villages": {
+    "v01": { "street": "Ridge Rd", "corridor": 0, "name": "Village 01", "schools": [], "churches": 0, "biz": [] },
+    "v02": { "street": "Ridge Rd", "corridor": 1, "name": "Village 02", "schools": [], "churches": 0, "biz": [] },
+    "v03": { "street": "Ridge Rd", "corridor": 2, "name": "Village 03", "schools": [], "churches": 0, "biz": [] },
+    "v04": { "street": "Ridge Rd", "corridor": 3, "name": "Village 04", "schools": [], "churches": 0, "biz": [] },
+    "v05": { "street": "170th", "corridor": 0, "name": "Village 05", "schools": [], "churches": 0, "biz": [] },
+    "v06": { "street": "170th", "corridor": 1, "name": "Village 06", "schools": [], "churches": 0, "biz": [] },
+    "v07": { "street": "170th", "corridor": 2, "name": "Village 07", "schools": [], "churches": 0, "biz": [] },
+    "v08": { "street": "170th", "corridor": 3, "name": "Village 08", "schools": [], "churches": 0, "biz": [] },
+    "v09": { "street": "171st", "corridor": 0, "name": "Village 09", "schools": [], "churches": 0, "biz": [] },
+    "v10": { "street": "171st", "corridor": 1, "name": "Village 10", "schools": [], "churches": 0, "biz": [] },
+    "v11": { "street": "171st", "corridor": 2, "name": "Village 11", "schools": [], "churches": 0, "biz": [] },
+    "v12": { "street": "171st", "corridor": 3, "name": "Village 12", "schools": [], "churches": 0, "biz": [] },
+    "v13": { "street": "172nd", "corridor": 0, "name": "Village 13", "schools": [], "churches": 0, "biz": [] },
+    "v14": { "street": "172nd", "corridor": 1, "name": "Village 14", "schools": [], "churches": 0, "biz": [] },
+    "v15": { "street": "172nd", "corridor": 2, "name": "Village 15", "schools": [], "churches": 0, "biz": [] },
+    "v16": { "street": "172nd", "corridor": 3, "name": "Village 16", "schools": [], "churches": 0, "biz": [] },
+    "v17": { "street": "173rd", "corridor": 0, "name": "Village 17", "schools": [], "churches": 0, "biz": [] },
+    "v18": { "street": "173rd", "corridor": 1, "name": "Village 18", "schools": [], "churches": 0, "biz": [] },
+    "v19": { "street": "173rd", "corridor": 2, "name": "Village 19", "schools": [], "churches": 0, "biz": [] },
+    "v20": { "street": "173rd", "corridor": 3, "name": "Village 20", "schools": [], "churches": 0, "biz": [] },
+    "v21": { "street": "174th", "corridor": 0, "name": "Village 21", "schools": [], "churches": 0, "biz": [] },
+    "v22": { "street": "174th", "corridor": 1, "name": "Village 22", "schools": [], "churches": 0, "biz": [] },
+    "v23": { "street": "174th", "corridor": 2, "name": "Village 23", "schools": [], "churches": 0, "biz": [] },
+    "v24": { "street": "174th", "corridor": 3, "name": "Village 24", "schools": [], "churches": 0, "biz": [] }
+  },
+  "pinned_businesses": [
+    {
+      "name": "MLP Electric LLC",
+      "address": "18236 Oakwood Ave, Lansing, IL 60438",
+      "lat": 41.5637042,
+      "lng": -87.5467115,
+      "phone": "773-354-9693",
+      "email": "michaelp@mlpelectricllc.com",
+      "category": "Electrical Contractor",
+      "village": "v10"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# IoT Device Blocklist - Blocks telemetry/tracking on smart home devices
+
+# Ring telemetry
+ring.com
+device-metrics-us.amazon.com
+# Samsung Smart TV
+ads.samsungads.com
+config.samsungads.com
+telemetry.samsung.com
+# Generic IoT tracking
+tracking.smartthings.com
+metrics.iot.com
+telemetry.googleapis.com

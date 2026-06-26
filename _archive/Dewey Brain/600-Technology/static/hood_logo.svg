@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a0800"/>
+      <stop offset="100%" stop-color="#030100"/>
+    </radialGradient>
+    <linearGradient id="eagleGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#d4840a"/>
+      <stop offset="40%" stop-color="#b36200"/>
+      <stop offset="100%" stop-color="#6b3000"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="clip"><circle cx="256" cy="256" r="248"/></clipPath>
+  </defs>
+
+  <circle cx="256" cy="256" r="256" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="250" fill="none" stroke="#f59e0b" stroke-width="11"/>
+  <circle cx="256" cy="256" r="238" fill="none" stroke="#7c3500" stroke-width="2"/>
+
+  <g clip-path="url(#clip)">
+
+  <!-- ══ EAGLE — heraldic spread-wing silhouette, scaled to fit circle ══ -->
+  <!-- Translated/scaled to center at 256,220, wingspan ~460px wide -->
+  <g transform="translate(256,210) scale(1.15)" fill="url(#eagleGrad)" stroke="#f59e0b" stroke-width="1.5" stroke-linejoin="round">
+
+    <!-- LEFT WING — broad sweeping heraldic shape -->
+    <path d="M-10,-10
+             C-30,-30 -70,-55 -110,-65
+             C-150,-75 -185,-70 -210,-55
+             C-225,-45 -228,-30 -220,-18
+             C-212,-6 -195,0 -175,-2
+             C-155,-4 -138,-14 -120,-10
+             C-102,-6 -88,8 -70,18
+             C-52,28 -30,32 -15,25
+             C-5,20 -3,8 -10,-10 Z"/>
+
+    <!-- Left wing tip feathers -->
+    <path d="M-175,-2 L-200,-25 L-178,2 Z"/>
+    <path d="M-158,-6 L-180,-30 L-160,4 Z"/>
+    <path d="M-140,-10 L-158,-35 L-142,6 Z"/>
+    <path d="M-122,-8 L-136,-32 L-124,8 Z"/>
+    <path d="M-105,-4 L-116,-28 L-107,10 Z"/>
+
+    <!-- LEFT WING lower sweep -->
+    <path d="M-12,5
+             C-35,15 -72,28 -108,35
+             C-144,42 -175,40 -195,30
+             C-210,22 -215,10 -208,0
+             C-200,-8 -185,-10 -168,-6
+             C-148,-2 -128,8 -108,12
+             C-88,16 -60,14 -35,10
+             C-20,7 -10,4 -12,5 Z"/>
+
+    <!-- RIGHT WING — mirror -->
+    <path d="M10,-10
+             C30,-30 70,-55 110,-65
+             C150,-75 185,-70 210,-55
+             C225,-45 228,-30 220,-18
+             C212,-6 195,0 175,-2
+             C155,-4 138,-14 120,-10
+             C102,-6 88,8 70,18
+             C52,28 30,32 15,25
+             C5,20 3,8 10,-10 Z"/>
+
+    <path d="M175,-2 L200,-25 L178,2 Z"/>
+    <path d="M158,-6 L180,-30 L160,4 Z"/>
+    <path d="M140,-10 L158,-35 L142,6 Z"/>
+    <path d="M122,-8 L136,-32 L124,8 Z"/>
+    <path d="M105,-4 L116,-28 L107,10 Z"/>
+
+    <path d="M12,5
+             C35,15 72,28 108,35
+             C144,42 175,40 195,30
+             C210,22 215,10 208,0
+             C200,-8 185,-10 168,-6
+             C148,-2 128,8 108,12
+             C88,16 60,14 35,10
+             C20,7 10,4 12,5 Z"/>
+
+    <!-- BODY — sleek oval -->
+    <ellipse cx="0" cy="30" rx="34" ry="52"/>
+
+    <!-- TAIL — fan shape -->
+    <path d="M-28,75 C-38,100 -38,125 -28,145 L0,152 L28,145
+             C38,125 38,100 28,75 Z"/>
+    <!-- Tail feather lines -->
+
+    <!-- NECK connecting body to head -->
+    <ellipse cx="0" cy="-18" rx="20" ry="20"/>
+
+  </g>
+
+  <!-- ══ WHITE HEAD ══ -->
+  <ellipse cx="256" cy="148" rx="36" ry="40" fill="#ede8c6"/>
+  <ellipse cx="250" cy="138" rx="18" ry="14" fill="#f8f4e4" opacity="0.5"/>
+
+  <!-- ══ SHARP HOOKED BEAK ══ -->
+  <path d="M284,144 C310,136 330,144 328,158
+           C325,168 312,172 296,168 L284,156 Z"
+        fill="#f59e0b" stroke="#8a4500" stroke-width="2"/>
+  <path d="M326,158 C334,165 332,178 322,183
+           C315,186 310,181 313,175"
+        fill="#f59e0b" stroke="#8a4500" stroke-width="2"/>
+  <path d="M284,156 L308,160 L318,167 L284,167 Z"
+        fill="#d97706" stroke="#8a4500" stroke-width="1.5"/>
+  <path d="M284,144 L326,148" stroke="#fcd34d" stroke-width="1.5" opacity="0.45"/>
+  <ellipse cx="300" cy="145" rx="3.5" ry="2" fill="#7c3500" opacity="0.7"/>
+
+  <!-- ══ FIERCE EYE ══ -->
+  <circle cx="270" cy="148" r="15" fill="#0a0500"/>
+  <circle cx="270" cy="148" r="11" fill="#c47800"/>
+  <circle cx="270" cy="148" r="7.5" fill="#8a5000"/>
+  <circle cx="270" cy="148" r="4.5" fill="#050200"/>
+  <ellipse cx="265" cy="143" rx="2.5" ry="3" fill="white" opacity="0.92"/>
+  <circle cx="274" cy="152" r="1" fill="white" opacity="0.38"/>
+  <path d="M256,136 C262,130 278,130 288,137"
+        fill="none" stroke="#8a6010" stroke-width="4" stroke-linecap="round" opacity="0.72"/>
+
+  <!-- ══ TALONS ══ -->
+  <g transform="translate(256,340)">
+    <!-- Left -->
+    <ellipse cx="-18" cy="0" rx="13" ry="7" fill="#8a4000" stroke="#f59e0b" stroke-width="1.5"/>
+    <path d="M-28,4 C-36,16 -38,30 -33,40" fill="none" stroke="#f59e0b" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M-21,6 C-26,19 -26,33 -22,43" fill="none" stroke="#f59e0b" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M-14,7 C-16,20 -15,34 -12,44" fill="none" stroke="#f59e0b" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M-7,5 C-6,18 -5,32 -8,42" fill="none" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+    <!-- Right -->
+    <ellipse cx="18" cy="0" rx="13" ry="7" fill="#8a4000" stroke="#f59e0b" stroke-width="1.5"/>
+    <path d="M7,5 C6,18 5,32 8,42" fill="none" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+    <path d="M14,7 C16,20 15,34 12,44" fill="none" stroke="#f59e0b" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M21,6 C26,19 26,33 22,43" fill="none" stroke="#f59e0b" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M28,4 C36,16 38,30 33,40" fill="none" stroke="#f59e0b" stroke-width="4.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Feather texture lines on wings -->
+  <path d="M80,220 C120,210 160,208 200,214" fill="none" stroke="#fcd34d" stroke-width="1.5" opacity="0.3"/>
+  <path d="M60,230 C100,222 148,220 192,226" fill="none" stroke="#fcd34d" stroke-width="1.2" opacity="0.22"/>
+  <path d="M432,220 C392,210 352,208 312,214" fill="none" stroke="#fcd34d" stroke-width="1.5" opacity="0.3"/>
+  <path d="M452,230 C412,222 364,220 320,226" fill="none" stroke="#fcd34d" stroke-width="1.2" opacity="0.22"/>
+
+  </g>
+
+  <!-- ══ HOOD TEXT ══ -->
+  <text x="259" y="468" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900"
+        font-size="94" fill="#0d0500">HOOD</text>
+  <text x="256" y="465" text-anchor="middle" font-family="Arial Black,Arial" font-weight="900"
+        font-size="94" fill="#f59e0b">HOOD</text>
+  <text x="256" y="494" text-anchor="middle" font-family="Arial" font-weight="700"
+        font-size="14" fill="#7c3500" letter-spacing="7">BASE NETWORK</text>
+
+  <!-- Shine -->
+  <radialGradient id="shine" cx="34%" cy="27%" r="50%">
+    <stop offset="0%" stop-color="white" stop-opacity="0.07"/>
+    <stop offset="100%" stop-color="white" stop-opacity="0"/>
+  </radialGradient>
+  <circle cx="256" cy="256" r="256" fill="url(#shine)"/>
+</svg>

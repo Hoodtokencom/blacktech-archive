@@ -1,0 +1,26 @@
+📊 *Blacktech Weekly Finance Report*
+Week of Jun 09, 2026
+
+💰 *Revenue*
+  Total Invoiced:  $261,239
+  Collected:       $0
+  Still Owed:      $261,239
+  Overdue (0):   $0
+
+🔧 *Jobs*
+  Active:   0
+  Invoiced: 8
+  Leads:    6
+  Total:    18
+
+💸 *Expenses This Month*
+  Operations: $0
+  Payroll:    $7,038
+
+🏦 *Net (collected - expenses)*
+  ⚠️ $-7,038
+
+🧾 *Tax (Q2-2026)*
+  Est. Owed: $66,917
+
+_app.blacktechsolutionscorp.com_

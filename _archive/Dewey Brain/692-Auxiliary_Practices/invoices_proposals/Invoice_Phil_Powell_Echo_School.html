@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1050, initial-scale=1.0">
+<title>Invoice PHIL-LV — Phil Powell | Echo School</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f0f4f8;
+    padding: 30px;
+    color: #1a1a2e;
+  }
+  .invoice-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+    overflow: hidden;
+  }
+  .header {
+    background: linear-gradient(135deg, #002244 0%, #69BE28 100%);
+    color: #fff;
+    padding: 28px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-left .brand h1 { font-size: 22px; font-weight: 700; letter-spacing: 1px; }
+  .header-left .brand .subtitle { font-size: 12px; opacity: 0.85; margin-top: 3px; }
+  .header-center h2 { font-size: 36px; font-weight: 800; letter-spacing: 2px; margin-bottom: 4px; text-align: center; }
+  .header-right { text-align: right; }
+  .header-right .row { display: flex; gap: 24px; justify-content: flex-end; }
+  .header-right .col .label { font-size: 10px; opacity: 0.7; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 3px; }
+  .header-right .col .value { font-size: 15px; font-weight: 700; }
+
+  .billing-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 32px;
+    gap: 24px;
+  }
+  .billing-box {
+    flex: 1;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 16px 20px;
+  }
+  .billing-box h3 { font-size: 11px; text-transform: uppercase; color: #64748b; letter-spacing: 1.5px; margin-bottom: 10px; font-weight: 700; }
+  .billing-box p { font-size: 13px; line-height: 1.7; color: #334155; }
+  .billing-box p strong { color: #1a1a2e; font-size: 14px; }
+
+  .job-details {
+    margin: 0 32px 20px;
+    background: #f8fafc;
+    border-left: 4px solid #69BE28;
+    border-radius: 0 8px 8px 0;
+    padding: 16px 20px;
+    display: flex;
+    gap: 32px;
+  }
+  .job-col .label { font-size: 10px; text-transform: uppercase; color: #64748b; letter-spacing: 1px; margin-bottom: 4px; font-weight: 600; }
+  .job-col .value { font-size: 14px; font-weight: 700; color: #1a1a2e; }
+
+  .line-items { padding: 0 32px 16px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  thead th {
+    background: #002244;
+    color: #fff;
+    padding: 12px 10px;
+    text-align: left;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  thead th:nth-child(1) { width: 5%; text-align: center; }
+  thead th:nth-child(2) { width: 45%; }
+  thead th:nth-child(3) { width: 10%; text-align: center; }
+  thead th:nth-child(4) { width: 10%; text-align: center; }
+  thead th:nth-child(5) { width: 15%; text-align: right; }
+  thead th:nth-child(6) { width: 15%; text-align: right; }
+  tbody tr { border-bottom: 1px solid #e2e8f0; }
+  tbody tr:last-child { border-bottom: none; }
+  tbody td { padding: 10px; vertical-align: top; color: #334155; }
+  tbody td:nth-child(1) { text-align: center; font-weight: 600; color: #64748b; }
+  tbody td:nth-child(3), tbody td:nth-child(4) { text-align: center; }
+  tbody td:nth-child(5), tbody td:nth-child(6) { text-align: right; font-weight: 600; }
+  tbody td:nth-child(6) { color: #002244; font-size: 14px; }
+  .item-name { font-weight: 700; color: #1a1a2e; }
+  .item-desc { font-size: 12px; color: #64748b; margin-top: 2px; }
+  .section-row { background: #e8f0e0 !important; }
+  .section-row td { font-weight: 700; color: #002244; text-transform: uppercase; font-size: 11px; letter-spacing: 0.5px; }
+
+  .summary {
+    padding: 16px 32px 24px;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 2px solid #002244;
+    margin: 0 32px;
+  }
+  .summary-box { min-width: 280px; }
+  .summary-row { display: flex; justify-content: space-between; margin-bottom: 6px; font-size: 13px; }
+  .summary-row .label { color: #64748b; }
+  .summary-row .value { font-weight: 600; color: #334155; }
+  .summary-row.total { font-size: 20px; font-weight: 800; color: #1a1a2e; margin-top: 8px; padding-top: 8px; border-top: 2px solid #002244; }
+  .summary-row.total .value { color: #69BE28; }
+
+  .payment-info {
+    margin: 24px 32px 20px;
+    background: #f8fafc;
+    border-left: 4px solid #69BE28;
+    border-radius: 0 8px 8px 0;
+    padding: 16px 20px;
+  }
+  .payment-info h3 { font-size: 12px; text-transform: uppercase; color: #64748b; letter-spacing: 1px; margin-bottom: 10px; font-weight: 700; }
+  .payment-info p { font-size: 13px; line-height: 1.8; color: #334155; }
+  .payment-info p strong { color: #1a1a2e; }
+
+  .terms {
+    margin: 0 32px 20px;
+    padding: 16px 20px;
+    background: #fffbeb;
+    border: 1px solid #fcd34d;
+    border-radius: 8px;
+  }
+  .terms h3 { font-size: 12px; text-transform: uppercase; color: #b45309; letter-spacing: 1px; margin-bottom: 8px; font-weight: 700; }
+  .terms p { font-size: 12px; line-height: 1.7; color: #78350f; }
+
+  .signatures {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px 24px;
+    gap: 32px;
+  }
+  .sig-box { flex: 1; border-top: 2px solid #002244; padding-top: 12px; }
+  .sig-box h4 { font-size: 12px; text-transform: uppercase; color: #64748b; letter-spacing: 1px; margin-bottom: 24px; font-weight: 700; }
+  .sig-line { border-bottom: 1px solid #94a3b8; height: 32px; margin-bottom: 6px; }
+  .sig-label { font-size: 11px; color: #64748b; margin-bottom: 16px; }
+
+  .footer {
+    background: linear-gradient(135deg, #002244 0%, #69BE28 100%);
+    color: #fff;
+    padding: 20px 32px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.8;
+  }
+  .footer .top { font-weight: 600; margin-bottom: 4px; }
+  .footer .bottom { opacity: 0.85; font-size: 11px; }
+</style>
+</head>
+<body>
+<div class="invoice-container">
+
+  <div class="header">
+    <div class="header-left">
+      <div class="brand">
+        <h1>BLACKTECH SOLUTIONS CORP</h1>
+        <div class="subtitle">Electrical Contractor · Chicago, IL</div>
+      </div>
+    </div>
+    <div class="header-center">
+      <h2>INVOICE</h2>
+    </div>
+    <div class="header-right">
+      <div class="row">
+        <div class="col">
+          <div class="label">Invoice #</div>
+          <div class="value">PHIL-LV</div>
+        </div>
+        <div class="col">
+          <div class="label">Date</div>
+          <div class="value">06/01/2026</div>
+        </div>
+        <div class="col">
+          <div class="label">Due Date</div>
+          <div class="value">06/15/2026</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="billing-section">
+    <div class="billing-box">
+      <h3>Bill From</h3>
+      <p><strong>Blacktech Solutions Corp</strong><br>
+      14076 Lincoln Ave<br>
+      Dolton, IL 60419<br>
+      (312) 965-2782<br>
+      invoices@blacktechsolutionscorp.com</p>
+    </div>
+    <div class="billing-box">
+      <h3>Bill To</h3>
+      <p><strong>Phil Powell</strong><br>
+      Echo School<br>
+      350 W 154th St<br>
+      South Holland, IL 60473</p>
+    </div>
+  </div>
+
+  <div class="job-details">
+    <div class="job-col">
+      <div class="label">Job Name</div>
+      <div class="value">Echo School — Electrical & Low Voltage</div>
+    </div>
+    <div class="job-col">
+      <div class="label">Estimate #</div>
+      <div class="value">BSC-E-2026-PHIL-001-EL / LV</div>
+    </div>
+    <div class="job-col">
+      <div class="label">Date</div>
+      <div class="value">06/01/2026</div>
+    </div>
+  </div>
+
+  <div class="line-items">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Description</th>
+          <th>Qty</th>
+          <th>Unit</th>
+          <th>Rate</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- ELECTRICAL SECTION -->
+        <tr class="section-row">
+          <td colspan="6"><div class="item-name">⚡ Electrical Work</div></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            <div class="item-name">Exit Sign R&R</div>
+            <div class="item-desc">Surface/flush mount, 120V hardwired</div>
+          </td>
+          <td>6</td>
+          <td>Ea</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            <div class="item-name">Emergency Lighting R&R</div>
+            <div class="item-desc">Surface/flush mount, 120V hardwired</div>
+          </td>
+          <td>4</td>
+          <td>Ea</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>
+            <div class="item-name">General Lighting R&R</div>
+            <div class="item-desc">Recessed/surface mount, 120V</div>
+          </td>
+          <td>12</td>
+          <td>Ea</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>
+            <div class="item-name">System Test & Commissioning</div>
+            <div class="item-desc">Electrical systems verification</div>
+          </td>
+          <td>1</td>
+          <td>Lot</td>
+          <td>—</td>
+          <td>$0.00</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>
+            <div class="item-name">Electrical Labor</div>
+            <div class="item-desc">15 hrs @ $113.49/hr — all electrical work</div>
+          </td>
+          <td>15</td>
+          <td>Hrs</td>
+          <td>$113.49</td>
+          <td>$1,702.35</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>
+            <div class="item-name">Electrical Margin (17.5%)</div>
+            <div class="item-desc">Overhead & profit</div>
+          </td>
+          <td>1</td>
+          <td>Lot</td>
+          <td>—</td>
+          <td>$297.91</td>
+        </tr>
+
+        <!-- LOW VOLTAGE SECTION -->
+        <tr class="section-row">
+          <td colspan="6"><div class="item-name">📡 Low Voltage / Fire Alarm</div></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>
+            <div class="item-name">CO/Smoke Detector R&R</div>
+            <div class="item-desc">Ceiling mount, low-voltage loop</div>
+          </td>
+          <td>30</td>
+          <td>Ea</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>
+            <div class="item-name">Speaker R&R</div>
+            <div class="item-desc">Ceiling/surface mount, voice evacuation</div>
+          </td>
+          <td>10</td>
+          <td>Ea</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>
+            <div class="item-name">Security Camera R&R</div>
+            <div class="item-desc">Ceiling/wall mount, CAT6/IP</div>
+          </td>
+          <td>8</td>
+          <td>Ea</td>
+          <td>—</td>
+          <td>—</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>
+            <div class="item-name">System Test & Commissioning</div>
+            <div class="item-desc">Fire alarm & low voltage systems verification</div>
+          </td>
+          <td>1</td>
+          <td>Lot</td>
+          <td>—</td>
+          <td>$0.00</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>
+            <div class="item-name">Low Voltage Labor</div>
+            <div class="item-desc">60 hrs @ $107.75/hr — all LV/fire alarm work</div>
+          </td>
+          <td>60</td>
+          <td>Hrs</td>
+          <td>$107.75</td>
+          <td>$6,465.00</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>
+            <div class="item-name">Low Voltage Margin (17.5%)</div>
+            <div class="item-desc">Overhead & profit</div>
+          </td>
+          <td>1</td>
+          <td>Lot</td>
+          <td>—</td>
+          <td>$1,131.38</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <div class="summary">
+    <div class="summary-box">
+      <div class="summary-row">
+        <span class="label">Electrical Subtotal</span>
+        <span class="value">$1,702.35</span>
+      </div>
+      <div class="summary-row">
+        <span class="label">Electrical Margin (17.5%)</span>
+        <span class="value">$297.91</span>
+      </div>
+      <div class="summary-row">
+        <span class="label">Electrical Total</span>
+        <span class="value">$2,000.26</span>
+      </div>
+      <div class="summary-row" style="margin-top:8px;">
+        <span class="label">Low Voltage Subtotal</span>
+        <span class="value">$6,465.00</span>
+      </div>
+      <div class="summary-row">
+        <span class="label">Low Voltage Margin (17.5%)</span>
+        <span class="value">$1,131.38</span>
+      </div>
+      <div class="summary-row">
+        <span class="label">Low Voltage Total</span>
+        <span class="value">$7,596.38</span>
+      </div>
+      <div class="summary-row total">
+        <span class="label">TOTAL DUE</span>
+        <span class="value">$9,596.64</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="payment-info">
+    <h3>Payment Information</h3>
+    <p>
+      <strong>Make checks payable to:</strong> Blacktech Solutions Corp<br>
+      <strong>Zelle / Cash App:</strong> (312) 965-2782<br>
+      <strong>Mail to:</strong> 14076 Lincoln Ave, Dolton, IL 60419<br>
+      <strong>Email:</strong> invoices@blacktechsolutionscorp.com
+    </p>
+  </div>
+
+  <div class="terms">
+    <h3>Terms & Notes</h3>
+    <p>
+      · Payment due within 15 days of invoice date<br>
+      · Ceiling tile work excluded — performed by General Contractor<br>
+      · All electrical work code-compliant per NEC 2023<br>
+      · All low voltage / fire alarm work NICET-certified per NFPA 72<br>
+      · Materials customer-supplied or TBD — not included in this invoice<br>
+      · Warranty: 1-year labor on all installed fixtures and devices
+    </p>
+  </div>
+
+  <div class="signatures">
+    <div class="sig-box">
+      <h4>Customer Acceptance</h4>
+      <div class="sig-line"></div>
+      <div class="sig-label">Phil Powell — Date: _______________</div>
+    </div>
+    <div class="sig-box">
+      <h4>Contractor</h4>
+      <div class="sig-line"></div>
+      <div class="sig-label">Derrell Black, Blacktech Solutions Corp — Date: _______________</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="top">Blacktech Solutions Corp · (312) 965-2782 · invoices@blacktechsolutionscorp.com</div>
+    <div class="bottom">14076 Lincoln Ave, Dolton, IL 60419 · Thank you for your business!</div>
+  </div>
+
+</div>
+</body>
+</html>

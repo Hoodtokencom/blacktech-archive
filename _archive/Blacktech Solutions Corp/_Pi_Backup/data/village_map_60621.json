@@ -1,0 +1,48 @@
+{
+  "zip": "60621",
+  "city": "Chicago",
+  "state": "IL",
+  "neighborhood": "Englewood Community",
+  "linked_to": "New York City",
+  "streets": ["55th","59th","63rd","67th","71st","75th"],
+  "corridors": [
+    {"id": "c1", "name": "May / Aberdeen / Carpenter / Morgan"},
+    {"id": "c2", "name": "Sangamon / Peoria / Green / Halsted"},
+    {"id": "c3", "name": "Emerald / Union / Lowe / Parnell"},
+    {"id": "c4", "name": "Normal / Stewart / Harvard / Princeton / Yale"},
+    {"id": "c5", "name": "Wentworth / Perry / Lafayette"}
+  ],
+  "villages": [
+    {"id":"v18","num":18,"name":"Village 18","street":"55th","corridor":"c1","district":"D21","churches":4,"schools":[],"businesses":[],"notes":"4 churches"},
+    {"id":"v16","num":16,"name":"Village 16","street":"55th","corridor":"c2","district":"D7","churches":0,"schools":[],"businesses":[],"notes":""},
+    {"id":"v17","num":17,"name":"Village 17","street":"55th","corridor":"c3","district":"D7","churches":0,"schools":[],"businesses":[],"notes":""},
+    {"id":"v15","num":15,"name":"Village 15","street":"55th","corridor":"c4","district":"D7","churches":0,"schools":[{"name":"Hope H.S.","students":989}],"businesses":[],"notes":"Hope H.S. 989 students"},
+    {"id":"v22","num":22,"name":"Village 22","street":"55th","corridor":"c5","district":"D21","churches":0,"schools":[],"businesses":[],"notes":""},
+    {"id":"v19","num":19,"name":"Village 19","street":"59th","corridor":"c1","district":"D127","churches":0,"schools":[],"businesses":[],"notes":""},
+    {"id":"v13","num":13,"name":"Village 13","street":"59th","corridor":"c2","district":"D129","churches":0,"schools":[],"businesses":[],"notes":""},
+    {"id":"v20","num":20,"name":"Village 20","street":"59th","corridor":"c3","district":"D130","churches":0,"schools":[],"businesses":[],"notes":""},
+    {"id":"v21","num":21,"name":"Village 21","street":"59th","corridor":"c4","district":"D132","churches":0,"schools":[],"businesses":[],"notes":""},
+    {"id":"v23","num":23,"name":"Village 23","street":"59th","corridor":"c5","district":"D104","churches":0,"schools":[],"businesses":[],"notes":""},
+    {"id":"v09","num":9,"name":"Village 09","street":"63rd","corridor":"c1","district":"D127","churches":0,"schools":[],"businesses":[],"notes":""},
+    {"id":"v04","num":4,"name":"Village 04","street":"63rd","corridor":"c2","district":"D129","churches":0,"schools":[],"businesses":[],"notes":""},
+    {"id":"v07","num":7,"name":"Village 07","street":"63rd","corridor":"c3","district":"D131","churches":0,"schools":[],"businesses":[],"notes":""},
+    {"id":"v05","num":5,"name":"Village 05","street":"63rd","corridor":"c4","district":"D132","churches":0,"schools":[],"businesses":[],"notes":""},
+    {"id":"v24","num":24,"name":"Village 24","street":"63rd","corridor":"c5","district":"D105","churches":0,"schools":[],"businesses":[],"notes":""},
+    {"id":"v03","num":3,"name":"Village 03","street":"67th","corridor":"c1","district":"D127","churches":0,"schools":[{"name":"Bond School","students":674}],"businesses":[],"notes":"Bond School 674 students"},
+    {"id":"v02","num":2,"name":"Village 02","street":"67th","corridor":"c2","district":"D129","churches":0,"schools":[],"businesses":[],"notes":""},
+    {"id":"v00","num":0,"name":"Village 00","street":"67th","corridor":"c3","district":"D131","churches":0,"schools":[],"businesses":[],"notes":""},
+    {"id":"v01","num":1,"name":"Village 01","street":"67th","corridor":"c4","district":"D104","churches":0,"schools":[{"name":"Parker School","students":805}],"businesses":[],"notes":"Parker School 805 students"},
+    {"id":"v25","num":25,"name":"Village 25","street":"67th","corridor":"c5","district":"D105","churches":0,"schools":[],"businesses":[],"notes":""},
+    {"id":"v11","num":11,"name":"Village 11","street":"71st","corridor":"c1","district":"D128","churches":0,"schools":[{"name":"Stagg School","students":659}],"businesses":[],"notes":"Stagg School 659 students"},
+    {"id":"v10","num":10,"name":"Village 10","street":"71st","corridor":"c2","district":"D129","churches":0,"schools":[],"businesses":[],"notes":""},
+    {"id":"v08","num":8,"name":"Village 08","street":"71st","corridor":"c3","district":"D131","churches":0,"schools":[{"name":"Hinton School","students":651}],"businesses":[],"notes":"Hinton School 651 students"},
+    {"id":"v06","num":6,"name":"Village 06","street":"71st","corridor":"c4","district":"D105","churches":0,"schooles":[],"businesses":[],"notes":""},
+    {"id":"v26","num":26,"name":"Village 26","street":"71st","corridor":"c5","district":"D133","churches":2,"schools":[],"businesses":[],"notes":"2 churches"}
+  ],
+  "stats": {
+    "total_villages": 25,
+    "total_schools": 5,
+    "total_churches": 6,
+    "total_street_rows": 6
+  }
+}

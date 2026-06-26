@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Finance — Blacktech Solutions</title>
+<!-- v2026060302 -->
+<link rel="manifest" href="/finance_manifest.json"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="Finance"/>
+<meta name="theme-color" content="#00aaff"/>
+<link rel="apple-touch-icon" href="/icons/finance-192.png"/>
+<script>
+// Force clear ALL caches and service workers on every load
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.getRegistrations().then(regs=>{
+    regs.forEach(r=>r.unregister());
+  });
+}
+if('caches' in window){
+  caches.keys().then(keys=>{
+    keys.forEach(k=>caches.delete(k));
+  });
+}
+</script>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#0a0f1e;color:#e0e6f0;font-family:'Segoe UI',sans-serif;min-height:100vh;padding:0 0 60px}
+
+  /* ── Header ── */
+  .header{background:linear-gradient(135deg,#001a33 0%,#002a55 100%);padding:18px 20px 14px;border-bottom:2px solid #00aaff44;display:flex;align-items:center;gap:12px}
+  .header .logo{font-size:1.6rem}
+  .header h1{font-size:1.15rem;font-weight:700;color:#fff;line-height:1.2}
+  .header p{font-size:0.7rem;color:#A5ACAF;margin-top:2px}
+
+  /* ── Tabs ── */
+  .tabs{display:flex;background:#060c18;border-bottom:2px solid #001a33;overflow-x:auto}
+  .tab{flex:1;min-width:80px;padding:12px 8px;text-align:center;font-size:0.72rem;font-weight:700;color:#A5ACAF;cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;transition:all .2s}
+  .tab.active{color:#00aaff;border-bottom-color:#00aaff;background:#001a33}
+  .tab:hover:not(.active){color:#fff;background:#001020}
+
+  /* ── Panels ── */
+  .panel{display:none;padding:16px}
+  .panel.active{display:block}
+
+  /* ── Summary Cards ── */
+  .summary-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
+  .sum-card{background:#001a33;border:1px solid #002a55;border-radius:10px;padding:12px;text-align:center}
+  .sum-card .val{font-size:1.25rem;font-weight:800;color:#00aaff}
+  .sum-card .val.green{color:#22c55e}
+  .sum-card .val.red{color:#ef4444}
+  .sum-card .val.yellow{color:#fbbf24}
+  .sum-card .lbl{font-size:0.62rem;color:#A5ACAF;margin-top:3px;text-transform:uppercase;letter-spacing:.04em}
+
+  /* ── Section Header ── */
+  .sec-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+  .sec-head h2{font-size:0.85rem;font-weight:700;color:#fff}
+  .btn{background:#00aaff;color:#000;border:none;border-radius:7px;padding:7px 14px;font-size:0.72rem;font-weight:700;cursor:pointer;transition:background .2s}
+  .btn:hover{background:#0088cc}
+  .btn.red{background:#ef4444;color:#fff}
+  .btn.green{background:#22c55e;color:#000}
+  .btn.gray{background:#334155;color:#fff}
+
+  /* ── Expense Table ── */
+  .exp-table{width:100%;border-collapse:collapse;font-size:0.75rem;margin-bottom:20px}
+  .exp-table th{background:#001a33;color:#A5ACAF;padding:8px 10px;text-align:left;font-size:0.65rem;text-transform:uppercase;letter-spacing:.04em}
+  .exp-table td{padding:9px 10px;border-bottom:1px solid #001a33;vertical-align:middle}
+  .exp-table tr:hover td{background:#001020}
+  .badge{display:inline-block;padding:2px 8px;border-radius:20px;font-size:0.62rem;font-weight:700}
+  .badge.food{background:#7c3aed22;color:#a78bfa;border:1px solid #7c3aed44}
+  .badge.fuel{background:#f9731622;color:#fb923c;border:1px solid #f9731644}
+  .badge.tools{background:#0891b222;color:#22d3ee;border:1px solid #0891b244}
+  .badge.subs{background:#0d948822;color:#2dd4bf;border:1px solid #0d948844}
+  .badge.mat{background:#16a34a22;color:#4ade80;border:1px solid #16a34a44}
+  .badge.rent{background:#dc262622;color:#f87171;border:1px solid #dc262644}
+  .badge.labor{background:#ca8a0422;color:#fbbf24;border:1px solid #ca8a0444}
+  .badge.insurance{background:#6366f122;color:#818cf8;border:1px solid #6366f144}
+  .badge.phone{background:#ec489922;color:#f472b6;border:1px solid #ec489944}
+  .badge.travel{background:#f59e0b22;color:#fbbf24;border:1px solid #f59e0b44}
+  .badge.utils{background:#14b8a622;color:#2dd4bf;border:1px solid #14b8a644}
+  .badge.clothes{background:#8b5cf622;color:#c4b5fd;border:1px solid #8b5cf644}
+  .badge.entertain{background:#ef444422;color:#fca5a5;border:1px solid #ef444444}
+  .badge.groceries{background:#22c55e22;color:#4ade80;border:1px solid #22c55e44}
+  .badge.other{background:#33415522;color:#94a3b8;border:1px solid #33415544}
+
+  /* ── Quick Pick Buttons ── */
+  .quickpick{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+  .qp{background:#001a33;border:1px solid #002a55;border-radius:20px;padding:5px 12px;font-size:0.68rem;color:#A5ACAF;cursor:pointer;transition:all .2s;white-space:nowrap}
+  .qp:hover{border-color:#00aaff;color:#fff;background:#001a4d}
+  .qp:active{background:#002a55}
+
+  /* ── Category Budget Bars ── */
+  .cat-budget-list{margin-bottom:18px}
+  .cat-bud-row{background:#001a33;border:1px solid #002a55;border-radius:8px;padding:10px 12px;margin-bottom:8px}
+  .cat-bud-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:5px}
+  .cat-bud-name{font-size:0.72rem;font-weight:700;color:#fff}
+  .cat-bud-vals{font-size:0.65rem;color:#A5ACAF}
+  .cat-bud-edit{background:none;border:none;color:#00aaff;font-size:0.65rem;cursor:pointer;padding:0}
+  .cat-bud-track{background:#060c18;border-radius:20px;height:6px;overflow:hidden}
+  .cat-bud-fill{height:100%;border-radius:20px;transition:width .4s}
+  .del-btn{background:none;border:none;color:#ef4444;cursor:pointer;font-size:0.85rem;padding:0 4px}
+  .edit-btn{background:none;border:none;color:#00aaff;cursor:pointer;font-size:0.85rem;padding:0 4px}
+
+  /* ── Add Expense Form ── */
+  .add-form{background:#001a33;border:1px solid #002a55;border-radius:10px;padding:14px;margin-bottom:20px;display:none}
+  .add-form.open{display:block}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
+  .form-row.single{grid-template-columns:1fr}
+  label{font-size:0.68rem;color:#A5ACAF;display:block;margin-bottom:3px;text-transform:uppercase}
+  input,select,textarea{width:100%;background:#060c18;border:1px solid #002a55;color:#e0e6f0;border-radius:6px;padding:8px 10px;font-size:0.8rem}
+  input:focus,select:focus{outline:none;border-color:#00aaff}
+
+  /* ── Budget Bar ── */
+  .budget-bar-wrap{background:#001a33;border:1px solid #002a55;border-radius:10px;padding:14px;margin-bottom:14px}
+  .bar-label{display:flex;justify-content:space-between;font-size:0.7rem;color:#A5ACAF;margin-bottom:6px}
+  .bar-track{background:#060c18;border-radius:20px;height:10px;overflow:hidden}
+  .bar-fill{height:100%;border-radius:20px;transition:width .4s}
+  .bar-fill.safe{background:linear-gradient(90deg,#22c55e,#4ade80)}
+  .bar-fill.warn{background:linear-gradient(90deg,#fbbf24,#f59e0b)}
+  .bar-fill.over{background:linear-gradient(90deg,#ef4444,#dc2626)}
+
+  /* ── Monthly Calendar Strip ── */
+  .month-strip{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;margin-bottom:18px}
+  .day-pill{min-width:38px;background:#001a33;border:1px solid #002a55;border-radius:8px;padding:6px 4px;text-align:center;cursor:pointer;flex-shrink:0}
+  .day-pill .d-num{font-size:0.75rem;font-weight:700;color:#fff}
+  .day-pill .d-amt{font-size:0.55rem;color:#A5ACAF}
+  .day-pill.today{border-color:#00aaff;background:#001a4d}
+  .day-pill.has-exp .d-num{color:#fbbf24}
+
+  /* ── Credit Panel ── */
+  .credit-section{margin-bottom:22px}
+  .credit-section h2{font-size:0.8rem;color:#A5ACAF;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid #001a33}
+  .credit-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .credit-card{background:#001a33;border:1px solid #002a55;border-radius:10px;padding:14px;text-decoration:none;display:flex;flex-direction:column;gap:6px;transition:border-color .2s,background .2s}
+  .credit-card:hover{border-color:#00aaff;background:#001a4d}
+  .credit-card .cc-icon{font-size:1.5rem}
+  .credit-card .cc-name{font-size:0.78rem;font-weight:700;color:#fff}
+  .credit-card .cc-desc{font-size:0.62rem;color:#A5ACAF;line-height:1.4}
+  .credit-card .cc-tag{display:inline-block;padding:2px 8px;border-radius:20px;font-size:0.6rem;font-weight:700;margin-top:2px;width:fit-content}
+  .cc-tag.personal{background:#7c3aed33;color:#a78bfa;border:1px solid #7c3aed55}
+  .cc-tag.business{background:#0891b233;color:#22d3ee;border:1px solid #0891b255}
+
+  /* ── Tax Section ── */
+  .tax-card{background:#001a33;border:1px solid #002a55;border-radius:10px;padding:14px;margin-bottom:12px}
+  .tax-card h3{font-size:0.78rem;font-weight:700;color:#fbbf24;margin-bottom:8px}
+  .tax-row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid #001020;font-size:0.75rem}
+  .tax-row:last-child{border-bottom:none;font-weight:700;color:#fff}
+  .tax-row .tl{color:#A5ACAF}
+  .tax-row .tv{color:#fff}
+  .tax-row.total .tl{color:#fbbf24}
+  .tax-row.total .tv{color:#fbbf24;font-size:0.9rem}
+
+  /* ── Empty state ── */
+  .empty{text-align:center;padding:30px 20px;color:#A5ACAF;font-size:0.78rem}
+  .empty .ei{font-size:2rem;margin-bottom:8px}
+
+  /* ── Modal ── */
+  .modal-bg{display:none;position:fixed;inset:0;background:#000000bb;z-index:1000;align-items:center;justify-content:center}
+  .modal-bg.open{display:flex}
+  .modal{background:#001a33;border:1px solid #002a55;border-radius:14px;padding:20px;width:90%;max-width:400px;max-height:90vh;overflow-y:auto}
+  .modal h2{font-size:0.95rem;font-weight:700;margin-bottom:14px;color:#fff}
+  .modal-actions{display:flex;gap:10px;margin-top:14px}
+  .modal-actions .btn{flex:1}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="logo">💰</div>
+  <div>
+    <h1>Finance Dashboard</h1>
+    <p>Blacktech Solutions Corp · Daily Expense Tracker</p>
+  </div>
+</div>
+
+<!-- TABS -->
+<div class="tabs">
+  <div class="tab active" onclick="switchTab('business')">💼 Business</div>
+  <div class="tab" onclick="switchTab('personal')">🏠 Personal</div>
+  <div class="tab" onclick="switchTab('taxes')">🧾 Taxes</div>
+  <div class="tab" onclick="switchTab('credit')">💳 Credit</div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     BUSINESS TAB
+════════════════════════════════════════════ -->
+<div class="panel active" id="panel-business">
+
+  <!-- Summary -->
+  <div class="summary-row">
+    <div class="sum-card">
+      <div class="val green" id="biz-income">$0</div>
+      <div class="lbl">Monthly Income</div>
+    </div>
+    <div class="sum-card">
+      <div class="val red" id="biz-spent">$0</div>
+      <div class="lbl">Total Spent</div>
+    </div>
+    <div class="sum-card">
+      <div class="val yellow" id="biz-left">$0</div>
+      <div class="lbl">Remaining</div>
+    </div>
+  </div>
+
+  <!-- Budget Bar -->
+  <div class="budget-bar-wrap">
+    <div class="bar-label">
+      <span>Business Budget</span>
+      <span id="biz-pct">0%</span>
+    </div>
+    <div class="bar-track"><div class="bar-fill safe" id="biz-bar" style="width:0%"></div></div>
+  </div>
+
+  <!-- Day Strip -->
+  <div class="month-strip" id="biz-day-strip"></div>
+
+  <!-- Add Button -->
+  <div class="sec-head">
+    <h2>📋 Expenses</h2>
+    <button class="btn" onclick="toggleForm('biz-form')">+ Add</button>
+  </div>
+
+  <!-- Add Form -->
+  <div class="add-form" id="biz-form">
+    <!-- Quick Picks -->
+    <div style="margin-bottom:10px">
+      <label style="margin-bottom:6px">⚡ Quick Pick</label>
+      <div class="quickpick" id="biz-quickpick">
+        <div class="qp" onclick="quickPick('biz','Insurance','insurance')">🛡️ Insurance</div>
+        <div class="qp" onclick="quickPick('biz','Fuel','fuel')">⛽ Fuel</div>
+        <div class="qp" onclick="quickPick('biz','Travel','travel')">✈️ Travel</div>
+        <div class="qp" onclick="quickPick('biz','Tools','tools')">🔧 Tools</div>
+        <div class="qp" onclick="quickPick('biz','Subscription','subs')">📱 Subscription</div>
+        <div class="qp" onclick="quickPick('biz','Phone','phone')">📞 Phone</div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div>
+        <label>Date</label>
+        <input type="date" id="biz-date"/>
+      </div>
+      <div>
+        <label>Amount ($)</label>
+        <input type="number" id="biz-amount" placeholder="0.00" step="0.01"/>
+      </div>
+    </div>
+    <div class="form-row">
+      <div>
+        <label>Description</label>
+        <input type="text" id="biz-desc" placeholder="e.g. Wire from Home Depot"/>
+      </div>
+      <div>
+        <label>Category</label>
+        <select id="biz-cat">
+          <option value="insurance">🛡️ Insurance</option>
+          <option value="fuel">⛽ Fuel</option>
+          <option value="travel">✈️ Travel</option>
+          <option value="tools">🔧 Tools / Equipment</option>
+          <option value="subs">📱 Subscriptions</option>
+          <option value="phone">📞 Phone</option>
+          <option value="mat">🧱 Materials</option>
+          <option value="labor">👷 Subcontractor</option>
+          <option value="other">📦 Other</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row single">
+      <div>
+        <label>Notes (optional)</label>
+        <input type="text" id="biz-notes" placeholder="Job # or client reference"/>
+      </div>
+    </div>
+    <div style="display:flex;gap:10px">
+      <button class="btn green" onclick="addExpense('business')">Save</button>
+      <button class="btn gray" onclick="toggleForm('biz-form')">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Category Budget Bars -->
+  <div class="sec-head" style="margin-top:4px">
+    <h2>📊 Category Budgets</h2>
+    <button class="btn gray" style="font-size:0.65rem;padding:5px 10px" onclick="openCatBudgetModal('biz')">Edit Limits</button>
+  </div>
+  <div class="cat-budget-list" id="biz-cat-budgets"></div>
+
+  <!-- Table -->
+  <table class="exp-table">
+    <thead><tr><th>Date</th><th>Description</th><th>Category</th><th>Amount</th><th></th></tr></thead>
+    <tbody id="biz-tbody"></tbody>
+  </table>
+  <div class="empty" id="biz-empty"><div class="ei">📂</div>No business expenses yet. Tap + Add to start.</div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PERSONAL TAB
+════════════════════════════════════════════ -->
+<div class="panel" id="panel-personal">
+
+  <!-- Summary -->
+  <div class="summary-row">
+    <div class="sum-card">
+      <div class="val green" id="per-income">$0</div>
+      <div class="lbl">Monthly Income</div>
+    </div>
+    <div class="sum-card">
+      <div class="val red" id="per-spent">$0</div>
+      <div class="lbl">Total Spent</div>
+    </div>
+    <div class="sum-card">
+      <div class="val yellow" id="per-left">$0</div>
+      <div class="lbl">Remaining</div>
+    </div>
+  </div>
+
+  <!-- Budget Bar -->
+  <div class="budget-bar-wrap">
+    <div class="bar-label">
+      <span>Personal Budget</span>
+      <span id="per-pct">0%</span>
+    </div>
+    <div class="bar-track"><div class="bar-fill safe" id="per-bar" style="width:0%"></div></div>
+  </div>
+
+  <!-- Day Strip -->
+  <div class="month-strip" id="per-day-strip"></div>
+
+  <!-- Add Button -->
+  <div class="sec-head">
+    <h2>📋 Expenses</h2>
+    <button class="btn" onclick="toggleForm('per-form')">+ Add</button>
+  </div>
+
+  <!-- Add Form -->
+  <div class="add-form" id="per-form">
+    <!-- Quick Picks -->
+    <div style="margin-bottom:10px">
+      <label style="margin-bottom:6px">⚡ Quick Pick</label>
+      <div class="quickpick" id="per-quickpick">
+        <div class="qp" onclick="quickPick('per','Rent / Mortgage','rent')">🏠 Rent</div>
+        <div class="qp" onclick="quickPick('per','Groceries','groceries')">🛒 Groceries</div>
+        <div class="qp" onclick="quickPick('per','Gas','fuel')">⛽ Gas</div>
+        <div class="qp" onclick="quickPick('per','Phone Bill','phone')">📞 Phone Bill</div>
+        <div class="qp" onclick="quickPick('per','Utilities','utils')">💡 Utilities</div>
+        <div class="qp" onclick="quickPick('per','Clothes','clothes')">👕 Clothes</div>
+        <div class="qp" onclick="quickPick('per','Entertainment','entertain')">🎬 Entertainment</div>
+        <div class="qp" onclick="quickPick('per','Insurance','insurance')">🛡️ Insurance</div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div>
+        <label>Date</label>
+        <input type="date" id="per-date"/>
+      </div>
+      <div>
+        <label>Amount ($)</label>
+        <input type="number" id="per-amount" placeholder="0.00" step="0.01"/>
+      </div>
+    </div>
+    <div class="form-row">
+      <div>
+        <label>Description</label>
+        <input type="text" id="per-desc" placeholder="e.g. Groceries, Gas, Netflix"/>
+      </div>
+      <div>
+        <label>Category</label>
+        <select id="per-cat">
+          <option value="rent">🏠 Rent / Mortgage</option>
+          <option value="groceries">🛒 Groceries</option>
+          <option value="fuel">⛽ Gas / Transport</option>
+          <option value="phone">📞 Phone Bill</option>
+          <option value="utils">💡 Utilities</option>
+          <option value="clothes">👕 Clothes</option>
+          <option value="entertain">🎬 Entertainment</option>
+          <option value="insurance">🛡️ Insurance</option>
+          <option value="subs">📱 Subscriptions</option>
+          <option value="other">📦 Other</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row single">
+      <div>
+        <label>Notes (optional)</label>
+        <input type="text" id="per-notes" placeholder="Optional note"/>
+      </div>
+    </div>
+    <div style="display:flex;gap:10px">
+      <button class="btn green" onclick="addExpense('personal')">Save</button>
+      <button class="btn gray" onclick="toggleForm('per-form')">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Category Budget Bars -->
+  <div class="sec-head" style="margin-top:4px">
+    <h2>📊 Category Budgets</h2>
+    <button class="btn gray" style="font-size:0.65rem;padding:5px 10px" onclick="openCatBudgetModal('per')">Edit Limits</button>
+  </div>
+  <div class="cat-budget-list" id="per-cat-budgets"></div>
+
+  <!-- Table -->
+  <table class="exp-table">
+    <thead><tr><th>Date</th><th>Description</th><th>Category</th><th>Amount</th><th></th></tr></thead>
+    <tbody id="per-tbody"></tbody>
+  </table>
+  <div class="empty" id="per-empty"><div class="ei">🏠</div>No personal expenses yet. Tap + Add to start.</div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     TAXES TAB
+════════════════════════════════════════════ -->
+<div class="panel" id="panel-taxes">
+
+  <div class="tax-card">
+    <h3>💼 Business Tax Estimate (Self-Employed)</h3>
+    <div class="tax-row"><span class="tl">Gross Income (this month)</span><span class="tv" id="tax-biz-income">$0.00</span></div>
+    <div class="tax-row"><span class="tl">Total Business Expenses</span><span class="tv" id="tax-biz-exp">— $0.00</span></div>
+    <div class="tax-row"><span class="tl">Net Profit</span><span class="tv" id="tax-biz-net">$0.00</span></div>
+    <div class="tax-row"><span class="tl">Self-Employment Tax (15.3%)</span><span class="tv" id="tax-se">$0.00</span></div>
+    <div class="tax-row"><span class="tl">Federal Income Est. (22%)</span><span class="tv" id="tax-fed">$0.00</span></div>
+    <div class="tax-row total"><span class="tl">⚠️ Set Aside (Quarterly)</span><span class="tv" id="tax-total">$0.00</span></div>
+  </div>
+
+  <div class="tax-card">
+    <h3>🏠 Personal Tax Notes</h3>
+    <div class="tax-row"><span class="tl">Personal Income</span><span class="tv" id="tax-per-income">$0.00</span></div>
+    <div class="tax-row"><span class="tl">Personal Expenses Logged</span><span class="tv" id="tax-per-exp">$0.00</span></div>
+    <div class="tax-row"><span class="tl">Standard Deduction (2025)</span><span class="tv">$14,600</span></div>
+    <div class="tax-row total"><span class="tl">💡 Keep all receipts</span><span class="tv" style="color:#22c55e">✓ Track monthly</span></div>
+  </div>
+
+  <div style="background:#001a33;border:1px solid #fbbf2444;border-radius:10px;padding:14px;font-size:0.72rem;color:#A5ACAF;line-height:1.6">
+    <div style="color:#fbbf24;font-weight:700;margin-bottom:6px">⚠️ Quarterly Tax Deadlines</div>
+    Q1 — April 15 &nbsp;|&nbsp; Q2 — June 17 &nbsp;|&nbsp; Q3 — Sept 15 &nbsp;|&nbsp; Q4 — Jan 15
+    <div style="margin-top:8px;color:#A5ACAF">These are estimates only. Consult your accountant for exact filings.</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     CREDIT TAB
+════════════════════════════════════════════ -->
+<div class="panel" id="panel-credit">
+
+  <div class="credit-section">
+    <h2>🏠 Personal Credit</h2>
+    <div class="credit-grid">
+      <a class="credit-card" href="https://www.experian.com/consumer-products/free-credit-report.html" target="_blank">
+        <div class="cc-icon">🔵</div>
+        <div class="cc-name">Experian</div>
+        <div class="cc-desc">Free credit report + FICO score. Check for errors.</div>
+        <div class="cc-tag personal">Personal</div>
+      </a>
+      <a class="credit-card" href="https://www.equifax.com/personal/products/credit/free-credit-report/" target="_blank">
+        <div class="cc-icon">🔴</div>
+        <div class="cc-name">Equifax</div>
+        <div class="cc-desc">Monitor personal credit history + alerts.</div>
+        <div class="cc-tag personal">Personal</div>
+      </a>
+      <a class="credit-card" href="https://www.transunion.com/free-credit-report" target="_blank">
+        <div class="cc-icon">🟢</div>
+        <div class="cc-name">TransUnion</div>
+        <div class="cc-desc">Free personal credit report. Lock/unlock your file.</div>
+        <div class="cc-tag personal">Personal</div>
+      </a>
+      <a class="credit-card" href="https://www.annualcreditreport.com" target="_blank">
+        <div class="cc-icon">📄</div>
+        <div class="cc-name">AnnualCreditReport.com</div>
+        <div class="cc-desc">Official free report from all 3 bureaus. Federally mandated.</div>
+        <div class="cc-tag personal">Personal</div>
+      </a>
+    </div>
+  </div>
+
+  <div class="credit-section">
+    <h2>💼 Business Credit</h2>
+    <div class="credit-grid">
+      <a class="credit-card" href="https://www.nav.com" target="_blank">
+        <div class="cc-icon">📊</div>
+        <div class="cc-name">Nav.com</div>
+        <div class="cc-desc">Business credit scores + funding options. Free tier available.</div>
+        <div class="cc-tag business">Business</div>
+      </a>
+      <a class="credit-card" href="https://www.dnb.com/business-credit.html" target="_blank">
+        <div class="cc-icon">🏦</div>
+        <div class="cc-name">Dun & Bradstreet</div>
+        <div class="cc-desc">PAYDEX score — lenders check this for business credit.</div>
+        <div class="cc-tag business">Business</div>
+      </a>
+      <a class="credit-card" href="https://www.nav.com/business-financing/" target="_blank">
+        <div class="cc-icon">💵</div>
+        <div class="cc-name">Nav Financing</div>
+        <div class="cc-desc">Matched business loans, lines of credit, and SBA options.</div>
+        <div class="cc-tag business">Business</div>
+      </a>
+      <a class="credit-card" href="https://www.sba.gov/funding-programs/loans" target="_blank">
+        <div class="cc-icon">🏛️</div>
+        <div class="cc-name">SBA Loans</div>
+        <div class="cc-desc">Small Business Admin. 7(a) loans, microloans, equipment funding.</div>
+        <div class="cc-tag business">Business</div>
+      </a>
+    </div>
+  </div>
+
+  <div style="background:#001a33;border:1px solid #22c55e44;border-radius:10px;padding:14px;font-size:0.72rem;color:#A5ACAF;line-height:1.6">
+    <div style="color:#22c55e;font-weight:700;margin-bottom:6px">💡 Capital Strategy Tips</div>
+    • Keep personal score above 680 for best loan rates<br>
+    • Register on D&amp;B to build PAYDEX before applying<br>
+    • Keep biz credit utilization below 30%<br>
+    • Separate business + personal finances completely<br>
+    • Check all 3 bureaus every 4 months on rotation
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     EDIT EXPENSE MODAL
+════════════════════════════════════════════ -->
+<div class="modal-bg" id="edit-modal">
+  <div class="modal">
+    <h2>✏️ Edit Expense</h2>
+    <input type="hidden" id="edit-id"/>
+    <input type="hidden" id="edit-type"/>
+    <div class="form-row">
+      <div>
+        <label>Date</label>
+        <input type="date" id="edit-date"/>
+      </div>
+      <div>
+        <label>Amount ($)</label>
+        <input type="number" id="edit-amount" step="0.01"/>
+      </div>
+    </div>
+    <div class="form-row single" style="margin-bottom:10px">
+      <div>
+        <label>Description</label>
+        <input type="text" id="edit-desc"/>
+      </div>
+    </div>
+    <div class="form-row">
+      <div>
+        <label>Category</label>
+        <select id="edit-cat"></select>
+      </div>
+      <div>
+        <label>Due Day (monthly)</label>
+        <select id="edit-due"></select>
+      </div>
+    </div>
+    <div class="form-row single">
+      <div>
+        <label>Notes</label>
+        <input type="text" id="edit-notes"/>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn green" onclick="saveEdit()">Save</button>
+      <button class="btn gray" onclick="closeEditModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+<div class="modal-bg" id="budget-modal">
+  <div class="modal">
+    <h2>⚙️ Set Monthly Budget</h2>
+    <div class="form-row single" style="margin-bottom:12px">
+      <div>
+        <label>Business Monthly Income ($)</label>
+        <input type="number" id="modal-biz-budget" placeholder="e.g. 8000" step="100"/>
+      </div>
+    </div>
+    <div class="form-row single">
+      <div>
+        <label>Personal Monthly Income ($)</label>
+        <input type="number" id="modal-per-budget" placeholder="e.g. 3500" step="100"/>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn green" onclick="saveBudget()">Save</button>
+      <button class="btn gray" onclick="closeBudgetModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     CATEGORY BUDGET MODAL
+════════════════════════════════════════════ -->
+<div class="modal-bg" id="cat-budget-modal">
+  <div class="modal">
+    <h2 id="cat-modal-title">📊 Category Limits</h2>
+    <div id="cat-modal-fields" style="margin-bottom:14px"></div>
+    <div class="modal-actions">
+      <button class="btn green" onclick="saveCatBudgets()">Save</button>
+      <button class="btn gray" onclick="document.getElementById('cat-budget-modal').classList.remove('open')">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Floating Budget Button ── -->
+<div style="position:fixed;bottom:16px;right:16px;z-index:500">
+  <button class="btn" onclick="openBudgetModal()" style="border-radius:50px;padding:10px 18px;font-size:0.78rem;box-shadow:0 4px 20px #00aaff44">⚙️ Set Budget</button>
+</div>
+
+<script>
+// ─── Category Definitions ────────────────────────────
+const BIZ_CATS = [
+  {key:'insurance', label:'🛡️ Insurance'},
+  {key:'fuel',      label:'⛽ Fuel'},
+  {key:'travel',    label:'✈️ Travel'},
+  {key:'tools',     label:'🔧 Tools'},
+  {key:'subs',      label:'📱 Subscriptions'},
+  {key:'phone',     label:'📞 Phone'},
+  {key:'mat',       label:'🧱 Materials'},
+  {key:'labor',     label:'👷 Subcontractor'},
+  {key:'other',     label:'📦 Other'},
+];
+const PER_CATS = [
+  {key:'rent',      label:'🏠 Rent / Mortgage'},
+  {key:'groceries', label:'🛒 Groceries'},
+  {key:'fuel',      label:'⛽ Gas'},
+  {key:'phone',     label:'📞 Phone Bill'},
+  {key:'utils',     label:'💡 Utilities'},
+  {key:'clothes',   label:'👕 Clothes'},
+  {key:'entertain', label:'🎬 Entertainment'},
+  {key:'insurance', label:'🛡️ Insurance'},
+  {key:'subs',      label:'📱 Subscriptions'},
+  {key:'other',     label:'📦 Other'},
+];
+
+// ─── Clear any old localStorage data ─────────────────
+['finance_biz','finance_per','finance_biz_budget','finance_per_budget','finance_biz_cat','finance_per_cat'].forEach(k=>localStorage.removeItem(k));
+
+// ─── State ───────────────────────────────────────────
+const STORE = {
+  biz: [], per: [],
+  bizBudget: 0, perBudget: 0,
+  bizCatBudget: {}, perCatBudget: {}
+};
+
+// ─── Pi Sync ──────────────────────────────────────────
+async function loadFromPi(){
+  try {
+    const r = await fetch('/api/finance');
+    const d = await r.json();
+    Object.assign(STORE, d);
+  } catch(e){ console.warn('Load failed, offline mode'); }
+  renderExpenses('business');
+  renderExpenses('personal');
+}
+
+async function saveToPi(){
+  try {
+    await fetch('/api/finance', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify(STORE)
+    });
+  } catch(e){ console.warn('Save failed'); }
+}
+
+function save(){ saveToPi(); }
+
+// ─── Tab Switching ────────────────────────────────────
+function switchTab(name){
+  document.querySelectorAll('.tab').forEach((t,i)=>{
+    const names=['business','personal','taxes','credit'];
+    t.classList.toggle('active', names[i]===name);
+  });
+  document.querySelectorAll('.panel').forEach(p=>{
+    p.classList.toggle('active', p.id==='panel-'+name);
+  });
+  if(name==='taxes') updateTaxes();
+}
+
+// ─── Toggle Add Form ──────────────────────────────────
+function toggleForm(id){
+  const f=document.getElementById(id);
+  f.classList.toggle('open');
+  const today=new Date().toISOString().split('T')[0];
+  if(id==='biz-form') document.getElementById('biz-date').value=today;
+  if(id==='per-form') document.getElementById('per-date').value=today;
+}
+
+// ─── Quick Pick ───────────────────────────────────────
+function quickPick(pfx, desc, cat){
+  document.getElementById(pfx+'-desc').value = desc;
+  document.getElementById(pfx+'-cat').value  = cat;
+  document.getElementById(pfx+'-amount').focus();
+}
+
+// ─── Add Expense ──────────────────────────────────────
+function addExpense(type){
+  const pfx = type==='business' ? 'biz' : 'per';
+  const date = document.getElementById(pfx+'-date').value;
+  const amt  = parseFloat(document.getElementById(pfx+'-amount').value);
+  const desc = document.getElementById(pfx+'-desc').value.trim();
+  const cat  = document.getElementById(pfx+'-cat').value;
+  const notes= document.getElementById(pfx+'-notes').value.trim();
+  if(!date||!amt||!desc){ alert('Please fill in date, amount, and description.'); return; }
+  const key = type==='business' ? 'biz' : 'per';
+  STORE[key].unshift({ id: Date.now(), date, amt, desc, cat, notes });
+  save();
+  renderExpenses(type);
+  toggleForm(pfx+'-form');
+  document.getElementById(pfx+'-amount').value='';
+  document.getElementById(pfx+'-desc').value='';
+  document.getElementById(pfx+'-notes').value='';
+}
+
+// ─── Delete Expense ───────────────────────────────────
+function deleteExp(type, id){
+  const key = type==='business' ? 'biz' : 'per';
+  STORE[key] = STORE[key].filter(e=>e.id!==id);
+  save();
+  renderExpenses(type);
+}
+
+// ─── Cat Badge ────────────────────────────────────────
+const ALL_CATS = {};
+[...BIZ_CATS,...PER_CATS].forEach(c=>ALL_CATS[c.key]=c.label);
+function catBadge(cat){ return `<span class="badge ${cat}">${ALL_CATS[cat]||cat}</span>`; }
+
+// ─── Format Currency ──────────────────────────────────
+function fmt(n){ return '$'+parseFloat(n||0).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}); }
+
+// ─── Render Expenses ──────────────────────────────────
+function renderExpenses(type){
+  const key   = type==='business' ? 'biz' : 'per';
+  const pfx   = key;
+  const data  = STORE[key];
+  const tbody = document.getElementById(pfx+'-tbody');
+  const empty = document.getElementById(pfx+'-empty');
+  const budget= STORE[pfx+'Budget'] || 0;
+  const cats  = type==='business' ? BIZ_CATS : PER_CATS;
+  const catBud= type==='business' ? STORE.bizCatBudget : STORE.perCatBudget;
+
+  const now = new Date();
+  const mo  = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}`;
+  const monthData = data.filter(e=>e.date.startsWith(mo));
+  const total = monthData.reduce((s,e)=>s+e.amt,0);
+
+  // Summary
+  document.getElementById(pfx+'-income').textContent = fmt(budget);
+  document.getElementById(pfx+'-spent').textContent  = fmt(total);
+  document.getElementById(pfx+'-left').textContent   = fmt(budget - total);
+
+  // Overall budget bar
+  const pct = budget>0 ? Math.min((total/budget)*100,100) : 0;
+  const bar = document.getElementById(pfx+'-bar');
+  bar.style.width = pct+'%';
+  bar.className = 'bar-fill ' + (pct<70?'safe':pct<90?'warn':'over');
+  document.getElementById(pfx+'-pct').textContent = Math.round(pct)+'%';
+
+  // Day strip
+  buildDayStrip(pfx, monthData, now);
+
+  // Category budget bars
+  const cbEl = document.getElementById(pfx+'-cat-budgets');
+  cbEl.innerHTML = cats.map(c=>{
+    const spent = monthData.filter(e=>e.cat===c.key).reduce((s,e)=>s+e.amt,0);
+    const limit = catBud[c.key] || 0;
+    const cp = limit>0 ? Math.min((spent/limit)*100,100) : 0;
+    const cc = cp<70?'#22c55e':cp<90?'#fbbf24':'#ef4444';
+    return `<div class="cat-bud-row">
+      <div class="cat-bud-head">
+        <span class="cat-bud-name">${c.label}</span>
+        <span class="cat-bud-vals">${fmt(spent)} ${limit>0?'/ '+fmt(limit):'/ not set'}</span>
+      </div>
+      ${limit>0?`<div class="cat-bud-track"><div class="cat-bud-fill" style="width:${cp}%;background:${cc}"></div></div>`:''}
+    </div>`;
+  }).join('');
+
+  // Table
+  if(!monthData.length){ empty.style.display='block'; tbody.innerHTML=''; return; }
+  empty.style.display='none';
+  tbody.innerHTML = monthData.map(e=>`
+    <tr>
+      <td style="color:#A5ACAF">${e.date}${e.due?`<div style="font-size:0.58rem;color:#fbbf24">📅 Due ${e.due}${['th','st','nd','rd'][e.due%10<4&&!(e.due%100>10&&e.due%100<14)?e.due%10:0]||'th'}</div>`:''}</td>
+      <td>${e.desc}${e.notes?`<div style="font-size:0.6rem;color:#A5ACAF">${e.notes}</div>`:''}</td>
+      <td>${catBadge(e.cat)}</td>
+      <td style="font-weight:700;color:#ef4444">${fmt(e.amt)}</td>
+      <td style="white-space:nowrap">
+        <button class="edit-btn" onclick="openEditModal('${type}',${e.id})">✏️</button>
+        <button class="del-btn" onclick="deleteExp('${type}',${e.id})">🗑</button>
+      </td>
+    </tr>`).join('');
+}
+
+// ─── Day Strip ────────────────────────────────────────
+function buildDayStrip(pfx, monthData, now){
+  const strip = document.getElementById(pfx+'-day-strip');
+  const daysInMonth = new Date(now.getFullYear(), now.getMonth()+1, 0).getDate();
+  let html='';
+  for(let d=1;d<=daysInMonth;d++){
+    const dStr = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+    const dayExp = monthData.filter(e=>e.date===dStr);
+    const dayTotal = dayExp.reduce((s,e)=>s+e.amt,0);
+    const isToday = d===now.getDate();
+    const hasExp = dayExp.length>0;
+    html+=`<div class="day-pill${isToday?' today':''}${hasExp?' has-exp':''}">
+      <div class="d-num">${d}</div>
+      <div class="d-amt">${hasExp?'$'+Math.round(dayTotal):''}</div>
+    </div>`;
+  }
+  strip.innerHTML=html;
+}
+
+// ─── Category Budget Modal ────────────────────────────
+let _catModalType = 'biz';
+function openCatBudgetModal(type){
+  _catModalType = type;
+  const cats   = type==='biz' ? BIZ_CATS : PER_CATS;
+  const catBud = type==='biz' ? STORE.bizCatBudget : STORE.perCatBudget;
+  document.getElementById('cat-modal-title').textContent =
+    (type==='biz'?'💼':'🏠')+' Category Monthly Limits';
+  document.getElementById('cat-modal-fields').innerHTML = cats.map(c=>`
+    <div style="margin-bottom:10px">
+      <label>${c.label}</label>
+      <input type="number" id="catbud-${c.key}" placeholder="0 = no limit" step="50"
+        value="${catBud[c.key]||''}"/>
+    </div>`).join('');
+  document.getElementById('cat-budget-modal').classList.add('open');
+}
+function saveCatBudgets(){
+  const cats   = _catModalType==='biz' ? BIZ_CATS : PER_CATS;
+  const catBud = {};
+  cats.forEach(c=>{
+    const v = parseFloat(document.getElementById('catbud-'+c.key).value)||0;
+    if(v>0) catBud[c.key]=v;
+  });
+  if(_catModalType==='biz'){
+    STORE.bizCatBudget=catBud;
+    save();
+    renderExpenses('business');
+  } else {
+    STORE.perCatBudget=catBud;
+    save();
+    renderExpenses('personal');
+  }
+  document.getElementById('cat-budget-modal').classList.remove('open');
+}
+
+// ─── Taxes ────────────────────────────────────────────
+function updateTaxes(){
+  const now = new Date();
+  const mo  = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}`;
+  const bizTotal = STORE.biz.filter(e=>e.date.startsWith(mo)).reduce((s,e)=>s+e.amt,0);
+  const perTotal = STORE.per.filter(e=>e.date.startsWith(mo)).reduce((s,e)=>s+e.amt,0);
+  const bizBudget = STORE.bizBudget || 0;
+  const perBudget = STORE.perBudget || 0;
+  const netProfit = Math.max(0, bizBudget - bizTotal);
+  const se  = netProfit * 0.153;
+  const fed = netProfit * 0.22;
+  const tot = se + fed;
+  document.getElementById('tax-biz-income').textContent = fmt(bizBudget);
+  document.getElementById('tax-biz-exp').textContent    = '— '+fmt(bizTotal);
+  document.getElementById('tax-biz-net').textContent    = fmt(netProfit);
+  document.getElementById('tax-se').textContent         = fmt(se);
+  document.getElementById('tax-fed').textContent        = fmt(fed);
+  document.getElementById('tax-total').textContent      = fmt(tot);
+  document.getElementById('tax-per-income').textContent = fmt(perBudget);
+  document.getElementById('tax-per-exp').textContent    = fmt(perTotal);
+}
+
+// ─── Edit Modal ───────────────────────────────────────
+function openEditModal(type, id){
+  const key  = type==='business' ? 'biz' : 'per';
+  const cats = type==='business' ? BIZ_CATS : PER_CATS;
+  const exp  = STORE[key].find(e=>e.id===id);
+  if(!exp) return;
+
+  document.getElementById('edit-id').value     = id;
+  document.getElementById('edit-type').value   = type;
+  document.getElementById('edit-date').value   = exp.date;
+  document.getElementById('edit-amount').value = exp.amt;
+  document.getElementById('edit-desc').value   = exp.desc;
+  document.getElementById('edit-notes').value  = exp.notes||'';
+
+  // Populate category dropdown
+  const catSel = document.getElementById('edit-cat');
+  catSel.innerHTML = cats.map(c=>`<option value="${c.key}"${c.key===exp.cat?' selected':''}>${c.label}</option>`).join('');
+
+  // Populate due day dropdown
+  const dueSel = document.getElementById('edit-due');
+  dueSel.innerHTML = '<option value="">— None —</option>';
+  for(let d=1;d<=31;d++){
+    const sfx = ['th','st','nd','rd'][d%10<4&&!(d%100>10&&d%100<14)?d%10:0]||'th';
+    dueSel.innerHTML += `<option value="${d}"${exp.due===d?' selected':''}>${d}${sfx} of month</option>`;
+  }
+
+  document.getElementById('edit-modal').classList.add('open');
+}
+
+function closeEditModal(){
+  document.getElementById('edit-modal').classList.remove('open');
+}
+
+function saveEdit(){
+  const id   = parseInt(document.getElementById('edit-id').value);
+  const type = document.getElementById('edit-type').value;
+  const key  = type==='business' ? 'biz' : 'per';
+  const idx  = STORE[key].findIndex(e=>e.id===id);
+  if(idx===-1) return;
+
+  const due = parseInt(document.getElementById('edit-due').value)||undefined;
+  STORE[key][idx] = {
+    ...STORE[key][idx],
+    date:  document.getElementById('edit-date').value,
+    amt:   parseFloat(document.getElementById('edit-amount').value),
+    desc:  document.getElementById('edit-desc').value.trim(),
+    cat:   document.getElementById('edit-cat').value,
+    notes: document.getElementById('edit-notes').value.trim(),
+    due:   due,
+  };
+  save();
+  renderExpenses(type);
+  closeEditModal();
+}
+
+// ─── Budget Modal ─────────────────────────────────────
+function openBudgetModal(){
+  document.getElementById('modal-biz-budget').value = STORE.bizBudget||'';
+  document.getElementById('modal-per-budget').value = STORE.perBudget||'';
+  document.getElementById('budget-modal').classList.add('open');
+}
+function closeBudgetModal(){ document.getElementById('budget-modal').classList.remove('open'); }
+function saveBudget(){
+  STORE.bizBudget = parseFloat(document.getElementById('modal-biz-budget').value)||0;
+  STORE.perBudget = parseFloat(document.getElementById('modal-per-budget').value)||0;
+  save();
+  closeBudgetModal();
+  renderExpenses('business');
+  renderExpenses('personal');
+}
+
+// ─── Init — load from Pi ──────────────────────────────
+loadFromPi();
+</script>
+</body>
+</html>

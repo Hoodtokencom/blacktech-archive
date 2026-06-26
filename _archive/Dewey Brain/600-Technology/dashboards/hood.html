@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>HOOD Token — Neighborhood Blockchain Hub</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0a0500; color: #fff; font-family: 'Segoe UI', Arial, sans-serif; min-height: 100vh; }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, #1a0a00 0%, #3d1a00 50%, #1a0a00 100%);
+    border-bottom: 3px solid #f59e0b;
+    padding: 18px 16px 14px;
+    text-align: center;
+  }
+  .header .coin { font-size: 3rem; margin-bottom: 4px; }
+  .header .title { font-size: 2.2rem; font-weight: 900; color: #f59e0b; letter-spacing: 6px; text-shadow: 0 0 24px #f59e0b88; }
+  .header .sub { font-size: 0.7rem; color: #fcd34d; letter-spacing: 3px; margin-top: 3px; font-weight: 700; }
+  .header .tag { font-size: 0.65rem; color: #92400e; margin-top: 5px; font-weight: 700; }
+
+  /* STATS */
+  .stats { display: flex; justify-content: center; gap: 24px; padding: 12px 16px; background: #0d0500; border-bottom: 1px solid #f59e0b33; }
+  .stat { text-align: center; }
+  .stat .num { font-size: 1.1rem; font-weight: 900; color: #f59e0b; }
+  .stat .lbl { font-size: 0.58rem; color: #92400e; font-weight: 700; margin-top: 1px; }
+
+  /* TABS */
+  .tabs { display: flex; background: #060300; border-bottom: 2px solid #f59e0b; }
+  .tab { flex: 1; padding: 13px 6px; text-align: center; font-size: 0.78rem; font-weight: 800; color: #92400e; cursor: pointer; border-bottom: 3px solid transparent; transition: all 0.2s; letter-spacing: 1px; }
+  .tab.active { color: #f59e0b; border-bottom-color: #f59e0b; background: #1a0a00; }
+  .tab:hover { background: #1a0800; }
+
+  /* SECTIONS */
+  .section { display: none; padding: 14px 12px 80px; }
+  .section.active { display: block; }
+
+  /* SECTION TITLE */
+  .section-title { font-size: 0.85rem; font-weight: 800; color: #f59e0b; margin-bottom: 10px; border-left: 3px solid #f59e0b; padding-left: 10px; margin-top: 4px; letter-spacing: 1px; }
+
+  /* CARDS */
+  .card { background: #0d0800; border: 1px solid #f59e0b44; border-radius: 12px; padding: 14px; margin-bottom: 12px; }
+  .card.gold-border { border-color: #f59e0b; }
+
+  /* HOW IT WORKS ITEMS */
+  .how-item { display: flex; gap: 10px; margin-bottom: 12px; }
+  .how-item .icon { font-size: 1.4rem; flex-shrink: 0; }
+  .how-item .title { font-size: 0.82rem; font-weight: 800; color: #fcd34d; }
+  .how-item .desc { font-size: 0.72rem; color: #d97706; margin-top: 2px; line-height: 1.5; }
+
+  /* STEPS */
+  .step { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 10px; }
+  .step-num { background: #f59e0b; color: #000; border-radius: 50%; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 900; flex-shrink: 0; }
+  .step-text { font-size: 0.75rem; color: #fcd34d; line-height: 1.5; padding-top: 3px; }
+
+  /* QR */
+  .qr-box { background: #0d0800; border: 1px solid #f59e0b44; border-radius: 12px; padding: 16px; margin-bottom: 10px; text-align: center; }
+  .qr-label { font-size: 0.7rem; color: #f59e0b; font-weight: 800; letter-spacing: 2px; margin-bottom: 10px; }
+  .qr-url { font-size: 0.6rem; color: #f59e0b; margin-top: 6px; font-family: monospace; word-break: break-all; }
+  .qr-caption { font-size: 0.65rem; color: #d97706; margin-top: 4px; }
+
+  /* FORM */
+  label { display: block; font-size: 0.7rem; color: #d97706; font-weight: 700; margin-bottom: 4px; margin-top: 10px; }
+  label:first-of-type { margin-top: 0; }
+  input, select, textarea {
+    width: 100%; background: #060300; border: 1px solid #f59e0b44;
+    border-radius: 8px; color: #fff; padding: 9px 10px; font-size: 0.82rem; outline: none;
+  }
+  input:focus, select:focus { border-color: #f59e0b; }
+  select option { background: #0a0500; }
+
+  /* BUTTONS */
+  .btn { display: block; width: 100%; padding: 13px; border-radius: 10px; border: none; font-size: 0.85rem; font-weight: 800; cursor: pointer; letter-spacing: 1px; margin-top: 10px; }
+  .btn-gold { background: linear-gradient(135deg, #92400e, #f59e0b); color: #fff; }
+  .btn-blue { background: #0d2050; color: #64b5f6; border: 1px solid #1565c0; }
+  .btn-green { background: linear-gradient(135deg, #075e54, #25d366); color: #fff; }
+  .btn:active { opacity: 0.8; }
+
+  /* DIST LOG */
+  .dist-entry { background: #0d0800; border: 1px solid #f59e0b33; border-radius: 12px; padding: 12px; margin-bottom: 8px; display: flex; gap: 10px; align-items: flex-start; }
+  .dist-entry .amt { font-size: 0.9rem; font-weight: 900; color: #f59e0b; white-space: nowrap; }
+  .dist-entry .name { font-size: 0.85rem; font-weight: 800; color: #fcd34d; }
+  .dist-entry .meta { font-size: 0.68rem; color: #d97706; margin-top: 2px; }
+  .dist-entry .wallet { font-size: 0.6rem; color: #546e7a; font-family: monospace; margin-top: 2px; }
+
+  /* WALLET BOX */
+  .wallet-box { background: #060300; border: 2px solid #f59e0b; border-radius: 10px; padding: 10px 12px; margin-bottom: 10px; }
+  .wallet-box .wlabel { font-size: 0.6rem; color: #92400e; font-weight: 700; margin-bottom: 3px; }
+  .wallet-box .waddr { font-size: 0.62rem; color: #f59e0b; font-family: monospace; word-break: break-all; }
+
+  /* TOAST */
+  .toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: #f59e0b; color: #000; padding: 10px 20px; border-radius: 20px; font-size: 0.8rem; font-weight: 800; z-index: 200; opacity: 0; transition: opacity 0.3s; pointer-events: none; white-space: nowrap; }
+  .toast.show { opacity: 1; }
+
+  /* SEND LINK BOX */
+  .link-display { font-size: 0.62rem; color: #546e7a; font-family: monospace; word-break: break-all; background: #060300; border-radius: 8px; padding: 8px; margin: 8px 0; min-height: 32px; border: 1px solid #f59e0b22; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <img src="/static/hood_token_logo.png" alt="HOOD Token" style="width:120px; height:120px; border-radius:50%; margin:0 auto 6px; display:block; box-shadow:0 0 20px #f59e0b55;"/>
+  <div class="title">HOOD</div>
+  <div class="sub">NEIGHBORHOOD BLOCKCHAIN HUB TOKEN</div>
+  <div class="tag">BUILT ON BASE · COMMUNITY OWNED · 60628 · BLOCK BY BLOCK</div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat">
+    <div class="num" id="statSupply">100,000</div>
+    <div class="lbl">TOTAL SUPPLY</div>
+  </div>
+  <div class="stat">
+    <div class="num" id="statSent">0</div>
+    <div class="lbl">HOOD SENT</div>
+  </div>
+  <div class="stat">
+    <div class="num" id="statRecip">0</div>
+    <div class="lbl">RECIPIENTS</div>
+  </div>
+  <div class="stat">
+    <div class="num" id="statRemain">90,000</div>
+    <div class="lbl">REMAINING</div>
+  </div>
+</div>
+
+<!-- TABS -->
+<div class="tabs">
+  <div class="tab active" onclick="showTab('about')">🪙 About HOOD</div>
+  <div class="tab" onclick="showTab('distrib')">📤 Distribution Hub</div>
+</div>
+
+<!-- ── ABOUT TAB ─────────────────────────────── -->
+<div id="tab-about" class="section active">
+
+  <div class="section-title">💡 How HOOD Token Works</div>
+  <div class="card">
+    <div class="how-item">
+      <div class="icon">🏘️</div>
+      <div>
+        <div class="title">Community Owned</div>
+        <div class="desc">HOOD belongs to the 60628 community. Every business, resident, and supporter can hold it. The more businesses that accept it, the more valuable it becomes.</div>
+      </div>
+    </div>
+    <div class="how-item">
+      <div class="icon">💸</div>
+      <div>
+        <div class="title">Spend Local, Earn Local</div>
+        <div class="desc">Use HOOD to pay at participating businesses in the 60628 network. Businesses earn HOOD by joining the BFN monthly rotation. Keep dollars circulating in the hood.</div>
+      </div>
+    </div>
+    <div class="how-item">
+      <div class="icon">📅</div>
+      <div>
+        <div class="title">Monthly Industry Funding</div>
+        <div class="desc">Each month's featured industry receives a HOOD distribution — Barbers in January, Dentists in February, Lounges in May. The community funds each other. No banks. No grants.</div>
+      </div>
+    </div>
+    <div class="how-item" style="margin-bottom:0;">
+      <div class="icon">🔗</div>
+      <div>
+        <div class="title">Built on Base (Ethereum L2)</div>
+        <div class="desc">Base is fast, low-cost, backed by Coinbase. Sending HOOD costs pennies. No middlemen. Every transaction is transparent and permanent on-chain.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">🚀 How to Get HOOD</div>
+  <div class="card">
+    <div class="step"><div class="step-num">1</div><div class="step-text"><strong>Download MetaMask</strong> on your phone — your free digital wallet.</div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-text"><strong>Switch to Base Network</strong> inside MetaMask — that's where HOOD lives.</div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-text"><strong>Join the BFN</strong> — register your business or RSVP for a meeting. Members receive HOOD monthly.</div></div>
+    <div class="step" style="margin-bottom:0;"><div class="step-num">4</div><div class="step-text"><strong>Show up to BW3</strong> — 3rd Wednesday of every month. Show up, coordinate, get HOOD.</div></div>
+  </div>
+
+  <div class="section-title">📷 QR Codes — Show at Meetings</div>
+  <div class="qr-box">
+    <div class="qr-label">① SCAN TO LEARN ABOUT HOOD</div>
+    <div id="qr1" style="display:flex; justify-content:center; margin-bottom:8px;"></div>
+    <div class="qr-caption">Show at BW3 meetings — scan to learn how it works</div>
+    <div class="qr-url">blue.blacktechsolutionscorp.com/hood</div>
+  </div>
+
+  <div class="qr-box">
+    <div class="qr-label">② SCAN TO VIEW ON BLOCKCHAIN</div>
+    <div id="qr2" style="display:flex; justify-content:center; margin-bottom:8px;"></div>
+    <div class="qr-caption">Live token activity on Base blockchain</div>
+    <div class="qr-url">basescan.org/token/0x22308903bcc42B48978f855925c3fB2398d91048</div>
+  </div>
+
+  <div class="wallet-box">
+    <div class="wlabel">🪙 HOOD TOKEN CONTRACT · BASE NETWORK</div>
+    <div class="waddr">0x22308903bcc42B48978f855925c3fB2398d91048</div>
+  </div>
+  <button class="btn btn-gold" onclick="copyContract()">📋 Copy Contract Address</button>
+
+  <div class="wallet-box" style="margin-top:10px;">
+    <div class="wlabel">📤 HUB DISTRIBUTION WALLET</div>
+    <div class="waddr">0x8946502754D7e02Baa2a12fac68e043519bbbbc7</div>
+  </div>
+
+  <button class="btn btn-green" onclick="shareHood()" style="margin-top:10px;">💬 Share Hood Coin via WhatsApp</button>
+  <button class="btn btn-blue" onclick="copyHoodMsg()" style="margin-top:8px;">📋 Copy Hood Coin Message</button>
+
+  <div style="text-align:center; margin-top:20px; padding:14px; background:#0d0800; border-radius:12px; border:1px solid #f59e0b22;">
+    <div style="font-size:0.75rem; font-weight:900; color:#f59e0b; margin-bottom:4px;">📍 60628 · Roseland / West Pullman</div>
+    <div style="font-size:0.7rem; color:#d97706;">Strong Businesses. Strong Communities. Strong Future. 🪙</div>
+    <div style="font-size:0.65rem; color:#546e7a; margin-top:6px;">National Block Club University · 312-405-8844</div>
+  </div>
+
+</div>
+
+<!-- ── DISTRIBUTION HUB TAB ──────────────────── -->
+<div id="tab-distrib" class="section">
+
+  <!-- SEND FORM -->
+  <div class="section-title">💸 Send HOOD to Member</div>
+  <div class="card gold-border">
+    <label>Recipient Name *</label>
+    <input type="text" id="dist-name" placeholder="e.g. Marcus Johnson"/>
+    <label>Wallet Address *</label>
+    <input type="text" id="dist-wallet" placeholder="0x..." style="font-family:monospace; font-size:0.72rem;"/>
+    <label>Amount of HOOD *</label>
+    <input type="number" id="dist-amount" placeholder="e.g. 500" min="1"/>
+    <label>Reason / Industry</label>
+    <select id="dist-industry">
+      <option value="">— Select Reason —</option>
+      <option value="January — Barbers">January — Barbers</option>
+      <option value="February — Dentists & Doctors">February — Dentists & Doctors</option>
+      <option value="March — Dentists & Doctors">March — Dentists & Doctors</option>
+      <option value="April — Skin / Massage">April — Skin / Massage</option>
+      <option value="May — Lounges">May — Lounges</option>
+      <option value="June — Movers">June — Movers</option>
+      <option value="July — Barbers">July — Barbers</option>
+      <option value="August — Dentists & Doctors">August — Dentists & Doctors</option>
+      <option value="September — Funeral Homes">September — Funeral Homes</option>
+      <option value="October — Accountants">October — Accountants</option>
+      <option value="November — Lounges">November — Lounges</option>
+      <option value="December — Landscapers">December — Landscapers</option>
+      <option value="BW3 Meeting Attendance">BW3 Meeting Attendance</option>
+      <option value="T-Formation Contribution">T-Formation Contribution</option>
+      <option value="Community Service">Community Service</option>
+      <option value="Business Referral">Business Referral</option>
+    </select>
+    <label>Note</label>
+    <input type="text" id="dist-note" placeholder="Optional note"/>
+    <button class="btn btn-gold" onclick="sendHOOD()">🪙 Send HOOD via MetaMask</button>
+    <div style="font-size:0.65rem; color:#546e7a; margin-top:5px; text-align:center;">Opens MetaMask on your phone to confirm</div>
+    <button class="btn btn-blue" onclick="logDistribution()" style="margin-top:8px;">📋 Log Distribution (Already Sent)</button>
+    <div style="font-size:0.65rem; color:#546e7a; margin-top:4px; text-align:center;">Record HOOD you already sent from MetaMask</div>
+  </div>
+
+  <!-- QUICK SEND LINK -->
+  <div class="section-title">🔗 Quick Send Link</div>
+  <div class="card" style="text-align:center;">
+    <div style="font-size:0.7rem; color:#d97706; margin-bottom:8px;">Pre-filled MetaMask link for the wallet + amount above</div>
+    <div class="link-display" id="sendLinkDisplay"></div>
+    <button onclick="generateSendLink()" style="background:#1a0a00; color:#f59e0b; border:1px solid #f59e0b; border-radius:10px; padding:10px; font-size:0.78rem; font-weight:800; cursor:pointer; width:100%; margin-bottom:6px;">⚡ Generate Send Link</button>
+    <button onclick="copySendLink()" style="background:#060300; color:#d97706; border:1px solid #f59e0b33; border-radius:10px; padding:8px; font-size:0.75rem; font-weight:700; cursor:pointer; width:100%;">📋 Copy Link</button>
+  </div>
+
+  <!-- DISTRIBUTION LOG -->
+  <div class="section-title">📜 Distribution Log</div>
+  <div id="distLog"></div>
+
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+const HOOD_CONTRACT = '0x22308903bcc42B48978f855925c3fB2398d91048';
+const DIST_WALLET   = '0x8946502754D7e02Baa2a12fac68e043519bbbbc7';
+const HOOD_SUPPLY   = 90000; // 100,000 total minus 10,000 in Hub Distribution Wallet
+const HOOD_INFO_URL = 'https://blue.blacktechsolutionscorp.com/hood';
+const CHAIN_URL     = 'https://basescan.org/token/' + HOOD_CONTRACT;
+
+// ── TABS ─────────────────────────────────────
+function showTab(name) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  event.target.classList.add('active');
+  if (name === 'distrib') renderDistLog();
+}
+
+// ── TOAST ────────────────────────────────────
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+// ── DATA ─────────────────────────────────────
+async function api(method, path, body) {
+  try {
+    const r = await fetch(path, {
+      method,
+      headers: {'Content-Type':'application/json'},
+      body: body ? JSON.stringify(body) : undefined
+    });
+    return await r.json();
+  } catch(e) { console.error(e); }
+}
+
+let distributions = [];
+
+async function loadDistributions() {
+  try {
+    const r = await fetch('/api/bfn');
+    const d = await r.json();
+    distributions = d.distributions || [];
+  } catch(e) {}
+  updateStats();
+  renderDistLog();
+}
+
+function updateStats() {
+  const totalSent = distributions.reduce((s, x) => s + (x.amount||0), 0);
+  document.getElementById('statSent').textContent   = totalSent.toLocaleString();
+  document.getElementById('statRecip').textContent  = distributions.length;
+  document.getElementById('statRemain').textContent = Math.max(0, HOOD_SUPPLY - totalSent).toLocaleString();
+}
+
+// ── QR CODES ─────────────────────────────────
+function buildQR(id, url) {
+  const el = document.getElementById(id);
+  el.innerHTML = '';
+  new QRCode(el, { text: url, width:180, height:180, colorDark:'#f59e0b', colorLight:'#0a0500', correctLevel: QRCode.CorrectLevel.H });
+}
+
+// ── SHARE ────────────────────────────────────
+function getHoodMsg() {
+  return `🪙 HOOD TOKEN — Neighborhood Blockchain Hub
+
+Built for the 60628 community. Block by block.
+
+✅ Community owned — no banks, no government
+✅ Spend & earn HOOD at local businesses
+✅ Monthly distributions to BFN network members
+✅ Built on Base (fast, low-cost blockchain)
+
+📅 BW3 — Every 3rd Wednesday of the month
+📍 60628 · Roseland / West Pullman · Chicago
+
+Learn more 👇
+${HOOD_INFO_URL}
+
+View on blockchain 🔗
+${CHAIN_URL}
+
+Strong Businesses. Strong Communities. Strong Future. 🪙`;
+}
+
+function shareHood() { window.open('https://wa.me/?text=' + encodeURIComponent(getHoodMsg()), '_blank'); }
+function copyHoodMsg() { navigator.clipboard.writeText(getHoodMsg()).then(() => showToast('✅ Message copied!')); }
+function copyContract() { navigator.clipboard.writeText(HOOD_CONTRACT).then(() => showToast('✅ Contract address copied!')); }
+
+// ── DISTRIBUTION ─────────────────────────────
+function sendHOOD() {
+  const wallet = document.getElementById('dist-wallet').value.trim();
+  const amount = document.getElementById('dist-amount').value.trim();
+  if (!wallet || !amount) { showToast('⚠️ Wallet and amount required'); return; }
+  const amountWei = BigInt(Math.floor(parseFloat(amount) * 1e18)).toString(16);
+  const data = '0xa9059cbb' +
+    wallet.toLowerCase().replace('0x','').padStart(64,'0') +
+    amountWei.padStart(64,'0');
+  const link = `https://metamask.app.link/send/${HOOD_CONTRACT}@8453?value=0&data=${data}`;
+  window.open(link, '_blank');
+  showToast('📲 Opening MetaMask...');
+}
+
+function logDistribution() {
+  const name     = document.getElementById('dist-name').value.trim();
+  const wallet   = document.getElementById('dist-wallet').value.trim();
+  const amount   = parseFloat(document.getElementById('dist-amount').value);
+  const industry = document.getElementById('dist-industry').value;
+  const note     = document.getElementById('dist-note').value.trim();
+  if (!name || !amount) { showToast('⚠️ Name and amount required'); return; }
+  api('POST', '/api/bfn/distributions', { name, wallet, amount, industry, note }).then(() => {
+    distributions.unshift({ name, wallet, amount, industry, note, date: new Date().toISOString() });
+    document.getElementById('dist-name').value = '';
+    document.getElementById('dist-wallet').value = '';
+    document.getElementById('dist-amount').value = '';
+    document.getElementById('dist-industry').value = '';
+    document.getElementById('dist-note').value = '';
+    updateStats();
+    renderDistLog();
+    showToast(`✅ ${amount} HOOD logged for ${name}`);
+  });
+}
+
+function generateSendLink() {
+  const wallet = document.getElementById('dist-wallet').value.trim();
+  const amount = document.getElementById('dist-amount').value.trim();
+  if (!wallet || !amount) { showToast('⚠️ Enter wallet and amount first'); return; }
+  const amountWei = BigInt(Math.floor(parseFloat(amount) * 1e18)).toString(16);
+  const data = '0xa9059cbb' +
+    wallet.toLowerCase().replace('0x','').padStart(64,'0') +
+    amountWei.padStart(64,'0');
+  const link = `https://metamask.app.link/send/${HOOD_CONTRACT}@8453?value=0&data=${data}`;
+  document.getElementById('sendLinkDisplay').textContent = link;
+  showToast('✅ Link generated!');
+}
+
+function copySendLink() {
+  const link = document.getElementById('sendLinkDisplay').textContent;
+  if (!link) { showToast('⚠️ Generate a link first'); return; }
+  navigator.clipboard.writeText(link).then(() => showToast('✅ Link copied!'));
+}
+
+function renderDistLog() {
+  const container = document.getElementById('distLog');
+  if (!container) return;
+  if (distributions.length === 0) {
+    container.innerHTML = '<div style="color:#92400e; text-align:center; padding:20px; font-size:0.8rem; font-style:italic;">No distributions logged yet.</div>';
+    return;
+  }
+  container.innerHTML = distributions.map((x, i) => {
+    const date = x.date ? new Date(x.date).toLocaleDateString() : '';
+    return `<div class="dist-entry">
+      <div style="font-size:1.4rem;">🪙</div>
+      <div style="flex:1;">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div class="name">${x.name || 'Unknown'}</div>
+          <div class="amt">+${(x.amount||0).toLocaleString()} HOOD</div>
+        </div>
+        ${x.industry ? `<div class="meta">📌 ${x.industry}</div>` : ''}
+        ${x.wallet   ? `<div class="wallet">${x.wallet.slice(0,6)}...${x.wallet.slice(-4)}</div>` : ''}
+        ${x.note     ? `<div style="font-size:0.7rem; color:#90caf9; margin-top:2px; font-style:italic;">${x.note}</div>` : ''}
+        <div style="font-size:0.62rem; color:#546e7a; margin-top:3px;">📅 ${date}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ── INIT ─────────────────────────────────────
+buildQR('qr1', HOOD_INFO_URL);
+buildQR('qr2', CHAIN_URL);
+loadDistributions();
+</script>
+</body>
+</html>

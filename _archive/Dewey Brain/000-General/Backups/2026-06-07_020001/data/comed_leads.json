@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1780675312701,
+    "name": "Marcus Williams",
+    "address": "9234 S Halsted St",
+    "city": "Chicago",
+    "phone": "(773) 555-0192",
+    "email": "marcus.w@gmail.com",
+    "services": [
+      "Panel Upgrade",
+      "Heat Pump",
+      "Induction Stove"
+    ],
+    "notes": "[06/05 11:01] On-site assessment complete. 100A panel confirmed, room for 200A upgrade. Gas furnace in basement, good access. Customer home, pets secured.\nGas furnace + gas range. 100A panel needs upgrade. Income verified - qualifies WHE program.",
+    "source": "Think Energy Referral",
+    "status": "complete",
+    "created": "2026-06-05 11:01",
+    "updated": "2026-06-05 11:16",
+    "closeout": {
+      "lw_amount": "6200.00",
+      "permit": "CHI-2026-ELC-88421",
+      "insp_date": "2026-06-05",
+      "comed_ref": "EESP-WHE-60628-0042",
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    }
+  }
+]

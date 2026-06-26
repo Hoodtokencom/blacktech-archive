@@ -1,0 +1,34 @@
+{
+  "zip": "60419",
+  "neighborhood": "Dolton",
+  "twin_city": "TBD",
+  "streets": ["140th", "144th", "147th", "151st"],
+  "corridors": [
+    "Lincoln Ave / Cottage Grove Ave",
+    "Halsted St / Michigan Ave",
+    "State St / Wabash Ave",
+    "Calumet Ave / Yates Blvd"
+  ],
+  "villages": {
+    "v01": { "street": "140th", "corridor": 0, "name": "Village 01", "schools": [], "churches": 0, "biz": ["Distinctive Electrical"] },
+    "v02": { "street": "140th", "corridor": 1, "name": "Village 02", "schools": [], "churches": 0, "biz": [] },
+    "v03": { "street": "140th", "corridor": 2, "name": "Village 03", "schools": [], "churches": 0, "biz": [] },
+    "v04": { "street": "140th", "corridor": 3, "name": "Village 04", "schools": [], "churches": 0, "biz": [] },
+    "v05": { "street": "144th", "corridor": 0, "name": "Village 05", "schools": [], "churches": 0, "biz": [] },
+    "v06": { "street": "144th", "corridor": 1, "name": "Village 06", "schools": [], "churches": 0, "biz": [] },
+    "v07": { "street": "144th", "corridor": 2, "name": "Village 07", "schools": [], "churches": 0, "biz": [] },
+    "v08": { "street": "144th", "corridor": 3, "name": "Village 08", "schools": [], "churches": 0, "biz": [] }
+  },
+  "pinned_businesses": [
+    {
+      "name": "Distinctive Electrical",
+      "address": "Dolton, IL 60419",
+      "lat": 41.6381,
+      "lng": -87.6081,
+      "phone": "(773) 544-5766",
+      "email": "Distinctiveelectrical1@gmail.com",
+      "category": "Electrical Contractor",
+      "village": "v01"
+    }
+  ]
+}

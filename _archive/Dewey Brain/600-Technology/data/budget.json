@@ -1,0 +1,184 @@
+[
+  {
+    "id": "6647",
+    "customer": "Charles Ockerlund",
+    "scope": "Camera Install",
+    "address": "6647 S Saint Lawrence, Chicago, IL 60637",
+    "phone": "",
+    "amount": 2817.89,
+    "status": "invoiced",
+    "notes": "",
+    "submitted_by": "Derrell",
+    "date_added": "2026-05-29",
+    "source": "manual"
+  },
+  {
+    "id": "PHIL-LV",
+    "customer": "Phil Powell",
+    "scope": "Echo School Low Voltage",
+    "address": "350 W 154th St, South Holland, IL",
+    "phone": "",
+    "amount": 7596.38,
+    "status": "estimate",
+    "notes": "",
+    "submitted_by": "Derrell",
+    "date_added": "2026-05-29",
+    "source": "manual"
+  },
+  {
+    "id": "7414",
+    "customer": "Malissa Mitchell / Elle William",
+    "scope": "Electrical",
+    "address": "7414 S Drexel, Chicago, IL",
+    "phone": "",
+    "amount": 10900.0,
+    "status": "invoiced",
+    "notes": "",
+    "submitted_by": "Derrell",
+    "date_added": "2026-05-29",
+    "source": "manual"
+  },
+  {
+    "id": "7919",
+    "customer": "Rose Williams / Elle William",
+    "scope": "Electrical",
+    "address": "7919 S Dorchester, Chicago, IL",
+    "phone": "",
+    "amount": 10900.0,
+    "status": "invoiced",
+    "notes": "",
+    "submitted_by": "Derrell",
+    "date_added": "2026-05-29",
+    "source": "manual"
+  },
+  {
+    "id": "1348-LONDON",
+    "customer": "London Town Home",
+    "scope": "All Weather Specialist",
+    "address": "Chicago, IL 60619",
+    "phone": "",
+    "amount": 221456.8,
+    "status": "invoiced",
+    "notes": "",
+    "submitted_by": "Derrell",
+    "date_added": "2026-05-29",
+    "source": "manual"
+  },
+  {
+    "id": "7920",
+    "customer": null,
+    "scope": null,
+    "address": null,
+    "amount": 0.0,
+    "status": "estimate",
+    "date": "2026-06-01"
+  },
+  {
+    "id": "7921",
+    "customer": null,
+    "scope": null,
+    "address": null,
+    "amount": 0.0,
+    "status": "estimate",
+    "date": "2026-06-01"
+  },
+  {
+    "id": "7920",
+    "customer": null,
+    "scope": null,
+    "address": null,
+    "amount": 0.0,
+    "status": "estimate",
+    "date": "2026-06-02"
+  },
+  {
+    "id": "7921",
+    "customer": null,
+    "scope": null,
+    "address": null,
+    "amount": 0.0,
+    "status": "estimate",
+    "date": "2026-06-02"
+  },
+  {
+    "id": "7920",
+    "customer": "Unknown",
+    "scope": "MEDIA:/home/allenai/data/lead-auto-fill-workflow.json",
+    "address": "",
+    "amount": 0.0,
+    "status": "estimate",
+    "date": "2026-06-02"
+  },
+  {
+    "id": "260602200822",
+    "customer": null,
+    "scope": "Electrical",
+    "address": "Chicago, IL",
+    "amount": 0.0,
+    "status": "estimate",
+    "date": "2026-06-02"
+  },
+  {
+    "id": "260602200823",
+    "customer": null,
+    "scope": null,
+    "address": "Chicago, IL",
+    "amount": 0.0,
+    "status": "estimate",
+    "date": "2026-06-02"
+  },
+  {
+    "id": "260602200822",
+    "customer": "Derrell black",
+    "scope": "Electrical",
+    "address": "",
+    "amount": 123.0,
+    "status": "estimate",
+    "date": "2026-06-02"
+  },
+  {
+    "id": "260602200823",
+    "customer": "/Lead",
+    "scope": "$0",
+    "address": "",
+    "amount": 123.0,
+    "status": "estimate",
+    "date": "2026-06-02"
+  },
+  {
+    "id": "260602200824",
+    "customer": "Derrell Black",
+    "scope": null,
+    "address": "123 N Pine",
+    "amount": 0.0,
+    "status": "estimate",
+    "date": "2026-06-02"
+  },
+  {
+    "id": "260602200822",
+    "customer": "Kiesha Johnson",
+    "scope": null,
+    "address": "South Holland",
+    "amount": 0.0,
+    "status": "estimate",
+    "date": "2026-06-02"
+  },
+  {
+    "id": "260602214944",
+    "customer": "Ms. Williams",
+    "scope": null,
+    "address": "7458 S Euclid Ave",
+    "amount": 450.0,
+    "status": "estimate",
+    "date": "2026-06-02"
+  },
+  {
+    "id": "260602214945",
+    "customer": "John Smith",
+    "scope": "Panel upgrade",
+    "address": "456 S Michigan Ave",
+    "amount": 0.0,
+    "status": "estimate",
+    "date": "2026-06-03"
+  }
+]

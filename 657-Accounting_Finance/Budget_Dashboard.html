@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blacktech Solutions Corp — Project Budget Dashboard</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+    padding: 20px;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  .dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .dashboard-header {
+    background: linear-gradient(135deg, #0033CC 0%, #0055FF 50%, #00AA44 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .dashboard-header h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  .dashboard-header p {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+  .summary-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+  }
+  .card .label {
+    font-size: 0.85rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  .card .value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0033CC;
+  }
+  .card.green .value { color: #00AA44; }
+  .card.orange .value { color: #FF8800; }
+  .card.red .value { color: #CC0033; }
+
+  .section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #0033CC;
+    margin: 30px 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #00AA44;
+  }
+
+  .project-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+  }
+  .project-table thead {
+    background: linear-gradient(135deg, #0033CC, #0055FF);
+    color: white;
+  }
+  .project-table th {
+    padding: 16px 14px;
+    text-align: left;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  .project-table th:last-child,
+  .project-table td:last-child {
+    text-align: right;
+  }
+  .project-table td {
+    padding: 14px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  .project-table tbody tr:hover {
+    background: #f8f9fa;
+  }
+  .project-table .status {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .status.estimate { background: #e3f2fd; color: #0033CC; }
+  .status.invoiced { background: #fff3e0; color: #FF8800; }
+  .status.paid { background: #e8f5e9; color: #00AA44; }
+  .status.closed { background: #f5f5f5; color: #666; }
+  .amount { font-weight: 700; color: #0033CC; }
+
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: #666;
+  }
+
+  @media print {
+    body { background: white; }
+    .dashboard-header { border-radius: 0; }
+    .card { box-shadow: none; border: 1px solid #eee; }
+    .project-table { box-shadow: none; }
+  }
+  @media (max-width: 600px) {
+    .summary-cards { grid-template-columns: 1fr; }
+    .project-table { font-size: 0.8rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="dashboard-container">
+
+  <div class="dashboard-header">
+    <h1>📊 Project Budget Dashboard</h1>
+    <p>Blacktech Solutions Corp — All Active Projects</p>
+  </div>
+
+  <div class="summary-cards">
+    <div class="card">
+      <div class="label">Total Pipeline</div>
+      <div class="value">$225,221.07</div>
+    </div>
+    <div class="card orange">
+      <div class="label">Invoiced / Estimates</div>
+      <div class="value">$225,221.07</div>
+    </div>
+    <div class="card green">
+      <div class="label">Paid / Collected</div>
+      <div class="value">$0.00</div>
+    </div>
+    <div class="card red">
+      <div class="label">Outstanding</div>
+      <div class="value">$225,221.07</div>
+    </div>
+  </div>
+
+  <div class="section-title">🏗️ Active Projects</div>
+  <table class="project-table">
+    <thead>
+      <tr>
+        <th>Job #</th>
+        <th>Project / Customer</th>
+        <th>Address</th>
+        <th>Status</th>
+        <th>Estimate</th>
+        <th>Invoiced</th>
+        <th>Paid</th>
+        <th>Balance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>LONDON</td>
+        <td>All Weather Specialist — London Town Home</td>
+        <td>Chicago, IL 60619</td>
+        <td><span class="status invoiced">OVERDUE</span></td>
+        <td>—</td>
+        <td class="amount">$193,006.80</td>
+        <td>$0.00</td>
+        <td class="amount">$193,006.80</td>
+      </tr>
+      <tr>
+        <td>6647</td>
+        <td>Charles Ockerlund — Camera Install</td>
+        <td>6647 S Saint Lawrence Ave, Chicago</td>
+        <td><span class="status invoiced">Invoiced</span></td>
+        <td>—</td>
+        <td class="amount">$2,817.89</td>
+        <td>$0.00</td>
+        <td class="amount">$2,817.89</td>
+      </tr>
+      <tr>
+        <td>PHIL-LV</td>
+        <td>Phil Powell — Echo School Low Voltage</td>
+        <td>350 W 154th St, South Holland</td>
+        <td><span class="status estimate">Estimate</span></td>
+        <td class="amount">$7,596.38</td>
+        <td>—</td>
+        <td>—</td>
+        <td class="amount">$7,596.38</td>
+      </tr>
+      <tr>
+        <td>7414</td>
+        <td>Malissa Mitchell / Elle William</td>
+        <td>7414 S Drexel Ave, Chicago</td>
+        <td><span class="status invoiced">Invoiced</span></td>
+        <td>—</td>
+        <td class="amount">$10,900.00</td>
+        <td>$0.00</td>
+        <td class="amount">$10,900.00</td>
+      </tr>
+      <tr>
+        <td>7919</td>
+        <td>Rose Williams / Elle William</td>
+        <td>7919 S Dorchester, Chicago</td>
+        <td><span class="status invoiced">Invoiced</span></td>
+        <td>—</td>
+        <td class="amount">$10,900.00</td>
+        <td>$0.00</td>
+        <td class="amount">$10,900.00</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="section-title">📋 Project Summary by Status</div>
+  <table class="project-table">
+    <thead>
+      <tr>
+        <th>Status</th>
+        <th>Count</th>
+        <th>Total Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="status estimate">Estimates Pending</span></td>
+        <td>1</td>
+        <td class="amount">$7,596.38</td>
+      </tr>
+      <tr>
+        <td><span class="status invoiced">Invoiced / Unpaid</span></td>
+        <td>4</td>
+        <td class="amount">$217,624.69</td>
+      </tr>
+      <tr>
+        <td><span class="status paid">Paid / Closed</span></td>
+        <td>0</td>
+        <td class="amount">$0.00</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="footer">
+    <p>© 2026 Blacktech Solutions Corp | (312) 965-2782 | support@blacktechsolutionscorp.com</p>
+    <p>Last updated: May 29, 2026</p>
+  </div>
+
+</div>
+
+</body>
+</html>

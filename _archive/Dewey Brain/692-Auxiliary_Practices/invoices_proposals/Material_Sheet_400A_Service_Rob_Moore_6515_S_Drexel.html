@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1050, initial-scale=0.45, maximum-scale=2.0">
+<title>Material Sheet — 400A Service · 6515 S Drexel Ave</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f0f4f8;
+    padding: 30px;
+    color: #1a1a2e;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+    overflow: hidden;
+  }
+  .header {
+    background: linear-gradient(135deg, #002244 0%, #69BE28 100%);
+    color: #fff;
+    padding: 28px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-left { display: flex; align-items: flex-start; gap: 16px; }
+  .header-left img {
+    width: 140px; height: 120px; object-fit: contain;
+    border-radius: 8px; background: #fff; padding: 4px;
+  }
+  .header-left .brand h1 { font-size: 22px; font-weight: 700; letter-spacing: 1px; }
+  .header-left .brand .subtitle { font-size: 12px; opacity: 0.85; margin-top: 3px; }
+  .header-right { text-align: right; }
+  .header-right .label { font-size: 10px; opacity: 0.7; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 3px; }
+  .header-right .value { font-size: 15px; font-weight: 700; }
+  .doc-title {
+    background: #002244;
+    color: #69BE28;
+    text-align: center;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .job-details {
+    margin: 20px 32px;
+    background: #f8fafc;
+    border-left: 4px solid #128c7e;
+    border-radius: 0 8px 8px 0;
+    padding: 16px 20px;
+    display: flex;
+    gap: 32px;
+  }
+  .job-col { flex: 1; }
+  .job-col .label { font-size: 10px; text-transform: uppercase; color: #64748b; letter-spacing: 1px; margin-bottom: 4px; font-weight: 600; }
+  .job-col .value { font-size: 14px; font-weight: 700; color: #1a1a2e; }
+
+  .section-title {
+    margin: 20px 32px 8px;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #002244;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid #002244;
+    padding-bottom: 6px;
+  }
+
+  .mat-table { margin: 0 32px 20px; width: calc(100% - 64px); border-collapse: collapse; font-size: 13px; }
+  .mat-table thead th {
+    background: #002244;
+    color: #fff;
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  .mat-table thead th:nth-child(1) { width: 4%; text-align: center; }
+  .mat-table thead th:nth-child(2) { width: 38%; }
+  .mat-table thead th:nth-child(3) { width: 12%; text-align: center; }
+  .mat-table thead th:nth-child(4) { width: 10%; text-align: center; }
+  .mat-table thead th:nth-child(5) { width: 18%; text-align: right; }
+  .mat-table thead th:nth-child(6) { width: 18%; text-align: right; }
+  .mat-table tbody tr { border-bottom: 1px solid #e2e8f0; }
+  .mat-table tbody tr:nth-child(even) { background: #f8fafc; }
+  .mat-table tbody td { padding: 9px 12px; color: #334155; vertical-align: middle; }
+  .mat-table tbody td:nth-child(1) { text-align: center; font-weight: 600; color: #64748b; }
+  .mat-table tbody td:nth-child(3), .mat-table tbody td:nth-child(4) { text-align: center; }
+  .mat-table tbody td:nth-child(5), .mat-table tbody td:nth-child(6) { text-align: right; font-weight: 600; }
+  .mat-table tbody td:nth-child(6) { color: #128c7e; }
+  .tbd { color: #94a3b8; font-style: italic; }
+
+  .totals-box {
+    margin: 0 32px 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .totals-inner { min-width: 280px; }
+  .tot-row { display: flex; justify-content: space-between; padding: 6px 0; font-size: 13px; border-bottom: 1px solid #e2e8f0; }
+  .tot-row .lbl { color: #64748b; }
+  .tot-row .val { font-weight: 600; color: #334155; }
+  .tot-row.grand { font-size: 16px; font-weight: 800; border-top: 2px solid #002244; border-bottom: none; margin-top: 4px; padding-top: 8px; }
+  .tot-row.grand .val { color: #128c7e; }
+
+  .note-box {
+    margin: 0 32px 20px;
+    padding: 14px 20px;
+    background: #fffbeb;
+    border: 1px solid #fcd34d;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #78350f;
+    line-height: 1.7;
+  }
+  .note-box strong { color: #b45309; }
+
+  .sig-section {
+    display: flex;
+    gap: 32px;
+    margin: 0 32px 24px;
+  }
+  .sig-box { flex: 1; border-top: 2px solid #002244; padding-top: 12px; }
+  .sig-box h4 { font-size: 11px; text-transform: uppercase; color: #64748b; letter-spacing: 1px; margin-bottom: 20px; font-weight: 700; }
+  .sig-line { border-bottom: 1px solid #94a3b8; height: 32px; margin-bottom: 5px; }
+  .sig-label { font-size: 11px; color: #64748b; margin-bottom: 14px; }
+
+  .footer {
+    background: linear-gradient(135deg, #002244 0%, #69BE28 100%);
+    color: #fff;
+    padding: 20px 32px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.8;
+  }
+  .footer .top { font-weight: 600; margin-bottom: 4px; }
+  .footer .bottom { opacity: 0.85; font-size: 11px; }
+
+  @media print { body { padding: 0; background: #fff; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="header-left">
+      <img src="/media/allenai/Expansion/Blacktech_Drive/Home_Backup/Blacktech_Reports/Photos/blacktech_logo.jpg" alt="Blacktech Logo">
+      <div class="brand">
+        <h1>BLACKTECH SOLUTIONS CORP</h1>
+        <div class="subtitle">Electrical Contractor · Chicago, IL</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="label">Sheet #</div>
+      <div class="value">BSC-MAT-6515-400A</div>
+      <br>
+      <div class="label">Date</div>
+      <div class="value">06/04/2026</div>
+    </div>
+  </div>
+
+  <div class="doc-title">Vendor Material Sheet — 400A Electrical Service</div>
+
+  <div class="job-details">
+    <div class="job-col">
+      <div class="label">Job Address</div>
+      <div class="value">6515 S Drexel Ave, Chicago, IL</div>
+    </div>
+    <div class="job-col">
+      <div class="label">Customer</div>
+      <div class="value">Rob Moore</div>
+    </div>
+    <div class="job-col">
+      <div class="label">Scope</div>
+      <div class="value">400A Service Upgrade</div>
+    </div>
+    <div class="job-col">
+      <div class="label">Prepared By</div>
+      <div class="value">Derrell Black</div>
+    </div>
+  </div>
+
+  <!-- SERVICE ENTRANCE -->
+  <div class="section-title">⚡ Service Entrance Equipment</div>
+  <table class="mat-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Description</th>
+        <th>Qty</th>
+        <th>Unit</th>
+        <th>Unit Cost</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>400A Horizontal Meter Socket / Meter Base — Ring-Type, 4-Gang (CECHA Approved Equipment)</td>
+        <td>1</td>
+        <td>Ea</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>200A Double-Pole Main Breakers — CECHA Approved (x2, one per meter position)</td>
+        <td>2</td>
+        <td>Ea</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>200A Distribution Panel (x2 — dual 200A panels)</td>
+        <td>2</td>
+        <td>Ea</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Meter Socket Enclosure / Weather Head</td>
+        <td>1</td>
+        <td>Ea</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- CONDUIT & FITTINGS -->
+  <div class="section-title">🔧 Conduit &amp; Fittings</div>
+  <table class="mat-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Description</th>
+        <th>Qty</th>
+        <th>Unit</th>
+        <th>Unit Cost</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>5</td>
+        <td>3½" Rigid Metal Conduit (RMC) — Service Entrance</td>
+        <td>20</td>
+        <td>ft</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>3½" PVC Conduit (Underground)</td>
+        <td>10</td>
+        <td>ft</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>3½" Conduit Connectors / Couplings</td>
+        <td>4</td>
+        <td>Ea</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>3½" Conduit Straps / Clamps</td>
+        <td>10</td>
+        <td>Ea</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Conduit Entrance Cap (Weatherproof)</td>
+        <td>1</td>
+        <td>Ea</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- WIRE & CABLE -->
+  <div class="section-title">🔌 Wire &amp; Cable</div>
+  <table class="mat-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Description</th>
+        <th>Qty</th>
+        <th>Unit</th>
+        <th>Unit Cost</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>10</td>
+        <td>750 kcmil Aluminum Service Entrance Cable (SER) — Phase A</td>
+        <td>25</td>
+        <td>ft</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>750 kcmil Aluminum Service Entrance Cable (SER) — Phase B</td>
+        <td>25</td>
+        <td>ft</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>750 kcmil Aluminum Neutral Cable</td>
+        <td>25</td>
+        <td>ft</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>1/0 AWG Copper Ground Wire</td>
+        <td>100</td>
+        <td>ft</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>750 kcmil Aluminum Compression Lugs / Connectors</td>
+        <td>6</td>
+        <td>Ea</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- GROUNDING -->
+  <div class="section-title">🌍 Grounding System</div>
+  <table class="mat-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Description</th>
+        <th>Qty</th>
+        <th>Unit</th>
+        <th>Unit Cost</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>15</td>
+        <td>Ground Rod — 5/8" x 8ft Copper-Clad</td>
+        <td>2</td>
+        <td>Ea</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>Ground Rod Clamps</td>
+        <td>2</td>
+        <td>Ea</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>Ground Bar / Busbar</td>
+        <td>1</td>
+        <td>Ea</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+      <tr>
+        <td>17a</td>
+        <td>1" EMT / Rigid Conduit Pipe — Grounding Run</td>
+        <td>100</td>
+        <td>ft</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- BREAKERS & HARDWARE -->
+  <div class="section-title">🔲 Breakers &amp; Hardware</div>
+  <table class="mat-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Description</th>
+        <th>Qty</th>
+        <th>Unit</th>
+        <th>Unit Cost</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>18</td>
+        <td>200A Double-Pole Main Breaker (per panel)</td>
+        <td>2</td>
+        <td>Ea</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>Branch Circuit Breakers (20A, 30A, 40A — assorted)</td>
+        <td>1</td>
+        <td>Lot</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>Panel Cover / Dead Front</td>
+        <td>1</td>
+        <td>Ea</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>Panel Mounting Hardware (screws, anchors, brackets)</td>
+        <td>1</td>
+        <td>Lot</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>Weatherproof Outdoor Box / Enclosure</td>
+        <td>1</td>
+        <td>Ea</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+      <tr>
+        <td>23</td>
+        <td>Wire Nuts / Connectors (assorted)</td>
+        <td>1</td>
+        <td>Lot</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+      <tr>
+        <td>24</td>
+        <td>Electrical Tape, Pulling Lubricant, Misc. Hardware</td>
+        <td>1</td>
+        <td>Lot</td>
+        <td class="tbd">TBD</td>
+        <td class="tbd">TBD</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- TOTALS -->
+  <div class="totals-box">
+    <div class="totals-inner">
+      <div class="tot-row">
+        <span class="lbl">Materials Subtotal</span>
+        <span class="val tbd">TBD — Pending Vendor Pricing</span>
+      </div>
+      <div class="tot-row">
+        <span class="lbl">Electrical Labor (Option 2)</span>
+        <span class="val">$18,500.00</span>
+      </div>
+      <div class="tot-row">
+        <span class="lbl">Demo Labor</span>
+        <span class="val">$1,100.00</span>
+      </div>
+      <div class="tot-row grand">
+        <span class="lbl">ESTIMATED TOTAL</span>
+        <span class="val">$19,600.00 + Materials</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="note-box">
+    <strong>Note to Vendor:</strong> Please provide pricing for all TBD items above. Send quote to
+    <strong>invoices@blacktechsolutionscorp.com</strong> or call <strong>(312) 965-2782</strong>.<br><br>
+    <strong>Note:</strong> Quantities are estimates based on field conditions at 6515 S Drexel Ave.
+    Final quantities may be adjusted after on-site assessment.
+  </div>
+
+  <div class="sig-section">
+    <div class="sig-box">
+      <h4>Prepared By</h4>
+      <div class="sig-line"></div>
+      <div class="sig-label">Derrell Black — Blacktech Solutions Corp</div>
+      <div class="sig-line"></div>
+      <div class="sig-label">Date</div>
+    </div>
+    <div class="sig-box">
+      <h4>Vendor / Supplier</h4>
+      <div class="sig-line"></div>
+      <div class="sig-label">Vendor Name &amp; Company</div>
+      <div class="sig-line"></div>
+      <div class="sig-label">Quote Date</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="top">Blacktech Solutions Corp &nbsp;|&nbsp; (312) 965-2782 &nbsp;|&nbsp; invoices@blacktechsolutionscorp.com</div>
+    <div class="bottom">© 2026 Blacktech Solutions Corp &nbsp;|&nbsp; Licensed &amp; Insured Electrical Contractor &nbsp;|&nbsp; Dolton, IL 60419</div>
+  </div>
+
+</div>
+</body>
+</html>

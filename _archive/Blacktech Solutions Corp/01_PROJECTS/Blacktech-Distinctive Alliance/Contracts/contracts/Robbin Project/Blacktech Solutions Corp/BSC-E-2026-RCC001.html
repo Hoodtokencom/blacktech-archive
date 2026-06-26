@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice BSC-E-2026-RCC001 — Robbins Community Center</title>
+  <style>
+    @page { size: letter; margin: 0.5in; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; color: #222; background: #fff; font-size: 11pt; line-height: 1.4; }
+
+    .header { background: #002244; color: #fff; padding: 24px 32px; display: flex; justify-content: space-between; align-items: center; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .header-left { display: flex; align-items: center; gap: 16px; }
+    .header-left img { width: 100px; height: auto; object-fit: contain; border-radius: 6px; background: #fff; padding: 3px; }
+    .header .company { font-size: 22pt; font-weight: 700; color: #69BE28; letter-spacing: 1px; }
+    .header .subtitle { font-size: 10pt; color: #90b8d4; margin-top: 4px; }
+    .header .est-info { text-align: right; }
+    .header .est-label { font-size: 9pt; color: #90b8d4; text-transform: uppercase; }
+    .header .est-num { font-size: 16pt; font-weight: 700; color: #69BE28; }
+
+    .info-bar { display: flex; justify-content: space-between; padding: 16px 32px; background: #f4f7fa; border-bottom: 2px solid #002244; }
+    .info-bar .col { flex: 1; }
+    .info-bar .label { font-size: 8pt; text-transform: uppercase; color: #666; font-weight: 600; }
+    .info-bar .value { font-size: 10pt; color: #002244; font-weight: 600; }
+
+    .section { padding: 12px 32px; }
+    .section-title { font-size: 13pt; font-weight: 700; color: #002244; border-bottom: 2px solid #69BE28; padding-bottom: 4px; margin: 16px 0 8px 0; }
+
+    table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 10pt; }
+    th { background: #002244; color: #fff; padding: 8px 10px; text-align: left; font-size: 9pt; text-transform: uppercase; }
+    td { padding: 6px 10px; border-bottom: 1px solid #e0e0e0; }
+    tr:nth-child(even) { background: #f9fbfd; }
+    .subtotal-row td { font-weight: 700; background: #eef3f8; border-top: 2px solid #002244; }
+    .total-row td { font-weight: 700; background: #002244; color: #69BE28; font-size: 12pt; }
+    .right { text-align: right; }
+
+    .note-box { background: #fff8e1; border-left: 4px solid #f5a623; padding: 12px 16px; margin: 12px 0; font-size: 9pt; }
+    .alert-box { background: #fff5f5; border-left: 4px solid #dc2626; padding: 12px 16px; margin: 12px 0; font-size: 9pt; }
+
+    .footer { background: #002244; color: #90b8d4; padding: 16px 32px; font-size: 8pt; text-align: center; margin-top: 20px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .footer .green { color: #69BE28; font-weight: 700; }
+
+    .terms { font-size: 8.5pt; color: #555; padding: 8px 32px; }
+    .terms li { margin: 3px 0; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-left">
+    <img src="blacktech_logo.jpg" alt="Blacktech Solutions Corp">
+    <div>
+      <div class="company">BLACKTECH SOLUTIONS CORP</div>
+      <div class="subtitle">Licensed Electrical Contractor — Chicago, IL</div>
+    </div>
+  </div>
+  <div class="est-info">
+    <div class="est-label">Invoice Number</div>
+    <div class="est-num">BSC-E-2026-RCC001</div>
+    <div class="est-label" style="margin-top:6px;">Date</div>
+    <div class="value" style="color:#fff;">June 16, 2026</div>
+  </div>
+</div>
+
+<!-- PROJECT INFO -->
+<div class="info-bar">
+  <div class="col">
+    <div class="label">Bill To</div>
+    <div class="value">Simply E&C</div>
+    <div class="value" style="font-weight:400;">Prime Subrecipient — Robbins Community Center</div>
+  </div>
+  <div class="col">
+    <div class="label">Project</div>
+    <div class="value">Robbins Community Center</div>
+    <div class="value" style="font-weight:400;">IL DCEO Grant #24-444118</div>
+  </div>
+  <div class="col">
+    <div class="label">Payment Terms</div>
+    <div class="value">Net 15</div>
+    <div class="value" style="font-weight:400;">Due: July 1, 2026</div>
+  </div>
+</div>
+
+<!-- SCOPE -->
+<div class="section">
+  <div class="section-title">Invoice Summary</div>
+  <p style="font-size:10pt; color:#444; margin:8px 0;">This invoice covers outstanding project costs advanced by Blacktech Solutions Corp for the Robbins Community Center Redevelopment Project, including subcontractor payments, project management, and coordination services through June 2026.</p>
+</div>
+
+<!-- LINE ITEMS -->
+<div class="section">
+  <table>
+    <tr>
+      <th>Description</th>
+      <th class="right">Amount</th>
+    </tr>
+    <tr>
+      <td><strong>JLL Project Management Fees — May 2026</strong><br><span style="font-size:9pt;color:#666;">Invoices USPDS185009 & USPDS185334 — Jones Lang LaSalle Americas, Inc.</span></td>
+      <td class="right">$9,000.00</td>
+    </tr>
+    <tr>
+      <td><strong>BB Environmental Services — Mold Air Sampling</strong><br><span style="font-size:9pt;color:#666;">Estimate #202856 — 10 microbial samples at 13800 S Trumbull Ave, Robbins</span></td>
+      <td class="right">$1,000.00</td>
+    </tr>
+    <tr>
+      <td><strong>Naturally Urban Environmental Inc. — Project Coordination</strong><br><span style="font-size:9pt;color:#666;">April–June 2026: stakeholder engagement, procurement support, RFP prep, occupancy assessment</span></td>
+      <td class="right">$8,500.00</td>
+    </tr>
+    <tr>
+      <td><strong>Blacktech Solutions Corp — Electrical Assessment & Project Management</strong><br><span style="font-size:9pt;color:#666;">April–June 2026: site coordination, electrical assessment, contractor engagement, grant compliance</span></td>
+      <td class="right">$9,000.00</td>
+    </tr>
+    <tr class="total-row">
+      <td><strong>TOTAL DUE</strong></td>
+      <td class="right"><strong>$27,500.00</strong></td>
+    </tr>
+  </table>
+</div>
+
+<!-- ALERT -->
+<div class="alert-box">
+  <strong>⚠️ Schedule Impact Notice:</strong> The Village of Robbins has not yet provided 24 months of utility consumption data (electric, gas, water). This has caused an estimated 2-month delay in the Feasibility Study and Energy Audit. Continued delay may impact consultant procurement, engineering RFQs, design development, and capital planning. Robbins is requested to provide all utility bills as soon as practicable.
+</div>
+
+<!-- PAYMENT -->
+<div class="section">
+  <div class="section-title">Payment Instructions</div>
+  <table>
+    <tr><td style="width:140px; font-weight:700;">Payable To:</td><td>Blacktech Solutions Corp</td></tr>
+    <tr><td style="font-weight:700;">Address:</td><td>14076 Lincoln Ave, Dolton, IL 60419</td></tr>
+    <tr><td style="font-weight:700;">Email:</td><td>payroll@blacktechsolutionscorp.com</td></tr>
+    <tr><td style="font-weight:700;">EIN:</td><td>82-3394717</td></tr>
+  </table>
+</div>
+
+<!-- TERMS -->
+<div class="section">
+  <div class="section-title">Terms & Conditions</div>
+  <ul class="terms">
+    <li>Payment due within 15 days of invoice date (Net 15) — July 1, 2026.</li>
+    <li>Late payments subject to 1.5% monthly finance charge.</li>
+    <li>This invoice represents costs advanced by Blacktech Solutions Corp in support of the Robbins Community Center project under IL DCEO Grant #24-444118.</li>
+
+  </ul>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <span class="green">BLACKTECH SOLUTIONS CORP</span> &nbsp;|&nbsp; 14076 Lincoln Ave, Dolton, IL &nbsp;|&nbsp; payroll@blacktechsolutionscorp.com &nbsp;|&nbsp; EIN: 82-3394717
+  <br>Licensed Electrical Contractor — City of Chicago
+</div>
+
+</body>
+</html>

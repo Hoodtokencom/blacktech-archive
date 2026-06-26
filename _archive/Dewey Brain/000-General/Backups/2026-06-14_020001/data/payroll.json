@@ -1,0 +1,148 @@
+{
+  "employees": [
+    {
+      "id": "emp-001",
+      "name": "Derrell Black",
+      "role": "Owner / Master Electrician",
+      "pay_type": "hourly",
+      "rate": 150,
+      "overtime_rate": 225,
+      "status": "active",
+      "type": "W2",
+      "email": "derrell@blacktechsolutionscorp.com",
+      "phone": "312-965-2782",
+      "start_date": "2019-01-01",
+      "bank": {
+        "bank_name": "Chase",
+        "routing": "071000013",
+        "account": "****4521",
+        "account_type": "checking"
+      }
+    },
+    {
+      "id": "emp-002",
+      "name": "Elle Williams",
+      "role": "Project Admin / Office",
+      "pay_type": "salary",
+      "rate": 55000,
+      "overtime_rate": 0,
+      "status": "active",
+      "type": "W2",
+      "email": "e.williams@blacktechsolutionscorp.com",
+      "phone": "",
+      "start_date": "2025-03-01",
+      "bank": {
+        "bank_name": "",
+        "routing": "",
+        "account": "",
+        "account_type": "checking"
+      }
+    },
+    {
+      "id": "emp-003",
+      "name": "Cosmo Black",
+      "role": "Assistant / Helper",
+      "pay_type": "hourly",
+      "rate": 30,
+      "overtime_rate": 45,
+      "status": "active",
+      "type": "1099",
+      "email": "",
+      "phone": "",
+      "start_date": "2024-06-01",
+      "bank": {
+        "bank_name": "",
+        "routing": "",
+        "account": "",
+        "account_type": "checking"
+      }
+    },
+    {
+      "id": "emp-004",
+      "name": "Test Worker",
+      "role": "Apprentice",
+      "pay_type": "hourly",
+      "rate": 22,
+      "overtime_rate": 33.0,
+      "status": "active",
+      "type": "W2",
+      "email": "",
+      "phone": "",
+      "start_date": "2026-06-08",
+      "bank": {
+        "bank_name": "",
+        "routing": "",
+        "account": "",
+        "account_type": "checking"
+      }
+    }
+  ],
+  "timesheets": [
+    {
+      "id": "ts-1780942739732",
+      "empId": "emp-001",
+      "name": "Derrell Black",
+      "week": "2026-06-02",
+      "hours": 40,
+      "otHours": 5,
+      "regPay": 5000,
+      "otPay": 937.5,
+      "bonus": 100,
+      "total": 6037.5,
+      "notes": "",
+      "date": "2026-06-08",
+      "status": "calculated",
+      "paid": false,
+      "payment_method": "",
+      "paid_date": ""
+    },
+    {
+      "id": "ts-1780943483729",
+      "empId": "emp-002",
+      "name": "Elle Williams",
+      "week": "2026-06-02",
+      "hours": 40,
+      "otHours": 0,
+      "regPay": 1000,
+      "otPay": 0,
+      "bonus": 0,
+      "total": 1000,
+      "notes": "Office admin week",
+      "date": "2026-06-08",
+      "status": "calculated",
+      "paid": false,
+      "payment_method": "",
+      "paid_date": ""
+    },
+    {
+      "id": "ts-1780949251008",
+      "name": "Derrell Black",
+      "week": "2026-06-08",
+      "hours": 8.0,
+      "otHours": 2.0,
+      "regPay": 1000.0,
+      "otPay": 375.0,
+      "bonus": 50.0,
+      "total": 1425.0,
+      "notes": "Test job",
+      "date": "2026-06-08",
+      "status": "calculated",
+      "paid": false,
+      "payment_method": "",
+      "paid_date": ""
+    }
+  ],
+  "payrolls": [],
+  "payment_runs": [
+    {
+      "id": "run-001",
+      "week": "2026-06-02",
+      "date": "2026-06-08",
+      "total": 7037.5,
+      "count": 2,
+      "status": "ready",
+      "method": "ACH",
+      "paid_date": ""
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "version": "1.0",
+  "base_url": "https://social.blacktechsolutionscorp.com/static/photos",
+  "categories": {
+    "blacktech": {
+      "label": "Blacktech Solutions Corp",
+      "description": "Electrical contracting, HVAC, panel upgrades, estimates"
+    },
+    "think-energy": {
+      "label": "Think Energy",
+      "description": "Energy advisory, auto-save, ComEd programs"
+    },
+    "comed": {
+      "label": "ComEd EESP",
+      "description": "Before/after photos, installations, energy upgrades"
+    },
+    "avlacier-water": {
+      "label": "A'vlacier Brands LLC",
+      "description": "Water services, water products"
+    },
+    "bw3": {
+      "label": "BW3 / Community",
+      "description": "Community events, networking, local business"
+    },
+    "community": {
+      "label": "Community",
+      "description": "South Side community, events, outreach"
+    },
+    "general": {
+      "label": "General / Brand",
+      "description": "Logos, QR codes, branded graphics"
+    }
+  },
+  "photos": [
+    {
+      "filename": "blacktech_logo.jpg",
+      "category": "general",
+      "alt": "Blacktech Solutions Corp logo",
+      "tags": ["logo", "brand", "blacktech"],
+      "size": 6279,
+      "added": "2026-06-07"
+    },
+    {
+      "filename": "think_energy_qr.png",
+      "category": "think-energy",
+      "alt": "Think Energy QR code",
+      "tags": ["qr", "think-energy", "signup"],
+      "size": 8985,
+      "added": "2026-06-04"
+    },
+    {
+      "filename": "comed_qr.png",
+      "category": "comed",
+      "alt": "ComEd energy savings QR code",
+      "tags": ["qr", "comed", "signup"],
+      "size": 2409,
+      "added": "2026-06-04"
+    },
+    {
+      "filename": "after_panel.jpg",
+      "category": "comed",
+      "alt": "Panel upgrade after photo",
+      "tags": ["before-after", "panel", "upgrade", "comed"],
+      "size": 10766,
+      "added": "2026-06-20"
+    },
+    {
+      "filename": "after_heatpump.jpg",
+      "category": "comed",
+      "alt": "Heat pump installation after photo",
+      "tags": ["before-after", "heatpump", "hvac", "comed"],
+      "size": 10814,
+      "added": "2026-06-20"
+    },
+    {
+      "filename": "before_panel.jpg",
+      "category": "comed",
+      "alt": "Old panel before upgrade",
+      "tags": ["before-after", "panel", "upgrade", "comed"],
+      "size": 10459,
+      "added": "2026-06-20"
+    },
+    {
+      "filename": "before_furnace.jpg",
+      "category": "comed",
+      "alt": "Old furnace before replacement",
+      "tags": ["before-after", "furnace", "hvac", "comed"],
+      "size": 10754,
+      "added": "2026-06-20"
+    },
+    {
+      "filename": "electrical_panel_01.jpg",
+      "category": "blacktech",
+      "alt": "Electrical panel upgrade work",
+      "tags": ["electrical", "panel", "upgrade", "blacktech", "contracting", "stock"],
+      "size": 224020,
+      "added": "2026-06-22"
+    },
+    {
+      "filename": "electrician_working_01.jpg",
+      "category": "blacktech",
+      "alt": "Electrician working on wiring",
+      "tags": ["electrical", "electrician", "wiring", "blacktech", "contracting", "stock"],
+      "size": 115995,
+      "added": "2026-06-22"
+    },
+    {
+      "filename": "electrical_wiring_01.jpg",
+      "category": "blacktech",
+      "alt": "Electrical wiring and circuits",
+      "tags": ["electrical", "wiring", "circuits", "blacktech", "contracting", "stock"],
+      "size": 395748,
+      "added": "2026-06-22"
+    },
+    {
+      "filename": "construction_worker_01.jpg",
+      "category": "blacktech",
+      "alt": "Construction worker on site",
+      "tags": ["construction", "worker", "worksite", "blacktech", "contracting", "stock"],
+      "size": 126106,
+      "added": "2026-06-22"
+    },
+    {
+      "filename": "construction_site_01.jpg",
+      "category": "blacktech",
+      "alt": "Construction site overview",
+      "tags": ["construction", "site", "worksite", "blacktech", "contracting", "stock"],
+      "size": 371812,
+      "added": "2026-06-22"
+    },
+    {
+      "filename": "solar_panels_01.jpg",
+      "category": "think-energy",
+      "alt": "Residential solar panels on roof",
+      "tags": ["solar", "panels", "renewable", "think-energy", "stock"],
+      "size": 175561,
+      "added": "2026-06-22"
+    },
+    {
+      "filename": "solar_energy_01.jpg",
+      "category": "think-energy",
+      "alt": "Solar energy installation",
+      "tags": ["solar", "energy", "renewable", "think-energy", "stock"],
+      "size": 175561,
+      "added": "2026-06-22"
+    },
+    {
+      "filename": "solar_panels_02.jpg",
+      "category": "think-energy",
+      "alt": "Residential solar panel system",
+      "tags": ["solar", "panels", "residential", "think-energy", "stock"],
+      "size": 211764,
+      "added": "2026-06-22"
+    },
+    {
+      "filename": "smart_home_01.jpg",
+      "category": "think-energy",
+      "alt": "Smart home energy management",
+      "tags": ["smart-home", "energy", "thermostat", "think-energy", "stock"],
+      "size": 68079,
+      "added": "2026-06-22"
+    },
+    {
+      "filename": "led_lighting_01.jpg",
+      "category": "think-energy",
+      "alt": "LED lighting retrofit installation",
+      "tags": ["led", "lighting", "energy", "retrofit", "think-energy", "comed", "efficiency", "stock"],
+      "size": 162899,
+      "added": "2026-06-22"
+    },
+    {
+      "filename": "hvac_system_01.jpg",
+      "category": "comed",
+      "alt": "HVAC system installation",
+      "tags": ["hvac", "heating", "cooling", "comed", "energy", "stock"],
+      "size": 272618,
+      "added": "2026-06-22"
+    },
+    {
+      "filename": "community_meeting_01.jpg",
+      "category": "community",
+      "alt": "Community meeting gathering",
+      "tags": ["community", "meeting", "outreach", "networking", "south-side", "stock"],
+      "size": 122303,
+      "added": "2026-06-22"
+    },
+    {
+      "filename": "volunteers_01.jpg",
+      "category": "community",
+      "alt": "Community volunteers working together",
+      "tags": ["community", "volunteers", "outreach", "south-side", "stock"],
+      "size": 118895,
+      "added": "2026-06-22"
+    },
+    {
+      "filename": "neighborhood_01.jpg",
+      "category": "community",
+      "alt": "Neighborhood street view",
+      "tags": ["community", "neighborhood", "south-side", "stock"],
+      "size": 330393,
+      "added": "2026-06-22"
+    }
+  ]
+}

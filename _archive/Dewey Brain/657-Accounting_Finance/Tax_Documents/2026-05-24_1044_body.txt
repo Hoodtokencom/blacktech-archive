@@ -1,0 +1,38 @@
+From: "cPanel on blacktechsolutionscorp.com" <cpanel@blacktechsolutionscorp.com>
+Subject: =?UTF-8?B?W2JsYWNrdGVjaHNvbHV0aW9uc2NvcnAuY29tXSBDbGllbnQgY29u?= =?UTF-8?B?ZmlndXJhdGlvbiBzZXR0aW5ncyBmb3Ig4oCcdGF4ZXNAYmxhY2t0ZWNoc29s?= =?UTF-8?B?dXRpb25zY29ycC5jb23igJ0u?=
+Date: Sun, 24 May 2026 15:18:30 GMT
+==================================================
+
+Client Configuration settings for “taxes@blacktechsolutionscorp.com”.
+
+
+Mail Client Manual Settings
+---------------------------
+
+Secure SSL/TLS Settings (Recommended)
+
+Username:
+
+taxes@blacktechsolutionscorp.com
+
+Password:
+
+Use the email account’s password.
+
+Incoming Server:
+
+mail.blacktechsolutionscorp.com
+
+  * IMAP Port: 993
+
+  * POP3 Port: 995
+
+Outgoing Server:
+
+mail.blacktechsolutionscorp.com
+
+  * SMTP Port: 465
+
+IMAP, POP3, and SMTP require authentication.
+
+N

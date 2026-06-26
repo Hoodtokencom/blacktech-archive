@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Money & Invoices — Blacktech</title>
+<link rel="manifest" href="/money_manifest.json"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="Money"/>
+<meta name="theme-color" content="#a78bfa"/>
+<link rel="apple-touch-icon" href="/icons/money-192.png"/>
+<script>
+if('serviceWorker' in navigator){
+  window.addEventListener('load',()=>{
+    navigator.serviceWorker.register('/sw_money.js').catch(()=>{});
+  });
+}
+</script>
+  <style>
+    :root {
+      --bg-dark: #121212;
+      --bg-card: #1E1E1E;
+      --navy: #002244;
+      --green: #69BE28;
+      --blue: #00B4D8;
+      --text-white: #FFFFFF;
+      --text-gray: #B0B0B0;
+      --border: #2A2A2A;
+    }
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg-dark); color: var(--text-white); margin: 0; padding: 0 0 100px; }
+
+    /* ── HEADER ── */
+    .header {
+      background: linear-gradient(135deg, #002244 0%, #69BE28 100%);
+      padding: 18px 16px 14px;
+      text-align: center;
+    }
+    .header h1 { margin: 0; font-size: 20px; }
+    .header p  { margin: 3px 0 0; font-size: 12px; opacity: 0.9; }
+
+    /* ── SUMMARY BAR ── */
+    .summary-bar {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 10px; background: var(--bg-card);
+      padding: 14px 16px; margin: 12px 12px 0;
+      border-radius: 12px;
+    }
+    .sum-item .lbl { font-size: 10px; color: var(--text-gray); text-transform: uppercase; letter-spacing: .04em; }
+    .sum-item .val { font-size: 18px; font-weight: 700; margin-top: 3px; }
+    .val.green { color: var(--green); }
+    .val.blue  { color: var(--blue); }
+    .val.gold  { color: #fbbf24; }
+    .val.paid  { color: #4CAF50; }
+
+    /* ── TABS ── */
+    .tabs {
+      display: flex; margin: 14px 12px 0;
+      background: var(--bg-card); border-radius: 10px; padding: 4px; gap: 4px;
+    }
+    .tab {
+      flex: 1; text-align: center; padding: 10px 4px;
+      font-size: 13px; font-weight: 700; border-radius: 8px;
+      cursor: pointer; color: var(--text-gray); border: none; background: none;
+    }
+    .tab.active { background: var(--green); color: #000; }
+
+    /* ── TAB PANELS ── */
+    .panel { display: none; padding: 12px; }
+    .panel.active { display: block; }
+
+    /* ── ADD BUTTON ── */
+    .add-btn {
+      display: block; width: 100%;
+      background: var(--green); color: #000;
+      font-size: 15px; font-weight: 700; border: none;
+      border-radius: 10px; padding: 14px; margin-bottom: 14px; cursor: pointer;
+    }
+    .add-btn:active { opacity: 0.85; }
+
+    /* ── JOB CARDS ── */
+    .project-card {
+      background: var(--bg-card); border-radius: 10px;
+      padding: 14px; margin-bottom: 12px; border-left: 4px solid var(--blue);
+    }
+    .project-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+    .project-id { font-size: 16px; font-weight: 700; }
+    .status-badge { font-size: 11px; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; font-weight: 600; }
+    .status-estimate { background: #2D4A3E; color: #69BE28; }
+    .status-invoiced  { background: #2A3A4A; color: #00B4D8; }
+    .status-paid      { background: #2A4A2A; color: #4CAF50; }
+    .status-overdue   { background: #4A2A2A; color: #ef4444; }
+    .project-details  { font-size: 13px; color: var(--text-gray); line-height: 1.5; }
+    .card-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; gap: 8px; }
+    .edit-btn {
+      background: #2a2a2a; color: #A5ACAF;
+      border: 1px solid #3a3a3a; border-radius: 8px;
+      padding: 5px 14px; font-size: 12px; cursor: pointer;
+    }
+    .inv-btn {
+      background: #002244; color: var(--green);
+      border: 1px solid #69BE2844; border-radius: 8px;
+      padding: 5px 14px; font-size: 12px; cursor: pointer; font-weight: 700;
+    }
+    .project-amount { font-size: 20px; font-weight: 700; }
+
+    /* ── INVOICE CARDS ── */
+    .invoice-card {
+      background: var(--bg-card); border-radius: 10px;
+      padding: 14px; margin-bottom: 12px; border-left: 4px solid var(--green);
+      cursor: pointer;
+    }
+    .invoice-card:active { opacity: 0.8; }
+    .inv-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+    .inv-num { font-size: 15px; font-weight: 700; color: var(--green); }
+    .inv-status { font-size: 11px; padding: 3px 10px; border-radius: 20px; font-weight: 600; text-transform: uppercase; }
+    .inv-status.draft    { background: #2a2a2a; color: #A5ACAF; }
+    .inv-status.sent     { background: #2A3A4A; color: #00B4D8; }
+    .inv-status.paid     { background: #2A4A2A; color: #4CAF50; }
+    .inv-status.overdue  { background: #4A2A2A; color: #ef4444; }
+    .inv-details { font-size: 13px; color: var(--text-gray); line-height: 1.5; }
+    .inv-footer  { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; }
+    .inv-amount  { font-size: 20px; font-weight: 700; color: var(--text-white); }
+    .inv-open-btn {
+      background: var(--green); color: #000;
+      border: none; border-radius: 8px;
+      padding: 6px 16px; font-size: 13px; font-weight: 700; cursor: pointer;
+    }
+
+    /* ── MODAL (job / invoice create) ── */
+    .modal-overlay {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,0.8); z-index: 200;
+      align-items: flex-end; justify-content: center;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal {
+      background: #1a1a1a; border-radius: 18px 18px 0 0;
+      padding: 20px 16px 40px; width: 100%; max-width: 540px;
+      max-height: 92vh; overflow-y: auto;
+    }
+    .modal h2 { margin: 0 0 16px; font-size: 17px; color: var(--green); }
+    .modal label { display: block; font-size: 12px; color: var(--text-gray); margin: 12px 0 4px; text-transform: uppercase; }
+    .modal input, .modal select, .modal textarea {
+      width: 100%; background: #2a2a2a; color: #fff;
+      border: 1px solid #3a3a3a; border-radius: 8px;
+      padding: 10px 12px; font-size: 15px; font-family: inherit;
+    }
+    .modal textarea { min-height: 80px; resize: vertical; }
+    .modal input:focus, .modal select:focus, .modal textarea:focus { outline: 2px solid var(--green); }
+    .modal-btns { display: flex; gap: 10px; margin-top: 20px; }
+    .btn-save   { flex:1; background: var(--green); color: #000; font-weight: 700; font-size: 15px; border: none; border-radius: 10px; padding: 13px; cursor: pointer; }
+    .btn-delete { background: #3a1a1a; color: #ef4444; font-weight: 600; font-size: 13px; border: 1px solid #ef444433; border-radius: 10px; padding: 13px 16px; cursor: pointer; }
+    .btn-cancel { background: #2a2a2a; color: #A5ACAF; font-size: 13px; border: none; border-radius: 10px; padding: 13px 16px; cursor: pointer; }
+
+    /* ── INLINE INVOICE EDITOR ── */
+    #inv-editor {
+      display: none; position: fixed; inset: 0; z-index: 300;
+      background: #0d0d0d; overflow-y: auto; padding: 0;
+    }
+    #inv-editor.open { display: block; }
+    .inv-editor-bar {
+      background: var(--navy); padding: 12px 16px;
+      display: flex; gap: 10px; align-items: center;
+      position: sticky; top: 0; z-index: 10;
+    }
+    .inv-editor-bar button {
+      padding: 8px 16px; border: none; border-radius: 8px;
+      font-size: 13px; font-weight: 700; cursor: pointer;
+    }
+    .btn-back  { background: #2a2a2a; color: #fff; }
+    .btn-print-inv { background: var(--green); color: #000; }
+    .inv-editor-bar span { font-size: 13px; color: var(--text-gray); flex: 1; }
+    #inv-frame { display: none; }
+
+    .footer { text-align: center; font-size: 11px; color: var(--text-gray); padding: 20px; opacity: 0.5; }
+
+    /* ── LINE ITEMS (invoice create) ── */
+    .line-item-row { display: flex; gap: 8px; align-items: flex-start; margin-bottom: 8px; }
+    .line-item-row input { flex: 1; }
+    .line-item-row input.qty { flex: 0 0 60px; }
+    .line-item-row input.rate { flex: 0 0 90px; }
+    .li-del { background: #3a1a1a; color: #ef4444; border: none; border-radius: 6px; padding: 10px 12px; font-size: 14px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>💸 Money & Invoices</h1>
+    <p id="lastUpdated">Blacktech Solutions Corp</p>
+  </div>
+
+  <div class="summary-bar">
+    <div class="sum-item">
+      <div class="lbl">📊 Pipeline</div>
+      <div class="val blue" id="sumTotal">$0.00</div>
+    </div>
+    <div class="sum-item">
+      <div class="lbl">🧾 Invoiced</div>
+      <div class="val gold" id="sumInvoiced">$0.00</div>
+    </div>
+    <div class="sum-item">
+      <div class="lbl">📝 Estimates</div>
+      <div class="val" id="sumEstimates">$0.00</div>
+    </div>
+    <div class="sum-item">
+      <div class="lbl">✅ Collected</div>
+      <div class="val green" id="sumCollected">$0.00</div>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('budget',this)">📋 Budget</button>
+    <button class="tab" onclick="switchTab('invoices',this)">🧾 Invoices</button>
+    <button class="tab" onclick="switchTab('vendors',this)">🏭 Vendors</button>
+    <button class="tab" onclick="refreshAll()" style="margin-left:auto;background:#1a2e1a;color:#69BE28;border:1.5px solid #69BE28;" title="Refresh data from server">🔄 Refresh</button>
+  </div>
+
+  <!-- BUDGET TAB -->
+  <div class="panel active" id="tab-budget">
+    <button class="add-btn" onclick="openJobModal()">＋ Add New Job</button>
+    <div id="jobList"></div>
+  </div>
+
+  <!-- INVOICES TAB -->
+  <div class="panel" id="tab-invoices">
+    <button class="add-btn" onclick="openInvModal()">🧾 Create New Invoice</button>
+    <div id="invList"></div>
+  </div>
+
+  <!-- VENDORS TAB -->
+  <div class="panel" id="tab-vendors">
+    <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;">
+      <button class="add-btn" style="flex:1;min-width:140px;" onclick="openVendorModal()">＋ Add Item</button>
+      <input id="vendorSearch" type="search" placeholder="🔍 Search catalog..." oninput="renderVendors()"
+        style="flex:2;min-width:160px;background:#1e1e1e;border:1px solid #333;color:#fff;padding:10px 12px;border-radius:10px;font-size:13px;">
+      <select id="vendorCatFilter" onchange="renderVendors()"
+        style="background:#1e1e1e;border:1px solid #333;color:#fff;padding:10px;border-radius:10px;font-size:13px;">
+        <option value="">All Categories</option>
+        <option>Devices</option>
+        <option>Breakers</option>
+        <option>Wire</option>
+        <option>Conduit</option>
+        <option>Boxes</option>
+        <option>Fixtures</option>
+        <option>Life Safety</option>
+        <option>Panels</option>
+        <option>Supplies</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div id="vendorList"></div>
+  </div>
+
+  <!-- VENDOR MODAL -->
+  <div class="modal-overlay" id="vendorModal" onclick="closeBg(event,'vendorModal')">
+    <div class="modal">
+      <h2 id="vendorModalTitle">Add Catalog Item</h2>
+      <label>Item Name</label>
+      <input id="vName" type="text" placeholder="e.g. 20A GFCI Outlet">
+      <label>Vendor / Supplier</label>
+      <input id="vVendor" type="text" placeholder="e.g. Home Depot, Graybar, PDC">
+      <label>Category</label>
+      <select id="vCat">
+        <option>Devices</option><option>Breakers</option><option>Wire</option>
+        <option>Conduit</option><option>Boxes</option><option>Fixtures</option>
+        <option>Life Safety</option><option>Panels</option><option>Supplies</option><option>Other</option>
+      </select>
+      <label>Unit (each / roll / stick / pack / lot)</label>
+      <input id="vUnit" type="text" placeholder="each">
+      <label>Your Cost ($)</label>
+      <input id="vCost" type="number" step="0.01" placeholder="0.00" oninput="calcVPrice()">
+      <label>Markup %</label>
+      <input id="vMarkup" type="number" step="0.1" value="17.5" oninput="calcVPrice()">
+      <label>Your Price (auto-calculated)</label>
+      <input id="vPrice" type="number" step="0.01" placeholder="0.00">
+      <label>Part # (optional)</label>
+      <input id="vPart" type="text" placeholder="">
+      <label>Notes</label>
+      <input id="vNotes" type="text" placeholder="Optional notes">
+      <div class="btn-row" style="margin-top:12px;">
+        <button class="btn-save" onclick="saveVendorItem()">Save</button>
+        <button class="btn-delete" id="vDeleteBtn" onclick="deleteVendorItem()" style="display:none">Delete</button>
+        <button class="btn-cancel" onclick="closeModal('vendorModal')">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JOB MODAL -->
+  <div class="modal-overlay" id="jobModal" onclick="closeBg(event,'jobModal')">
+    <div class="modal">
+      <h2 id="jobModalTitle">Add New Job</h2>
+      <label>Job # / ID</label>
+      <input type="text" id="fId" placeholder="e.g. 7414">
+      <label>Customer Name</label>
+      <input type="text" id="fCustomer" placeholder="e.g. John Smith">
+      <label>Scope / Description</label>
+      <input type="text" id="fScope" placeholder="e.g. Panel Upgrade">
+      <label>Address</label>
+      <input type="text" id="fAddress" placeholder="e.g. 1234 S MLK Dr, Chicago">
+      <label>Amount ($)</label>
+      <input type="number" id="fAmount" placeholder="0.00" step="0.01" min="0">
+      <label>Status</label>
+      <select id="fStatus">
+        <option value="estimate">Estimate</option>
+        <option value="invoiced">Invoiced</option>
+        <option value="paid">Paid</option>
+        <option value="overdue">Overdue</option>
+      </select>
+      <div class="modal-btns">
+        <button class="btn-save" onclick="saveJob()">Save</button>
+        <button class="btn-delete" id="jobDeleteBtn" onclick="deleteJob()" style="display:none">Delete</button>
+        <button class="btn-cancel" onclick="closeModal('jobModal')">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- INVOICE CREATE MODAL -->
+  <div class="modal-overlay" id="invModal" onclick="closeBg(event,'invModal')">
+    <div class="modal">
+      <h2 id="invModalTitle">Create Invoice</h2>
+      <label>Invoice #</label>
+      <input type="text" id="iNum" placeholder="e.g. BSC-2026-001">
+      <label>Customer Name</label>
+      <input type="text" id="iCustomer" placeholder="e.g. Phil Powell">
+      <label>Customer Address</label>
+      <input type="text" id="iAddress" placeholder="e.g. 350 W 154th St, South Holland IL">
+      <label>Job Name / Project</label>
+      <input type="text" id="iJob" placeholder="e.g. Echo School — Electrical">
+      <label>Invoice Date</label>
+      <input type="date" id="iDate">
+      <label>Due Date</label>
+      <input type="date" id="iDue">
+      <label>Line Items</label>
+      <div id="lineItems"></div>
+      <div style="display:flex;gap:6px;margin-top:4px;">
+        <button onclick="addLineItem()" style="flex:1;background:#1a2a1a;color:var(--green);border:1px solid #69BE2844;border-radius:8px;padding:8px 12px;font-size:13px;cursor:pointer;">+ Add Line Item</button>
+        <button onclick="openCatalogPicker()" style="flex:1;background:#1a2a3a;color:#60a5fa;border:1px solid #60a5fa44;border-radius:8px;padding:8px 12px;font-size:13px;cursor:pointer;">🔍 From Catalog</button>
+      </div>
+
+      <!-- CATALOG PICKER (inline search sheet) -->
+      <div id="catalogPicker" style="display:none;margin-top:8px;background:#161616;border:1px solid #2a2a2a;border-radius:10px;padding:10px;">
+        <input id="catalogSearch" type="search" placeholder="Search materials..."
+          oninput="filterCatalogPicker()"
+          style="width:100%;background:#1e1e1e;border:1px solid #333;color:#fff;padding:8px 10px;border-radius:8px;font-size:13px;margin-bottom:8px;">
+        <div id="catalogResults" style="max-height:220px;overflow-y:auto;"></div>
+        <button onclick="closeCatalogPicker()" style="width:100%;margin-top:6px;background:#2a1a1a;color:#f87171;border:1px solid #f8717144;border-radius:8px;padding:6px;font-size:12px;cursor:pointer;">✕ Close</button>
+      </div>
+      <label>Notes / Terms</label>
+      <textarea id="iNotes">Payment due within 15 days of invoice date.</textarea>
+      <label>Status</label>
+      <select id="iStatus">
+        <option value="draft">Draft</option>
+        <option value="sent">Sent</option>
+        <option value="paid">Paid</option>
+        <option value="overdue">Overdue</option>
+      </select>
+      <div class="modal-btns">
+        <button class="btn-save" onclick="saveInvoice()">Save Invoice</button>
+        <button class="btn-delete" id="invDeleteBtn" onclick="deleteInvoice()" style="display:none">Delete</button>
+        <button class="btn-cancel" onclick="closeModal('invModal')">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- INLINE INVOICE EDITOR (full screen) -->
+  <div id="inv-editor">
+    <div id="inv-editor-bar" class="inv-editor-bar">
+      <button class="btn-back" onclick="closeInvEditor()">← Back</button>
+      <span id="inv-editor-title">Invoice</span>
+      <button class="btn-print-inv" onclick="window.print()">🖨️ Print / PDF</button>
+      <button onclick="saveInvEditorChanges()" style="padding:8px 16px;border:none;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;background:#1a3a1a;color:#69BE28;">💾 Save</button>
+    </div>
+    <div id="inv-editor-body" style="padding:16px;overflow-y:auto;height:calc(100vh - 52px);background:#f0f4f8;"></div>
+  </div>
+
+<script>
+// ── STORAGE ──────────────────────────────────────────────────────────
+let jobs     = [];
+let invoices = [];
+let editJobIdx = -1, editInvIdx = -1;
+
+// Save jobs to Pi server (permanent)
+async function saveJobs() {
+  // Save full array to server
+  try {
+    await fetch('/api/jobs/all', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(jobs)
+    });
+  } catch(e) {
+    // Fallback to localStorage if server unreachable
+    localStorage.setItem('bt_jobs', JSON.stringify(jobs));
+  }
+}
+
+// Load jobs from Pi server
+async function loadJobs() {
+  try {
+    const r = await fetch('/api/jobs', { cache: 'no-store' });
+    if (r.ok) {
+      jobs = await r.json();
+      return;
+    }
+  } catch(e) {}
+  // Fallback to localStorage
+  jobs = JSON.parse(localStorage.getItem('bt_jobs') || '[]');
+}
+
+// Save invoices to Pi server (permanent)
+async function saveInvoices() {
+  try {
+    await fetch('/api/invoices/all', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(invoices)
+    });
+  } catch(e) {
+    localStorage.setItem('bt_invoices', JSON.stringify(invoices));
+  }
+}
+
+// Load invoices from Pi server
+async function loadInvoices() {
+  try {
+    const r = await fetch('/api/invoices', { cache: 'no-store' });
+    if (r.ok) {
+      invoices = await r.json();
+      return;
+    }
+  } catch(e) {}
+  invoices = JSON.parse(localStorage.getItem('bt_invoices') || '[]');
+}
+
+// ── TABS ─────────────────────────────────────────────────────────────
+function switchTab(name, btn) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('tab-' + name).classList.add('active');
+}
+
+// ── FORMAT ───────────────────────────────────────────────────────────
+function fmt(n) { return '$' + Number(n||0).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2}); }
+function statusClass(s) { return {estimate:'status-estimate',invoiced:'status-invoiced',paid:'status-paid',overdue:'status-overdue'}[s]||'status-estimate'; }
+function borderColor(s) { return {estimate:'#69BE28',invoiced:'#00B4D8',paid:'#4CAF50',overdue:'#ef4444'}[s]||'#00B4D8'; }
+function today() { return new Date().toISOString().split('T')[0]; }
+function due15() { const d=new Date(); d.setDate(d.getDate()+15); return d.toISOString().split('T')[0]; }
+
+// ── SUMMARY ──────────────────────────────────────────────────────────
+function renderSummary() {
+  let total=0,invoiced=0,estimates=0,collected=0;
+  jobs.forEach(j => {
+    const a=parseFloat(j.amount)||0; total+=a;
+    if(j.status==='invoiced'||j.status==='overdue') invoiced+=a;
+    if(j.status==='estimate') estimates+=a;
+    if(j.status==='paid') collected+=a;
+  });
+  // Also add invoice totals
+  invoices.forEach(inv => {
+    const t = invTotal(inv);
+    if(inv.status==='sent'||inv.status==='overdue') invoiced+=t;
+    if(inv.status==='paid') collected+=t;
+  });
+  document.getElementById('sumTotal').textContent     = fmt(total);
+  document.getElementById('sumInvoiced').textContent  = fmt(invoiced);
+  document.getElementById('sumEstimates').textContent = fmt(estimates);
+  document.getElementById('sumCollected').textContent = fmt(collected);
+  document.getElementById('lastUpdated').textContent  = 'Updated '+new Date().toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+}
+
+// ── JOBS RENDER ──────────────────────────────────────────────────────
+function renderJobs() {
+  renderSummary();
+  const list = document.getElementById('jobList');
+  list.innerHTML = '';
+  if (!jobs.length) { list.innerHTML = '<div style="text-align:center;padding:40px 20px;color:#444"><div style="font-size:40px;margin-bottom:12px">📋</div><div style="font-size:15px;color:#666">No jobs yet</div><div style="font-size:12px;color:#444;margin-top:6px">Tap <strong style="color:#69BE28">＋ Add New Job</strong> to get started</div></div>'; return; }
+  jobs.forEach((j,i) => {
+    const card = document.createElement('div');
+    card.className = 'project-card';
+    card.style.borderLeftColor = borderColor(j.status);
+    card.innerHTML = `
+      <div class="project-header">
+        <div class="project-id" style="color:${borderColor(j.status)}">${j.id||'—'}</div>
+        <span class="status-badge ${statusClass(j.status)}">${j.status}</span>
+      </div>
+      <div class="project-details">${j.customer||''}${j.scope?' — '+j.scope:''}<br>${j.address||''}</div>
+      <div class="card-footer">
+        <button class="edit-btn" onclick="openJobModal(${i})">✏️ Edit</button>
+        <button class="inv-btn" onclick="prefillInvFromJob(${i})">🧾 Invoice</button>
+        <div class="project-amount">${fmt(j.amount)}</div>
+      </div>`;
+    list.appendChild(card);
+  });
+}
+
+// ── INVOICES RENDER ──────────────────────────────────────────────────
+function invTotal(inv) {
+  return (inv.lines||[]).reduce((s,l)=>s+(parseFloat(l.qty||1)*parseFloat(l.rate||0)),0);
+}
+function renderInvoices() {
+  const list = document.getElementById('invList');
+  list.innerHTML = '';
+  if (!invoices.length) { list.innerHTML = '<div style="text-align:center;padding:40px 20px"><div style="font-size:40px;margin-bottom:12px">🧾</div><div style="font-size:15px;color:#666">No invoices yet</div><div style="font-size:12px;color:#444;margin-top:6px">Tap <strong style="color:#69BE28">🧾 Create New Invoice</strong> to get started</div></div>'; return; }
+  invoices.forEach((inv,i) => {
+    const total = invTotal(inv);
+    const card = document.createElement('div');
+    card.className = 'invoice-card';
+    card.innerHTML = `
+      <div class="inv-header">
+        <div class="inv-num">${inv.num||'INV-'+i}</div>
+        <span class="inv-status ${inv.status||'draft'}">${inv.status||'draft'}</span>
+      </div>
+      <div class="inv-details">${inv.customer||''}<br>${inv.date||''} · Due ${inv.due||''}</div>
+      <div class="inv-footer">
+        <div>
+          <button class="edit-btn" onclick="openInvModal(${i});event.stopPropagation()">✏️ Edit</button>
+        </div>
+        <div class="inv-amount">${fmt(total)}</div>
+        <button class="inv-open-btn" onclick="openInvEditor(${i});event.stopPropagation()">Open 🧾</button>
+      </div>`;
+    list.appendChild(card);
+  });
+}
+
+// ── JOB MODAL ────────────────────────────────────────────────────────
+function openJobModal(idx) {
+  editJobIdx = idx !== undefined ? idx : -1;
+  document.getElementById('jobModalTitle').textContent = editJobIdx>=0 ? 'Edit Job' : 'Add New Job';
+  document.getElementById('jobDeleteBtn').style.display = editJobIdx>=0 ? 'block':'none';
+  if (editJobIdx>=0) {
+    const j=jobs[editJobIdx];
+    document.getElementById('fId').value=j.id||'';
+    document.getElementById('fCustomer').value=j.customer||'';
+    document.getElementById('fScope').value=j.scope||'';
+    document.getElementById('fAddress').value=j.address||'';
+    document.getElementById('fAmount').value=j.amount||'';
+    document.getElementById('fStatus').value=j.status||'estimate';
+  } else {
+    ['fId','fCustomer','fScope','fAddress','fAmount'].forEach(id=>document.getElementById(id).value='');
+    document.getElementById('fStatus').value='estimate';
+  }
+  document.getElementById('jobModal').classList.add('open');
+}
+function saveJob() {
+  const job={id:document.getElementById('fId').value.trim()||'NEW',customer:document.getElementById('fCustomer').value.trim(),scope:document.getElementById('fScope').value.trim(),address:document.getElementById('fAddress').value.trim(),amount:parseFloat(document.getElementById('fAmount').value)||0,status:document.getElementById('fStatus').value};
+  if(editJobIdx>=0) jobs[editJobIdx]=job; else jobs.push(job);
+  saveJobs(); renderJobs(); closeModal('jobModal');
+}
+function deleteJob() {
+  if(editJobIdx<0||!confirm('Delete this job?')) return;
+  jobs.splice(editJobIdx,1); saveJobs(); renderJobs(); closeModal('jobModal');
+}
+
+// ── INVOICE MODAL ────────────────────────────────────────────────────
+function openInvModal(idx) {
+  editInvIdx = idx !== undefined ? idx : -1;
+  document.getElementById('invModalTitle').textContent = editInvIdx>=0 ? 'Edit Invoice' : 'Create Invoice';
+  document.getElementById('invDeleteBtn').style.display = editInvIdx>=0 ? 'block':'none';
+  document.getElementById('lineItems').innerHTML='';
+  if (editInvIdx>=0) {
+    const inv=invoices[editInvIdx];
+    document.getElementById('iNum').value=inv.num||'';
+    document.getElementById('iCustomer').value=inv.customer||'';
+    document.getElementById('iAddress').value=inv.address||'';
+    document.getElementById('iJob').value=inv.job||'';
+    document.getElementById('iDate').value=inv.date||today();
+    document.getElementById('iDue').value=inv.due||due15();
+    document.getElementById('iNotes').value=inv.notes||'Payment due within 15 days of invoice date.';
+    document.getElementById('iStatus').value=inv.status||'draft';
+    (inv.lines||[]).forEach(l=>addLineItem(l));
+  } else {
+    document.getElementById('iNum').value='BSC-'+new Date().getFullYear()+'-'+(invoices.length+1).toString().padStart(3,'0');
+    ['iCustomer','iAddress','iJob'].forEach(id=>document.getElementById(id).value='');
+    document.getElementById('iDate').value=today();
+    document.getElementById('iDue').value=due15();
+    document.getElementById('iNotes').value='Payment due within 15 days of invoice date.';
+    document.getElementById('iStatus').value='draft';
+    addLineItem();
+  }
+  document.getElementById('invModal').classList.add('open');
+}
+function prefillInvFromJob(idx) {
+  const j=jobs[idx];
+  openInvModal(); // open blank
+  setTimeout(()=>{
+    document.getElementById('iCustomer').value=j.customer||'';
+    document.getElementById('iAddress').value=j.address||'';
+    document.getElementById('iJob').value=(j.id||'')+(j.scope?' — '+j.scope:'');
+    // Pre-fill one line item with the job amount
+    const li=document.querySelector('.line-item-row');
+    if(li){ li.querySelector('.li-desc').value=j.scope||'Labor'; li.querySelector('.li-qty').value='1'; li.querySelector('.li-rate').value=j.amount||'0'; }
+  },50);
+}
+function addLineItem(data) {
+  const div=document.createElement('div');
+  div.className='line-item-row';
+  div.innerHTML=`<input class="li-desc" type="text" placeholder="Description" value="${(data&&data.desc)||''}">
+    <input class="li-qty qty" type="number" placeholder="Qty" value="${(data&&data.qty)||1}" min="0.01" step="0.01">
+    <input class="li-rate rate" type="number" placeholder="Rate" value="${(data&&data.rate)||''}" min="0" step="0.01">
+    <button class="li-del" onclick="this.parentNode.remove()">✕</button>`;
+  document.getElementById('lineItems').appendChild(div);
+}
+
+// ── CATALOG PICKER ────────────────────────────────────────────────────
+function openCatalogPicker() {
+  const picker = document.getElementById('catalogPicker');
+  picker.style.display = 'block';
+  document.getElementById('catalogSearch').value = '';
+  filterCatalogPicker();
+  document.getElementById('catalogSearch').focus();
+}
+function closeCatalogPicker() {
+  document.getElementById('catalogPicker').style.display = 'none';
+}
+function filterCatalogPicker() {
+  const q = document.getElementById('catalogSearch').value.toLowerCase();
+  const results = document.getElementById('catalogResults');
+  const filtered = vendors.filter(v =>
+    !q || v.name.toLowerCase().includes(q) ||
+    (v.category||'').toLowerCase().includes(q) ||
+    (v.vendor||'').toLowerCase().includes(q)
+  );
+  if (!filtered.length) {
+    results.innerHTML = '<div style="color:#555;font-size:12px;padding:8px;">No matches — try a different search.</div>';
+    return;
+  }
+  results.innerHTML = filtered.map(v => `
+    <div onclick="pickCatalogItem('${v.id}')"
+         style="display:flex;justify-content:space-between;align-items:center;
+                padding:9px 10px;margin-bottom:4px;border-radius:8px;cursor:pointer;
+                background:#1e1e1e;border:1px solid #2a2a2a;">
+      <div>
+        <div style="font-size:13px;font-weight:600;">${v.name}</div>
+        <div style="font-size:10px;color:#666;">${v.category} · ${v.vendor||''} · per ${v.unit||'each'}</div>
+      </div>
+      <div style="font-size:13px;color:#fbbf24;font-weight:700;white-space:nowrap;margin-left:8px;">$${(+v.price||0).toFixed(2)}</div>
+    </div>
+  `).join('');
+}
+function pickCatalogItem(id) {
+  const v = vendors.find(x => x.id === id);
+  if (!v) return;
+  addLineItem({ desc: v.name, qty: 1, rate: v.price });
+  closeCatalogPicker();
+}
+function saveInvoice() {
+  const lines=[...document.querySelectorAll('.line-item-row')].map(row=>({
+    desc:row.querySelector('.li-desc').value.trim(),
+    qty:parseFloat(row.querySelector('.li-qty').value)||1,
+    rate:parseFloat(row.querySelector('.li-rate').value)||0
+  }));
+  const inv={
+    num:document.getElementById('iNum').value.trim(),
+    customer:document.getElementById('iCustomer').value.trim(),
+    address:document.getElementById('iAddress').value.trim(),
+    job:document.getElementById('iJob').value.trim(),
+    date:document.getElementById('iDate').value,
+    due:document.getElementById('iDue').value,
+    notes:document.getElementById('iNotes').value.trim(),
+    status:document.getElementById('iStatus').value,
+    lines
+  };
+  if(editInvIdx>=0) invoices[editInvIdx]=inv; else invoices.push(inv);
+  saveInvoices(); renderInvoices(); closeModal('invModal');
+}
+function deleteInvoice() {
+  if(editInvIdx<0||!confirm('Delete this invoice?')) return;
+  invoices.splice(editInvIdx,1); saveInvoices(); renderInvoices(); closeModal('invModal');
+}
+
+// ── INLINE INVOICE EDITOR (fully editable overlay) ───────────────────
+let currentInvIdx = -1;
+
+function openInvEditor(idx) {
+  currentInvIdx = idx;
+  const inv = invoices[idx];
+  const editor = document.getElementById('inv-editor');
+  document.getElementById('inv-editor-title').textContent = (inv.num||'Invoice') + ' — ' + (inv.customer||'');
+  renderInvEditor(inv);
+  editor.classList.add('open');
+}
+
+function closeInvEditor() {
+  // Auto-save changes before closing
+  saveInvEditorChanges();
+  document.getElementById('inv-editor').classList.remove('open');
+}
+
+function saveInvEditorChanges() {
+  if (currentInvIdx < 0) return;
+  const ed = document.getElementById('inv-editor-body');
+  if (!ed) return;
+  // Collect edited fields
+  const inv = invoices[currentInvIdx];
+  inv.num      = ed.querySelector('#ied-num').innerText.trim();
+  inv.date     = ed.querySelector('#ied-date').innerText.trim();
+  inv.due      = ed.querySelector('#ied-due').innerText.trim();
+  inv.customer = ed.querySelector('#ied-customer').innerText.trim();
+  inv.address  = ed.querySelector('#ied-address').innerText.trim();
+  inv.job      = ed.querySelector('#ied-job').innerText.trim();
+  inv.notes    = ed.querySelector('#ied-notes').innerText.trim();
+  // Collect line items
+  inv.lines = [...ed.querySelectorAll('.ied-line-row')].map(row => ({
+    desc: row.querySelector('.ied-desc').innerText.trim(),
+    qty:  parseFloat(row.querySelector('.ied-qty').innerText) || 1,
+    rate: parseFloat(row.querySelector('.ied-rate').innerText.replace(/[$,]/g,'')) || 0
+  }));
+  invoices[currentInvIdx] = inv;
+  saveInvoices();
+  renderInvoices();
+  // Update title
+  document.getElementById('inv-editor-title').textContent = (inv.num||'Invoice') + ' — ' + (inv.customer||'');
+}
+
+function recalcInvEditor() {
+  const ed = document.getElementById('inv-editor-body');
+  if (!ed) return;
+  let total = 0;
+  ed.querySelectorAll('.ied-line-row').forEach(row => {
+    const qty  = parseFloat(row.querySelector('.ied-qty').innerText) || 0;
+    const rate = parseFloat(row.querySelector('.ied-rate').innerText.replace(/[$,]/g,'')) || 0;
+    const amt  = qty * rate;
+    total += amt;
+    row.querySelector('.ied-amt').innerText = '$' + amt.toLocaleString('en-US',{minimumFractionDigits:2});
+  });
+  const el = ed.querySelector('#ied-total');
+  if (el) el.innerText = '$' + total.toLocaleString('en-US',{minimumFractionDigits:2});
+}
+
+function addInvEditorLine() {
+  const tbody = document.getElementById('ied-tbody');
+  const num = tbody.querySelectorAll('.ied-line-row').length + 1;
+  const tr = document.createElement('tr');
+  tr.className = 'ied-line-row';
+  tr.innerHTML = iedLineHTML({desc:'New Item', qty:1, rate:0}, num);
+  tbody.appendChild(tr);
+  recalcInvEditor();
+  tr.querySelector('.ied-desc').focus();
+}
+
+function iedLineHTML(l, i) {
+  const amt = (l.qty||1) * (l.rate||0);
+  return `<td style="text-align:center;color:#64748b;font-weight:600">${i}</td>
+    <td><span class="ied-field ied-desc" contenteditable="true">${l.desc||''}</span></td>
+    <td style="text-align:center"><span class="ied-field ied-qty" contenteditable="true">${l.qty||1}</span></td>
+    <td style="text-align:center">Hrs/Ea</td>
+    <td style="text-align:right;font-weight:600"><span class="ied-field ied-rate" contenteditable="true">$${Number(l.rate||0).toLocaleString('en-US',{minimumFractionDigits:2})}</span></td>
+    <td style="text-align:right;font-weight:700;color:#002244;font-size:14px" class="ied-amt">$${amt.toLocaleString('en-US',{minimumFractionDigits:2})}</td>
+    <td style="text-align:center"><button onclick="this.closest('tr').remove();recalcInvEditor()" style="background:none;border:none;color:#ef4444;font-size:16px;cursor:pointer">✕</button></td>`;
+}
+
+function renderInvEditor(inv) {
+  const lineRows = (inv.lines||[]).map((l,i) => `<tr class="ied-line-row">${iedLineHTML(l, i+1)}</tr>`).join('');
+  const total = invTotal(inv);
+
+  document.getElementById('inv-editor-body').innerHTML = `
+  <div style="max-width:900px;margin:0 auto;background:#141420;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.4);overflow:hidden;font-family:'Segoe UI',Arial,sans-serif;color:#e2e8f0">
+
+    <!-- HEADER -->
+    <div style="background:linear-gradient(135deg,#002244 0%,#69BE28 100%);color:#fff;padding:24px 28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+      <div>
+        <div style="font-size:20px;font-weight:700;letter-spacing:1px">BLACKTECH SOLUTIONS CORP</div>
+        <div style="font-size:12px;opacity:.85;margin-top:2px">Electrical Contractor · Chicago, IL</div>
+      </div>
+      <div style="font-size:32px;font-weight:800;letter-spacing:2px">INVOICE</div>
+      <div style="text-align:right">
+        <div style="display:flex;gap:20px;justify-content:flex-end">
+          <div><div style="font-size:10px;opacity:.7;text-transform:uppercase;letter-spacing:1px;margin-bottom:2px">Invoice #</div>
+            <div class="ied-field" id="ied-num" contenteditable="true" style="font-size:15px;font-weight:700">${inv.num||'—'}</div></div>
+          <div><div style="font-size:10px;opacity:.7;text-transform:uppercase;letter-spacing:1px;margin-bottom:2px">Date</div>
+            <div class="ied-field" id="ied-date" contenteditable="true" style="font-size:15px;font-weight:700">${inv.date||''}</div></div>
+          <div><div style="font-size:10px;opacity:.7;text-transform:uppercase;letter-spacing:1px;margin-bottom:2px">Due Date</div>
+            <div class="ied-field" id="ied-due" contenteditable="true" style="font-size:15px;font-weight:700">${inv.due||''}</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BILL FROM / TO -->
+    <div style="display:flex;justify-content:space-between;padding:20px 28px;gap:20px">
+      <div style="flex:1;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 18px">
+        <div style="font-size:11px;text-transform:uppercase;color:#64748b;letter-spacing:1.5px;margin-bottom:8px;font-weight:700">Bill From</div>
+        <div style="font-size:13px;line-height:1.9;color:#334155"><strong>Blacktech Solutions Corp</strong><br>14076 Lincoln Ave<br>Dolton, IL 60419<br>(312) 965-2782<br>invoices@blacktechsolutionscorp.com</div>
+      </div>
+      <div style="flex:1;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:14px 18px">
+        <div style="font-size:11px;text-transform:uppercase;color:#64748b;letter-spacing:1.5px;margin-bottom:8px;font-weight:700">Bill To</div>
+        <div class="ied-field" id="ied-customer" contenteditable="true" style="font-size:14px;font-weight:700;color:#1a1a2e">${inv.customer||'Customer Name'}</div>
+        <div class="ied-field" id="ied-address" contenteditable="true" style="font-size:13px;line-height:1.9;color:#334155;margin-top:4px">${inv.address||'Address'}</div>
+      </div>
+    </div>
+
+    <!-- JOB DETAILS -->
+    <div style="margin:0 28px 18px;background:#f8fafc;border-left:4px solid #69BE28;border-radius:0 8px 8px 0;padding:14px 18px;display:flex;gap:28px;flex-wrap:wrap">
+      <div><div style="font-size:10px;text-transform:uppercase;color:#64748b;letter-spacing:1px;margin-bottom:3px;font-weight:600">Job Name</div>
+        <div class="ied-field" id="ied-job" contenteditable="true" style="font-size:14px;font-weight:700;color:#1a1a2e">${inv.job||'Job Name'}</div></div>
+      <div><div style="font-size:10px;text-transform:uppercase;color:#64748b;letter-spacing:1px;margin-bottom:3px;font-weight:600">Invoice #</div>
+        <div style="font-size:14px;font-weight:700;color:#1a1a2e">${inv.num||'—'}</div></div>
+      <div><div style="font-size:10px;text-transform:uppercase;color:#64748b;letter-spacing:1px;margin-bottom:3px;font-weight:600">Date</div>
+        <div style="font-size:14px;font-weight:700;color:#1a1a2e">${inv.date||'—'}</div></div>
+    </div>
+
+    <!-- LINE ITEMS -->
+    <div style="padding:0 28px 14px">
+      <table style="width:100%;border-collapse:collapse;font-size:13px">
+        <thead>
+          <tr>
+            <th style="background:#002244;color:#fff;padding:10px 8px;text-align:center;width:4%;font-size:11px;text-transform:uppercase;letter-spacing:1px">#</th>
+            <th style="background:#002244;color:#fff;padding:10px 8px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:1px">Description</th>
+            <th style="background:#002244;color:#fff;padding:10px 8px;text-align:center;width:8%;font-size:11px;text-transform:uppercase;letter-spacing:1px">Qty</th>
+            <th style="background:#002244;color:#fff;padding:10px 8px;text-align:center;width:8%;font-size:11px;text-transform:uppercase;letter-spacing:1px">Unit</th>
+            <th style="background:#002244;color:#fff;padding:10px 8px;text-align:right;width:14%;font-size:11px;text-transform:uppercase;letter-spacing:1px">Rate</th>
+            <th style="background:#002244;color:#fff;padding:10px 8px;text-align:right;width:14%;font-size:11px;text-transform:uppercase;letter-spacing:1px">Amount</th>
+            <th style="background:#002244;color:#fff;padding:10px 8px;text-align:center;width:4%"></th>
+          </tr>
+        </thead>
+        <tbody id="ied-tbody">${lineRows}</tbody>
+      </table>
+      <button onclick="addInvEditorLine()" style="margin-top:8px;background:#1a2a1a;color:#69BE28;border:1px solid #69BE2844;border-radius:8px;padding:7px 16px;font-size:13px;cursor:pointer;width:100%">+ Add Line Item</button>
+    </div>
+
+    <!-- TOTAL -->
+    <div style="padding:14px 28px 20px;display:flex;justify-content:flex-end;border-top:2px solid #002244;margin:0 28px">
+      <div style="min-width:260px">
+        <div style="display:flex;justify-content:space-between;font-size:20px;font-weight:800;padding-top:8px;border-top:2px solid #002244">
+          <span style="color:#64748b">TOTAL DUE</span>
+          <span id="ied-total" style="color:#69BE28">$${total.toLocaleString('en-US',{minimumFractionDigits:2})}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAYMENT INFO -->
+    <div style="margin:0 28px 18px;background:#f8fafc;border-left:4px solid #69BE28;border-radius:0 8px 8px 0;padding:14px 18px">
+      <div style="font-size:12px;text-transform:uppercase;color:#64748b;letter-spacing:1px;margin-bottom:8px;font-weight:700">Payment Information</div>
+      <div style="font-size:13px;line-height:1.8;color:#334155">
+        <strong>Make checks payable to:</strong> Blacktech Solutions Corp<br>
+        <strong>Zelle / Cash App:</strong> (312) 965-2782<br>
+        <strong>Mail to:</strong> 14076 Lincoln Ave, Dolton, IL 60419<br>
+        <strong>Email:</strong> invoices@blacktechsolutionscorp.com
+      </div>
+    </div>
+
+    <!-- TERMS -->
+    <div style="margin:0 28px 18px;padding:14px 18px;background:#fffbeb;border:1px solid #fcd34d;border-radius:8px">
+      <div style="font-size:12px;text-transform:uppercase;color:#b45309;letter-spacing:1px;margin-bottom:6px;font-weight:700">Terms &amp; Notes</div>
+      <div class="ied-field" id="ied-notes" contenteditable="true" style="font-size:12px;line-height:1.7;color:#78350f">${inv.notes||'Payment due within 15 days of invoice date.'}</div>
+    </div>
+
+    <!-- SIGNATURES -->
+    <div style="display:flex;justify-content:space-between;padding:0 28px 24px;gap:28px">
+      <div style="flex:1;border-top:2px solid #002244;padding-top:10px">
+        <div style="font-size:12px;text-transform:uppercase;color:#64748b;letter-spacing:1px;margin-bottom:20px;font-weight:700">Customer Acceptance</div>
+        <div style="border-bottom:1px solid #94a3b8;height:32px;margin-bottom:6px"></div>
+        <div style="font-size:11px;color:#64748b">${inv.customer||'Customer'} — Date: _______________</div>
+      </div>
+      <div style="flex:1;border-top:2px solid #002244;padding-top:10px">
+        <div style="font-size:12px;text-transform:uppercase;color:#64748b;letter-spacing:1px;margin-bottom:20px;font-weight:700">Contractor</div>
+        <div style="border-bottom:1px solid #94a3b8;height:32px;margin-bottom:6px"></div>
+        <div style="font-size:11px;color:#64748b">Derrell Black, Blacktech Solutions Corp — Date: _______________</div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div style="background:linear-gradient(135deg,#002244 0%,#69BE28 100%);color:#fff;padding:18px 28px;font-size:12px;text-align:center;line-height:1.8">
+      <div style="font-weight:600;margin-bottom:3px">Blacktech Solutions Corp · (312) 965-2782 · invoices@blacktechsolutionscorp.com</div>
+      <div style="opacity:.85;font-size:11px">14076 Lincoln Ave, Dolton, IL 60419 · Thank you for your business!</div>
+    </div>
+  </div>`;
+
+  // Attach recalc listeners to qty/rate fields
+  const ed = document.getElementById('inv-editor-body');
+  ed.addEventListener('input', e => {
+    if (e.target.classList.contains('ied-qty') || e.target.classList.contains('ied-rate')) {
+      recalcInvEditor();
+    }
+  });
+}
+
+// ── CSS for editable fields in invoice editor ─────────────────────────
+const iedStyle = document.createElement('style');
+iedStyle.textContent = `
+  .ied-field { border-bottom: 1.5px dashed #69BE28; min-width: 40px; display: inline-block; cursor: text; outline: none; }
+  .ied-field:focus { background: #fffde7; border-radius: 3px; border-bottom: 2px solid #69BE28; }
+  @media print { .ied-field { border-bottom: none !important; } #inv-editor-bar, .ied-del-btn { display: none !important; } }
+`;
+document.head.appendChild(iedStyle);
+
+function buildInvHTML(inv, total) {
+  const lineRows = (inv.lines||[]).map((l,i)=>`
+    <tr>
+      <td style="text-align:center;color:#64748b;font-weight:600">${i+1}</td>
+      <td><span style="font-weight:700;color:#1a1a2e">${l.desc||''}</span></td>
+      <td style="text-align:center">${l.qty}</td>
+      <td style="text-align:center">—</td>
+      <td style="text-align:right;font-weight:600">$${Number(l.rate).toLocaleString('en-US',{minimumFractionDigits:2})}</td>
+      <td style="text-align:right;font-weight:700;color:#002244;font-size:14px">$${(l.qty*l.rate).toLocaleString('en-US',{minimumFractionDigits:2})}</td>
+    </tr>`).join('');
+  return `<!DOCTYPE html><html><head><meta charset="UTF-8">
+  <meta name="viewport" content="width=1050,initial-scale=0.45,maximum-scale=2.0">
+  <title>${inv.num}</title>
+  <style>
+    @page{size:letter;margin:.5in} *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Segoe UI',Arial,sans-serif;background:#f0f4f8;padding:20px;color:#1a1a2e}
+    .wrap{max-width:900px;margin:0 auto;background:#141420;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.4);overflow:hidden}
+    .hdr{background:linear-gradient(135deg,#002244 0%,#69BE28 100%);color:#fff;padding:28px 32px;display:flex;justify-content:space-between;align-items:center}
+    .hdr h1{font-size:22px;font-weight:700;letter-spacing:1px} .hdr .sub{font-size:12px;opacity:.85;margin-top:3px}
+    .hdr h2{font-size:36px;font-weight:800;letter-spacing:2px}
+    .hdr-r{text-align:right} .hdr-r .row{display:flex;gap:24px;justify-content:flex-end}
+    .hdr-r .lbl{font-size:10px;opacity:.7;text-transform:uppercase;letter-spacing:1px;margin-bottom:3px}
+    .hdr-r .val{font-size:15px;font-weight:700}
+    .billing{display:flex;justify-content:space-between;padding:24px 32px;gap:24px}
+    .bbox{flex:1;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:16px 20px}
+    .bbox h3{font-size:11px;text-transform:uppercase;color:#64748b;letter-spacing:1.5px;margin-bottom:10px;font-weight:700}
+    .bbox p{font-size:13px;line-height:1.9;color:#334155}
+    .jdet{margin:0 32px 20px;background:#f8fafc;border-left:4px solid #69BE28;border-radius:0 8px 8px 0;padding:16px 20px;display:flex;gap:32px}
+    .jcol .lbl2{font-size:10px;text-transform:uppercase;color:#64748b;letter-spacing:1px;margin-bottom:4px;font-weight:600}
+    .jcol .val2{font-size:14px;font-weight:700;color:#1a1a2e}
+    .li-sec{padding:0 32px 16px}
+    table{width:100%;border-collapse:collapse;font-size:13px}
+    thead th{background:#002244;color:#fff;padding:12px 10px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:1px}
+    thead th:nth-child(1){width:5%;text-align:center}
+    thead th:nth-child(3),thead th:nth-child(4){text-align:center}
+    thead th:nth-child(5),thead th:nth-child(6){text-align:right}
+    tbody tr{border-bottom:1px solid #e2e8f0}
+    tbody td{padding:10px;vertical-align:middle;color:#334155}
+    .summary{padding:16px 32px 24px;display:flex;justify-content:flex-end;border-top:2px solid #002244;margin:0 32px}
+    .sbox{min-width:260px}
+    .srow{display:flex;justify-content:space-between;margin-bottom:6px;font-size:13px}
+    .srow .sl{color:#64748b} .srow .sv{font-weight:600;color:#334155}
+    .srow.tot{font-size:20px;font-weight:800;margin-top:8px;padding-top:8px;border-top:2px solid #002244}
+    .srow.tot .sv{color:#69BE28}
+    .pay{margin:24px 32px 20px;background:#f8fafc;border-left:4px solid #69BE28;border-radius:0 8px 8px 0;padding:16px 20px}
+    .pay h3{font-size:12px;text-transform:uppercase;color:#64748b;letter-spacing:1px;margin-bottom:10px;font-weight:700}
+    .pay p{font-size:13px;line-height:1.8;color:#334155}
+    .terms{margin:0 32px 20px;padding:16px 20px;background:#fffbeb;border:1px solid #fcd34d;border-radius:8px}
+    .terms h3{font-size:12px;text-transform:uppercase;color:#b45309;letter-spacing:1px;margin-bottom:8px;font-weight:700}
+    .terms p{font-size:12px;line-height:1.7;color:#78350f}
+    .sigs{display:flex;justify-content:space-between;padding:0 32px 24px;gap:32px}
+    .sig{flex:1;border-top:2px solid #002244;padding-top:12px}
+    .sig h4{font-size:12px;text-transform:uppercase;color:#64748b;letter-spacing:1px;margin-bottom:24px;font-weight:700}
+    .sigline{border-bottom:1px solid #94a3b8;height:32px;margin-bottom:6px}
+    .siglbl{font-size:11px;color:#64748b}
+    .foot{background:linear-gradient(135deg,#002244 0%,#69BE28 100%);color:#fff;padding:20px 32px;font-size:12px;text-align:center;line-height:1.8}
+    .foot .top{font-weight:600;margin-bottom:4px} .foot .bot{opacity:.85;font-size:11px}
+    @media print{body{background:#0a0a0f;padding:0}.wrap{box-shadow:none;border-radius:0}}
+  </style></head><body>
+  <div class="wrap">
+    <div class="hdr">
+      <div><h1>BLACKTECH SOLUTIONS CORP</h1><div class="sub">Electrical Contractor · Chicago, IL</div></div>
+      <h2>INVOICE</h2>
+      <div class="hdr-r"><div class="row">
+        <div><div class="lbl">Invoice #</div><div class="val">${inv.num||'—'}</div></div>
+        <div><div class="lbl">Date</div><div class="val">${inv.date||''}</div></div>
+        <div><div class="lbl">Due Date</div><div class="val">${inv.due||''}</div></div>
+      </div></div>
+    </div>
+    <div class="billing">
+      <div class="bbox"><h3>Bill From</h3><p><strong>Blacktech Solutions Corp</strong><br>14076 Lincoln Ave<br>Dolton, IL 60419<br>(312) 965-2782<br>invoices@blacktechsolutionscorp.com</p></div>
+      <div class="bbox"><h3>Bill To</h3><p><strong>${inv.customer||'—'}</strong><br>${(inv.address||'').replace(/,/g,',<br>')}</p></div>
+    </div>
+    <div class="jdet">
+      <div class="jcol"><div class="lbl2">Job Name</div><div class="val2">${inv.job||'—'}</div></div>
+      <div class="jcol"><div class="lbl2">Invoice #</div><div class="val2">${inv.num||'—'}</div></div>
+      <div class="jcol"><div class="lbl2">Date</div><div class="val2">${inv.date||'—'}</div></div>
+    </div>
+    <div class="li-sec">
+      <table>
+        <thead><tr><th>#</th><th>Description</th><th>Qty</th><th>Unit</th><th>Rate</th><th>Amount</th></tr></thead>
+        <tbody>${lineRows}</tbody>
+      </table>
+    </div>
+    <div class="summary"><div class="sbox">
+      <div class="srow tot"><span class="sl">TOTAL DUE</span><span class="sv">$${total.toLocaleString('en-US',{minimumFractionDigits:2})}</span></div>
+    </div></div>
+    <div class="pay"><h3>Payment Information</h3><p>
+      <strong>Make checks payable to:</strong> Blacktech Solutions Corp<br>
+      <strong>Zelle / Cash App:</strong> (312) 965-2782<br>
+      <strong>Mail to:</strong> 14076 Lincoln Ave, Dolton, IL 60419<br>
+      <strong>Email:</strong> invoices@blacktechsolutionscorp.com
+    </p></div>
+    <div class="terms"><h3>Terms &amp; Notes</h3><p>${(inv.notes||'').replace(/\n/g,'<br>')}</p></div>
+    <div class="sigs">
+      <div class="sig"><h4>Customer Acceptance</h4><div class="sigline"></div><div class="siglbl">${inv.customer||'Customer'} — Date: _______________</div></div>
+      <div class="sig"><h4>Contractor</h4><div class="sigline"></div><div class="siglbl">Derrell Black, Blacktech Solutions Corp — Date: _______________</div></div>
+    </div>
+    <div class="foot"><div class="top">Blacktech Solutions Corp · (312) 965-2782 · invoices@blacktechsolutionscorp.com</div><div class="bot">14076 Lincoln Ave, Dolton, IL 60419 · Thank you for your business!</div></div>
+  </div></body></html>`;
+}
+
+// ── MODAL HELPERS ────────────────────────────────────────────────────
+function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+function closeBg(e,id) { if(e.target===document.getElementById(id)) closeModal(id); }
+
+// ── REFRESH ──────────────────────────────────────────────────────────
+async function refreshAll() {
+  const btn = document.querySelector('button[onclick="refreshAll()"]');
+  if (btn) { btn.textContent = '⏳ Refreshing...'; btn.disabled = true; }
+  try {
+    await Promise.all([loadJobs(), loadInvoices(), loadVendors()]);
+    renderJobs();
+    renderInvoices();
+    renderVendors();
+    updateSummary();
+    document.getElementById('lastUpdated').textContent = 'Updated ' + new Date().toLocaleTimeString();
+    if (btn) { btn.textContent = '✅ Done!'; setTimeout(() => { btn.textContent = '🔄 Refresh'; btn.disabled = false; }, 1500); }
+  } catch(e) {
+    if (btn) { btn.textContent = '❌ Error'; setTimeout(() => { btn.textContent = '🔄 Refresh'; btn.disabled = false; }, 2000); }
+  }
+}
+
+// ── VENDOR DATABASE ───────────────────────────────────────────────────
+let vendors = [];
+let editVendorId = null;
+
+const CAT_COLORS = {
+  'Devices':     '#1a3a5a',
+  'Breakers':    '#3a1a1a',
+  'Wire':        '#1a3a1a',
+  'Conduit':     '#2a2a1a',
+  'Boxes':       '#1a2a3a',
+  'Fixtures':    '#2a1a3a',
+  'Life Safety': '#3a1a2a',
+  'Panels':      '#1a3a3a',
+  'Supplies':    '#2a2a2a',
+  'Other':       '#1e1e1e',
+};
+const CAT_BADGE = {
+  'Devices':'#60a5fa','Breakers':'#f87171','Wire':'#4ade80','Conduit':'#fbbf24',
+  'Boxes':'#38bdf8','Fixtures':'#c084fc','Life Safety':'#fb923c','Panels':'#22d3ee',
+  'Supplies':'#94a3b8','Other':'#6b7280'
+};
+
+async function loadVendors() {
+  try {
+    const res = await fetch('/api/vendors');
+    if (res.ok) vendors = await res.json();
+  } catch(e) {
+    vendors = JSON.parse(localStorage.getItem('bt_vendors') || '[]');
+  }
+}
+
+async function saveVendorToServer(item) {
+  localStorage.setItem('bt_vendors', JSON.stringify(vendors));
+  try {
+    await fetch('/api/vendors', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify(item)
+    });
+  } catch(e) {}
+}
+
+async function deleteVendorFromServer(id) {
+  vendors = vendors.filter(v => v.id !== id);
+  localStorage.setItem('bt_vendors', JSON.stringify(vendors));
+  try { await fetch('/api/vendors/' + id, {method:'DELETE'}); } catch(e) {}
+}
+
+function renderVendors() {
+  const list  = document.getElementById('vendorList');
+  const q     = (document.getElementById('vendorSearch')?.value || '').toLowerCase();
+  const cat   = document.getElementById('vendorCatFilter')?.value || '';
+  if (!list) return;
+
+  const filtered = vendors.filter(v => {
+    const matchQ   = !q || v.name.toLowerCase().includes(q) || (v.vendor||'').toLowerCase().includes(q) || (v.notes||'').toLowerCase().includes(q);
+    const matchCat = !cat || v.category === cat;
+    return matchQ && matchCat;
+  });
+
+  if (!filtered.length) {
+    list.innerHTML = '<div style="text-align:center;color:#555;padding:32px;">No items found. Tap ＋ Add Item to build your catalog.</div>';
+    return;
+  }
+
+  // Group by category
+  const groups = {};
+  filtered.forEach(v => {
+    if (!groups[v.category]) groups[v.category] = [];
+    groups[v.category].push(v);
+  });
+
+  list.innerHTML = Object.entries(groups).map(([cat, items]) => `
+    <div style="margin-bottom:16px;">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;
+                  color:${CAT_BADGE[cat]||'#888'};padding:6px 0 4px;">
+        ${cat} <span style="opacity:.5;font-weight:400;">(${items.length})</span>
+      </div>
+      ${items.map(v => `
+        <div onclick="openVendorModal('${v.id}')"
+             style="background:${CAT_COLORS[v.category]||'#1e1e1e'};border-radius:10px;padding:12px 14px;
+                    margin-bottom:8px;cursor:pointer;border:1px solid #2a2a2a;
+                    display:flex;justify-content:space-between;align-items:center;gap:8px;">
+          <div style="flex:1;min-width:0;">
+            <div style="font-weight:700;font-size:14px;margin-bottom:2px;">${v.name}</div>
+            <div style="font-size:11px;color:#888;">${v.vendor||'—'} · ${v.unit||'each'}${v.partNumber ? ' · #'+v.partNumber : ''}${v.notes ? ' · '+v.notes : ''}</div>
+          </div>
+          <div style="text-align:right;white-space:nowrap;">
+            <div style="font-size:13px;color:#fbbf24;font-weight:700;">$${(+v.price||0).toFixed(2)}</div>
+            <div style="font-size:10px;color:#555;">cost $${(+v.cost||0).toFixed(2)} · ${v.markup||17.5}%</div>
+          </div>
+        </div>
+      `).join('')}
+    </div>
+  `).join('');
+}
+
+function calcVPrice() {
+  const cost   = parseFloat(document.getElementById('vCost').value) || 0;
+  const markup = parseFloat(document.getElementById('vMarkup').value) || 17.5;
+  document.getElementById('vPrice').value = (cost * (1 + markup/100)).toFixed(2);
+}
+
+function openVendorModal(id) {
+  editVendorId = id || null;
+  const v = id ? vendors.find(x => x.id === id) : null;
+  document.getElementById('vendorModalTitle').textContent = v ? '✏️ Edit Item' : 'Add Catalog Item';
+  document.getElementById('vName').value    = v?.name    || '';
+  document.getElementById('vVendor').value  = v?.vendor  || '';
+  document.getElementById('vCat').value     = v?.category|| 'Devices';
+  document.getElementById('vUnit').value    = v?.unit    || 'each';
+  document.getElementById('vCost').value    = v?.cost    || '';
+  document.getElementById('vMarkup').value  = v?.markup  || 17.5;
+  document.getElementById('vPrice').value   = v?.price   || '';
+  document.getElementById('vPart').value    = v?.partNumber || '';
+  document.getElementById('vNotes').value   = v?.notes   || '';
+  document.getElementById('vDeleteBtn').style.display = v ? 'inline-block' : 'none';
+  document.getElementById('vendorModal').classList.add('open');
+}
+
+async function saveVendorItem() {
+  const item = {
+    id:         editVendorId || crypto.randomUUID(),
+    name:       document.getElementById('vName').value.trim(),
+    vendor:     document.getElementById('vVendor').value.trim(),
+    category:   document.getElementById('vCat').value,
+    unit:       document.getElementById('vUnit').value.trim() || 'each',
+    cost:       parseFloat(document.getElementById('vCost').value) || 0,
+    markup:     parseFloat(document.getElementById('vMarkup').value) || 17.5,
+    price:      parseFloat(document.getElementById('vPrice').value) || 0,
+    partNumber: document.getElementById('vPart').value.trim(),
+    notes:      document.getElementById('vNotes').value.trim(),
+  };
+  if (!item.name) return;
+  const idx = vendors.findIndex(v => v.id === item.id);
+  if (idx >= 0) vendors[idx] = item; else vendors.push(item);
+  await saveVendorToServer(item);
+  renderVendors();
+  closeModal('vendorModal');
+}
+
+async function deleteVendorItem() {
+  if (!editVendorId || !confirm('Delete this item from the catalog?')) return;
+  await deleteVendorFromServer(editVendorId);
+  renderVendors();
+  closeModal('vendorModal');
+}
+
+// ── INIT ─────────────────────────────────────────────────────────────
+Promise.all([loadJobs(), loadInvoices(), loadVendors()]).then(() => {
+  renderJobs();
+  renderInvoices();
+  renderVendors();
+  // Auto-switch to invoices tab if launched from Invoices tile
+  if (window.location.hash === '#invoices' || localStorage.getItem('bt_start_tab') === 'invoices') {
+    localStorage.removeItem('bt_start_tab');
+    switchTab('invoices', document.querySelectorAll('.tab')[1]);
+  }
+});
+</script>
+</body>
+</html>

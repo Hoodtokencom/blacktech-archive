@@ -1,0 +1,235 @@
+{
+  "employees": [
+    {
+      "id": "emp-001",
+      "name": "Derrell Black",
+      "role": "Owner / Master Electrician",
+      "pay_type": "hourly",
+      "rate": 63.53,
+      "overtime_rate": 225,
+      "status": "active",
+      "type": "W2",
+      "email": "derrell@blacktechsolutionscorp.com",
+      "phone": "312-965-2782",
+      "start_date": "2019-01-01",
+      "bank": {
+        "bank_name": "Chase",
+        "routing": "071000013",
+        "account": "****4521",
+        "account_type": "checking"
+      }
+    },
+    {
+      "id": "emp-002",
+      "name": "Elle Williams",
+      "role": "Project Admin / Office",
+      "pay_type": "hourly",
+      "rate": 23,
+      "overtime_rate": 0,
+      "status": "active",
+      "type": "W2",
+      "email": "e.williams@blacktechsolutionscorp.com",
+      "phone": "",
+      "start_date": "2025-03-01",
+      "bank": {
+        "bank_name": "",
+        "routing": "",
+        "account": "",
+        "account_type": "checking"
+      }
+    },
+    {
+      "id": "emp-003",
+      "name": "",
+      "role": "",
+      "pay_type": "hourly",
+      "rate": 30,
+      "overtime_rate": 45,
+      "status": "active",
+      "type": "1099",
+      "email": "",
+      "phone": "",
+      "start_date": "2024-06-01",
+      "bank": {
+        "bank_name": "",
+        "routing": "",
+        "account": "",
+        "account_type": "checking"
+      },
+      "address": "",
+      "notes": ""
+    },
+    {
+      "id": "emp-004",
+      "name": "",
+      "role": "",
+      "pay_type": "hourly",
+      "rate": 22,
+      "overtime_rate": 33,
+      "status": "active",
+      "type": "W2",
+      "email": "",
+      "phone": "",
+      "start_date": "2026-06-08",
+      "bank": {
+        "bank_name": "",
+        "routing": "",
+        "account": "",
+        "account_type": "checking"
+      },
+      "address": "",
+      "notes": ""
+    },
+    {
+      "name": "Michael Petway",
+      "role": "Electrician",
+      "type": "1099",
+      "pay_type": "hourly",
+      "rate": 63.53,
+      "overtime_rate": 161.55,
+      "email": "michaelp@mlpelectricllc.com",
+      "phone": "7733549693",
+      "address": "18236 Oakwood Ave,Lansing Il 60438",
+      "start_date": "2026-06-15",
+      "ssn_last4": "8912",
+      "bank": {
+        "bank_name": "",
+        "routing": "",
+        "account": "",
+        "account_type": "checking"
+      },
+      "notes": "Licensed Electrician",
+      "status": "active",
+      "hired": "2026-06-15T12:00:55.103Z",
+      "id": "emp-005"
+    },
+    {
+      "name": "Victoria Young",
+      "role": "Environmental Consultant / Payroll Admin",
+      "type": "1099",
+      "pay_type": "hourly",
+      "rate": 45,
+      "overtime_rate": 67.5,
+      "email": "naturallyurban.green.co@gmail.com",
+      "phone": "708-529-8762",
+      "address": "8915 S Commercial Ave, Suite 200, Chicago, IL 60617",
+      "start_date": "2026-06-15",
+      "bank": {
+        "bank_name": "",
+        "routing": "",
+        "account": "",
+        "account_type": "checking"
+      },
+      "notes": "NUE Inc President. WBE. Summer hours Jun-Aug: 10AM-4PM CST.",
+      "status": "active",
+      "hired": "2026-06-15T14:00:00.000Z",
+      "id": "emp-006"
+    }
+  ],
+  "timesheets": [
+    {
+      "id": "ts-1780942739732",
+      "empId": "emp-001",
+      "name": "Derrell Black",
+      "week": "2026-06-02",
+      "hours": 40,
+      "otHours": 5,
+      "regPay": 5000,
+      "otPay": 937.5,
+      "bonus": 100,
+      "total": 6037.5,
+      "notes": "",
+      "date": "2026-06-08",
+      "status": "calculated",
+      "paid": false,
+      "payment_method": "",
+      "paid_date": ""
+    },
+    {
+      "id": "ts-1780943483729",
+      "empId": "emp-002",
+      "name": "Elle Williams",
+      "week": "2026-06-02",
+      "hours": 40,
+      "otHours": 0,
+      "regPay": 1000,
+      "otPay": 0,
+      "bonus": 0,
+      "total": 1000,
+      "notes": "Office admin week",
+      "date": "2026-06-08",
+      "status": "calculated",
+      "paid": false,
+      "payment_method": "",
+      "paid_date": ""
+    },
+    {
+      "id": "ts-1780949251008",
+      "name": "Derrell Black",
+      "week": "2026-06-08",
+      "hours": 8,
+      "otHours": 2,
+      "regPay": 1000,
+      "otPay": 375,
+      "bonus": 50,
+      "total": 1425,
+      "notes": "Test job",
+      "date": "2026-06-08",
+      "status": "calculated",
+      "paid": false,
+      "payment_method": "",
+      "paid_date": ""
+    }
+  ],
+  "payrolls": [],
+  "payment_runs": [
+    {
+      "id": "run-001",
+      "week": "2026-06-02",
+      "date": "2026-06-08",
+      "total": 7037.5,
+      "count": 2,
+      "status": "ready",
+      "method": "ACH",
+      "paid_date": ""
+    }
+  ],
+  "rate_references": {
+    "source": "IBEW Local 134 Principal Agreement Ratification Letter A — May 7, 2026",
+    "effective_date": "2026-06-01",
+    "expiration_date": "2029-06-03",
+    "fringe_burden_pct": 47.9335,
+    "notes": "Base rates + 47.9335% employer fringe burden (health/welfare, pension, apprenticeship/training). Loaded rate = base + fringes.",
+    "rates": [
+      {
+        "year": 1,
+        "period": "2026-06-01 to 2027-05-31",
+        "base_rate": 63.57,
+        "package_increase": 6.0,
+        "fringe_rate": 30.47,
+        "loaded_rate": 94.04,
+        "annual_cost_2080h": 195605.96
+      },
+      {
+        "year": 2,
+        "period": "2027-06-01 to 2028-05-31",
+        "base_rate": 69.82,
+        "package_increase": 6.25,
+        "fringe_rate": 33.47,
+        "loaded_rate": 103.29,
+        "annual_cost_2080h": 214837.31
+      },
+      {
+        "year": 3,
+        "period": "2028-06-01 to 2029-06-03",
+        "base_rate": 76.57,
+        "package_increase": 6.75,
+        "fringe_rate": 36.7,
+        "loaded_rate": 113.27,
+        "annual_cost_2080h": 235607.18
+      }
+    ],
+    "three_year_total": 646050.45,
+    "average_loaded_rate": 103.53
+  }
+}

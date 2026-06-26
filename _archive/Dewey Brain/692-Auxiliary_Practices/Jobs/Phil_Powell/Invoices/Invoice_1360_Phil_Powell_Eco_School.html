@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1050, initial-scale=0.45, maximum-scale=2.0">
+<title>Invoice #1360 — Phil Powell / Eco School</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, sans-serif; font-size: 13px; background: #f4f4f4; color: #1a1a1a; }
+
+  /* Edit bar */
+  #edit-bar {
+    background: #002244; color: #fff; padding: 10px 20px;
+    display: flex; align-items: center; gap: 12px; position: sticky; top: 0; z-index: 99;
+  }
+  #edit-bar button {
+    background: #69BE28; color: #fff; border: none; border-radius: 5px;
+    padding: 7px 16px; font-size: 13px; cursor: pointer; font-weight: bold;
+  }
+  #edit-bar span { font-size: 12px; opacity: 0.8; }
+
+  .invoice-wrap { max-width: 1020px; margin: 20px auto; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.10); }
+
+  /* Header */
+  .inv-header {
+    background: linear-gradient(135deg, #002244 0%, #69BE28 100%);
+    padding: 28px 36px; display: flex; justify-content: space-between; align-items: flex-start;
+  }
+  .inv-header .logo-block { display: flex; align-items: flex-start; gap: 14px; }
+  .inv-header .logo-img {
+    width: 140px; height: 120px;
+    background: url('/media/allenai/Expansion/Blacktech_Drive/Home_Backup/Blacktech_Reports/Photos/blacktech_logo.jpg') center center / contain no-repeat;
+    background-color: #fff; border-radius: 8px;
+  }
+  .inv-header .co-info { color: #fff; }
+  .inv-header .co-info h1 { font-size: 20px; font-weight: 900; letter-spacing: 1px; }
+  .inv-header .co-info p { font-size: 12px; margin-top: 3px; opacity: 0.9; }
+  .inv-header .inv-title { text-align: right; color: #fff; }
+  .inv-header .inv-title h2 { font-size: 32px; font-weight: 900; letter-spacing: 2px; }
+  .inv-header .inv-title p { font-size: 13px; margin-top: 4px; opacity: 0.88; }
+
+  /* Meta row */
+  .inv-meta { display: flex; justify-content: space-between; padding: 22px 36px; background: #f9f9f9; border-bottom: 1px solid #e0e0e0; }
+  .inv-meta .bill-to h3 { font-size: 11px; text-transform: uppercase; color: #888; margin-bottom: 6px; letter-spacing: 1px; }
+  .inv-meta .bill-to p { font-size: 14px; font-weight: bold; color: #002244; }
+  .inv-meta .bill-to span { font-size: 13px; color: #555; display: block; }
+  .inv-meta .inv-details { text-align: right; }
+  .inv-meta .inv-details table { border-collapse: collapse; }
+  .inv-meta .inv-details td { padding: 2px 6px; font-size: 13px; }
+  .inv-meta .inv-details td:first-child { color: #888; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .inv-meta .inv-details td:last-child { font-weight: bold; color: #002244; }
+
+  /* Line items */
+  .inv-body { padding: 0 36px 24px; }
+  table.inv-table { width: 100%; border-collapse: collapse; margin-top: 18px; }
+  table.inv-table thead tr { background: #002244; color: #fff; }
+  table.inv-table thead th { padding: 10px 10px; text-align: left; font-size: 12px; letter-spacing: 0.5px; }
+  table.inv-table thead th.num  { width: 38px; text-align: center; }
+  table.inv-table thead th.qty  { width: 60px; text-align: center; }
+  table.inv-table thead th.rate { width: 120px; text-align: right; }
+  table.inv-table thead th.amt  { width: 120px; text-align: right; }
+  table.inv-table thead th.prod { width: 190px; }
+
+  table.inv-table tbody tr:nth-child(even) { background: #f7f7f7; }
+  table.inv-table tbody tr:hover { background: #eef6e4; }
+  table.inv-table tbody td { padding: 9px 10px; font-size: 13px; vertical-align: middle; border-bottom: 1px solid #eee; }
+  table.inv-table tbody td.num  { text-align: center; color: #888; }
+  table.inv-table tbody td.qty  { text-align: center; white-space: nowrap; }
+  table.inv-table tbody td.rate { text-align: right; white-space: nowrap; }
+  table.inv-table tbody td.amt  { text-align: right; white-space: nowrap; font-weight: bold; }
+  table.inv-table tbody td[contenteditable="true"] { border-bottom: 1.5px dashed #69BE28; outline: none; }
+
+  /* Section rows */
+  tr.section-row td {
+    background: #e8f0e0; color: #002244; font-weight: bold;
+    font-size: 12px; text-transform: uppercase; letter-spacing: 1px;
+    padding: 6px 10px;
+  }
+
+  /* Summary */
+  .inv-summary { display: flex; justify-content: flex-end; padding: 0 36px 30px; }
+  .summary-box { min-width: 300px; border: 2px solid #002244; border-radius: 8px; overflow: hidden; }
+  .summary-box table { width: 100%; border-collapse: collapse; }
+  .summary-box td { padding: 9px 16px; font-size: 13px; }
+  .summary-box tr:not(:last-child) { border-bottom: 1px solid #e0e0e0; }
+  .summary-box td:last-child { text-align: right; font-weight: bold; }
+  .summary-box .total-row { background: #002244; color: #fff; }
+  .summary-box .total-row td { font-size: 16px; font-weight: 900; letter-spacing: 0.5px; color: #69BE28; }
+
+  /* Payment footer */
+  .inv-footer { background: #002244; color: #fff; padding: 18px 36px; font-size: 12px; display: flex; justify-content: space-between; align-items: center; }
+  .inv-footer .pay-methods { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .pay-badge { background: #fff; color: #002244; padding: 3px 10px; border-radius: 4px; font-weight: bold; font-size: 11px; }
+  .inv-footer .view-pay { background: #69BE28; color: #fff; border: none; padding: 9px 22px; border-radius: 6px; font-weight: bold; font-size: 13px; cursor: pointer; }
+
+  /* Row controls */
+  .del-row { background: none; border: none; color: #cc2222; cursor: pointer; font-size: 14px; padding: 0 4px; }
+  .add-row-btn {
+    display: inline-block; margin: 8px 0 0 36px; background: #69BE28; color: #fff;
+    border: none; border-radius: 5px; padding: 5px 14px; font-size: 12px; cursor: pointer;
+  }
+
+  @media print {
+    #edit-bar, .del-row, .add-row-btn, .view-pay { display: none !important; }
+    body { background: #fff; }
+    .invoice-wrap { box-shadow: none; margin: 0; border-radius: 0; }
+    [contenteditable="true"] { border-bottom: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Edit Bar -->
+<div id="edit-bar">
+  <button onclick="window.print()">🖨️ Print / Save PDF</button>
+  <button onclick="addRow('admin')">+ Admin Row</button>
+  <button onclick="addRow('elec')">+ Electrical Row</button>
+  <button onclick="addRow('lv')">+ LV Row</button>
+  <button onclick="addRow('mat')">+ Material Row</button>
+  <span>✏️ Tap any field to edit — totals auto-update</span>
+</div>
+
+<div class="invoice-wrap">
+
+  <!-- Header -->
+  <div class="inv-header">
+    <div class="logo-block">
+      <div class="logo-img"></div>
+      <div class="co-info">
+        <h1>BLACKTECH SOLUTIONS CORP</h1>
+        <p>14076 Lincoln Ave, Dolton, IL 60419</p>
+        <p>invoices@blacktechsolutionscorp.com</p>
+        <p>+1 (773) 449-9396</p>
+        <p>www.blacktechsolutionscorp.com</p>
+      </div>
+    </div>
+    <div class="inv-title">
+      <h2>INVOICE</h2>
+      <p contenteditable="true" style="border-bottom:1.5px dashed rgba(255,255,255,0.5);outline:none;">#1360</p>
+    </div>
+  </div>
+
+  <!-- Meta -->
+  <div class="inv-meta">
+    <div class="bill-to">
+      <h3>Bill To</h3>
+      <p contenteditable="true">Phil Powell</p>
+      <span contenteditable="true">Veteran Prestige</span>
+      <span contenteditable="true">Eco School</span>
+    </div>
+    <div class="inv-details">
+      <table>
+        <tr><td>Invoice No.</td><td contenteditable="true">1360</td></tr>
+        <tr><td>Terms</td><td contenteditable="true">Net 30</td></tr>
+        <tr><td>Invoice Date</td><td contenteditable="true">06/02/2026</td></tr>
+        <tr><td>Due Date</td><td contenteditable="true">07/02/2026</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Line Items -->
+  <div class="inv-body">
+    <table class="inv-table" id="inv-table">
+      <thead>
+        <tr>
+          <th class="num">#</th>
+          <th class="prod">Product / Service</th>
+          <th>Description</th>
+          <th class="qty">Qty</th>
+          <th class="rate">Rate</th>
+          <th class="amt">Amount</th>
+          <th class="num" style="width:32px;"></th>
+        </tr>
+      </thead>
+      <tbody id="inv-body">
+
+        <!-- Administration -->
+        <tr class="section-row"><td colspan="7">Administration</td></tr>
+        <tr data-section="admin">
+          <td class="num">1</td>
+          <td contenteditable="true">01-005 Office</td>
+          <td contenteditable="true">01-005 Office</td>
+          <td class="qty" contenteditable="true">6</td>
+          <td class="rate" contenteditable="true">$46.35</td>
+          <td class="amt amount" contenteditable="true">$278.10</td>
+          <td><button class="del-row" onclick="delRow(this)">✕</button></td>
+        </tr>
+
+        <!-- Electrical Labor -->
+        <tr class="section-row"><td colspan="7">Electrical Labor</td></tr>
+        <tr data-section="elec">
+          <td class="num">2</td>
+          <td contenteditable="true">Ceiling Tile (labor)</td>
+          <td contenteditable="true">Cut opening for existing devices</td>
+          <td class="qty" contenteditable="true">0</td>
+          <td class="rate" contenteditable="true">$113.49</td>
+          <td class="amt amount" contenteditable="true">$0.00</td>
+          <td><button class="del-row" onclick="delRow(this)">✕</button></td>
+        </tr>
+        <tr data-section="elec">
+          <td class="num">3</td>
+          <td contenteditable="true">Can Lighting</td>
+          <td contenteditable="true">Can lighting — Remove and Replace in new ceiling tiles</td>
+          <td class="qty" contenteditable="true">0</td>
+          <td class="rate" contenteditable="true">$113.49</td>
+          <td class="amt amount" contenteditable="true">$0.00</td>
+          <td><button class="del-row" onclick="delRow(this)">✕</button></td>
+        </tr>
+        <tr data-section="elec">
+          <td class="num">4</td>
+          <td contenteditable="true">Exit Light</td>
+          <td contenteditable="true">Exit lighting — Remove and Replace in new ceiling tiles</td>
+          <td class="qty" contenteditable="true">0</td>
+          <td class="rate" contenteditable="true">$113.49</td>
+          <td class="amt amount" contenteditable="true">$0.00</td>
+          <td><button class="del-row" onclick="delRow(this)">✕</button></td>
+        </tr>
+        <tr data-section="elec">
+          <td class="num">5</td>
+          <td contenteditable="true">Electrical Labor</td>
+          <td contenteditable="true">Lighting remove and replace in ceiling tiles</td>
+          <td class="qty" contenteditable="true">48</td>
+          <td class="rate" contenteditable="true">$113.49</td>
+          <td class="amt amount" contenteditable="true">$5,447.52</td>
+          <td><button class="del-row" onclick="delRow(this)">✕</button></td>
+        </tr>
+
+        <!-- Low Voltage Labor -->
+        <tr class="section-row"><td colspan="7">Low Voltage Labor</td></tr>
+        <tr data-section="lv">
+          <td class="num">6</td>
+          <td contenteditable="true">Camera</td>
+          <td contenteditable="true">Remove and replace existing device outlet</td>
+          <td class="qty" contenteditable="true">0</td>
+          <td class="rate" contenteditable="true">$107.70</td>
+          <td class="amt amount" contenteditable="true">$0.00</td>
+          <td><button class="del-row" onclick="delRow(this)">✕</button></td>
+        </tr>
+        <tr data-section="lv">
+          <td class="num">7</td>
+          <td contenteditable="true">Speaker</td>
+          <td contenteditable="true">Remove and replace existing device outlet</td>
+          <td class="qty" contenteditable="true">0</td>
+          <td class="rate" contenteditable="true">$107.70</td>
+          <td class="amt amount" contenteditable="true">$0.00</td>
+          <td><button class="del-row" onclick="delRow(this)">✕</button></td>
+        </tr>
+        <tr data-section="lv">
+          <td class="num">8</td>
+          <td contenteditable="true">Fire Alarm / Smoke Detector</td>
+          <td contenteditable="true">Remove and replace existing device outlet</td>
+          <td class="qty" contenteditable="true">0</td>
+          <td class="rate" contenteditable="true">$107.70</td>
+          <td class="amt amount" contenteditable="true">$0.00</td>
+          <td><button class="del-row" onclick="delRow(this)">✕</button></td>
+        </tr>
+        <tr data-section="lv">
+          <td class="num">9</td>
+          <td contenteditable="true">Low Voltage Labor Total</td>
+          <td contenteditable="true">Remove and replace outlets in ceiling tile</td>
+          <td class="qty" contenteditable="true">40</td>
+          <td class="rate" contenteditable="true">$107.70</td>
+          <td class="amt amount" contenteditable="true">$4,308.00</td>
+          <td><button class="del-row" onclick="delRow(this)">✕</button></td>
+        </tr>
+
+        <!-- Material -->
+        <tr class="section-row"><td colspan="7">Material</td></tr>
+        <tr data-section="mat">
+          <td class="num">10</td>
+          <td contenteditable="true"></td>
+          <td contenteditable="true"></td>
+          <td class="qty" contenteditable="true">0</td>
+          <td class="rate" contenteditable="true">$0.00</td>
+          <td class="amt amount" contenteditable="true">$0.00</td>
+          <td><button class="del-row" onclick="delRow(this)">✕</button></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Summary -->
+  <div class="inv-summary">
+    <div class="summary-box">
+      <table>
+        <tr>
+          <td>Subtotal</td>
+          <td id="subtotal">$10,033.62</td>
+        </tr>
+        <tr>
+          <td>Tax (0%)</td>
+          <td>$0.00</td>
+        </tr>
+        <tr class="total-row">
+          <td>TOTAL DUE</td>
+          <td id="grand-total">$10,033.62</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="inv-footer">
+    <div>
+      <div style="font-weight:bold;margin-bottom:6px;">Ways to Pay</div>
+      <div class="pay-methods">
+        <span class="pay-badge">VISA</span>
+        <span class="pay-badge">MC</span>
+        <span class="pay-badge">DISCOVER</span>
+        <span class="pay-badge">AMEX</span>
+        <span class="pay-badge">PayPal</span>
+        <span class="pay-badge">Zelle</span>
+      </div>
+      <div style="margin-top:8px;font-size:11px;opacity:0.8;">Zelle: support@blacktechsolutionscorp.com</div>
+    </div>
+    <button class="view-pay" onclick="window.print()">🖨️ View &amp; Pay / Print</button>
+  </div>
+
+</div><!-- /invoice-wrap -->
+
+<script>
+// Parse dollar string to float
+function parseDollar(s) {
+  return parseFloat((s || '').replace(/[$,]/g, '')) || 0;
+}
+// Format float to dollar string
+function fmtDollar(n) {
+  return '$' + n.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+}
+
+// Recalculate grand total from all .amount cells
+function recalc() {
+  var cells = document.querySelectorAll('#inv-body td.amount');
+  var total = 0;
+  cells.forEach(function(c){ total += parseDollar(c.textContent.trim()); });
+  document.getElementById('subtotal').textContent = fmtDollar(total);
+  document.getElementById('grand-total').textContent = fmtDollar(total);
+}
+
+// Renumber rows (skip section rows)
+function renumber() {
+  var rows = document.querySelectorAll('#inv-body tr[data-section]');
+  rows.forEach(function(r, i){ r.cells[0].textContent = i + 1; });
+}
+
+// Delete row
+function delRow(btn) {
+  btn.closest('tr').remove();
+  renumber();
+  recalc();
+}
+
+// Add row
+function addRow(section) {
+  var tbody = document.getElementById('inv-body');
+  // Find last row of this section to insert after
+  var rows = tbody.querySelectorAll('tr[data-section="' + section + '"]');
+  var after = rows.length ? rows[rows.length - 1] : null;
+  var tr = document.createElement('tr');
+  tr.setAttribute('data-section', section);
+  tr.innerHTML =
+    '<td class="num"></td>' +
+    '<td contenteditable="true"></td>' +
+    '<td contenteditable="true"></td>' +
+    '<td class="qty" contenteditable="true">0</td>' +
+    '<td class="rate" contenteditable="true">$0.00</td>' +
+    '<td class="amt amount" contenteditable="true">$0.00</td>' +
+    '<td><button class="del-row" onclick="delRow(this)">✕</button></td>';
+  if (after) {
+    after.parentNode.insertBefore(tr, after.nextSibling);
+  } else {
+    tbody.appendChild(tr);
+  }
+  renumber();
+  recalc();
+}
+
+// Auto-recalc on any amount change
+document.getElementById('inv-body').addEventListener('input', function(e) {
+  if (e.target.classList.contains('amount')) recalc();
+});
+</script>
+</body>
+</html>

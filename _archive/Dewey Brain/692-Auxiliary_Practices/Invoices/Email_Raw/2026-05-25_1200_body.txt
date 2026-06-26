@@ -1,0 +1,10 @@
+From: vendors@blacktechsolutionscorp.com
+Subject: TEST — Forwarder Check
+Date: 
+==================================================
+
+This is a test email sent to invoices@blacktechsolutionscorp.com.
+
+If the forwarder is working correctly, this message should appear in the support@ inbox.
+
+Timestamp: May 25, 2026

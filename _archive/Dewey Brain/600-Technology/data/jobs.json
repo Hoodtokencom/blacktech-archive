@@ -1,0 +1,99 @@
+[
+  {
+    "id": "6647",
+    "customer": "Charles Ockerlund",
+    "scope": "Camera Install",
+    "address": "6647 S Saint Lawrence, Chicago, IL 60637",
+    "amount": 2817.89,
+    "status": "invoiced"
+  },
+  {
+    "id": "7414",
+    "customer": "Malissa Mitchell / Elle William",
+    "scope": "Electrical",
+    "address": "7414 S Drexel, Chicago, IL",
+    "phone": "",
+    "amount": 10900,
+    "status": "invoiced",
+    "notes": "",
+    "submitted_by": "Derrell",
+    "date_added": "2026-05-29",
+    "source": "manual"
+  },
+  {
+    "id": "7919",
+    "customer": "Rose Williams / Elle William",
+    "scope": "Electrical",
+    "address": "7919 S Dorchester, Chicago, IL",
+    "phone": "",
+    "amount": 10900,
+    "status": "invoiced",
+    "notes": "",
+    "submitted_by": "Derrell",
+    "date_added": "2026-05-29",
+    "source": "manual"
+  },
+  {
+    "id": "1348-LONDON",
+    "customer": "London Town Home",
+    "scope": "All Weather Specialist",
+    "address": "Chicago, IL 60619",
+    "amount": 187000,
+    "status": "invoiced"
+  },
+  {
+    "id": "PHIL-ECO",
+    "customer": "Phil Powell / Veteran Prestige",
+    "scope": "Eco School \u2014 Ceiling Tile R&R (Electrical + Low Voltage)",
+    "address": "Eco School",
+    "amount": 10033.62,
+    "status": "invoiced",
+    "phone": "(312) 801-0549",
+    "email": "Pvbuilders2@aol.com",
+    "invoice": "1360",
+    "notes": "Invoice #1360 sent 06/02/2026. Due 07/02/2026."
+  },
+  {
+    "id": "LEAD-260602200821",
+    "customer": "Monster Construction / Rob Moore",
+    "scope": "Electrical Distribution 400a",
+    "address": "6515 S Drexel Ave, Chicago, IL",
+    "amount": 24990,
+    "status": "invoiced",
+    "description": "400A Electrical Service Upgrade \u2014 Demo + Labor + Materials",
+    "invoiced": 24990,
+    "invoiceNum": "BSC20266515",
+    "invoiceDate": "2026-06-04",
+    "dueDate": "2026-06-21",
+    "lastContact": "2026-06-04"
+  },
+  {
+    "id": "LEAD-260602214943",
+    "customer": "LaKiesha Johnson",
+    "scope": "Electrical Demo and Installation",
+    "address": "1023 E 161st Ave, South Holland, IL",
+    "amount": 555.8,
+    "status": "estimate",
+    "description": "Bathroom Outlet Relocation \u2014 Option B (4hrs + Assessment + Materials)"
+  },
+  {
+    "id": "260602214944",
+    "customer": "Ms. Williams",
+    "scope": "Electrical Relocation Outlet",
+    "address": "7458 S Euclid Ave, Chicago, IL",
+    "amount": 562.15,
+    "status": "estimate",
+    "description": "Electrical Demo & Installation \u2014 2 Outlets + Demo + Materials"
+  },
+  {
+    "id": "LUELLA-10150",
+    "customer": "Victoria Young",
+    "description": "Full Electrical Gut Rehab \u2014 New 200A Service & Complete Rewire",
+    "address": "10150 S Luella Ave, Chicago, IL",
+    "amount": 12500,
+    "status": "estimate",
+    "invoiced": 0,
+    "paid": 0,
+    "notes": "Proposal BSC-2026-LUELLA-001 sent 06/04/2026. Labor-only, materials TBD."
+  }
+]

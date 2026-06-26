@@ -1,0 +1,36 @@
+From: "cPanel on blacktechsolutionscorp.com" <cpanel@blacktechsolutionscorp.com>
+Subject: =?UTF-8?B?W2JsYWNrdGVjaHNvbHV0aW9uc2NvcnAuY29tXSBDbGllbnQgY29u?= =?UTF-8?B?ZmlndXJhdGlvbiBzZXR0aW5ncyBmb3Ig4oCcdmVuZG9yc0BibGFja3RlY2hz?= =?UTF-8?B?b2x1dGlvbnNjb3JwLmNvbeKAnS4=?=
+Date: Sun, 24 May 2026 15:22:35 GMT
+==================================================
+
+Client Configuration settings for “vendors@blacktechsolutionscorp.com”.
+
+
+Mail Client Manual Settings
+---------------------------
+
+Secure SSL/TLS Settings (Recommended)
+
+Username:
+
+vendors@blacktechsolutionscorp.com
+
+Password:
+
+Use the email account’s password.
+
+Incoming Server:
+
+mail.blacktechsolutionscorp.com
+
+  * IMAP Port: 993
+
+  * POP3 Port: 995
+
+Outgoing Server:
+
+mail.blacktechsolutionscorp.com
+
+  * SMTP Port: 465
+
+IMAP, POP3, and SMTP require authentication.

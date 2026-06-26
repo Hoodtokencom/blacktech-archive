@@ -1,0 +1,108 @@
+{
+  "trust_name": "Black Family Legacy Trust",
+  "entity_type": "Family Trust",
+  "jurisdiction_state": "Delaware",
+  "parties": [
+    {
+      "name": "Derrell A. Black",
+      "role": "Grantor/Settlor",
+      "address": "14076 Lincoln Ave, Dolton, IL 60419",
+      "tax_id": null,
+      "relationship": ""
+    },
+    {
+      "name": "Markecia King",
+      "role": "Primary Trustee",
+      "address": "14076 Lincoln Ave, Dolton, IL 60419",
+      "tax_id": null,
+      "relationship": ""
+    },
+    {
+      "name": "Derrell A. Black",
+      "role": "Successor Trustee",
+      "address": "14076 Lincoln Ave, Dolton, IL 60419",
+      "tax_id": null,
+      "relationship": ""
+    }
+  ],
+  "schedule_a_assets": [
+    {
+      "asset_description": "Transamerica Term Life Insurance Policy $500K",
+      "initial_value_usd": 500000.0,
+      "asset_type": "Life Insurance"
+    },
+    {
+      "asset_description": "Transamerica IUL Insurance Policy $110K",
+      "initial_value_usd": 110000.0,
+      "asset_type": "Life Insurance"
+    }
+  ],
+  "beneficiaries": [
+    {
+      "name": "Markecia King",
+      "relationship": "Wife",
+      "role": "Primary Beneficiary",
+      "share_percentage": 50.0
+    },
+    {
+      "name": "Destiny Black",
+      "relationship": "Daughter",
+      "role": "Successor Beneficiary",
+      "share_percentage": 7.14
+    },
+    {
+      "name": "Derrell Black Jr",
+      "relationship": "Son",
+      "role": "Successor Beneficiary",
+      "share_percentage": 7.14
+    },
+    {
+      "name": "Kylie Jointer",
+      "relationship": "Daughter",
+      "role": "Successor Beneficiary",
+      "share_percentage": 7.14
+    },
+    {
+      "name": "Kaylen Jointer",
+      "relationship": "Daughter",
+      "role": "Successor Beneficiary",
+      "share_percentage": 7.14
+    },
+    {
+      "name": "Khloe Jointer",
+      "relationship": "Daughter",
+      "role": "Successor Beneficiary",
+      "share_percentage": 7.14
+    },
+    {
+      "name": "Taria Black",
+      "relationship": "Sister",
+      "role": "Successor Beneficiary",
+      "share_percentage": 7.14
+    },
+    {
+      "name": "Gloria Black",
+      "relationship": "Mother",
+      "role": "Successor Beneficiary",
+      "share_percentage": 7.16
+    }
+  ],
+  "is_irrevocable": true,
+  "requires_notarization": true,
+  "execution_date": null,
+  "status": "review",
+  "spendthrift_clause_active": true,
+  "distribution_rules": "HEMS (Health, Education, Maintenance, Support)",
+  "registered_agent": "Harvard Business Services, Inc.",
+  "registered_agent_cost_annual": 50.0,
+  "created_at": "2026-06-23T13:55:32.068852",
+  "updated_at": "2026-06-23T15:06:34.750639",
+  "factory_output": {
+    "filled_text": "/home/allenai/blacktech_brain/650-Management_Business/trusts/output/BSC-T-FAM-20260623-filled.txt",
+    "html": "/home/allenai/blacktech_brain/650-Management_Business/trusts/output/BSC-T-FAM-20260623.html",
+    "pdf": "/home/allenai/blacktech_brain/650-Management_Business/trusts/output/BSC-T-FAM-20260623.pdf",
+    "template_pdf": "/home/allenai/blacktech_brain/650-Management_Business/trusts/output/BSC-T-FAM-template.pdf",
+    "generated": "20260623"
+  },
+  "total_beneficiary_shares": 100.0
+}

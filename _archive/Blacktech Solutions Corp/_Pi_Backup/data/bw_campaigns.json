@@ -1,0 +1,262 @@
+{
+  "campaigns": [
+    {
+      "id": "bw-campaign-nov-2025",
+      "name": "Black Businesses Send $5 Campaign \u2014 November 2025",
+      "concept": "Name Your 4 \u2014 On Wednesdays, spend money only with businesses that care about the community. If you cannot name 4 businesses you supported that week, send $5 for each missing slot (worst case $20/month).",
+      "month": "November 2025",
+      "form": "Form 886ny4",
+      "date": "2025-11-07T09:11:00Z",
+      "phone": "312-405-8844",
+      "grand_total": 215,
+      "created_at": "2026-06-13T06:06:09.141432Z",
+      "weeks": [
+        {
+          "week": "BW1",
+          "date_label": "1st Wednesday",
+          "sectors": "Travel Agents / Apparel",
+          "total": 65,
+          "leaders": [
+            "I. Moore",
+            "M. Perkins"
+          ],
+          "contributors": [
+            {
+              "name": "C. Dyer",
+              "amount": 45
+            },
+            {
+              "name": "D. Smith",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "week": "BW2",
+          "date_label": "2nd Wednesday",
+          "sectors": "Cleaners / Day Care",
+          "total": 20,
+          "leaders": [
+            "R. Kilpatrick",
+            "D. Catron"
+          ],
+          "contributors": [
+            {
+              "name": "J. Cleave",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "week": "BW3",
+          "date_label": "3rd Wednesday",
+          "sectors": "Lounges / Landscape",
+          "total": 45,
+          "leaders": [
+            "D. Black",
+            "S. Phams"
+          ],
+          "contributors": [
+            {
+              "name": "D. Battle",
+              "amount": 25
+            },
+            {
+              "name": "M. Grant",
+              "amount": 10
+            },
+            {
+              "name": "V. Hovey",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "week": "BW4",
+          "date_label": "4th Wednesday",
+          "sectors": "Bricklayer / Salesman",
+          "total": 35,
+          "leaders": [
+            "K. Milton",
+            "G. Frazier"
+          ],
+          "contributors": [
+            {
+              "name": "R. Kilpatrick",
+              "amount": 20
+            },
+            {
+              "name": "Jared",
+              "amount": 5
+            },
+            {
+              "name": "M. Steele",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "week": "BW5",
+          "date_label": "Bonus Wednesday",
+          "sectors": "Community Fund",
+          "total": 50,
+          "leaders": [
+            "D. Black"
+          ],
+          "contributors": [
+            {
+              "name": "Test User",
+              "amount": 50
+            }
+          ]
+        }
+      ],
+      "perimeter_contributors": [
+        {
+          "name": "C. Dyer",
+          "amount": 20
+        },
+        {
+          "name": "I. Moore",
+          "amount": 20
+        },
+        {
+          "name": "D. King",
+          "amount": 20
+        },
+        {
+          "name": "K. Barnes",
+          "amount": 10
+        },
+        {
+          "name": "S. Perdue",
+          "amount": 25
+        },
+        {
+          "name": "L. Barnes",
+          "amount": 5
+        },
+        {
+          "name": "S. Smith",
+          "amount": 65
+        },
+        {
+          "name": "Test Perim",
+          "amount": 15
+        }
+      ]
+    },
+    {
+      "id": "bw-campaign-dec-2025",
+      "name": "Black Businesses Send  Campaign \u2014 December 2025",
+      "month": "December 2025",
+      "form": "Form 886dec",
+      "phone": "312-405-8844",
+      "concept": "Name Your 4 \u2014 On Wednesdays, spend money only with businesses that care about the community. If you cannot name 4 businesses you supported that week, send  for each missing slot (worst case 0/month).",
+      "date": "2025-12-01T00:00:00Z",
+      "created_at": "2026-06-13T06:30:00Z",
+      "weeks": [
+        {
+          "week": "BW1",
+          "date_label": "Dec 3, 2025",
+          "sectors": "Food / Retail",
+          "total": 50,
+          "leaders": [
+            "A. Johnson",
+            "T. Williams"
+          ],
+          "contributors": [
+            {
+              "name": "K. Brown",
+              "amount": 10
+            },
+            {
+              "name": "S. Green",
+              "amount": 15
+            }
+          ]
+        },
+        {
+          "week": "BW2",
+          "date_label": "Dec 10, 2025",
+          "sectors": "Cleaners / Day Care",
+          "total": 35,
+          "leaders": [
+            "R. Kilpatrick",
+            "D. Catron"
+          ],
+          "contributors": [
+            {
+              "name": "J. Cleave",
+              "amount": 20
+            },
+            {
+              "name": "M. Grant",
+              "amount": 15
+            }
+          ]
+        },
+        {
+          "week": "BW3",
+          "date_label": "Dec 17, 2025",
+          "sectors": "Lounges / Landscape",
+          "total": 40,
+          "leaders": [
+            "D. Black",
+            "S. Phams"
+          ],
+          "contributors": [
+            {
+              "name": "D. Battle",
+              "amount": 25
+            },
+            {
+              "name": "V. Hovey",
+              "amount": 15
+            }
+          ]
+        },
+        {
+          "week": "BW4",
+          "date_label": "Dec 24, 2025",
+          "sectors": "Holiday / Community",
+          "total": 60,
+          "leaders": [
+            "K. Milton",
+            "G. Frazier"
+          ],
+          "contributors": [
+            {
+              "name": "R. Kilpatrick",
+              "amount": 30
+            },
+            {
+              "name": "Jared",
+              "amount": 10
+            },
+            {
+              "name": "M. Steele",
+              "amount": 20
+            }
+          ]
+        }
+      ],
+      "perimeter_contributors": [
+        {
+          "name": "C. Dyer",
+          "amount": 20
+        },
+        {
+          "name": "I. Moore",
+          "amount": 25
+        },
+        {
+          "name": "S. Perdue",
+          "amount": 30
+        }
+      ],
+      "grand_total": 185
+    }
+  ],
+  "updated": "2026-06-13T06:25:09.961891Z"
+}

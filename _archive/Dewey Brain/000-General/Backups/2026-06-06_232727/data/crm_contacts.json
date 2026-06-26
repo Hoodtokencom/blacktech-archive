@@ -1,0 +1,86 @@
+[
+  {
+    "id": "contact_phil_powell",
+    "name": "Phil Powell",
+    "company": "Veteran Prestige",
+    "phone": "(312) 801-0549",
+    "email": "Pvbuilders2@aol.com",
+    "address": "Eco School",
+    "status": "client",
+    "source": "Existing Customer",
+    "notes": "Invoice #1360 \u2014 $10,033.62 \u2014 Due 07/02/2026. Eco School ceiling tile R&R.",
+    "created": "06/02/2026",
+    "lastContact": "06/02/2026"
+  },
+  {
+    "id": "contact_lakeisha_william",
+    "name": "Lakeisha William",
+    "company": "Homeowner",
+    "phone": "3121112323",
+    "email": "john@emample.com",
+    "address": "1023 E 161st St",
+    "status": "lead",
+    "source": "Blacktech",
+    "notes": "Electrical outlet in bathroom",
+    "created": "06/02/2026",
+    "lastContact": "06/02/2026"
+  },
+  {
+    "id": "contact_rob_moore",
+    "name": "Rob Moore",
+    "company": "Monster Construction",
+    "phone": "6308862486",
+    "email": "Info@monsterroofingconstruction.com",
+    "address": "6515 S Drexel Ave",
+    "status": "customer",
+    "source": "Blacktech",
+    "notes": "Invoice BSC20266515 sent 06/04/2026. 400A service upgrade $24,990. 50% deposit required.",
+    "created": "06/02/2026",
+    "lastContact": "06/04/2026"
+  },
+  {
+    "name": "Kiesha Johnson",
+    "notes": "\ud83d\udccd South Holland",
+    "tag": "projects",
+    "source": "kanban",
+    "status": "New Lead",
+    "created": "2026-06-03T02:45:49.784337+00:00",
+    "id": "4",
+    "added": "2026-06-03T02:45:49.784337+00:00"
+  },
+  {
+    "name": "Ms. Williams",
+    "notes": "Invoice BSC-INV-7458-2026 issued 06/05/2026 \u2014 $1,235.13 for 10 outlet installation",
+    "tag": "projects",
+    "source": "kanban",
+    "status": "customer",
+    "created": "2026-06-03T03:20:38.611739+00:00",
+    "id": "5",
+    "added": "2026-06-03T03:20:38.611739+00:00",
+    "lastContact": "2026-06-05"
+  },
+  {
+    "id": "7458-williams",
+    "name": "Ms. Williams",
+    "address": "7458 S Euclid Ave, Chicago, IL 60649",
+    "phone": "",
+    "email": "",
+    "status": "customer",
+    "lastContact": "2026-06-05",
+    "invoiceNum": "BSC-INV-7458-2026",
+    "invoiceTotal": 1462.48,
+    "notes": "Invoice BSC-INV-7458-2026 \u2014 $1,462.48 \u2014 Demo + 10 outlets \u2014 sent to Fiona 06/05/2026"
+  },
+  {
+    "id": "todd-km-printing",
+    "name": "Todd \u2014 KM Printing",
+    "address": "400 E. Randolph Street, Unit 270, Chicago, IL 60601",
+    "email": "Todd@KMPrinting.com",
+    "phone": "",
+    "status": "customer",
+    "lastContact": "2026-06-05",
+    "invoiceNum": "BSC-INV-400-RANDOLPH-2026",
+    "invoiceTotal": 1950.0,
+    "notes": "Low voltage job \u2014 CAT3 demo + CAT5e install \u2014 Invoice sent 06/05/2026 \u2014 $1,950.00 due 06/20/2026"
+  }
+]

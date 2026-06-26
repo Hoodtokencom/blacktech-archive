@@ -1,0 +1,18 @@
+[
+  {
+    "timestamp": "2026-06-17T13:59:11.457777",
+    "action": "unlock",
+    "member": "Derrell Black",
+    "key": "internal:600-Technology_Applied_Sciences/pi_setup.md",
+    "result": "granted",
+    "detail": "Tier key \u2192 section 600"
+  },
+  {
+    "timestamp": "2026-06-17T13:59:11.592294",
+    "action": "blocked",
+    "member": "Derrell Black",
+    "key": "internal:650-Management_Business/sop.md",
+    "result": "tier_insufficient",
+    "detail": "Need approval, have key"
+  }
+]

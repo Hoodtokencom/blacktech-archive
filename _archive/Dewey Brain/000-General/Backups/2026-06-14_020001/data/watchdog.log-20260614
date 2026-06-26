@@ -1,0 +1,1980 @@
+[2026-06-07 08:00:01] ═══ Watchdog check started ═══
+[2026-06-07 08:00:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 08:00:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 08:00:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 08:00:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 08:00:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 08:00:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 08:00:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 08:00:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 08:00:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 08:00:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 08:00:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 08:05:01] ═══ Watchdog check started ═══
+[2026-06-07 08:05:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 08:05:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 08:05:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 08:05:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 08:05:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 08:05:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 08:05:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 08:05:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 08:05:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 08:05:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 08:05:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 08:10:01] ═══ Watchdog check started ═══
+[2026-06-07 08:10:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 08:10:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 08:10:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 08:10:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 08:10:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 08:10:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 08:10:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 08:10:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 08:10:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 08:10:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 08:10:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 08:15:02] ═══ Watchdog check started ═══
+[2026-06-07 08:15:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 08:15:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 08:15:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 08:15:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 08:15:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 08:15:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 08:15:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 08:15:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 08:15:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 08:15:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 08:15:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 08:20:01] ═══ Watchdog check started ═══
+[2026-06-07 08:20:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 08:20:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 08:20:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 08:20:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 08:20:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 08:20:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 08:20:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 08:20:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 08:20:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 08:20:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 08:20:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 08:25:01] ═══ Watchdog check started ═══
+[2026-06-07 08:25:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 08:25:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 08:25:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 08:25:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 08:25:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 08:25:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 08:25:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 08:25:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 08:25:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 08:25:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 08:25:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 08:30:01] ═══ Watchdog check started ═══
+[2026-06-07 08:30:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 08:30:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 08:30:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 08:30:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 08:30:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 08:30:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 08:30:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 08:30:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 08:30:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 08:30:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 08:30:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 08:35:01] ═══ Watchdog check started ═══
+[2026-06-07 08:35:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 08:35:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 08:35:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 08:35:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 08:35:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 08:35:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 08:35:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 08:35:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 08:35:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 08:35:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 08:35:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 08:40:02] ═══ Watchdog check started ═══
+[2026-06-07 08:40:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 08:40:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 08:40:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 08:40:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 08:40:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 08:40:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 08:40:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 08:40:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 08:40:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 08:40:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 08:40:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 08:45:01] ═══ Watchdog check started ═══
+[2026-06-07 08:45:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 08:45:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 08:45:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 08:45:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 08:45:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 08:45:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 08:45:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 08:45:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 08:45:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 08:45:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 08:45:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 08:50:01] ═══ Watchdog check started ═══
+[2026-06-07 08:50:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 08:50:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 08:50:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 08:50:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 08:50:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 08:50:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 08:50:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 08:50:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 08:50:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 08:50:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 08:50:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 08:55:01] ═══ Watchdog check started ═══
+[2026-06-07 08:55:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 08:55:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 08:55:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 08:55:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 08:55:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 08:55:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 08:55:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 08:55:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 08:55:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 08:55:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 08:55:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 09:00:02] ═══ Watchdog check started ═══
+[2026-06-07 09:00:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 09:00:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 09:00:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 09:00:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 09:00:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 09:00:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 09:00:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 09:00:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 09:00:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 09:00:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 09:00:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 09:05:01] ═══ Watchdog check started ═══
+[2026-06-07 09:05:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 09:05:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 09:05:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 09:05:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 09:05:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 09:05:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 09:05:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 09:05:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 09:05:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 09:05:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 09:05:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 09:10:01] ═══ Watchdog check started ═══
+[2026-06-07 09:10:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 09:10:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 09:10:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 09:10:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 09:10:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 09:10:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 09:10:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 09:10:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 09:10:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 09:10:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 09:10:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 09:15:01] ═══ Watchdog check started ═══
+[2026-06-07 09:15:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 09:15:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 09:15:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 09:15:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 09:15:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 09:15:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 09:15:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 09:15:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 09:15:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 09:15:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 09:15:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 09:20:02] ═══ Watchdog check started ═══
+[2026-06-07 09:20:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 09:20:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 09:20:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 09:20:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 09:20:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 09:20:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 09:20:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 09:20:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 09:20:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 09:20:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 09:20:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 09:25:01] ═══ Watchdog check started ═══
+[2026-06-07 09:25:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 09:25:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 09:25:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 09:25:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 09:25:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 09:25:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 09:25:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 09:25:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 09:25:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 09:25:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 09:25:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 09:30:01] ═══ Watchdog check started ═══
+[2026-06-07 09:30:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 09:30:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 09:30:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 09:30:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 09:30:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 09:30:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 09:30:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 09:30:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 09:30:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 09:30:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 09:30:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 09:35:02] ═══ Watchdog check started ═══
+[2026-06-07 09:35:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 09:35:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 09:35:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 09:35:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 09:35:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 09:35:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 09:35:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 09:35:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 09:35:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 09:35:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 09:35:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 09:40:01] ═══ Watchdog check started ═══
+[2026-06-07 09:40:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 09:40:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 09:40:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 09:40:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 09:40:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 09:40:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 09:40:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 09:40:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 09:40:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 09:40:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 09:40:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 09:45:01] ═══ Watchdog check started ═══
+[2026-06-07 09:45:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 09:45:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 09:45:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 09:45:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 09:45:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 09:45:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 09:45:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 09:45:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 09:45:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 09:45:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 09:45:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 09:50:01] ═══ Watchdog check started ═══
+[2026-06-07 09:50:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 09:50:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 09:50:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 09:50:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 09:50:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 09:50:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 09:50:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 09:50:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 09:50:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 09:50:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 09:50:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 09:55:01] ═══ Watchdog check started ═══
+[2026-06-07 09:55:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 09:55:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 09:55:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 09:55:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 09:55:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 09:55:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 09:55:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 09:55:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 09:55:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 09:55:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 09:55:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 10:00:01] ═══ Watchdog check started ═══
+[2026-06-07 10:00:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 10:00:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 10:00:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 10:00:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 10:00:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 10:00:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 10:00:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 10:00:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 10:00:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 10:00:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 10:00:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 10:05:01] ═══ Watchdog check started ═══
+[2026-06-07 10:05:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 10:05:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 10:05:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 10:05:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 10:05:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 10:05:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 10:05:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 10:05:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 10:05:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 10:05:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 10:05:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 10:10:01] ═══ Watchdog check started ═══
+[2026-06-07 10:10:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 10:10:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 10:10:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 10:10:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 10:10:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 10:10:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 10:10:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 10:10:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 10:10:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 10:10:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 10:10:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 10:15:01] ═══ Watchdog check started ═══
+[2026-06-07 10:15:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 10:15:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 10:15:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 10:15:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 10:15:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 10:15:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 10:15:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 10:15:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 10:15:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 10:15:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 10:15:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 10:20:01] ═══ Watchdog check started ═══
+[2026-06-07 10:20:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 10:20:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 10:20:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 10:20:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 10:20:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 10:20:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 10:20:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 10:20:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 10:20:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 10:20:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 10:20:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 10:25:01] ═══ Watchdog check started ═══
+[2026-06-07 10:25:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 10:25:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 10:25:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 10:25:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 10:25:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 10:25:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 10:25:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 10:25:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 10:25:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 10:25:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 10:25:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 10:30:01] ═══ Watchdog check started ═══
+[2026-06-07 10:30:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 10:30:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 10:30:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 10:30:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 10:30:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 10:30:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 10:30:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 10:30:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 10:30:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 10:30:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 10:30:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 10:35:01] ═══ Watchdog check started ═══
+[2026-06-07 10:35:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 10:35:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 10:35:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 10:35:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 10:35:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 10:35:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 10:35:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 10:35:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 10:35:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 10:35:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 10:35:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 10:40:01] ═══ Watchdog check started ═══
+[2026-06-07 10:40:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 10:40:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 10:40:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 10:40:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 10:40:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 10:40:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 10:40:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 10:40:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 10:40:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 10:40:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 10:40:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 10:45:02] ═══ Watchdog check started ═══
+[2026-06-07 10:45:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 10:45:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 10:45:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 10:45:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 10:45:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 10:45:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 10:45:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 10:45:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 10:45:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 10:45:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 10:45:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 10:50:01] ═══ Watchdog check started ═══
+[2026-06-07 10:50:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 10:50:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 10:50:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 10:50:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 10:50:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 10:50:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 10:50:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 10:50:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 10:50:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 10:50:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 10:50:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 10:55:01] ═══ Watchdog check started ═══
+[2026-06-07 10:55:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 10:55:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 10:55:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 10:55:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 10:55:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 10:55:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 10:55:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 10:55:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 10:55:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 10:55:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 10:55:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 11:00:02] ═══ Watchdog check started ═══
+[2026-06-07 11:00:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 11:00:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 11:00:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 11:00:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 11:00:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 11:00:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 11:00:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 11:00:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 11:00:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 11:00:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 11:00:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 11:05:01] ═══ Watchdog check started ═══
+[2026-06-07 11:05:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 11:05:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 11:05:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 11:05:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 11:05:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 11:05:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 11:05:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 11:05:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 11:05:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 11:05:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 11:05:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 11:10:01] ═══ Watchdog check started ═══
+[2026-06-07 11:10:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 11:10:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 11:10:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 11:10:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 11:10:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 11:10:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 11:10:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 11:10:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 11:10:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 11:10:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 11:10:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 11:15:01] ═══ Watchdog check started ═══
+[2026-06-07 11:15:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 11:15:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 11:15:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 11:15:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 11:15:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 11:15:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 11:15:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 11:15:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 11:15:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 11:15:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 11:15:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 11:20:01] ═══ Watchdog check started ═══
+[2026-06-07 11:20:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 11:20:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 11:20:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 11:20:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 11:20:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 11:20:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 11:20:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 11:20:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 11:20:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 11:20:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 11:20:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 11:25:01] ═══ Watchdog check started ═══
+[2026-06-07 11:25:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 11:25:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 11:25:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 11:25:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 11:25:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 11:25:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 11:25:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 11:25:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 11:25:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 11:25:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 11:25:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 11:30:01] ═══ Watchdog check started ═══
+[2026-06-07 11:30:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 11:30:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 11:30:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 11:30:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 11:30:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 11:30:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 11:30:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 11:30:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 11:30:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 11:30:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 11:30:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 11:35:01] ═══ Watchdog check started ═══
+[2026-06-07 11:35:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 11:35:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 11:35:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 11:35:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 11:35:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 11:35:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 11:35:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 11:35:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 11:35:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 11:35:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 11:35:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 11:40:01] ═══ Watchdog check started ═══
+[2026-06-07 11:40:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 11:40:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 11:40:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 11:40:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 11:40:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 11:40:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 11:40:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 11:40:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 11:40:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 11:40:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 11:40:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 11:45:01] ═══ Watchdog check started ═══
+[2026-06-07 11:45:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 11:45:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 11:45:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 11:45:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 11:45:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 11:45:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 11:45:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 11:45:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 11:45:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 11:45:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 11:45:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 11:50:01] ═══ Watchdog check started ═══
+[2026-06-07 11:50:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 11:50:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 11:50:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 11:50:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 11:50:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 11:50:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 11:50:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 11:50:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 11:50:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 11:50:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 11:50:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 11:55:01] ═══ Watchdog check started ═══
+[2026-06-07 11:55:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 11:55:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 11:55:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 11:55:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 11:55:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 11:55:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 11:55:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 11:55:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 11:55:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 11:55:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 11:55:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 12:00:01] ═══ Watchdog check started ═══
+[2026-06-07 12:00:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 12:00:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 12:00:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 12:00:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 12:00:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 12:00:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 12:00:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 12:00:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 12:00:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 12:00:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 12:00:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 12:05:01] ═══ Watchdog check started ═══
+[2026-06-07 12:05:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 12:05:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 12:05:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 12:05:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 12:05:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 12:05:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 12:05:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 12:05:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 12:05:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 12:05:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 12:05:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 12:10:01] ═══ Watchdog check started ═══
+[2026-06-07 12:10:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 12:10:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 12:10:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 12:10:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 12:10:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 12:10:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 12:10:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 12:10:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 12:10:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 12:10:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 12:10:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 12:15:01] ═══ Watchdog check started ═══
+[2026-06-07 12:15:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 12:15:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 12:15:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 12:15:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 12:15:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 12:15:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 12:15:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 12:15:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 12:15:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 12:15:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 12:15:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 12:20:02] ═══ Watchdog check started ═══
+[2026-06-07 12:20:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 12:20:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 12:20:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 12:20:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 12:20:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 12:20:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 12:20:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 12:20:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 12:20:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 12:20:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 12:20:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 12:25:01] ═══ Watchdog check started ═══
+[2026-06-07 12:25:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 12:25:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 12:25:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 12:25:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 12:25:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 12:25:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 12:25:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 12:25:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 12:25:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 12:25:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 12:25:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 12:30:01] ═══ Watchdog check started ═══
+[2026-06-07 12:30:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 12:30:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 12:30:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 12:30:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 12:30:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 12:30:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 12:30:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 12:30:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 12:30:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 12:30:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 12:30:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 12:35:01] ═══ Watchdog check started ═══
+[2026-06-07 12:35:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 12:35:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 12:35:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 12:35:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 12:35:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 12:35:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 12:35:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 12:35:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 12:35:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 12:35:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 12:35:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 12:40:01] ═══ Watchdog check started ═══
+[2026-06-07 12:40:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 12:40:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 12:40:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 12:40:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 12:40:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 12:40:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 12:40:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 12:40:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 12:40:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 12:40:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 12:40:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 12:45:02] ═══ Watchdog check started ═══
+[2026-06-07 12:45:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 12:45:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 12:45:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 12:45:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 12:45:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 12:45:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 12:45:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 12:45:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 12:45:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 12:45:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 12:45:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 12:50:01] ═══ Watchdog check started ═══
+[2026-06-07 12:50:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 12:50:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 12:50:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 12:50:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 12:50:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 12:50:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 12:50:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 12:50:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 12:50:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 12:50:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 12:50:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 12:55:01] ═══ Watchdog check started ═══
+[2026-06-07 12:55:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 12:55:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 12:55:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 12:55:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 12:55:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 12:55:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 12:55:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 12:55:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 12:55:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 12:55:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 12:55:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 13:00:01] ═══ Watchdog check started ═══
+[2026-06-07 13:00:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 13:00:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 13:00:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 13:00:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 13:00:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 13:00:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 13:00:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 13:00:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 13:00:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 13:00:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 13:00:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 13:05:01] ═══ Watchdog check started ═══
+[2026-06-07 13:05:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 13:05:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 13:05:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 13:05:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 13:05:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 13:05:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 13:05:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 13:05:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 13:05:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 13:05:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 13:05:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 13:10:02] ═══ Watchdog check started ═══
+[2026-06-07 13:10:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 13:10:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 13:10:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 13:10:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 13:10:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 13:10:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 13:10:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 13:10:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 13:10:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 13:10:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 13:10:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 13:15:01] ═══ Watchdog check started ═══
+[2026-06-07 13:15:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 13:15:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 13:15:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 13:15:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 13:15:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 13:15:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 13:15:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 13:15:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 13:15:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 13:15:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 13:15:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 13:20:01] ═══ Watchdog check started ═══
+[2026-06-07 13:20:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 13:20:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 13:20:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 13:20:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 13:20:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 13:20:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 13:20:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 13:20:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 13:20:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 13:20:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 13:20:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 13:25:01] ═══ Watchdog check started ═══
+[2026-06-07 13:25:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 13:25:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 13:25:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 13:25:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 13:25:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 13:25:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 13:25:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 13:25:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 13:25:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 13:25:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 13:25:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 13:30:01] ═══ Watchdog check started ═══
+[2026-06-07 13:30:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 13:30:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 13:30:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 13:30:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 13:30:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 13:30:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 13:30:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 13:30:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 13:30:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 13:30:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 13:30:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 13:35:02] ═══ Watchdog check started ═══
+[2026-06-07 13:35:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 13:35:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 13:35:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 13:35:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 13:35:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 13:35:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 13:35:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 13:35:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 13:35:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 13:35:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 13:35:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 13:40:01] ═══ Watchdog check started ═══
+[2026-06-07 13:40:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 13:40:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 13:40:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 13:40:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 13:40:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 13:40:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 13:40:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 13:40:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 13:40:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 13:40:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 13:40:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 13:45:01] ═══ Watchdog check started ═══
+[2026-06-07 13:45:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 13:45:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 13:45:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 13:45:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 13:45:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 13:45:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 13:45:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 13:45:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 13:45:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 13:45:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 13:45:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 13:50:01] ═══ Watchdog check started ═══
+[2026-06-07 13:50:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 13:50:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 13:50:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 13:50:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 13:50:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 13:50:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 13:50:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 13:50:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 13:50:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 13:50:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 13:50:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 13:55:01] ═══ Watchdog check started ═══
+[2026-06-07 13:55:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 13:55:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 13:55:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 13:55:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 13:55:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 13:55:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 13:55:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 13:55:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 13:55:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 13:55:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 13:55:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 14:00:01] ═══ Watchdog check started ═══
+[2026-06-07 14:00:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 14:00:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 14:00:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 14:00:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 14:00:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 14:00:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 14:00:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 14:00:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 14:00:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 14:00:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 14:00:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 14:05:01] ═══ Watchdog check started ═══
+[2026-06-07 14:05:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 14:05:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 14:05:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 14:05:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 14:05:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 14:05:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 14:05:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 14:05:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 14:05:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 14:05:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 14:05:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 14:10:01] ═══ Watchdog check started ═══
+[2026-06-07 14:10:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 14:10:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 14:10:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 14:10:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 14:10:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 14:10:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 14:10:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 14:10:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 14:10:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 14:10:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 14:10:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 14:15:01] ═══ Watchdog check started ═══
+[2026-06-07 14:15:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 14:15:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 14:15:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 14:15:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 14:15:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 14:15:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 14:15:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 14:15:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 14:15:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 14:15:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 14:15:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 14:20:01] ═══ Watchdog check started ═══
+[2026-06-07 14:20:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 14:20:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 14:20:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 14:20:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 14:20:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 14:20:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 14:20:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 14:20:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 14:20:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 14:20:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 14:20:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 14:25:01] ═══ Watchdog check started ═══
+[2026-06-07 14:25:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 14:25:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 14:25:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 14:25:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 14:25:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 14:25:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 14:25:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 14:25:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 14:25:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 14:25:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 14:25:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 14:30:01] ═══ Watchdog check started ═══
+[2026-06-07 14:30:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 14:30:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 14:30:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 14:30:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 14:30:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 14:30:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 14:30:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 14:30:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 14:30:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 14:30:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 14:30:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 14:35:02] ═══ Watchdog check started ═══
+[2026-06-07 14:35:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 14:35:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 14:35:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 14:35:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 14:35:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 14:35:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 14:35:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 14:35:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 14:35:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 14:35:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 14:35:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 14:40:01] ═══ Watchdog check started ═══
+[2026-06-07 14:40:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 14:40:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 14:40:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 14:40:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 14:40:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 14:40:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 14:40:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 14:40:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 14:40:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 14:40:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 14:40:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 14:45:01] ═══ Watchdog check started ═══
+[2026-06-07 14:45:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 14:45:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 14:45:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 14:45:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 14:45:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 14:45:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 14:45:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 14:45:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 14:45:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 14:45:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 14:45:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 14:50:01] ═══ Watchdog check started ═══
+[2026-06-07 14:50:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 14:50:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 14:50:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 14:50:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 14:50:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 14:50:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 14:50:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 14:50:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 14:50:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 14:50:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 14:50:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 14:55:01] ═══ Watchdog check started ═══
+[2026-06-07 14:55:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 14:55:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 14:55:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 14:55:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 14:55:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 14:55:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 14:55:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 14:55:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 14:55:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 14:55:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 14:55:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 15:00:02] ═══ Watchdog check started ═══
+[2026-06-07 15:00:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 15:00:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 15:00:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 15:00:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 15:00:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 15:00:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 15:00:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 15:00:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 15:00:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 15:00:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 15:00:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 15:05:01] ═══ Watchdog check started ═══
+[2026-06-07 15:05:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 15:05:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 15:05:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 15:05:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 15:05:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 15:05:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 15:05:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 15:05:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 15:05:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 15:05:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 15:05:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 15:10:02] ═══ Watchdog check started ═══
+[2026-06-07 15:10:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 15:10:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 15:10:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 15:10:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 15:10:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 15:10:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 15:10:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 15:10:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 15:10:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 15:10:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 15:10:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 15:15:01] ═══ Watchdog check started ═══
+[2026-06-07 15:15:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 15:15:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 15:15:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 15:15:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 15:15:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 15:15:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 15:15:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 15:15:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 15:15:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 15:15:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 15:15:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 15:20:01] ═══ Watchdog check started ═══
+[2026-06-07 15:20:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 15:20:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 15:20:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 15:20:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 15:20:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 15:20:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 15:20:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 15:20:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 15:20:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 15:20:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 15:20:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 15:25:01] ═══ Watchdog check started ═══
+[2026-06-07 15:25:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 15:25:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 15:25:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 15:25:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 15:25:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 15:25:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 15:25:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 15:25:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 15:25:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 15:25:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 15:25:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 15:30:01] ═══ Watchdog check started ═══
+[2026-06-07 15:30:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 15:30:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 15:30:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 15:30:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 15:30:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 15:30:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 15:30:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 15:30:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 15:30:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 15:30:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 15:30:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 15:35:02] ═══ Watchdog check started ═══
+[2026-06-07 15:35:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 15:35:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 15:35:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 15:35:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 15:35:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 15:35:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 15:35:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 15:35:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 15:35:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 15:35:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 15:35:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 15:40:01] ═══ Watchdog check started ═══
+[2026-06-07 15:40:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 15:40:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 15:40:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 15:40:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 15:40:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 15:40:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 15:40:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 15:40:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 15:40:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 15:40:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 15:40:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 15:45:01] ═══ Watchdog check started ═══
+[2026-06-07 15:45:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 15:45:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 15:45:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 15:45:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 15:45:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 15:45:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 15:45:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 15:45:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 15:45:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 15:45:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 15:45:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 15:50:01] ═══ Watchdog check started ═══
+[2026-06-07 15:50:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 15:50:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 15:50:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 15:50:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 15:50:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 15:50:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 15:50:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 15:50:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 15:50:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 15:50:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 15:50:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 15:55:01] ═══ Watchdog check started ═══
+[2026-06-07 15:55:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 15:55:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 15:55:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 15:55:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 15:55:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 15:55:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 15:55:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 15:55:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 15:55:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 15:55:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 15:55:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 16:00:01] ═══ Watchdog check started ═══
+[2026-06-07 16:00:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 16:00:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 16:00:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 16:00:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 16:00:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 16:00:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 16:00:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 16:00:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 16:00:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 16:00:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 16:00:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 16:05:01] ═══ Watchdog check started ═══
+[2026-06-07 16:05:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 16:05:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 16:05:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 16:05:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 16:05:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 16:05:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 16:05:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 16:05:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 16:05:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 16:05:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 16:05:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 16:10:01] ═══ Watchdog check started ═══
+[2026-06-07 16:10:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 16:10:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 16:10:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 16:10:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 16:10:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 16:10:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 16:10:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 16:10:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 16:10:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 16:10:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 16:10:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 16:15:01] ═══ Watchdog check started ═══
+[2026-06-07 16:15:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 16:15:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 16:15:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 16:15:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 16:15:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 16:15:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 16:15:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 16:15:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 16:15:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 16:15:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 16:15:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 16:20:01] ═══ Watchdog check started ═══
+[2026-06-07 16:20:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 16:20:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 16:20:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 16:20:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 16:20:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 16:20:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 16:20:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 16:20:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 16:20:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 16:20:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 16:20:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 16:25:02] ═══ Watchdog check started ═══
+[2026-06-07 16:25:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 16:25:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 16:25:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 16:25:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 16:25:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 16:25:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 16:25:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 16:25:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 16:25:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 16:25:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 16:25:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 16:30:01] ═══ Watchdog check started ═══
+[2026-06-07 16:30:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 16:30:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 16:30:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 16:30:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 16:30:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 16:30:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 16:30:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 16:30:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 16:30:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 16:30:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 16:30:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 16:35:02] ═══ Watchdog check started ═══
+[2026-06-07 16:35:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 16:35:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 16:35:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 16:35:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 16:35:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 16:35:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 16:35:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 16:35:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 16:35:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 16:35:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 16:35:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 16:40:01] ═══ Watchdog check started ═══
+[2026-06-07 16:40:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 16:40:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 16:40:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 16:40:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 16:40:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 16:40:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 16:40:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 16:40:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 16:40:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 16:40:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 16:40:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 16:45:02] ═══ Watchdog check started ═══
+[2026-06-07 16:45:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 16:45:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 16:45:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 16:45:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 16:45:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 16:45:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 16:45:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 16:45:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 16:45:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 16:45:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 16:45:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 16:50:01] ═══ Watchdog check started ═══
+[2026-06-07 16:50:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 16:50:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 16:50:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 16:50:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 16:50:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 16:50:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 16:50:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 16:50:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 16:50:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 16:50:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 16:50:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 16:55:01] ═══ Watchdog check started ═══
+[2026-06-07 16:55:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 16:55:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 16:55:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 16:55:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 16:55:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 16:55:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 16:55:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 16:55:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 16:55:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 16:55:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 16:55:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 17:00:01] ═══ Watchdog check started ═══
+[2026-06-07 17:00:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 17:00:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 17:00:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 17:00:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 17:00:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 17:00:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 17:00:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 17:00:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 17:00:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 17:00:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 17:00:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 17:05:01] ═══ Watchdog check started ═══
+[2026-06-07 17:05:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 17:05:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 17:05:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 17:05:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 17:05:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 17:05:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 17:05:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 17:05:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 17:05:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 17:05:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 17:05:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 17:10:02] ═══ Watchdog check started ═══
+[2026-06-07 17:10:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 17:10:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 17:10:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 17:10:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 17:10:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 17:10:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 17:10:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 17:10:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 17:10:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 17:10:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 17:10:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 17:15:01] ═══ Watchdog check started ═══
+[2026-06-07 17:15:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 17:15:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 17:15:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 17:15:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 17:15:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 17:15:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 17:15:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 17:15:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 17:15:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 17:15:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 17:15:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 17:20:01] ═══ Watchdog check started ═══
+[2026-06-07 17:20:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 17:20:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 17:20:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 17:20:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 17:20:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 17:20:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 17:20:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 17:20:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 17:20:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 17:20:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 17:20:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 17:25:01] ═══ Watchdog check started ═══
+[2026-06-07 17:25:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 17:25:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 17:25:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 17:25:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 17:25:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 17:25:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 17:25:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 17:25:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 17:25:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 17:25:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 17:25:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 17:30:01] ═══ Watchdog check started ═══
+[2026-06-07 17:30:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 17:30:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 17:30:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 17:30:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 17:30:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 17:30:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 17:30:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 17:30:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 17:30:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 17:30:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 17:30:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 17:35:01] ═══ Watchdog check started ═══
+[2026-06-07 17:35:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 17:35:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 17:35:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 17:35:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 17:35:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 17:35:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 17:35:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 17:35:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 17:35:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 17:35:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 17:35:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 17:40:01] ═══ Watchdog check started ═══
+[2026-06-07 17:40:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 17:40:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 17:40:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 17:40:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 17:40:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 17:40:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 17:40:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 17:40:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 17:40:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 17:40:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 17:40:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 17:45:01] ═══ Watchdog check started ═══
+[2026-06-07 17:45:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 17:45:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 17:45:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 17:45:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 17:45:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 17:45:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 17:45:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 17:45:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 17:45:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 17:45:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 17:45:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 17:50:02] ═══ Watchdog check started ═══
+[2026-06-07 17:50:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 17:50:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 17:50:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 17:50:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 17:50:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 17:50:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 17:50:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 17:50:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 17:50:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 17:50:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 17:50:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 17:55:01] ═══ Watchdog check started ═══
+[2026-06-07 17:55:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 17:55:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 17:55:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 17:55:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 17:55:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 17:55:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 17:55:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 17:55:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 17:55:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 17:55:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 17:55:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 18:00:02] ═══ Watchdog check started ═══
+[2026-06-07 18:00:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 18:00:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 18:00:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 18:00:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 18:00:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 18:00:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 18:00:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 18:00:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 18:00:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 18:00:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 18:00:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 18:05:02] ═══ Watchdog check started ═══
+[2026-06-07 18:05:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 18:05:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 18:05:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 18:05:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 18:05:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 18:05:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 18:05:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 18:05:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 18:05:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 18:05:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 18:05:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 18:10:01] ═══ Watchdog check started ═══
+[2026-06-07 18:10:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 18:10:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 18:10:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 18:10:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 18:10:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 18:10:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 18:10:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 18:10:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 18:10:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 18:10:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 18:10:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 18:15:01] ═══ Watchdog check started ═══
+[2026-06-07 18:15:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 18:15:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 18:15:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 18:15:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 18:15:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 18:15:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 18:15:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 18:15:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 18:15:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 18:15:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 18:15:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 18:20:01] ═══ Watchdog check started ═══
+[2026-06-07 18:20:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 18:20:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 18:20:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 18:20:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 18:20:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 18:20:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 18:20:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 18:20:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 18:20:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 18:20:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 18:20:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 18:25:01] ═══ Watchdog check started ═══
+[2026-06-07 18:25:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 18:25:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 18:25:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 18:25:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 18:25:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 18:25:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 18:25:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 18:25:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 18:25:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 18:25:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 18:25:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 18:30:01] ═══ Watchdog check started ═══
+[2026-06-07 18:30:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 18:30:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 18:30:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 18:30:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 18:30:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 18:30:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 18:30:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 18:30:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 18:30:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 18:30:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 18:30:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 18:35:01] ═══ Watchdog check started ═══
+[2026-06-07 18:35:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 18:35:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 18:35:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 18:35:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 18:35:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 18:35:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 18:35:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 18:35:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 18:35:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 18:35:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 18:35:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 18:40:01] ═══ Watchdog check started ═══
+[2026-06-07 18:40:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 18:40:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 18:40:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 18:40:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 18:40:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 18:40:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 18:40:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 18:40:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 18:40:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 18:40:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 18:40:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 18:45:01] ═══ Watchdog check started ═══
+[2026-06-07 18:45:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 18:45:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 18:45:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 18:45:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 18:45:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 18:45:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 18:45:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 18:45:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 18:45:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 18:45:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 18:45:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 18:50:01] ═══ Watchdog check started ═══
+[2026-06-07 18:50:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 18:50:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 18:50:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 18:50:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 18:50:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 18:50:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 18:50:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 18:50:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 18:50:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 18:50:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 18:50:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 18:55:01] ═══ Watchdog check started ═══
+[2026-06-07 18:55:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 18:55:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 18:55:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 18:55:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 18:55:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 18:55:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 18:55:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 18:55:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 18:55:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 18:55:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 18:55:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 19:00:01] ═══ Watchdog check started ═══
+[2026-06-07 19:00:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 19:00:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 19:00:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 19:00:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 19:00:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 19:00:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 19:00:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 19:00:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 19:00:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 19:00:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 19:00:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 19:05:01] ═══ Watchdog check started ═══
+[2026-06-07 19:05:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 19:05:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 19:05:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 19:05:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 19:05:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 19:05:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 19:05:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 19:05:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 19:05:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 19:05:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 19:05:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 19:10:01] ═══ Watchdog check started ═══
+[2026-06-07 19:10:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 19:10:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 19:10:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 19:10:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 19:10:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 19:10:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 19:10:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 19:10:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 19:10:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 19:10:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 19:10:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 19:15:01] ═══ Watchdog check started ═══
+[2026-06-07 19:15:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 19:15:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 19:15:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 19:15:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 19:15:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 19:15:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 19:15:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 19:15:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 19:15:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 19:15:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 19:15:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 19:20:02] ═══ Watchdog check started ═══
+[2026-06-07 19:20:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 19:20:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 19:20:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 19:20:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 19:20:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 19:20:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 19:20:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 19:20:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 19:20:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 19:20:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 19:20:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 19:25:01] ═══ Watchdog check started ═══
+[2026-06-07 19:25:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 19:25:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 19:25:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 19:25:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 19:25:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 19:25:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 19:25:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 19:25:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 19:25:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 19:25:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 19:25:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 19:30:02] ═══ Watchdog check started ═══
+[2026-06-07 19:30:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 19:30:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 19:30:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 19:30:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 19:30:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 19:30:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 19:30:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 19:30:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 19:30:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 19:30:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 19:30:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 19:35:01] ═══ Watchdog check started ═══
+[2026-06-07 19:35:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 19:35:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 19:35:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 19:35:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 19:35:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 19:35:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 19:35:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 19:35:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 19:35:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 19:35:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 19:35:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 19:40:01] ═══ Watchdog check started ═══
+[2026-06-07 19:40:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 19:40:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 19:40:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 19:40:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 19:40:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 19:40:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 19:40:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 19:40:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 19:40:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 19:40:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 19:40:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 19:45:01] ═══ Watchdog check started ═══
+[2026-06-07 19:45:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 19:45:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 19:45:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 19:45:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 19:45:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 19:45:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 19:45:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 19:45:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 19:45:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 19:45:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 19:45:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 19:50:01] ═══ Watchdog check started ═══
+[2026-06-07 19:50:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 19:50:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 19:50:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 19:50:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 19:50:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 19:50:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 19:50:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 19:50:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 19:50:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 19:50:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 19:50:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 19:55:01] ═══ Watchdog check started ═══
+[2026-06-07 19:55:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 19:55:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 19:55:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 19:55:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 19:55:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 19:55:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 19:55:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 19:55:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 19:55:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 19:55:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 19:55:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 20:00:01] ═══ Watchdog check started ═══
+[2026-06-07 20:00:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 20:00:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 20:00:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 20:00:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 20:00:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 20:00:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 20:00:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 20:00:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 20:00:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 20:00:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 20:00:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 20:05:02] ═══ Watchdog check started ═══
+[2026-06-07 20:05:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 20:05:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 20:05:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 20:05:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 20:05:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 20:05:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 20:05:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 20:05:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 20:05:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 20:05:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 20:05:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 20:10:01] ═══ Watchdog check started ═══
+[2026-06-07 20:10:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 20:10:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 20:10:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 20:10:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 20:10:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 20:10:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 20:10:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 20:10:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 20:10:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 20:10:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 20:10:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 20:15:02] ═══ Watchdog check started ═══
+[2026-06-07 20:15:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 20:15:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 20:15:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 20:15:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 20:15:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 20:15:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 20:15:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 20:15:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 20:15:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 20:15:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 20:15:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 20:20:01] ═══ Watchdog check started ═══
+[2026-06-07 20:20:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 20:20:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 20:20:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 20:20:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 20:20:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 20:20:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 20:20:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 20:20:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 20:20:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 20:20:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 20:20:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 20:25:01] ═══ Watchdog check started ═══
+[2026-06-07 20:25:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 20:25:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 20:25:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 20:25:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 20:25:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 20:25:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 20:25:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 20:25:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 20:25:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 20:25:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 20:25:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 20:30:01] ═══ Watchdog check started ═══
+[2026-06-07 20:30:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 20:30:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 20:30:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 20:30:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 20:30:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 20:30:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 20:30:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 20:30:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 20:30:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 20:30:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 20:30:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 20:35:01] ═══ Watchdog check started ═══
+[2026-06-07 20:35:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 20:35:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 20:35:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 20:35:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 20:35:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 20:35:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 20:35:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 20:35:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 20:35:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 20:35:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 20:35:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 20:40:01] ═══ Watchdog check started ═══
+[2026-06-07 20:40:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 20:40:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 20:40:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 20:40:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 20:40:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 20:40:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 20:40:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 20:40:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 20:40:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 20:40:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 20:40:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 20:45:01] ═══ Watchdog check started ═══
+[2026-06-07 20:45:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 20:45:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 20:45:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 20:45:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 20:45:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 20:45:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 20:45:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 20:45:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 20:45:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 20:45:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 20:45:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 20:50:01] ═══ Watchdog check started ═══
+[2026-06-07 20:50:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 20:50:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 20:50:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 20:50:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 20:50:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 20:50:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 20:50:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 20:50:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 20:50:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 20:50:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 20:50:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 20:55:02] ═══ Watchdog check started ═══
+[2026-06-07 20:55:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 20:55:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 20:55:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 20:55:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 20:55:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 20:55:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 20:55:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 20:55:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 20:55:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 20:55:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 20:55:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 21:00:01] ═══ Watchdog check started ═══
+[2026-06-07 21:00:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 21:00:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 21:00:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 21:00:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 21:00:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 21:00:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 21:00:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 21:00:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 21:00:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 21:00:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 21:00:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 21:05:01] ═══ Watchdog check started ═══
+[2026-06-07 21:05:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 21:05:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 21:05:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 21:05:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 21:05:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 21:05:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 21:05:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 21:05:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 21:05:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 21:05:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 21:05:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 21:10:01] ═══ Watchdog check started ═══
+[2026-06-07 21:10:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 21:10:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 21:10:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 21:10:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 21:10:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 21:10:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 21:10:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 21:10:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 21:10:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 21:10:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 21:10:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 21:15:02] ═══ Watchdog check started ═══
+[2026-06-07 21:15:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 21:15:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 21:15:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 21:15:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 21:15:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 21:15:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 21:15:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 21:15:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 21:15:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 21:15:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 21:15:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 21:20:01] ═══ Watchdog check started ═══
+[2026-06-07 21:20:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 21:20:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 21:20:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 21:20:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 21:20:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 21:20:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 21:20:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 21:20:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 21:20:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 21:20:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 21:20:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 21:25:01] ═══ Watchdog check started ═══
+[2026-06-07 21:25:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 21:25:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 21:25:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 21:25:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 21:25:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 21:25:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 21:25:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 21:25:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 21:25:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 21:25:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 21:25:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 21:30:02] ═══ Watchdog check started ═══
+[2026-06-07 21:30:02] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 21:30:02] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 21:30:02] ✅ File Manager (port 8081) — OK
+[2026-06-07 21:30:02] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 21:30:02] ✅ Command Center (port 8090) — OK
+[2026-06-07 21:30:02] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 21:30:02] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 21:30:02] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 21:30:02] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 21:30:02] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 21:30:02] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 21:35:01] ═══ Watchdog check started ═══
+[2026-06-07 21:35:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 21:35:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 21:35:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 21:35:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 21:35:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 21:35:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 21:35:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 21:35:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 21:35:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 21:35:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 21:35:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══
+[2026-06-07 21:40:01] ═══ Watchdog check started ═══
+[2026-06-07 21:40:01] ✅ n8n Auto (port 5678) — OK
+[2026-06-07 21:40:01] ✅ Energy Experts Board (port 8080) — OK
+[2026-06-07 21:40:01] ✅ File Manager (port 8081) — OK
+[2026-06-07 21:40:01] ✅ Think Energy Leads (port 8088) — OK
+[2026-06-07 21:40:01] ✅ Command Center (port 8090) — OK
+[2026-06-07 21:40:01] ✅ Money / Budget (port 8091) — OK
+[2026-06-07 21:40:01] ✅ CRM / Lead Portal (port 8092) — OK
+[2026-06-07 21:40:01] ✅ Finance / Reports (port 8093) — OK
+[2026-06-07 21:40:01] ✅ BFN / Blue Wednesday (port 8094) — OK
+[2026-06-07 21:40:01] ✅ ComEd Dashboard (port 8095) — OK
+[2026-06-07 21:40:01] ═══ Done. Down: 0, Restart fails: 0, Alerts: 0 ═══

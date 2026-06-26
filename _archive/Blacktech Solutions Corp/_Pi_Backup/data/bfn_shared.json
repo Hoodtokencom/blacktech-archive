@@ -1,0 +1,1022 @@
+{
+  "members": [
+    {
+      "name": "Test Member",
+      "month": 6,
+      "added": "2026-06-04T02:32:19.870807Z"
+    }
+  ],
+  "rsvp": [
+    {
+      "name": "Lena B",
+      "biz": "Community",
+      "contact": "Ourlegacynpo@gmail.com",
+      "status": "going",
+      "date": "2026-06-09T17:28:42.800079Z"
+    },
+    {
+      "name": "Derrell Black",
+      "biz": "Electrical",
+      "contact": "7734499396",
+      "status": "going",
+      "date": "2026-06-05T02:44:00.185830Z"
+    }
+  ],
+  "funding": {},
+  "tformation": {
+    "5": [
+      "Derrell Black (7734499396)"
+    ]
+  },
+  "director": {
+    "name": "Derrell Black",
+    "biz": "Blacktech Solutions Corp",
+    "phone": "312-965-2782",
+    "email": "support@blacktechsolutionscorp.com",
+    "note": "60628 Coordinator for business in the pullman/rosemoor/roseland community",
+    "set": "2026-06-04T12:05:43.153848Z"
+  },
+  "businesses": [],
+  "telemetry": [
+    {
+      "date": "2026-06-16T13:48:34.795789Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:47:11.418351Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:47:07.728151Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:46:52.882399Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:46:49.115465Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:46:04.246372Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:46:00.281170Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:45:46.749533Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:45:43.040339Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:45:06.727995Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:44:56.456410Z",
+      "model": "claude-sonnet-4-6",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "skipped",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:44:56.452244Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:42:56.341316Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:42:52.635152Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:42:35.683576Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:42:31.978210Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:41:31.135177Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:41:27.434120Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:41:00.956385Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:40:57.180021Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:40:04.898845Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:39:01.802831Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:37:21.861639Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:37:18.054675Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:36:55.812822Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:36:52.097232Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:36:20.322987Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:36:16.578483Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:35:55.665269Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:35:51.975403Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:35:06.552270Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:33:29.258862Z",
+      "model": "claude-sonnet-4-6",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "skipped",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:33:29.255517Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:32:11.032321Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:32:07.318250Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:31:52.629226Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:31:48.759986Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:31:07.015114Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:31:03.294510Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:30:39.537392Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:30:35.854583Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:30:05.903651Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:28:33.488196Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:27:19.319089Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:27:15.598591Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:27:01.108683Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:26:57.428114Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:26:08.283844Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:26:04.506757Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:25:44.142530Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:25:40.441084Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:25:05.368117Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:23:44.902607Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:22:14.854665Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:22:11.187895Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:21:57.660983Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:21:53.964233Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:21:14.099887Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:21:10.342084Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:20:42.376326Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:20:38.633738Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:20:04.843307Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:18:50.651964Z",
+      "model": "claude-sonnet-4-6",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "skipped",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:18:50.649351Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:17:44.608447Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:17:40.621058Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:17:19.048943Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:17:15.292104Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:16:26.337993Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:16:22.582766Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:15:59.754070Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:15:55.753914Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:15:05.488644Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:14:09.268131Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:12:47.972929Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:12:44.247228Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:12:24.872733Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:12:21.180180Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:11:40.727036Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:11:36.971677Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:11:03.834088Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:11:00.124560Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:10:04.984355Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:09:45.016653Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:08:20.465899Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:08:16.765557Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:07:58.257073Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:07:54.582570Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:06:46.539050Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:06:42.869625Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:05:59.405667Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:05:55.656140Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:05:05.525771Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:03:42.541709Z",
+      "model": "claude-sonnet-4-6",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "skipped",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:03:42.538769Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:02:25.635410Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:02:21.543342Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:02:01.200924Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:01:57.482760Z",
+      "model": "ollama-qwen2.5:1.5b",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "completed",
+      "payload": ""
+    },
+    {
+      "date": "2026-06-16T13:01:11.836205Z",
+      "model": "gemini-2.5-flash",
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost": 0,
+      "status": "failed",
+      "payload": ""
+    }
+  ],
+  "zip_formations": {
+    "60628": {
+      "5": [
+        "Derrell Black (7734499396)"
+      ]
+    }
+  },
+  "business_tracker": [
+    {
+      "id": "b006",
+      "name": "Steele BBQ",
+      "zip": "60629",
+      "status": "open",
+      "owner": "M. Steele",
+      "added": "2026-06-13T06:22:57.736460Z",
+      "reason": ""
+    },
+    {
+      "id": "b005",
+      "name": "Grant Apparel",
+      "zip": "60621",
+      "status": "closed",
+      "reason": "Online competition",
+      "added": "2026-06-13T06:22:57.736460Z"
+    },
+    {
+      "id": "b004",
+      "name": "Black Landscaping",
+      "address": "4827 S King Dr",
+      "zip": "60615",
+      "owner": "D. Black",
+      "status": "watch",
+      "reason": "Seasonal slowdown",
+      "date_closed": "",
+      "notes": "Watching Q4 performance",
+      "added": "2026-06-13T06:22:49.280963Z",
+      "phone": ""
+    },
+    {
+      "id": "b003",
+      "name": "Kilpatrick Cleaners",
+      "address": "1052 S Forest Ave",
+      "zip": "60628",
+      "owner": "R. Kilpatrick",
+      "status": "open",
+      "reason": "",
+      "notes": "Community staple since 2018",
+      "added": "2026-06-13T06:22:49.270288Z",
+      "date_closed": "2026-06-13",
+      "phone": ""
+    },
+    {
+      "id": "b002",
+      "name": "Perkins Day Care",
+      "address": "7546 S Peoria",
+      "zip": "60620",
+      "owner": "M. Perkins",
+      "status": "open",
+      "reason": "Rent dispute, 90-day notice",
+      "date_closed": "",
+      "notes": "Resolved with landlord",
+      "added": "2026-06-13T06:22:49.260140Z",
+      "phone": "",
+      "date_reopened": "2025-01-10",
+      "updated": "2026-06-13T06:22:57.780209Z"
+    },
+    {
+      "id": "b001",
+      "name": "Moore Travel Agency",
+      "address": "4823 S Prairie Ave",
+      "zip": "60615",
+      "owner": "I. Moore",
+      "phone": "(312) 405-8844",
+      "status": "closed",
+      "reason": "Owner retired",
+      "date_closed": "2024-08-15",
+      "notes": "Long-time Bronzeville travel agent",
+      "added": "2026-06-13T06:22:45.369058Z"
+    }
+  ]
+}

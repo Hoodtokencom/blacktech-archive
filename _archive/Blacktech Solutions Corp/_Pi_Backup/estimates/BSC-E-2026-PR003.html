@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blacktech Solutions Corp — Invoice BSC-E-2026-PR003</title>
+<style>
+  @page { size: letter; margin: 0.5in; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: #222; background: #fff; font-size: 11pt; line-height: 1.4; }
+
+  .header { background: #002244; color: #fff; padding: 24px 32px; display: flex; justify-content: space-between; align-items: center; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .header .company { font-size: 22pt; font-weight: 700; color: #69BE28; letter-spacing: 1px; }
+  .header .subtitle { font-size: 10pt; color: #90b8d4; margin-top: 4px; }
+  .header .est-info { text-align: right; }
+  .header .est-label { font-size: 9pt; color: #90b8d4; text-transform: uppercase; }
+  .header .est-num { font-size: 16pt; font-weight: 700; color: #69BE28; }
+
+  .phase-badge { background: #69BE28; color: #002244; padding: 6px 16px; border-radius: 20px; font-weight: 700; font-size: 10pt; display: inline-block; margin-top: 8px; }
+
+  .info-bar { display: flex; justify-content: space-between; padding: 16px 32px; background: #f4f7fa; border-bottom: 2px solid #002244; }
+  .info-bar .col { flex: 1; }
+  .info-bar .label { font-size: 8pt; text-transform: uppercase; color: #666; font-weight: 600; }
+  .info-bar .value { font-size: 10pt; color: #002244; font-weight: 600; }
+
+  .section { padding: 12px 32px; }
+  .section-title { font-size: 13pt; font-weight: 700; color: #002244; border-bottom: 2px solid #69BE28; padding-bottom: 4px; margin: 16px 0 8px 0; }
+
+  table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 10pt; }
+  th { background: #002244; color: #fff; padding: 8px 10px; text-align: left; font-size: 9pt; text-transform: uppercase; }
+  td { padding: 6px 10px; border-bottom: 1px solid #e0e0e0; }
+  tr:nth-child(even) { background: #f9fbfd; }
+  .subtotal-row td { font-weight: 700; background: #eef3f8; border-top: 2px solid #002244; }
+  .total-row td { font-weight: 700; background: #002244; color: #69BE28; font-size: 12pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .right { text-align: right; }
+
+  .footer { background: #002244; color: #90b8d4; padding: 16px 32px; font-size: 8pt; text-align: center; margin-top: 20px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .footer .green { color: #69BE28; font-weight: 700; }
+
+  .terms { font-size: 8.5pt; color: #555; padding: 8px 32px; }
+  .terms li { margin: 3px 0; }
+
+  .notes-box { margin: 12px 32px; padding: 14px; background: #fff8e1; border: 1px solid #f5a623; border-radius: 6px; }
+  .notes-box h3 { font-size: 11px; text-transform: uppercase; color: #b45309; margin-bottom: 6px; }
+  .notes-box p { font-size: 12px; line-height: 1.7; color: #666; }
+
+  .project-summary { display: flex; gap: 16px; margin: 8px 0; }
+  .phase-card { flex: 1; background: #f4f7fa; border-radius: 8px; padding: 12px; border-left: 4px solid #69BE28; }
+  .phase-card .phase-label { font-size: 9pt; color: #666; text-transform: uppercase; }
+  .phase-card .phase-amount { font-size: 16pt; font-weight: 700; color: #002244; }
+  .phase-card .phase-num { font-size: 8pt; color: #69BE28; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div>
+    <div class="company">BLACKTECH SOLUTIONS CORP</div>
+    <div class="subtitle">Licensed Electrical Contractor — Chicago, IL</div>
+    <div class="phase-badge">PHASE 2 — ROUGH TO TRIM</div>
+  </div>
+  <div class="est-info">
+    <div class="est-label">Invoice Number</div>
+    <div class="est-num">BSC-E-2026-PR003</div>
+    <div class="est-label" style="margin-top:6px;">Date</div>
+    <div class="value" style="color:#fff;">June 16, 2026</div>
+  </div>
+</div>
+
+<!-- PROJECT INFO -->
+<div class="info-bar">
+  <div class="col">
+    <div class="label">Project</div>
+    <div class="value">Two-Flat Electrical Rehab — Phase 2</div>
+    <div class="value" style="font-weight:400;">Rough-In Completion + Trim Out</div>
+  </div>
+  <div class="col">
+    <div class="label">Site Address</div>
+    <div class="value">4823 S Prairie Ave</div>
+    <div class="value" style="font-weight:400;">Chicago, IL 60615</div>
+  </div>
+  <div class="col">
+    <div class="label">Client</div>
+    <div class="value">Alain David Carranza</div>
+    <div class="value" style="font-weight:400;">(773) 414-1473</div>
+  </div>
+</div>
+
+<!-- PROJECT SUMMARY -->
+<div class="section">
+  <div class="section-title">📊 Project Summary — Two Phases</div>
+  <div class="project-summary">
+    <div class="phase-card">
+      <div class="phase-label">Phase 1 — Distribution</div>
+      <div class="phase-amount">$15,500</div>
+      <div class="phase-num">BSC-E-2026-PR002</div>
+      <div style="font-size:9pt; color:#555; margin-top:4px;">3-Gang Meter Bank + 3 Panel Distribution</div>
+    </div>
+    <div class="phase-card" style="border-left-color: #ffab40;">
+      <div class="phase-label">Phase 2 — Rough to Trim</div>
+      <div class="phase-amount">$20,000</div>
+      <div class="phase-num">BSC-E-2026-PR003</div>
+      <div style="font-size:9pt; color:#555; margin-top:4px;">Rough-in completion + wire pull + trim out</div>
+    </div>
+    <div class="phase-card" style="border-left-color: #002244; background: #e8ecf2;">
+      <div class="phase-label">Project Total</div>
+      <div class="phase-amount" style="color:#69BE28;">$35,500</div>
+      <div class="phase-num">Combined</div>
+      <div style="font-size:9pt; color:#555; margin-top:4px;">Full two-flat electrical rehab</div>
+    </div>
+  </div>
+</div>
+
+<!-- SCOPE OF WORK -->
+<div class="section">
+  <div class="section-title">⚡ Scope of Work — Phase 2: Rough to Trim</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:50%;">Description</th>
+        <th class="right">Qty/Hrs</th>
+        <th class="right">Rate</th>
+        <th class="right">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background:#002244; color:#fff;">
+        <td colspan="4" style="font-weight:700;">LABOR — ROUGH-IN COMPLETION</td>
+      </tr>
+      <tr>
+        <td>Basement — Finish remaining rough-in (lighting boxes, receptacle rough, smokes)</td>
+        <td class="right">24 hrs</td>
+        <td class="right">$115.97</td>
+        <td class="right">$2,783</td>
+      </tr>
+      <tr>
+        <td>2nd Floor Unit — Full rough-in (2BR/1BA: boxes, home runs, switch legs)</td>
+        <td class="right">40 hrs</td>
+        <td class="right">$115.97</td>
+        <td class="right">$4,639</td>
+      </tr>
+      <tr>
+        <td>1st & 3rd Floor — Finish remaining 10% rough-in (punch list, corrections)</td>
+        <td class="right">12 hrs</td>
+        <td class="right">$115.97</td>
+        <td class="right">$1,392</td>
+      </tr>
+      <tr class="subtotal-row">
+        <td colspan="3">Rough-In Labor Subtotal (76 hrs @ $115.97/hr Foreman Loaded)</td>
+        <td class="right">$8,814</td>
+      </tr>
+
+      <tr style="background:#002244; color:#fff;">
+        <td colspan="4" style="font-weight:700;">LABOR — WIRE PULLING</td>
+      </tr>
+      <tr>
+        <td>All floors — Pull branch circuits, home runs, switch legs (EMT conduit)</td>
+        <td class="right">32 hrs</td>
+        <td class="right">$115.97</td>
+        <td class="right">$3,711</td>
+      </tr>
+      <tr class="subtotal-row">
+        <td colspan="3">Wire Pull Labor Subtotal (32 hrs)</td>
+        <td class="right">$3,711</td>
+      </tr>
+
+      <tr style="background:#002244; color:#fff;">
+        <td colspan="4" style="font-weight:700;">LABOR — TRIM OUT</td>
+      </tr>
+      <tr>
+        <td>All floors — Device install (receptacles, switches, dimmers), fixture mounting, face plates, labeling</td>
+        <td class="right">28 hrs</td>
+        <td class="right">$115.97</td>
+        <td class="right">$3,247</td>
+      </tr>
+      <tr class="subtotal-row">
+        <td colspan="3">Trim Out Labor Subtotal (28 hrs)</td>
+        <td class="right">$3,247</td>
+      </tr>
+
+      <tr style="background:#002244; color:#fff;">
+        <td colspan="4" style="font-weight:700;">MATERIALS</td>
+      </tr>
+      <tr>
+        <td>Wire — 12/2 & 14/2 THHN, spools for branch circuits & home runs</td>
+        <td class="right">1 lot</td>
+        <td class="right">$1,200</td>
+        <td class="right">$1,200</td>
+      </tr>
+      <tr>
+        <td>Devices — Receptacles (tamper-resistant), switches, dimmers, GFCI, face plates</td>
+        <td class="right">1 lot</td>
+        <td class="right">$1,100</td>
+        <td class="right">$1,100</td>
+      </tr>
+      <tr>
+        <td>Fixtures — LED ceiling mounts, wall packs, smoke/CO detectors</td>
+        <td class="right">1 lot</td>
+        <td class="right">$900</td>
+        <td class="right">$900</td>
+      </tr>
+      <tr>
+        <td>Boxes, connectors, fasteners, misc. rough-in supplies</td>
+        <td class="right">1 lot</td>
+        <td class="right">$428</td>
+        <td class="right">$428</td>
+      </tr>
+      <tr class="subtotal-row">
+        <td colspan="3">Materials Subtotal</td>
+        <td class="right">$3,628</td>
+      </tr>
+
+      <tr style="background:#002244; color:#fff;">
+        <td colspan="4" style="font-weight:700;">INSPECTIONS</td>
+      </tr>
+      <tr>
+        <td>Rough-in inspection coordination + final inspection coordination</td>
+        <td class="right">1 lot</td>
+        <td class="right">$600</td>
+        <td class="right">$600</td>
+      </tr>
+      <tr class="subtotal-row">
+        <td colspan="3">Inspections Subtotal</td>
+        <td class="right">$600</td>
+      </tr>
+
+      <tr style="height:6px; background:#fff;"><td colspan="4"></td></tr>
+      <tr class="total-row">
+        <td colspan="3" style="font-size:13pt;">TOTAL — PHASE 2 (ROUGH TO TRIM)</td>
+        <td class="right" style="font-size:14pt;">$20,000.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- LABOR RATES -->
+<div class="section">
+  <div class="section-title">👷 Labor Rate — IBEW 134 Prevailing Wage</div>
+  <table style="width:55%;">
+    <tr><td>Foreman Base Rate</td><td class="right">$70.80/hr</td></tr>
+    <tr><td>Health & Welfare</td><td class="right">$19.34/hr</td></tr>
+    <tr><td>Pension</td><td class="right">$21.13/hr</td></tr>
+    <tr><td>Vacation</td><td class="right">$1.60/hr</td></tr>
+    <tr><td>Training</td><td class="right">$2.85/hr</td></tr>
+    <tr><td>Other Insurance</td><td class="right">$0.30/hr</td></tr>
+    <tr style="font-weight:700; color:#002244; border-top:2px solid #002244;"><td>TOTAL LOADED RATE</td><td class="right">$115.97/hr</td></tr>
+  </table>
+  <p style="font-size:9pt; color:#666; margin-top:8px;">Total Labor: 136 hrs @ $115.97/hr = $15,772 &nbsp;|&nbsp; Materials: $3,628 &nbsp;|&nbsp; Inspections: $600</p>
+</div>
+
+<!-- NOTES -->
+<div class="notes-box">
+  <h3>📝 Notes</h3>
+  <p>• Phase 1 (Distribution — BSC-E-2026-PR002) covers meter bank, main panel, and sub-panels — already invoiced at $15,500</p>
+  <p>• Phase 2 covers all remaining rough-in, wire pulling, trim out, and final inspections</p>
+  <p>• Current progress: Basement 20% | 1st Floor 90% | 2nd Floor 10% | 3rd Floor 90%</p>
+  <p>• All work per Chicago Electrical Code — EMT conduit throughout</p>
+  <p>• Payment due within 30 days of invoice date</p>
+</div>
+
+<!-- TERMS -->
+<div class="terms">
+  <strong>Terms & Conditions:</strong>
+  <ul>
+    <li>Invoice valid for 30 days from date above</li>
+    <li>All work performed per Chicago Electrical Code (EMT conduit required)</li>
+    <li>1-year warranty on labor and materials</li>
+    <li>Does not include HVAC, plumbing, low-voltage, or drywall repair</li>
+    <li>Utility company fees (ComEd) not included</li>
+    <li>Work schedule subject to permit approval and inspection availability</li>
+  </ul>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <span class="green">BLACKTECH SOLUTIONS CORP</span> &nbsp;|&nbsp; 14076 Lincoln Ave, Dolton, IL &nbsp;|&nbsp; payroll@blacktechsolutionscorp.com &nbsp;|&nbsp; EIN: 82-3394717
+  <br>Licensed Electrical Contractor — City of Chicago
+</div>
+
+</body>
+</html>

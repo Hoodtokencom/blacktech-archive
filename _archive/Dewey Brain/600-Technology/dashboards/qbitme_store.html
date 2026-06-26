@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qbitme — AI Hardware & Support</title>
+<style>
+  :root {
+    --bg: #05060f;
+    --surface: #0d0f1e;
+    --surface2: #13162a;
+    --border: #1e2240;
+    --accent: #6c63ff;
+    --accent2: #00e5ff;
+    --accent3: #ff6b6b;
+    --gold: #ffd166;
+    --text: #e8eaf6;
+    --muted: #7b82b0;
+    --green: #06d6a0;
+    --radius: 14px;
+    --font: 'Segoe UI', system-ui, sans-serif;
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--text); font-family: var(--font); font-size: 15px; line-height: 1.6; }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(5,6,15,0.92); backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 32px; height: 60px;
+  }
+  .nav-logo { font-size: 1.4rem; font-weight: 900; letter-spacing: -0.5px; }
+  .nav-logo span { color: var(--accent); }
+  .nav-links { display: flex; gap: 28px; }
+  .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--text); }
+  .nav-cta {
+    background: var(--accent); color: #fff; border: none;
+    padding: 8px 20px; border-radius: 8px; font-weight: 700; font-size: 0.85rem;
+    cursor: pointer; transition: opacity 0.2s;
+  }
+  .nav-cta:hover { opacity: 0.85; }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center;
+    padding: 100px 24px 60px;
+    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(108,99,255,0.15) 0%, transparent 70%);
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background: 
+      radial-gradient(circle at 20% 80%, rgba(0,229,255,0.06) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(255,107,107,0.06) 0%, transparent 50%);
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(108,99,255,0.15); border: 1px solid rgba(108,99,255,0.3);
+    border-radius: 20px; padding: 5px 14px; font-size: 0.78rem;
+    color: var(--accent2); font-weight: 600; margin-bottom: 24px;
+    letter-spacing: 0.5px;
+  }
+  .hero-badge::before { content: '●'; color: var(--green); font-size: 0.6rem; }
+  .hero h1 {
+    font-size: clamp(2.8rem, 7vw, 5.5rem); font-weight: 900;
+    letter-spacing: -2px; line-height: 1.05; margin-bottom: 20px;
+  }
+  .hero h1 .q { color: var(--accent); }
+  .hero h1 .bit { color: var(--accent2); }
+  .hero h1 .me { color: var(--text); }
+  .hero-sub {
+    font-size: 1.15rem; color: var(--muted); max-width: 520px;
+    margin: 0 auto 36px; line-height: 1.7;
+  }
+  .hero-sub strong { color: var(--text); }
+  .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--accent); color: #fff; border: none;
+    padding: 14px 32px; border-radius: 10px; font-weight: 700; font-size: 0.95rem;
+    cursor: pointer; transition: all 0.2s;
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(108,99,255,0.4); }
+  .btn-outline {
+    background: transparent; color: var(--text);
+    border: 1px solid var(--border); padding: 14px 32px;
+    border-radius: 10px; font-weight: 600; font-size: 0.95rem;
+    cursor: pointer; transition: all 0.2s;
+  }
+  .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* STATS BAR */
+  .stats-bar {
+    background: var(--surface); border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    display: flex; justify-content: center; gap: 0; flex-wrap: wrap;
+  }
+  .stat-item {
+    padding: 20px 40px; text-align: center;
+    border-right: 1px solid var(--border);
+  }
+  .stat-item:last-child { border-right: none; }
+  .stat-num { font-size: 1.6rem; font-weight: 900; color: var(--accent2); }
+  .stat-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+
+  /* SECTIONS */
+  section { padding: 80px 24px; max-width: 1100px; margin: 0 auto; }
+  .section-label {
+    font-size: 0.75rem; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--accent); margin-bottom: 10px;
+  }
+  .section-title { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900; letter-spacing: -1px; margin-bottom: 12px; }
+  .section-sub { color: var(--muted); font-size: 1rem; max-width: 500px; line-height: 1.7; margin-bottom: 48px; }
+
+  /* HARDWARE */
+  .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+  .product-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 28px; position: relative;
+    transition: all 0.25s; cursor: pointer;
+  }
+  .product-card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 12px 32px rgba(108,99,255,0.15); }
+  .product-card.featured { border-color: var(--accent); }
+  .product-badge {
+    position: absolute; top: 16px; right: 16px;
+    background: var(--accent); color: #fff;
+    font-size: 0.68rem; font-weight: 700; padding: 3px 10px;
+    border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .product-badge.new { background: var(--green); color: #000; }
+  .product-badge.hot { background: var(--accent3); }
+  .product-icon { font-size: 2.5rem; margin-bottom: 16px; }
+  .product-name { font-size: 1.05rem; font-weight: 800; margin-bottom: 6px; }
+  .product-desc { font-size: 0.85rem; color: var(--muted); margin-bottom: 16px; line-height: 1.6; }
+  .product-specs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
+  .spec-tag {
+    background: var(--surface2); border: 1px solid var(--border);
+    font-size: 0.72rem; color: var(--muted); padding: 3px 8px; border-radius: 6px;
+  }
+  .product-price { font-size: 1.4rem; font-weight: 900; color: var(--accent2); }
+  .product-price span { font-size: 0.8rem; color: var(--muted); font-weight: 400; }
+
+  /* MERCH */
+  .merch-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+  .merch-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 24px; text-align: center;
+    transition: all 0.25s; cursor: pointer;
+  }
+  .merch-card:hover { border-color: var(--accent2); transform: translateY(-2px); }
+  .merch-icon { font-size: 3rem; margin-bottom: 12px; }
+  .merch-name { font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; }
+  .merch-sub { font-size: 0.8rem; color: var(--muted); margin-bottom: 12px; }
+  .merch-price { font-size: 1.1rem; font-weight: 800; color: var(--gold); }
+
+  /* SUPPORT TIERS */
+  .tiers-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; }
+  .tier-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 28px; position: relative;
+    transition: all 0.25s;
+  }
+  .tier-card.popular {
+    border-color: var(--accent);
+    background: linear-gradient(135deg, rgba(108,99,255,0.08) 0%, var(--surface) 60%);
+  }
+  .popular-badge {
+    position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+    background: var(--accent); color: #fff;
+    font-size: 0.72rem; font-weight: 700; padding: 4px 14px;
+    border-radius: 20px; white-space: nowrap;
+  }
+  .tier-icon { font-size: 2rem; margin-bottom: 12px; }
+  .tier-name { font-size: 1.1rem; font-weight: 800; margin-bottom: 4px; }
+  .tier-tagline { font-size: 0.82rem; color: var(--muted); margin-bottom: 16px; }
+  .tier-price { font-size: 1.8rem; font-weight: 900; color: var(--text); margin-bottom: 4px; }
+  .tier-price .per { font-size: 0.85rem; color: var(--muted); font-weight: 400; }
+  .tier-divider { height: 1px; background: var(--border); margin: 16px 0; }
+  .tier-features { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; }
+  .tier-features li { font-size: 0.84rem; color: var(--muted); display: flex; gap: 8px; align-items: flex-start; }
+  .tier-features li::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; }
+  .tier-features li.locked { color: #3a3f5c; }
+  .tier-features li.locked::before { content: '✕'; color: #3a3f5c; }
+  .tier-btn {
+    width: 100%; padding: 11px; border-radius: 8px; font-weight: 700;
+    font-size: 0.88rem; cursor: pointer; transition: all 0.2s; border: none;
+  }
+  .tier-btn.accent { background: var(--accent); color: #fff; }
+  .tier-btn.accent:hover { opacity: 0.85; }
+  .tier-btn.outline { background: transparent; color: var(--text); border: 1px solid var(--border); }
+  .tier-btn.outline:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* BUNDLE */
+  .bundle-card {
+    background: linear-gradient(135deg, var(--surface2) 0%, rgba(108,99,255,0.08) 100%);
+    border: 1px solid var(--accent); border-radius: var(--radius);
+    padding: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
+    align-items: center;
+  }
+  @media (max-width: 640px) { .bundle-card { grid-template-columns: 1fr; } }
+  .bundle-items { display: flex; flex-direction: column; gap: 12px; }
+  .bundle-item { display: flex; align-items: center; gap: 12px; }
+  .bundle-item-icon { font-size: 1.4rem; }
+  .bundle-item-text { font-size: 0.88rem; }
+  .bundle-item-text strong { display: block; color: var(--text); }
+  .bundle-item-text span { color: var(--muted); font-size: 0.8rem; }
+  .bundle-pricing { text-align: center; }
+  .bundle-original { font-size: 1rem; color: var(--muted); text-decoration: line-through; margin-bottom: 4px; }
+  .bundle-total { font-size: 3rem; font-weight: 900; color: var(--gold); line-height: 1; }
+  .bundle-save { color: var(--green); font-size: 0.88rem; font-weight: 700; margin: 8px 0 20px; }
+
+  /* HOW IT WORKS */
+  .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; }
+  .step-card { text-align: center; padding: 24px 16px; }
+  .step-num {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--surface2); border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1rem; font-weight: 900; color: var(--accent);
+    margin: 0 auto 16px;
+  }
+  .step-title { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; }
+  .step-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
+
+  /* HOOD LOYALTY */
+  .hood-section {
+    background: linear-gradient(135deg, #0a0a1a 0%, #0d1a0d 50%, #0a0a1a 100%);
+    border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+    padding: 80px 24px;
+  }
+  .hood-inner { max-width: 1100px; margin: 0 auto; }
+  .hood-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-bottom: 60px; }
+  @media (max-width: 700px) { .hood-hero { grid-template-columns: 1fr; } }
+  .hood-logo-wrap { text-align: center; }
+  .hood-logo {
+    width: 160px; height: 160px; border-radius: 50%;
+    background: url('/static/hood_token_logo.png') center/cover no-repeat;
+    margin: 0 auto 16px;
+    box-shadow: 0 0 60px rgba(255,209,102,0.3), 0 0 120px rgba(255,209,102,0.1);
+    border: 3px solid rgba(255,209,102,0.3);
+  }
+  .hood-contract {
+    font-size: 0.7rem; color: var(--muted); font-family: monospace;
+    background: var(--surface2); border: 1px solid var(--border);
+    padding: 6px 12px; border-radius: 6px; display: inline-block;
+    cursor: pointer; transition: border-color 0.2s;
+  }
+  .hood-contract:hover { border-color: var(--gold); }
+  .hood-info .section-label { color: var(--gold); }
+  .hood-info .section-title { color: var(--gold); }
+  .hood-info p { color: var(--muted); font-size: 0.95rem; line-height: 1.8; margin-bottom: 16px; }
+  .hood-stats { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 20px; }
+  .hood-stat { text-align: center; }
+  .hood-stat .num { font-size: 1.5rem; font-weight: 900; color: var(--gold); }
+  .hood-stat .lbl { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+
+  /* EARN TABLE */
+  .earn-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 48px; }
+  .earn-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 22px;
+    transition: all 0.25s;
+  }
+  .earn-card:hover { border-color: var(--gold); transform: translateY(-2px); }
+  .earn-action { font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+  .earn-amount { font-size: 1.5rem; font-weight: 900; color: var(--gold); margin-bottom: 4px; }
+  .earn-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+
+  /* REDEEM TABLE */
+  .redeem-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+  .redeem-card {
+    background: var(--surface2); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 18px; text-align: center;
+    transition: all 0.25s;
+  }
+  .redeem-card:hover { border-color: var(--accent2); }
+  .redeem-icon { font-size: 1.8rem; margin-bottom: 8px; }
+  .redeem-title { font-size: 0.88rem; font-weight: 700; margin-bottom: 4px; }
+  .redeem-cost { font-size: 1rem; font-weight: 900; color: var(--gold); margin-bottom: 4px; }
+  .redeem-desc { font-size: 0.76rem; color: var(--muted); }
+
+  /* FOOTER */
+  footer {
+    background: var(--surface); border-top: 1px solid var(--border);
+    padding: 40px 24px; text-align: center;
+  }
+  .footer-logo { font-size: 1.6rem; font-weight: 900; letter-spacing: -0.5px; margin-bottom: 8px; }
+  .footer-logo .q { color: var(--accent); }
+  .footer-logo .bit { color: var(--accent2); }
+  .footer-sub { color: var(--muted); font-size: 0.85rem; margin-bottom: 20px; }
+  .footer-links { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
+  .footer-links a { color: var(--muted); text-decoration: none; font-size: 0.82rem; }
+  .footer-links a:hover { color: var(--text); }
+  .footer-copy { font-size: 0.75rem; color: #3a3f5c; }
+
+  /* FULL WIDTH SECTIONS */
+  .full-width { max-width: 100%; padding-left: 0; padding-right: 0; }
+  .full-width > * { max-width: 1100px; margin-left: auto; margin-right: auto; padding-left: 24px; padding-right: 24px; }
+
+  /* GLOW LINES */
+  .glow-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0.3; margin: 0;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo"><span class="q">Q</span>bit<span style="color:var(--accent2)">me</span></div>
+  <div class="nav-links">
+    <a href="#hardware">Hardware</a>
+    <a href="#support">Support</a>
+    <a href="#merch">Merch</a>
+    <a href="#bundles">Bundles</a>
+    <a href="#hood" style="color:var(--gold);">🪙 HOOD</a>
+  </div>
+  <button class="nav-cta">Shop Now</button>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">AI Hardware · Support · Merch</div>
+  <h1><span class="q">Q</span><span class="bit">bit</span><span class="me">me</span></h1>
+  <p class="hero-sub">
+    Preloaded AI hardware. <strong>Raspberry Pi 5 devices</strong> ready out of the box —
+    plus support tiers for every level and gear to rep the movement.
+  </p>
+  <div class="hero-btns">
+    <button class="btn-primary" onclick="document.getElementById('hardware').scrollIntoView({behavior:'smooth'})">Shop Hardware</button>
+    <button class="btn-outline" onclick="document.getElementById('support').scrollIntoView({behavior:'smooth'})">View Support Plans</button>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat-item"><div class="stat-num">Pi 5</div><div class="stat-label">Preloaded Device</div></div>
+  <div class="stat-item"><div class="stat-num">4</div><div class="stat-label">Support Tiers</div></div>
+  <div class="stat-item"><div class="stat-num">AI</div><div class="stat-label">Ready Out of Box</div></div>
+  <div class="stat-item"><div class="stat-num">24/7</div><div class="stat-label">Business Support</div></div>
+  <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">Community Built</div></div>
+</div>
+
+<div class="glow-line"></div>
+
+<!-- HARDWARE -->
+<section id="hardware">
+  <div class="section-label">AI Hardware</div>
+  <div class="section-title">Preloaded & Ready to Run</div>
+  <p class="section-sub">Every device ships with AI software preloaded. Plug in. Power on. It works.</p>
+
+  <div class="products-grid">
+
+    <div class="product-card">
+      <div class="product-badge new">New</div>
+      <div class="product-icon">🍓</div>
+      <div class="product-name">Qbitme Starter Pi</div>
+      <div class="product-desc">Raspberry Pi 5 · 4GB RAM · preloaded with local AI assistant, automation tools, and Qbitme dashboard.</div>
+      <div class="product-specs">
+        <span class="spec-tag">Pi 5 · 4GB</span>
+        <span class="spec-tag">32GB SD</span>
+        <span class="spec-tag">Local AI</span>
+        <span class="spec-tag">WiFi</span>
+      </div>
+      <div class="product-price">$149 <span>+ free setup guide</span></div>
+    </div>
+
+    <div class="product-card featured">
+      <div class="product-badge hot">Best Seller</div>
+      <div class="product-icon">🤖</div>
+      <div class="product-name">Qbitme Pro Pi</div>
+      <div class="product-desc">Raspberry Pi 5 · 8GB RAM · preloaded AI models, automation stack, voice assistant, and 256GB SSD storage.</div>
+      <div class="product-specs">
+        <span class="spec-tag">Pi 5 · 8GB</span>
+        <span class="spec-tag">256GB SSD</span>
+        <span class="spec-tag">Hermes AI</span>
+        <span class="spec-tag">Voice</span>
+        <span class="spec-tag">Automation</span>
+      </div>
+      <div class="product-price">$249 <span>most popular</span></div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-icon">🏢</div>
+      <div class="product-name">Qbitme Business Hub</div>
+      <div class="product-desc">Pi 5 · 8GB · 1TB SSD · full business automation suite — invoicing, CRM, email robot, Kanban, and dashboards. Preloaded.</div>
+      <div class="product-specs">
+        <span class="spec-tag">Pi 5 · 8GB</span>
+        <span class="spec-tag">1TB SSD</span>
+        <span class="spec-tag">CRM</span>
+        <span class="spec-tag">Invoicing</span>
+        <span class="spec-tag">Email Robot</span>
+      </div>
+      <div class="product-price">$399 <span>business ready</span></div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-icon">🔧</div>
+      <div class="product-name">DIY Pi Kit</div>
+      <div class="product-desc">Raspberry Pi 5 board only · You build it. We give you the setup docs, config files, and Discord access.</div>
+      <div class="product-specs">
+        <span class="spec-tag">Pi 5 Board</span>
+        <span class="spec-tag">Setup Docs</span>
+        <span class="spec-tag">Discord</span>
+      </div>
+      <div class="product-price">$89 <span>board + access</span></div>
+    </div>
+
+  </div>
+</section>
+
+<div class="glow-line"></div>
+
+<!-- SUPPORT TIERS -->
+<section id="support">
+  <div class="section-label">AI Support</div>
+  <div class="section-title">Pick Your Level</div>
+  <p class="section-sub">From self-builders to full business automation — there's a tier for where you are.</p>
+
+  <div class="tiers-grid">
+
+    <!-- DIY -->
+    <div class="tier-card">
+      <div class="tier-icon">🔧</div>
+      <div class="tier-name">DIY</div>
+      <div class="tier-tagline">For the builders & tinkerers</div>
+      <div class="tier-price">Free <span class="per">forever</span></div>
+      <div class="tier-divider"></div>
+      <ul class="tier-features">
+        <li>Setup documentation & guides</li>
+        <li>Community Discord access</li>
+        <li>Config file downloads</li>
+        <li>Basic troubleshooting FAQ</li>
+        <li class="locked">1-on-1 support sessions</li>
+        <li class="locked">Remote assistance</li>
+        <li class="locked">Custom automation builds</li>
+      </ul>
+      <button class="tier-btn outline">Get Started Free</button>
+    </div>
+
+    <!-- FAMILY -->
+    <div class="tier-card popular">
+      <div class="popular-badge">⭐ Most Popular</div>
+      <div class="tier-icon">👨‍👩‍👧</div>
+      <div class="tier-name">Family</div>
+      <div class="tier-tagline">AI for the whole household</div>
+      <div class="tier-price">$29 <span class="per">/ month</span></div>
+      <div class="tier-divider"></div>
+      <ul class="tier-features">
+        <li>Everything in DIY</li>
+        <li>Monthly 1-on-1 support call</li>
+        <li>Remote setup assistance</li>
+        <li>Home automation templates</li>
+        <li>Up to 2 devices covered</li>
+        <li>Email support (48hr response)</li>
+        <li class="locked">Custom business builds</li>
+      </ul>
+      <button class="tier-btn accent">Get Family Plan</button>
+    </div>
+
+    <!-- BUSINESS -->
+    <div class="tier-card">
+      <div class="tier-icon">💼</div>
+      <div class="tier-name">Business</div>
+      <div class="tier-tagline">Automate your operations</div>
+      <div class="tier-price">$99 <span class="per">/ month</span></div>
+      <div class="tier-divider"></div>
+      <ul class="tier-features">
+        <li>Everything in Family</li>
+        <li>Weekly support check-ins</li>
+        <li>CRM + invoicing setup</li>
+        <li>Email automation builds</li>
+        <li>Up to 3 devices covered</li>
+        <li>Priority email support (24hr)</li>
+        <li>Custom workflow builds (2/mo)</li>
+      </ul>
+      <button class="tier-btn outline">Get Business Plan</button>
+    </div>
+
+    <!-- SUPPORT (WHITE GLOVE) -->
+    <div class="tier-card">
+      <div class="tier-icon">🛡️</div>
+      <div class="tier-name">Support+</div>
+      <div class="tier-tagline">White glove. We handle it all.</div>
+      <div class="tier-price">$249 <span class="per">/ month</span></div>
+      <div class="tier-divider"></div>
+      <ul class="tier-features">
+        <li>Everything in Business</li>
+        <li>Unlimited support sessions</li>
+        <li>Dedicated support agent</li>
+        <li>Same-day response</li>
+        <li>Unlimited devices</li>
+        <li>Full custom builds & deploys</li>
+        <li>Quarterly strategy session</li>
+      </ul>
+      <button class="tier-btn outline">Get Support+ Plan</button>
+    </div>
+
+  </div>
+</section>
+
+<div class="glow-line"></div>
+
+<!-- MERCH -->
+<section id="merch">
+  <div class="section-label">Merch</div>
+  <div class="section-title">Rep the Movement</div>
+  <p class="section-sub">Quality gear for the AI-curious and the AI-committed.</p>
+
+  <div class="merch-grid">
+    <div class="merch-card">
+      <div class="merch-icon">👕</div>
+      <div class="merch-name">Qbitme Tee</div>
+      <div class="merch-sub">Classic logo · Unisex · S–3XL</div>
+      <div class="merch-price">$28</div>
+    </div>
+    <div class="merch-card">
+      <div class="merch-icon">🧢</div>
+      <div class="merch-name">Qbitme Cap</div>
+      <div class="merch-sub">Embroidered logo · Adjustable</div>
+      <div class="merch-price">$24</div>
+    </div>
+    <div class="merch-card">
+      <div class="merch-icon">☕</div>
+      <div class="merch-name">AI Mug</div>
+      <div class="merch-sub">11oz ceramic · "Run Local AI"</div>
+      <div class="merch-price">$18</div>
+    </div>
+    <div class="merch-card">
+      <div class="merch-icon">🖊️</div>
+      <div class="merch-name">Qbitme Pen Set</div>
+      <div class="merch-sub">Branded pen · 3 pack</div>
+      <div class="merch-price">$12</div>
+    </div>
+    <div class="merch-card">
+      <div class="merch-icon">🎒</div>
+      <div class="merch-name">Tech Backpack</div>
+      <div class="merch-sub">Padded laptop sleeve · Qbitme patch</div>
+      <div class="merch-price">$49</div>
+    </div>
+    <div class="merch-card">
+      <div class="merch-icon">📓</div>
+      <div class="merch-name">AI Notebook</div>
+      <div class="merch-sub">Dotted grid · 120 pages · branded</div>
+      <div class="merch-price">$14</div>
+    </div>
+  </div>
+</section>
+
+<div class="glow-line"></div>
+
+<!-- BUNDLES -->
+<section id="bundles">
+  <div class="section-label">Bundles</div>
+  <div class="section-title">Everything You Need</div>
+  <p class="section-sub">Hardware + support + merch. One price. Ship and go.</p>
+
+  <div class="bundle-card">
+    <div class="bundle-items">
+      <div style="font-size:1.2rem; font-weight:800; margin-bottom:16px; color:var(--gold)">🎁 Qbitme Starter Bundle</div>
+      <div class="bundle-item">
+        <div class="bundle-item-icon">🍓</div>
+        <div class="bundle-item-text">
+          <strong>Qbitme Starter Pi</strong>
+          <span>Pi 5 · 4GB · Preloaded AI</span>
+        </div>
+      </div>
+      <div class="bundle-item">
+        <div class="bundle-item-icon">👨‍👩‍👧</div>
+        <div class="bundle-item-text">
+          <strong>Family Support — 3 Months</strong>
+          <span>Monthly calls + remote assist</span>
+        </div>
+      </div>
+      <div class="bundle-item">
+        <div class="bundle-item-icon">👕</div>
+        <div class="bundle-item-text">
+          <strong>Qbitme Tee + Mug</strong>
+          <span>Welcome to the movement</span>
+        </div>
+      </div>
+    </div>
+    <div class="bundle-pricing">
+      <div class="bundle-original">$236 separately</div>
+      <div class="bundle-total">$189</div>
+      <div class="bundle-save">Save $47 — 20% off</div>
+      <button class="btn-primary">Get the Bundle</button>
+    </div>
+  </div>
+</section>
+
+<div class="glow-line"></div>
+
+<!-- HOW IT WORKS -->
+<section>
+  <div class="section-label">Process</div>
+  <div class="section-title">How It Works</div>
+  <p class="section-sub">Simple. Fast. Yours.</p>
+
+  <div class="steps-grid">
+    <div class="step-card">
+      <div class="step-num">1</div>
+      <div class="step-title">Pick Your Device</div>
+      <div class="step-desc">Choose the Pi that fits — DIY kit, preloaded Starter, Pro, or full Business Hub.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">2</div>
+      <div class="step-title">Choose Support Tier</div>
+      <div class="step-desc">Free DIY docs, Family monthly calls, Business automation, or full Support+ white glove.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">3</div>
+      <div class="step-title">We Ship It</div>
+      <div class="step-desc">Device arrives preloaded. Plug in, power on — AI is running on day one.</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num">4</div>
+      <div class="step-title">We Support You</div>
+      <div class="step-desc">Your tier activates. Remote help, automation builds, check-ins — we got you.</div>
+    </div>
+  </div>
+</section>
+
+<!-- HOOD TOKEN LOYALTY -->
+<div class="glow-line"></div>
+
+<div class="hood-section" id="hood">
+  <div class="hood-inner">
+
+    <!-- HERO -->
+    <div class="hood-hero">
+      <div class="hood-logo-wrap">
+        <div class="hood-logo"></div>
+        <div style="font-size:1.1rem; font-weight:900; color:var(--gold); margin-bottom:6px;">HOOD Token</div>
+        <div style="font-size:0.78rem; color:var(--muted); margin-bottom:10px;">Neighborhood Token · Base Network</div>
+        <div class="hood-contract" onclick="navigator.clipboard.writeText('0x22308903bcc42B48978f855925c3fB2398d91048'); this.textContent='✅ Copied!'">
+          0x2230...1048 · click to copy
+        </div>
+      </div>
+      <div class="hood-info">
+        <div class="section-label">HOOD Token Loyalty</div>
+        <div class="section-title" style="font-size:2rem;">Earn While You Shop</div>
+        <p>Every Qbitme purchase earns you <strong style="color:var(--gold)">HOOD tokens</strong> — the community loyalty currency on the Base network. Stack tokens, redeem for discounts, hardware, and exclusive perks.</p>
+        <p>HOOD tokens live in your crypto wallet. They're yours — on-chain, forever. No points that expire. No corporate loyalty program. Real community value.</p>
+        <div class="hood-stats">
+          <div class="hood-stat"><div class="num">100K</div><div class="lbl">Total Supply</div></div>
+          <div class="hood-stat"><div class="num">Base</div><div class="lbl">Network</div></div>
+          <div class="hood-stat"><div class="num">60628</div><div class="lbl">Community</div></div>
+          <div class="hood-stat"><div class="num">∞</div><div class="lbl">Never Expires</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EARN -->
+    <div class="section-label" style="color:var(--gold); text-align:center; margin-bottom:12px;">How to Earn HOOD</div>
+    <div class="section-title" style="text-align:center; margin-bottom:8px; color:var(--gold);">Every Purchase Pays Back</div>
+    <p style="text-align:center; color:var(--muted); font-size:0.88rem; margin-bottom:32px;">HOOD tokens sent directly to your Base wallet after every order.</p>
+
+    <div class="earn-grid">
+      <div class="earn-card">
+        <div class="earn-action">Buy Hardware</div>
+        <div class="earn-amount">50–200 HOOD</div>
+        <div class="earn-desc">Starter Pi = 50 HOOD · Pro Pi = 100 HOOD · Business Hub = 200 HOOD</div>
+      </div>
+      <div class="earn-card">
+        <div class="earn-action">Subscribe to Support</div>
+        <div class="earn-amount">10–50 HOOD/mo</div>
+        <div class="earn-desc">Family = 10/mo · Business = 25/mo · Support+ = 50/mo — every month you stay active</div>
+      </div>
+      <div class="earn-card">
+        <div class="earn-action">Buy Merch</div>
+        <div class="earn-amount">5–15 HOOD</div>
+        <div class="earn-desc">Tee/Cap = 10 HOOD · Mug/Pen = 5 HOOD · Backpack = 15 HOOD per item</div>
+      </div>
+      <div class="earn-card">
+        <div class="earn-action">Refer a Friend</div>
+        <div class="earn-amount">25 HOOD</div>
+        <div class="earn-desc">Share your referral link. When they buy, you get 25 HOOD. No limit on referrals.</div>
+      </div>
+      <div class="earn-card">
+        <div class="earn-action">Leave a Review</div>
+        <div class="earn-amount">5 HOOD</div>
+        <div class="earn-desc">Verified purchase review = 5 HOOD. One per product.</div>
+      </div>
+      <div class="earn-card">
+        <div class="earn-action">Bundle Purchase</div>
+        <div class="earn-amount">+25 HOOD Bonus</div>
+        <div class="earn-desc">Buy any bundle and earn a 25 HOOD bonus on top of your product earnings.</div>
+      </div>
+    </div>
+
+    <!-- REDEEM -->
+    <div class="section-label" style="color:var(--accent2); text-align:center; margin-bottom:12px; margin-top:20px;">Redeem HOOD</div>
+    <div class="section-title" style="text-align:center; margin-bottom:8px;">Spend Your Tokens</div>
+    <p style="text-align:center; color:var(--muted); font-size:0.88rem; margin-bottom:32px;">HOOD tokens unlock real value across the Qbitme store.</p>
+
+    <div class="redeem-grid">
+      <div class="redeem-card">
+        <div class="redeem-icon">💵</div>
+        <div class="redeem-title">Store Discount</div>
+        <div class="redeem-cost">10 HOOD = $1 off</div>
+        <div class="redeem-desc">Apply at checkout toward any hardware, merch, or support plan</div>
+      </div>
+      <div class="redeem-card">
+        <div class="redeem-icon">🍓</div>
+        <div class="redeem-title">Free Starter Pi</div>
+        <div class="redeem-cost">1,500 HOOD</div>
+        <div class="redeem-desc">Stack 1,500 tokens, redeem for a free Qbitme Starter Pi device</div>
+      </div>
+      <div class="redeem-card">
+        <div class="redeem-icon">🛡️</div>
+        <div class="redeem-title">Free Support Month</div>
+        <div class="redeem-cost">300 HOOD</div>
+        <div class="redeem-desc">Redeem for 1 free month of Family support tier</div>
+      </div>
+      <div class="redeem-card">
+        <div class="redeem-icon">👕</div>
+        <div class="redeem-title">Free Merch Drop</div>
+        <div class="redeem-cost">150 HOOD</div>
+        <div class="redeem-desc">Tee + Mug + Pen Set shipped free — rep the movement on us</div>
+      </div>
+      <div class="redeem-card">
+        <div class="redeem-icon">🎟️</div>
+        <div class="redeem-title">VIP Event Access</div>
+        <div class="redeem-cost">50 HOOD</div>
+        <div class="redeem-desc">Access to exclusive Qbitme community events, workshops, and Blue Wednesday sessions</div>
+      </div>
+      <div class="redeem-card">
+        <div class="redeem-icon">🤝</div>
+        <div class="redeem-title">Community Vote</div>
+        <div class="redeem-cost">1 HOOD = 1 Vote</div>
+        <div class="redeem-desc">Vote on new products, features, and community decisions. Your tokens = your voice.</div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div style="text-align:center; margin-top:48px; padding:32px; background:var(--surface); border:1px solid rgba(255,209,102,0.2); border-radius:var(--radius);">
+      <div style="font-size:1.5rem; font-weight:900; color:var(--gold); margin-bottom:8px;">Ready to Stack HOOD?</div>
+      <p style="color:var(--muted); font-size:0.9rem; max-width:480px; margin:0 auto 20px;">Connect your Base wallet at checkout. Every order automatically sends HOOD tokens to your address. No sign-up required.</p>
+      <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+        <button class="btn-primary" style="background:linear-gradient(135deg, #b8860b, var(--gold)); color:#000;">Shop & Earn HOOD</button>
+        <button class="btn-outline" onclick="window.open('https://blue.blacktechsolutionscorp.com/hood','_blank')">Learn About HOOD Token →</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="glow-line"></div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo"><span class="q">Q</span>bit<span style="color:var(--accent2)">me</span></div>
+  <div class="footer-sub">AI Hardware · Support Tiers · Community Merch</div>
+  <div class="footer-links">
+    <a href="#">Hardware</a>
+    <a href="#">Support Plans</a>
+    <a href="#">Merch</a>
+    <a href="#">Bundles</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+  <div class="footer-copy">© 2026 Qbitme — All rights reserved</div>
+</footer>
+
+</body>
+</html>

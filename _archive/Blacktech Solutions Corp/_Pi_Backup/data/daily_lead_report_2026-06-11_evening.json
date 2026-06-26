@@ -1,0 +1,64 @@
+{
+  "report_date": "2026-06-11",
+  "report_time": "16:30 CDT",
+  "report_type": "daily_lead_processing",
+  "channels_checked": {
+    "telegram": {"status": "checked", "new_leads": 0, "bot_healthy": true, "bot_pid": 850591},
+    "email": {"status": "checked", "new_leads": 1, "inbox": "support@blacktechsolutionscorp.com"},
+    "command_center": {"status": "checked", "port": 8090, "healthy": true},
+    "n8n": {"status": "checked", "port": 5678, "healthy": true, "active_workflows": 3}
+  },
+  "new_leads_today": [
+    {
+      "name": "Alain David Carranza",
+      "address": "4823 S Prairie, Chicago",
+      "source": "email (Leads@blacktechsolutionscorp.com)",
+      "priority": "B-Lead",
+      "status": "NEW - needs qualification",
+      "action_needed": "Reply to qualify scope, schedule site visit",
+      "referred_by": "Keila Torres / InvestForge"
+    }
+  ],
+  "lost_leads_today": [
+    {
+      "name": "Todd Watkins / KM Printing",
+      "project": "400 E. Randolph Low Voltage",
+      "value": 1950,
+      "reason": "Client found alternative solution"
+    }
+  ],
+  "active_pipeline": [
+    {"name": "Victoria Young / NUE", "project": "Robbins Community Center", "value": 12500, "priority": "A-Lead", "status": "ACTIVE - invoices submitted", "action": "Review $18K vendor invoices, discuss Phase 1 budget"},
+    {"name": "IPA Express / Richelle Moreno", "project": "LED Lighting Retrofit", "value": 84512, "priority": "A-Lead", "status": "ESTIMATE SENT 06/10", "action": "Follow-up target June 15"},
+    {"name": "Marcus Johnson", "project": "EV Charger + 200A Panel", "value": 5300, "priority": "A-Lead", "status": "QUOTE PREP NEEDED", "action": "Prep and send quote"},
+    {"name": "Alain David Carranza", "project": "4823 S Prairie property", "value": null, "priority": "B-Lead", "status": "NEW", "action": "Qualify scope"},
+    {"name": "Patricia Johnson", "project": "Panel/Heat Pump/Water Heater", "value": null, "priority": "B-Lead", "status": "ASSESSMENT", "action": "Schedule site assessment"}
+  ],
+  "pipeline_value": 349512,
+  "follow_ups_due": [
+    {"name": "Felecia Lofton / Eastlake Management", "event": "Site visit - Dryer Exhaust Duct Cleaning", "date": "2026-06-17", "time": "1:00 PM", "location": "344 W. 28th Place", "deadline": "2026-06-23"},
+    {"name": "IPA Express", "event": "Follow-up on LED estimate", "date": "2026-06-15"}
+  ],
+  "qbo_overdue": {
+    "count": 3,
+    "total": 8635.00,
+    "invoices": [
+      {"number": "1353", "customer": "Production Down Inc", "amount": 135.00, "days_overdue": 33},
+      {"number": "1355", "customer": "Simply E & C", "amount": 5000.00, "days_overdue": 15},
+      {"number": "1356", "customer": "Simply E & C", "amount": 3500.00, "days_overdue": 15}
+    ]
+  },
+  "commission_tracking": {
+    "advisors": 1,
+    "customers_enrolled": 0,
+    "commissions_pending": 0,
+    "status": "System ready, awaiting first enrollment"
+  },
+  "system_issues": [
+    "leads@blacktechsolutionscorp.com IMAP auth failing (Day 2) — needs HostGator password reset",
+    "quotes@blacktechsolutionscorp.com IMAP auth failing (Day 2) — needs HostGator password reset",
+    "team@blacktechsolutionscorp.com not configured — mailbox needs creation",
+    "X/Twitter auth not configured — social posts skipping",
+    "QBO running in demo mode — live scraper not connected"
+  ]
+}

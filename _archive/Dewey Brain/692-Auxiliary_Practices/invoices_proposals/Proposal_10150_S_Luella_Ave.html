@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1050, initial-scale=0.45, maximum-scale=2.0">
+<title>Proposal — 10150 S Luella Ave · Blacktech Solutions Corp</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f0f4f8;
+    padding: 30px;
+    color: #1a1a2e;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+    overflow: hidden;
+  }
+  .header {
+    background: linear-gradient(135deg, #002244 0%, #69BE28 100%);
+    color: #fff;
+    padding: 28px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-left { display: flex; align-items: flex-start; gap: 16px; }
+  .header-left img { width: 140px; height: 120px; object-fit: contain; border-radius: 8px; background: #fff; padding: 4px; }
+  .header-left .brand h1 { font-size: 22px; font-weight: 700; letter-spacing: 1px; }
+  .header-left .brand .subtitle { font-size: 12px; opacity: 0.85; margin-top: 3px; }
+  .header-right { text-align: right; }
+  .header-right .label { font-size: 10px; opacity: 0.7; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 3px; }
+  .header-right .value { font-size: 14px; font-weight: 700; margin-bottom: 8px; }
+
+  .doc-title {
+    background: #002244;
+    color: #69BE28;
+    text-align: center;
+    padding: 14px;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .billing-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 32px;
+    gap: 24px;
+  }
+  .billing-box {
+    flex: 1;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 16px 20px;
+  }
+  .billing-box h3 { font-size: 11px; text-transform: uppercase; color: #64748b; letter-spacing: 1.5px; margin-bottom: 10px; font-weight: 700; }
+  .billing-box p { font-size: 13px; line-height: 1.8; color: #334155; }
+  .billing-box p strong { color: #1a1a2e; font-size: 14px; }
+
+  .job-details {
+    margin: 0 32px 20px;
+    background: #f8fafc;
+    border-left: 4px solid #128c7e;
+    border-radius: 0 8px 8px 0;
+    padding: 16px 20px;
+    display: flex;
+    gap: 32px;
+  }
+  .job-col { flex: 1; }
+  .job-col .label { font-size: 10px; text-transform: uppercase; color: #64748b; letter-spacing: 1px; margin-bottom: 4px; font-weight: 600; }
+  .job-col .value { font-size: 13px; font-weight: 700; color: #1a1a2e; }
+
+  .section-title {
+    margin: 20px 32px 8px;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #002244;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid #002244;
+    padding-bottom: 6px;
+  }
+
+  .scope-box {
+    margin: 0 32px 20px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-size: 13px;
+    color: #334155;
+    line-height: 1.8;
+  }
+  .scope-box ul { padding-left: 20px; }
+  .scope-box li { margin-bottom: 4px; }
+
+  table { width: calc(100% - 64px); margin: 0 32px 20px; border-collapse: collapse; font-size: 13px; }
+  thead th {
+    background: #002244;
+    color: #fff;
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  thead th:nth-child(1) { width: 50%; }
+  thead th:nth-child(2) { width: 15%; text-align: center; }
+  thead th:nth-child(3) { width: 15%; text-align: center; }
+  thead th:nth-child(4) { width: 20%; text-align: right; }
+  tbody tr { border-bottom: 1px solid #e2e8f0; }
+  tbody tr:nth-child(even) { background: #f8fafc; }
+  tbody td { padding: 9px 12px; color: #334155; }
+  tbody td:nth-child(2), tbody td:nth-child(3) { text-align: center; }
+  tbody td:nth-child(4) { text-align: right; font-weight: 600; color: #128c7e; }
+  .section-row td { background: #e8f0e0 !important; font-weight: 700; color: #002244; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+  .summary-outer {
+    padding: 0 32px 24px;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 2px solid #002244;
+    margin: 0 32px;
+  }
+  .summary-box { min-width: 280px; padding-top: 16px; }
+  .sum-row { display: flex; justify-content: space-between; margin-bottom: 6px; font-size: 13px; }
+  .sum-row .lbl { color: #64748b; }
+  .sum-row .val { font-weight: 600; color: #334155; }
+  .sum-row.total { font-size: 18px; font-weight: 800; padding-top: 8px; border-top: 2px solid #002244; margin-top: 6px; }
+  .sum-row.total .val { color: #128c7e; }
+
+  .note-box {
+    margin: 24px 32px 20px;
+    padding: 14px 20px;
+    background: #fffbeb;
+    border: 1px solid #fcd34d;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #78350f;
+    line-height: 1.7;
+  }
+  .note-box strong { color: #b45309; }
+
+  .payment-info {
+    margin: 0 32px 20px;
+    background: #f8fafc;
+    border-left: 4px solid #128c7e;
+    border-radius: 0 8px 8px 0;
+    padding: 16px 20px;
+  }
+  .payment-info h3 { font-size: 12px; text-transform: uppercase; color: #64748b; letter-spacing: 1px; margin-bottom: 10px; font-weight: 700; }
+  .payment-info p { font-size: 13px; line-height: 1.8; color: #334155; }
+  .payment-info p strong { color: #1a1a2e; }
+
+  .terms {
+    margin: 0 32px 20px;
+    padding: 16px 20px;
+    background: #fffbeb;
+    border: 1px solid #fcd34d;
+    border-radius: 8px;
+  }
+  .terms h3 { font-size: 12px; text-transform: uppercase; color: #b45309; letter-spacing: 1px; margin-bottom: 8px; font-weight: 700; }
+  .terms p { font-size: 12px; line-height: 1.7; color: #78350f; }
+
+  .signatures {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px 24px;
+    gap: 32px;
+  }
+  .sig-box { flex: 1; border-top: 2px solid #002244; padding-top: 12px; }
+  .sig-box h4 { font-size: 11px; text-transform: uppercase; color: #64748b; letter-spacing: 1px; margin-bottom: 24px; font-weight: 700; }
+  .sig-line { border-bottom: 1px solid #94a3b8; height: 32px; margin-bottom: 6px; }
+  .sig-label { font-size: 11px; color: #64748b; margin-bottom: 16px; }
+
+  .footer {
+    background: linear-gradient(135deg, #002244 0%, #69BE28 100%);
+    color: #fff;
+    padding: 20px 32px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.8;
+  }
+  .footer .top { font-weight: 600; margin-bottom: 4px; }
+  .footer .bottom { opacity: 0.85; font-size: 11px; }
+
+  @media print { body { padding: 0; background: #fff; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="header-left">
+      <img src="/media/allenai/Expansion/Blacktech_Drive/Home_Backup/Blacktech_Reports/Photos/blacktech_logo.jpg" alt="Blacktech Logo">
+      <div class="brand">
+        <h1>BLACKTECH SOLUTIONS CORP</h1>
+        <div class="subtitle">Electrical Contractor · Chicago, IL</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="label">Proposal #</div>
+      <div class="value">BSC-2026-LUELLA-001</div>
+      <div class="label">Date</div>
+      <div class="value">06/04/2026</div>
+      <div class="label">Valid Until</div>
+      <div class="value">07/04/2026</div>
+    </div>
+  </div>
+
+  <div class="doc-title">Electrical Proposal — Full Gut Rehab</div>
+
+  <div class="billing-section">
+    <div class="billing-box">
+      <h3>Submitted By</h3>
+      <p><strong>Blacktech Solutions Corp</strong><br>
+      14076 Lincoln Ave<br>
+      Dolton, IL 60419<br>
+      (312) 965-2782<br>
+      invoices@blacktechsolutionscorp.com</p>
+    </div>
+    <div class="billing-box">
+      <h3>Submitted To</h3>
+      <p><strong>Victoria Young</strong><br>
+      naturallyurban.green.co@gmail.com<br><br>
+      <strong>Project:</strong> 10150 S Luella Ave<br>
+      Chicago, IL (RS-2 Residential)</p>
+    </div>
+  </div>
+
+  <div class="job-details">
+    <div class="job-col">
+      <div class="label">Project Address</div>
+      <div class="value">10150 S Luella Ave, Chicago, IL</div>
+    </div>
+    <div class="job-col">
+      <div class="label">Project Type</div>
+      <div class="value">Full Gut Rehab / New Construction</div>
+    </div>
+    <div class="job-col">
+      <div class="label">Construction Type</div>
+      <div class="value">Type III-A Single Family Residence</div>
+    </div>
+    <div class="job-col">
+      <div class="label">Architect</div>
+      <div class="value">makeArchitecture (Drawing Date: 07/10/2023)</div>
+    </div>
+  </div>
+
+  <!-- LABOR LINE ITEMS -->
+  <div class="section-title">⚡ Electrical Labor</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Description</th>
+        <th>Qty</th>
+        <th>Unit</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Full Electrical Gut Rehab — 10150 S Luella Ave</strong></td>
+        <td>1</td><td>Lot</td><td>$12,500.00</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="summary-outer">
+    <div class="summary-box">
+      <div class="sum-row">
+        <span class="lbl">Labor Subtotal</span>
+        <span class="val">$12,500.00</span>
+      </div>
+      <div class="sum-row">
+        <span class="lbl">Materials (TBD — vendor quote)</span>
+        <span class="val">TBD</span>
+      </div>
+      <div class="sum-row">
+        <span class="lbl">Permit Fees (est.)</span>
+        <span class="val">Included</span>
+      </div>
+      <div class="sum-row total">
+        <span class="lbl">LABOR TOTAL</span>
+        <span class="val">$12,500.00</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCOPE OF WORK -->
+  <div class="section-title">📋 Scope of Work</div>
+  <div class="scope-box">
+    <ul>
+      <li>Demo all existing electrical — wiring, panels, conduit, and furring strips from masonry walls</li>
+      <li>Install new <strong>200A electrical service</strong> — full panel and distribution upgrade</li>
+      <li>New wiring throughout all floors (Basement, 1st Floor, 2nd Floor)</li>
+      <li>Install all new outlets, switches, dedicated circuits per room-by-room takeoff</li>
+      <li>Rough-in for 3 exhaust fans (owner-supplied), 3 thermostats, doorbell</li>
+      <li>Exterior GFCI outlets (front + rear)</li>
+      <li>Install 6 hardwired smoke/CO detectors</li>
+      <li>24–26 dedicated branch circuits per panel schedule</li>
+      <li>Telecom/cable rough-in (4 locations)</li>
+      <li>Coordinate with general contractor, architect, and other trades</li>
+      <li>Permit application — City of Chicago Electrical (2018 Chicago Electrical Code)</li>
+    </ul>
+  </div>
+
+  <div class="note-box">
+    <strong>Note:</strong> This is a <strong>labor-only proposal</strong>. Material costs are TBD pending vendor quote from supplier. Final project total = Labor ($12,500.00) + Materials (TBD). A material sheet can be provided upon request.<br><br>
+    <strong>Code compliance:</strong> All work per 2018 Chicago Electrical Code, 2019 City of Chicago Building Code, and 2019 Chicago Rehabilitation Code.<br><br>
+    <strong>Permit:</strong> Blacktech Solutions Corp will apply for and coordinate all required City of Chicago electrical permits and inspections.
+  </div>
+
+  <div class="payment-info">
+    <h3>💳 Payment Schedule</h3>
+    <p>
+      <strong>50% deposit</strong> due before work begins — $6,250.00<br>
+      <strong>25% progress payment</strong> at rough-in inspection — $3,125.00<br>
+      <strong>25% final payment</strong> upon completion &amp; final inspection — $3,125.00<br><br>
+      <strong>Zelle:</strong> support@blacktechsolutionscorp.com<br>
+      <strong>Questions?</strong> Call (312) 965-2782
+    </p>
+  </div>
+
+  <div class="terms">
+    <h3>Terms &amp; Conditions</h3>
+    <p>
+      All labor warranted for 1 year from substantial completion. Proposal valid for 30 days from date above.
+      Material costs to be confirmed prior to ordering. Changes to scope require written change order.
+      Lien rights reserved per Illinois Mechanics Lien Act. Licensed &amp; insured electrical contractor.
+      Permit fees not included in labor total — to be billed at cost.
+    </p>
+  </div>
+
+  <div class="signatures">
+    <div class="sig-box">
+      <h4>Owner / Client Acceptance</h4>
+      <div class="sig-line"></div>
+      <div class="sig-label">Signature</div>
+      <div class="sig-line"></div>
+      <div class="sig-label">Print Name &amp; Date</div>
+    </div>
+    <div class="sig-box">
+      <h4>Authorized By — Blacktech Solutions Corp</h4>
+      <div class="sig-line"></div>
+      <div class="sig-label">Derrell Black, Owner</div>
+      <div class="sig-line"></div>
+      <div class="sig-label">Date</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="top">Blacktech Solutions Corp &nbsp;|&nbsp; (312) 965-2782 &nbsp;|&nbsp; invoices@blacktechsolutionscorp.com</div>
+    <div class="bottom">© 2026 Blacktech Solutions Corp &nbsp;|&nbsp; Licensed &amp; Insured Electrical Contractor &nbsp;|&nbsp; 14076 Lincoln Ave, Dolton, IL 60419</div>
+  </div>
+
+</div>
+</body>
+</html>

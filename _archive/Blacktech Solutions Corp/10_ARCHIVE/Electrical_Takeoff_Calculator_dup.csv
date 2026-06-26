@@ -1,0 +1,117 @@
+BLACKTECH SOLUTIONS - ELECTRICAL TAKEOFF CALCULATOR
+Date:,,Project:,,Address:
+
+ROOM TAKEOFF
+Room,Std Outlets,GFCI Outlets,3-Way Switches,Std Switches,Dimmer Switches,Ceiling Lights,Recessed Cans,Sconces,Fans/Vents,Smoke/CO,Notes
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+TOTALS,=SUM(B5:B19),=SUM(C5:C19),=SUM(D5:D19),=SUM(E5:E19),=SUM(F5:F19),=SUM(G5:G19),=SUM(H5:H19),=SUM(I5:I19),=SUM(J5:J19),=SUM(K5:K19),
+
+EXTERIOR / LOW VOLTAGE
+Item,Qty,Notes
+Exterior GFCI outlets,,
+Exterior light fixtures,,
+Cable/telecom outlets,,
+Thermostats,,
+Doorbell rough-in,,
+Security camera rough-in,,
+Exterior LED flood,,
+
+PANEL & SPECIAL CIRCUITS
+Item,Qty,Amps,Notes
+Main panel / service upgrade,,,
+Sub-panel,,,
+240V dryer,,,
+240V range,,,
+240V AC condenser,,,
+240V water heater,,,
+EV charger rough-in,,,
+Generator inlet,,,
+Spare circuits,,,
+
+MATERIAL PRICING
+Item,Unit Cost,Total Qty,Line Total
+Standard duplex outlet,,,=B37*C37
+GFCI duplex outlet,,,=B38*C38
+GFCI quad outlet,,,=B39*C39
+Standard wall switch,,,=B40*C40
+3-way wall switch,,,=B41*C41
+Dimmer switch,,,=B42*C42
+3-way dimmer switch,,,=B43*C43
+"4"" recessed can (dry)",,,=B44*C44
+"4"" recessed can (wet/IC)",,,=B45*C45
+Ceiling J-box / bracket,,,=B46*C46
+Wall sconce box,,,=B47*C47
+Surface/closet light,,,=B48*C48
+Smoke/CO detector (hardwired),,,=B49*C49
+Exhaust fan (rough-in kit),,,=B50*C50
+12/2 NM-B Romex (per ft),,,=B51*C51
+12/3 NM-B Romex (per ft),,,=B52*C52
+10/2 NM-B Romex (per ft),,,=B53*C53
+10/3 NM-B Romex (per ft),,,=B54*C54
+6/3 NM-B Romex (per ft),,,=B55*C55
+1-gang blue box,,,=B56*C56
+2-gang blue box,,,=B57*C57
+3-gang blue box,,,=B58*C58
+"4"" round ceiling box",,,=B59*C59
+Wall plates (1-gang),,,=B60*C60
+Wall plates (2-gang),,,=B61*C61
+Wall plates (3-gang),,,=B62*C62
+Wire nuts / connectors,,,=B63*C63
+Staples / straps,,,=B64*C64
+200A panel,,,=B65*C65
+AFCI breakers (15A/20A),,,=B66*C66
+GFCI breakers,,,=B67*C67
+Standard breakers,,,=B68*C68
+2-pole breakers (30A/50A),,,=B69*C69
+Conduit / flex (per ft),,,=B70*C70
+MC cable (per ft),,,=B71*C71
+TOTAL MATERIALS,,,=SUM(D37:D71)
+
+LABOR ESTIMATE
+Task,Hours,Rate,Line Total
+Demo existing,,,=B74*C74
+Service upgrade / panel,,,=B75*C75
+Rough-in wiring,,,=B76*C76
+Device installation,,,=B77*C77
+Fixture hanging,,,=B78*C78
+Trim-out / finish,,,=B79*C79
+Cleanup / haul-away,,,=B80*C80
+TOTAL LABOR,,,=SUM(D74:D80)
+
+PROJECT SUMMARY
+Line Item,Amount
+Materials,=D72
+Labor,=D81
+Permits & fees,
+Subcontractors,
+Subtotal,=SUM(B84:B87)
+Contingency (10%),=B88*0.1
+TOTAL BID,=B88+B89
+
+NOTES
+Gas vs electric water heater:
+HVAC type (split vs packaged):
+Permit jurisdiction:
+Special conditions:
+
+QUICK REFERENCE
+Bedroom:,"1 outlet per wall, 2 switches, 1 ceiling light, 1 closet light, 1 smoke/CO"
+Bath:,"2 GFCI outlets, 2 switches, 1 vanity light, 1 exhaust fan"
+Kitchen:,"4 GFCI counter (2 circuits), 2 wall outlets, 3 dedicated appliance circuits"
+Hall:,"1 outlet, 1-2 switches, 1 ceiling light"
+Laundry:,"3 GFCI outlets, 1 washer dedicated, 1 dryer 240V"
+Living room:,"6 outlets, 2 dimmer switches, 1 floor outlet, 4-6 ceiling fixtures"

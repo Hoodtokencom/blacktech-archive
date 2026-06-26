@@ -1,0 +1,61 @@
+[
+  {
+    "id": "contact_phil_powell",
+    "name": "Phil Powell",
+    "company": "Veteran Prestige",
+    "phone": "(312) 801-0549",
+    "email": "Pvbuilders2@aol.com",
+    "address": "Eco School",
+    "status": "client",
+    "source": "Existing Customer",
+    "notes": "Invoice #1360 \u2014 $10,033.62 \u2014 Due 07/02/2026. Eco School ceiling tile R&R.",
+    "created": "06/02/2026",
+    "lastContact": "06/02/2026"
+  },
+  {
+    "id": "contact_lakeisha_william",
+    "name": "Lakeisha William",
+    "company": "Homeowner",
+    "phone": "3121112323",
+    "email": "john@emample.com",
+    "address": "1023 E 161st St",
+    "status": "lead",
+    "source": "Blacktech",
+    "notes": "Electrical outlet in bathroom",
+    "created": "06/02/2026",
+    "lastContact": "06/02/2026"
+  },
+  {
+    "id": "contact_rob_moore",
+    "name": "Rob Moore",
+    "company": "Monster Construction",
+    "phone": "6308862486",
+    "email": "Info@monsterroofingconstruction.com",
+    "address": "6515 S Drexel Ave",
+    "status": "customer",
+    "source": "Blacktech",
+    "notes": "Invoice BSC20266515 sent 06/04/2026. 400A service upgrade $24,990. 50% deposit required.",
+    "created": "06/02/2026",
+    "lastContact": "06/04/2026"
+  },
+  {
+    "name": "Kiesha Johnson",
+    "notes": "\ud83d\udccd South Holland",
+    "tag": "projects",
+    "source": "kanban",
+    "status": "New Lead",
+    "created": "2026-06-03T02:45:49.784337+00:00",
+    "id": "4",
+    "added": "2026-06-03T02:45:49.784337+00:00"
+  },
+  {
+    "name": "Ms. Williams",
+    "notes": "\ud83d\udcde 7731234567\n\ud83d\udccd 7458 S Euclid Ave",
+    "tag": "projects",
+    "source": "kanban",
+    "status": "New Lead",
+    "created": "2026-06-03T03:20:38.611739+00:00",
+    "id": "5",
+    "added": "2026-06-03T03:20:38.611739+00:00"
+  }
+]

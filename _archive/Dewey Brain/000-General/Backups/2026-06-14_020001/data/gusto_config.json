@@ -1,0 +1,11 @@
+{
+  "client_id": "ODoiWepxRQnzqnTu_fe6lzE-lxlorXPvXlmGrtUtOsQ",
+  "client_secret": "lebdQvnyT6pwQE22_ARpDbGwFd_PWvMFs6r6JUXwJj4",
+  "redirect_uri": "https://app.blacktechsolutionscorp.com/gusto-auth",
+  "api_base": "https://api.gusto-demo.com",
+  "token_url": "https://api.gusto-demo.com/oauth/token",
+  "auth_url": "https://api.gusto-demo.com/oauth/authorize",
+  "scopes": "companies:read employees:read employees:write payrolls:read payrolls:run",
+  "state_file": "/home/allenai/data/gusto_token.json",
+  "company_id": null
+}

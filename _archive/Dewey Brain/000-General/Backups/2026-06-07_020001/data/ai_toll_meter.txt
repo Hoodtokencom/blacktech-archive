@@ -1,0 +1,30 @@
+╔══════════════════════════════════════════════════════════════════╗
+║                    🚗 AI TOLL METER 🚗                            ║
+║         "Every pass costs — watch the meter run"                ║
+╠══════════════════════════════════════════════════════════════════╣
+║  DATE        | TASK                           | COST  | TOTAL  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  06/06/26    | Chat + check status             | $0.02 | $0.02 ║
+║  06/06/26    | Troubleshoot 2 offline svcs     | $0.15 | $0.17 ║
+║  06/06/26    | Create AI Toll Meter            | $0.03 | $0.20 ║
+║  06/06/26    | Fix Finance app + 60628 orgs     | $0.28 | $0.48 ║
+║  06/06/26    | Add Pipeline Monitor to Cmd Ctr | $0.05 | $0.53 ║
+║  06/06/26    | Test Gemini telemetry push      | $0.00 | $0.53 ║
+║  06/06/26    | Build Triple-Play Pipeline      | $0.08 | $0.61 ║
+║  06/06/26    | Update Command Center tiles     | $0.04 | $0.65 ║
+║  06/06/26    | Code backup to Blacktech Drive  | $0.03 | $0.68 ║
+║  06/06/26    | Build Service Watchdog + Cron   | $0.06 | $0.74 ║
+║  06/06/26    | Build Telegram Alert system     | $0.05 | $0.79 ║
+║  06/06/26    | Encrypt API keys (vault setup)  | $0.08 | $0.87 ║
+║  06/06/26    | Build Auto-Backup script        | $0.02 | $0.89 ║
+║  06/06/26    | SSL/HTTPS — Cloudflare Tunnel   | $0.03 | $0.92 ║
+╠══════════════════════════════════════════════════════════════════╣
+║  💰 CURRENT BALANCE DUE:                    $0.92              ║
+╚══════════════════════════════════════════════════════════════════╝
+
+📊 RATES (approximate):
+• Quick chat / question ............ $0.01 – $0.03
+• Task with files / code ........... $0.05 – $0.15
+• Heavy session (big uploads) ...... $0.20 – $0.75
+
+💡 This is an ESTIMATE — actual Anthropic billing may vary.

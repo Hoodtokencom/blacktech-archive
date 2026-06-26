@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#001133">
+<title>Blue Wednesday Tracker</title>
+<style>
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { height: 100%; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #001133;
+  color: #fff;
+  padding: 0.75rem;
+  min-height: 100vh;
+}
+.header {
+  text-align: center;
+  padding: 1rem 0 1.25rem;
+}
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #1e90ff;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+.header p {
+  font-size: 0.78rem;
+  color: #7ab0e0;
+  margin: 0.3rem 0 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.next-event {
+  background: linear-gradient(135deg, #0a2a6e, #0d47a1);
+  border: 1px solid #1e90ff55;
+  border-radius: 14px;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.next-event .label { font-size: 0.65rem; color: #7ab0e0; text-transform: uppercase; letter-spacing: 0.1em; }
+.next-event .date  { font-size: 1.6rem; font-weight: 900; color: #1e90ff; margin: 0.25rem 0; }
+.next-event .countdown { font-size: 0.85rem; color: #fff; }
+.add-btn {
+  width: 100%;
+  background: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.85rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.04em;
+}
+.add-btn:active { opacity: 0.8; }
+.section-title {
+  font-size: 0.7rem;
+  color: #1e90ff;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  border-bottom: 1px solid #1e90ff33;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.75rem;
+}
+.event-card {
+  background: #00204d;
+  border: 1px solid #1e90ff33;
+  border-radius: 12px;
+  padding: 0.85rem;
+  margin-bottom: 0.65rem;
+}
+.event-card .ev-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.event-card .ev-date {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #1e90ff;
+}
+.event-card .ev-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+.ev-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+  color: #7ab0e0;
+}
+.event-card .ev-location {
+  font-size: 0.78rem;
+  color: #7ab0e0;
+  margin: 0.2rem 0;
+}
+.event-card .ev-notes {
+  font-size: 0.8rem;
+  color: #cce4ff;
+  margin-top: 0.4rem;
+  white-space: pre-wrap;
+}
+.trade-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+}
+.trade-badge {
+  background: #0a2a6e;
+  border: 1px solid #1e90ff55;
+  color: #7ab0e0;
+  border-radius: 99px;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.ev-count {
+  font-size: 0.7rem;
+  color: #7ab0e0;
+  margin-top: 0.35rem;
+}
+.empty {
+  text-align: center;
+  color: #7ab0e0;
+  font-size: 0.85rem;
+  padding: 2rem 0;
+  opacity: 0.6;
+}
+
+/* MODAL */
+.modal-bg {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  z-index: 1000;
+  align-items: flex-end;
+  justify-content: center;
+}
+.modal-bg.open { display: flex; }
+.modal {
+  background: #00204d;
+  border: 1px solid #1e90ff55;
+  border-radius: 20px 20px 0 0;
+  padding: 1.25rem;
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.modal h2 { font-size: 1.1rem; color: #1e90ff; margin: 0 0 1rem; }
+.form-group { margin-bottom: 0.85rem; }
+.form-group label { display: block; font-size: 0.72rem; color: #7ab0e0; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.3rem; }
+.form-group input, .form-group textarea, .form-group select {
+  width: 100%;
+  background: #001133;
+  border: 1.5px solid #1e90ff44;
+  border-radius: 8px;
+  color: #fff;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.9rem;
+  outline: none;
+}
+.form-group input:focus, .form-group textarea:focus {
+  border-color: #1e90ff;
+}
+.form-group textarea { min-height: 80px; resize: vertical; }
+.trades-input {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.trades-input input { flex: 1; }
+.trades-input button {
+  background: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0 0.85rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+.trade-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; min-height: 24px; }
+.trade-tag {
+  background: #0a2a6e;
+  border: 1px solid #1e90ff55;
+  color: #7ab0e0;
+  border-radius: 99px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+.trade-tag::after { content: ' ✕'; font-size: 0.6rem; }
+.modal-btns { display: flex; gap: 0.5rem; margin-top: 1rem; }
+.modal-btns button {
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-save { background: #1e90ff; color: #fff; }
+.btn-cancel { background: #001133; color: #7ab0e0; border: 1px solid #1e90ff33 !important; }
+.btn-save:active, .btn-cancel:active { opacity: 0.7; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🔵 Blue Wednesday</h1>
+  <p>Business Family Network · Every 3rd Wednesday</p>
+</div>
+
+<div class="next-event">
+  <div class="label">Next Event</div>
+  <div class="date" id="nextDate">—</div>
+  <div class="countdown" id="countdown">Calculating…</div>
+</div>
+
+<button class="add-btn" onclick="openModal()">+ Log Event</button>
+
+<div class="section-title">Past Events</div>
+<div id="eventList"><div class="empty">No events logged yet. Tap + Log Event to add one.</div></div>
+
+<!-- MODAL -->
+<div class="modal-bg" id="modalBg">
+  <div class="modal">
+    <h2 id="modalTitle">Log Blue Wednesday Event</h2>
+    <div class="form-group">
+      <label>Event Date</label>
+      <input type="date" id="fDate" />
+    </div>
+    <div class="form-group">
+      <label>Location</label>
+      <input type="text" id="fLocation" placeholder="e.g. 123 Main St, Chicago" />
+    </div>
+    <div class="form-group">
+      <label>Attendee Count</label>
+      <input type="number" id="fCount" placeholder="e.g. 24" min="0" />
+    </div>
+    <div class="form-group">
+      <label>Trades / Businesses Present</label>
+      <div class="trades-input">
+        <input type="text" id="tradeInput" placeholder="e.g. Electrician" onkeydown="if(event.key==='Enter'){addTrade();event.preventDefault();}" />
+        <button onclick="addTrade()">Add</button>
+      </div>
+      <div class="trade-tags" id="tradeTags"></div>
+    </div>
+    <div class="form-group">
+      <label>Notes</label>
+      <textarea id="fNotes" placeholder="Key takeaways, connections made, follow-ups…"></textarea>
+    </div>
+    <div class="modal-btns">
+      <button class="btn-cancel" onclick="closeModal()">Cancel</button>
+      <button class="btn-save" onclick="saveEvent()">Save Event</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const API = '';
+let events = [];
+let editId = null;
+let trades = [];
+
+async function loadEvents() {
+  try {
+    const r = await fetch('/api/bluewednesday');
+    events = await r.json();
+  } catch(e) { events = []; }
+  render();
+}
+
+function getNext3rdWed() {
+  const now = new Date();
+  let d = new Date(now.getFullYear(), now.getMonth(), 1);
+  let count = 0;
+  while (true) {
+    if (d.getDay() === 3) { // Wednesday
+      count++;
+      if (count === 3) {
+        if (d > now) return d;
+        count = 0;
+      }
+    }
+    d.setDate(d.getDate() + 1);
+    if (d.getMonth() > now.getMonth() + 2) break; // safety
+  }
+  // Try next month
+  d = new Date(now.getFullYear(), now.getMonth() + 1, 1);
+  count = 0;
+  while (count < 30) {
+    if (d.getDay() === 3) {
+      count++;
+      if (count === 3) return d;
+    }
+    d.setDate(d.getDate() + 1);
+    count++;
+  }
+  return null;
+}
+
+function updateNextEvent() {
+  const next = getNext3rdWed();
+  if (!next) return;
+  const opts = { weekday:'long', year:'numeric', month:'long', day:'numeric' };
+  document.getElementById('nextDate').textContent = next.toLocaleDateString('en-US', opts);
+  const diff = Math.ceil((next - new Date()) / (1000 * 60 * 60 * 24));
+  document.getElementById('countdown').textContent = diff === 0 ? '🔵 Today!' : diff === 1 ? '🔵 Tomorrow!' : `🔵 ${diff} days away`;
+}
+
+function render() {
+  updateNextEvent();
+  const list = document.getElementById('eventList');
+  if (!events.length) {
+    list.innerHTML = '<div class="empty">No events logged yet. Tap + Log Event to add one.</div>';
+    return;
+  }
+  const sorted = [...events].sort((a,b) => new Date(b.date) - new Date(a.date));
+  list.innerHTML = sorted.map(ev => `
+    <div class="event-card">
+      <div class="ev-header">
+        <div class="ev-date">${formatDate(ev.date)}</div>
+        <div class="ev-actions">
+          <button onclick="editEvent('${ev.id}')">✏️</button>
+          <button onclick="deleteEvent('${ev.id}')">🗑️</button>
+        </div>
+      </div>
+      ${ev.location ? `<div class="ev-location">📍 ${ev.location}</div>` : ''}
+      ${ev.count ? `<div class="ev-count">👥 ${ev.count} attendees</div>` : ''}
+      ${ev.trades && ev.trades.length ? `<div class="trade-list">${ev.trades.map(t=>`<span class="trade-badge">${t}</span>`).join('')}</div>` : ''}
+      ${ev.notes ? `<div class="ev-notes">${ev.notes}</div>` : ''}
+    </div>
+  `).join('');
+}
+
+function formatDate(d) {
+  if (!d) return '—';
+  const dt = new Date(d + 'T12:00:00');
+  return dt.toLocaleDateString('en-US', { weekday:'long', year:'numeric', month:'long', day:'numeric' });
+}
+
+function openModal(ev=null) {
+  editId = ev ? ev.id : null;
+  trades = ev ? [...(ev.trades||[])] : [];
+  document.getElementById('modalTitle').textContent = ev ? 'Edit Event' : 'Log Blue Wednesday Event';
+  document.getElementById('fDate').value = ev ? ev.date : getNext3rdWedStr();
+  document.getElementById('fLocation').value = ev ? (ev.location||'') : '';
+  document.getElementById('fCount').value = ev ? (ev.count||'') : '';
+  document.getElementById('fNotes').value = ev ? (ev.notes||'') : '';
+  renderTradeTags();
+  document.getElementById('modalBg').classList.add('open');
+}
+
+function getNext3rdWedStr() {
+  const d = getNext3rdWed();
+  if (!d) return '';
+  return d.toISOString().split('T')[0];
+}
+
+function closeModal() {
+  document.getElementById('modalBg').classList.remove('open');
+  editId = null; trades = [];
+}
+
+function addTrade() {
+  const inp = document.getElementById('tradeInput');
+  const val = inp.value.trim();
+  if (val && !trades.includes(val)) { trades.push(val); renderTradeTags(); }
+  inp.value = '';
+  inp.focus();
+}
+
+function removeTrade(t) {
+  trades = trades.filter(x => x !== t);
+  renderTradeTags();
+}
+
+function renderTradeTags() {
+  document.getElementById('tradeTags').innerHTML = trades.map(t =>
+    `<span class="trade-tag" onclick="removeTrade('${t}')">${t}</span>`
+  ).join('');
+}
+
+async function saveEvent() {
+  const date = document.getElementById('fDate').value;
+  if (!date) { alert('Please select a date.'); return; }
+  const ev = {
+    id: editId || crypto.randomUUID(),
+    date,
+    location: document.getElementById('fLocation').value.trim(),
+    count: parseInt(document.getElementById('fCount').value)||0,
+    trades: [...trades],
+    notes: document.getElementById('fNotes').value.trim()
+  };
+  await fetch('/api/bluewednesday', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify(ev)
+  });
+  closeModal();
+  loadEvents();
+}
+
+async function deleteEvent(id) {
+  if (!confirm('Delete this event?')) return;
+  await fetch(`/api/bluewednesday/${id}`, { method: 'DELETE' });
+  loadEvents();
+}
+
+function editEvent(id) {
+  const ev = events.find(e => e.id === id);
+  if (ev) openModal(ev);
+}
+
+loadEvents();
+</script>
+</body>
+</html>

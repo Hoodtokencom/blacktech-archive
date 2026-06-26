@@ -1,0 +1,4 @@
+timestamp,first_name,last_name,phone,estimated_kwh,current_bill,new_bill,monthly_savings,bill_photo,notes
+2026-05-24T09:06:07.262663,Test,Lead,3125559999,950,145.00,66.50,78.50,uploaded_via_formspree,
+2026-06-16T23:10:56.479406,Test,User,3125550000,500,150,120,30,uploaded_via_formspree,test
+2026-06-16T23:12:19.661652,Test,User,3125550000,500,150,120,30,uploaded_via_formspree,test

@@ -1,0 +1,13 @@
+From: mailer@proreferral.com
+Subject: Your Smart Security Camera Installation lead expires in 4 hours
+Date: Mon, 20 May 2024 04:17:02 +0000 (UTC)
+==================================================
+
+<!doctype html><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta content="telephone=no" name="format-detection"><style type="text/css">
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format('woff2');
+      }
+

@@ -1,0 +1,24 @@
+╔══════════════════════════════════════════════════════════════════╗
+║                    🚗 AI TOLL METER 🚗                            ║
+║         "Every pass costs — watch the meter run"                ║
+╠══════════════════════════════════════════════════════════════════╣
+║  DATE        | TASK                           | COST  | TOTAL  ║
+╠══════════════════════════════════════════════════════════════════╣
+║  06/06/26    | Chat + check status               | $0.02 | $0.02 ║
+║  06/06/26  | Troubleshoot 2 offline services       |$0.15 |$0.17 ║
+║  06/06/26  | Create AI Toll Meter                |$0.03 |$0.20 ║
+║  06/06/26  | Fix Finance app + add 60628 orgs    |$0.28 |$0.48 ║
+║  06/06/26  | Add Pipeline Monitor to Command Ctr |$0.05 |$0.53 ║
+║  06/06/26  | Test Gemini telemetry push          |$0.000024 |$0.53 ║
+║  06/06/26  | Build Triple-Play Auto-Pipeline     |$0.08 |$0.61 ║
+║  06/06/26  | Update Command Center tiles         |$0.04 |$0.65 ║
+╠══════════════════════════════════════════════════════════╣
+║  💰 CURRENT BALANCE DUE:                    $0.65       ║
+╚══════════════════════════════════════════════════════════════════╝
+
+📊 RATES (approximate):
+• Quick chat / question ............ $0.01 – $0.03
+• Task with files / code ........... $0.05 – $0.15
+• Heavy session (big uploads) ...... $0.20 – $0.75
+
+💡 This is an ESTIMATE — actual Anthropic billing may vary.

@@ -1,0 +1,224 @@
+{
+  "name": "Lead Auto-Fill Pipeline — Email → Budget + Invoice",
+  "nodes": [
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "mailbox": "INBOX",
+        "options": {
+          "allowUnauthorizedCerts": false,
+          "downloadAttachments": false,
+          "markSeen": true
+        }
+      },
+      "id": "node-imap-trigger",
+      "name": "Watch Leads Email",
+      "type": "n8n-nodes-base.emailReadImap",
+      "typeVersion": 2,
+      "position": [240, 300],
+      "credentials": {
+        "imap": {
+          "id": "cred-imap-leads",
+          "name": "HostGator IMAP - Leads"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "={{ $env.ANTHROPIC_API_KEY }}"
+            },
+            {
+              "name": "anthropic-version",
+              "value": "2023-06-01"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": []
+        },
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"claude-haiku-4-5\",\n  \"max_tokens\": 1024,\n  \"messages\": [{\n    \"role\": \"user\",\n    \"content\": \"Extract lead info from this email and return ONLY valid JSON with these fields: {\\\"customer\\\": \\\"full name\\\", \\\"phone\\\": \\\"phone number or empty string\\\", \\\"email\\\": \\\"email address\\\", \\\"address\\\": \\\"full address or empty string\\\", \\\"scope\\\": \\\"job description - use Electrical if mentions wiring/panel/outlets, use Energy/Battery if mentions solar/battery/ComEd savings\\\", \\\"amount\\\": 0, \\\"status\\\": \\\"lead\\\", \\\"source\\\": \\\"email\\\", \\\"job_type\\\": \\\"Electrical or Energy\\\", \\\"notes\\\": \\\"any other relevant info\\\"}. Email: {{ $json[\\\"textPlain\\\"] || $json[\\\"text\\\"] || $json[\\\"subject\\\"] }}\"\n  }]\n}",
+        "options": {}
+      },
+      "id": "node-claude-extract",
+      "name": "Extract Lead with Claude",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [480, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Node 3: Parse Claude Response\nconst responseText = items[0].json.content[0].text;\n\n// Strip markdown code fences if present\nlet cleaned = responseText.trim();\nif (cleaned.startsWith('```')) {\n  cleaned = cleaned.replace(/^```(?:json)?\\n?/, '').replace(/\\n?```$/, '').trim();\n}\n\n// Parse the JSON\nlet leadData;\ntry {\n  leadData = JSON.parse(cleaned);\n} catch (e) {\n  // Attempt to extract JSON object from the text\n  const match = cleaned.match(/\\{[\\s\\S]*\\}/);\n  if (match) {\n    leadData = JSON.parse(match[0]);\n  } else {\n    throw new Error('Could not parse Claude response as JSON: ' + cleaned);\n  }\n}\n\n// Generate job ID from timestamp\nconst jobId = 'LEAD-' + Date.now().toString().slice(-6);\nconst today = new Date().toISOString().split('T')[0];\n\n// Enrich with metadata\nleadData.id = jobId;\nleadData.date_added = today;\nleadData.submitted_by = 'email-auto';\n\n// Ensure defaults for required fields\nleadData.amount = leadData.amount || 0;\nleadData.status = leadData.status || 'lead';\nleadData.source = leadData.source || 'email';\n\nreturn [{ json: leadData }];"
+      },
+      "id": "node-parse-claude",
+      "name": "Parse Claude JSON",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [720, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://localhost:8091/api/jobs",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}",
+        "options": {}
+      },
+      "id": "node-save-job",
+      "name": "Add to Budget Dashboard",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [960, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Node 5: Build Draft Invoice from job data\nconst job = items[0].json;\nconst today = new Date().toISOString().split('T')[0];\n\nconst invoice = {\n  id: 'INV-DRAFT-' + job.id,\n  job_id: job.id,\n  customer: job.customer || '',\n  address: job.address || '',\n  email: job.email || '',\n  phone: job.phone || '',\n  scope: job.scope || '',\n  job_type: job.job_type || '',\n  status: 'draft',\n  date_created: today,\n  line_items: [],\n  subtotal: 0,\n  markup_pct: 17.5,\n  total: 0,\n  notes: 'Auto-created from email lead. Add line items to complete.'\n};\n\nreturn [{ json: invoice }];"
+      },
+      "id": "node-build-invoice",
+      "name": "Build Draft Invoice",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1200, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://localhost:8091/api/invoices",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}",
+        "options": {}
+      },
+      "id": "node-save-invoice",
+      "name": "Save Draft Invoice",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1440, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://api.telegram.org/bot{{ $env.TELEGRAM_BOT_TOKEN }}/sendMessage",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"chat_id\": \"5805015753\",\n  \"parse_mode\": \"Markdown\",\n  \"text\": \"🔔 *New Lead from Email*\\n\\n👤 *Customer:* {{ $('Parse Claude JSON').item.json.customer }}\\n📞 *Phone:* {{ $('Parse Claude JSON').item.json.phone }}\\n📧 *Email:* {{ $('Parse Claude JSON').item.json.email }}\\n📍 *Address:* {{ $('Parse Claude JSON').item.json.address }}\\n🔧 *Scope:* {{ $('Parse Claude JSON').item.json.scope }}\\n⚡ *Type:* {{ $('Parse Claude JSON').item.json.job_type }}\\n📝 *Notes:* {{ $('Parse Claude JSON').item.json.notes }}\\n\\n✅ Added to Budget Dashboard\\n✅ Draft Invoice Created\\n\\n_Reply to this message or open Money dashboard to add line items._\"\n}",
+        "options": {}
+      },
+      "id": "node-telegram-alert",
+      "name": "Telegram Alert to Derrell",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1680, 300]
+    }
+  ],
+  "connections": {
+    "Watch Leads Email": {
+      "main": [
+        [
+          {
+            "node": "Extract Lead with Claude",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Lead with Claude": {
+      "main": [
+        [
+          {
+            "node": "Parse Claude JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Claude JSON": {
+      "main": [
+        [
+          {
+            "node": "Add to Budget Dashboard",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Add to Budget Dashboard": {
+      "main": [
+        [
+          {
+            "node": "Build Draft Invoice",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Draft Invoice": {
+      "main": [
+        [
+          {
+            "node": "Save Draft Invoice",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Save Draft Invoice": {
+      "main": [
+        [
+          {
+            "node": "Telegram Alert to Derrell",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "errorWorkflow": ""
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "createdAt": "2026-06-02T00:00:00.000Z",
+      "updatedAt": "2026-06-02T00:00:00.000Z",
+      "id": "tag-lead-pipeline",
+      "name": "lead-automation"
+    }
+  ],
+  "triggerCount": 1,
+  "updatedAt": "2026-06-02T00:00:00.000Z",
+  "versionId": "1",
+  "meta": {
+    "templateCredsSetupCompleted": false,
+    "instanceId": "blacktech-lead-pipeline-v1"
+  }
+}

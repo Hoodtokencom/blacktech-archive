@@ -1,0 +1,33 @@
+{
+  "members": [
+    {
+      "name": "Test Member",
+      "month": 6,
+      "added": "2026-06-04T02:32:19.870807Z"
+    }
+  ],
+  "rsvp": [
+    {
+      "name": "Derrell Black",
+      "biz": "Electrical",
+      "contact": "7734499396",
+      "status": "going",
+      "date": "2026-06-05T02:44:00.185830Z"
+    }
+  ],
+  "funding": {},
+  "tformation": {
+    "5": [
+      "Derrell Black (7734499396)"
+    ]
+  },
+  "director": {
+    "name": "Derrell Black",
+    "biz": "Blacktech Solutions Corp",
+    "phone": "312-965-2782",
+    "email": "support@blacktechsolutionscorp.com",
+    "note": "60628 Coordinator for business in the pullman/rosemoor/roseland community",
+    "set": "2026-06-04T12:05:43.153848Z"
+  },
+  "businesses": []
+}

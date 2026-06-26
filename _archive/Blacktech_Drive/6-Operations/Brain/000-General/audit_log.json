@@ -1,0 +1,50 @@
+[
+  {
+    "timestamp": "2026-06-17T06:10:41.036378",
+    "action": "blocked",
+    "key": "internal:650-Management_Business/Final_Lien_Waiver_Elle_William.md",
+    "who": "test-user",
+    "result": "denied",
+    "detail": "no approval"
+  },
+  {
+    "timestamp": "2026-06-17T06:10:44.253324",
+    "action": "request",
+    "key": "internal:650-Management_Business/Final_Lien_Waiver_Elle_William.md",
+    "who": "test-user",
+    "result": "pending",
+    "detail": "Need to review lien waiver for Elle William project"
+  },
+  {
+    "timestamp": "2026-06-17T06:10:47.445466",
+    "action": "approve",
+    "key": "internal:650-Management_Business/Final_Lien_Waiver_Elle_William.md",
+    "who": "test-user",
+    "result": "approved",
+    "detail": "Request d20214c2"
+  },
+  {
+    "timestamp": "2026-06-17T06:10:50.034671",
+    "action": "unlock",
+    "key": "internal:650-Management_Business/Final_Lien_Waiver_Elle_William.md",
+    "who": "test-user",
+    "result": "granted",
+    "detail": "approved request d20214c2"
+  },
+  {
+    "timestamp": "2026-06-17T06:22:44.182087",
+    "action": "unlock",
+    "key": "internal:1-Admin/Contracts/Final_Lien_Waiver_Elle_William.md",
+    "who": "derrell",
+    "result": "granted",
+    "detail": "key access"
+  },
+  {
+    "timestamp": "2026-06-17T06:53:35.080772",
+    "action": "unlock",
+    "key": "internal:640-Household_Favorites/Canned_Goods/INDEX.md",
+    "who": "derrell",
+    "result": "granted",
+    "detail": "key access"
+  }
+]
