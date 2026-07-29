@@ -1,3 +1,0 @@
-=== Device Activity Report - 20260516_094732 ===
-
-# No active DHCP leases

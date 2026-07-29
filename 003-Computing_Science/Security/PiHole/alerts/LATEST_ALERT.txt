@@ -1,5 +1,0 @@
-NEW_DEVICE|20260516_122632|90:48:6c:68:ea:c1
-
-=== ACTION REQUIRED ===
-Check dashboard: http://10.0.0.100/admin
-Review report: /home/allenai/Documents/BlackTech-Security/PiHole/reports/2026-05-16/network-scan_20260516_122632.txt

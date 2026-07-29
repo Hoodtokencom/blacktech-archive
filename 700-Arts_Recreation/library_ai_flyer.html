@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free AI Education — Blacktech Academy</title>
+<style>
+  @page { size: letter; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { 
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    background: #0a0a0f; 
+    color: #fff; 
+    width: 8.5in; 
+    min-height: 11in; 
+    padding: 0.5in;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 3px solid #f59e0b;
+  }
+  .brand {
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #f59e0b;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .brand span { color: #22c55e; }
+  .tagline {
+    font-size: 11px;
+    color: #888;
+    margin-top: 4px;
+  }
+
+  /* Main Title */
+  .hero {
+    text-align: center;
+    padding: 30px 0 20px;
+  }
+  .hero h1 {
+    font-size: 42px;
+    color: #fff;
+    line-height: 1.1;
+    margin-bottom: 10px;
+  }
+  .hero h1 .highlight { color: #f59e0b; }
+  .hero p {
+    font-size: 16px;
+    color: #aaa;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+
+  /* Courses Grid */
+  .courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 20px 0;
+  }
+  .course {
+    background: #141420;
+    border: 1px solid #2a2a3a;
+    border-radius: 12px;
+    padding: 18px;
+  }
+  .course:hover { border-color: #f59e0b; }
+  .course .icon { font-size: 28px; margin-bottom: 8px; }
+  .course h3 {
+    font-size: 15px;
+    color: #f59e0b;
+    margin-bottom: 6px;
+  }
+  .course p {
+    font-size: 12px;
+    color: #999;
+    line-height: 1.4;
+  }
+
+  /* Features Bar */
+  .features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+    background: #141420;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  .feature {
+    text-align: center;
+  }
+  .feature .check { color: #22c55e; font-size: 18px; }
+  .feature span { 
+    display: block; 
+    font-size: 12px; 
+    color: #ccc; 
+    margin-top: 2px; 
+  }
+
+  /* QR / CTA */
+  .cta {
+    text-align: center;
+    padding: 25px 0;
+    margin-top: auto;
+  }
+  .qr-box {
+    display: inline-block;
+    background: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+  }
+  .qr-box img { width: 110px; height: 110px; }
+  .url {
+    font-size: 20px;
+    color: #f59e0b;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .url-sub {
+    font-size: 12px;
+    color: #888;
+    margin-top: 4px;
+  }
+
+  /* Footer */
+  .footer {
+    border-top: 2px solid #222;
+    padding: 15px 0 0;
+    text-align: center;
+  }
+  .footer p { font-size: 11px; color: #666; }
+  .footer .contact { color: #22c55e; font-weight: 600; font-size: 13px; margin-bottom: 4px; }
+
+  /* Tear-off tabs */
+  .tearoff {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+  }
+  .tab {
+    border: 1px dashed #444;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 11px;
+    color: #888;
+    text-align: center;
+  }
+  .tab strong { color: #f59e0b; display: block; font-size: 12px; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="brand">BLACKTECH <span>SOLUTIONS CORP</span></div>
+    <div class="tagline">AI Education for the Community • Chicagoland</div>
+  </div>
+
+  <div class="hero">
+    <h1>Learn <span class="highlight">AI, Blockchain & Crypto</span><br>— For Free</h1>
+    <p>Build real tech skills at your own pace. No experience needed. No cost. No credit check. Just sign up and start learning.</p>
+  </div>
+
+  <div class="features">
+    <div class="feature"><span class="check">✓</span><span>100% Free</span></div>
+    <div class="feature"><span class="check">✓</span><span>Self-Paced</span></div>
+    <div class="feature"><span class="check">✓</span><span>No Experience Needed</span></div>
+    <div class="feature"><span class="check">✓</span><span>Certificate Included</span></div>
+  </div>
+
+  <div class="courses">
+    <div class="course">
+      <div class="icon">🤖</div>
+      <h3>AI & Coding Basics</h3>
+      <p>Understand how AI works, learn to code, and explore the tools shaping the future. Perfect first step.</p>
+    </div>
+    <div class="course">
+      <div class="icon">⛓️</div>
+      <h3>Blockchain Fundamentals</h3>
+      <p>What is blockchain? How does it work? Wallets, security, and scam prevention explained simply.</p>
+    </div>
+    <div class="course">
+      <div class="icon">💰</div>
+      <h3>Crypto Trading 101</h3>
+      <p>Learn to read markets and trade — risk-free with paper trading. Real skills, zero financial risk.</p>
+    </div>
+    <div class="course">
+      <div class="icon">⚡</div>
+      <h3>Web3 & HOOD Token</h3>
+      <p>Explore DeFi, DAOs, and the decentralized web. Earn tokens while you learn.</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <div class="qr-box">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://academy.blacktechsolutionscorp.com&bgcolor=ffffff" alt="Scan to visit Academy">
+    </div>
+    <div class="url">academy.blacktechsolutionscorp.com</div>
+    <div class="url-sub">Scan the QR code or visit our website to sign up today</div>
+  </div>
+
+  <div class="tearoff">
+    <div class="tab"><strong>FREE AI CLASSES</strong>academy.blacktechsolutionscorp.com</div>
+    <div class="tab"><strong>SCAN QR CODE</strong>Sign up online</div>
+    <div class="tab"><strong>100% FREE</strong>No credit card</div>
+    <div class="tab"><strong>ALL AGES</strong>Beginner friendly</div>
+  </div>
+
+  <div class="footer">
+    <div class="contact">312-965-2782</div>
+    <p>Blacktech Solutions Corp • Chicagoland Area • Licensed Electrical Contractor & AI Education Provider</p>
+    <p>Built by the community, for the community.</p>
+  </div>
+
+</body>
+</html>

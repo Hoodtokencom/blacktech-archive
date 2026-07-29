@@ -1,0 +1,92 @@
+{
+  "trust_name": "HOOD Token Investment Trust",
+  "entity_type": "Business Trust",
+  "jurisdiction_state": "Delaware",
+  "parties": [
+    {
+      "name": "Derrell A. Black",
+      "role": "Grantor/Settlor",
+      "address": "14076 Lincoln Ave, Dolton, IL 60419",
+      "tax_id": null,
+      "relationship": ""
+    },
+    {
+      "name": "Derrell A. Black",
+      "role": "Primary Trustee",
+      "address": "14076 Lincoln Ave, Dolton, IL 60419",
+      "tax_id": null,
+      "relationship": ""
+    }
+  ],
+  "schedule_a_assets": [
+    {
+      "asset_description": "HOOD Token (HOOD) — Sepolia testnet contract 0xd1FB...F916, Base Sepolia 0x2E07...C61B — utility token for Blacktech ecosystem",
+      "initial_value_usd": 0.0,
+      "asset_type": "Cryptocurrency"
+    },
+    {
+      "asset_description": "Investor Capital Pool — funds deposited by investors for purchase of Worthy Bonds, real estate notes, and other approved investments",
+      "initial_value_usd": 0.0,
+      "asset_type": "Cash Pool"
+    },
+    {
+      "asset_description": "Worthy Bonds Portfolio — SEC Reg A+ bonds purchased on behalf of investors, 6.5% APY",
+      "initial_value_usd": 0.0,
+      "asset_type": "Bond Portfolio"
+    },
+    {
+      "asset_description": "Real Estate Note Portfolio — performing notes purchased via Paperstac/Prosper on behalf of investors",
+      "initial_value_usd": 0.0,
+      "asset_type": "Note Portfolio"
+    },
+    {
+      "asset_description": "Blacktech Investment Portal — web platform at hoodtoken.io for investor onboarding, deposits, and portfolio tracking",
+      "initial_value_usd": 0.0,
+      "asset_type": "Digital Platform"
+    },
+    {
+      "asset_description": "HOOD Token Distribution Smart Contract — automated token distribution to investors upon bond/note purchase",
+      "initial_value_usd": 0.0,
+      "asset_type": "Smart Contract"
+    },
+    {
+      "asset_description": "Physical Silver Bullion Reserve — 32 oz backing HOOD Token with intrinsic real value (spot ~$65/oz). Silver provides tangible, inflation-resistant backing for HOOD Token — real money behind digital currency.",
+      "initial_value_usd": 2080.0,
+      "asset_type": "Precious Metals Reserve"
+    }
+  ],
+  "beneficiaries": [
+    {
+      "name": "Black King Legacy Trust",
+      "relationship": "Family Trust",
+      "role": "Sole Beneficiary",
+      "share_percentage": 100.0
+    }
+  ],
+  "is_irrevocable": true,
+  "requires_notarization": true,
+  "execution_date": null,
+  "status": "draft",
+  "associated_llc_or_corp": "Blacktech Solutions Corp",
+  "commercial_purpose": "To operate a fund administration platform allowing investors to deposit capital and purchase Worthy Bonds, real estate notes, and HOOD tokens through Blacktech Solutions Corp as purchasing agent. Trust holds investor capital pool, bond/note portfolios, HOOD token reserves, and physical silver bullion as intrinsic backing for HOOD Token. Silver provides real money backing — tangible, inflation-resistant value behind the digital token. Blacktech charges 1% fee per purchase. Distributions flow to sole beneficiary (Black King Legacy Trust) which then distributes to individual beneficiaries.",
+  "is_delaware_statutory_trust": true,
+  "registered_agent": "Harvard Business Services, Inc.",
+  "registered_agent_cost_annual": 50.0,
+  "franchise_tax_annual": 400.0,
+  "certificate_filing_fee": 500.0,
+  "created_at": "2026-07-22T00:00:00.000000",
+  "updated_at": "2026-07-22T00:00:00.000000",
+  "total_beneficiary_shares": 100.0,
+  "trust_specific_terms": {
+    "investor_model": "50 investors per year, $10 minimum entry",
+    "fee_structure": "1% one-time purchase fee on all bond/note buys",
+    "yield_distribution": "Investor receives 80% of yield, Trust retains 20% management fee",
+    "hood_distribution": "$10 investment = 50 HOOD, $50 = 250 HOOD, $100+ = 500 HOOD",
+    "kyc_required": true,
+    "max_investors_year1": 50,
+    "max_referral_bonds_year1": 50,
+    "platform_domain": "hoodtoken.io",
+    "database": "blacktech_core.db — worthy_investors, worthy_transactions, worthy_holdings tables",
+    "pending_approval": "Worthy Bonds business account — awaiting KYC approval"
+  }
+}

@@ -21,7 +21,8 @@
     "file": "000-General/find_brain.py",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366611",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "800-Literature/INDEX.md",
@@ -33,13 +34,15 @@
     "file": "000-General/dewey-constitutional.md",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366616",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "500-Science/dewey-blockchain-report.html",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366619",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "690-Building_Construction/contract-template-standard.html",
@@ -63,7 +66,8 @@
     "file": "000-General/audit_log.json",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366633",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "000-General/dewey_trash_log.json",
@@ -76,7 +80,8 @@
     "file": "000-General/dewey_pipeline.py",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366638",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "400-Language/INDEX.md",
@@ -88,25 +93,29 @@
     "file": "500-Science/dewey-blockchain-schematic.html",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366643",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "999-Decisions_Logs/2026-06-16-system-cleanup.md",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366645",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "657-Accounting_Finance/passcode_vault.salt",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366647",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "500-Science/dewey-blockchain-schematic.pdf",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366650",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "300-Social_Sciences/INDEX.md",
@@ -124,13 +133,15 @@
     "file": "000-General/dewey_ssbn_bridge.py",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366657",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "000-General/dewey_brain_pull.py",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366659",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "696-Utilities/INDEX.md",
@@ -154,25 +165,29 @@
     "file": "000-General/dewey_code_tracker.py",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366669",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "000-General/dewey_code_changelog.json",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366671",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "000-General/access_requests.json",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366674",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "000-General/dewey_library_schematic.html",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366676",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "691-Building_Materials/INDEX.md",
@@ -202,25 +217,29 @@
     "file": "696-Utilities/comed-eesp-completion-certificate-template.html",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366699",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "000-General/permissions.json",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366702",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "000-General/dewey_ssbn_bridge_log.json",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366704",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "000-General/dewey_security.py",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366707",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "000-General/__pycache__/dewey_inbox_router.cpython-311.pyc",
@@ -232,37 +251,43 @@
     "file": "000-General/dewey_blockchain.py",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366712",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "000-General/dewey_inbox_router.py",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366714",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "500-Science/dewey-blockchain-report.pdf",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366716",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "000-General/dewey_catalog.json",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366719",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "000-General/passcode_vault.py",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366722",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "657-Accounting_Finance/passcode_vault.enc",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366724",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "600-Technology/hostgator_email.md",
@@ -274,7 +299,8 @@
     "file": "000-General/dewey_sync.py",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366729",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-06-27T03:00:27.266350"
   },
   {
     "file": "700-Arts_Recreation/INDEX.md",
@@ -286,6 +312,3972 @@
     "file": "000-General/__pycache__/passcode_vault.cpython-311.pyc",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366734",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/blacktech_tv_logo_seahawks.html",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266378",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/blacktech_tv_command_guide.pdf",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266389",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/servers/bluewednesday_server.py",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266392",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/dashboards/money_budget.html",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266395",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/blacktech_tv_banner_seahawks.png",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266397",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/dashboards/bfn.html",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266403",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/servers/money_budget_server.py",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266408",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/dashboards/electrification_pipeline.html",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266411",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/dashboards/qbitme_shop.html",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266414",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/blacktech_tv_banner_bright.png",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266416",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/servers/comed_server.py",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266419",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/dashboards/comed_signup.html",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266421",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/blacktech_tv_avatar_seahawks.png",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266424",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/dashboards/energy_board.html",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266427",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/blacktech_tv_logo.html",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266429",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/dashboards/electrification_schematic.html",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266431",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/blacktech_tv_avatar_bright.png",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266434",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/servers/finance_server.py",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266437",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/blacktech_tv_intro.mp4",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266439",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/dashboards/blacktech-agent-network.html",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266442",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/blacktech_tv_logo_bright.html",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266444",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/servers/energy_board_server.py",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266447",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/dashboards/bluewednesday.html",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266450",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/dashboards/hood.html",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266452",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/servers/command_center_server.py",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266455",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/dashboards/electrification_flyer.html",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266457",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/dashboards/qbitme_store.html",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266459",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/dashboards/finance.html",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266462",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/se_supervising_electrician_flashcards.html",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266465",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/dashboards/comed_dashboard.html",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266469",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/blacktech_tv_guide.html",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266471",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/dashboards/money_budget_clean.html",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266474",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/hostgator_email.md",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266476",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/dashboards/index.html",
+    "deleted_at": "2026-06-27T03:00:27.266350",
+    "purge_due": "2026-08-11T03:00:27.266479",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/alerts/LATEST_ALERT.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214627",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_123315.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214638",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_120531.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214641",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_121658.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214644",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_105024.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214647",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_104709.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214653",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_112118.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214657",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_102913.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214660",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_093210.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214662",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_094132.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214665",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_112059.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214667",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_113945.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214670",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_101615.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214673",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_123122.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214676",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_093833.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214678",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/12hr-report_20260516_093728.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214689",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_093953.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214692",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_120522.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214698",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_114318.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214701",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_094132.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214703",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_103756.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214706",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_121339.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214708",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_101959.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214711",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_111458.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214713",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_105912.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214715",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_115533.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214718",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_113538.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214720",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_124037.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214723",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_102119.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214726",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_112724.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214728",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_102239.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214731",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_105153.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214733",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_123013.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214735",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_124526.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214738",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_105631.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214740",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_124253.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214742",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_111446.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214745",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_115300.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214747",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_102800.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214750",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_101008.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214752",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_102913.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214755",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_122907.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214757",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_115300.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214760",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_111458.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214762",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_124526.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214764",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_094732.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214767",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_093507.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214769",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_112724.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214771",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_110916.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214774",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_103756.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214776",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_093507.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214779",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_113433.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214781",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_120531.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214784",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_104602.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214786",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_115859.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214789",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_093953.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214791",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_123833.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214793",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_114213.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214796",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/BAD-ACTIVITY-MONITOR.md",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214799",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_122746.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214801",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_112118.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214804",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_124928.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214806",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/known_devices.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214809",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_124253.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214811",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_105628.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214813",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_114746.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214816",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/bad-activity-monitor.sh",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214818",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_111236.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214821",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_113945.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214823",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_101504.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214825",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_114108.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214828",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_123122.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214830",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_123828.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214833",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_102239.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214835",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_105153.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214838",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_094732.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214840",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_112730.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214843",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_113311.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214845",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_093507.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214848",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_095403.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214850",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_113945.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214852",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_112509.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214855",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_120059.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214857",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_123833.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214860",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_115300.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214862",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_121803.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214865",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_095428.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214869",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_123833.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214872",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_105302.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214875",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_120707.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214877",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_121658.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214879",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_123121.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214882",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_094132.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214885",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_115300.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214887",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_122145.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214890",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_095635.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214892",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_113643.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214894",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_105631.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214897",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_104408.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214899",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_120531.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214901",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_124037.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214904",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_094603.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214906",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_122145.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214909",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_123833.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214911",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_112118.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214913",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_115428.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214916",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_094132.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214918",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_095428.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214920",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_105302.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214923",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_123315.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214925",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_120333.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214928",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_101615.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214930",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_123436.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214932",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_121818.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214935",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_112118.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214937",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_120813.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214939",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_105631.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214942",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_121339.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214944",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_114527.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214947",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/INITIAL-SECURITY-REPORT.md",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214949",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/blocklists/work-only.list",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214952",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_102119.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214954",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_094923.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214956",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_111736.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214958",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_122250.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214961",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_094442.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214963",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_093833.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214966",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/blocklists/iot-blocked.list",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214968",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_103535.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214971",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_104602.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214973",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_124519.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214975",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_102239.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214978",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_115859.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214980",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_100956.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214982",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_121151.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214985",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_095428.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214987",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_124526.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214990",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_111341.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214992",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_122508.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214995",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_121818.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.214997",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_114851.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215000",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_102913.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215002",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_095154.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215004",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_105024.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215007",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_125033.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215011",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_101204.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215014",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_112118.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215016",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_112404.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215019",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_093458.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215021",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_115300.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215024",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_093507.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215026",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_105024.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215028",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_104408.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215031",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_115749.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215033",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_100956.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215036",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_103243.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215038",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/alerts/2026-05-16/ALERT_20260516_104602.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215040",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_111458.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215043",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_094732.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215045",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_100205.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215047",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_094132.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215050",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_123833.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215052",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_111458.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215054",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_114422.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215057",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_115252.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215059",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_100852.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215061",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/blocklists/global-blocked.list",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215064",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_113945.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215066",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_111458.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215068",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_112852.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215071",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_095428.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215073",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_115010.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215075",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_101615.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215078",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_122038.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215080",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/alerts/2026-05-16/ALERT_20260516_104602.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215083",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_100742.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215085",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_093336.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215087",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_113311.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215090",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_095020.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215092",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/12hr-report.sh",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215095",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_121446.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215097",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_104408.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215100",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_115300.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215102",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_113315.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215105",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_101959.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215107",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/alerts/2026-05-16/ALERT_20260516_120059.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215109",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_094720.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215112",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_121200.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215114",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_104352.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215116",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_115859.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215119",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_123542.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215121",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_104134.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215123",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_120531.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215126",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_122508.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215128",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_101008.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215130",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_113315.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215132",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_115859.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215135",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_120919.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215137",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_123833.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215139",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_102913.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215142",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_102531.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215144",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_121818.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215146",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/alerts/dedup.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215149",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_112959.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215151",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_111039.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215153",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_122746.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215156",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_104911.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215158",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_113315.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215160",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_094603.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215162",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_094117.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215165",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_095258.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215167",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_103756.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215169",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_101008.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215172",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_095154.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215174",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_101008.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215176",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_120333.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215178",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_124526.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215181",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_102425.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215183",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_104029.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215185",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_100205.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215187",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_103756.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215190",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_114213.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215192",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_122508.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215194",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_105631.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215197",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_112059.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215199",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_105017.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215201",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_123122.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215204",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_105631.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215206",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_093507.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215208",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_114318.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215211",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_101611.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215213",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_100205.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215215",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/generate-report.sh",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215217",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_111458.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215220",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_114851.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215222",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_113945.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215224",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/alerts/dedup.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215227",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_104239.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215229",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_104408.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215231",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_094732.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215234",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_112118.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215236",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/known_devices.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215238",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_105631.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215241",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_103747.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215243",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_103756.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215246",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_113749.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215248",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_111950.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215251",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_101204.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215253",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_124718.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215255",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/12hr-report_20260516_093728.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215258",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_111446.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215260",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_094132.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215265",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_100002.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215268",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_115859.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215270",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_110723.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215272",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_121552.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215274",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_110723.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215277",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_102913.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215279",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_115859.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215282",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_102239.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215284",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_122250.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215286",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_121818.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215289",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/report_20260516_093911.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215291",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_113935.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215293",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_121200.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215295",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_095635.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215298",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_111843.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215300",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_094132.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215302",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_095747.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215305",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_111039.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215307",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_105412.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215309",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_121200.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215314",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_094317.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215316",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_100632.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215318",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_124718.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215321",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_121552.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215323",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_124526.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215325",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_115855.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215327",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_121045.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215330",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_112730.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215332",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_102531.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215334",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_101615.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215336",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_094732.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215339",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_094132.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215341",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_112258.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215343",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_095428.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215346",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_095258.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215348",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_115859.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215350",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_112118.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215352",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_113315.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215355",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_100742.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215359",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_103747.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215362",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_094732.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215364",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_100159.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215366",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_104709.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215368",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_100205.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215371",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_114539.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215373",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_115533.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215375",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_113315.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215377",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_123833.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215380",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_121818.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215382",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_120531.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215384",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_104352.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215386",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_101611.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215389",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_115749.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215391",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_111630.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215393",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_101615.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215396",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_101504.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215398",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_111458.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215400",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_095136.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215402",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_124526.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215405",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_123542.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215407",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_123833.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215409",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_122504.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215412",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_113945.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215414",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_102239.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215416",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_105519.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215418",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_101615.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215421",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_122632.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215423",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_120707.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215425",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_114957.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215428",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_102239.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215430",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_104408.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215432",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_100159.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215434",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/security-events.log",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215437",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_114539.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215439",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_124526.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215441",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_095857.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215443",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_105628.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215446",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_121818.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215448",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_100205.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215450",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/activity.log",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215452",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_112730.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215455",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_120228.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215457",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_112730.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215459",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_113104.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215461",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_100205.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215464",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_105024.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215466",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_102239.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215468",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_113643.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215470",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_093507.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215473",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_121200.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215475",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_114539.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215477",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_112730.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215479",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_102648.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215482",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_093708.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215484",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_100632.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215486",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_103243.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215489",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/blocklists/devices-index.md",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215491",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_114539.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215493",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_111843.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215495",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_123122.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215498",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_113945.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215500",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_104239.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215502",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/report_20260516_093911.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215505",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_112509.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215507",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_124526.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215509",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_120059.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215511",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_114422.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215514",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_121818.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215516",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_124823.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215518",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_094317.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215520",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_095049.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215523",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_122357.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215525",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_122038.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215527",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_120813.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215529",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_115638.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215532",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_121818.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215534",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_121200.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215536",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_123436.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215538",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_103349.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215541",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_113315.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215543",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_121151.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215545",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_102913.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215547",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_102239.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215550",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_105412.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215553",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_112619.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215555",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_095428.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215557",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_115300.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215559",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_112404.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215562",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_115859.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215564",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_122508.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215566",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_120228.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215568",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_122907.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215571",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_094732.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215573",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_115428.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215575",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_102913.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215577",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_112730.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215580",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_094732.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215582",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_115035.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215584",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_105024.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215586",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_123833.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215589",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/lease-monitor.sh",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215591",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_120919.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215593",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_112730.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215596",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_123828.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215598",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/new_devices_alert.log",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215600",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_105024.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215602",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_114539.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215607",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_101209.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215609",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_122508.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215611",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_111458.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215614",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_123122.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215616",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_111950.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215618",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_103756.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215620",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_123122.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215623",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_115638.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215625",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_101008.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215627",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_121818.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215629",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_103535.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215632",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_122508.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215634",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_124146.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215636",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_113433.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215639",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_104408.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215641",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_121200.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215643",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_105024.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215645",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_104134.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215648",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_101615.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215650",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_111736.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215652",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_105631.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215655",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_100852.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215657",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/alerts/2026-05-16/ALERT_20260516_120059.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215659",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_095747.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215662",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_112619.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215664",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_104408.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215666",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_124359.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215668",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_114108.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215671",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_111630.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215673",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_095857.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215675",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_123122.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215678",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_094732.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215680",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_123648.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215682",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_120531.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215685",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_101753.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215687",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_113538.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.215997",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_120531.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216004",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_095428.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216006",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_094132.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216008",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_113315.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216011",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_095428.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216013",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_111458.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216016",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_094442.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216018",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_093708.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216020",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_111458.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216023",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_120531.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216025",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_112959.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216027",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_115146.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216029",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_124526.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216032",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_093507.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216034",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_120531.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216037",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_104408.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216039",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_113945.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216041",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_103349.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216043",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_112118.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216046",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_124146.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216048",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_100205.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216050",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_102913.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216053",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_102239.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216055",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_113315.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216057",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_122504.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216060",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_122508.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216062",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_100205.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216064",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_105024.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216067",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_095428.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216069",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_113315.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216071",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_104408.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216074",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_125033.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216076",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_120531.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216078",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_102239.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216080",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_101209.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216083",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_114539.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216085",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_123122.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216087",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_124519.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216090",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_105912.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216092",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_121200.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216094",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_102913.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216097",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_094720.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216099",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_103923.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216101",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_102800.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216103",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_101615.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216106",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_112118.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216108",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_121200.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216110",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_124928.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216112",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_121818.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216115",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_102913.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216117",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_095136.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216119",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_123122.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216122",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_113935.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216124",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/alerts/2026-05-16/ALERT_20260516_122632.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216126",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_123013.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216128",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_093507.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216131",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_104408.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216133",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_104911.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216135",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_093507.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216138",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_112730.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216142",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_100002.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216145",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_093507.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216147",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_102425.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216150",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_112118.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216152",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_121446.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216155",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_124823.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216157",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_105024.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216159",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_121200.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216161",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_112258.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216164",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_102905.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216166",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/alerts/2026-05-16/ALERT_20260516_122632.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216168",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_101008.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216172",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_115300.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216175",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_103756.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216178",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_111341.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216180",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_122508.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216182",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_101321.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216185",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_121200.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216187",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_101615.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216189",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_102239.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216192",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_123122.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216194",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_113749.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216196",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_124526.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216199",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_115146.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216201",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_094923.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216203",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_105631.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216206",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/devices/known_devices.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216208",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_110916.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216210",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_122632.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216212",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_103756.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216215",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_114957.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216219",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_120522.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216221",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/devices/per-device-blocklists/README.md",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216223",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_115010.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216225",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_112852.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216228",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_103756.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216230",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_124359.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216232",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_114539.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216234",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_111236.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216237",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_103923.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216239",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_105631.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216241",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_101008.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216243",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_102905.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216246",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_103642.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216248",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_123648.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216250",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_112730.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216252",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_102239.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216254",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_101753.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216257",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_105519.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216259",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_114539.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216261",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_093458.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216263",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_122357.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216266",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_115035.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216268",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_095403.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216270",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_101008.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216272",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_105631.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216275",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/alerts/LATEST_ALERT.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216277",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_102648.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216279",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_113315.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216281",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_114527.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216284",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_094732.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216286",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_101008.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216288",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/devices/known_devices.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216291",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_115252.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216293",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_113104.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216295",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_115855.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216297",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_112730.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216300",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_100205.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216302",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_114746.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216304",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_094132.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216306",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_123121.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216309",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_105017.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216311",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_114539.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216313",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_101321.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216315",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_122508.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216318",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_095049.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216320",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_115300.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216322",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_115300.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216324",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_122508.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216327",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_113945.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216329",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_100205.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216331",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_104029.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216334",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_121045.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216336",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_121803.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216338",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_103756.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216340",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/blocked_20260516_115859.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216343",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_093336.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216345",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_113945.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216347",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_101008.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216349",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_095020.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216352",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_103642.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216354",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/report_20260516_095428.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216356",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/logs/2026-05-16/queries_20260516_114539.pdf",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216359",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_094117.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216361",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/reports/2026-05-16/network-scan_20260516_093210.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216363",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/leases_20260516_105024.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216365",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_101615.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216368",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_115859.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216370",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/blocklists/kids-safe.list",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216372",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/Security/PiHole/leases/2026-05-16/devices_current_20260516_123833.txt",
+    "deleted_at": "2026-06-29T03:00:38.214603",
+    "purge_due": "2026-08-13T03:00:38.216374",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-06-07.md",
+    "deleted_at": "2026-07-01T03:00:06.808095",
+    "purge_due": "2026-08-15T03:00:06.808136",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-06-11.md",
+    "deleted_at": "2026-07-01T03:00:06.808095",
+    "purge_due": "2026-08-15T03:00:06.808150",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-05-17.md",
+    "deleted_at": "2026-07-01T03:00:06.808095",
+    "purge_due": "2026-08-15T03:00:06.808157",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-06-10.md",
+    "deleted_at": "2026-07-01T03:00:06.808095",
+    "purge_due": "2026-08-15T03:00:06.808165",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-06-09.md",
+    "deleted_at": "2026-07-01T03:00:06.808095",
+    "purge_due": "2026-08-15T03:00:06.808170",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-06-06.md",
+    "deleted_at": "2026-07-01T03:00:06.808095",
+    "purge_due": "2026-08-15T03:00:06.808175",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-05-22.md",
+    "deleted_at": "2026-07-01T03:00:06.808095",
+    "purge_due": "2026-08-15T03:00:06.808182",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-06-03.md",
+    "deleted_at": "2026-07-01T03:00:06.808095",
+    "purge_due": "2026-08-15T03:00:06.808185",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-05-23.md",
+    "deleted_at": "2026-07-01T03:00:06.808095",
+    "purge_due": "2026-08-15T03:00:06.808193",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-06-05.md",
+    "deleted_at": "2026-07-01T03:00:06.808095",
+    "purge_due": "2026-08-15T03:00:06.808206",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-06-02.md",
+    "deleted_at": "2026-07-01T03:00:06.808095",
+    "purge_due": "2026-08-15T03:00:06.808220",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-05-16.md",
+    "deleted_at": "2026-07-01T03:00:06.808095",
+    "purge_due": "2026-08-15T03:00:06.808224",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-06-04.md",
+    "deleted_at": "2026-07-01T03:00:06.808095",
+    "purge_due": "2026-08-15T03:00:06.808228",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-05-19.md",
+    "deleted_at": "2026-07-01T03:00:06.808095",
+    "purge_due": "2026-08-15T03:00:06.808234",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-05-18.md",
+    "deleted_at": "2026-07-01T03:00:06.808095",
+    "purge_due": "2026-08-15T03:00:06.808251",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-06-08.md",
+    "deleted_at": "2026-07-01T03:00:06.808095",
+    "purge_due": "2026-08-15T03:00:06.808260",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-05-28.md",
+    "deleted_at": "2026-07-01T03:00:06.808095",
+    "purge_due": "2026-08-15T03:00:06.808263",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-05-24.md",
+    "deleted_at": "2026-07-01T03:00:06.808095",
+    "purge_due": "2026-08-15T03:00:06.808266",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-05-20.md",
+    "deleted_at": "2026-07-01T03:00:06.808095",
+    "purge_due": "2026-08-15T03:00:06.808270",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-05-25.md",
+    "deleted_at": "2026-07-01T03:00:06.808095",
+    "purge_due": "2026-08-15T03:00:06.808273",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-05-30.md",
+    "deleted_at": "2026-07-01T03:00:06.808095",
+    "purge_due": "2026-08-15T03:00:06.808278",
+    "status": "pending"
+  },
+  {
+    "file": "003-Computing_Science/AI_Research/AI_Research_Report_2026-06-12.md",
+    "deleted_at": "2026-07-03T03:02:26.354858",
+    "purge_due": "2026-08-17T03:02:26.354933",
+    "status": "pending"
+  },
+  {
+    "file": "_archive/Blacktech Solutions Corp/01_PROJECTS/Blacktech-Distinctive Alliance/Contracts/contracts/all weather specialist room/7414 S Drexel Ave/Pictures/7414 Drexel pics/20250930_092524.mp4",
+    "deleted_at": "2026-07-09T03:00:34.836113",
+    "purge_due": "2026-08-23T03:00:34.836137",
+    "status": "pending"
+  },
+  {
+    "file": "_archive/Blacktech Solutions Corp/01_PROJECTS/Blacktech-Distinctive Alliance/Contracts/contracts/all weather specialist room/7414 S Drexel Ave/Pictures/7414 Drexel pics/20250930_091954.mp4",
+    "deleted_at": "2026-07-09T03:00:34.836113",
+    "purge_due": "2026-08-23T03:00:34.836155",
+    "status": "pending"
+  },
+  {
+    "file": "_archive/Blacktech Solutions Corp/01_PROJECTS/Blacktech-Distinctive Alliance/Contracts/contracts/all weather specialist room/7919 S Dorchester Ave/Pictures/7919 Dorchester pics/20250930_100609.mp4",
+    "deleted_at": "2026-07-09T03:00:34.836113",
+    "purge_due": "2026-08-23T03:00:34.836161",
+    "status": "pending"
+  },
+  {
+    "file": "_archive/Blacktech Solutions Corp/01_PROJECTS/Blacktech-Distinctive Alliance/Contracts/contracts/all weather specialist room/7919 S Dorchester Ave/Pictures/7919 Dorchester pics/20250930_100458.mp4",
+    "deleted_at": "2026-07-09T03:00:34.836113",
+    "purge_due": "2026-08-23T03:00:34.836171",
+    "status": "pending"
+  },
+  {
+    "file": "_archive/Blacktech Solutions Corp/01_PROJECTS/Copy of 260204 - 304 Timber Trail - for permit.pdf",
+    "deleted_at": "2026-07-09T03:00:34.836113",
+    "purge_due": "2026-08-23T03:00:34.836177",
+    "status": "pending"
+  },
+  {
+    "file": "_archive/Blacktech Solutions Corp/01_PROJECTS/Blacktech-Distinctive Alliance/Contracts/contracts/all weather specialist room/7919 S Dorchester Ave/Pictures/7919 Dorchester pics/20250930_102848.mp4",
+    "deleted_at": "2026-07-09T03:00:34.836113",
+    "purge_due": "2026-08-23T03:00:34.836180",
+    "status": "pending"
+  },
+  {
+    "file": "_archive/Blacktech Solutions Corp/01_PROJECTS/Blacktech-Distinctive Alliance/Contracts/contracts/all weather specialist room/7414 S Drexel Ave/Pictures/7414 Drexel pics/20250930_092205.mp4",
+    "deleted_at": "2026-07-09T03:00:34.836113",
+    "purge_due": "2026-08-23T03:00:34.836204",
+    "status": "pending"
+  },
+  {
+    "file": "_archive/Blacktech Solutions Corp/01_PROJECTS/Blacktech-Distinctive Alliance/Contracts/contracts/all weather specialist room/7919 S Dorchester Ave/Pictures/7919 Dorchester pics/20250930_101813.mp4",
+    "deleted_at": "2026-07-09T03:00:34.836113",
+    "purge_due": "2026-08-23T03:00:34.836213",
+    "status": "pending"
+  },
+  {
+    "file": "_archive/Blacktech Solutions Corp/01_PROJECTS/Blacktech-Distinctive Alliance/Contracts/contracts/all weather specialist room/7414 S Drexel Ave/Pictures/7414 Drexel pics/20250930_094007.mp4",
+    "deleted_at": "2026-07-09T03:00:34.836113",
+    "purge_due": "2026-08-23T03:00:34.836217",
+    "status": "pending"
+  },
+  {
+    "file": "_archive/Blacktech Solutions Corp/01_PROJECTS/Blacktech-Distinctive Alliance/Contracts/contracts/all weather specialist room/7919 S Dorchester Ave/Pictures/7919 Dorchester pics/20250930_100333.mp4",
+    "deleted_at": "2026-07-09T03:00:34.836113",
+    "purge_due": "2026-08-23T03:00:34.836225",
     "status": "pending"
   }
 ]

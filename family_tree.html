@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Black - Payton - Moore Family Tree</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0a0a0f;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    overflow-x: auto;
+  }
+  .header {
+    text-align: center;
+    padding: 30px 20px 10px;
+  }
+  .header h1 {
+    font-size: 2.2em;
+    color: #f59e0b;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  .header .subtitle {
+    color: #888;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+  .tree-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-width: max-content;
+  }
+  /* Generation labels */
+  .gen-label {
+    color: #22c55e;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 25px 0 15px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #222;
+    padding-bottom: 8px;
+  }
+  /* Nodes */
+  .node {
+    display: inline-block;
+    text-align: center;
+    margin: 8px 12px;
+    position: relative;
+    vertical-align: top;
+  }
+  .node .card {
+    background: #141420;
+    border: 2px solid #333;
+    border-radius: 12px;
+    padding: 10px 16px;
+    min-width: 140px;
+    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    cursor: default;
+  }
+  .node .card:hover {
+    transform: translateY(-3px);
+    border-color: #f59e0b;
+    box-shadow: 0 4px 20px rgba(245, 158, 11, 0.25);
+  }
+  .node .name {
+    font-weight: 700;
+    font-size: 0.95em;
+    color: #f0f0f0;
+  }
+  .node .dates {
+    font-size: 0.78em;
+    color: #888;
+    margin-top: 3px;
+  }
+  .node .relation {
+    font-size: 0.68em;
+    color: #22c55e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4px;
+  }
+  /* Color-coded by family line */
+  .payton .card { border-color: #3b82f6; }
+  .payton .card:hover { border-color: #60a5fa; box-shadow: 0 4px 20px rgba(59, 130, 246, 0.25); }
+  .moore .card { border-color: #a855f7; }
+  .moore .card:hover { border-color: #c084fc; box-shadow: 0 4px 20px rgba(168, 85, 247, 0.25); }
+  .black .card { border-color: #f59e0b; }
+  .black .card:hover { border-color: #fbbf24; box-shadow: 0 4px 20px rgba(245, 158, 11, 0.3); }
+  .root .card { border-color: #22c55e; background: #0d1b0d; }
+  .root .card:hover { border-color: #4ade80; box-shadow: 0 4px 20px rgba(34, 197, 94, 0.3); }
+  .deceased .card { opacity: 0.6; border-style: dashed; }
+  .missing .card { border-style: dotted; opacity: 0.5; }
+  .missing .name { color: #666; font-style: italic; }
+  /* Connector lines */
+  .connector {
+    height: 30px;
+    width: 2px;
+    background: #333;
+    margin: 0 auto;
+  }
+  .connector-h {
+    height: 2px;
+    background: #333;
+  }
+  /* Children container */
+  .children {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .children-wrapper {
+    display: inline-block;
+    text-align: center;
+  }
+  .branch {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin: 0 20px;
+  }
+  /* Tooltip */
+  .node .tooltip {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1a1a2e;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 0.75em;
+    white-space: nowrap;
+    z-index: 100;
+    margin-bottom: 8px;
+    color: #ccc;
+  }
+  .node:hover .tooltip { display: block; }
+  /* Legend */
+  .legend {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8em;
+    color: #888;
+  }
+  .legend-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+  }
+  .footer {
+    text-align: center;
+    padding: 30px;
+    color: #444;
+    font-size: 0.75em;
+  }
+  /* Marriage connector */
+  .marriage {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .marriage .heart { color: #ef4444; font-size: 0.7em; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Black · Payton · Moore Family Tree</h1>
+  <div class="subtitle">Ancestral Family Tree — Three+ Generations</div>
+</div>
+
+<div class="tree-container">
+
+  <!-- ROOT: Grandparents -->
+  <div class="gen-label">Grandparents · Roots</div>
+  <div class="marriage">
+    <div class="node root">
+      <div class="card">
+        <div class="name">Viola Black</div>
+        <div class="dates">1930 – 1996</div>
+        <div class="relation">Grandmother · Matriarch</div>
+      </div>
+    </div>
+    <span class="heart">❤</span>
+    <div class="node root">
+      <div class="card">
+        <div class="name">Jessie Moore</div>
+        <div class="dates">Dates Unknown</div>
+        <div class="relation">Grandfather · Patriarch</div>
+      </div>
+      <div class="tooltip">1st Gen Grandfather — need data</div>
+    </div>
+  </div>
+  <div class="connector"></div>
+
+  <!-- 1ST GENERATION -->
+  <div class="gen-label">1st Generation — Children of Viola & Jessie</div>
+  <div class="children">
+    <div class="branch">
+      <div class="node black">
+        <div class="card">
+          <div class="name">Eunice Payton</div>
+          <div class="dates">1948 – present</div>
+        </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="node moore">
+        <div class="card">
+          <div class="name">Jessie Lee Moore</div>
+          <div class="dates">1954 – present</div>
+        </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="node black">
+        <div class="card">
+          <div class="name">Gloria Black</div>
+          <div class="dates">11/6/1950 – present</div>
+        </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="node moore deceased">
+        <div class="card">
+          <div class="name">Barbara Moore</div>
+          <div class="dates">2/11/1951 – 10/18/2010</div>
+        </div>
+      </div>
+    </div>
+    <div class="branch">
+      <div class="node black">
+        <div class="card">
+          <div class="name">George Black</div>
+          <div class="dates">1950 – present</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="connector"></div>
+
+  <!-- 2ND GENERATION -->
+  <div class="gen-label">2nd Generation — Grandchildren</div>
+  <div class="children" style="align-items: flex-start;">
+
+    <!-- Eunice Payton's children -->
+    <div class="branch">
+      <div class="children-wrapper">
+        <div class="children">
+          <div class="branch">
+            <div class="node payton"><div class="card"><div class="name">Curtis Payton</div><div class="dates">Need date</div></div></div>
+          </div>
+          <div class="branch">
+            <div class="node payton"><div class="card"><div class="name">Stacey Payton</div><div class="dates">Need date</div></div></div>
+          </div>
+        </div>
+        <div class="children" style="margin-top: 8px;">
+          <div class="branch">
+            <div class="node payton"><div class="card"><div class="name">Antione Payton</div><div class="dates">Need date</div></div></div>
+          </div>
+          <div class="branch">
+            <div class="node payton"><div class="card"><div class="name">Cecil Payton Jr</div><div class="dates">Need date</div></div></div>
+          </div>
+        </div>
+        <div class="children" style="margin-top: 8px;">
+          <div class="branch">
+            <div class="node payton"><div class="card"><div class="name">Lakeisha Payton</div><div class="dates">Need date</div></div></div>
+          </div>
+        </div>
+        <div class="connector"></div>
+        <div style="color: #3b82f6; font-size: 0.7em; text-transform: uppercase; letter-spacing: 1px;">Eunice's children</div>
+      </div>
+    </div>
+
+    <!-- Jessie Lee Moore's children -->
+    <div class="branch">
+      <div class="children-wrapper">
+        <div class="children">
+          <div class="branch">
+            <div class="node moore"><div class="card"><div class="name">Tony Moore</div><div class="dates">Need date</div></div></div>
+          </div>
+          <div class="branch">
+            <div class="node moore"><div class="card"><div class="name">Toinette Moore</div><div class="dates">Need date</div></div></div>
+          </div>
+        </div>
+        <div class="children" style="margin-top: 8px;">
+          <div class="branch">
+            <div class="node moore"><div class="card"><div class="name">Kevin Moore</div><div class="dates">Need date</div></div></div>
+          </div>
+          <div class="branch">
+            <div class="node moore"><div class="card"><div class="name">James Moore</div><div class="dates">Need date</div></div></div>
+          </div>
+        </div>
+        <div class="children" style="margin-top: 8px;">
+          <div class="branch">
+            <div class="node moore"><div class="card"><div class="name">Anita Moore</div><div class="dates">05/01/1972 – present</div></div></div>
+          </div>
+          <div class="branch">
+            <div class="node moore deceased"><div class="card"><div class="name">Donnell Moore</div><div class="dates">11/23/1970 – 05/08/2021</div></div></div>
+          </div>
+        </div>
+        <div class="children" style="margin-top: 8px;">
+          <div class="branch">
+            <div class="node moore"><div class="card"><div class="name">Kim Moore</div><div class="dates">10/18/1974 – present</div></div></div>
+          </div>
+          <div class="branch">
+            <div class="node moore"><div class="card"><div class="name">Deon Moore</div><div class="dates">04/13/1976 – present</div></div></div>
+          </div>
+        </div>
+        <div class="children" style="margin-top: 8px;">
+          <div class="branch">
+            <div class="node moore"><div class="card"><div class="name">Linnette Moore</div><div class="dates">10/06/1977 – present</div></div></div>
+          </div>
+          <div class="branch">
+            <div class="node moore"><div class="card"><div class="name">Barbara Moore</div><div class="dates">12/16/1978 – present</div></div></div>
+          </div>
+        </div>
+        <div class="connector"></div>
+        <div style="color: #a855f7; font-size: 0.7em; text-transform: uppercase; letter-spacing: 1px;">Jessie Lee's children</div>
+      </div>
+    </div>
+
+    <!-- Gloria Black's children -->
+    <div class="branch">
+      <div class="children-wrapper">
+        <div class="children">
+          <div class="branch">
+            <div class="node black deceased"><div class="card"><div class="name">Taria Black</div><div class="dates">1975 – 1975</div></div></div>
+            <div class="tooltip">Died at birth</div>
+          </div>
+        </div>
+        <div class="children" style="margin-top: 8px;">
+          <div class="branch">
+            <div class="node black"><div class="card" style="border-width: 3px; border-color: #f59e0b;"><div class="name">Derrell Black Sr</div><div class="dates">3/7/1977 – present</div><div class="relation">⭐ You</div></div></div>
+          </div>
+        </div>
+        <div class="connector"></div>
+        <div style="color: #f59e0b; font-size: 0.7em; text-transform: uppercase; letter-spacing: 1px;">Gloria's children</div>
+      </div>
+    </div>
+
+    <!-- George Black (no children listed) -->
+    <div class="branch">
+      <div class="children-wrapper">
+        <div style="color: #555; font-size: 0.8em; font-style: italic; padding: 20px;">No children listed</div>
+        <div style="color: #f59e0b; font-size: 0.7em; text-transform: uppercase; letter-spacing: 1px;">George's line</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="connector"></div>
+
+  <!-- 3RD GENERATION -->
+  <div class="gen-label">3rd Generation — Great-Grandchildren</div>
+  <div class="children" style="align-items: flex-start;">
+
+    <!-- Payton 3rd Gen -->
+    <div class="branch" style="text-align: center;">
+      <div style="color: #3b82f6; font-size: 0.7em; text-transform: uppercase; margin-bottom: 10px;">Payton Line</div>
+      <div class="children">
+        <div class="branch"><div class="node payton"><div class="card"><div class="name">Lotonia Payton</div><div class="dates">Need dates</div></div></div></div>
+        <div class="branch"><div class="node payton"><div class="card"><div class="name">Candis Payton</div><div class="dates">Need dates</div></div></div></div>
+        <div class="branch"><div class="node payton"><div class="card"><div class="name">Joe Payton</div><div class="dates">Need dates</div></div></div></div>
+      </div>
+      <div class="children" style="margin-top: 8px;">
+        <div class="branch"><div class="node payton"><div class="card"><div class="name">Rondell Payton</div><div class="dates">Need dates</div></div></div></div>
+        <div class="branch"><div class="node payton"><div class="card"><div class="name">DeAntione Payton</div><div class="dates">Need date</div></div></div></div>
+      </div>
+      <div class="children" style="margin-top: 8px;">
+        <div class="branch"><div class="node payton"><div class="card"><div class="name">Levon Payton</div><div class="dates">Need dates</div></div></div></div>
+        <div class="branch"><div class="node payton"><div class="card"><div class="name">Tyvon Payton</div><div class="dates">Need date</div></div></div></div>
+      </div>
+      <div class="children" style="margin-top: 8px;">
+        <div class="branch"><div class="node payton"><div class="card"><div class="name">Tyanna Payton</div><div class="dates">Need date</div></div></div></div>
+        <div class="branch"><div class="node payton"><div class="card"><div class="name">Devon Payton</div><div class="dates">Need date</div></div></div></div>
+      </div>
+    </div>
+
+    <!-- Moore 3rd Gen -->
+    <div class="branch" style="text-align: center;">
+      <div style="color: #a855f7; font-size: 0.7em; text-transform: uppercase; margin-bottom: 10px;">Moore Line</div>
+      <div class="children">
+        <div class="branch"><div class="node moore"><div class="card"><div class="name">Micheal Sutton</div><div class="dates">Need date</div></div></div></div>
+        <div class="branch"><div class="node moore"><div class="card"><div class="name">Zivan Sutton</div><div class="dates">Need date</div></div></div></div>
+        <div class="branch"><div class="node moore"><div class="card"><div class="name">Jamaal Jackson</div><div class="dates">Need date</div></div></div></div>
+      </div>
+      <div class="children" style="margin-top: 8px;">
+        <div class="branch"><div class="node moore"><div class="card"><div class="name">Quentin Jackson</div><div class="dates">Need date</div></div></div></div>
+        <div class="branch"><div class="node moore"><div class="card"><div class="name">David Jackson</div><div class="dates">Need date</div></div></div></div>
+        <div class="branch"><div class="node moore"><div class="card"><div class="name">Scara Moore</div><div class="dates">Need date</div></div></div></div>
+      </div>
+      <div class="children" style="margin-top: 8px;">
+        <div class="branch"><div class="node moore"><div class="card"><div class="name">Deshawn Moore</div><div class="dates">Need date</div></div></div></div>
+        <div class="branch"><div class="node moore"><div class="card"><div class="name">Kevin Moore Jr</div><div class="dates">Need date</div></div></div></div>
+        <div class="branch"><div class="node moore"><div class="card"><div class="name">Jackie Moore</div><div class="dates">Need date</div></div></div></div>
+      </div>
+      <div class="children" style="margin-top: 8px;">
+        <div class="branch"><div class="node moore"><div class="card"><div class="name">Antiono Moore</div><div class="dates">Need date</div></div></div></div>
+        <div class="branch"><div class="node moore"><div class="card"><div class="name">Kiara Moore</div><div class="dates">Need date</div></div></div></div>
+        <div class="branch"><div class="node moore"><div class="card"><div class="name">Kira Moore</div><div class="dates">Need date</div></div></div></div>
+      </div>
+      <div class="children" style="margin-top: 8px;">
+        <div class="branch"><div class="node moore"><div class="card"><div class="name">Dantrell Moore</div><div class="dates">Need date</div></div></div></div>
+        <div class="branch"><div class="node moore"><div class="card"><div class="name">Denise Moore</div><div class="dates">Need date</div></div></div></div>
+        <div class="branch"><div class="node moore"><div class="card"><div class="name">Desley Moore</div><div class="dates">Need date</div></div></div></div>
+      </div>
+    </div>
+
+    <!-- Black 3rd Gen -->
+    <div class="branch" style="text-align: center;">
+      <div style="color: #f59e0b; font-size: 0.7em; text-transform: uppercase; margin-bottom: 10px;">Black Line</div>
+      <div class="children">
+        <div class="branch"><div class="node black"><div class="card"><div class="name">Taria Black</div><div class="dates">2001 – present</div></div><div class="tooltip">Named after deceased aunt (1975)</div></div></div>
+      </div>
+      <div class="children" style="margin-top: 8px;">
+        <div class="branch"><div class="node black"><div class="card"><div class="name">Destiny Black</div><div class="dates">2009 – present</div></div></div></div>
+      </div>
+      <div class="children" style="margin-top: 8px;">
+        <div class="branch"><div class="node black"><div class="card" style="border-width: 3px;"><div class="name">Derrell Black Jr</div><div class="dates">2013 – present</div></div></div></div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Legend -->
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background: #22c55e;"></div> Grandparents (Root)</div>
+  <div class="legend-item"><div class="legend-dot" style="background: #f59e0b;"></div> Black Line</div>
+  <div class="legend-item"><div class="legend-dot" style="background: #3b82f6;"></div> Payton Line</div>
+  <div class="legend-item"><div class="legend-dot" style="background: #a855f7;"></div> Moore Line</div>
+  <div class="legend-item"><div class="legend-dot" style="background: #141420; border: 2px dashed #555;"></div> Deceased</div>
+</div>
+
+<div class="footer">
+  Black · Payton · Moore Family Tree · Generated from Book (4).xlsx<br>
+  Items marked "Need date" require family input to complete
+</div>
+
+</body>
+</html>

@@ -1,0 +1,542 @@
+[
+  {
+    "name": "Agape Community Cntr",
+    "phone": "773-821-7060",
+    "address": "342 W 111th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Allen Metropolitan Christian Metho",
+    "phone": "773-568-1200",
+    "address": "10946 S Lowe Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Antioch Baptist Church",
+    "phone": "773-785-6526",
+    "address": "351 W 116th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Bellevue Baptist Church",
+    "phone": "773-568-3200",
+    "address": "10700 S Emerald Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Bethel Apostolic Faith Church",
+    "phone": "773-264-5367",
+    "address": "16 E 117th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Bibleway Church of Chicago",
+    "phone": "773-994-5272",
+    "address": "502 W 95th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Bread of Life Church of God and Christ",
+    "phone": "773-821-2400",
+    "address": "144 W 103rd St, Chicago, IL 60628"
+  },
+  {
+    "name": "Brown Temple Mission",
+    "phone": "773-468-8083",
+    "address": "35 E 103rd St, Chicago, IL 60628"
+  },
+  {
+    "name": "Chicagoland Bible Fellowship Chur",
+    "phone": "773-264-2009",
+    "address": "337 E 107th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Chicagoland Christian Center",
+    "phone": "773-785-1700",
+    "address": "929 E 103rd St, Chicago, IL 60628"
+  },
+  {
+    "name": "Christ Cathedral Baptist Church",
+    "phone": "773-660-0580",
+    "address": "445 W 111th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Christ Community Church",
+    "phone": "773-928-4106",
+    "address": "743 E 103rd St, Chicago, IL 60628"
+  },
+  {
+    "name": "Christ Everlasting Baptist Church",
+    "phone": "773-264-1722",
+    "address": "62 W 127th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Christ Temple Chatedral Church of Chris",
+    "phone": "773-821-0088",
+    "address": "62 W 111th Pl, Chicago, IL 60628"
+  },
+  {
+    "name": "Christ Temple Mb Church",
+    "phone": "773-785-3522",
+    "address": "41 W 95th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Christ the Rock Full Gospel Holiness",
+    "phone": "773-660-9266",
+    "address": "12225 S Emerald Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Christ's Church-Baptist",
+    "phone": "773-568-6114",
+    "address": "12844 S Halsted St, Chicago, IL 60628"
+  },
+  {
+    "name": "Christian Covenant Missionary Bapt",
+    "phone": "773-785-3400",
+    "address": "200 W 115th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Christian Family Faith Center",
+    "phone": "773-785-0412",
+    "address": "10714 S Wentworth Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Christian Fellowship Mbc The",
+    "phone": "773-468-0112",
+    "address": "445 W 119th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Christian Love Deliverance Cen",
+    "phone": "773-568-4588",
+    "address": "10742 S Michigan Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Church of Christ",
+    "phone": "773-239-9558",
+    "address": "10201 S Parnell Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Church of Deliverance of the Apostoli",
+    "phone": "773-468-2131",
+    "address": "11336 S State St, Chicago, IL 60628"
+  },
+  {
+    "name": "Church of the Living Water",
+    "phone": "773-568-7729",
+    "address": "10701 S Vernon Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Colonial Village Church of Christ",
+    "phone": "773-821-5197",
+    "address": "12814 S Lowe Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Cornerstone Presbyterian Ch",
+    "phone": "773-785-7476",
+    "address": "11200 S State St, Chicago, IL 60628"
+  },
+  {
+    "name": "Cottage Grove Holy Temple Mb Churc",
+    "phone": "773-468-9101",
+    "address": "11739 S Michigan Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Crown of Life Mb Church",
+    "phone": "773-568-7664",
+    "address": "11500 S Front Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Damascus Baptist Church",
+    "phone": "773-264-4300",
+    "address": "10014 S Michigan Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Delivery Center Baptist Church",
+    "phone": "773-468-5085",
+    "address": "211 W 119th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Emmanuel Temple Evangelistic Ch",
+    "phone": "773-264-9607",
+    "address": "343 E 115th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Fernwood United Methodist Churc",
+    "phone": "773-445-7125",
+    "address": "10057 S Wallace St, Chicago, IL 60628"
+  },
+  {
+    "name": "First Corinthians Baptist Church",
+    "phone": "773-568-3037",
+    "address": "134 E 111th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Followers of Christ",
+    "phone": "773-785-5592",
+    "address": "11022 S State St, Chicago, IL 60628"
+  },
+  {
+    "name": "Full Gospel Christian Center",
+    "phone": "773-995-9655",
+    "address": "11920 S Michigan Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Galilee Missionary Baptist Church",
+    "phone": "773-264-4806",
+    "address": "10957 S Michigan Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Glory To Glory Family Christian Cente",
+    "phone": "773-568-0074",
+    "address": "12238 S Parnell Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "God's House of Holiness in Christ",
+    "phone": "773-445-1556",
+    "address": "538 W 103rd St, Chicago, IL 60628"
+  },
+  {
+    "name": "Greater Canaan Missionary Bapt",
+    "phone": "773-785-2200",
+    "address": "35 W 119th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Greater Hall of Faith Church",
+    "phone": "773-779-6335",
+    "address": "625 W 103rd St, Chicago, IL 60628"
+  },
+  {
+    "name": "Greater Mount Eagle Baptist Church",
+    "phone": "773-995-1309",
+    "address": "10858 S Halsted St, Chicago, IL 60628"
+  },
+  {
+    "name": "Greater New Jerusalem Missionary Bapt",
+    "phone": "773-568-4581",
+    "address": "144 E 111th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Greater New Mount Eagle Baptist Church",
+    "phone": "773-995-0131",
+    "address": "12301 S Michigan Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Greater Revelation Mb Ch",
+    "phone": "773-928-0654",
+    "address": "10723 S Perry Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Greater Tabernacle Missionary Bapt",
+    "phone": "773-928-5350",
+    "address": "11240 S Indiana Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Greenstone United Methodist Churc",
+    "phone": "773-785-1492",
+    "address": "11211 S Saint Lawrence Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Grove Heights Baptist Church",
+    "phone": "773-731-8094",
+    "address": "9800 S Greenwood Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Heaven Hands Ministries",
+    "phone": "773-264-1724",
+    "address": "355 E 115th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Holy Cross Baptist Church",
+    "phone": "773-264-0836",
+    "address": "630 W 120th St, Chicago, IL 60628"
+  },
+  {
+    "name": "House of God",
+    "phone": "773-568-3012",
+    "address": "10555 S Emerald Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Intl New Vision Outreach Minist",
+    "phone": "773-785-7724",
+    "address": "11034 S Michigan Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Jehovah's Witnesses Chicago Illaltg",
+    "phone": "773-785-8604",
+    "address": "150 E 124th Pl, Chicago, IL 60628"
+  },
+  {
+    "name": "Jesus Is the Answer F G F M B C",
+    "phone": "773-995-7401",
+    "address": "10801 S Edbrooke Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Kids Hope United",
+    "phone": "773-734-4333",
+    "address": "9501 S Dorchester Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Lights of Zion Mb Bible Church",
+    "phone": "773-785-2996",
+    "address": "11636 S Halsted St, Chicago, IL 60628"
+  },
+  {
+    "name": "Lilydale First Baptist Church",
+    "phone": "773-785-8623",
+    "address": "649 W 113th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Lilydale Progressive Missionary Bapt",
+    "phone": "773-785-1976",
+    "address": "10706 S Michigan Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Lively Stone Apostolic Church",
+    "phone": "773-291-0395",
+    "address": "622 W 120th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Logos Baptist Assembly",
+    "phone": "773-779-9673",
+    "address": "10833 S Halsted St, Chicago, IL 60628"
+  },
+  {
+    "name": "Louise M Briley",
+    "phone": "773-821-8429",
+    "address": "11354 S Michigan Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Love in Spirit",
+    "phone": "773-881-3747",
+    "address": "424 W 103rd St, Chicago, IL 60628"
+  },
+  {
+    "name": "Mary Magdalene Missionary Bapt",
+    "phone": "773-468-2283",
+    "address": "10938 S Perry Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Messiah Baptist Church",
+    "phone": "773-881-4548",
+    "address": "10400 S Halsted St, Chicago, IL 60628"
+  },
+  {
+    "name": "Mission of Faith Baptist Church",
+    "phone": "773-821-5552",
+    "address": "11321 S Prairie Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Mt Ebal",
+    "phone": "773-660-0703",
+    "address": "425 W 107th St, Chicago, IL 60628"
+  },
+  {
+    "name": "My Holy Rock Missionary Baptist Church",
+    "phone": "773-785-7750",
+    "address": "11441 S Wentworth Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "New Alpha Progressive Baptist Church",
+    "phone": "773-785-2855",
+    "address": "11357 S King Dr, Chicago, IL 60628"
+  },
+  {
+    "name": "New Birth Outreach Ministry",
+    "phone": "773-568-0796",
+    "address": "10747 S Halsted St, Chicago, IL 60628"
+  },
+  {
+    "name": "New Christian Joy Mb Church",
+    "phone": "773-468-2129",
+    "address": "11594 S State St, Chicago, IL 60628"
+  },
+  {
+    "name": "New Foundation Baptist Church",
+    "phone": "773-568-3920",
+    "address": "10632 S Wentworth Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "New Life",
+    "phone": "773-928-5062",
+    "address": "11026 S Indiana Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "New Life Family Worship Center",
+    "phone": "773-568-3801",
+    "address": "32 E 113th Pl, Chicago, IL 60628"
+  },
+  {
+    "name": "New Life Full Gospel Christian Cente",
+    "phone": "773-660-4100",
+    "address": "12030 S Wallace St, Chicago, IL 60628"
+  },
+  {
+    "name": "New Life Missionary Baptist Church",
+    "phone": "773-264-9092",
+    "address": "11745 S Michigan Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "New Macedonia Baptist Church",
+    "phone": "773-779-1055",
+    "address": "432 W 103rd St, Chicago, IL 60628"
+  },
+  {
+    "name": "New Morning S\n\n... [OUTPUT TRUNCATED - 1771 chars omitted out of 51771 total] ..",
+    "phone": "773-568-9769",
+    "address": "12257 S Emerald Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Power of Praise",
+    "phone": "773-264-2767",
+    "address": "548 W 119th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Progressive Missionary Baptist Church",
+    "phone": "773-928-8889",
+    "address": "26 E 127th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Pullman Christian Reformed Church",
+    "phone": "773-785-9855",
+    "address": "424 E 103rd St, Chicago, IL 60628"
+  },
+  {
+    "name": "Pullman Presbyterian Church",
+    "phone": "773-928-9568",
+    "address": "10700 S King Dr, Chicago, IL 60628"
+  },
+  {
+    "name": "Reformation Lutheran Church",
+    "phone": "773-785-4570",
+    "address": "11310 S Forest Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Refuge Bible Church",
+    "phone": "773-568-2864",
+    "address": "11926 S Parnell Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Roseland Bible Church",
+    "phone": "773-785-3634",
+    "address": "233 W 111th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Roseland Christian Health Ministri",
+    "phone": "773-233-4100",
+    "address": "9718 S Halsted St, Chicago, IL 60628"
+  },
+  {
+    "name": "Royal Family Ministries",
+    "phone": "773-928-6209",
+    "address": "145 W 111th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Salem Baptist Church of Chicago",
+    "phone": "773-371-2300",
+    "address": "11816 S Indiana Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Salem Christian Academy",
+    "phone": "773-371-2323",
+    "address": "10909 S Cottage Grove Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Sheldon Heights Church of Christ",
+    "phone": "773-568-2929",
+    "address": "11325 S Halsted St, Chicago, IL 60628"
+  },
+  {
+    "name": "Spiral Temple of Truth",
+    "phone": "773-568-7828",
+    "address": "12350 S Wallace St, Chicago, IL 60628"
+  },
+  {
+    "name": "St John Mb Church No 2",
+    "phone": "773-568-7589",
+    "address": "165 E 115th St, Chicago, IL 60628"
+  },
+  {
+    "name": "St Titus One Missionary Baptist Church",
+    "phone": "773-785-5530",
+    "address": "10532 S Corliss Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Starlight St James Mb Church",
+    "phone": "773-785-2400",
+    "address": "11300 S State St, Chicago, IL 60628"
+  },
+  {
+    "name": "Straightway Missionary Baptist Church",
+    "phone": "773-995-8505",
+    "address": "10359 S King Dr, Chicago, IL 60628"
+  },
+  {
+    "name": "Studio 557 A Glory To God Production",
+    "phone": "773-995-6131",
+    "address": "11725 S Yale Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Sure-Way M B Church",
+    "phone": "773-785-0115",
+    "address": "12000 S Halsted St, Chicago, IL 60628"
+  },
+  {
+    "name": "Synergy Counseling Center",
+    "phone": "773-994-9937",
+    "address": "532 W 95th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Trinity United Church of Christ",
+    "phone": "773-962-5650",
+    "address": "400 W 95th St, Chicago, IL 60628"
+  },
+  {
+    "name": "True Fellowship Bapt Church",
+    "phone": "773-785-9710",
+    "address": "9556 S King Dr, Chicago, IL 60628"
+  },
+  {
+    "name": "True Spirit International",
+    "phone": "773-264-8812",
+    "address": "539 W 120th St, Chicago, IL 60628"
+  },
+  {
+    "name": "True Vine Holiness Mb Church",
+    "phone": "773-995-1004",
+    "address": "400 E 111th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Turner Chapel Mb Church",
+    "phone": "773-821-9509",
+    "address": "10800 S Wentworth Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Unite Four Christ Cm",
+    "phone": "773-785-9111",
+    "address": "17 E 115th St, Chicago, IL 60628"
+  },
+  {
+    "name": "United Bibleway Community M B C",
+    "phone": "773-568-6390",
+    "address": "252 E 115th St, Chicago, IL 60628"
+  },
+  {
+    "name": "United Church St James",
+    "phone": "773-785-6095",
+    "address": "10818 S Michigan Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Upon This Rock Christian Cente",
+    "phone": "773-785-2089",
+    "address": "11652 S Wentworth Ave, Chicago, IL 60628"
+  },
+  {
+    "name": "Victory Outreach Christian Home",
+    "phone": "773-568-1785",
+    "address": "11730 S State St, Chicago, IL 60628"
+  },
+  {
+    "name": "West Pullman Baptist Church",
+    "phone": "773-568-7549",
+    "address": "656 W 118th St, Chicago, IL 60628"
+  },
+  {
+    "name": "Women of Destiny",
+    "phone": "773-468-2848",
+    "address": "535 W 111th St, Chicago, IL 60628"
+  }
+]

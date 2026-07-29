@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blacktech Solutions Corp — Battery Backup & Energy Savings</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', Arial, sans-serif; background: #0a0a0f; color: #fff; }
+  .page { width: 8.5in; height: 11in; margin: 0 auto; background: #07111f; display: flex; flex-direction: column; overflow: hidden; position: relative; }
+
+  /* HEADER */
+  .header { background: linear-gradient(135deg, #002244 0%, #003366 100%); padding: 24px 32px 18px; display: flex; align-items: center; justify-content: space-between; }
+  .header-left { display: flex; align-items: center; gap: 14px; }
+  .logo-mark { width: 52px; height: 52px; background: #f59e0b; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 800; color: #0a0a0f; }
+  .header-text h1 { font-size: 22px; font-weight: 800; color: #fff; line-height: 1.1; }
+  .header-text span { font-size: 11px; color: #69BE28; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; }
+  .header-right { text-align: right; }
+  .header-right .phone { font-size: 22px; font-weight: 800; color: #69BE28; }
+  .header-right .web { font-size: 11px; color: #A5ACAF; }
+
+  /* HERO */
+  .hero { padding: 28px 32px 20px; text-align: center; background: radial-gradient(ellipse at center, #0d2b0d 0%, #07111f 70%); }
+  .hero h2 { font-size: 32px; font-weight: 800; line-height: 1.15; margin-bottom: 8px; }
+  .hero h2 .green { color: #69BE28; }
+  .hero h2 .orange { color: #f59e0b; }
+  .hero p { font-size: 14px; color: #c8e6c8; max-width: 500px; margin: 0 auto; line-height: 1.5; }
+
+  /* ICON ROW */
+  .benefits { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; padding: 18px 28px; }
+  .benefit { background: #0a2a4a; border: 1px solid #1a3a1a; border-radius: 10px; padding: 16px 12px; text-align: center; }
+  .benefit .icon { font-size: 28px; margin-bottom: 6px; }
+  .benefit h3 { font-size: 12px; font-weight: 700; color: #69BE28; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+  .benefit p { font-size: 10.5px; color: #c8e6c8; line-height: 1.35; }
+
+  /* PRODUCTS */
+  .products { padding: 10px 28px 14px; }
+  .products h3 { font-size: 13px; font-weight: 700; color: #f59e0b; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; text-align: center; }
+  .product-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .product { background: #0d2a0d; border-left: 3px solid #69BE28; padding: 12px 14px; border-radius: 0 8px 8px 0; }
+  .product h4 { font-size: 12px; font-weight: 700; color: #69BE28; margin-bottom: 3px; }
+  .product p { font-size: 10px; color: #c8e6c8; line-height: 1.3; }
+  .product .price { font-size: 16px; font-weight: 800; color: #f59e0b; margin-top: 4px; }
+
+  /* STATS */
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; padding: 10px 28px; }
+  .stat { text-align: center; padding: 10px 6px; background: #002244; border-radius: 8px; }
+  .stat .num { font-size: 22px; font-weight: 800; color: #69BE28; }
+  .stat .label { font-size: 8px; color: #A5ACAF; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
+
+  /* TESTIMONIAL */
+  .testimonial { margin: 10px 28px; background: #002244; border-radius: 10px; padding: 14px 18px; border-left: 4px solid #69BE28; }
+  .testimonial p { font-size: 11px; color: #c8e6c8; font-style: italic; line-height: 1.4; }
+  .testimonial .name { font-size: 10px; color: #69BE28; font-weight: 600; margin-top: 4px; font-style: normal; }
+
+  /* CTA */
+  .cta { margin: 10px 28px 14px; background: linear-gradient(135deg, #1b5e20, #0d2a0d); border: 2px solid #69BE28; border-radius: 12px; padding: 16px 20px; text-align: center; }
+  .cta h3 { font-size: 18px; font-weight: 800; color: #69BE28; margin-bottom: 6px; }
+  .cta p { font-size: 12px; color: #c8e6c8; line-height: 1.4; }
+  .cta .big-phone { font-size: 26px; font-weight: 800; color: #f59e0b; margin-top: 8px; }
+
+  /* FOOTER */
+  .footer { background: #002244; padding: 12px 28px; display: flex; justify-content: space-between; align-items: center; font-size: 9px; color: #A5ACAF; border-top: 2px solid #69BE28; margin-top: auto; }
+  .footer-left span { display: block; }
+  .footer-right { text-align: right; }
+  .footer-right span { display: block; }
+  .icc { color: #69BE28; font-weight: 700; }
+
+  /* QR CODE AREA */
+  .qr-area { text-align: center; padding: 6px 0; }
+  .qr-area p { font-size: 9px; color: #A5ACAF; }
+  .qr-placeholder { width: 70px; height: 70px; background: #fff; border-radius: 6px; margin: 4px auto; display: flex; align-items: center; justify-content: center; font-size: 8px; color: #002244; font-weight: 700; }
+
+  @media print {
+    body { background: #07111f; }
+    .page { margin: 0; box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <div class="logo-mark">BT</div>
+      <div class="header-text">
+        <h1>BLACKTECH SOLUTIONS</h1>
+        <span>Licensed Electrical Contractor</span>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="phone">312-965-2782</div>
+      <div class="web">blacktechsolutionscorp.com</div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h2>Keep Your <span class="green">Lights On</span><br>When the <span class="orange">Power Goes Out</span></h2>
+    <p>Serving South Suburban Chicagoland churches, businesses, and homes with battery backup and energy savings — no cost programs available.</p>
+  </div>
+
+  <!-- BENEFITS -->
+  <div class="benefits">
+    <div class="benefit">
+      <div class="icon">🔋</div>
+      <h3>Battery Backup</h3>
+      <p>EcoFlow whole-home batteries. Keep running during outages. No gas, no noise.</p>
+    </div>
+    <div class="benefit">
+      <div class="icon">⚡</div>
+      <h3>Auto-Save</h3>
+      <p>Switch your supply rate and save on ComEd bills automatically. Credits up to $600+.</p>
+    </div>
+    <div class="benefit">
+      <div class="icon">☀️</div>
+      <h3>Community Solar</h3>
+      <p>Solar credits on your bill — no panels on your roof. Save up to 20% on electricity.</p>
+    </div>
+  </div>
+
+  <!-- PRODUCTS -->
+  <div class="products">
+    <h3>⚡ Energy Solutions — No Cost Programs</h3>
+    <div class="product-grid">
+      <div class="product">
+        <h4>Auto-Save Program</h4>
+        <p>Lower ComEd supply rate + earn bill credits. No credit check. No contract switch needed.</p>
+        <div class="price">FREE to enroll</div>
+      </div>
+      <div class="product">
+        <h4>Community Solar</h4>
+        <p>Solar farm credits applied to your ComEd bill. No rooftop panels. Cancel anytime.</p>
+        <div class="price">Save up to 20%</div>
+      </div>
+      <div class="product">
+        <h4>EcoFlow Battery</h4>
+        <p>Whole-home backup power. Runs fridge, lights, HVAC during outages. Off-peak charging saves money.</p>
+        <div class="price">From $1,499</div>
+      </div>
+      <div class="product">
+        <h4>Smart Thermostat</h4>
+        <p>Think Smart thermostat — no credit check. Reduces HVAC costs up to 15%.</p>
+        <div class="price">FREE install</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat">
+      <div class="num">5,000+</div>
+      <div class="label">IL churches<br>impacted by<br>outages</div>
+    </div>
+    <div class="stat">
+      <div class="num">80%</div>
+      <div class="label">Combined<br>energy<br>savings</div>
+    </div>
+    <div class="stat">
+      <div class="num">ICC</div>
+      <div class="label">Licensed &<br>Certified<br>EESP, EV, DG</div>
+    </div>
+    <div class="stat">
+      <div class="num">$0</div>
+      <div class="label">To start<br>saving<br>today</div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIAL -->
+  <div class="testimonial">
+    <p>"Our church was dark for 3 days after the storm. Now we have battery backup — congregation never misses a service. Plus we're saving 20% on electricity with Community Solar."</p>
+    <div class="name">— Pastor D., South Holland</div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">
+    <h3>⚡ Free Energy Assessment</h3>
+    <p>Call or text for a no-cost consultation. We'll show you exactly how much you can save — and how to keep your lights on when the grid goes down.</p>
+    <div class="big-phone">312-965-2782</div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-left">
+      <span>Blacktech Solutions Corp</span>
+      <span>14076 Lincoln Ave, Dolton, IL 60419</span>
+      <span class="icc">ICC Certified: EESP • EV • DG</span>
+    </div>
+    <div class="footer-right">
+      <span>Think Energy Independent Associate</span>
+      <span>ComEd Authorized EESP</span>
+      <span>BlacktechAcademy.com • tv.BlacktechSolutionsCorp.com</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
