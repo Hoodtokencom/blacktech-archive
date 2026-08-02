@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ComEd Electrification — Derrell Black · Blacktech Solutions Corp</title>
+<style>
+:root{
+  --navy:#0a0a0f;--navy2:#141420;--card:#1a1a28;--card2:#20203a;
+  --green:#22c55e;--green-dark:#16a34a;--orange:#f59e0b;--yellow:#fbbf20;
+  --red:#ef4444;--text:#f0f0f5;--text-dim:#a0a0b8;--white:#fff;
+  --blue:#3b82f6;--blue-dark:#1d4ed8;
+  --radius:14px;--shadow:0 8px 32px rgba(0,0,0,0.5);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}
+body{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);color:var(--text)}
+#app{position:relative;height:100vh;height:100dvh;display:flex;flex-direction:column}
+.slides{flex:1;position:relative;overflow:hidden}
+.slide{
+  position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;
+  padding:40px 24px 120px;text-align:center;opacity:0;transform:translateX(40px);pointer-events:none;
+  transition:opacity .55s ease,transform .55s ease;overflow-y:auto;
+}
+.slide.active{opacity:1;transform:translateX(0);pointer-events:auto;z-index:2}
+.slide.prev{transform:translateX(-40px)}
+.slide{justify-content:flex-start;padding-top:50px}
+.tag{font-size:.75rem;font-weight:700;letter-spacing:2px;color:var(--blue);margin-bottom:16px;text-transform:uppercase}
+h1{font-size:clamp(1.8rem,5vw,3.2rem);font-weight:800;line-height:1.15;margin-bottom:16px;max-width:900px;background:linear-gradient(135deg,#fff 0%,#c0c0e0 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+h2{font-size:clamp(1.4rem,3.8vw,2.4rem);font-weight:700;margin-bottom:12px;max-width:800px}
+h3{font-size:clamp(1.1rem,2.5vw,1.6rem);font-weight:700;margin-bottom:8px}
+.sub{font-size:clamp(.9rem,2vw,1.1rem);color:var(--text-dim);margin-bottom:16px;max-width:700px}
+p{font-size:clamp(.88rem,1.8vw,1.05rem);line-height:1.6;max-width:760px;margin-bottom:14px}
+.card{background:linear-gradient(145deg,var(--card),var(--card2));border:1px solid rgba(59,130,246,.15);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);max-width:680px;width:100%;margin:16px auto}
+.card-green{border-color:rgba(34,197,94,.4)}
+.card-blue{border-color:rgba(59,130,246,.4)}
+.card-orange{border-color:rgba(245,158,11,.35)}
+.btn{display:inline-block;padding:14px 32px;border-radius:10px;font-weight:700;font-size:1rem;border:none;cursor:pointer;transition:transform .2s,box-shadow .2s;text-decoration:none}
+.btn:hover{transform:translateY(-2px)}
+.btn-green{background:linear-gradient(135deg,var(--green),var(--green-dark));color:#fff;box-shadow:0 4px 20px rgba(34,197,94,.4)}
+.btn-blue{background:linear-gradient(135deg,var(--blue),var(--blue-dark));color:#fff;box-shadow:0 4px 20px rgba(59,130,246,.4)}
+.btn-orange{background:linear-gradient(135deg,var(--orange),#d97706);color:#fff;box-shadow:0 4px 20px rgba(245,158,11,.4)}
+.btn-ghost{background:rgba(255,255,255,.08);color:var(--text);border:1px solid rgba(255,255,255,.2)}
+.callout{padding:14px 20px;border-radius:10px;font-weight:700;margin:12px auto;max-width:680px;text-align:center}
+.callout-red{background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.4);color:#fca5a5}
+.callout-green{background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.4);color:#86efac}
+.callout-blue{background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.4);color:#93c5fd}
+.callout-orange{background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.4);color:#fcd34d}
+.pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:14px 0}
+.pill{background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.3);color:#93c5fd;padding:6px 16px;border-radius:20px;font-size:.82rem;font-weight:600}
+.pill-green{background:rgba(34,197,94,.1);border-color:rgba(34,197,94,.3);color:#86efac}
+.pill-orange{background:rgba(245,158,11,.1);border-color:rgba(245,158,11,.3);color:#fcd34d}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:760px;margin:18px auto}
+.product-card{background:linear-gradient(145deg,var(--card),var(--card2));border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:20px 16px;text-align:center;transition:transform .2s,border-color .2s}
+.product-card:hover{transform:translateY(-4px);border-color:rgba(59,130,246,.4)}
+.product-card .icon{font-size:2.4rem;margin-bottom:8px}
+.product-card .label{font-weight:800;font-size:.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.product-card .sub-label{font-size:.78rem;color:var(--text-dim)}
+.pc-blue .label{color:var(--blue)} .pc-green .label{color:var(--green)} .pc-orange .label{color:var(--orange)} .pc-yellow .label{color:var(--yellow)}
+/* Steps */
+.step-grid{display:flex;flex-direction:column;align-items:center;gap:12px;max-width:640px;margin:16px auto}
+.step-row{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.05);border:1px solid rgba(59,130,246,.15);border-radius:10px;padding:14px 20px;width:100%;text-align:left}
+.step-row .step-num{background:var(--blue);color:#fff;font-weight:800;border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+.step-row .step-content{font-size:.92rem;line-height:1.5}
+.step-row .step-content b{color:var(--blue)}
+/* Savings table */
+.sav-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;max-width:640px;margin:14px auto}
+.sav-card{background:linear-gradient(145deg,var(--card),var(--card2));border:1px solid rgba(34,197,94,.15);border-radius:10px;padding:18px 16px;text-align:left;transition:transform .2s,border-color .2s}
+.sav-card:hover{transform:translateY(-3px);border-color:rgba(34,197,94,.4)}
+.sav-card .sav-icon{font-size:1.8rem;margin-bottom:6px}
+.sav-card .sav-title{font-weight:700;font-size:.88rem;margin-bottom:4px;color:var(--text)}
+.sav-card .sav-amount{font-size:1.3rem;font-weight:800;color:var(--green)}
+.sav-card .sav-desc{font-size:.75rem;color:var(--text-dim);line-height:1.4;margin-top:4px}
+.sav-card.sc-blue{border-color:rgba(59,130,246,.25)} .sav-card.sc-blue .sav-title{color:#60a5fa}
+.sav-card.sc-orange{border-color:rgba(245,158,11,.25)} .sav-card.sc-orange .sav-title{color:var(--orange)}
+.sav-card.sc-yellow{border-color:rgba(251,191,32,.25)} .sav-card.sc-yellow .sav-title{color:var(--yellow)}
+.disclaimer{font-size:.62rem;color:var(--text-dim);padding:6px 24px;text-align:center;line-height:1.4;max-width:800px;margin:12px auto 0;opacity:.6}
+.controls{position:absolute;bottom:0;left:0;right:0;background:rgba(10,10,15,.95);border-top:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;gap:10px;padding:10px 16px;z-index:10;flex-wrap:wrap}
+.controls button,.controls select,.controls a{background:rgba(255,255,255,.08);color:var(--text);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:8px 16px;font-size:.82rem;font-weight:600;cursor:pointer;transition:all .2s;text-decoration:none}
+.controls button:hover,.controls select:hover,.controls a:hover{background:rgba(59,130,246,.15);border-color:var(--blue)}
+.controls .play-btn{background:linear-gradient(135deg,var(--blue),var(--blue-dark));color:#fff;border:none}
+.controls .cta-btn{background:linear-gradient(135deg,var(--green),var(--green-dark));color:#fff;border:none}
+.controls select{padding:8px 10px}
+.voice-on{color:var(--green)!important}
+.voice-off{color:var(--text-dim)!important}
+.dots{position:absolute;bottom:56px;left:0;right:0;display:flex;justify-content:center;gap:8px;z-index:5}
+.dot{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.2);cursor:pointer;transition:all .3s}
+.dot.active{background:var(--blue);transform:scale(1.3)}
+.dot:hover{background:rgba(59,130,246,.5)}
+.contact{font-size:.8rem;color:var(--text-dim);margin-top:16px}
+.contact b{color:var(--blue)}
+.contact a{color:var(--green);text-decoration:none}
+.hl-blue{color:var(--blue)} .hl-green{color:var(--green)} .hl-orange{color:var(--orange)} .hl-yellow{color:var(--yellow)}
+.visual{font-size:3rem;margin:14px 0;line-height:1.2}
+@media(max-width:1024px){
+  .product-grid{grid-template-columns:1fr;max-width:360px}
+  .sav-grid{grid-template-columns:1fr;max-width:340px}
+  .step-row{flex-direction:row;font-size:.85rem;gap:8px;padding:10px 14px}
+}
+@media(max-width:640px){
+  .slide{padding:60px 16px 110px}
+  .card{padding:18px}
+  .controls{gap:6px;padding:8px 10px}
+  .controls button,.controls select,.controls a{padding:6px 10px;font-size:.74rem}
+  .dot{width:8px;height:8px}
+  .disclaimer{font-size:.56rem}
+}
+.slide::-webkit-scrollbar{width:6px}
+.slide::-webkit-scrollbar-track{background:transparent}
+.slide::-webkit-scrollbar-thumb{background:rgba(255,255,255,.15);border-radius:3px}
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="slides" id="slidesContainer">
+
+  <!-- SLIDE 1: COVER -->
+  <div class="slide active" data-slide="0">
+    <div class="tag" data-key="tag">⚡ DERRELL BLACK · BLACKTECH SOLUTIONS CORP</div>
+    <h1 data-key="s1_headline">Upgrade your home. ComEd pays you to do it.</h1>
+    <p class="sub" data-key="s1_sub">The ComEd Electrification Program turns your gas appliances into clean electric ones — with rebates that cover most or all of the cost.</p>
+    <div class="card card-blue" style="text-align:center">
+      <div style="font-size:1.4rem;font-weight:800;margin-bottom:6px;color:var(--blue)">Free Electrification Assessment</div>
+      <div style="color:var(--text-dim);font-size:.9rem;margin-bottom:16px">Licensed Electrical Contractor · Chicagoland</div>
+      <button class="btn btn-blue" onclick="goToSlide(1)" data-key="s1_btn">▶ SEE HOW IT WORKS</button>
+    </div>
+    <div class="contact">
+      <b>Derrell Black</b> — Licensed Electrician · 312-965-2782
+    </div>
+    <div class="disclaimer" data-key="disclaimer"></div>
+  </div>
+
+  <!-- SLIDE 2: WHAT IS ELECTRIFICATION -->
+  <div class="slide" data-slide="1">
+    <div class="tag" data-key="tag">⚡ DERRELL BLACK · BLACKTECH SOLUTIONS CORP</div>
+    <h2 data-key="s2_headline">What is home electrification?</h2>
+    <p data-key="s2_p1">It means replacing gas-powered appliances — your furnace, water heater, stove, dryer — with high-efficiency electric ones.</p>
+    <p data-key="s2_p2">ComEd wants more homes on electric power because it's cleaner, more efficient, and reduces strain on the gas grid during deep freezes.</p>
+    <div class="callout callout-blue" data-key="s2_callout">💡 ComEd offers rebates and incentives that make switching nearly free.</div>
+    <div class="visual">🏠⚡🌱</div>
+    <p data-key="s2_p3">You get a modernized home, lower energy bills, and no more gas bills at all — all coordinated by a licensed electrician who handles the paperwork.</p>
+    <div class="disclaimer" data-key="disclaimer"></div>
+  </div>
+
+  <!-- SLIDE 3: WHAT'S INCLUDED -->
+  <div class="slide" data-slide="2">
+    <div class="tag" data-key="tag">⚡ DERRELL BLACK · BLACKTECH SOLUTIONS CORP</div>
+    <h2 data-key="s3_heading">What's included in the program</h2>
+    <p class="sub" data-key="s3_sub">Six upgrades that transform your home from gas to electric.</p>
+    <div class="product-grid">
+      <div class="product-card pc-blue">
+        <div class="icon">⚡</div>
+        <div class="label" data-key="s3_p1_label">Panel Upgrade</div>
+        <div class="sub-label" data-key="s3_p1_sub">Modern electrical panel</div>
+      </div>
+      <div class="product-card pc-orange">
+        <div class="icon">💧</div>
+        <div class="label" data-key="s3_p3_label">Water Heater</div>
+        <div class="sub-label" data-key="s3_p3_sub">Electric heat pump unit</div>
+      </div>
+      <div class="product-card pc-green">
+        <div class="icon">🌡️</div>
+        <div class="label" data-key="s3_p2_label">Heat Pump</div>
+        <div class="sub-label" data-key="s3_p2_sub">Heating + cooling in one</div>
+      </div>
+      <div class="product-card pc-orange">
+        <div class="icon">🍳</div>
+        <div class="label" data-key="s3_p7_label">Induction Stove</div>
+        <div class="sub-label" data-key="s3_p7_sub">Clean, fast, precise cooking</div>
+      </div>
+      <div class="product-card pc-yellow">
+        <div class="icon">🏠</div>
+        <div class="label" data-key="s3_p4_label">Weatherization</div>
+        <div class="sub-label" data-key="s3_p4_sub">Seal + insulate</div>
+      </div>
+      <div class="product-card pc-blue">
+        <div class="icon">🌀</div>
+        <div class="label" data-key="s3_p8_label">Electric Dryer</div>
+        <div class="sub-label" data-key="s3_p8_sub">Efficient electric drying</div>
+      </div>
+    </div>
+    <div class="callout callout-green" data-key="s3_callout">✓ Blacktech Solutions handles everything — install, permits, and ComEd paperwork</div>
+    <div class="disclaimer" data-key="disclaimer"></div>
+  </div>
+
+  <!-- SLIDE 3: REBATES & SAVINGS -->
+  <div class="slide" data-slide="3">
+    <div class="tag" data-key="tag">⚡ DERRELL BLACK · BLACKTECH SOLUTIONS CORP</div>
+    <h2 data-key="s4_heading">Rebates that pay you back</h2>
+    <p class="sub" data-key="s4_sub">ComEd's electrification rebates can cover a large portion — sometimes all — of your upgrade cost.</p>
+    <div class="sav-grid">
+      <div class="sav-card sc-blue">
+        <div class="sav-icon">⚡</div>
+        <div class="sav-title" data-key="s4_r1_title">Panel Upgrade</div>
+        <div class="sav-amount">$0–$2,500</div>
+        <div class="sav-desc" data-key="s4_r1_desc">Rebate + federal tax credit available</div>
+      </div>
+      <div class="sav-card">
+        <div class="sav-icon">🌡️</div>
+        <div class="sav-title" data-key="s4_r2_title">Heat Pump HVAC</div>
+        <div class="sav-amount">$6,500–$8,000+</div>
+        <div class="sav-desc" data-key="s4_r2_desc">ComEd rebate + federal 25C credit</div>
+      </div>
+      <div class="sav-card sc-orange">
+        <div class="sav-icon">💧</div>
+        <div class="sav-title" data-key="s4_r3_title">Heat Pump Water Heater</div>
+        <div class="sav-amount">$500–$1,500</div>
+        <div class="sav-desc" data-key="s4_r3_desc">Rebate covers unit + install portion</div>
+      </div>
+      <div class="sav-card sc-orange">
+        <div class="sav-icon">🍳</div>
+        <div class="sav-title" data-key="s4_r4_title">Induction Stove</div>
+        <div class="sav-amount">$500–$1,500</div>
+        <div class="sav-desc" data-key="s4_r4_desc">Rebate + federal credit available</div>
+      </div>
+      <div class="sav-card sc-yellow">
+        <div class="sav-icon">🌀</div>
+        <div class="sav-title" data-key="s4_r5_title">Electric Dryer</div>
+        <div class="sav-amount">$500–$1,000</div>
+        <div class="sav-desc" data-key="s4_r5_desc">Rebate + federal credit available</div>
+      </div>
+    </div>
+    <div class="callout callout-orange" data-key="s4_callout">💰 Many homeowners pay $0 out of pocket after rebates and credits are stacked.</div>
+    <div class="disclaimer" data-key="disclaimer"></div>
+  </div>
+
+  <!-- SLIDE 4: ADDITIONAL SERVICES -->
+  <div class="slide" data-slide="4">
+    <div class="tag" data-key="tag">⚡ DERRELL BLACK · BLACKTECH SOLUTIONS CORP</div>
+    <h2 data-key="s3b_heading">Additional services</h2>
+    <p class="sub" data-key="s3b_sub">Beyond the core program — stack these for even bigger savings.</p>
+    <div class="product-grid">
+      <div class="product-card pc-green">
+        <div class="icon">🔌</div>
+        <div class="label" data-key="s3b_p1_label">Charging Station</div>
+        <div class="sub-label" data-key="s3b_p1_sub">Level 2 EV charger install</div>
+      </div>
+      <div class="product-card pc-yellow">
+        <div class="icon">☀️</div>
+        <div class="label" data-key="s3b_p2_label">Rooftop Solar</div>
+        <div class="sub-label" data-key="s3b_p2_sub">Generate your own power</div>
+      </div>
+      <div class="product-card pc-blue">
+        <div class="icon">🔋</div>
+        <div class="label" data-key="s3b_p3_label">Battery Backup</div>
+        <div class="sub-label" data-key="s3b_p3_sub">Outage protection + savings</div>
+      </div>
+    </div>
+    <div class="callout callout-blue" data-key="s3b_callout">⚡ These services stack with ComEd rebates for maximum energy independence</div>
+    <div class="disclaimer" data-key="disclaimer"></div>
+  </div>
+
+  <!-- SLIDE 5: THE ASSESSMENT PROCESS -->
+  <div class="slide" data-slide="5">
+    <div class="tag" data-key="tag">⚡ DERRELL BLACK · BLACKTECH SOLUTIONS CORP</div>
+    <h2 data-key="s5_heading">The process — simple and free</h2>
+    <p class="sub" data-key="s5_sub">From first call to finished install in four steps.</p>
+    <div class="step-grid">
+      <div class="step-row">
+        <div class="step-num">1</div>
+        <div class="step-content" data-key="s5_step1"><b>Free Assessment</b> — We visit your home, check your panel, appliances, and insulation. No cost, no obligation.</div>
+      </div>
+      <div class="step-row">
+        <div class="step-num">2</div>
+        <div class="step-content" data-key="s5_step2"><b>Custom Plan</b> — We map out exactly what upgrades your home qualifies for and what rebates apply.</div>
+      </div>
+      <div class="step-row">
+        <div class="step-num">3</div>
+        <div class="step-content" data-key="s5_step3"><b>We Handle Paperwork</b> — Permits, ComEd rebate forms, tax credit docs — all filed by Blacktech Solutions.</div>
+      </div>
+      <div class="step-row">
+        <div class="step-num">4</div>
+        <div class="step-content" data-key="s5_step4"><b>Professional Install</b> — Licensed electricians install everything. Clean, code-compliant, inspected.</div>
+      </div>
+    </div>
+    <div class="callout callout-blue" data-key="s5_callout">📋 Typical timeline: 2–4 weeks from assessment to completed install</div>
+    <div class="disclaimer" data-key="disclaimer"></div>
+  </div>
+
+  <!-- SLIDE 6: WHY BLACKTECH -->
+  <div class="slide" data-slide="6">
+    <div class="tag" data-key="tag">⚡ DERRELL BLACK · BLACKTECH SOLUTIONS CORP</div>
+    <h2 data-key="s6_heading">Why Blacktech Solutions?</h2>
+    <p class="sub" data-key="s6_sub">A licensed electrical contractor who knows the ComEd program inside and out.</p>
+    <div class="pills">
+      <span class="pill" data-key="s6_p1">Licensed & Insured</span>
+      <span class="pill pill-green" data-key="s6_p2">EESP Certified</span>
+      <span class="pill" data-key="s6_p3">EV Charger Certified</span>
+      <span class="pill pill-green" data-key="s6_p4">Distributed Gen Certified</span>
+      <span class="pill pill-orange" data-key="s6_p5">Rebate Paperwork Handled</span>
+      <span class="pill" data-key="s6_p6">Chicagoland Local</span>
+    </div>
+    <div class="card card-blue" style="text-align:left;max-width:560px">
+      <h3 style="color:var(--blue);margin-bottom:10px" data-key="s6_cert_heading">Our Certifications</h3>
+      <p data-key="s6_cert_p1"><b>ICC EESP</b> — Energy Efficiency Service Provider (authorized to do ComEd program work)</p>
+      <p data-key="s6_cert_p2"><b>ICC EV</b> — Electric Vehicle charging station installation</p>
+      <p data-key="s6_cert_p3"><b>ICC DG</b> — Distributed Generation (solar + battery interconnection)</p>
+    </div>
+    <div class="callout callout-green" data-key="s6_callout">✓ We're not just installers — we're program experts who maximize your rebates</div>
+    <div class="disclaimer" data-key="disclaimer"></div>
+  </div>
+
+  <!-- SLIDE 7: GET STARTED -->
+  <div class="slide" data-slide="7">
+    <div class="tag" data-key="tag">⚡ DERRELL BLACK · BLACKTECH SOLUTIONS CORP</div>
+    <h2 style="color:var(--blue)" data-key="s7_headline">Ready to electrify your home?</h2>
+    <p data-key="s7_p1">Get your free assessment today. We'll tell you exactly what upgrades your home qualifies for and how much you can save.</p>
+    <div class="card card-blue" style="text-align:center;max-width:560px">
+      <div style="font-size:1.2rem;font-weight:800;margin-bottom:12px;color:var(--blue)" data-key="s7_cta">Call or text to schedule your free walkthrough</div>
+      <p style="font-size:1rem;margin-bottom:16px"><b style="color:var(--green)">📞 312-965-2782</b></p>
+      <p style="font-size:.85rem;color:var(--text-dim);margin-bottom:16px" data-key="s7_hours">Mon–Fri 7AM–6PM · Sat 8AM–2PM</p>
+      <button class="btn btn-blue" onclick="window.open('https://comed.blacktechsolutionscorp.com','_blank')" data-key="s7_btn">📋 SIGN UP ONLINE →</button>
+    </div>
+    <p class="sub" data-key="s7_p2">No cost. No obligation. Just answers about how to cut your energy bills and modernize your home.</p>
+    <div class="contact">
+      <b>Derrell Black</b> · Licensed Electrician · Blacktech Solutions Corp<br>
+      <a href="mailto:leads@blacktechsolutionscorp.com">leads@blacktechsolutionscorp.com</a> · <a href="https://blacktechsolutionscorp.com">blacktechsolutionscorp.com</a>
+    </div>
+    <div class="disclaimer" data-key="disclaimer"></div>
+  </div>
+
+  </div><!-- /slides -->
+
+  <div class="dots" id="dots"></div>
+
+  <div class="controls">
+    <button class="play-btn" id="playBtn" onclick="togglePlay()" data-key="ctrl_play">▶ Play</button>
+    <select id="langSelect" onchange="changeLanguage(this.value)">
+      <option value="en">🇺🇸 English</option>
+      <option value="es">🇪🇸 Español</option>
+    </select>
+    <button id="voiceBtn" onclick="toggleVoice()" data-key="ctrl_voice">🔊 Voice On</button>
+    <button onclick="resetSlides()" data-key="ctrl_reset">↺ Reset</button>
+    <button onclick="sharePresentation()" style="background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;border:none" data-key="ctrl_share">📤 Share</button>
+    <a class="cta-btn" href="https://comed.blacktechsolutionscorp.com" target="_blank" style="padding:8px 16px;border-radius:8px;font-size:.82rem;font-weight:600" data-key="ctrl_cta">⚡ Free Assessment</a>
+  </div>
+</div>
+
+<script>
+// ── State ──
+let currentSlide=0, totalSlides=8, playing=false, playTimer=null, voiceOn=true, lang='en';
+const DISCLAIMER="Blacktech Solutions Corp is a licensed electrical contractor (ICC EESP, EV, DG). This presentation describes the ComEd Electrification Program. Rebate amounts and eligibility are set by ComEd and government agencies and may change. Figures shown are illustrative estimates. Contact us for a personalized assessment.";
+
+// ── Translations ──
+const I18N={
+  en:{
+    tag:"⚡ DERRELL BLACK · BLACKTECH SOLUTIONS CORP",
+    disclaimer:DISCLAIMER,
+    s1_headline:"Upgrade your home. ComEd pays you to do it.",
+    s1_sub:"The ComEd Electrification Program turns your gas appliances into clean electric ones — with rebates that cover most or all of the cost.",
+    s1_btn:"▶ SEE HOW IT WORKS",
+    s2_headline:"What is home electrification?",
+    s2_p1:"It means replacing gas-powered appliances — your furnace, water heater, stove, dryer — with high-efficiency electric ones.",
+    s2_p2:"ComEd wants more homes on electric power because it's cleaner, more efficient, and reduces strain on the gas grid during deep freezes.",
+    s2_callout:"💡 ComEd offers rebates and incentives that make switching nearly free.",
+    s2_p3:"You get a modernized home, lower energy bills, and no more gas bills at all — all coordinated by a licensed electrician who handles the paperwork.",
+    s3_heading:"What's included in the program",
+    s3_sub:"Six upgrades that transform your home from gas to electric.",
+    s3_p1_label:"Panel Upgrade",s3_p1_sub:"Modern electrical panel",
+    s3_p2_label:"Heat Pump",s3_p2_sub:"Heating + cooling in one",
+    s3_p3_label:"Water Heater",s3_p3_sub:"Electric heat pump unit",
+    s3_p4_label:"Weatherization",s3_p4_sub:"Seal + insulate",
+    s3_p7_label:"Induction Stove",s3_p7_sub:"Clean, fast, precise cooking",
+    s3_p8_label:"Electric Dryer",s3_p8_sub:"Efficient electric drying",
+    s3_callout:"✓ Blacktech Solutions handles everything — install, permits, and ComEd paperwork",
+    s3b_heading:"Additional services",
+    s3b_sub:"Beyond the core program — stack these for even bigger savings.",
+    s3b_p1_label:"Charging Station",s3b_p1_sub:"Level 2 EV charger install",
+    s3b_p2_label:"Rooftop Solar",s3b_p2_sub:"Generate your own power",
+    s3b_p3_label:"Battery Backup",s3b_p3_sub:"Outage protection + savings",
+    s3b_callout:"⚡ These services stack with ComEd rebates for maximum energy independence",
+    s4_heading:"Rebates that pay you back",
+    s4_sub:"ComEd's electrification rebates can cover a large portion — sometimes all — of your upgrade cost.",
+    s4_r1_title:"Panel Upgrade",s4_r1_desc:"Rebate + federal tax credit available",
+    s4_r2_title:"Heat Pump HVAC",s4_r2_desc:"ComEd rebate + federal 25C credit",
+    s4_r3_title:"Heat Pump Water Heater",s4_r3_desc:"Rebate covers unit + install portion",
+    s4_r4_title:"Induction Stove",s4_r4_desc:"Rebate + federal credit available",
+    s4_r5_title:"Electric Dryer",s4_r5_desc:"Rebate + federal credit available",
+    s4_callout:"💰 Many homeowners pay $0 out of pocket after rebates and credits are stacked.",
+    s5_heading:"The process — simple and free",
+    s5_sub:"From first call to finished install in four steps.",
+    s5_step1:"**Free Assessment** — We visit your home, check your panel, appliances, and insulation. No cost, no obligation.",
+    s5_step2:"**Custom Plan** — We map out exactly what upgrades your home qualifies for and what rebates apply.",
+    s5_step3:"**We Handle Paperwork** — Permits, ComEd rebate forms, tax credit docs — all filed by Blacktech Solutions.",
+    s5_step4:"**Professional Install** — Licensed electricians install everything. Clean, code-compliant, inspected.",
+    s5_callout:"📋 Typical timeline: 2–4 weeks from assessment to completed install",
+    s6_heading:"Why Blacktech Solutions?",
+    s6_sub:"A licensed electrical contractor who knows the ComEd program inside and out.",
+    s6_p1:"Licensed & Insured",s6_p2:"EESP Certified",s6_p3:"EV Charger Certified",s6_p4:"Distributed Gen Certified",s6_p5:"Rebate Paperwork Handled",s6_p6:"Chicagoland Local",
+    s6_cert_heading:"Our Certifications",
+    s6_cert_p1:"ICC EESP — Energy Efficiency Service Provider (authorized to do ComEd program work)",
+    s6_cert_p2:"ICC EV — Electric Vehicle charging station installation",
+    s6_cert_p3:"ICC DG — Distributed Generation (solar + battery interconnection)",
+    s6_callout:"✓ We're not just installers — we're program experts who maximize your rebates",
+    s7_headline:"Ready to electrify your home?",
+    s7_p1:"Get your free assessment today. We'll tell you exactly what upgrades your home qualifies for and how much you can save.",
+    s7_cta:"Call or text to schedule your free walkthrough",
+    s7_hours:"Mon–Fri 7AM–6PM · Sat 8AM–2PM",
+    s7_btn:"📋 SIGN UP ONLINE →",
+    s7_p2:"No cost. No obligation. Just answers about how to cut your energy bills and modernize your home.",
+    ctrl_play:"▶ Play",ctrl_voice:"🔊 Voice On",ctrl_reset:"↺ Reset",ctrl_share:"📤 Share",ctrl_cta:"⚡ Free Assessment",
+    voice_on:"🔊 Voice On",voice_off:"🔊 Voice Off",play:"▶ Play",pause:"⏸ Pause",
+    share_title:"ComEd Electrification — Get paid to upgrade your home",
+    share_text:"ComEd pays rebates to convert gas appliances to electric. Free assessment from a licensed EESP contractor.",
+    share_copied:"✅ Link copied!"
+  },
+  es:{
+    tag:"⚡ DERRELL BLACK · BLACKTECH SOLUTIONS CORP",
+    disclaimer:"Blacktech Solutions Corp es un contratista eléctrico licenciado (ICC EESP, EV, DG). Esta presentación describe el Programa de Electrificación de ComEd. Los montos de reembolso y elegibilidad son determinados por ComEd y agencias gubernamentales y pueden cambiar. Las cifras mostradas son estimados ilustrativos. Contáctenos para una evaluación personalizada.",
+    s1_headline:"Mejora tu hogar. ComEd te paga por hacerlo.",
+    s1_sub:"El Programa de Electrificación de ComEd convierte tus aparatos de gas en eléctricos limpios — con reembolsos que cubren la mayor parte o todo el costo.",
+    s1_btn:"▶ VER CÓMO FUNCIONA",
+    s2_headline:"¿Qué es la electrificación del hogar?",
+    s2_p1:"Significa reemplazar aparatos de gas — tu calentador, calentador de agua, estufa, secadora — con aparatos eléctricos de alta eficiencia.",
+    s2_p2:"ComEd quiere más hogares en energía eléctrica porque es más limpia, más eficiente y reduce la presión en la red de gas durante las heladas.",
+    s2_callout:"💡 ComEd ofrece reembolsos e incentivos que hacen el cambio casi gratuito.",
+    s2_p3:"Obtienes un hogar modernizado, facturas de energía más bajas y nada más de facturas de gas — todo coordinado por un electricista licenciado que maneja el papeleo.",
+    s3_heading:"Qué incluye el programa",
+    s3_sub:"Seis mejoras que transforman tu hogar de gas a eléctrico.",
+    s3_p1_label:"Panel Eléctrico",s3_p1_sub:"Panel moderno",
+    s3_p2_label:"Bomba de Calor",s3_p2_sub:"Calefacción + enfriamiento",
+    s3_p3_label:"Calentador de Agua",s3_p3_sub:"Unidad eléctrica eficiente",
+    s3_p4_label:"Aislamiento",s3_p4_sub:"Sellado + aislación",
+    s3_p7_label:"Estufa de Inducción",s3_p7_sub:"Cocción limpia y rápida",
+    s3_p8_label:"Secadora Eléctrica",s3_p8_sub:"Secado eléctrico eficiente",
+    s3_callout:"✓ Blacktech Solutions maneja todo — instalación, permisos y papeleo de ComEd",
+    s3b_heading:"Servicios adicionales",
+    s3b_sub:"Más allá del programa principal — combinelos para mayores ahorros.",
+    s3b_p1_label:"Estación de Carga",s3b_p1_sub:"Cargador EV nivel 2",
+    s3b_p2_label:"Paneles Solares",s3b_p2_sub:"Genere su propia energía",
+    s3b_p3_label:"Batería de Respaldo",s3b_p3_sub:"Protección + ahorros",
+    s3b_callout:"⚡ Estos servicios se combinan con reembolsos de ComEd para máxima independencia energética",
+    s4_heading:"Reembolsos que te pagan de vuelta",
+    s4_sub:"Los reembolsos de electrificación de ComEd pueden cubrir gran parte — a veces todo — del costo de tu mejora.",
+    s4_r1_title:"Panel Eléctrico",s4_r1_desc:"Reembolso + crédito fiscal federal",
+    s4_r2_title:"Bomba de Calor HVAC",s4_r2_desc:"Reembolso ComEd + crédito federal 25C",
+    s4_r3_title:"Calentador de Agua",s4_r3_desc:"Reembolso cubre unidad + instalación",
+    s4_r4_title:"Estufa de Inducción",s4_r4_desc:"Reembolso + crédito federal",
+    s4_r5_title:"Secadora Eléctrica",s4_r5_desc:"Reembolso + crédito federal",
+    s4_callout:"💰 Muchos propietarios pagan $0 de su bolsillo después de aplicar todos los reembolsos y créditos.",
+    s5_heading:"El proceso — simple y gratis",
+    s5_sub:"De la primera llamada a la instalación en cuatro pasos.",
+    s5_step1:"**Evaluación Gratis** — Visitamos tu hogar, revisamos tu panel, aparatos y aislamiento. Sin costo, sin obligación.",
+    s5_step2:"**Plan Personalizado** — Mapeamos exactamente qué mejoras calificas y qué reembolsos aplican.",
+    s5_step3:"**Manejamos el Papeleo** — Permisos, formularios de ComEd, documentos de créditos — todo por Blacktech Solutions.",
+    s5_step4:"**Instalación Profesional** — Electricistas licenciados instalan todo. Limpio, conforme al código, inspeccionado.",
+    s5_callout:"📋 Tiempo típico: 2–4 semanas de evaluación a instalación completada",
+    s6_heading:"¿Por qué Blacktech Solutions?",
+    s6_sub:"Un contratista eléctrico licenciado que conoce el programa de ComEd de adentro a afuera.",
+    s6_p1:"Licenciado y Asegurado",s6_p2:"Certificado EESP",s6_p3:"Certificado EV",s6_p4:"Certificado DG",s6_p5:"Papeleo de Reembolso",s6_p6:"Local de Chicagoland",
+    s6_cert_heading:"Nuestras Certificaciones",
+    s6_cert_p1:"ICC EESP — Proveedor de Servicios de Eficiencia Energética (autorizado para trabajo del programa ComEd)",
+    s6_cert_p2:"ICC EV — Instalación de estaciones de carga de vehículos eléctricos",
+    s6_cert_p3:"ICC DG — Generación Distribuida (interconexión solar + batería)",
+    s6_callout:"✓ No solo somos instaladores — somos expertos en el programa que maximizan tus reembolsos",
+    s7_headline:"¿Listo para electrificar tu hogar?",
+    s7_p1:"Obtén tu evaluación gratis hoy. Te diremos exactamente qué mejoras calificas y cuánto puedes ahorrar.",
+    s7_cta:"Llama o envía un texto para programar tu evaluación gratis",
+    s7_hours:"Lun–Vie 7AM–6PM · Sáb 8AM–2PM",
+    s7_btn:"📋 REGÍSTRATE EN LÍNEA →",
+    s7_p2:"Sin costo. Sin obligación. Solo respuestas sobre cómo bajar tus facturas y modernizar tu hogar.",
+    ctrl_play:"▶ Reproducir",ctrl_voice:"🔊 Voz Off",ctrl_reset:"↺ Reiniciar",ctrl_share:"📤 Compartir",ctrl_cta:"⚡ Evaluación Gratis",
+    voice_on:"🔊 Voz On",voice_off:"🔊 Voz Off",play:"▶ Reproducir",pause:"⏸ Pausa",
+    share_title:"Electrificación ComEd — Te pagan por mejorar tu hogar",
+    share_text:"ComEd ofrece reembolsos para convertir aparatos de gas a eléctricos. Evaluación gratis de un contratista EESP.",
+    share_copied:"✅ ¡Enlace copiado!"
+  }
+};
+
+// ── Narration text per slide ──
+const NARRATION={
+  en:[
+    // Slide 1: Cover
+    "Let me tell you about a program that could upgrade your home and ComEd actually pays you to do it. I'm Derrell Black, a licensed electrician with Blacktech Solutions Corp. Over the next few minutes, I'll walk you through the ComEd Electrification Program — what it is, what's included, how much you can save, and how to get started. Hit play and let's break it down.",
+    // Slide 2: What is electrification
+    "So what is home electrification? Simple — it means replacing your gas-powered appliances with high-efficiency electric ones. Your furnace, your water heater, your stove, your dryer — all running on clean electricity instead of gas. Why does ComEd want this? Because electric power is cleaner, more efficient, and it reduces the strain on the gas grid during those brutal Chicago deep freezes. And here's the best part — ComEd offers rebates and incentives that make switching nearly free. You get a modernized home, lower energy bills, no more gas bills at all, and a licensed electrician handles all the paperwork.",
+    // Slide 3: What's included
+    "Let me walk you through what's actually included in the program. Six key upgrades. First, a panel upgrade — we bring your electrical panel up to modern standards so it can handle the new electric loads. Second, an electric heat pump water heater. Third, a heat pump — this is your heating and cooling in one efficient unit. Fourth, an induction electric stove — clean, fast, precise cooking with no gas. Fifth, weatherization — sealing and insulating your home so the new systems work at peak efficiency. And sixth, an electric dryer. The key thing is — Blacktech Solutions handles everything. Installation, permits, and all the ComEd paperwork. You don't deal with any of it.",
+    // Slide 3: Rebates
+    "Now let's talk money. The rebates are where this gets really exciting. Panel upgrades can get you zero to twenty-five hundred dollars in rebates plus a federal tax credit. Heat pump HVAC systems can bring six thousand five hundred to eight thousand dollars or more in ComEd rebates plus the federal 25C tax credit. Heat pump water heaters — five hundred to fifteen hundred in rebates. Induction stoves — five hundred to fifteen hundred with rebates and federal credits. And electric dryers — five hundred to a thousand dollars in rebates. When you stack all these rebates and credits together, many homeowners pay zero dollars out of pocket. Zero. That's the power of this program.",
+    // Slide 4: Additional Services
+    "And there's more. We also offer additional services beyond the core program. First, EV charging stations — if you drive electric or plan to, we install Level 2 chargers with ComEd rebate eligibility. Second, rooftop solar — generate your own power and slash your electric bill even further. Third, battery backup systems — store energy for outages or shift your usage to off-peak hours. These add-ons stack with the electrification program for even bigger savings and energy independence.",
+    // Slide 5: The process
+    "So how does it work? Four simple steps. Step one — free assessment. We come to your home, check your panel, your appliances, your insulation. No cost, no obligation. Step two — custom plan. We map out exactly what upgrades your home qualifies for and which rebates apply. Step three — we handle all the paperwork. Permits, ComEd rebate forms, tax credit documents — all filed by Blacktech Solutions. Step four — professional installation. Our licensed electricians install everything, clean, code-compliant, and inspected. Typical timeline is two to four weeks from assessment to completed install.",
+    // Slide 6: Why Blacktech
+    "Now why should you work with Blacktech Solutions? Because we're not just installers — we're program experts. We're licensed and insured. We hold the ICC EESP certification, which means we're authorized Energy Efficiency Service Providers for ComEd's program. We're ICC EV certified for electric vehicle charging stations, and ICC DG certified for distributed generation — solar and battery interconnection. We handle all the rebate paperwork so you get the maximum back. And we're local — right here in Chicagoland. We know the ComEd program inside and out, and we make sure you get every dollar you qualify for.",
+    // Slide 7: Get started
+    "So here's what I want you to do. Get your free assessment today. Call or text me at 312-965-2782. We'll come out, look at your home, and tell you exactly what upgrades you qualify for and how much you can save. No cost, no obligation — just real answers about how to cut your energy bills and modernize your home. You can also sign up online at comed.blacktechsolutionscorp.com. I'm Derrell Black with Blacktech Solutions Corp, and I look forward to helping you electrify your home."
+  ],
+  es:[
+    "Déjenme contarles sobre un programa que puede mejorar su hogar y donde ComEd les paga por hacerlo. Soy Derrell Black, electricista licenciado con Blacktech Solutions Corp. En los próximos minutos, les explicaré el Programa de Electrificación de ComEd — qué es, qué incluye, cuánto pueden ahorrar y cómo empezar. Pulsen reproducir y vamos a desglosarlo.",
+    "¿Qué es la electrificación del hogar? Sencillo — significa reemplazar sus aparatos de gas con aparatos eléctricos de alta eficiencia. Su calentador, calentador de agua, estufa, secadora — todo funcionando con electricidad limpia en lugar de gas. ¿Por qué quiere ComEd esto? Porque la energía eléctrica es más limpia, más eficiente y reduce la presión en la red de gas durante las heladas de Chicago. Y lo mejor — ComEd ofrece reembolsos e incentivos que hacen el cambio casi gratuito. Obtienen un hogar modernizado, facturas más bajas, nada más de facturas de gas, y un electricista licenciado maneja todo el papeleo.",
+    "Déjenme explicar qué incluye el programa. Seis mejoras clave. Primero, mejora del panel eléctrico — modernizamos su panel para manejar las nuevas cargas. Segundo, calentador de agua eléctrico. Tercero, bomba de calor — calefacción y enfriamiento en una unidad eficiente. Cuarto, estufa de inducción eléctrica — cocción limpia y rápida sin gas. Quinto, aislamiento — sellar y aislar su hogar. Y sexto, secadora eléctrica. Lo importante — Blacktech Solutions maneja todo. Instalación, permisos y todo el papeleo de ComEd.",
+    "Hablemos de dinero. Los reembolsos son donde esto se pone emocionante. Mejoras de panel pueden dar de cero a dos mil quinientos dólares en reembolsos más crédito fiscal federal. Bombas de calor pueden dar de seis mil quinientos a ocho mil dólares o más en reembolsos de ComEd más el crédito federal 25C. Calentadores de agua — quinientos a mil quinientos. Estufas de inducción — quinientos a mil quinientos con reembolsos y créditos federales. Y secadoras eléctricas — quinientos a mil dólares en reembolsos. Cuando combinan todos estos reembolsos y créditos, muchos propietarios pagan cero dólares de su bolsillo. Cero. Ese es el poder de este programa.",
+    "Y hay más. También ofrecemos servicios adicionales más allá del programa principal. Primero, estaciones de carga para vehículos eléctricos — si conduce eléctrico o planea hacerlo, instalamos cargadores nivel dos con elegibilidad para reembolsos de ComEd. Segundo, paneles solares en el techo — genere su propia energía y reduzca aún más su factura eléctrica. Tercero, sistemas de batería de respaldo — almacene energía para cortes o mueva su uso a horas de menor demanda. Estos servicios adicionales se combinan con el programa de electrificación para ahorros aún mayores e independencia energética.",
+    "¿Cómo funciona? Cuatro pasos sencillos. Paso uno — evaluación gratis. Visitamos su hogar, revisamos panel, aparatos, aislamiento. Sin costo, sin obligación. Paso dos — plan personalizado. Mapeamos exactamente qué mejoras califican y qué reembolsos aplican. Paso tres — manejamos todo el papeleo. Permisos, formularios de ComEd, documentos de créditos — todo por Blacktech Solutions. Paso cuatro — instalación profesional. Nuestros electricistas licenciados instalan todo, limpio, conforme al código e inspeccionado. Tiempo típico de dos a cuatro semanas.",
+    "¿Por qué trabajar con Blacktech Solutions? Porque no solo somos instaladores — somos expertos en el programa. Estamos licenciados y asegurados. Tenemos la certificación ICC EESP, que significa que somos Proveedores de Servicios de Eficiencia Energética autorizados para el programa de ComEd. Certificación ICC EV para estaciones de carga de vehículos eléctricos, e ICC DG para generación distribuida — interconexión solar y batería. Manejamos todo el papeleo de reembolsos para que obtengan el máximo. Y somos locales, aquí en Chicagoland. Conocemos el programa de ComEd de adentro a afuera.",
+    "Esto es lo que quiero que hagan. Obtengan su evaluación gratis hoy. Llámenme o envíen un texto al 312-965-2782. Vamos a su hogar, les decimos exactamente qué mejoras califican y cuánto pueden ahorrar. Sin costo, sin obligación — solo respuestas reales sobre cómo bajar sus facturas y modernizar su hogar. También pueden registrarse en línea en comed.blacktechsolutionscorp.com. Soy Derrell Black con Blacktech Solutions Corp, y espero ayudarles a electrificar su hogar."
+  ]
+};
+
+// ── Init ──
+function init(){
+  buildDots();
+  applyLang();
+}
+function buildDots(){
+  const d=document.getElementById('dots');
+  d.innerHTML='';
+  for(let i=0;i<totalSlides;i++){
+    const dot=document.createElement('div');
+    dot.className='dot'+(i===0?' active':'');
+    dot.onclick=()=>goToSlide(i);
+    d.appendChild(dot);
+  }
+}
+function updateDots(){
+  document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('active',i===currentSlide));
+}
+function goToSlide(idx){
+  if(idx<0)idx=totalSlides-1;
+  if(idx>=totalSlides)idx=0;
+  const slides=document.querySelectorAll('.slide');
+  slides.forEach((s,i)=>{
+    s.classList.remove('active','prev');
+    if(i===idx)s.classList.add('active');
+    else if(i<idx)s.classList.add('prev');
+  });
+  currentSlide=idx;
+  updateDots();
+  if(voiceOn)speakSlide();
+}
+function nextSlide(){goToSlide(currentSlide+1)}
+function prevSlide(){goToSlide(currentSlide-1)}
+function resetSlides(){
+  if(playing)togglePlay();
+  goToSlide(0);
+}
+function togglePlay(){
+  playing=!playing;
+  const btn=document.getElementById('playBtn');
+  if(playing){
+    btn.textContent=I18N[lang].pause;
+    btn.classList.remove('play-btn');
+    btn.style.background='rgba(255,255,255,.12)';
+    if(voiceOn){
+      speakSlide();
+    }else{
+      playTimer=setInterval(()=>nextSlide(),14000);
+    }
+  }else{
+    btn.textContent=I18N[lang].play;
+    btn.classList.add('play-btn');
+    btn.style.background='';
+    clearInterval(playTimer);
+    clearTimeout(voiceAdvanceTimer);
+    if(narrationAudio){narrationAudio.pause();narrationAudio.currentTime=0;}
+  }
+}
+function toggleVoice(){
+  voiceOn=!voiceOn;
+  const btn=document.getElementById('voiceBtn');
+  if(voiceOn){
+    btn.textContent=I18N[lang].voice_on;
+    btn.classList.add('voice-on');
+    speakSlide();
+  }else{
+    btn.textContent=I18N[lang].voice_off;
+    btn.classList.remove('voice-on');
+    if(narrationAudio){narrationAudio.pause();narrationAudio.currentTime=0;}
+  }
+}
+// ── Voice: pre-recorded TTS audio ──
+let narrationAudio=null, voiceAdvanceTimer=null;
+function speakSlide(){
+  const prefix=lang==='es'?'es':'en';
+  const src=`audio/comed_${prefix}_slide${currentSlide}.mp3`;
+  if(!narrationAudio){
+    narrationAudio=new Audio();
+    narrationAudio.preload='auto';
+  }
+  narrationAudio.pause();
+  narrationAudio.currentTime=0;
+  clearTimeout(voiceAdvanceTimer);
+  let advanced=false;
+  const doAdvance=()=>{
+    if(advanced)return;
+    advanced=true;
+    if(playing&&currentSlide<totalSlides-1){
+      setTimeout(()=>{if(playing)nextSlide();},1500);
+    }
+  };
+  narrationAudio.onended=doAdvance;
+  narrationAudio.onerror=()=>{doAdvance();};
+  narrationAudio.src=src;
+  narrationAudio.play().catch(()=>{
+    voiceAdvanceTimer=setTimeout(doAdvance,5000);
+  });
+}
+function changeLanguage(l){
+  lang=l;
+  applyLang();
+  if(voiceOn){
+    if(narrationAudio){narrationAudio.pause();narrationAudio.currentTime=0;}
+    speakSlide();
+  }
+}
+function applyLang(){
+  const t=I18N[lang];
+  document.querySelectorAll('[data-key]').forEach(el=>{
+    const key=el.getAttribute('data-key');
+    if(t[key]!==undefined){
+      // Handle **bold** markup in step content
+      const text=t[key];
+      if(text.includes('**')){
+        el.innerHTML=text.replace(/\*\*(.+?)\*\*/g,'<b>$1</b>');
+      }else{
+        el.textContent=text;
+      }
+    }
+  });
+  const pb=document.getElementById('playBtn');
+  pb.textContent=playing?t.pause:t.play;
+  const vb=document.getElementById('voiceBtn');
+  vb.textContent=voiceOn?t.voice_on:t.voice_off;
+}
+// ── Share ──
+function sharePresentation(){
+  const t=I18N[lang];
+  const url=window.location.href;
+  const shareData={title:t.share_title,text:t.share_text,url:url};
+  if(navigator.share){
+    navigator.share(shareData).catch(()=>{});
+  }else if(navigator.clipboard){
+    navigator.clipboard.writeText(url).then(()=>{
+      const btn=event.target;
+      const orig=btn.textContent;
+      btn.textContent=t.share_copied;
+      setTimeout(()=>{btn.textContent=orig;},2000);
+    });
+  }else{
+    window.prompt('Copy this link:',url);
+  }
+}
+// ── Keyboard ──
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'){nextSlide();e.preventDefault()}
+  else if(e.key==='ArrowLeft'){prevSlide();e.preventDefault()}
+  else if(e.key===' '){togglePlay();e.preventDefault()}
+});
+// ── Start ──
+init();
+</script>
+</body>
+</html>

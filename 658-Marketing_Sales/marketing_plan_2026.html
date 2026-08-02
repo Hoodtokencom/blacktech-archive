@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blacktech Solutions Corp — 2026 Marketing Plan</title>
+<style>
+  :root {
+    --bt-navy: #002244;
+    --bt-green: #69BE28;
+    --bt-orange: #f59e0b;
+    --bt-dark: #0a0a0f;
+    --bt-silver: #A5ACAF;
+    --bt-white: #ffffff;
+    --bt-card: #0d1628;
+    --bt-border: #1a2a40;
+    --bt-red: #ef4444;
+    --bt-yellow: #fbbf24;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bt-dark);
+    color: var(--bt-white);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.65;
+    padding: 0;
+  }
+  /* === COVER === */
+  .cover {
+    background: linear-gradient(135deg, #001122 0%, #002244 50%, #001a33 100%);
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    min-height: 100vh;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center; padding: 3rem 2rem; position: relative;
+  }
+  .cover::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, var(--bt-green), var(--bt-orange), var(--bt-green));
+  }
+  .cover-logo { width: 120px; height: auto; border-radius: 12px; margin-bottom: 1.5rem; }
+  .cover h1 { font-size: 2.8rem; font-weight: 900; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+  .cover h1 .green { color: var(--bt-green); }
+  .cover h1 .orange { color: var(--bt-orange); }
+  .cover .subtitle { font-size: 1.3rem; color: var(--bt-silver); margin-bottom: 0.4rem; }
+  .cover .tagline {
+    font-size: 1rem; color: var(--bt-green); text-transform: uppercase;
+    letter-spacing: 0.2em; margin-bottom: 2.5rem;
+  }
+  .cover-meta { display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; margin-bottom: 2rem; }
+  .cover-meta-item {
+    background: rgba(105,190,40,0.1); border: 1px solid var(--bt-green);
+    border-radius: 10px; padding: 0.7rem 1.5rem;
+  }
+  .cover-meta-item .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--bt-silver); }
+  .cover-meta-item .value { font-size: 1rem; font-weight: 700; color: var(--bt-white); }
+  .cover-footer { position: absolute; bottom: 1.5rem; left: 0; right: 0; font-size: 0.8rem; color: var(--bt-silver); }
+  .cover-footer span { color: var(--bt-green); }
+
+  /* === CONTENT WRAPPER === */
+  .content { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+
+  /* === TOC === */
+  .toc {
+    background: var(--bt-card); border: 1px solid var(--bt-border); border-radius: 12px;
+    padding: 2rem; margin-bottom: 2.5rem;
+  }
+  .toc h2 { color: var(--bt-green); font-size: 1.4rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .toc ol { list-style: none; counter-reset: toc; }
+  .toc ol li { counter-increment: toc; padding: 0.4rem 0; border-bottom: 1px solid var(--bt-border); font-size: 0.95rem; }
+  .toc ol li:last-child { border-bottom: none; }
+  .toc ol li::before { content: counter(toc) ". "; color: var(--bt-orange); font-weight: 700; margin-right: 0.5rem; }
+  .toc a { color: var(--bt-white); text-decoration: none; }
+  .toc a:hover { color: var(--bt-green); }
+
+  /* === SECTIONS === */
+  h2.section-heading {
+    font-size: 1.6rem; color: var(--bt-white); margin: 2.5rem 0 0.5rem;
+    padding-bottom: 0.5rem; border-bottom: 3px solid var(--bt-orange);
+    display: flex; align-items: center; gap: 0.6rem;
+  }
+  h2.section-heading .num {
+    background: var(--bt-orange); color: var(--bt-dark); border-radius: 8px;
+    padding: 0.15rem 0.6rem; font-size: 1.1rem; font-weight: 900;
+  }
+  h3.subheading {
+    font-size: 1.15rem; color: var(--bt-green); margin: 1.5rem 0 0.5rem;
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  p { margin-bottom: 0.8rem; color: #d0d4d8; }
+  ul { margin: 0.5rem 0 1rem 1.5rem; }
+  li { margin-bottom: 0.3rem; color: #d0d4d8; font-size: 0.93rem; }
+  li strong { color: var(--bt-white); }
+  .lead { font-size: 1.05rem; color: #e0e4e8; margin-bottom: 1.2rem; }
+
+  /* === CARDS === */
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.2rem; margin: 1rem 0; }
+  .platform-card {
+    background: var(--bt-card); border: 1px solid var(--bt-border); border-radius: 12px;
+    overflow: hidden; page-break-inside: avoid;
+  }
+  .platform-card .card-header {
+    background: var(--bt-navy); padding: 0.8rem 1rem;
+    display: flex; align-items: center; justify-content: space-between;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .platform-card .card-header .pname { font-weight: 700; font-size: 1.05rem; }
+  .platform-card .card-header .purl { font-size: 0.75rem; color: var(--bt-green); }
+  .priority-badge { font-size: 0.65rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .priority-high { background: var(--bt-red); color: #fff; }
+  .priority-med { background: var(--bt-orange); color: var(--bt-dark); }
+  .priority-low { background: var(--bt-silver); color: var(--bt-dark); }
+  .platform-card .card-body { padding: 1rem; }
+  .platform-card .field { margin-bottom: 0.7rem; }
+  .platform-card .field-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--bt-orange); font-weight: 700; margin-bottom: 0.2rem; }
+  .platform-card .field-value { font-size: 0.88rem; color: #d0d4d8; }
+  .platform-card .field-value .kw { display: inline-block; background: rgba(105,190,40,0.15); border: 1px solid var(--bt-green); color: var(--bt-green); border-radius: 4px; padding: 0.1rem 0.4rem; margin: 0.1rem 0.15rem; font-size: 0.78rem; }
+  .timeline-badge { display: inline-block; font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 4px; margin-right: 0.3rem; font-weight: 700; }
+  .t30 { background: rgba(105,190,40,0.2); color: var(--bt-green); }
+  .t60 { background: rgba(245,158,11,0.2); color: var(--bt-orange); }
+  .t90 { background: rgba(165,172,175,0.2); color: var(--bt-silver); }
+
+  /* === TABLE === */
+  table.action-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.88rem; }
+  table.action-table thead th {
+    background: var(--bt-navy); color: var(--bt-white); text-align: left;
+    padding: 0.6rem 0.8rem; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  table.action-table tbody td { padding: 0.6rem 0.8rem; border-bottom: 1px solid var(--bt-border); }
+  table.action-table tbody tr:nth-child(even) td { background: rgba(0,34,68,0.15); }
+  table.action-table .phase-cell { font-weight: 700; }
+  table.action-table .phase-30 { color: var(--bt-green); }
+  table.action-table .phase-60 { color: var(--bt-orange); }
+  table.action-table .phase-90 { color: var(--bt-silver); }
+
+  /* === KPI / BUDGET TABLES === */
+  table.data-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.88rem; }
+  table.data-table thead th {
+    background: var(--bt-navy); color: var(--bt-green); text-align: left;
+    padding: 0.6rem 0.8rem; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  table.data-table tbody td { padding: 0.55rem 0.8rem; border-bottom: 1px solid var(--bt-border); }
+  table.data-table tbody tr:nth-child(even) td { background: rgba(0,34,68,0.1); }
+
+  /* === CALLOUT === */
+  .callout {
+    background: var(--bt-card); border-left: 4px solid var(--bt-green);
+    border-radius: 0 10px 10px 0; padding: 1rem 1.2rem; margin: 1.5rem 0;
+  }
+  .callout.orange { border-left-color: var(--bt-orange); }
+  .callout strong { color: var(--bt-white); }
+  .callout .ctitle { font-weight: 700; color: var(--bt-green); margin-bottom: 0.3rem; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  .callout.orange .ctitle { color: var(--bt-orange); }
+
+  /* === FUNNEL === */
+  .funnel { display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin: 1.5rem 0; }
+  .funnel-step {
+    background: var(--bt-navy); border: 2px solid var(--bt-green); border-radius: 10px;
+    padding: 0.7rem 1rem; flex: 1; min-width: 130px; text-align: center;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .funnel-step .sname { font-weight: 700; color: var(--bt-green); font-size: 0.9rem; }
+  .funnel-step .sdesc { font-size: 0.72rem; color: var(--bt-silver); margin-top: 0.2rem; }
+  .funnel-arrow { color: var(--bt-orange); font-size: 1.5rem; font-weight: 900; }
+
+  /* === HEADER BAR === */
+  .page-header {
+    background: var(--bt-navy); padding: 1rem 2rem;
+    display: flex; align-items: center; gap: 1rem;
+    border-bottom: 3px solid var(--bt-green);
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .page-header img { height: 44px; border-radius: 6px; }
+  .page-header h1 { font-size: 1.2rem; font-weight: 700; }
+  .page-header h1 .green { color: var(--bt-green); }
+  .page-header .sub { font-size: 0.75rem; color: var(--bt-silver); text-transform: uppercase; letter-spacing: 0.08em; }
+
+  /* === FOOTER === */
+  .footer {
+    background: var(--bt-navy); padding: 1.5rem 2rem; text-align: center;
+    border-top: 3px solid var(--bt-green); margin-top: 2rem;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .footer .brand { color: var(--bt-silver); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; }
+  .footer .brand span { color: var(--bt-green); }
+  .footer .phone { color: var(--bt-orange); font-weight: 700; font-size: 1rem; margin-top: 0.4rem; }
+
+  @media (max-width: 600px) {
+    .cover h1 { font-size: 1.8rem; }
+    .funnel-step { min-width: 100px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== COVER ==================== -->
+<div class="cover">
+  <img src="file:///home/allenai/blacktech_brain/658-Marketing_Sales/blacktech_logo.jpg" class="cover-logo" alt="Blacktech Solutions Corp">
+  <h1><span class="green">Blacktech</span> Solutions Corp</h1>
+  <div class="subtitle">2026 Marketing &amp; Exposure Growth Plan</div>
+  <div class="tagline">Ten Platforms · One Ecosystem · Total Domination</div>
+  <div class="cover-meta">
+    <div class="cover-meta-item">
+      <div class="label">Prepared For</div>
+      <div class="value">Derrell Black, CEO</div>
+    </div>
+    <div class="cover-meta-item">
+      <div class="label">Date</div>
+      <div class="value">July 31, 2026</div>
+    </div>
+    <div class="cover-meta-item">
+      <div class="label">Phone</div>
+      <div class="value">312-965-2782</div>
+    </div>
+    <div class="cover-meta-item">
+      <div class="label">Platforms</div>
+      <div class="value">10 Properties</div>
+    </div>
+  </div>
+  <div class="cover-footer"><span>BLACKTECH</span> SOLUTIONS CORP · blacktechsolutionscorp.com · (312) 965-2782</div>
+</div>
+
+<!-- ==================== PAGE HEADER ==================== -->
+<div class="page-header">
+  <img src="file:///home/allenai/blacktech_brain/658-Marketing_Sales/blacktech_logo.jpg" alt="Blacktech">
+  <div>
+    <h1><span class="green">Blacktech</span> Solutions Corp — 2026 Marketing Plan</h1>
+    <div class="sub">Ten-Platform Exposure Growth Strategy</div>
+  </div>
+</div>
+
+<div class="content">
+
+<!-- ==================== TABLE OF CONTENTS ==================== -->
+<div class="toc">
+  <h2>Table of Contents</h2>
+  <ol>
+    <li><a href="#exec">Executive Summary</a></li>
+    <li><a href="#ecosystem">The Blacktech Ecosystem &amp; Content Funnel</a></li>
+    <li><a href="#platforms">Platform-by-Platform Growth Strategies</a></li>
+    <li><a href="#organic">Organic Growth Strategy</a></li>
+    <li><a href="#paid">Paid Advertising Strategy</a></li>
+    <li><a href="#partnerships">Partnerships &amp; Community Outreach</a></li>
+    <li><a href="#action">30/60/90 Day Action Plan</a></li>
+    <li><a href="#budget">Budget Estimate — Free vs Paid Tier</a></li>
+    <li><a href="#kpis">KPIs to Track Per Platform</a></li>
+  </ol>
+</div>
+
+<!-- ==================== EXEC SUMMARY ==================== -->
+<h2 class="section-heading" id="exec"><span class="num">1</span> Executive Summary</h2>
+<p class="lead">Blacktech Solutions Corp operates a ten-property digital ecosystem spanning contractor matching, search, education, video, crypto, community networking, energy enrollment, social media, and business organization. Each platform serves a distinct purpose but feeds into one unified funnel: <strong>educate → reward → connect → contract → save → repeat</strong>.</p>
+<p>This plan provides actionable, platform-specific SEO, content, and growth tactics for every property. The goal is maximum organic exposure supplemented by targeted paid campaigns, grassroots community partnerships, and a disciplined 30/60/90-day execution cadence.</p>
+
+<div class="callout">
+  <div class="ctitle">Core Thesis</div>
+  <strong>Own the search results for Black contractors, energy savings, and AI education in Chicago's south suburbs.</strong> Every platform must rank for its core keywords, cross-link to every other platform, and funnel users toward a conversion event — a course signup, a token reward, a contractor lead, a ComEd enrollment, or a network join.
+</div>
+
+<!-- ==================== ECOSYSTEM ==================== -->
+<h2 class="section-heading" id="ecosystem"><span class="num">2</span> The Blacktech Ecosystem &amp; Content Funnel</h2>
+<p class="lead">The ecosystem funnel is the backbone of every growth tactic in this plan. Users enter at any point and are guided through the full loop.</p>
+
+<div class="funnel">
+  <div class="funnel-step"><div class="sname">Academy</div><div class="sdesc">Free AI / energy courses</div></div>
+  <div class="funnel-arrow">→</div>
+  <div class="funnel-step"><div class="sname">HoodToken</div><div class="sdesc">Course rewards in HOOD</div></div>
+  <div class="funnel-arrow">→</div>
+  <div class="funnel-step"><div class="sname">HoodSearch / HBO</div><div class="sdesc">Find contractors &amp; businesses</div></div>
+  <div class="funnel-arrow">→</div>
+  <div class="funnel-step"><div class="sname">NextcallPro</div><div class="sdesc">Homeowner → contractor match</div></div>
+  <div class="funnel-arrow">→</div>
+  <div class="funnel-step"><div class="sname">ComEd Signup</div><div class="sdesc">Energy savings enrollment</div></div>
+  <div class="funnel-arrow">↻</div>
+  <div class="funnel-step"><div class="sname">Repeat</div><div class="sdesc">Next/SSBN community loop</div></div>
+</div>
+
+<div class="callout orange">
+  <div class="ctitle">How the Funnel Works in Practice</div>
+  <strong>Step 1:</strong> A homeowner finds a free Academy course on energy savings via Google search. <strong>Step 2:</strong> Completing the course earns HOOD tokens. <strong>Step 3:</strong> Token wallet page promotes HoodSearch to find a Black contractor. <strong>Step 4:</strong> HoodSearch lists NextcallPro contractors. <strong>Step 5:</strong> Homeowner submits a job through NextcallPro. <strong>Step 6:</strong> After the job, contractor enrolls homeowner in ComEd energy savings. <strong>Step 7:</strong> Homeowner joins Next/SSBN community. Repeat.
+</div>
+
+<!-- ==================== PLATFORMS ==================== -->
+<h2 class="section-heading" id="platforms"><span class="num">3</span> Platform-by-Platform Growth Strategies</h2>
+
+<!-- 1. Command Center -->
+<div class="card-grid">
+<div class="platform-card">
+  <div class="card-header">
+    <div><div class="pname">1. Command Center</div><div class="purl">blacktechsolutionscorp.com :8090</div></div>
+    <span class="priority-badge priority-high">High</span>
+  </div>
+  <div class="card-body">
+    <div class="field"><div class="field-label">Current State</div><div class="field-value">Central hub / landing page for all Blacktech operations. Acts as gateway to all sub-platforms and services. Port 8090.</div></div>
+    <div class="field"><div class="field-label">SEO Strategy</div><div class="field-value">
+      Target keywords: <span class="kw">Blacktech Solutions</span> <span class="kw">electrical contractor Dolton IL</span> <span class="kw">Chicago electrical contractor</span> <span class="kw">Black-owned electrical contractor</span><br>
+      Meta tags needed: LocalBusiness schema with NAP (name, address, phone), service area list (Dolton, South Suburbs, Chicagoland), OG tags with logo. Add JSON-LD Organization schema linking to all 10 sub-platforms as sameAs properties. Add BreadcrumbList schema. Submit XML sitemap to Google Search Console.
+    </div></div>
+    <div class="field"><div class="field-label">Content Strategy</div><div class="field-value">Platform directory page (all 10 properties with icons + links + descriptions). Company story page. Service area landing pages per suburb (Dolton, Calumet City, Harvey, Chicago Heights, South Holland). Case study portfolio with photos. Monthly "ecosystem update" blog post.</div></div>
+    <div class="field"><div class="field-label">Growth Tactics</div><div class="field-value"><strong>Organic:</strong> Google Business Profile optimization (posts weekly), local citation building (Yelp, BBB, Angi, Thumbtack), directory listings on Black-owned business directories. <strong>Paid:</strong> Google Ads for "electrical contractor Dolton IL" (geo-targeted 15-mile radius), retargeting pixel on all visitors.</div></div>
+    <div class="field"><div class="field-label">Cross-Promotion</div><div class="field-value">Primary navigation links to all 9 other platforms. Footer ecosystem map. Every blog post ends with CTA to Academy + NextcallPro + ComEd.</div></div>
+    <div class="field"><div class="field-label">Timeline</div><div class="field-value"><span class="timeline-badge t30">30d:</span> GBP optimization + sitemap + schema <span class="timeline-badge t60">60d:</span> Service area pages <span class="timeline-badge t90">90d:</span> Case studies + retargeting</div></div>
+  </div>
+</div>
+
+<!-- 2. NextcallPro -->
+<div class="platform-card">
+  <div class="card-header">
+    <div><div class="pname">2. NextcallPro</div><div class="purl">nextcallpro.net :8141</div></div>
+    <span class="priority-badge priority-high">High</span>
+  </div>
+  <div class="card-body">
+    <div class="field"><div class="field-label">Current State</div><div class="field-value">Homeowner-to-contractor matching platform. Core revenue-generating property. Port 8141.</div></div>
+    <div class="field"><div class="field-label">SEO Strategy</div><div class="field-value">
+      Target keywords: <span class="kw">Chicago electrician</span> <span class="kw">electrical contractor Chicago</span> <span class="kw">hire electrician south suburbs</span> <span class="kw">emergency electrician Chicago</span> <span class="kw">electrical repair Dolton</span><br>
+      Meta tags: Service schema (Electrician category), LocalBusiness schema, FAQPage schema ("How to hire an electrician in Chicago"), Review schema. City-specific landing pages (Chicago, Dolton, Calumet City, Harvey, South Holland). Blog targeting "electrical panel upgrade cost Chicago", "when to call an electrician".
+    </div></div>
+    <div class="field"><div class="field-label">Content Strategy</div><div class="field-value">Weekly blog: electrical safety tips, panel upgrade guides, code compliance posts, seasonal ("winter electrical tips Chicago"). Contractor spotlight profiles. Before/after project galleries. Video testimonials (hosted on LiveVue, embedded here). Cost guides ("how much does an electrician cost in Chicago").</div></div>
+    <div class="field"><div class="field-label">Growth Tactics</div><div class="field-value"><strong>Organic:</strong> GBP posts linking to NextcallPro, Nextdoor business page, HomeAdvisor/Angi cross-listing, Yelp portfolio photos. <strong>Paid:</strong> Google Ads "Chicago electrician" (high priority, exact + phrase match), Facebook lead-gen form ads targeting homeowners in south suburbs zip codes, retargeting from ComEd signup page.</div></div>
+    <div class="field"><div class="field-label">Cross-Promotion</div><div class="field-value">After job completion → auto-suggest ComEd energy savings enrollment. Lead form thank-you page → Academy course offer. Contractor profiles link to HoodSearch listings. All emails link to Next/SSBN.</div></div>
+    <div class="field"><div class="field-label">Timeline</div><div class="field-value"><span class="timeline-badge t30">30d:</span> City landing pages + schema <span class="timeline-badge t60">60d:</span> Blog cadence + Google Ads <span class="timeline-badge t90">90d:</span> Video testimonials + retargeting funnel</div></div>
+  </div>
+</div>
+
+<!-- 3. HoodSearch -->
+<div class="platform-card">
+  <div class="card-header">
+    <div><div class="pname">3. HoodSearch</div><div class="purl">hoodsearch.net :8160</div></div>
+    <span class="priority-badge priority-high">High</span>
+  </div>
+  <div class="card-body">
+    <div class="field"><div class="field-label">Current State</div><div class="field-value">Contractor search engine — directory of Black contractors. Port 8160.</div></div>
+    <div class="field"><div class="field-label">SEO Strategy</div><div class="field-value">
+      Target keywords: <span class="kw">find Black contractors</span> <span class="kw">Black contractor directory Chicago</span> <span class="kw">Black-owned electrician Chicago</span> <span class="kw">minority contractor directory Illinois</span> <span class="kw">Black tradesman directory</span><br>
+      Meta tags: SearchResultsPage schema, ItemList schema for contractor listings, Organization schema per contractor profile. Create category pages (electrical, plumbing, HVAC, roofing, general). City/neighborhood pages (South Side, Dolton, Harvey, Englewood, Auburn Gresham).
+    </div></div>
+    <div class="field"><div class="field-label">Content Strategy</div><div class="field-value">Weekly contractor spotlight articles. "How to verify a contractor's license in Illinois" guide. Neighborhood business guides. Top-10 lists ("10 Black electricians in Chicago"). Comparison content (HoodSearch vs Google for finding Black contractors). Contractor signup CTA content.</div></div>
+    <div class="field"><div class="field-label">Growth Tactics</div><div class="field-value"><strong>Organic:</strong> Free contractor listings (remove barrier to entry), SEO for "Black contractor" long-tail, Reddit r/chicago and r/Blackpeople posts, community Facebook groups. <strong>Paid:</strong> FB/IG boosted posts targeting south side zip codes, Google Ads "Black contractor Chicago".</div></div>
+    <div class="field"><div class="field-label">Cross-Promotion</div><div class="field-value">Each contractor profile → NextcallPro lead form. Search results sidebar → Academy courses. Footer → ComEd enrollment for homeowners. Sign-up page → HBO business org.</div></div>
+    <div class="field"><div class="field-label">Timeline</div><div class="field-value"><span class="timeline-badge t30">30d:</span> Category + city pages + schema <span class="timeline-badge t60">60d:</span> Contractor onboarding drive <span class="timeline-badge t90">90d:</span> Spotlight content + paid</div></div>
+  </div>
+</div>
+
+<!-- 4. Blacktech Academy -->
+<div class="platform-card">
+  <div class="card-header">
+    <div><div class="pname">4. Blacktech Academy</div><div class="purl">academy.blacktechsolutionscorp.com :8115</div></div>
+    <span class="priority-badge priority-high">High</span>
+  </div>
+  <div class="card-body">
+    <div class="field"><div class="field-label">Current State</div><div class="field-value">Free AI and energy education courses. Top-of-funnel entry point for the ecosystem. Port 8115.</div></div>
+    <div class="field"><div class="field-label">SEO Strategy</div><div class="field-value">
+      Target keywords: <span class="kw">free AI courses Chicago</span> <span class="kw">learn blockchain free</span> <span class="kw">energy education courses</span> <span class="kw">free online electrical training</span> <span class="kw">AI for beginners Chicago</span><br>
+      Meta tags: Course schema (schema.org/Course) with provider, duration, free pricing. HowTo schema for step-by-step lessons. FAQPage for course FAQ. Each course gets its own indexable page with title, description, learning outcomes. Sitemap includes all course pages. Add BreadcrumbList schema.
+    </div></div>
+    <div class="field"><div class="field-label">Content Strategy</div><div class="field-value">Course catalog page (grid of courses with thumbnails). Each course = 5-10 video lessons (hosted on LiveVue, embedded here). Printable PDF certificates on completion. Blog: "What is AI?", "Blockchain basics for the community", "How solar saves you money", "Why energy efficiency matters in Chicago". Weekly "Academy update" email newsletter.</div></div>
+    <div class="field"><div class="field-label">Growth Tactics</div><div class="field-value"><strong>Organic:</strong> "Free" is the hook — rank for "free AI course", "free energy course". Pinterest pins for course infographics. YouTube Shorts teasers. Library flyer distribution (see Partnerships). <strong>Paid:</strong> Facebook boosted posts ("Learn AI for free — Chicago"), Instagram Reels ads targeting 18-35 south side, TikTok organic.</div></div>
+    <div class="field"><div class="field-label">Cross-Promotion</div><div class="field-value">Course completion → HOOD token reward. Certificate page → NextcallPro CTA ("Now hire a contractor"). Course sidebar → ComEd signup. Footer → Next/SSBN join. Every video embedded from LiveVue drives traffic back.</div></div>
+    <div class="field"><div class="field-label">Timeline</div><div class="field-value"><span class="timeline-badge t30">30d:</span> Course schema + catalog page <span class="timeline-badge t60">60d:</span> 5 courses live + flyers <span class="timeline-badge t90">90d:</span> Certificate system + token integration</div></div>
+  </div>
+</div>
+
+<!-- 5. LiveVue / Blacktech TV -->
+<div class="platform-card">
+  <div class="card-header">
+    <div><div class="pname">5. LiveVue / Blacktech TV</div><div class="purl">tv.blacktechsolutionscorp.com</div></div>
+    <span class="priority-badge priority-med">Medium</span>
+  </div>
+  <div class="card-body">
+    <div class="field"><div class="field-label">Current State</div><div class="field-value">Self-hosted PeerTube video platform. Hosts Academy course videos, energy education, electrical training content. Uses Seattle Seahawks BTV color palette.</div></div>
+    <div class="field"><div class="field-label">SEO Strategy</div><div class="field-value">
+      Target keywords: <span class="kw">Blacktech TV</span> <span class="kw">energy education videos</span> <span class="kw">electrical training videos</span> <span class="kw">free trades education videos</span> <span class="kw">Chicago community TV</span><br>
+      Meta tags: VideoObject schema for each video (thumbnail, duration, uploadDate, embedUrl). PeerTube generates RSS feed — submit to podcast directories. OG video tags for social sharing. Channel page with Organization schema.
+    </div></div>
+    <div class="field"><div class="field-label">Content Strategy</div><div class="field-value">Weekly upload schedule: Monday = Academy lesson video, Wednesday = Contractor spotlight interview, Friday = Energy tip short. Live stream monthly "Community Energy Hour". Create playlists: AI Basics, Blockchain 101, Electrical Safety, Energy Savings, Contractor Spotlights. Cross-post 60-sec clips to YouTube Shorts, TikTok, Instagram Reels with "full video on LiveVue" CTA.</div></div>
+    <div class="field"><div class="field-label">Growth Tactics</div><div class="field-value"><strong>Organic:</strong> YouTube Shorts as teaser → full video on LiveVue. Embed videos on Academy, NextcallPro, ComEd pages. RSS feed to podcast platforms. <strong>Paid:</strong> Boost best-performing Shorts on IG/TikTok. Sponsored content on local news sites linking to LiveVue channel.</div></div>
+    <div class="field"><div class="field-label">Cross-Promotion</div><div class="field-value">Every video description → Academy course link, NextcallPro CTA, ComEd signup link. Channel page sidebar → all 10 platforms. Video end screens → "Next: Watch more on LiveVue" + "Enroll in Academy".</div></div>
+    <div class="field"><div class="field-label">Timeline</div><div class="field-value"><span class="timeline-badge t30">30d:</span> VideoObject schema + RSS feed <span class="timeline-badge t60">60d:</span> Weekly upload cadence <span class="timeline-badge t90">90d:</span> Live stream + Shorts funnel</div></div>
+  </div>
+</div>
+</div>
+
+<!-- 6. HoodToken -->
+<div class="card-grid">
+<div class="platform-card">
+  <div class="card-header">
+    <div><div class="pname">6. HoodToken</div><div class="purl">hoodtoken.io :8130</div></div>
+    <span class="priority-badge priority-med">Medium</span>
+  </div>
+  <div class="card-body">
+    <div class="field"><div class="field-label">Current State</div><div class="field-value">Crypto/token platform. Rewards users for Academy course completion, community participation. Port 8130.</div></div>
+    <div class="field"><div class="field-label">SEO Strategy</div><div class="field-value">
+      Target keywords: <span class="kw">HOOD token</span> <span class="kw">community crypto Chicago</span> <span class="kw">blockchain wealth building</span> <span class="kw">earn crypto by learning</span> <span class="kw">Black-owned cryptocurrency</span><br>
+      Meta tags: FinancialProduct schema, FAQPage ("What is HOOD token?", "How do I earn HOOD?"), Article schema for educational content. Landing page optimized for "earn crypto free" + "learn to earn crypto". Add disclaimer schema for crypto compliance.
+    </div></div>
+    <div class="field"><div class="field-label">Content Strategy</div><div class="field-value">"Learn to Earn" landing page (take Academy courses → earn HOOD). Token utility page (what HOOD can be used for). Blog: "Blockchain for the community", "How crypto builds generational wealth", "Why HOOD is different from other tokens". Whitepaper PDF. Wallet setup guide. Monthly token economy report.</div></div>
+    <div class="field"><div class="field-label">Growth Tactics</div><div class="field-value"><strong>Organic:</strong> "Earn free crypto" SEO is high-volume. Cross-promote through Academy completion flow. Reddit r/CryptoCurrency, r/BlackBusiness. Twitter/X crypto community posts. <strong>Paid:</strong> Limited — crypto ad restrictions on Google/FB. Use Twitter/X ads and crypto newsletter sponsorships.</div></div>
+    <div class="field"><div class="field-label">Cross-Promotion</div><div class="field-value">Academy completion → token reward notification. Token wallet page → "Spend HOOD on HoodSearch premium listings". Token page → Next/SSBN community join. Footer → ComEd (save energy, earn more HOOD).</div></div>
+    <div class="field"><div class="field-label">Timeline</div><div class="field-value"><span class="timeline-badge t30">30d:</span> Learn-to-Earn landing page + FAQ schema <span class="timeline-badge t60">60d:</span> Academy integration + whitepaper <span class="timeline-badge t90">90d:</span> Token utility expansion + Twitter presence</div></div>
+  </div>
+</div>
+
+<!-- 7. Next / SSBN -->
+<div class="platform-card">
+  <div class="card-header">
+    <div><div class="pname">7. Next / SSBN</div><div class="purl">network.blacktechsolutionscorp.com :8199</div></div>
+    <span class="priority-badge priority-med">Medium</span>
+  </div>
+  <div class="card-body">
+    <div class="field"><div class="field-label">Current State</div><div class="field-value">South Side Business Network — community network for Black businesses. Port 8199.</div></div>
+    <div class="field"><div class="field-label">SEO Strategy</div><div class="field-value">
+      Target keywords: <span class="kw">south side business network</span> <span class="kw">Chicago Black business directory</span> <span class="kw">Black business network Chicago</span> <span class="kw">south side entrepreneurs</span> <span class="kw">Black business community Illinois</span><br>
+      Meta tags: Organization schema, Member directory with ItemList schema, Event schema for network meetings. LocalBusiness schema for member businesses. Create neighborhood-specific network pages.
+    </div></div>
+    <div class="field"><div class="field-label">Content Strategy</div><div class="field-value">Member spotlight articles. Business resource guides (grants, loans, certifications for Black businesses in IL). Event calendar (networking mixers, workshops). "Why join SSBN" landing page. Member testimonials. Weekly community newsletter.</div></div>
+    <div class="field"><div class="field-label">Growth Tactics</div><div class="field-value"><strong>Organic:</strong> Member referral program (bring a business, earn HOOD). Facebook groups (South Side Chicago business groups). LinkedIn groups. Chamber of Commerce cross-promotion. <strong>Paid:</strong> LinkedIn ads targeting Black business owners in Chicagoland. FB boosted posts for events.</div></div>
+    <div class="field"><div class="field-label">Cross-Promotion</div><div class="field-value">Member profiles link to HoodSearch listings. Network events promoted on LiveVue. New members get Academy course bundle. Business members → ComEd commercial enrollment. SSBN directory → NextcallPro for contractor members.</div></div>
+    <div class="field"><div class="field-label">Timeline</div><div class="field-value"><span class="timeline-badge t30">30d:</span> Member directory + event schema <span class="timeline-badge t60">60d:</span> Resource guides + referral program <span class="timeline-badge t90">90d:</span> LinkedIn ads + event cadence</div></div>
+  </div>
+</div>
+
+<!-- 8. ComEd Signup -->
+<div class="platform-card">
+  <div class="card-header">
+    <div><div class="pname">8. ComEd Signup</div><div class="purl">comed.blacktechsolutionscorp.com :8095</div></div>
+    <span class="priority-badge priority-high">High</span>
+  </div>
+  <div class="card-body">
+    <div class="field"><div class="field-label">Current State</div><div class="field-value">ComEd energy enrollment / lead capture page. Revenue-generating through energy program commissions. Port 8095. Already has share button, lead API, flyer generator.</div></div>
+    <div class="field"><div class="field-label">SEO Strategy</div><div class="field-value">
+      Target keywords: <span class="kw">ComEd energy savings</span> <span class="kw">reduce electric bill Chicago</span> <span class="kw">free energy assessment Illinois</span> <span class="kw">ComEd energy efficiency program</span> <span class="kw">lower electric bill south suburbs</span><br>
+      Meta tags: Service schema, LocalBusiness schema, FAQPage ("How do I reduce my ComEd bill?", "What is a free energy assessment?"), Review schema. Landing page optimized for "ComEd" + "energy savings" + "free assessment". Create ZIP-code-specific landing pages for south suburbs.
+    </div></div>
+    <div class="field"><div class="field-label">Content Strategy</div><div class="field-value">Cost savings calculator (input bill → see potential savings). Energy tips blog ("5 ways to reduce your ComEd bill", "What is a smart thermostat?"). Seasonal campaigns ("Winter heating savings", "Summer AC efficiency"). Success stories with before/after bills. FAQ page addressing common enrollment questions.</div></div>
+    <div class="field"><div class="field-label">Growth Tactics</div><div class="field-value"><strong>Organic:</strong> Flyer distribution at libraries, churches, community centers (see Partnerships). Nextdoor posts about energy savings. GBP posts linking to signup. ComEd co-branded PDF distribution. <strong>Paid:</strong> Google Ads "reduce electric bill Chicago" (geo-targeted), Facebook lead-gen ads targeting homeowners 30+ in south suburbs, Instagram boosted posts for seasonal campaigns.</div></div>
+    <div class="field"><div class="field-label">Cross-Promotion</div><div class="field-value">After enrollment → NextcallPro CTA ("Need an electrician for upgrades?"). Signup page → Academy energy course offer. Thank-you page → HOOD token reward. All emails → SSBN join. Flyer QR codes → direct to signup.</div></div>
+    <div class="field"><div class="field-label">Timeline</div><div class="field-value"><span class="timeline-badge t30">30d:</span> FAQ schema + ZIP-code pages + flyer refresh <span class="timeline-badge t60">60d:</span> Savings calculator + Google Ads <span class="timeline-badge t90">90d:</span> Seasonal campaigns + success stories</div></div>
+  </div>
+</div>
+
+<!-- 9. Social Dashboard -->
+<div class="platform-card">
+  <div class="card-header">
+    <div><div class="pname">9. Social Dashboard</div><div class="purl">social.blacktechsolutionscorp.com :8097</div></div>
+    <span class="priority-badge priority-low">Low</span>
+  </div>
+  <div class="card-body">
+    <div class="field"><div class="field-label">Current State</div><div class="field-value">Social media management dashboard for scheduling and monitoring posts across platforms. Port 8097. Internal tool.</div></div>
+    <div class="field"><div class="field-label">SEO Strategy</div><div class="field-value">Internal tool — SEO not primary focus. However, public-facing login page should have basic meta tags and Organization schema linking to main site. No-index internal pages.</div></div>
+    <div class="field"><div class="field-label">Content Strategy</div><div class="field-value">Not a content platform — it's a tool. Focus on: content calendar templates, post scheduling workflow, analytics integration. Create a "social media playbook" internal doc defining what to post where and when.</div></div>
+    <div class="field"><div class="field-label">Growth Tactics</div><div class="field-value"><strong>Organic:</strong> N/A — internal tool. <strong>Paid:</strong> N/A. Focus on operational efficiency: automate cross-posting to all platforms, schedule weekly content cadence, track engagement metrics.</div></div>
+    <div class="field"><div class="field-label">Cross-Promotion</div><div class="field-value">Dashboard should auto-generate cross-platform posts (one post → formatted for FB, IG, X, LinkedIn, Nextdoor). Every scheduled post includes ecosystem links. Analytics feed into KPI tracking (see Section 9).</div></div>
+    <div class="field"><div class="field-label">Timeline</div><div class="field-value"><span class="timeline-badge t30">30d:</span> Content calendar + cross-posting setup <span class="timeline-badge t60">60d:</span> Analytics dashboard <span class="timeline-badge t90">90d:</span> Automated scheduling</div></div>
+  </div>
+</div>
+
+<!-- 10. HBO -->
+<div class="platform-card">
+  <div class="card-header">
+    <div><div class="pname">10. HBO (HOOD Business Org)</div><div class="purl">hood.blacktechsolutionscorp.com :8094</div></div>
+    <span class="priority-badge priority-med">Medium</span>
+  </div>
+  <div class="card-body">
+    <div class="field"><div class="field-label">Current State</div><div class="field-value">Business organization platform — formalized business entity management. Port 8094.</div></div>
+    <div class="field"><div class="field-label">SEO Strategy</div><div class="field-value">
+      Target keywords: <span class="kw">Black business organization Chicago</span> <span class="kw">business formation Illinois</span> <span class="kw">Black entrepreneur support</span> <span class="kw">business org for Black-owned businesses</span><br>
+      Meta tags: Organization schema, Service schema (business formation, compliance, support), FAQPage ("How to start a business in Illinois"), BreadcrumbList. Member directory with LocalBusiness schema.
+    </div></div>
+    <div class="field"><div class="field-label">Content Strategy</div><div class="field-value">Business formation guides (LLC, S-Corp, nonprofit). Compliance checklists. Member benefits page. Resource library (templates, contracts, SOPs). Member success stories. Monthly business workshop announcements.</div></div>
+    <div class="field"><div class="field-label">Growth Tactics</div><div class="field-value"><strong>Organic:</strong> Partner with SBDC, SCORE, local chambers. SEO for "start a business in Illinois" + "Black business support Chicago". LinkedIn content marketing. <strong>Paid:</strong> LinkedIn ads targeting aspiring entrepreneurs. Facebook ads for business formation services.</div></div>
+    <div class="field"><div class="field-label">Cross-Promotion</div><div class="field-value">HBO members → automatically listed on HoodSearch + Next/SSBN. Business formation → ComEd commercial enrollment. Member resources → Academy business courses. Events → LiveVue streaming.</div></div>
+    <div class="field"><div class="field-label">Timeline</div><div class="field-value"><span class="timeline-badge t30">30d:</span> Formation guides + schema <span class="timeline-badge t60">60d:</span> Member directory + resource library <span class="timeline-badge t90">90d:</span> Workshop cadence + LinkedIn</div></div>
+  </div>
+</div>
+</div>
+
+<!-- ==================== ORGANIC ==================== -->
+<h2 class="section-heading" id="organic"><span class="num">4</span> Organic Growth Strategy</h2>
+<p class="lead">Organic exposure is the foundation. Every platform must be optimized for search, cross-promoted, and fed with consistent content before any paid dollars are spent.</p>
+
+<h3 class="subheading">SEO Foundation (All Platforms)</h3>
+<ul>
+  <li><strong>Google Search Console:</strong> Verify all 10 domains/subdomains. Submit XML sitemaps. Monitor index coverage and keyword rankings monthly.</li>
+  <li><strong>Bing Webmaster Tools:</strong> Submit all sitemaps. Bing drives ~10% of search traffic and is underutilized by competitors.</li>
+  <li><strong>Schema markup:</strong> Every platform gets JSON-LD structured data (Organization, LocalBusiness, Course, VideoObject, Service, FAQPage, Article). This is the #1 organic lever.</li>
+  <li><strong>Page speed:</strong> All platforms must pass Core Web Vitals. Compress images, lazy-load videos, minify CSS/JS. Use Google PageSpeed Insights to audit monthly.</li>
+  <li><strong>Internal linking:</strong> Every page on every platform links to at least 2 other Blacktech platforms. Build a "Blacktech Ecosystem" footer widget on all properties.</li>
+  <li><strong>Local SEO:</strong> Command Center + NextcallPro + ComEd must have optimized Google Business Profiles with weekly posts, photos, and review responses.</li>
+</ul>
+
+<h3 class="subheading">Cross-Promotion Engine</h3>
+<ul>
+  <li><strong>Universal footer:</strong> All 10 platforms share a common footer with links to every other platform (icon + name + one-line description).</li>
+  <li><strong>Email signatures:</strong> All outbound emails include 3 rotating platform CTAs (e.g., "Take a free Academy course", "Find a Black contractor on HoodSearch", "Save on your ComEd bill").</li>
+  <li><strong>Social bios:</strong> All social profiles link to a linktree-style page on Command Center that lists all 10 platforms.</li>
+  <li><strong>QR codes:</strong> Every printed material (flyers, business cards, invoices) includes QR codes to 2-3 platforms. Generate via Python qrcode library.</li>
+</ul>
+
+<h3 class="subheading">Content Funnel</h3>
+<ul>
+  <li><strong>Top of funnel (awareness):</strong> Academy courses, LiveVue videos, blog posts answering "what is" questions. Target: "free AI course", "energy education", "what is blockchain".</li>
+  <li><strong>Mid funnel (consideration):</strong> HoodSearch contractor profiles, ComEd savings calculator, Academy certificates. Target: "find a contractor", "reduce electric bill", "Black contractor near me".</li>
+  <li><strong>Bottom funnel (conversion):</strong> NextcallPro lead forms, ComEd signup, HBO membership, HOOD token wallet. Target: "hire electrician", "ComEd enrollment", "join business network".</li>
+</ul>
+
+<h3 class="subheading">Google Business Profile Posts (Weekly)</h3>
+<ul>
+  <li><strong>Monday:</strong> Academy course spotlight (with link to course page)</li>
+  <li><strong>Wednesday:</strong> Project photo / before-after (link to NextcallPro)</li>
+  <li><strong>Friday:</strong> Energy savings tip (link to ComEd signup)</li>
+  <li><strong>Monthly:</strong> Platform announcement (new feature, new course, new token utility)</li>
+</ul>
+
+<h3 class="subheading">Nextdoor Strategy</h3>
+<ul>
+  <li>Create Nextdoor business page for Blacktech Solutions Corp (electrical contractor category).</li>
+  <li>Post weekly in south suburbs neighborhoods (Dolton, Calumet City, Harvey, South Holland, Chicago Heights, Lansing, Glenwood).</li>
+  <li>Content: energy tips, "did you know" electrical safety, ComEd program reminders, contractor availability announcements.</li>
+  <li>Respond to every "need a recommendation" post for electricians/contractors in target neighborhoods.</li>
+  <li>Run Nextdoor local ads for ComEd signup ($50/week budget).</li>
+</ul>
+
+<!-- ==================== PAID ==================== -->
+<h2 class="section-heading" id="paid"><span class="num">5</span> Paid Advertising Strategy</h2>
+<p class="lead">Paid advertising supplements organic growth. Start lean, measure, scale what works. All campaigns geo-target Chicagoland south suburbs.</p>
+
+<h3 class="subheading">Google Ads</h3>
+<ul>
+  <li><strong>NextcallPro:</strong> "Chicago electrician", "electrical contractor Dolton IL", "emergency electrician south suburbs". Exact + phrase match. Landing: NextcallPro city pages. Budget: $300/month. <strong>Priority: HIGH.</strong></li>
+  <li><strong>ComEd Signup:</strong> "reduce electric bill Chicago", "ComEd energy savings", "free energy assessment Illinois". Landing: ComEd signup page. Budget: $200/month. <strong>Priority: HIGH.</strong></li>
+  <li><strong>Command Center:</strong> "electrical contractor Dolton IL" (branded + local). Landing: Command Center homepage. Budget: $150/month. <strong>Priority: MED.</strong></li>
+  <li><strong>HoodSearch:</strong> "Black contractor directory Chicago", "find Black electrician". Landing: HoodSearch category pages. Budget: $100/month. <strong>Priority: MED.</strong></li>
+  <li><strong>Academy:</strong> "free AI courses Chicago", "learn blockchain free". Landing: Academy catalog. Budget: $100/month. <strong>Priority: MED.</strong></li>
+  <li><strong>Retargeting:</strong> All visitors across all platforms, 30-day cookie. Dynamic ads showing the platform they visited + 1 other. Budget: $150/month.</li>
+</ul>
+
+<h3 class="subheading">Facebook / Instagram Boosted Posts</h3>
+<ul>
+  <li><strong>Academy:</strong> Boost course spotlight posts to 18-35, south side zip codes, interest: education, technology, career advancement. $50/week.</li>
+  <li><strong>ComEd:</strong> Boost energy savings tips to homeowners 30+, south suburbs. $50/week.</li>
+  <li><strong>NextcallPro:</strong> Boost before/after project photos to homeowners 25+, south suburbs. $40/week.</li>
+  <li><strong>HoodSearch:</strong> Boost contractor spotlight to south side, interest: home improvement, Black culture. $30/week.</li>
+  <li><strong>LiveVue:</strong> Boost 60-sec video clips as Reels ads. $25/week.</li>
+</ul>
+
+<h3 class="subheading">LinkedIn Ads</h3>
+<ul>
+  <li><strong>Next/SSBN:</strong> Target Black business owners, entrepreneurs in Chicagoland. "Join the South Side Business Network". $100/month.</li>
+  <li><strong>HBO:</strong> Target aspiring entrepreneurs, business formation interest. "Start and grow your business with HBO". $75/month.</li>
+  <li><strong>Command Center:</strong> Target commercial property managers, GCs, developers in Chicago. "Licensed electrical contractor, Dolton IL". $75/month.</li>
+</ul>
+
+<div class="callout">
+  <div class="ctitle">Total Paid Budget — Recommended Start</div>
+  <strong>$1,500/month</strong> across all platforms. Scale winners, cut losers after 60 days. Review ROAS (return on ad spend) per platform monthly.
+</div>
+
+<!-- ==================== PARTNERSHIPS ==================== -->
+<h2 class="section-heading" id="partnerships"><span class="num">6</span> Partnerships &amp; Community Outreach</h2>
+<p class="lead">Grassroots, in-person exposure builds trust that digital ads cannot. Every flyer, every church bulletin, every library rack plants a seed.</p>
+
+<h3 class="subheading">Library Flyer Program</h3>
+<ul>
+  <li><strong>Target libraries:</strong> Dolton Public, Calumet City Public, Harvey Public, Chicago Heights Public, South Holland Public, Lansing Public, Markham Public.</li>
+  <li><strong>Flyer types:</strong> (1) Academy course flyer with QR code, (2) ComEd energy savings flyer with QR code, (3) HoodSearch contractor directory flyer, (4) Next/SSBN business network flyer.</li>
+  <li><strong>Cadence:</strong> Drop 50 flyers per library, refresh monthly. Track QR code scans per location to measure ROI.</li>
+  <li><strong>Design:</strong> Orange/green marketing palette (dark #0a0a0f background, #f59e0b orange + #69BE28 green). Tear-off tabs with phone number + short URL. See library-outreach-flyer reference in the document-templates skill.</li>
+</ul>
+
+<h3 class="subheading">Church Outreach</h3>
+<ul>
+  <li>Identify 10-15 south side churches with active community outreach programs.</li>
+  <li>Offer free Academy course enrollment for church youth programs (AI + energy education).</li>
+  <li>Place ComEd energy savings flyers in church bulletins/community boards.</li>
+  <li>Sponsor a "Community Energy Day" — free energy assessment signups at church events.</li>
+  <li>Offer church members HOOD token rewards for completing Academy courses.</li>
+</ul>
+
+<h3 class="subheading">Contractor Referral Program</h3>
+<ul>
+  <li>Every NextcallPro contractor gets a referral code. When they refer a homeowner who books a job, they earn HOOD tokens.</li>
+  <li>Contractors listed on HoodSearch get a "Verified by Blacktech" badge.</li>
+  <li>Contractor onboarding kit: HoodSearch profile setup + NextcallPro account + Academy course access + ComEd enrollment authority.</li>
+  <li>Monthly contractor mixer (in-person + LiveVue live stream) to build the network.</li>
+</ul>
+
+<h3 class="subheading">Community Centers</h3>
+<ul>
+  <li>Partner with south side community centers (Park District field houses, YMCA branches, community resource centers).</li>
+  <li>Host free "Energy Savings Workshop" — 1-hour session, Academy course preview + ComEd signup on-site.</li>
+  <li>Provide Academy course access kiosks (tablet + QR code) at community center lobbies.</li>
+  <li>Co-sponsor STEM/AI education nights for youth — Academy courses as curriculum.</li>
+</ul>
+
+<!-- ==================== ACTION PLAN ==================== -->
+<h2 class="section-heading" id="action"><span class="num">7</span> 30/60/90 Day Action Plan</h2>
+<p class="lead">Numbered tasks, assigned to phases. Each task is actionable and measurable.</p>
+
+<table class="action-table">
+  <thead>
+    <tr>
+      <th style="width:5%;">#</th>
+      <th style="width:12%;">Phase</th>
+      <th style="width:50%;">Task</th>
+      <th style="width:18%;">Platform</th>
+      <th style="width:15%;">Owner</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td class="phase-cell phase-30">30 Days</td><td>Verify all 10 domains in Google Search Console; submit XML sitemaps</td><td>All platforms</td><td>Derrell / Dev</td></tr>
+    <tr><td>2</td><td class="phase-cell phase-30">30 Days</td><td>Add JSON-LD schema markup (Organization, LocalBusiness, Course, Service, FAQ) to all platforms</td><td>All platforms</td><td>Dev</td></tr>
+    <tr><td>3</td><td class="phase-cell phase-30">30 Days</td><td>Optimize Google Business Profile — update NAP, services, photos, hours; enable weekly posts</td><td>Command Center, NextcallPro, ComEd</td><td>Derrell</td></tr>
+    <tr><td>4</td><td class="phase-cell phase-30">30 Days</td><td>Create universal ecosystem footer widget (all 10 platforms linked) and deploy to all sites</td><td>All platforms</td><td>Dev</td></tr>
+    <tr><td>5</td><td class="phase-cell phase-30">30 Days</td><td>Build NextcallPro city landing pages (Dolton, Calumet City, Harvey, South Holland, Chicago)</td><td>NextcallPro</td><td>Dev</td></tr>
+    <tr><td>6</td><td class="phase-cell phase-30">30 Days</td><td>Add Course schema to Academy; create course catalog grid page</td><td>Academy</td><td>Dev</td></tr>
+    <tr><td>7</td><td class="phase-cell phase-30">30 Days</td><td>Add VideoObject schema to LiveVue; submit RSS feed to podcast directories</td><td>LiveVue</td><td>Dev</td></tr>
+    <tr><td>8</td><td class="phase-cell phase-30">30 Days</td><td>Build HoodSearch category pages (electrical, plumbing, HVAC, roofing, general)</td><td>HoodSearch</td><td>Dev</td></tr>
+    <tr><td>9</td><td class="phase-cell phase-30">30 Days</td><td>Create ComEd ZIP-code landing pages; refresh flyer design; print 500 flyers</td><td>ComEd</td><td>Derrell</td></tr>
+    <tr><td>10</td><td class="phase-cell phase-30">30 Days</td><td>Set up Social Dashboard content calendar; configure cross-posting to FB/IG/X/LinkedIn/Nextdoor</td><td>Social Dashboard</td><td>Derrell</td></tr>
+    <tr><td>11</td><td class="phase-cell phase-30">30 Days</td><td>Create Nextdoor business page; begin weekly posts in 7 target neighborhoods</td><td>Command Center, ComEd</td><td>Derrell</td></tr>
+    <tr><td>12</td><td class="phase-cell phase-30">30 Days</td><td>Design and print 4 flyer types (Academy, ComEd, HoodSearch, SSBN); distribute to 7 libraries</td><td>Academy, ComEd, HoodSearch, SSBN</td><td>Derrell</td></tr>
+    <tr><td>13</td><td class="phase-cell phase-60">60 Days</td><td>Launch Google Ads campaigns for NextcallPro + ComEd (geo-targeted south suburbs)</td><td>NextcallPro, ComEd</td><td>Derrell</td></tr>
+    <tr><td>14</td><td class="phase-cell phase-60">60 Days</td><td>Publish 5 Academy courses live with video lessons embedded from LiveVue</td><td>Academy, LiveVue</td><td>Derrell / Dev</td></tr>
+    <tr><td>15</td><td class="phase-cell phase-60">60 Days</td><td>Onboard 20 contractors to HoodSearch with verified profiles</td><td>HoodSearch</td><td>Derrell</td></tr>
+    <tr><td>16</td><td class="phase-cell phase-60">60 Days</td><td>Build ComEd cost savings calculator tool</td><td>ComEd</td><td>Dev</td></tr>
+    <tr><td>17</td><td class="phase-cell phase-60">60 Days</td><td>Launch weekly blog cadence on NextcallPro (2 posts/week: safety + cost guides)</td><td>NextcallPro</td><td>Derrell</td></tr>
+    <tr><td>18</td><td class="phase-cell phase-60">60 Days</td><td>Launch weekly LiveVue upload schedule (Mon/Wed/Fri)</td><td>LiveVue</td><td>Derrell</td></tr>
+    <tr><td>19</td><td class="phase-cell phase-60">60 Days</td><td>Integrate Academy completion → HOOD token reward system</td><td>Academy, HoodToken</td><td>Dev</td></tr>
+    <tr><td>20</td><td class="phase-cell phase-60">60 Days</td><td>Launch Facebook/Instagram boosted post program ($50/week across platforms)</td><td>Academy, ComEd, NextcallPro, HoodSearch</td><td>Derrell</td></tr>
+    <tr><td>21</td><td class="phase-cell phase-60">60 Days</td><td>Build Next/SSBN member directory with 25 founding members; launch referral program</td><td>Next/SSBN</td><td>Derrell</td></tr>
+    <tr><td>22</td><td class="phase-cell phase-60">60 Days</td><td>Begin church outreach — contact 10 churches, propose Community Energy Day</td><td>ComEd, Academy</td><td>Derrell</td></tr>
+    <tr><td>23</td><td class="phase-cell phase-60">60 Days</td><td>Launch LinkedIn ads for Next/SSBN + HBO ($175/month total)</td><td>Next/SSBN, HBO</td><td>Derrell</td></tr>
+    <tr><td>24</td><td class="phase-cell phase-90">90 Days</td><td>Review Google Ads ROAS per campaign; cut underperformers, scale winners</td><td>All paid</td><td>Derrell</td></tr>
+    <tr><td>25</td><td class="phase-cell phase-90">90 Days</td><td>Implement Academy certificate system (PDF generation on completion)</td><td>Academy</td><td>Dev</td></tr>
+    <tr><td>26</td><td class="phase-cell phase-90">90 Days</td><td>Launch NextcallPro video testimonials (5 videos on LiveVue, embedded on NextcallPro)</td><td>NextcallPro, LiveVue</td><td>Derrell</td></tr>
+    <tr><td>27</td><td class="phase-cell phase-90">90 Days</td><td>Build retargeting pixel network across all platforms; launch dynamic retargeting</td><td>All platforms</td><td>Dev</td></tr>
+    <tr><td>28</td><td class="phase-cell phase-90">90 Days</td><td>Host first Community Energy Day at a partner church (free assessments + ComEd signups)</td><td>ComEd, Academy</td><td>Derrell</td></tr>
+    <tr><td>29</td><td class="phase-cell phase-90">90 Days</td><td>Launch HoodToken "Learn to Earn" campaign with Twitter/X presence</td><td>HoodToken, Academy</td><td>Derrell</td></tr>
+    <tr><td>30</td><td class="phase-cell phase-90">90 Days</td><td>Launch LiveVue live stream: monthly "Community Energy Hour"</td><td>LiveVue</td><td>Derrell</td></tr>
+    <tr><td>31</td><td class="phase-cell phase-90">90 Days</td><td>Run first monthly contractor mixer (in-person + LiveVue live stream)</td><td>NextcallPro, HoodSearch, LiveVue</td><td>Derrell</td></tr>
+    <tr><td>32</td><td class="phase-cell phase-90">90 Days</td><td>Publish first "Ecosystem Report" — metrics across all 10 platforms (traffic, leads, signups, token distribution)</td><td>All platforms</td><td>Derrell</td></tr>
+    <tr><td>33</td><td class="phase-cell phase-90">90 Days</td><td>Set up automated KPI dashboard (Social Dashboard analytics → reporting page)</td><td>Social Dashboard</td><td>Dev</td></tr>
+  </tbody>
+</table>
+
+<!-- ==================== BUDGET ==================== -->
+<h2 class="section-heading" id="budget"><span class="num">8</span> Budget Estimate — Free vs Paid Tier</h2>
+<p class="lead">Two tiers: bootstrap (free tools only) and growth (paid ads + premium tools). Start at free tier, graduate to paid tier as revenue from ComEd enrollments and NextcallPro jobs justifies.</p>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Free Tier (Bootstrap)</th>
+      <th>Paid Tier (Growth)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>SEO Tools</strong></td><td>Google Search Console (free), Bing Webmaster Tools (free), Google PageSpeed Insights (free), schema markup (DIY)</td><td>+ Ahrefs Lite ($99/mo) or SEMrush Pro ($130/mo) for keyword tracking + competitor analysis</td></tr>
+    <tr><td><strong>Google Ads</strong></td><td>$0 — organic only</td><td>$850/mo (NextcallPro $300, ComEd $200, Command Center $150, HoodSearch $100, Academy $100, retargeting $150 — reduce others)</td></tr>
+    <tr><td><strong>Facebook/IG Boosted</strong></td><td>$0 — organic posts only</td><td>$195/mo ($50/wk Academy + $50/wk ComEd + $40/wk NextcallPro + $30/wk HoodSearch + $25/wk LiveVue)</td></tr>
+    <tr><td><strong>LinkedIn Ads</strong></td><td>$0 — organic LinkedIn posts</td><td>$250/mo (SSBN $100, HBO $75, Command Center $75)</td></tr>
+    <tr><td><strong>Nextdoor Ads</strong></td><td>$0 — organic Nextdoor posts</td><td>$200/mo ($50/wk ComEd signup)</td></tr>
+    <tr><td><strong>Print Materials</strong></td><td>$50/mo (self-printed flyers, library distribution)</td><td>$200/mo (professional printing, 500 flyers + business cards + QR code stands)</td></tr>
+    <tr><td><strong>Content Creation</strong></td><td>$0 (Derrell + AI tools — Gemini/Claude for blog posts, Canva free for graphics)</td><td>$300/mo (freelance writer 4 blog posts/mo + freelance video editor for LiveVue clips)</td></tr>
+    <tr><td><strong>Email Marketing</strong></td><td>$0 (Gmail/HostGator SMTP)</td><td>$20/mo (Mailchimp free tier up to 500 contacts, then $13-20/mo)</td></tr>
+    <tr><td><strong>Hosting/Infrastructure</strong></td><td>$0 (self-hosted on existing Raspberry Pi / VPS infrastructure)</td><td>$50/mo (backup VPS + CDN for speed)</td></tr>
+    <tr><td><strong>QR Code Generation</strong></td><td>$0 (Python qrcode library)</td><td>$0 (same — no paid QR tool needed)</td></tr>
+    <tr><td style="border-top: 2px solid var(--bt-green);"><strong>TOTAL / MONTH</strong></td><td style="border-top: 2px solid var(--bt-green);"><strong>~$50/mo</strong></td><td style="border-top: 2px solid var(--bt-green); color: var(--bt-green);"><strong>~$1,915/mo</strong></td></tr>
+  </tbody>
+</table>
+
+<div class="callout orange">
+  <div class="ctitle">Revenue Justification</div>
+  At the paid tier (~$1,915/mo), the plan needs to generate <strong>~$2,500/mo in gross revenue</strong> to be profitable (assuming 75% margin on ComEd commissions + NextcallPro jobs). That's approximately 5-8 ComEd enrollments or 3-4 NextcallPro jobs per month — easily achievable with the exposure growth this plan drives.
+</div>
+
+<!-- ==================== KPIs ==================== -->
+<h2 class="section-heading" id="kpis"><span class="num">9</span> KPIs to Track Per Platform</h2>
+<p class="lead">What gets measured gets managed. Track these metrics monthly via Google Search Console, Google Analytics, and the Social Dashboard.</p>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>Primary KPI</th>
+      <th>Secondary KPIs</th>
+      <th>Target (90 days)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Command Center</strong></td><td>Organic search clicks</td><td>Bounce rate, avg session duration, ecosystem footer clicks</td><td>500+ organic clicks/mo</td></tr>
+    <tr><td><strong>NextcallPro</strong></td><td>Lead form submissions</td><td>Organic keyword rankings, cost per lead (paid), conversion rate</td><td>20+ leads/mo</td></tr>
+    <tr><td><strong>HoodSearch</strong></td><td>Contractor profiles listed</td><td>Search queries, search-to-profile click rate, new contractor signups</td><td>50+ verified contractors</td></tr>
+    <tr><td><strong>Academy</strong></td><td>Course enrollments</td><td>Course completion rate, certificate downloads, referral to HOOD token</td><td>100+ enrollments</td></tr>
+    <tr><td><strong>LiveVue</strong></td><td>Video views (monthly)</td><td>Unique viewers, avg watch time, channel subscriptions, cross-platform embed clicks</td><td>500+ views/mo</td></tr>
+    <tr><td><strong>HoodToken</strong></td><td>Token wallets created</td><td>Tokens distributed, tokens spent, Academy-to-token conversion rate</td><td>50+ wallets</td></tr>
+    <tr><td><strong>Next/SSBN</strong></td><td>Active members</td><td>Event attendance, member referrals, directory listing views</td><td>25+ active members</td></tr>
+    <tr><td><strong>ComEd Signup</strong></td><td>Lead form submissions</td><td>Flyer QR scans, cost per enrollment (paid), conversion rate</td><td>30+ enrollments/mo</td></tr>
+    <tr><td><strong>Social Dashboard</strong></td><td>Posts published (cross-platform)</td><td>Engagement rate per platform, follower growth, scheduling automation %</td><td>20+ posts/wk</td></tr>
+    <tr><td><strong>HBO</strong></td><td>Member registrations</td><td>Resource downloads, workshop attendance, business formation completions</td><td>15+ members</td></tr>
+  </tbody>
+</table>
+
+<div class="callout">
+  <div class="ctitle">Monthly Review Cadence</div>
+  Every 30 days, pull all KPIs into a single "Ecosystem Report" (generate as branded HTML using the weekly-audit template pattern). Review what's working, what's not, and adjust the action plan. The plan is a living document — adapt tactics based on data, not assumptions.
+</div>
+
+</div><!-- /content -->
+
+<!-- ==================== FOOTER ==================== -->
+<div class="footer">
+  <div class="brand"><span>BLACKTECH</span> SOLUTIONS CORP · blacktechsolutionscorp.com</div>
+  <div class="phone">(312) 965-2782</div>
+  <div class="brand" style="margin-top:0.5rem; font-size:0.7rem;">2026 Marketing &amp; Exposure Growth Plan · Prepared for Derrell Black, CEO</div>
+</div>
+
+</body>
+</html>

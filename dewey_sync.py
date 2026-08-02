@@ -215,6 +215,16 @@ def sync_to_github(entries):
     if os.path.exists(tracker_path):
         shutil.copy2(tracker_path, os.path.join(GITHUB_REPO, "dewey_code_tracker.py"))
     
+    # Remove files over 100MB before committing (GitHub limit)
+    for section in sections:
+        dst = os.path.join(GITHUB_REPO, section)
+        if os.path.isdir(dst):
+            for root, dirs, fnames in os.walk(dst):
+                for f in fnames:
+                    fpath = os.path.join(root, f)
+                    if os.path.getsize(fpath) > 104857600:
+                        os.remove(fpath)
+    
     # Git commit and push
     os.chdir(GITHUB_REPO)
     subprocess.run("git add -A", shell=True, capture_output=True, timeout=10)

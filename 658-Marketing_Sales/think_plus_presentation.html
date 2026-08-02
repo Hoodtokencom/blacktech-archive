@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Think+ — Derrell Black · Blacktech Solutions Corp</title>
+<style>
+:root{
+  --navy:#0a0a0f;--navy2:#141420;--card:#1a1a28;--card2:#20203a;
+  --green:#22c55e;--green-dark:#16a34a;--orange:#f59e0b;--yellow:#fbbf20;
+  --red:#ef4444;--text:#f0f0f5;--text-dim:#a0a0b8;--white:#fff;
+  --radius:14px;--shadow:0 8px 32px rgba(0,0,0,0.5);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif}
+body{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 100%);color:var(--text)}
+#app{position:relative;height:100vh;height:100dvh;display:flex;flex-direction:column}
+/* Slide container */
+.slides{flex:1;position:relative;overflow:hidden}
+.slide{
+  position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;
+  padding:40px 24px 120px;text-align:center;opacity:0;transform:translateX(40px);pointer-events:none;
+  transition:opacity .55s ease,transform .55s ease;overflow-y:auto;
+}
+.slide.active{opacity:1;transform:translateX(0);pointer-events:auto;z-index:2}
+.slide.prev{transform:translateX(-40px)}
+/* All slides consistent: start from top, scroll if needed */
+.slide{justify-content:flex-start;padding-top:50px}
+/* Top tag */
+.tag{font-size:.75rem;font-weight:700;letter-spacing:2px;color:var(--green);margin-bottom:16px;text-transform:uppercase}
+/* Headlines */
+h1{font-size:clamp(1.8rem,5vw,3.2rem);font-weight:800;line-height:1.15;margin-bottom:16px;max-width:900px;background:linear-gradient(135deg,#fff 0%,#c0c0e0 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+h2{font-size:clamp(1.4rem,3.8vw,2.4rem);font-weight:700;margin-bottom:12px;max-width:800px}
+h3{font-size:clamp(1.1rem,2.5vw,1.6rem);font-weight:700;margin-bottom:8px}
+.sub{font-size:clamp(.9rem,2vw,1.1rem);color:var(--text-dim);margin-bottom:16px;max-width:700px}
+p{font-size:clamp(.88rem,1.8vw,1.05rem);line-height:1.6;max-width:760px;margin-bottom:14px}
+/* Cards */
+.card{background:linear-gradient(145deg,var(--card),var(--card2));border:1px solid rgba(34,197,94,.15);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);max-width:680px;width:100%;margin:16px auto}
+.card-green{border-color:rgba(34,197,94,.4)}
+.card-orange{border-color:rgba(245,158,11,.35)}
+/* Buttons */
+.btn{display:inline-block;padding:14px 32px;border-radius:10px;font-weight:700;font-size:1rem;border:none;cursor:pointer;transition:transform .2s,box-shadow .2s;text-decoration:none}
+.btn:hover{transform:translateY(-2px)}
+.btn-green{background:linear-gradient(135deg,var(--green),var(--green-dark));color:#fff;box-shadow:0 4px 20px rgba(34,197,94,.4)}
+.btn-orange{background:linear-gradient(135deg,var(--orange),#d97706);color:#fff;box-shadow:0 4px 20px rgba(245,158,11,.4)}
+.btn-ghost{background:rgba(255,255,255,.08);color:var(--text);border:1px solid rgba(255,255,255,.2)}
+/* Callouts */
+.callout{padding:14px 20px;border-radius:10px;font-weight:700;margin:12px auto;max-width:680px;text-align:center}
+.callout-red{background:rgba(239,68,68,.12);border:1px solid rgba(239,68,68,.4);color:#fca5a5}
+.callout-green{background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.4);color:#86efac}
+.callout-orange{background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.4);color:#fcd34d}
+/* Pills */
+.pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:14px 0}
+.pill{background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.3);color:#86efac;padding:6px 16px;border-radius:20px;font-size:.82rem;font-weight:600}
+.pill-orange{background:rgba(245,158,11,.1);border-color:rgba(245,158,11,.3);color:#fcd34d}
+/* States line */
+.states{font-size:.82rem;color:var(--text-dim);margin-top:8px}
+.states b{color:var(--yellow)}
+/* Product cards grid */
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:760px;margin:18px auto}
+.product-card{background:linear-gradient(145deg,var(--card),var(--card2));border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:20px 16px;text-align:center;transition:transform .2s,border-color .2s}
+.product-card:hover{transform:translateY(-4px);border-color:rgba(34,197,94,.4)}
+.product-card .icon{font-size:2.4rem;margin-bottom:8px}
+.product-card .label{font-weight:800;font-size:.82rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.product-card .sub-label{font-size:.78rem;color:var(--text-dim)}
+.pc-green .label{color:var(--green)} .pc-orange .label{color:var(--orange)} .pc-yellow .label{color:var(--yellow)}
+/* 5-3-5 setup */
+.setup-grid{display:flex;flex-direction:column;align-items:center;gap:10px;margin:16px auto}
+.setup-row{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:10px 20px}
+.setup-row .who{font-weight:700;min-width:80px;text-align:left}
+.setup-row .num{background:var(--green);color:#fff;font-weight:800;border-radius:8px;padding:4px 12px;font-size:.85rem}
+.setup-total{background:rgba(34,197,94,.15);border:1px solid rgba(34,197,94,.4);color:#86efac}
+.setup-total .who{color:var(--green)}
+.badge{display:inline-block;background:linear-gradient(135deg,var(--orange),#d97706);color:#fff;font-weight:800;padding:6px 18px;border-radius:8px;margin:8px 0;font-size:.85rem;box-shadow:0 4px 14px rgba(245,158,11,.35)}
+/* Income stack */
+.income-section{background:linear-gradient(145deg,var(--card),var(--card2));border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:18px 20px;margin:10px auto;max-width:640px;text-align:left}
+.income-section .header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.income-section .header h3{font-size:1rem;margin:0}
+.income-section .header .when{font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:6px;text-transform:uppercase}
+.when-today{background:rgba(34,197,94,.2);color:#86efac}
+.when-next{background:rgba(245,158,11,.2);color:#fcd34d}
+.when-year{background:rgba(251,191,32,.2);color:var(--yellow)}
+.income-line{display:flex;justify-content:space-between;font-size:.85rem;padding:4px 0;color:var(--text-dim)}
+.income-line b{color:var(--text)}
+.income-total{display:flex;justify-content:space-between;font-weight:800;padding:6px 0 0;border-top:1px solid rgba(255,255,255,.1);margin-top:4px}
+.income-total .amt{color:var(--green)}
+.running{display:flex;justify-content:space-between;font-weight:800;padding:6px 0;margin-top:6px;border-top:1px solid rgba(255,255,255,.1);color:var(--yellow)}
+.running .amt{color:var(--yellow);font-size:1.05rem}
+.grand-total{display:flex;justify-content:space-between;font-weight:800;padding:8px 0;margin-top:6px;border-top:2px solid rgba(251,191,32,.3);color:var(--yellow);font-size:1.05rem}
+.grand-total .amt{color:var(--green)}
+/* Visual art */
+.visual{font-size:3rem;margin:14px 0;line-height:1.2}
+.visual-art{position:relative;height:100px;width:200px;margin:14px auto;overflow:hidden}
+/* CSS art: power tower */
+.tower{width:3px;height:80px;background:#555;margin:0 auto;position:relative}
+.tower::before,.tower::after{content:'';position:absolute;width:24px;height:3px;background:#555;top:14px;left:-10px}
+.tower::after{top:28px;width:32px;left:-14px}
+.tower .wire{position:absolute;width:100%;height:2px;background:#444;top:10px}
+/* Disclaimer */
+.disclaimer{font-size:.62rem;color:var(--text-dim);padding:6px 24px;text-align:center;line-height:1.4;max-width:800px;margin:12px auto 0;opacity:.6}
+/* Control bar */
+.controls{position:absolute;bottom:0;left:0;right:0;background:rgba(10,10,15,.95);border-top:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;gap:10px;padding:10px 16px;z-index:10;flex-wrap:wrap}
+.controls button,.controls select{background:rgba(255,255,255,.08);color:var(--text);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:8px 16px;font-size:.82rem;font-weight:600;cursor:pointer;transition:all .2s}
+.controls button:hover,.controls select:hover{background:rgba(34,197,94,.15);border-color:var(--green)}
+.controls .play-btn{background:linear-gradient(135deg,var(--green),var(--green-dark));color:#fff;border:none}
+.controls .join-btn{background:linear-gradient(135deg,var(--orange),#d97706);color:#fff;border:none;text-decoration:none}
+.controls select{padding:8px 10px}
+.voice-on{color:var(--green)!important}
+.voice-off{color:var(--text-dim)!important}
+/* Dots */
+.dots{position:absolute;bottom:56px;left:0;right:0;display:flex;justify-content:center;gap:8px;z-index:5}
+.dot{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.2);cursor:pointer;transition:all .3s}
+.dot.active{background:var(--green);transform:scale(1.3)}
+.dot:hover{background:rgba(34,197,94,.5)}
+/* Contact info */
+.contact{font-size:.8rem;color:var(--text-dim);margin-top:16px}
+.contact b{color:var(--green)}
+.contact a{color:var(--orange);text-decoration:none}
+/* Highlight */
+.hl-green{color:var(--green)} .hl-orange{color:var(--orange)} .hl-yellow{color:var(--yellow)}
+/* Responsive */
+@media(max-width:1024px){
+  .product-grid{grid-template-columns:1fr;max-width:360px}
+  .setup-row{flex-direction:row;font-size:.85rem;gap:8px;padding:8px 14px}
+  .setup-row .who{min-width:60px}
+  .income-section{padding:14px 16px}
+}
+@media(max-width:640px){
+  .slide{padding:60px 16px 110px}
+  .card{padding:18px}
+  .controls{gap:6px;padding:8px 10px}
+  .controls button,.controls select{padding:6px 10px;font-size:.74rem}
+  .income-line{font-size:.78rem}
+  .dot{width:8px;height:8px}
+  .disclaimer{font-size:.56rem}
+}
+/* Scrollbar */
+.slide::-webkit-scrollbar{width:6px}
+.slide::-webkit-scrollbar-track{background:transparent}
+.slide::-webkit-scrollbar-thumb{background:rgba(255,255,255,.15);border-radius:3px}
+/* ComEd / Electrification */
+.edu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;max-width:640px;margin:14px auto}
+.edu-card{background:linear-gradient(145deg,var(--card),var(--card2));border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:16px 14px;text-align:left;transition:transform .2s,border-color .2s}
+.edu-card:hover{transform:translateY(-3px);border-color:rgba(245,158,11,.4)}
+.edu-card .edu-icon{font-size:1.6rem;margin-bottom:6px}
+.edu-card .edu-title{font-weight:700;font-size:.85rem;margin-bottom:4px;color:var(--text)}
+.edu-card .edu-desc{font-size:.75rem;color:var(--text-dim);line-height:1.4}
+.edu-card.ec-blue{border-color:rgba(59,130,246,.25)} .edu-card.ec-blue .edu-title{color:#60a5fa}
+.edu-card.ec-green{border-color:rgba(34,197,94,.25)} .edu-card.ec-green .edu-title{color:var(--green)}
+.edu-card.ec-orange{border-color:rgba(245,158,11,.25)} .edu-card.ec-orange .edu-title{color:var(--orange)}
+.edu-card.ec-yellow{border-color:rgba(251,191,32,.25)} .edu-card.ec-yellow .edu-title{color:var(--yellow)}
+.link-btn{display:inline-block;margin-top:10px;padding:10px 24px;border-radius:8px;font-weight:700;font-size:.88rem;text-decoration:none;transition:transform .2s}
+.link-btn:hover{transform:translateY(-2px)}
+.link-blue{background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;box-shadow:0 4px 16px rgba(59,130,246,.35)}
+.link-green{background:linear-gradient(135deg,var(--green),var(--green-dark));color:#fff;box-shadow:0 4px 16px rgba(34,197,94,.35)}
+@media(max-width:1024px){.edu-grid{grid-template-columns:1fr;max-width:340px}}
+</style>
+</head>
+<body>
+<div id="app">
+  <div class="slides" id="slidesContainer">
+
+  <!-- SLIDE 1: COVER -->
+  <div class="slide active" data-slide="0">
+    <div class="tag" data-key="tag">⚡ DERRELL BLACK · THINK+</div>
+    <h1 data-key="s1_headline">Three problems with your power. Think+ fixes all three.</h1>
+    <p class="sub" data-key="s1_sub">Press play — see the problem, meet the three products, then join the movement and earn with us.</p>
+    <div class="card card-green" style="text-align:center">
+      <div style="font-size:1.4rem;font-weight:800;margin-bottom:6px;color:var(--green)">Join the Movement. Share the Power.</div>
+      <div style="color:var(--text-dim);font-size:.9rem;margin-bottom:16px">Think Energy · Blacktech Solutions Corp</div>
+      <button class="btn btn-green" onclick="goToSlide(1)">▶ BUSINESS OVERVIEW</button>
+    </div>
+    <div class="contact">
+      <b>Derrell Black</b> — Independent Energy Advisor · 312-965-2782
+    </div>
+    <div class="disclaimer" data-key="disclaimer"></div>
+  </div>
+
+  <!-- SLIDE 2: THE PROBLEM -->
+  <div class="slide" data-slide="1">
+    <div class="tag" data-key="tag">⚡ DERRELL BLACK · THINK+</div>
+    <h2 data-key="s2_headline">Have you noticed if your electric bill has gone up lately?</h2>
+    <p data-key="s2_p1">Electricity rates climb year after year and you have almost no say in what you pay.</p>
+    <p data-key="s2_p2">And when the grid gets stressed by heat waves and storms, your lights are the first to flicker — or go out.</p>
+    <div class="callout callout-red" data-key="s2_callout">⚠ You pay more for power that's less reliable than ever.</div>
+    <h3 style="margin-top:18px" data-key="s2_intro">Meet Think+. Three products. One simple way to take back control of your power.</h3>
+    <div class="product-grid">
+      <div class="product-card pc-green">
+        <div class="icon">⚡</div>
+        <div class="label">AutoSave</div>
+        <div class="sub-label" data-key="s2_rate">Your rate</div>
+      </div>
+      <div class="product-card pc-orange">
+        <div class="icon">☀️</div>
+        <div class="label">Community Solar</div>
+        <div class="sub-label" data-key="s2_source">Your source</div>
+      </div>
+      <div class="product-card pc-yellow">
+        <div class="icon">🔋</div>
+        <div class="label">Home Battery</div>
+        <div class="sub-label" data-key="s2_backup">Your backup</div>
+      </div>
+    </div>
+    <div class="disclaimer" data-key="disclaimer"></div>
+  </div>
+
+  <!-- SLIDE 3: AUTOSAVE -->
+  <div class="slide" data-slide="2">
+    <div class="tag" data-key="tag">⚡ DERRELL BLACK · THINK+</div>
+    <div style="font-size:.78rem;font-weight:700;letter-spacing:2px;color:var(--green);margin-bottom:8px" data-key="s3_label">1 · AUTOSAVE</div>
+    <h2 data-key="s3_heading">An energy rate personalized just for you.</h2>
+    <p class="sub" data-key="s3_sub">The foundation. Everyone starts here.</p>
+    <p data-key="s3_desc">AutoSave builds you a personalized Think Energy rate and automatically switches you whenever it's lower than your area's price to compare. Same utility, same bill — you just stop overpaying.</p>
+    <div class="visual">⚡🏗️⚡</div>
+    <div class="pills">
+      <span class="pill" data-key="s3_p1">No Fees</span>
+      <span class="pill" data-key="s3_p2">No Stress</span>
+      <span class="pill" data-key="s3_p3">No Surprises</span>
+      <span class="pill" data-key="s3_p4">All Upside</span>
+    </div>
+    <p class="states" data-key="s3_states_prefix">Available: <b>DC, DE, IL, NJ, OH, PA</b></p>
+    <div class="callout callout-green" data-key="s3_callout">✓ Fixes the rising bill</div>
+    <div class="disclaimer" data-key="disclaimer"></div>
+  </div>
+
+  <!-- SLIDE 4: COMMUNITY SOLAR -->
+  <div class="slide" data-slide="3">
+    <div class="tag" data-key="tag">⚡ DERRELL BLACK · THINK+</div>
+    <div style="font-size:.78rem;font-weight:700;letter-spacing:2px;color:var(--orange);margin-bottom:8px" data-key="s4_label">2 · COMMUNITY SOLAR</div>
+    <h2 data-key="s4_heading">Why aren't you on a solar farm?</h2>
+    <p class="sub" data-key="s4_sub">Because you didn't know you could be.</p>
+    <p data-key="s4_desc">Subscribe to a local solar farm and earn credits on your bill — cleaner energy and savings with nothing to buy, install, or maintain on your home.</p>
+    <div class="visual">☀️🌾☀️</div>
+    <div class="pills">
+      <span class="pill pill-orange" data-key="s4_p1">Lower your bill up to 20 years</span>
+      <span class="pill pill-orange" data-key="s4_p2">No installs or maintenance</span>
+      <span class="pill pill-orange" data-key="s4_p3">Supports local clean energy</span>
+      <span class="pill pill-orange" data-key="s4_p4">No long-term contracts</span>
+    </div>
+    <p class="states" data-key="s4_states_prefix">Available: <b>DC, IL, MA, MD, ME, MN, NJ, NY, RI</b></p>
+    <div class="callout callout-green" data-key="s4_callout">✓ Cleaner source + more savings</div>
+    <div class="disclaimer" data-key="disclaimer"></div>
+  </div>
+
+  <!-- SLIDE 5: HOME BATTERY -->
+  <div class="slide" data-slide="4">
+    <div class="tag" data-key="tag">⚡ DERRELL BLACK · THINK+</div>
+    <div style="font-size:.78rem;font-weight:700;letter-spacing:2px;color:var(--yellow);margin-bottom:8px" data-key="s5_label">3 · HOME BATTERY</div>
+    <h2 data-key="s5_heading">When the grid goes down, you don't.</h2>
+    <p class="sub" data-key="s5_sub">The answer to the flicker. Launching 2026.</p>
+    <p data-key="s5_desc">A whole-home backup system — a $15,000–$18,000 value — installed at $0 cost to you. Save on electricity, keep automatic backup power, and get peace of mind through every blackout.</p>
+    <div class="visual">🏠🔋💡</div>
+    <div class="pills">
+      <span class="pill" data-key="s5_p1">Automatic backup power</span>
+      <span class="pill" data-key="s5_p2">$0 cost to install</span>
+      <span class="pill" data-key="s5_p3">Save on electricity</span>
+      <span class="pill" data-key="s5_p4">Peace of mind in blackouts</span>
+    </div>
+    <p class="states" data-key="s5_states_prefix">Coming to: <b>IL, NJ, PA, TX · 2026</b></p>
+    <div class="callout callout-green" data-key="s5_callout">✓ Fixes the reliability problem</div>
+    <div class="disclaimer" data-key="disclaimer"></div>
+  </div>
+
+  <!-- SLIDE 6: THE OPPORTUNITY -->
+  <div class="slide" data-slide="5">
+    <div class="tag" data-key="tag">⚡ DERRELL BLACK · THINK+</div>
+    <h2 style="color:var(--green)" data-key="s6_headline">Join the Movement. Share the Power.</h2>
+    <p data-key="s6_p1">You've seen what Think+ does for a home. Here's what it can do for you.</p>
+    <p data-key="s6_p2">Every time you help someone get set up, you get paid — and the same three products you just met become three income events for you.</p>
+    <h3 style="margin-top:14px;color:var(--orange)" data-key="s6_setup_label">5-3-5 Setup</h3>
+    <div class="setup-grid">
+      <div class="setup-row"><span class="who hl-green">YOU</span><span>5 personal customers</span><span class="num">5</span></div>
+      <div class="setup-row"><span class="who">+ EA 1</span><span>5 customers</span><span class="num">5</span></div>
+      <div class="setup-row"><span class="who">+ EA 2</span><span>5 customers</span><span class="num">5</span></div>
+      <div class="setup-row"><span class="who">+ EA 3</span><span>5 customers</span><span class="num">5</span></div>
+      <div class="setup-row setup-total"><span class="who">= TOTAL</span><span>customers</span><span class="num">20</span></div>
+    </div>
+    <p class="sub" data-key="s6_formula">you get 5 • you sponsor 3 who each get 5</p>
+    <div class="badge" data-key="s6_badge">You paid-as: REA</div>
+    <p class="sub hl-green" data-key="s6_closing">Same 20 customers • zero new prospecting</p>
+    <div class="disclaimer" data-key="disclaimer"></div>
+  </div>
+
+  <!-- SLIDE 7: INCOME STACK -->
+  <div class="slide" data-slide="6">
+    <div class="tag" data-key="tag">⚡ DERRELL BLACK · THINK+</div>
+    <h2 data-key="s7_headline">The Income Stack</h2>
+    <p class="sub" data-key="s7_sub">Three products. Three income streams. One customer book.</p>
+
+    <!-- Section 1: AutoSave -->
+    <div class="income-section" style="border-color:rgba(34,197,94,.3)">
+      <div class="header">
+        <h3>⚡ AutoSave (AS)</h3>
+        <span class="when when-today" data-key="s7_when1">TODAY</span>
+      </div>
+      <p style="font-size:.82rem;color:var(--text-dim);margin-bottom:8px" data-key="s7_s1_desc">Every customer starts here. This is the base you build on.</p>
+      <div class="income-line"><span>Your 5 customers × $20</span><b>$100</b></div>
+      <div class="income-line"><span>$50 promo through 9/30 (5 × $50)</span><b>$150</b></div>
+      <div class="income-line"><span>Mentor Level 1: 3 EAs × 5 customers × $10</span><b>$150</b></div>
+      <div class="income-line"><span>Rank up to REA</span><b>$200</b></div>
+      <div class="income-total"><span data-key="s7_running1">Running total</span><span class="amt">$600</span></div>
+    </div>
+
+    <!-- Section 2: Community Solar -->
+    <div class="income-section" style="border-color:rgba(245,158,11,.3)">
+      <div class="header">
+        <h3>☀️ Community Solar</h3>
+        <span class="when when-next" data-key="s7_when2">NEXT MONTH</span>
+      </div>
+      <p style="font-size:.82rem;color:var(--text-dim);margin-bottom:8px" data-key="s7_s2_desc">Same customers. New product. Every one you enroll pays a Comm Solar CAB.</p>
+      <div class="income-line"><span>Your same 5 customers × $30</span><b>$150</b></div>
+      <div class="income-line"><span>Mentor L1: 3 EAs × 5 customers × $15</span><b>$225</b></div>
+      <div class="income-total"><span data-key="s7_cs_total">Community Solar — total</span><span class="amt">$375</span></div>
+      <div class="running"><span>+ adds $375 → Running total</span><span class="amt">$975</span></div>
+    </div>
+
+    <!-- Section 3: Home Battery -->
+    <div class="income-section" style="border-color:rgba(251,191,32,.3)">
+      <div class="header">
+        <h3>🔋 Home Battery</h3>
+        <span class="when when-year" data-key="s7_when3">THIS YEAR</span>
+      </div>
+      <p style="font-size:.82rem;color:var(--text-dim);margin-bottom:8px" data-key="s7_s3_desc">The same customers add a battery. Big-ticket CABs land on the book you already built.</p>
+      <div class="income-line"><span>Your same 5 customers × $300</span><b>$1,500</b></div>
+      <div class="income-line"><span>Mentor L1: 3 EAs × 5 customers × $150</span><b>$2,250</b></div>
+      <div class="income-total"><span data-key="s7_batt_total">Batteries — total</span><span class="amt">$3,750</span></div>
+      <div class="grand-total"><span>+ adds $3,750 → Grand total</span><span class="amt">$4,725</span></div>
+    </div>
+
+    <div class="callout callout-green" style="margin-top:14px;font-size:1.1rem" data-key="s7_closing">Same 20 customers. Built once. Paid three times.</div>
+
+    <button class="btn btn-green" style="margin-top:14px" onclick="window.open('https://get.thinkenergy.com/BTSENERGY','_blank')" data-key="s7_join">JOIN NOW →</button>
+    <div class="contact" style="margin-top:14px">
+      <b>Derrell Black</b> · Independent Energy Advisor · 312-965-2782 · Blacktech Solutions Corp
+    </div>
+    <div class="disclaimer" data-key="disclaimer"></div>
+  </div>
+
+  </div><!-- /slides -->
+
+  <!-- Progress dots -->
+  <div class="dots" id="dots"></div>
+
+  <!-- Control bar -->
+  <div class="controls">
+    <button class="play-btn" id="playBtn" onclick="togglePlay()" data-key="ctrl_play">▶ Play</button>
+    <select id="langSelect" onchange="changeLanguage(this.value)">
+      <option value="en">🇺🇸 English</option>
+      <option value="es">🇪🇸 Español</option>
+    </select>
+    <button id="voiceBtn" onclick="toggleVoice()" class="voice-on" data-key="ctrl_voice">🔊 Voice On</button>
+    <button onclick="resetSlides()" data-key="ctrl_reset">↺ Reset</button>
+    <button onclick="sharePresentation()" style="background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;border:none" data-key="ctrl_share">📤 Share</button>
+    <!-- JOIN NOW: Replace with Derrell's personal replicated site link if this URL doesn't work -->
+    <a class="join-btn" href="https://get.thinkenergy.com/BTSENERGY" target="_blank" style="padding:8px 16px;border-radius:8px;font-size:.82rem;font-weight:600;text-decoration:none" data-key="ctrl_join">🚀 Join Now</a>
+  </div>
+</div>
+
+<script>
+// ── State ──
+let currentSlide=0, totalSlides=7, playing=false, playTimer=null, voiceOn=true, lang='en';
+const DISCLAIMER="Independent Energy Advisor. This page is not an official Think Energy / Think+ site and is not created, endorsed by, or affiliated with Think Energy, Think+, or Energywell. All figures are illustrative examples only — not guarantees of savings or income. Products, rates, and availability are set by the providers and may change.";
+
+// ── Translations ──
+const I18N={
+  en:{
+    tag:"⚡ DERRELL BLACK · THINK+",
+    disclaimer:DISCLAIMER,
+    s1_headline:"Three problems with your power. Think+ fixes all three.",
+    s1_sub:"Press play — see the problem, meet the three products, then join the movement and earn with us.",
+    s2_headline:"Have you noticed if your electric bill has gone up lately?",
+    s2_p1:"Electricity rates climb year after year and you have almost no say in what you pay.",
+    s2_p2:"And when the grid gets stressed by heat waves and storms, your lights are the first to flicker — or go out.",
+    s2_callout:"⚠ You pay more for power that's less reliable than ever.",
+    s2_intro:"Meet Think+. Three products. One simple way to take back control of your power.",
+    s2_rate:"Your rate",s2_source:"Your source",s2_backup:"Your backup",
+    s3_label:"1 · AUTOSAVE",s3_heading:"An energy rate personalized just for you.",s3_sub:"The foundation. Everyone starts here.",
+    s3_desc:"AutoSave builds you a personalized Think Energy rate and automatically switches you whenever it's lower than your area's price to compare. Same utility, same bill — you just stop overpaying.",
+    s3_p1:"No Fees",s3_p2:"No Stress",s3_p3:"No Surprises",s3_p4:"All Upside",
+    s3_states_prefix:"Available: DC, DE, IL, NJ, OH, PA",s3_callout:"✓ Fixes the rising bill",
+    s4_label:"2 · COMMUNITY SOLAR",s4_heading:"Why aren't you on a solar farm?",s4_sub:"Because you didn't know you could be.",
+    s4_desc:"Subscribe to a local solar farm and earn credits on your bill — cleaner energy and savings with nothing to buy, install, or maintain on your home.",
+    s4_p1:"Lower your bill up to 20 years",s4_p2:"No installs or maintenance",s4_p3:"Supports local clean energy",s4_p4:"No long-term contracts",
+    s4_states_prefix:"Available: DC, IL, MA, MD, ME, MN, NJ, NY, RI",s4_callout:"✓ Cleaner source + more savings",
+    s5_label:"3 · HOME BATTERY",s5_heading:"When the grid goes down, you don't.",s5_sub:"The answer to the flicker. Launching 2026.",
+    s5_desc:"A whole-home backup system — a $15,000–$18,000 value — installed at $0 cost to you. Save on electricity, keep automatic backup power, and get peace of mind through every blackout.",
+    s5_p1:"Automatic backup power",s5_p2:"$0 cost to install",s5_p3:"Save on electricity",s5_p4:"Peace of mind in blackouts",
+    s5_states_prefix:"Coming to: IL, NJ, PA, TX · 2026",s5_callout:"✓ Fixes the reliability problem",
+    s6_headline:"Join the Movement. Share the Power.",s6_p1:"You've seen what Think+ does for a home. Here's what it can do for you.",
+    s6_p2:"Every time you help someone get set up, you get paid — and the same three products you just met become three income events for you.",
+    s6_setup_label:"5-3-5 Setup",s6_formula:"you get 5 • you sponsor 3 who each get 5",s6_badge:"You paid-as: REA",s6_closing:"Same 20 customers • zero new prospecting",
+    s7_headline:"The Income Stack",s7_sub:"Three products. Three income streams. One customer book.",
+    s7_when1:"TODAY",s7_when2:"NEXT MONTH",s7_when3:"THIS YEAR",
+    s7_s1_desc:"Every customer starts here. This is the base you build on.",s7_running1:"Running total",
+    s7_s2_desc:"Same customers. New product. Every one you enroll pays a Comm Solar CAB.",s7_cs_total:"Community Solar — total",
+    s7_s3_desc:"The same customers add a battery. Big-ticket CABs land on the book you already built.",s7_batt_total:"Batteries — total",
+    s7_closing:"Same 20 customers. Built once. Paid three times.",s7_join:"JOIN NOW →",
+    ctrl_play:"▶ Play",ctrl_voice:"🔊 Voice On",ctrl_reset:"↺ Reset",ctrl_share:"📤 Share",ctrl_join:"🚀 Join Now",
+    voice_on:"🔊 Voice On",voice_off:"🔊 Voice Off",play:"▶ Play",pause:"⏸ Pause",
+    share_title:"Think+ — Three problems with your power. Fixed.",
+    share_text:"Check out how Think+ fixes rising bills, dirty energy, and blackouts — and how you can earn sharing it.",
+    share_copied:"✅ Link copied!"
+  },
+  es:{
+    tag:"⚡ DERRELL BLACK · THINK+",
+    disclaimer:"Asesor Energético Independiente. Esta página no es un sitio oficial de Think Energy / Think+ y no es creada, respaldada ni está afiliada a Think Energy, Think+ o Energywell. Todas las cifras son solo ejemplos ilustrativos — no garantías de ahorro ni de ingresos. Los productos, tarifas y disponibilidad los determinan los proveedores y pueden cambiar.",
+    s1_headline:"Tres problemas con tu energía. Think+ los resuelve todos.",
+    s1_sub:"Pulsa reproducir — mira el problema, conoce los tres productos, luego únete al movimiento y gana con nosotros.",
+    s2_headline:"¿Has notado si tu factura de electricidad ha subido últimamente?",
+    s2_p1:"Las tarifas de electricidad suben año tras año y casi no tienes voz en lo que pagas.",
+    s2_p2:"Y cuando la red se ve afectada por olas de calor y tormentas, tus luces son las primeras en parpadear — o en apagarse.",
+    s2_callout:"⚠ Pagas más por una energía que es menos confiable que nunca.",
+    s2_intro:"Conoce Think+. Tres productos. Una forma sencilla de recuperar el control de tu energía.",
+    s2_rate:"Tu tarifa",s2_source:"Tu fuente",s2_backup:"Tu respaldo",
+    s3_label:"1 · AUTOSAVE",s3_heading:"Una tarifa de energía personalizada solo para ti.",s3_sub:"La base. Todos empiezan aquí.",
+    s3_desc:"AutoSave crea una tarifa personalizada de Think Energy y te cambia automáticamente cuando es más baja que el precio de comparación de tu área. Misma empresa, misma factura — simplemente dejas de pagar de más.",
+    s3_p1:"Sin Cargos",s3_p2:"Sin Estrés",s3_p3:"Sin Sorpresas",s3_p4:"Todo a Favor",
+    s3_states_prefix:"Disponible: DC, DE, IL, NJ, OH, PA",s3_callout:"✓ Soluciona la factura que sube",
+    s4_label:"2 · ENERGÍA SOLAR COMUNITARIA",s4_heading:"¿Por qué no estás en una granja solar?",s4_sub:"Porque no sabías que podías estarlo.",
+    s4_desc:"Suscríbete a una granja solar local y gana créditos en tu factura — energía más limpia y ahorro sin nada que comprar, instalar ni mantener en tu casa.",
+    s4_p1:"Baja tu factura hasta 20 años",s4_p2:"Sin instalaciones ni mantenimiento",s4_p3:"Apoya energía limpia local",s4_p4:"Sin contratos a largo plazo",
+    s4_states_prefix:"Disponible: DC, IL, MA, MD, ME, MN, NJ, NY, RI",s4_callout:"✓ Fuente más limpia + más ahorro",
+    s5_label:"3 · BATERÍA DOMÉSTICA",s5_heading:"Cuando la red falla, tú no.",s5_sub:"La respuesta al parpadeo. Lanzamiento 2026.",
+    s5_desc:"Un sistema de respaldo para toda la casa — un valor de $15,000–$18,000 — instalado a $0 de costo para ti. Ahorra en electricidad, mantén respaldo automático y ten tranquilidad en cada apagón.",
+    s5_p1:"Respaldo automático",s5_p2:"$0 para instalar",s5_p3:"Ahorra en electricidad",s5_p4:"Tranquilidad en apagones",
+    s5_states_prefix:"Próximamente: IL, NJ, PA, TX · 2026",s5_callout:"✓ Soluciona el problema de confiabilidad",
+    s6_headline:"Únete al Movimiento. Comparte la Energía.",s6_p1:"Has visto lo que Think+ hace por un hogar. Esto es lo que puede hacer por ti.",
+    s6_p2:"Cada vez que ayudas a alguien a configurarse, te pagan — y los mismos tres productos que conociste se convierten en tres ingresos para ti.",
+    s6_setup_label:"Estructura 5-3-5",s6_formula:"consigues 5 • patrocinas 3 que cada uno consigue 5",s6_badge:"Tu nivel: REA",s6_closing:"Mismos 20 clientes • cero prospección nueva",
+    s7_headline:"La Pila de Ingresos",s7_sub:"Tres productos. Tres flujos de ingresos. Una cartera de clientes.",
+    s7_when1:"HOY",s7_when2:"PRÓXIMO MES",s7_when3:"ESTE AÑO",
+    s7_s1_desc:"Cada cliente empieza aquí. Esta es la base que construyes.",s7_running1:"Total acumulado",
+    s7_s2_desc:"Mismos clientes. Nuevo producto. Cada uno que inscribes paga un CAB de Solar Comunitario.",s7_cs_total:"Solar Comunitario — total",
+    s7_s3_desc:"Los mismos clientes añaden una batería. CABs de alto valor caen en la cartera que ya construiste.",s7_batt_total:"Baterías — total",
+    s7_closing:"Mismos 20 clientes. Construido una vez. Pagado tres veces.",s7_join:"ÚNETE AHORA →",
+    ctrl_play:"▶ Reproducir",ctrl_voice:"🔊 Voz Off",ctrl_reset:"↺ Reiniciar",ctrl_share:"📤 Compartir",ctrl_join:"🚀 Únete",
+    voice_on:"🔊 Voz On",voice_off:"🔊 Voz Off",play:"▶ Reproducir",pause:"⏸ Pausa",
+    share_title:"Think+ — Tres problemas con tu energía. Resueltos.",
+    share_text:"Descubre cómo Think+ soluciona tarifas altas, energía sucia y apagones — y cómo puedes ganar compartiéndolo.",
+    share_copied:"✅ ¡Enlace copiado!"
+  }
+};
+
+// ── Narration text per slide (for Web Speech API) ──
+// College-level, conversational, human-like teaching style
+const NARRATION={
+  en:[
+    // Slide 1: Cover
+    "Alright, let me walk you through something that could genuinely change how you think about your power bill. I'm Derrell Black, an Independent Energy Advisor with Think Energy. Over the next few minutes, I'm going to show you three problems almost every homeowner is facing right now, and how Think Plus fixes all three of them. So grab a seat, hit play, and let's break this down together.",
+    // Slide 2: The Problem
+    "Let's start with a simple question. Have you noticed your electric bill going up lately? Here's the thing — electricity rates climb year after year, and honestly, you have almost no say in what you pay. You just get the bill and you pay it. But here's what really gets people — when the grid gets stressed, during heat waves, during storms, your lights are the first thing to flicker or go out entirely. So think about that for a second. You're paying more, for power that's less reliable than ever. That's the problem. Now meet the solution. Think Plus. Three products, one simple way to take back control of your power. Let me walk you through each one.",
+    // Slide 3: AutoSave
+    "Step one. AutoSave. This is the foundation — everyone starts here. So what is it? AutoSave builds you a personalized Think Energy rate, and here's the smart part — it automatically switches you to that rate whenever it's lower than what your area is charging. Same utility, same bill, same power. You just stop overpaying. No fees, no stress, no surprises. It's all upside. It's available right now in DC, Delaware, Illinois, New Jersey, Ohio, and Pennsylvania. This is what fixes the rising bill problem. Simple and clean.",
+    // Slide 4: Community Solar
+    "Step two. Community Solar. Now let me ask you something — why aren't you on a solar farm? Probably because you didn't know you could be. Most people don't. Here's how it works. You subscribe to a local solar farm, and you earn credits on your electric bill from the energy it produces. Cleaner energy, real savings, and you don't have to buy anything, install anything, or maintain anything on your home. No panels on your roof. No maintenance. You can lower your bill for up to twenty years. You support local clean energy. And there are no long-term contracts locking you in. It's available in DC, Illinois, Massachusetts, Maryland, Maine, Minnesota, New Jersey, New York, and Rhode Island. This is what gives you a cleaner source and more savings on top of what AutoSave already does.",
+    // Slide 5: Home Battery
+    "Step three. Home Battery. This is the answer to the flicker, the blackout, the grid going down. When the grid goes down, you don't. Launching in twenty twenty-six. Here's the deal — a whole-home backup system, a fifteen to eighteen thousand dollar value, installed at zero cost to you. Zero. You get automatic backup power. You save on electricity. And you get peace of mind through every single blackout. Coming to Illinois, New Jersey, Pennsylvania, and Texas in twenty twenty-six. This is what fixes the reliability problem once and for all.",
+    // Slide 6: The Opportunity
+    "Now here's where it gets really interesting. You've seen what Think Plus does for a home. Let me show you what it can do for you. Every time you help someone get set up with these products, you get paid. And the same three products you just learned about become three separate income events for you. Let me break down the setup. It's called the five-three-five. You get five personal customers. Then you sponsor three energy advisors, and each of them gets five customers. That's twenty customers total. You get five, you sponsor three who each get five. At that point, you're paid as a Regional Energy Advisor. Same twenty customers, zero new prospecting. You built it once, and it pays you three different ways.",
+    // Slide 7: Income Stack
+    "Let's stack it up. Three products, three income streams, one customer book. First, AutoSave — this starts today. Your five customers at twenty dollars each, that's one hundred dollars. There's a fifty-dollar promo running through September thirtieth, so five times fifty, that's another one hundred fifty. Mentor Level one — your three EAs' fifteen customers at ten dollars each, that's one hundred fifty. Rank up to REA, that's another two hundred. Running total? Six hundred dollars. Now Community Solar kicks in next month. Same five customers at thirty dollars each, that's one hundred fifty. Mentor Level one, fifteen customers at fifteen dollars, that's two hundred twenty-five. Community Solar adds three hundred seventy-five. Running total? Nine hundred seventy-five. Then the big one — Home Battery, this year. Same five customers at three hundred dollars each, that's fifteen hundred. Mentor Level one, fifteen customers at one fifty, that's two thousand two hundred fifty. Batteries add three thousand seven hundred fifty. Grand total? Four thousand, seven hundred twenty-five dollars. Same twenty customers. Built once. Paid three times. That's the power of Think Plus."
+  ],
+  es:[
+    "Déjenme explicarles algo que podría cambiar completamente cómo ven su factura de electricidad. Soy Derrell Black, Asesor Energético Independiente con Think Energy. En los próximos minutos, voy a mostrarles tres problemas que casi todos los propietarios de viviendas enfrentan hoy, y cómo Think Plus los resuelve. Así que acompáñenme, y vamos a desglosarlo paso a paso.",
+    "Empecemos con una pregunta simple. ¿Han notado si su factura de electricidad ha subido últimamente? Aquí está la cosa — las tarifas suben año tras año, y francamente, ustedes casi no tienen voz en lo que pagan. Simplemente reciben la factura y la pagan. Pero esto es lo que realmente molesta a la gente — cuando la red se sobrecarga, durante olas de calor, durante tormentas, sus luces son las primeras en parpadear o apagarse completamente. Piensen en eso un momento. Pagan más, por una energía menos confiable que nunca. Ese es el problema. Ahora conozcan la solución. Think Plus. Tres productos, una forma sencilla de recuperar el control de su energía. Déjenme guiarlos por cada uno.",
+    "Paso uno. AutoSave. Esta es la base — todos empiezan aquí. ¿Qué es? AutoSave crea una tarifa personalizada de Think Energy para ustedes, y esto es lo inteligente — los cambia automáticamente a esa tarifa cuando es más baja que lo que cobra su área. Misma empresa, misma factura, misma energía. Simplemente dejan de pagar de más. Sin cargos, sin estrés, sin sorpresas. Todo a favor. Disponible ahora en DC, Delaware, Illinois, Nueva Jersey, Ohio y Pensilvania. Esto resuelve el problema de la factura que sube. Simple y claro.",
+    "Paso dos. Energía Solar Comunitaria. Déjenme preguntarles algo — ¿por qué no están en una granja solar? Probablemente porque no sabían que podían estarlo. La mayoría no lo sabe. Así funciona. Se suscriben a una granja solar local, y ganan créditos en su factura de electricidad por la energía que produce. Energía más limpia, ahorro real, y no tienen que comprar nada, instalar nada ni mantener nada en su casa. No hay paneles en su techo. No hay mantenimiento. Pueden bajar su factura hasta por veinte años. Apoyan energía limpia local. Y no hay contratos a largo plazo. Disponible en DC, Illinois, Massachusetts, Maryland, Maine, Minnesota, Nueva Jersey, Nueva York y Rhode Island. Esto les da una fuente más limpia y más ahorro además de lo que AutoSave ya hace.",
+    "Paso tres. Batería Doméstica. Esta es la respuesta al parpadeo, al apagón, a la red fallando. Cuando la red falla, ustedes no. Lanzamiento en dos mil veintiséis. Esto es el acuerdo — un sistema de respaldo para toda la casa, un valor de quince a dieciocho mil dólares, instalado a cero costo para ustedes. Cero. Respaldo automático. Ahorran en electricidad. Y tienen tranquilidad en cada apagón. Próximamente en Illinois, Nueva Jersey, Pensilvania y Texas en dos mil veintiséis. Esto resuelve el problema de confiabilidad de una vez por todas.",
+    "Ahora aquí es donde se pone muy interesante. Han visto lo que Think Plus hace por una casa. Déjenme mostrarles lo que puede hacer por ustedes. Cada vez que ayudan a alguien a configurarse con estos productos, les pagan. Y los mismos tres productos que acaban de conocer se convierten en tres ingresos separados. Déjenme desglosar la estructura. Se llama cinco-tres-cinco. Consiguen cinco clientes personales. Luego patrocinan tres asesores energéticos, y cada uno consigue cinco clientes. Son veinte clientes en total. Cinco, tres que cada uno consigue cinco. En ese punto, les pagan como Asesor Energético Regional. Mismos veinte clientes, cero prospección nueva. Lo construyen una vez, y les paga de tres maneras diferentes.",
+    "Vamos a sumarlo. Tres productos, tres flujos de ingresos, una cartera de clientes. Primero, AutoSave — esto empieza hoy. Sus cinco clientes a veinte dólares cada uno, eso son cien dólares. Hay una promo de cincuenta dólares hasta el treinta de septiembre, cinco por cincuenta, son otros ciento cincuenta. Mentor Nivel uno — los quince clientes de sus tres EAs a diez dólares cada uno, eso son ciento cincuenta. Suben a REA, otros doscientos. ¿Total acumulado? Seiscientos dólares. Ahora la Solar Comunitaria entra el próximo mes. Mismos cinco clientes a treinta dólares, eso son ciento cincuenta. Mentor Nivel uno, quince clientes a quince dólares, doscientos veinticinco. Solar Comunitaria añade trescientos setenta y cinco. ¿Total? Novecientos setenta y cinco. Luego el grande — Batería Doméstica, este año. Mismos cinco clientes a trescientos dólares, eso son mil quinientos. Mentor Nivel uno, quince clientes a ciento cincuenta, dos mil doscientos cincuenta. Las baterías añaden tres mil setecientos cincuenta. ¿Gran total? Cuatro mil setecientos veinticinco dólares. Mismos veinte clientes. Construido una vez. Pagado tres veces. Ese es el poder de Think Plus."
+  ]
+};
+
+// ── Init ──
+function init(){
+  buildDots();
+  applyLang();
+}
+function buildDots(){
+  const d=document.getElementById('dots');
+  d.innerHTML='';
+  for(let i=0;i<totalSlides;i++){
+    const dot=document.createElement('div');
+    dot.className='dot'+(i===0?' active':'');
+    dot.onclick=()=>goToSlide(i);
+    d.appendChild(dot);
+  }
+}
+function updateDots(){
+  document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('active',i===currentSlide));
+}
+function goToSlide(idx){
+  if(idx<0)idx=totalSlides-1;
+  if(idx>=totalSlides)idx=0;
+  const slides=document.querySelectorAll('.slide');
+  slides.forEach((s,i)=>{
+    s.classList.remove('active','prev');
+    if(i===idx)s.classList.add('active');
+    else if(i<idx)s.classList.add('prev');
+  });
+  currentSlide=idx;
+  updateDots();
+  if(voiceOn)speakSlide();
+}
+function nextSlide(){goToSlide(currentSlide+1)}
+function prevSlide(){goToSlide(currentSlide-1)}
+function resetSlides(){
+  if(playing)togglePlay();
+  goToSlide(0);
+}
+function togglePlay(){
+  playing=!playing;
+  const btn=document.getElementById('playBtn');
+  if(playing){
+    btn.textContent=I18N[lang].pause;
+    btn.classList.remove('play-btn');
+    btn.style.background='rgba(255,255,255,.12)';
+    if(voiceOn){
+      speakSlide();
+    }else{
+      // 16s per slide + advance (no voice mode)
+      playTimer=setInterval(()=>nextSlide(),16000);
+    }
+  }else{
+    btn.textContent=I18N[lang].play;
+    btn.classList.add('play-btn');
+    btn.style.background='';
+    clearInterval(playTimer);
+    if(narrationAudio){narrationAudio.pause();narrationAudio.currentTime=0;}
+  }
+}
+function toggleVoice(){
+  voiceOn=!voiceOn;
+  const btn=document.getElementById('voiceBtn');
+  if(voiceOn){
+    btn.textContent=I18N[lang].voice_on;
+    btn.classList.add('voice-on');
+    speakSlide();
+  }else{
+    btn.textContent=I18N[lang].voice_off;
+    btn.classList.remove('voice-on');
+    if(narrationAudio){narrationAudio.pause();narrationAudio.currentTime=0;}
+  }
+}
+// ── Voice: pre-recorded TTS audio (Emma en-US, Paloma es-US) ──
+let narrationAudio=null, voiceAdvanceTimer=null;
+function speakSlide(){
+  const prefix=lang==='es'?'es':'en';
+  const src=`audio/think_${prefix}_slide${currentSlide}.mp3`;
+  if(!narrationAudio){
+    narrationAudio=new Audio();
+    narrationAudio.preload='auto';
+  }
+  narrationAudio.pause();
+  narrationAudio.currentTime=0;
+  clearTimeout(voiceAdvanceTimer);
+  let advanced=false;
+  const doAdvance=()=>{
+    if(advanced)return;
+    advanced=true;
+    if(playing&&currentSlide<totalSlides-1){
+      setTimeout(()=>{if(playing)nextSlide();},1500);
+    }
+  };
+  narrationAudio.onended=doAdvance;
+  narrationAudio.onerror=()=>{doAdvance();};
+  narrationAudio.src=src;
+  narrationAudio.play().catch(()=>{
+    voiceAdvanceTimer=setTimeout(doAdvance,5000);
+  });
+}
+function changeLanguage(l){
+  lang=l;
+  applyLang();
+  if(voiceOn){
+    if(narrationAudio){narrationAudio.pause();narrationAudio.currentTime=0;}
+    speakSlide();
+  }
+}
+function applyLang(){
+  const t=I18N[lang];
+  document.querySelectorAll('[data-key]').forEach(el=>{
+    const key=el.getAttribute('data-key');
+    if(t[key]!==undefined)el.textContent=t[key];
+  });
+  // Update play/pause button
+  const pb=document.getElementById('playBtn');
+  pb.textContent=playing?t.pause:t.play;
+  // Update voice button
+  const vb=document.getElementById('voiceBtn');
+  vb.textContent=voiceOn?t.voice_on:t.voice_off;
+}
+// ── Share ──
+function sharePresentation(){
+  const t=I18N[lang];
+  const url=window.location.href;
+  const shareData={title:t.share_title,text:t.share_text,url:url};
+  if(navigator.share){
+    navigator.share(shareData).catch(()=>{});
+  }else if(navigator.clipboard){
+    navigator.clipboard.writeText(url).then(()=>{
+      const btn=event.target;
+      const orig=btn.textContent;
+      btn.textContent=t.share_copied;
+      setTimeout(()=>{btn.textContent=orig;},2000);
+    });
+  }else{
+    // Last resort: prompt
+    window.prompt('Copy this link:',url);
+  }
+}
+// ── Keyboard ──
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight'){nextSlide();e.preventDefault()}
+  else if(e.key==='ArrowLeft'){prevSlide();e.preventDefault()}
+  else if(e.key===' '){togglePlay();e.preventDefault()}
+});
+// ── Start ──
+init();
+</script>
+</body>
+</html>
