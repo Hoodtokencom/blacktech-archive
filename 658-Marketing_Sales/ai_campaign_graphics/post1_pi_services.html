@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Post 1 - 25+ AI Services on a $35 Raspberry Pi</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: #002244;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .post {
+    width: 1080px;
+    height: 1080px;
+    background: #002244;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 90px;
+  }
+
+  /* Decorative circuit pattern */
+  .post::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(105, 190, 40, 0.06) 0%, transparent 40%),
+      radial-gradient(circle at 80% 60%, rgba(105, 190, 40, 0.04) 0%, transparent 35%),
+      radial-gradient(circle at 50% 85%, rgba(165, 172, 175, 0.03) 0%, transparent 30%);
+    pointer-events: none;
+  }
+
+  /* Green top bar accent */
+  .post::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 8px;
+    background: #69BE28;
+  }
+
+  .pi-icon {
+    font-size: 130px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    filter: drop-shadow(0 4px 20px rgba(105, 190, 40, 0.3));
+    z-index: 2;
+  }
+
+  .pi-badge {
+    background: #69BE28;
+    color: #002244;
+    font-weight: 800;
+    font-size: 24px;
+    padding: 10px 32px;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    z-index: 2;
+  }
+
+  .headline {
+    color: #ffffff;
+    font-size: 82px;
+    font-weight: 900;
+    line-height: 1.05;
+    text-align: center;
+    letter-spacing: -2px;
+    z-index: 2;
+    max-width: 900px;
+  }
+
+  .headline .highlight {
+    color: #69BE28;
+  }
+
+  .headline .pi-text {
+    color: #69BE28;
+  }
+
+  .subtext {
+    color: #A5ACAF;
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 45px;
+    text-align: center;
+    line-height: 1.5;
+    z-index: 2;
+    max-width: 800px;
+  }
+
+  .service-icons {
+    display: flex;
+    gap: 18px;
+    margin-top: 50px;
+    z-index: 2;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+  }
+
+  .service-pill {
+    background: rgba(105, 190, 40, 0.15);
+    border: 1px solid rgba(105, 190, 40, 0.35);
+    color: #69BE28;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 22px;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  .tagline {
+    position: absolute;
+    bottom: 55px;
+    left: 0; right: 0;
+    text-align: center;
+    color: #A5ACAF;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    z-index: 2;
+    padding: 0 80px;
+  }
+
+  .tagline strong {
+    color: #69BE28;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+<div class="post">
+  <div class="pi-icon">🥧</div>
+  <div class="pi-badge">$35 Hardware</div>
+  <div class="headline">
+    I run <span class="highlight">25+ AI services</span><br>
+    on a <span class="pi-text">$35 Raspberry Pi</span>
+  </div>
+  <div class="subtext">
+    LLMs, agents, automation pipelines, document processing —<br>all on hardware that fits in your pocket.
+  </div>
+  <div class="service-icons">
+    <div class="service-pill">🤖 AI Agents</div>
+    <div class="service-pill">📝 NLP</div>
+    <div class="service-pill">🧠 LLMs</div>
+    <div class="service-pill">⚙️ Automation</div>
+    <div class="service-pill">📊 Analytics</div>
+    <div class="service-pill">🔍 Search</div>
+  </div>
+  <div class="tagline">
+    I built this for myself — <strong>here's what I can build for you.</strong>
+  </div>
+</div>
+</body>
+</html>
