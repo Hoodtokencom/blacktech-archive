@@ -3,7 +3,8 @@
     "file": "697-HVAC/INDEX.md",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366595",
-    "status": "pending"
+    "status": "purged",
+    "purged_at": "2026-08-10T03:00:37.745475"
   },
   {
     "file": "000-General/README.md",
@@ -15,7 +16,8 @@
     "file": "100-Philosophy/INDEX.md",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366608",
-    "status": "pending"
+    "status": "purged",
+    "purged_at": "2026-08-10T03:00:37.745475"
   },
   {
     "file": "000-General/find_brain.py",
@@ -28,7 +30,8 @@
     "file": "800-Literature/INDEX.md",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366614",
-    "status": "pending"
+    "status": "purged",
+    "purged_at": "2026-08-10T03:00:37.745475"
   },
   {
     "file": "000-General/dewey-constitutional.md",
@@ -87,7 +90,8 @@
     "file": "400-Language/INDEX.md",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366640",
-    "status": "pending"
+    "status": "purged",
+    "purged_at": "2026-08-10T03:00:37.745475"
   },
   {
     "file": "500-Science/dewey-blockchain-schematic.html",
@@ -121,13 +125,15 @@
     "file": "300-Social_Sciences/INDEX.md",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366652",
-    "status": "pending"
+    "status": "purged",
+    "purged_at": "2026-08-10T03:00:37.745475"
   },
   {
     "file": "400-Language/contract-invoice-template.html",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366654",
-    "status": "pending"
+    "status": "purged",
+    "purged_at": "2026-08-10T03:00:37.745475"
   },
   {
     "file": "000-General/dewey_ssbn_bridge.py",
@@ -153,13 +159,15 @@
     "file": "640-Household_Favorites/INDEX.md",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366664",
-    "status": "pending"
+    "status": "purged",
+    "purged_at": "2026-08-10T03:00:37.745475"
   },
   {
     "file": "200-Religion/INDEX.md",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366666",
-    "status": "pending"
+    "status": "purged",
+    "purged_at": "2026-08-10T03:00:37.745475"
   },
   {
     "file": "000-General/dewey_code_tracker.py",
@@ -211,7 +219,8 @@
     "file": "900-History_Geography/INDEX.md",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366696",
-    "status": "pending"
+    "status": "purged",
+    "purged_at": "2026-08-10T03:00:37.745475"
   },
   {
     "file": "696-Utilities/comed-eesp-completion-certificate-template.html",
