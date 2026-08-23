@@ -713,6 +713,104 @@
       },
       "hash": "df157e789173cad6fc3cd1c97f7d6911ebb5ab8597ff2f5be678c12a1e7bfbdb",
       "prev_hash": "e895590f2156ec32c3a3181bb8a2736e3297285b11e11bcfaadb9f6caa07940f"
+    },
+    {
+      "index": 51,
+      "timestamp": "2026-08-17T02:00:46.782339",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-052",
+        "source": "8_to_10_Checklist.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-052.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "0fd40fe5b54b6650ea5ccc309392e1c065e753e6b9d742944fd21261112c9cf9",
+      "prev_hash": "df157e789173cad6fc3cd1c97f7d6911ebb5ab8597ff2f5be678c12a1e7bfbdb"
+    },
+    {
+      "index": 52,
+      "timestamp": "2026-08-18T02:00:29.985527",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-053",
+        "source": "8_to_10_Checklist.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-053.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "8a0d273b71457b8c710412ee280b3bf628fdc8f056a75681c0d0c477e79ff2df",
+      "prev_hash": "0fd40fe5b54b6650ea5ccc309392e1c065e753e6b9d742944fd21261112c9cf9"
+    },
+    {
+      "index": 53,
+      "timestamp": "2026-08-19T02:00:57.955773",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-054",
+        "source": "8_to_10_Checklist.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-054.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "cd3b9afd5d11d8a99d03242cd24f47e420e34f203521b30f86ae1757655ffe8e",
+      "prev_hash": "8a0d273b71457b8c710412ee280b3bf628fdc8f056a75681c0d0c477e79ff2df"
+    },
+    {
+      "index": 54,
+      "timestamp": "2026-08-20T02:00:26.784811",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-055",
+        "source": "8_to_10_Checklist.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-055.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "2dd57703b4b013c7ce687fc5fa9fe3dfc81e465c80cbac95db7c9618721d235d",
+      "prev_hash": "cd3b9afd5d11d8a99d03242cd24f47e420e34f203521b30f86ae1757655ffe8e"
+    },
+    {
+      "index": 55,
+      "timestamp": "2026-08-21T02:00:17.484895",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-056",
+        "source": "8_to_10_Checklist.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-056.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "03b8224fe335bf5683a83f88d34a387e30d0c8ec75433c81ef7501d96677ef0f",
+      "prev_hash": "2dd57703b4b013c7ce687fc5fa9fe3dfc81e465c80cbac95db7c9618721d235d"
+    },
+    {
+      "index": 56,
+      "timestamp": "2026-08-22T02:00:38.464024",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-057",
+        "source": "8_to_10_Checklist.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-057.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "798837ea63a685e7442a6ef3f10df8af5ee00c4cb8986facee4534146689294d",
+      "prev_hash": "03b8224fe335bf5683a83f88d34a387e30d0c8ec75433c81ef7501d96677ef0f"
+    },
+    {
+      "index": 57,
+      "timestamp": "2026-08-23T02:00:09.595258",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-058",
+        "source": "8_to_10_Checklist.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-058.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "16f392d3d76f8ac960e994743168e1602e7a53942573bed21669f4678a1bc385",
+      "prev_hash": "798837ea63a685e7442a6ef3f10df8af5ee00c4cb8986facee4534146689294d"
     }
   ]
 }
