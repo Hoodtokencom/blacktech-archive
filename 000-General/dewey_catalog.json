@@ -32,9 +32,9 @@
     "dewey_desc": "General",
     "file": "000-General/blockchain.json",
     "type": "data",
-    "size": 39840,
-    "modified": "2026-09-05T02:00:39.197726",
-    "hash": "b994599a3815e136a729f8f8fc676652f15e4c88ec8dd590d79ff0f260422764",
+    "size": 43767,
+    "modified": "2026-09-12T02:01:02.806767",
+    "hash": "f66404a57e267386f1774cdb4ecf15c46e7d51b0ea7a248c2193d4887f0d55ee",
     "description": "{   \"chain\": [     {       \"index\": 0,       \"timestamp\": \"2026-06-27T02:00:25.875036\",       \"type\": \"CREATE\",       \"data\": {         \"action\": \"SOW",
     "internal_key": "internal:000-General/blockchain.json"
   },
@@ -58,9 +58,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 1677224,
-    "modified": "2026-09-05T06:00:47.816961",
-    "hash": "7467a147743fd8ead98f2ab87ede827687934cacb7f51a1cdd26bd49edce9a5a",
+    "size": 1719343,
+    "modified": "2026-09-12T06:02:00.698318",
+    "hash": "d81cade64cef92c85f4ac7acfb1076121dd529c0cc177ae1db6f4a176cb04534",
     "description": "[   {     \"index\": 0,     \"timestamp\": \"2026-06-23T00:00:00\",     \"action\": \"GENESIS\",     \"file\": \"\",     \"section\": \"000\",     \"dewey_class\": \"000\",",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
@@ -84,10 +84,10 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_body_sync.sh",
     "type": "code",
-    "size": 1253,
-    "modified": "2026-06-26T06:06:51.888066",
-    "hash": "85daa3c6dea2761bddd25b0676390e1678f39a86a618065a31d2a6b45de63954",
-    "description": "#!/bin/bash # dewey_body_sync.sh \u2014 Sync Brain \u2192 Body (External Drive) # Per the Dewey Constitutional: 3-way mirror sync for the Body tier # Brain: /ho",
+    "size": 558,
+    "modified": "2026-09-10T06:02:08.459217",
+    "hash": "e936126acc5e0dd176aa8ac87ff7e237aa5771e693e0acb2c671683c3202f447",
+    "description": "#!/bin/bash # Dewey 3-Tier: Pi Brain \u2192 Internal Drive (Body) Mirror Sync # ExFAT-safe: no perms/owner/group flags required for external drive BRAIN=\"/",
     "internal_key": "internal:000-General/dewey_body_sync.sh"
   },
   {
@@ -110,9 +110,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 2352840,
-    "modified": "2026-09-05T06:00:34.944938",
-    "hash": "4525146450972363da3100f16782caec5b61f920e79da4452202932131a8e5d9",
+    "size": 2358387,
+    "modified": "2026-09-12T06:01:47.334250",
+    "hash": "60be78158b6f5cbf05072927730b5b17d77cd75d41e674823fab2902fbeb2e8a",
     "description": "[   {     \"title\": \"access_requests.json\",     \"section\": \"000-General\",     \"dewey\": \"000\",     \"dewey_desc\": \"General\",     \"file\": \"000-General/acc",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
@@ -240,9 +240,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_trash_log.json",
     "type": "data",
-    "size": 162185,
-    "modified": "2026-09-05T03:00:46.062176",
-    "hash": "d22b908a21835a23ad399edc0684272d9f031cf86bd8e5d2af701fc43f1f2154",
+    "size": 164239,
+    "modified": "2026-09-12T03:00:11.307962",
+    "hash": "eb4763ef8e99f7378b5a7a3a25d22c657b43892fc70a2575a66ab94fb7cc347a",
     "description": "[   {     \"file\": \"697-HVAC/INDEX.md\",     \"deleted_at\": \"2026-06-25T11:31:36.366572\",     \"purge_due\": \"2026-08-09T11:31:36.366595\",     \"status\": \"p",
     "internal_key": "internal:000-General/dewey_trash_log.json"
   },
@@ -1885,17 +1885,17 @@
     "internal_key": "internal:650-Management_Business/bid-strategy/Dream-Team-Bid-Strategy.md"
   },
   {
-    "title": "Legacy Suite: Ministry Compliance Calendar.docx",
+    "title": "Legacy Suite \u2014 Ministry Compliance Calendar.docx",
     "section": "650-Management_Business",
     "dewey": "650",
     "dewey_desc": "Management & Business",
-    "file": "650-Management_Business/trusts/gdrive_source/legacy_suite/Legacy Suite: Ministry Compliance Calendar.docx",
+    "file": "650-Management_Business/trusts/gdrive_source/legacy_suite/Legacy Suite \u2014 Ministry Compliance Calendar.docx",
     "type": "file",
     "size": 2969830,
     "modified": "2026-06-23T16:41:21.188203",
     "hash": "926ea7bb9d11bc5551f4ebf8394eb44d5b7995e5917e13ed946e35b1a235b676",
     "description": "(binary/encrypted)",
-    "internal_key": "internal:650-Management_Business/trusts/gdrive_source/legacy_suite/Legacy Suite: Ministry Compliance Calendar.docx"
+    "internal_key": "internal:650-Management_Business/trusts/gdrive_source/legacy_suite/Legacy Suite \u2014 Ministry Compliance Calendar.docx"
   },
   {
     "title": "Ministry-508c1a-Trust-Template.pdf",
@@ -2015,43 +2015,43 @@
     "internal_key": "internal:650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth Architecture Master Vault Index.docx"
   },
   {
-    "title": "Wealth Architecture: A Strategic Framework.xlsx",
+    "title": "Wealth Architecture \u2014 A Strategic Framework.xlsx",
     "section": "650-Management_Business",
     "dewey": "650",
     "dewey_desc": "Management & Business",
-    "file": "650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth Architecture: A Strategic Framework.xlsx",
+    "file": "650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth Architecture \u2014 A Strategic Framework.xlsx",
     "type": "file",
     "size": 8681,
     "modified": "2026-06-23T16:41:21.192203",
     "hash": "f18b2138453c413b2cf830000b463028e6a003f2304a476cab71805cff6537cb",
     "description": "(binary/encrypted)",
-    "internal_key": "internal:650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth Architecture: A Strategic Framework.xlsx"
+    "internal_key": "internal:650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth Architecture \u2014 A Strategic Framework.xlsx"
   },
   {
-    "title": "Wealth Architecture: Stress Test Defense.docx",
+    "title": "Wealth Architecture \u2014 Stress Test Defense.docx",
     "section": "650-Management_Business",
     "dewey": "650",
     "dewey_desc": "Management & Business",
-    "file": "650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth Architecture: Stress Test Defense.docx",
+    "file": "650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth Architecture \u2014 Stress Test Defense.docx",
     "type": "file",
     "size": 2971129,
     "modified": "2026-06-23T16:41:21.192203",
     "hash": "95913174e23697e30e3f874db82c04413f3023356e7ef986b4a41256828bf64b",
     "description": "(binary/encrypted)",
-    "internal_key": "internal:650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth Architecture: Stress Test Defense.docx"
+    "internal_key": "internal:650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth Architecture \u2014 Stress Test Defense.docx"
   },
   {
-    "title": "Wealth System: Lifestyle, Capital, Legacy.xlsx",
+    "title": "Wealth System \u2014 Lifestyle, Capital, Legacy.xlsx",
     "section": "650-Management_Business",
     "dewey": "650",
     "dewey_desc": "Management & Business",
-    "file": "650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth System: Lifestyle, Capital, Legacy.xlsx",
+    "file": "650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth System \u2014 Lifestyle, Capital, Legacy.xlsx",
     "type": "file",
     "size": 7106,
     "modified": "2026-06-23T16:41:21.192203",
     "hash": "855714e9eccfac790aa0146f9b678335832934581ba1ac4032ab48b5f92fc549",
     "description": "(binary/encrypted)",
-    "internal_key": "internal:650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth System: Lifestyle, Capital, Legacy.xlsx"
+    "internal_key": "internal:650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth System \u2014 Lifestyle, Capital, Legacy.xlsx"
   },
   {
     "title": "black-family-legacy-trust.json",
@@ -4197,6 +4197,97 @@
     "hash": "60260ca86862c2ece59406f0e1eddb43592fb7954073dd62f871c05d6cf623d9",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-071**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-05 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-071.md"
+  },
+  {
+    "title": "BSC-SOW-2026-072.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-072.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-06T02:00:45.683529",
+    "hash": "108d572b21bccea91829b2175ea475ab1ab56e246c103b3d07a20038fa27b366",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-072**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-06 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-072.md"
+  },
+  {
+    "title": "BSC-SOW-2026-073.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-073.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-07T02:01:30.235536",
+    "hash": "36739a4de3eef052abe915bef1a63ebf089b280b0c1b5f29dbc7ddab976d4727",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-073**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-07 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-073.md"
+  },
+  {
+    "title": "BSC-SOW-2026-074.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-074.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-08T02:00:59.044312",
+    "hash": "a0c5c26f6bce16a8e2b1872c66c25476a44d1866ceee574406bcc02a4dffede5",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-074**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-08 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-074.md"
+  },
+  {
+    "title": "BSC-SOW-2026-075.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-075.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-09T02:00:43.816799",
+    "hash": "fd6c4a613d0057d16403df104d7cc4888bbcf8f80be305d3508e98e0533db694",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-075**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-09 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-075.md"
+  },
+  {
+    "title": "BSC-SOW-2026-076.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-076.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-10T02:00:40.976790",
+    "hash": "2200c9294b26a7e89fea2c0d9132193da53fca4184dd5cce9c28fbde61cbe333",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-076**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-10 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-076.md"
+  },
+  {
+    "title": "BSC-SOW-2026-077.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-077.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-11T02:00:53.895495",
+    "hash": "eae4d1f30813be89256adb385bf20a16ea600edb8596f7545a72e52d66041f07",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-077**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-11 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-077.md"
+  },
+  {
+    "title": "BSC-SOW-2026-078.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-078.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-12T02:01:02.802767",
+    "hash": "cf4da4e24bb9502c307e8e07f5f24d16c9a8348dd239f67663b8c54245ebf39a",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-078**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-12 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-078.md"
   },
   {
     "title": "flashcard_system.html",
@@ -14976,17 +15067,17 @@
     "internal_key": "internal:_archive/Blacktech Solutions Corp/10_ARCHIVE/Desktop files dump/Desktop files/Learn more about your Canon TS3500 series.url"
   },
   {
-    "title": "Legacy Suite: Ministry Compliance Calendar.docx",
+    "title": "Legacy Suite \u2014 Ministry Compliance Calendar.docx",
     "section": "_archive",
     "dewey": "_archive",
     "dewey_desc": "Unknown",
-    "file": "_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Legacy Suite: Ministry Compliance Calendar.docx",
+    "file": "_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Legacy Suite \u2014 Ministry Compliance Calendar.docx",
     "type": "file",
     "size": 2969830,
     "modified": "2026-02-15T15:12:05.025000",
     "hash": "b7e1098e6d6cbeeb54e8d2f51cf1c451986877e790784d13f3615fa913fe1c19",
     "description": "(binary/encrypted)",
-    "internal_key": "internal:_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Legacy Suite: Ministry Compliance Calendar.docx"
+    "internal_key": "internal:_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Legacy Suite \u2014 Ministry Compliance Calendar.docx"
   },
   {
     "title": "Lien Waiver 7414 S Drexel Ave.docx",
@@ -18642,43 +18733,43 @@
     "internal_key": "internal:_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth Architecture Master Vault Index.docx"
   },
   {
-    "title": "Wealth Architecture: A Strategic Framework.xlsx",
+    "title": "Wealth Architecture \u2014 A Strategic Framework.xlsx",
     "section": "_archive",
     "dewey": "_archive",
     "dewey_desc": "Unknown",
-    "file": "_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth Architecture: A Strategic Framework.xlsx",
+    "file": "_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth Architecture \u2014 A Strategic Framework.xlsx",
     "type": "file",
     "size": 8681,
     "modified": "2026-02-15T14:12:25.318000",
     "hash": "b9b2b49f64c1aa009e1fea4b4e38d208326ed6ff2a3eead8e5d189d87eb81373",
     "description": "(binary/encrypted)",
-    "internal_key": "internal:_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth Architecture: A Strategic Framework.xlsx"
+    "internal_key": "internal:_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth Architecture \u2014 A Strategic Framework.xlsx"
   },
   {
-    "title": "Wealth Architecture: Stress Test Defense.docx",
+    "title": "Wealth Architecture \u2014 Stress Test Defense.docx",
     "section": "_archive",
     "dewey": "_archive",
     "dewey_desc": "Unknown",
-    "file": "_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth Architecture: Stress Test Defense.docx",
+    "file": "_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth Architecture \u2014 Stress Test Defense.docx",
     "type": "file",
     "size": 2971129,
     "modified": "2026-02-15T16:27:54.883000",
     "hash": "5e2edf2198bcc89028bd6dda3b7c61ec5aa4b42d4e6761c23493f4b67fee6528",
     "description": "(binary/encrypted)",
-    "internal_key": "internal:_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth Architecture: Stress Test Defense.docx"
+    "internal_key": "internal:_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth Architecture \u2014 Stress Test Defense.docx"
   },
   {
-    "title": "Wealth System: Lifestyle, Capital, Legacy.xlsx",
+    "title": "Wealth System \u2014 Lifestyle, Capital, Legacy.xlsx",
     "section": "_archive",
     "dewey": "_archive",
     "dewey_desc": "Unknown",
-    "file": "_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth System: Lifestyle, Capital, Legacy.xlsx",
+    "file": "_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth System \u2014 Lifestyle, Capital, Legacy.xlsx",
     "type": "file",
     "size": 7106,
     "modified": "2026-02-15T14:13:11.429000",
     "hash": "60ac2f734bf4dda8d4cca40180f9d859c994bcb134df3b85779f379394e917fc",
     "description": "(binary/encrypted)",
-    "internal_key": "internal:_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth System: Lifestyle, Capital, Legacy.xlsx"
+    "internal_key": "internal:_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth System \u2014 Lifestyle, Capital, Legacy.xlsx"
   },
   {
     "title": "WebPImagePlugin.py",
@@ -22332,6 +22423,32 @@
     "hash": "acd9dbb43d176125988f0d8123d60eecfdb9e9b09bc3db5514043e0881d666b0",
     "description": "(binary/encrypted)",
     "internal_key": "internal:_archive/Blacktech Solutions Corp/_Pi_Backup/data/blacktech_core.db"
+  },
+  {
+    "title": "blacktech_core.db-shm",
+    "section": "_archive",
+    "dewey": "_archive",
+    "dewey_desc": "Unknown",
+    "file": "_archive/Blacktech Solutions Corp/_Pi_Backup/data/blacktech_core.db-shm",
+    "type": "file",
+    "size": 32768,
+    "modified": "2026-09-05T07:01:02.057527",
+    "hash": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
+    "description": "(binary/encrypted)",
+    "internal_key": "internal:_archive/Blacktech Solutions Corp/_Pi_Backup/data/blacktech_core.db-shm"
+  },
+  {
+    "title": "blacktech_core.db-wal",
+    "section": "_archive",
+    "dewey": "_archive",
+    "dewey_desc": "Unknown",
+    "file": "_archive/Blacktech Solutions Corp/_Pi_Backup/data/blacktech_core.db-wal",
+    "type": "file",
+    "size": 0,
+    "modified": "2026-09-05T07:01:02.057527",
+    "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "description": "",
+    "internal_key": "internal:_archive/Blacktech Solutions Corp/_Pi_Backup/data/blacktech_core.db-wal"
   },
   {
     "title": "blacktech_logo.jpg",
