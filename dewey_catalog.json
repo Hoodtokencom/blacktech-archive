@@ -28,8 +28,8 @@
     "dewey_desc": "General",
     "file": "000-General/blockchain.json",
     "type": "data",
-    "size": 18522,
-    "modified": "2026-07-29T02:00:47.043065",
+    "size": 45450,
+    "modified": "2026-09-15T02:00:30.453818",
     "internal_key": "internal:000-General/blockchain.json"
   },
   {
@@ -50,8 +50,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 1492406,
-    "modified": "2026-07-29T06:01:50.183073",
+    "size": 1740076,
+    "modified": "2026-09-15T14:16:50.928280",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
   {
@@ -72,8 +72,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_body_sync.sh",
     "type": "code",
-    "size": 1253,
-    "modified": "2026-06-26T06:06:51.888066",
+    "size": 557,
+    "modified": "2026-09-12T06:02:24.338438",
     "internal_key": "internal:000-General/dewey_body_sync.sh"
   },
   {
@@ -94,8 +94,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 2297794,
-    "modified": "2026-07-29T06:01:49.083067",
+    "size": 2361451,
+    "modified": "2026-09-15T14:16:45.084257",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
   {
@@ -193,8 +193,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_sync.py",
     "type": "code",
-    "size": 13626,
-    "modified": "2026-06-26T06:02:25.738865",
+    "size": 14038,
+    "modified": "2026-09-15T14:16:32.168207",
     "internal_key": "internal:000-General/dewey_sync.py"
   },
   {
@@ -204,8 +204,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_trash_log.json",
     "type": "data",
-    "size": 160705,
-    "modified": "2026-07-29T03:00:25.177283",
+    "size": 164239,
+    "modified": "2026-09-15T03:00:32.517051",
     "internal_key": "internal:000-General/dewey_trash_log.json"
   },
   {
@@ -878,6 +878,28 @@
     "size": 267,
     "modified": "2026-07-11T16:53:02.719771",
     "internal_key": "internal:003-Computing_Science/Web3_Blockchain/HOOD_Token/deployment.json"
+  },
+  {
+    "title": "derrell_black_ai_consulting_resume.html",
+    "section": "003-Computing_Science",
+    "dewey": "003",
+    "dewey_desc": "Unknown",
+    "file": "003-Computing_Science/AI_Research/derrell_black_ai_consulting_resume.html",
+    "type": "web",
+    "size": 13493,
+    "modified": "2026-08-06T23:41:37.529293",
+    "internal_key": "internal:003-Computing_Science/AI_Research/derrell_black_ai_consulting_resume.html"
+  },
+  {
+    "title": "derrell_black_ai_consulting_resume.pdf",
+    "section": "003-Computing_Science",
+    "dewey": "003",
+    "dewey_desc": "Unknown",
+    "file": "003-Computing_Science/AI_Research/derrell_black_ai_consulting_resume.pdf",
+    "type": "pdf",
+    "size": 29054,
+    "modified": "2026-08-06T23:41:37.529293",
+    "internal_key": "internal:003-Computing_Science/AI_Research/derrell_black_ai_consulting_resume.pdf"
   },
   {
     "title": "electrification_flyer.html",
@@ -1573,15 +1595,15 @@
     "internal_key": "internal:650-Management_Business/bid-strategy/Dream-Team-Bid-Strategy.md"
   },
   {
-    "title": "Legacy Suite: Ministry Compliance Calendar.docx",
+    "title": "Legacy Suite \u2014 Ministry Compliance Calendar.docx",
     "section": "650-Management_Business",
     "dewey": "650",
     "dewey_desc": "Management & Business",
-    "file": "650-Management_Business/trusts/gdrive_source/legacy_suite/Legacy Suite: Ministry Compliance Calendar.docx",
+    "file": "650-Management_Business/trusts/gdrive_source/legacy_suite/Legacy Suite \u2014 Ministry Compliance Calendar.docx",
     "type": "file",
     "size": 2969830,
     "modified": "2026-06-23T16:41:21.188203",
-    "internal_key": "internal:650-Management_Business/trusts/gdrive_source/legacy_suite/Legacy Suite: Ministry Compliance Calendar.docx"
+    "internal_key": "internal:650-Management_Business/trusts/gdrive_source/legacy_suite/Legacy Suite \u2014 Ministry Compliance Calendar.docx"
   },
   {
     "title": "Ministry-508c1a-Trust-Template.pdf",
@@ -1683,37 +1705,37 @@
     "internal_key": "internal:650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth Architecture Master Vault Index.docx"
   },
   {
-    "title": "Wealth Architecture: A Strategic Framework.xlsx",
+    "title": "Wealth Architecture \u2014 A Strategic Framework.xlsx",
     "section": "650-Management_Business",
     "dewey": "650",
     "dewey_desc": "Management & Business",
-    "file": "650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth Architecture: A Strategic Framework.xlsx",
+    "file": "650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth Architecture \u2014 A Strategic Framework.xlsx",
     "type": "file",
     "size": 8681,
     "modified": "2026-06-23T16:41:21.192203",
-    "internal_key": "internal:650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth Architecture: A Strategic Framework.xlsx"
+    "internal_key": "internal:650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth Architecture \u2014 A Strategic Framework.xlsx"
   },
   {
-    "title": "Wealth Architecture: Stress Test Defense.docx",
+    "title": "Wealth Architecture \u2014 Stress Test Defense.docx",
     "section": "650-Management_Business",
     "dewey": "650",
     "dewey_desc": "Management & Business",
-    "file": "650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth Architecture: Stress Test Defense.docx",
+    "file": "650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth Architecture \u2014 Stress Test Defense.docx",
     "type": "file",
     "size": 2971129,
     "modified": "2026-06-23T16:41:21.192203",
-    "internal_key": "internal:650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth Architecture: Stress Test Defense.docx"
+    "internal_key": "internal:650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth Architecture \u2014 Stress Test Defense.docx"
   },
   {
-    "title": "Wealth System: Lifestyle, Capital, Legacy.xlsx",
+    "title": "Wealth System \u2014 Lifestyle, Capital, Legacy.xlsx",
     "section": "650-Management_Business",
     "dewey": "650",
     "dewey_desc": "Management & Business",
-    "file": "650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth System: Lifestyle, Capital, Legacy.xlsx",
+    "file": "650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth System \u2014 Lifestyle, Capital, Legacy.xlsx",
     "type": "file",
     "size": 7106,
     "modified": "2026-06-23T16:41:21.192203",
-    "internal_key": "internal:650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth System: Lifestyle, Capital, Legacy.xlsx"
+    "internal_key": "internal:650-Management_Business/trusts/gdrive_source/legacy_suite/Wealth System \u2014 Lifestyle, Capital, Legacy.xlsx"
   },
   {
     "title": "black-family-legacy-trust.json",
@@ -1760,6 +1782,28 @@
     "internal_key": "internal:650-Management_Business/trusts/output/blacktech-trust-structure.html"
   },
   {
+    "title": "cdfi_and_lenders_research.md",
+    "section": "650-Management_Business",
+    "dewey": "650",
+    "dewey_desc": "Management & Business",
+    "file": "650-Management_Business/funding_partners/cdfi_and_lenders_research.md",
+    "type": "text",
+    "size": 3812,
+    "modified": "2026-07-30T16:13:44.116732",
+    "internal_key": "internal:650-Management_Business/funding_partners/cdfi_and_lenders_research.md"
+  },
+  {
+    "title": "cejjf_fair_path.md",
+    "section": "650-Management_Business",
+    "dewey": "650",
+    "dewey_desc": "Management & Business",
+    "file": "650-Management_Business/funding_partners/cejjf_fair_path.md",
+    "type": "text",
+    "size": 5234,
+    "modified": "2026-07-30T16:30:52.307687",
+    "internal_key": "internal:650-Management_Business/funding_partners/cejjf_fair_path.md"
+  },
+  {
     "title": "certificate-of-trust-template.txt",
     "section": "650-Management_Business",
     "dewey": "650",
@@ -1791,6 +1835,39 @@
     "size": 6691,
     "modified": "2026-06-23T13:55:38.664064",
     "internal_key": "internal:650-Management_Business/trusts/templates/digital-continuity-trust-draft.txt"
+  },
+  {
+    "title": "email_james_burrell.txt",
+    "section": "650-Management_Business",
+    "dewey": "650",
+    "dewey_desc": "Management & Business",
+    "file": "650-Management_Business/funding_partners/email_james_burrell.txt",
+    "type": "text",
+    "size": 1496,
+    "modified": "2026-07-30T16:25:11.419155",
+    "internal_key": "internal:650-Management_Business/funding_partners/email_james_burrell.txt"
+  },
+  {
+    "title": "email_ryan_klaus.txt",
+    "section": "650-Management_Business",
+    "dewey": "650",
+    "dewey_desc": "Management & Business",
+    "file": "650-Management_Business/funding_partners/email_ryan_klaus.txt",
+    "type": "text",
+    "size": 1124,
+    "modified": "2026-07-30T16:25:11.403155",
+    "internal_key": "internal:650-Management_Business/funding_partners/email_ryan_klaus.txt"
+  },
+  {
+    "title": "email_van_ikner.txt",
+    "section": "650-Management_Business",
+    "dewey": "650",
+    "dewey_desc": "Management & Business",
+    "file": "650-Management_Business/funding_partners/email_van_ikner.txt",
+    "type": "text",
+    "size": 1349,
+    "modified": "2026-07-30T16:25:11.443155",
+    "internal_key": "internal:650-Management_Business/funding_partners/email_van_ikner.txt"
   },
   {
     "title": "hood-bond-token-strategy.md",
@@ -1857,6 +1934,17 @@
     "size": 4645,
     "modified": "2026-07-21T20:48:05.226808",
     "internal_key": "internal:650-Management_Business/note_investor_action_plan.md"
+  },
+  {
+    "title": "outreach_emails.md",
+    "section": "650-Management_Business",
+    "dewey": "650",
+    "dewey_desc": "Management & Business",
+    "file": "650-Management_Business/funding_partners/outreach_emails.md",
+    "type": "text",
+    "size": 5839,
+    "modified": "2026-07-30T16:24:48.567074",
+    "internal_key": "internal:650-Management_Business/funding_partners/outreach_emails.md"
   },
   {
     "title": "private-family-trust-template.txt",
@@ -2000,6 +2088,556 @@
     "size": 44,
     "modified": "2026-06-26T07:02:37.885269",
     "internal_key": "internal:657-Accounting_Finance/passcodes_gdrive.key"
+  },
+  {
+    "title": "rich_dad_velocity_of_money.pdf",
+    "section": "657-Accounting_Finance",
+    "dewey": "657",
+    "dewey_desc": "Accounting & Finance",
+    "file": "657-Accounting_Finance/rich_dad_velocity_of_money.pdf",
+    "type": "pdf",
+    "size": 930896,
+    "modified": "2026-09-15T14:13:13.926791",
+    "internal_key": "internal:657-Accounting_Finance/rich_dad_velocity_of_money.pdf"
+  },
+  {
+    "title": "rich_dad_velocity_of_money_ocr.txt",
+    "section": "657-Accounting_Finance",
+    "dewey": "657",
+    "dewey_desc": "Accounting & Finance",
+    "file": "657-Accounting_Finance/rich_dad_velocity_of_money_ocr.txt",
+    "type": "text",
+    "size": 5529,
+    "modified": "2026-09-15T14:13:13.926791",
+    "internal_key": "internal:657-Accounting_Finance/rich_dad_velocity_of_money_ocr.txt"
+  },
+  {
+    "title": "AI_Consulting_Campaign.md",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/AI_Consulting_Campaign.md",
+    "type": "text",
+    "size": 7137,
+    "modified": "2026-08-06T23:42:24.985794",
+    "internal_key": "internal:658-Marketing_Sales/AI_Consulting_Campaign.md"
+  },
+  {
+    "title": "ai_email_templates.md",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/ai_email_templates.md",
+    "type": "text",
+    "size": 11026,
+    "modified": "2026-08-06T23:44:19.778954",
+    "internal_key": "internal:658-Marketing_Sales/ai_email_templates.md"
+  },
+  {
+    "title": "ai_linkedin_campaign.md",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/ai_linkedin_campaign.md",
+    "type": "text",
+    "size": 4864,
+    "modified": "2026-08-06T23:43:42.018580",
+    "internal_key": "internal:658-Marketing_Sales/ai_linkedin_campaign.md"
+  },
+  {
+    "title": "ai_outreach_targets.csv",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/ai_outreach_targets.csv",
+    "type": "file",
+    "size": 2927,
+    "modified": "2026-08-06T23:44:19.738954",
+    "internal_key": "internal:658-Marketing_Sales/ai_outreach_targets.csv"
+  },
+  {
+    "title": "ai_x_threads_campaign.md",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/ai_x_threads_campaign.md",
+    "type": "text",
+    "size": 3277,
+    "modified": "2026-08-06T23:43:53.538695",
+    "internal_key": "internal:658-Marketing_Sales/ai_x_threads_campaign.md"
+  },
+  {
+    "title": "blacktech_logo.jpg",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/blacktech_logo.jpg",
+    "type": "file",
+    "size": 6279,
+    "modified": "2026-07-31T06:01:45.614567",
+    "internal_key": "internal:658-Marketing_Sales/blacktech_logo.jpg"
+  },
+  {
+    "title": "comed_electrification_presentation.html",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/comed_electrification_presentation.html",
+    "type": "web",
+    "size": 47286,
+    "modified": "2026-08-01T11:20:06.331114",
+    "internal_key": "internal:658-Marketing_Sales/comed_electrification_presentation.html"
+  },
+  {
+    "title": "comed_en_slide0.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/comed_en_slide0.mp3",
+    "type": "file",
+    "size": 69984,
+    "modified": "2026-07-31T20:33:14.416223",
+    "internal_key": "internal:658-Marketing_Sales/audio/comed_en_slide0.mp3"
+  },
+  {
+    "title": "comed_en_slide1.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/comed_en_slide1.mp3",
+    "type": "file",
+    "size": 227520,
+    "modified": "2026-07-31T20:23:28.554432",
+    "internal_key": "internal:658-Marketing_Sales/audio/comed_en_slide1.mp3"
+  },
+  {
+    "title": "comed_en_slide2.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/comed_en_slide2.mp3",
+    "type": "file",
+    "size": 266256,
+    "modified": "2026-08-01T10:07:15.674860",
+    "internal_key": "internal:658-Marketing_Sales/audio/comed_en_slide2.mp3"
+  },
+  {
+    "title": "comed_en_slide3.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/comed_en_slide3.mp3",
+    "type": "file",
+    "size": 252576,
+    "modified": "2026-08-01T10:26:34.034310",
+    "internal_key": "internal:658-Marketing_Sales/audio/comed_en_slide3.mp3"
+  },
+  {
+    "title": "comed_en_slide4.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/comed_en_slide4.mp3",
+    "type": "file",
+    "size": 207360,
+    "modified": "2026-08-01T11:19:57.135113",
+    "internal_key": "internal:658-Marketing_Sales/audio/comed_en_slide4.mp3"
+  },
+  {
+    "title": "comed_en_slide5.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/comed_en_slide5.mp3",
+    "type": "file",
+    "size": 241056,
+    "modified": "2026-07-31T20:24:05.794140",
+    "internal_key": "internal:658-Marketing_Sales/audio/comed_en_slide5.mp3"
+  },
+  {
+    "title": "comed_en_slide6.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/comed_en_slide6.mp3",
+    "type": "file",
+    "size": 231696,
+    "modified": "2026-07-31T20:24:13.894080",
+    "internal_key": "internal:658-Marketing_Sales/audio/comed_en_slide6.mp3"
+  },
+  {
+    "title": "comed_en_slide7.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/comed_en_slide7.mp3",
+    "type": "file",
+    "size": 187632,
+    "modified": "2026-07-31T20:24:26.757988",
+    "internal_key": "internal:658-Marketing_Sales/audio/comed_en_slide7.mp3"
+  },
+  {
+    "title": "comed_es_slide0.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/comed_es_slide0.mp3",
+    "type": "file",
+    "size": 75312,
+    "modified": "2026-07-31T20:33:17.280221",
+    "internal_key": "internal:658-Marketing_Sales/audio/comed_es_slide0.mp3"
+  },
+  {
+    "title": "comed_es_slide1.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/comed_es_slide1.mp3",
+    "type": "file",
+    "size": 238176,
+    "modified": "2026-07-31T20:24:31.921952",
+    "internal_key": "internal:658-Marketing_Sales/audio/comed_es_slide1.mp3"
+  },
+  {
+    "title": "comed_es_slide2.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/comed_es_slide2.mp3",
+    "type": "file",
+    "size": 248832,
+    "modified": "2026-08-01T10:07:25.010879",
+    "internal_key": "internal:658-Marketing_Sales/audio/comed_es_slide2.mp3"
+  },
+  {
+    "title": "comed_es_slide3.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/comed_es_slide3.mp3",
+    "type": "file",
+    "size": 299520,
+    "modified": "2026-08-01T10:26:34.034310",
+    "internal_key": "internal:658-Marketing_Sales/audio/comed_es_slide3.mp3"
+  },
+  {
+    "title": "comed_es_slide4.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/comed_es_slide4.mp3",
+    "type": "file",
+    "size": 250704,
+    "modified": "2026-08-01T11:19:59.599113",
+    "internal_key": "internal:658-Marketing_Sales/audio/comed_es_slide4.mp3"
+  },
+  {
+    "title": "comed_es_slide5.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/comed_es_slide5.mp3",
+    "type": "file",
+    "size": 257760,
+    "modified": "2026-07-31T20:24:45.541859",
+    "internal_key": "internal:658-Marketing_Sales/audio/comed_es_slide5.mp3"
+  },
+  {
+    "title": "comed_es_slide6.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/comed_es_slide6.mp3",
+    "type": "file",
+    "size": 233424,
+    "modified": "2026-07-31T20:24:51.961816",
+    "internal_key": "internal:658-Marketing_Sales/audio/comed_es_slide6.mp3"
+  },
+  {
+    "title": "comed_es_slide7.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/comed_es_slide7.mp3",
+    "type": "file",
+    "size": 203040,
+    "modified": "2026-07-31T20:24:56.185789",
+    "internal_key": "internal:658-Marketing_Sales/audio/comed_es_slide7.mp3"
+  },
+  {
+    "title": "derrell_black_ai_consulting_resume.html",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/derrell_black_ai_consulting_resume.html",
+    "type": "web",
+    "size": 13493,
+    "modified": "2026-08-06T23:41:37.541293",
+    "internal_key": "internal:658-Marketing_Sales/derrell_black_ai_consulting_resume.html"
+  },
+  {
+    "title": "derrell_black_ai_consulting_resume.pdf",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/derrell_black_ai_consulting_resume.pdf",
+    "type": "pdf",
+    "size": 29054,
+    "modified": "2026-08-06T23:41:37.545293",
+    "internal_key": "internal:658-Marketing_Sales/derrell_black_ai_consulting_resume.pdf"
+  },
+  {
+    "title": "marketing_plan_2026.html",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/marketing_plan_2026.html",
+    "type": "web",
+    "size": 63871,
+    "modified": "2026-07-31T06:03:17.399243",
+    "internal_key": "internal:658-Marketing_Sales/marketing_plan_2026.html"
+  },
+  {
+    "title": "marketing_plan_2026.pdf",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/marketing_plan_2026.pdf",
+    "type": "pdf",
+    "size": 234110,
+    "modified": "2026-07-31T06:03:21.903276",
+    "internal_key": "internal:658-Marketing_Sales/marketing_plan_2026.pdf"
+  },
+  {
+    "title": "netlify.toml",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/.netlify/netlify.toml",
+    "type": "file",
+    "size": 325,
+    "modified": "2026-07-31T13:08:21.587895",
+    "internal_key": "internal:658-Marketing_Sales/.netlify/netlify.toml"
+  },
+  {
+    "title": "post1_pi_services.html",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/ai_campaign_graphics/post1_pi_services.html",
+    "type": "web",
+    "size": 3897,
+    "modified": "2026-08-06T23:44:09.266850",
+    "internal_key": "internal:658-Marketing_Sales/ai_campaign_graphics/post1_pi_services.html"
+  },
+  {
+    "title": "post2_stats_showcase.html",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/ai_campaign_graphics/post2_stats_showcase.html",
+    "type": "web",
+    "size": 3701,
+    "modified": "2026-08-06T23:44:09.258851",
+    "internal_key": "internal:658-Marketing_Sales/ai_campaign_graphics/post2_stats_showcase.html"
+  },
+  {
+    "title": "post3_cost_comparison.html",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/ai_campaign_graphics/post3_cost_comparison.html",
+    "type": "web",
+    "size": 6236,
+    "modified": "2026-08-06T23:44:09.270851",
+    "internal_key": "internal:658-Marketing_Sales/ai_campaign_graphics/post3_cost_comparison.html"
+  },
+  {
+    "title": "post4_consulting_cta.html",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/ai_campaign_graphics/post4_consulting_cta.html",
+    "type": "web",
+    "size": 4979,
+    "modified": "2026-08-06T23:44:09.246850",
+    "internal_key": "internal:658-Marketing_Sales/ai_campaign_graphics/post4_consulting_cta.html"
+  },
+  {
+    "title": "state.json",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/.netlify/state.json",
+    "type": "data",
+    "size": 53,
+    "modified": "2026-07-31T13:08:24.351911",
+    "internal_key": "internal:658-Marketing_Sales/.netlify/state.json"
+  },
+  {
+    "title": "think_en_slide0.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/think_en_slide0.mp3",
+    "type": "file",
+    "size": 58752,
+    "modified": "2026-07-31T20:33:07.512228",
+    "internal_key": "internal:658-Marketing_Sales/audio/think_en_slide0.mp3"
+  },
+  {
+    "title": "think_en_slide1.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/think_en_slide1.mp3",
+    "type": "file",
+    "size": 221040,
+    "modified": "2026-07-31T19:15:09.349432",
+    "internal_key": "internal:658-Marketing_Sales/audio/think_en_slide1.mp3"
+  },
+  {
+    "title": "think_en_slide2.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/think_en_slide2.mp3",
+    "type": "file",
+    "size": 204912,
+    "modified": "2026-07-31T19:15:19.237501",
+    "internal_key": "internal:658-Marketing_Sales/audio/think_en_slide2.mp3"
+  },
+  {
+    "title": "think_en_slide3.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/think_en_slide3.mp3",
+    "type": "file",
+    "size": 294768,
+    "modified": "2026-07-31T19:15:32.193590",
+    "internal_key": "internal:658-Marketing_Sales/audio/think_en_slide3.mp3"
+  },
+  {
+    "title": "think_en_slide4.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/think_en_slide4.mp3",
+    "type": "file",
+    "size": 211968,
+    "modified": "2026-07-31T19:15:42.581661",
+    "internal_key": "internal:658-Marketing_Sales/audio/think_en_slide4.mp3"
+  },
+  {
+    "title": "think_en_slide5.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/think_en_slide5.mp3",
+    "type": "file",
+    "size": 249696,
+    "modified": "2026-07-31T19:15:53.109732",
+    "internal_key": "internal:658-Marketing_Sales/audio/think_en_slide5.mp3"
+  },
+  {
+    "title": "think_en_slide6.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/think_en_slide6.mp3",
+    "type": "file",
+    "size": 459792,
+    "modified": "2026-07-31T19:16:12.493862",
+    "internal_key": "internal:658-Marketing_Sales/audio/think_en_slide6.mp3"
+  },
+  {
+    "title": "think_es_slide0.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/think_es_slide0.mp3",
+    "type": "file",
+    "size": 72720,
+    "modified": "2026-07-31T20:33:09.232227",
+    "internal_key": "internal:658-Marketing_Sales/audio/think_es_slide0.mp3"
+  },
+  {
+    "title": "think_es_slide1.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/think_es_slide1.mp3",
+    "type": "file",
+    "size": 282960,
+    "modified": "2026-07-31T19:16:24.857945",
+    "internal_key": "internal:658-Marketing_Sales/audio/think_es_slide1.mp3"
+  },
+  {
+    "title": "think_es_slide2.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/think_es_slide2.mp3",
+    "type": "file",
+    "size": 247248,
+    "modified": "2026-07-31T19:16:28.485969",
+    "internal_key": "internal:658-Marketing_Sales/audio/think_es_slide2.mp3"
+  },
+  {
+    "title": "think_es_slide3.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/think_es_slide3.mp3",
+    "type": "file",
+    "size": 334656,
+    "modified": "2026-07-31T19:16:34.262007",
+    "internal_key": "internal:658-Marketing_Sales/audio/think_es_slide3.mp3"
+  },
+  {
+    "title": "think_es_slide4.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/think_es_slide4.mp3",
+    "type": "file",
+    "size": 246960,
+    "modified": "2026-07-31T19:16:37.978032",
+    "internal_key": "internal:658-Marketing_Sales/audio/think_es_slide4.mp3"
+  },
+  {
+    "title": "think_es_slide5.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/think_es_slide5.mp3",
+    "type": "file",
+    "size": 307872,
+    "modified": "2026-07-31T19:16:42.142059",
+    "internal_key": "internal:658-Marketing_Sales/audio/think_es_slide5.mp3"
+  },
+  {
+    "title": "think_es_slide6.mp3",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/audio/think_es_slide6.mp3",
+    "type": "file",
+    "size": 530784,
+    "modified": "2026-07-31T19:16:49.582108",
+    "internal_key": "internal:658-Marketing_Sales/audio/think_es_slide6.mp3"
+  },
+  {
+    "title": "think_plus_presentation.html",
+    "section": "658-Marketing_Sales",
+    "dewey": "658",
+    "dewey_desc": "Unknown",
+    "file": "658-Marketing_Sales/think_plus_presentation.html",
+    "type": "web",
+    "size": 47703,
+    "modified": "2026-07-31T20:51:49.913753",
+    "internal_key": "internal:658-Marketing_Sales/think_plus_presentation.html"
   },
   {
     "title": "60628_churches.csv",
@@ -2517,6 +3155,534 @@
     "size": 830,
     "modified": "2026-07-29T02:00:47.043065",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-033.md"
+  },
+  {
+    "title": "BSC-SOW-2026-034.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-034.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-07-30T02:03:14.794866",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-034.md"
+  },
+  {
+    "title": "BSC-SOW-2026-035.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-035.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-07-31T02:00:13.209763",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-035.md"
+  },
+  {
+    "title": "BSC-SOW-2026-036.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-036.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-01T02:00:47.120848",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-036.md"
+  },
+  {
+    "title": "BSC-SOW-2026-037.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-037.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-02T02:00:08.979688",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-037.md"
+  },
+  {
+    "title": "BSC-SOW-2026-038.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-038.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-03T02:00:35.850403",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-038.md"
+  },
+  {
+    "title": "BSC-SOW-2026-039.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-039.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-04T02:00:14.805013",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-039.md"
+  },
+  {
+    "title": "BSC-SOW-2026-040.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-040.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-05T02:00:49.632212",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-040.md"
+  },
+  {
+    "title": "BSC-SOW-2026-041.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-041.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-06T02:00:15.622473",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-041.md"
+  },
+  {
+    "title": "BSC-SOW-2026-042.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-042.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-07T02:00:56.078317",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-042.md"
+  },
+  {
+    "title": "BSC-SOW-2026-043.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-043.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-08T02:00:44.770498",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-043.md"
+  },
+  {
+    "title": "BSC-SOW-2026-044.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-044.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-09T02:00:11.875775",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-044.md"
+  },
+  {
+    "title": "BSC-SOW-2026-045.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-045.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-10T02:00:30.264180",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-045.md"
+  },
+  {
+    "title": "BSC-SOW-2026-046.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-046.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-11T02:00:47.167917",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-046.md"
+  },
+  {
+    "title": "BSC-SOW-2026-047.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-047.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-12T02:00:25.085878",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-047.md"
+  },
+  {
+    "title": "BSC-SOW-2026-048.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-048.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-13T02:01:00.669380",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-048.md"
+  },
+  {
+    "title": "BSC-SOW-2026-049.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-049.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-14T02:00:53.580398",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-049.md"
+  },
+  {
+    "title": "BSC-SOW-2026-050.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-050.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-15T02:00:24.899010",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-050.md"
+  },
+  {
+    "title": "BSC-SOW-2026-051.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-051.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-16T02:00:20.099290",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-051.md"
+  },
+  {
+    "title": "BSC-SOW-2026-052.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-052.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-17T02:00:46.777658",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-052.md"
+  },
+  {
+    "title": "BSC-SOW-2026-053.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-053.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-18T02:00:29.982475",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-053.md"
+  },
+  {
+    "title": "BSC-SOW-2026-054.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-054.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-19T02:00:57.953739",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-054.md"
+  },
+  {
+    "title": "BSC-SOW-2026-055.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-055.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-20T02:00:26.780336",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-055.md"
+  },
+  {
+    "title": "BSC-SOW-2026-056.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-056.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-21T02:00:17.482512",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-056.md"
+  },
+  {
+    "title": "BSC-SOW-2026-057.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-057.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-22T02:00:38.461861",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-057.md"
+  },
+  {
+    "title": "BSC-SOW-2026-058.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-058.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-23T02:00:09.588453",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-058.md"
+  },
+  {
+    "title": "BSC-SOW-2026-059.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-059.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-24T02:00:53.050169",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-059.md"
+  },
+  {
+    "title": "BSC-SOW-2026-060.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-060.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-25T02:00:29.451265",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-060.md"
+  },
+  {
+    "title": "BSC-SOW-2026-061.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-061.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-26T02:00:59.753193",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-061.md"
+  },
+  {
+    "title": "BSC-SOW-2026-062.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-062.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-27T02:00:34.010693",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-062.md"
+  },
+  {
+    "title": "BSC-SOW-2026-063.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-063.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-28T02:01:01.789134",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-063.md"
+  },
+  {
+    "title": "BSC-SOW-2026-064.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-064.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-29T02:00:53.772237",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-064.md"
+  },
+  {
+    "title": "BSC-SOW-2026-065.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-065.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-30T02:00:19.508345",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-065.md"
+  },
+  {
+    "title": "BSC-SOW-2026-066.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-066.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-08-31T02:01:02.052098",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-066.md"
+  },
+  {
+    "title": "BSC-SOW-2026-067.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-067.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-01T02:00:37.872733",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-067.md"
+  },
+  {
+    "title": "BSC-SOW-2026-068.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-068.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-02T02:00:15.985995",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-068.md"
+  },
+  {
+    "title": "BSC-SOW-2026-069.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-069.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-03T02:00:11.684102",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-069.md"
+  },
+  {
+    "title": "BSC-SOW-2026-070.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-070.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-04T02:01:03.556398",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-070.md"
+  },
+  {
+    "title": "BSC-SOW-2026-071.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-071.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-05T02:00:39.193726",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-071.md"
+  },
+  {
+    "title": "BSC-SOW-2026-072.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-072.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-06T02:00:45.683529",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-072.md"
+  },
+  {
+    "title": "BSC-SOW-2026-073.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-073.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-07T02:01:30.235536",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-073.md"
+  },
+  {
+    "title": "BSC-SOW-2026-074.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-074.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-08T02:00:59.044312",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-074.md"
+  },
+  {
+    "title": "BSC-SOW-2026-075.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-075.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-09T02:00:43.816799",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-075.md"
+  },
+  {
+    "title": "BSC-SOW-2026-076.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-076.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-10T02:00:40.976790",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-076.md"
+  },
+  {
+    "title": "BSC-SOW-2026-077.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-077.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-11T02:00:53.895495",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-077.md"
+  },
+  {
+    "title": "BSC-SOW-2026-078.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-078.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-12T02:01:02.802767",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-078.md"
+  },
+  {
+    "title": "BSC-SOW-2026-079.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-079.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-13T02:00:44.679850",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-079.md"
+  },
+  {
+    "title": "BSC-SOW-2026-080.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-080.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-14T02:01:10.905652",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-080.md"
+  },
+  {
+    "title": "BSC-SOW-2026-081.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-081.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-15T02:00:30.449817",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-081.md"
   },
   {
     "title": "flashcard_system.html",
@@ -11638,15 +12804,15 @@
     "internal_key": "internal:_archive/Blacktech Solutions Corp/10_ARCHIVE/Desktop files dump/Desktop files/Learn more about your Canon TS3500 series.url"
   },
   {
-    "title": "Legacy Suite: Ministry Compliance Calendar.docx",
+    "title": "Legacy Suite \u2014 Ministry Compliance Calendar.docx",
     "section": "_archive",
     "dewey": "_archive",
     "dewey_desc": "Unknown",
-    "file": "_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Legacy Suite: Ministry Compliance Calendar.docx",
+    "file": "_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Legacy Suite \u2014 Ministry Compliance Calendar.docx",
     "type": "file",
     "size": 2969830,
     "modified": "2026-02-15T15:12:05.025000",
-    "internal_key": "internal:_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Legacy Suite: Ministry Compliance Calendar.docx"
+    "internal_key": "internal:_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Legacy Suite \u2014 Ministry Compliance Calendar.docx"
   },
   {
     "title": "Lien Waiver 7414 S Drexel Ave.docx",
@@ -14740,37 +15906,37 @@
     "internal_key": "internal:_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth Architecture Master Vault Index.docx"
   },
   {
-    "title": "Wealth Architecture: A Strategic Framework.xlsx",
+    "title": "Wealth Architecture \u2014 A Strategic Framework.xlsx",
     "section": "_archive",
     "dewey": "_archive",
     "dewey_desc": "Unknown",
-    "file": "_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth Architecture: A Strategic Framework.xlsx",
+    "file": "_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth Architecture \u2014 A Strategic Framework.xlsx",
     "type": "file",
     "size": 8681,
     "modified": "2026-02-15T14:12:25.318000",
-    "internal_key": "internal:_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth Architecture: A Strategic Framework.xlsx"
+    "internal_key": "internal:_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth Architecture \u2014 A Strategic Framework.xlsx"
   },
   {
-    "title": "Wealth Architecture: Stress Test Defense.docx",
+    "title": "Wealth Architecture \u2014 Stress Test Defense.docx",
     "section": "_archive",
     "dewey": "_archive",
     "dewey_desc": "Unknown",
-    "file": "_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth Architecture: Stress Test Defense.docx",
+    "file": "_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth Architecture \u2014 Stress Test Defense.docx",
     "type": "file",
     "size": 2971129,
     "modified": "2026-02-15T16:27:54.883000",
-    "internal_key": "internal:_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth Architecture: Stress Test Defense.docx"
+    "internal_key": "internal:_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth Architecture \u2014 Stress Test Defense.docx"
   },
   {
-    "title": "Wealth System: Lifestyle, Capital, Legacy.xlsx",
+    "title": "Wealth System \u2014 Lifestyle, Capital, Legacy.xlsx",
     "section": "_archive",
     "dewey": "_archive",
     "dewey_desc": "Unknown",
-    "file": "_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth System: Lifestyle, Capital, Legacy.xlsx",
+    "file": "_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth System \u2014 Lifestyle, Capital, Legacy.xlsx",
     "type": "file",
     "size": 7106,
     "modified": "2026-02-15T14:13:11.429000",
-    "internal_key": "internal:_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth System: Lifestyle, Capital, Legacy.xlsx"
+    "internal_key": "internal:_archive/Blacktech Solutions Corp/06_TRUSTS_WEALTH/The Legacy Suite/AI Doc/Wealth System \u2014 Lifestyle, Capital, Legacy.xlsx"
   },
   {
     "title": "WebPImagePlugin.py",
@@ -17862,6 +19028,28 @@
     "size": 335872,
     "modified": "2026-06-15T23:00:01.381000",
     "internal_key": "internal:_archive/Blacktech Solutions Corp/_Pi_Backup/data/blacktech_core.db"
+  },
+  {
+    "title": "blacktech_core.db-shm",
+    "section": "_archive",
+    "dewey": "_archive",
+    "dewey_desc": "Unknown",
+    "file": "_archive/Blacktech Solutions Corp/_Pi_Backup/data/blacktech_core.db-shm",
+    "type": "file",
+    "size": 32768,
+    "modified": "2026-09-05T07:01:02.057527",
+    "internal_key": "internal:_archive/Blacktech Solutions Corp/_Pi_Backup/data/blacktech_core.db-shm"
+  },
+  {
+    "title": "blacktech_core.db-wal",
+    "section": "_archive",
+    "dewey": "_archive",
+    "dewey_desc": "Unknown",
+    "file": "_archive/Blacktech Solutions Corp/_Pi_Backup/data/blacktech_core.db-wal",
+    "type": "file",
+    "size": 0,
+    "modified": "2026-09-05T07:01:02.057527",
+    "internal_key": "internal:_archive/Blacktech Solutions Corp/_Pi_Backup/data/blacktech_core.db-wal"
   },
   {
     "title": "blacktech_logo.jpg",
@@ -33682,6 +34870,17 @@
     "internal_key": "internal:_archive/Dewey Brain/000-General/Backups/2026-06-14_020001/scripts/lib/weasyprint/svg/path.py"
   },
   {
+    "title": "paybooks.db",
+    "section": "_archive",
+    "dewey": "_archive",
+    "dewey_desc": "Unknown",
+    "file": "_archive/Blacktech Solutions Corp/_Pi_Backup/data/paybooks.db",
+    "type": "file",
+    "size": 0,
+    "modified": "2026-09-04T07:00:56.380702",
+    "internal_key": "internal:_archive/Blacktech Solutions Corp/_Pi_Backup/data/paybooks.db"
+  },
+  {
     "title": "payroll.json",
     "section": "_archive",
     "dewey": "_archive",
@@ -39015,6 +40214,17 @@
     "size": 2844584,
     "modified": "2026-06-09T14:01:54.530000",
     "internal_key": "internal:_archive/Dewey Brain/000-General/Backups/2026-06-14_020001/scripts/lib/zopfli/zopfli.abi3.so"
+  },
+  {
+    "title": "blacktech_core.db",
+    "section": "blacktech_core.db",
+    "dewey": "blacktech_core.db",
+    "dewey_desc": "Unknown",
+    "file": "blacktech_core.db",
+    "type": "file",
+    "size": 0,
+    "modified": "2026-08-09T07:00:15.033979",
+    "internal_key": "internal:blacktech_core.db"
   },
   {
     "title": "family_tree.html",
