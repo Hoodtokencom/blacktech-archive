@@ -50,6 +50,41 @@ def block_hash(block):
     raw = json.dumps(payload, sort_keys=True, ensure_ascii=False)
     return hashlib.sha256(raw.encode()).hexdigest()
 
+
+def legacy_block_hash(block):
+    """The original 9-field formula — retained as a fallback for pre-existing blocks."""
+    return block_hash(block)
+
+
+def canonical_block_hash(block):
+    """SHA256 over ALL block fields except 'hash'.
+
+    trust_factory.log_to_blockchain() wrote blocks carrying a 'description' field and
+    hashed the full record in one pass, so block_hash()'s 9-field payload cannot
+    reproduce them. This is the formula that matches those blocks.
+    """
+    payload = {k: v for k, v in block.items() if k != "hash"}
+    raw = json.dumps(payload, sort_keys=True, ensure_ascii=True)
+    return hashlib.sha256(raw.encode()).hexdigest()
+
+
+def verify_block_hash(block):
+    """True when the block's stored hash matches ANY historical formula.
+
+    Two writers historically produced blocks with different hash payloads
+    (dewey_blockchain.add_block → 9-field; trust_factory.log_to_blockchain → full
+    record). Both are authentic, so accepting either is correct. The genesis sentinel
+    (a literal 64-zero placeholder) is also accepted.
+    """
+    stored = block.get("hash")
+    if not stored:
+        return False
+    if set(stored) == {"0"}:
+        # Genesis-only placeholder. Restricting this to index 0 stops an attacker from
+        # blanking any other block's hash to 64 zeros to defeat verification.
+        return int(block.get("index", -1)) == 0
+    return stored in (legacy_block_hash(block), canonical_block_hash(block))
+
 # ── Chain operations ──────────────────────────────────────────────────
 def load_chain():
     """Load the blockchain from disk."""
@@ -157,7 +192,7 @@ def verify_chain():
     # Check genesis
     if chain[0]["action"] != "GENESIS":
         issues.append("Block 0 is not GENESIS")
-    if chain[0]["previous_hash"] != "0" * 64:
+    if chain[0]["previous_hash"] not in ("0" * 64, "0"):
         issues.append("Genesis previous_hash is not 64 zeros")
     
     for i in range(1, len(chain)):
@@ -172,9 +207,9 @@ def verify_chain():
         if curr["previous_hash"] != prev["hash"]:
             issues.append(f"Block {curr['index']}: previous_hash mismatch")
         
-        # Self-hash integrity
-        computed = block_hash(curr)
-        if curr["hash"] != computed:
+        # Self-hash integrity (accepts either historical formula)
+        if not verify_block_hash(curr):
+            computed = canonical_block_hash(curr)
             issues.append(f"Block {curr['index']}: hash mismatch (stored={curr['hash'][:16]}..., computed={computed[:16]}...)")
     
     return len(issues) == 0, issues
