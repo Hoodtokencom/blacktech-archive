@@ -61,8 +61,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 1915594,
-    "modified": "2026-09-20T08:46:03.576653",
+    "size": 1922481,
+    "modified": "2026-09-20T09:01:23.789592",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
   {
@@ -105,8 +105,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 2428454,
-    "modified": "2026-09-20T08:45:56.136660",
+    "size": 2428434,
+    "modified": "2026-09-20T09:01:16.633483",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
   {
@@ -204,8 +204,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_sync.py",
     "type": "code",
-    "size": 15361,
-    "modified": "2026-09-20T08:46:49.044615",
+    "size": 16033,
+    "modified": "2026-09-20T09:00:08.072382",
     "internal_key": "internal:000-General/dewey_sync.py"
   },
   {
@@ -1155,6 +1155,17 @@
     "internal_key": "internal:200-Religion/INDEX.md"
   },
   {
+    "title": "hood_financial_scriptures.md",
+    "section": "200-Religion",
+    "dewey": "200",
+    "dewey_desc": "Religion",
+    "file": "200-Religion/hood_financial_scriptures.md",
+    "type": "text",
+    "size": 6470,
+    "modified": "2026-07-24T23:15:08.177089",
+    "internal_key": "internal:200-Religion/hood_financial_scriptures.md"
+  },
+  {
     "title": "INDEX.md",
     "section": "300-Social_Sciences",
     "dewey": "300",
@@ -1241,17 +1252,6 @@
     "size": 544992,
     "modified": "2026-06-26T07:02:15.669082",
     "internal_key": "internal:500-Science/dewey-blockchain-schematic.pdf"
-  },
-  {
-    "title": "hood_financial_scriptures.md",
-    "section": "600-Religion",
-    "dewey": "600",
-    "dewey_desc": "Technology",
-    "file": "600-Religion/Theology/hood_financial_scriptures.md",
-    "type": "text",
-    "size": 6470,
-    "modified": "2026-07-24T23:15:08.177089",
-    "internal_key": "internal:600-Religion/Theology/hood_financial_scriptures.md"
   },
   {
     "title": "vendors.json",

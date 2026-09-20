@@ -71,9 +71,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 1915594,
-    "modified": "2026-09-20T08:46:03.576653",
-    "hash": "6b565c2abf7d98607ea2e396b5b9fd8b53b1bda35a3613585aa97d22daf3189f",
+    "size": 1922481,
+    "modified": "2026-09-20T09:01:23.789592",
+    "hash": "4baee10ed7007bfd2b0a62f3d064ee7c13070157312ca6932272d19a5ae99c04",
     "description": "[   {     \"index\": 0,     \"timestamp\": \"2026-06-23T00:00:00\",     \"action\": \"GENESIS\",     \"file\": \"\",     \"section\": \"000\",     \"dewey_class\": \"000\",",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
@@ -123,9 +123,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 2428454,
-    "modified": "2026-09-20T08:45:56.136660",
-    "hash": "b877fa033cc87fe4fedf38c1751cf28824788ab114e2a423b95db146220a2e10",
+    "size": 2428434,
+    "modified": "2026-09-20T09:01:16.633483",
+    "hash": "1f5c7411ae31dbcc1b43796865e88fef81ff2e196c736631ccd2e28bc8a9c296",
     "description": "[   {     \"title\": \"README.md\",     \"section\": \"000-General\",     \"dewey\": \"000\",     \"dewey_desc\": \"General\",     \"file\": \"000-General/README.md\",   ",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
@@ -240,9 +240,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_sync.py",
     "type": "code",
-    "size": 15361,
-    "modified": "2026-09-20T08:46:49.044615",
-    "hash": "174e0c66953a34bed8c596a081ce20d0f23c0f28ea95ebc69e4afde2dd2b17f1",
+    "size": 16033,
+    "modified": "2026-09-20T09:00:08.072382",
+    "hash": "e4bf47740a2d7d761a4ee203a5fdbd9991bf873bff493e6c388ecf9ffc688936",
     "description": "#!/usr/bin/env python3 \"\"\" Dewey 3-Way Mirror Sync Pipeline ================================= Internal Drive (Body) \u2192 Google Drive (Brain) \u2192 GitHub (A",
     "internal_key": "internal:000-General/dewey_sync.py"
   },
@@ -1365,6 +1365,19 @@
     "internal_key": "internal:200-Religion/INDEX.md"
   },
   {
+    "title": "hood_financial_scriptures.md",
+    "section": "200-Religion",
+    "dewey": "200",
+    "dewey_desc": "Religion",
+    "file": "200-Religion/hood_financial_scriptures.md",
+    "type": "text",
+    "size": 6470,
+    "modified": "2026-07-24T23:15:08.177089",
+    "hash": "efded6089410ceb2047a76e9af5417155a2f8a4c835402bbadd7c373d153536e",
+    "description": "# HOOD Financial \u2014 Scripture Library ## Bible Verses for Community Building & Marketing  ---  ## \ud83e\udd48 SILVER & WEALTH  **Haggai 2:8** > \"The silver is mi",
+    "internal_key": "internal:200-Religion/hood_financial_scriptures.md"
+  },
+  {
     "title": "INDEX.md",
     "section": "300-Social_Sciences",
     "dewey": "300",
@@ -1467,19 +1480,6 @@
     "hash": "e015ee32332a17c041ef244b9bfa88643a297ec328fd600dec900aacce5e25f6",
     "description": "(binary/encrypted)",
     "internal_key": "internal:500-Science/dewey-blockchain-schematic.pdf"
-  },
-  {
-    "title": "hood_financial_scriptures.md",
-    "section": "600-Religion",
-    "dewey": "600",
-    "dewey_desc": "Technology",
-    "file": "600-Religion/Theology/hood_financial_scriptures.md",
-    "type": "text",
-    "size": 6470,
-    "modified": "2026-07-24T23:15:08.177089",
-    "hash": "efded6089410ceb2047a76e9af5417155a2f8a4c835402bbadd7c373d153536e",
-    "description": "# HOOD Financial \u2014 Scripture Library ## Bible Verses for Community Building & Marketing  ---  ## \ud83e\udd48 SILVER & WEALTH  **Haggai 2:8** > \"The silver is mi",
-    "internal_key": "internal:600-Religion/Theology/hood_financial_scriptures.md"
   },
   {
     "title": "vendors.json",

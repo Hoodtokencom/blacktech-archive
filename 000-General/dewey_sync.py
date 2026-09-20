@@ -218,6 +218,20 @@ def sync_to_github(entries):
     if os.path.exists(tracker_path):
         shutil.copy2(tracker_path, os.path.join(GITHUB_REPO, "dewey_code_tracker.py"))
     
+    # ── PRUNE: drop archive dirs that no longer exist in the brain ──
+    # Without this, a renamed/removed section folder lives in the archive
+    # forever and keeps resurrecting stale paths in every snapshot.
+    pruned = []
+    for name in os.listdir(GITHUB_REPO):
+        if name in (".git",):
+            continue
+        dst = os.path.join(GITHUB_REPO, name)
+        if not os.path.isdir(dst):
+            continue
+        if not os.path.isdir(os.path.join(BRAIN, name)):
+            shutil.rmtree(dst)
+            pruned.append(name)
+
     # Remove files over 100MB before committing (GitHub limit)
     for section in sections:
         dst = os.path.join(GITHUB_REPO, section)
@@ -253,6 +267,8 @@ def sync_to_github(entries):
                                   capture_output=True, text=True, timeout=600)
             if push.returncode == 0:
                 note = f"🟢 GitHub Archive: pushed — {len(entries)} files ({len(sections)} sections)"
+                if pruned:
+                    note += f" | pruned {len(pruned)} stale dir(s): {', '.join(pruned[:4])}"
                 if attempt > 1:
                     note += f" (attempt {attempt})"
                 return [note]
