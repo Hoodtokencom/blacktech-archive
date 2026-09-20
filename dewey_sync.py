@@ -64,8 +64,11 @@ def scan_brain():
     """Scan all files in brain, return list of entries."""
     entries = []
     for root, dirs, files in os.walk(BRAIN):
+        # Never index/upload bytecode caches — each sync re-uploaded them as NEW
+        # Drive files (no overwrite), creating endless duplicate copies.
+        dirs[:] = [d for d in dirs if d != '__pycache__']
         for f in files:
-            if f.startswith('.'):
+            if f.startswith('.') or f.endswith('.pyc'):
                 continue
             full = os.path.join(root, f)
             rel = os.path.relpath(full, BRAIN)

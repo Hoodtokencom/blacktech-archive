@@ -1,5 +1,18 @@
 [
   {
+    "title": "README.md",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/README.md",
+    "type": "text",
+    "size": 1837,
+    "modified": "2026-09-20T07:01:11.225909",
+    "hash": "7053c825363221fa148e145e19ede502785bdf966df12fd8379c5775c1f8ecbb",
+    "description": "# Blacktech Brain \u2014 Dewey Decimal Library  A knowledge base organized like a library catalog.  ## Catalog  | Section | Class | Contents | |---------|-",
+    "internal_key": "internal:000-General/README.md"
+  },
+  {
     "title": "access_requests.json",
     "section": "000-General",
     "dewey": "000",
@@ -52,28 +65,15 @@
     "internal_key": "internal:000-General/dewey-constitutional.md"
   },
   {
-    "title": "dewey_blockchain.cpython-311.pyc",
-    "section": "000-General",
-    "dewey": "000",
-    "dewey_desc": "General",
-    "file": "000-General/__pycache__/dewey_blockchain.cpython-311.pyc",
-    "type": "file",
-    "size": 16421,
-    "modified": "2026-09-19T04:11:26.296406",
-    "hash": "2fd010e58db70885fbb10453e1677263c38f68cf993fdc804e6717cf8bc00d23",
-    "description": "(binary/encrypted)",
-    "internal_key": "internal:000-General/__pycache__/dewey_blockchain.cpython-311.pyc"
-  },
-  {
     "title": "dewey_blockchain.json",
     "section": "000-General",
     "dewey": "000",
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 1819767,
-    "modified": "2026-09-20T07:03:54.982296",
-    "hash": "e6d460f7cea11fb09d9d8a4e1ba52517f6fbcbbe59ae3ce0f055ded449eaef6c",
+    "size": 1888570,
+    "modified": "2026-09-20T08:29:48.352437",
+    "hash": "7d9c915ca1b490c8e46f08b7551c51f70863a53dfdd31e3361b465ebdda9c912",
     "description": "[   {     \"index\": 0,     \"timestamp\": \"2026-06-23T00:00:00\",     \"action\": \"GENESIS\",     \"file\": \"\",     \"section\": \"000\",     \"dewey_class\": \"000\",",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
@@ -110,9 +110,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_brain_pull.py",
     "type": "code",
-    "size": 8739,
-    "modified": "2026-06-26T07:00:59.504417",
-    "hash": "4030f0736fb58a2c0a2d999419f60e4ba0a9b57746dd0f7b5310649c62a4c8bf",
+    "size": 9722,
+    "modified": "2026-09-20T08:25:44.711413",
+    "hash": "d8b8d3194ea79b421e0896e6066aedb8167e56bff9f6a77fc9f5782caacf5781",
     "description": "#!/usr/bin/env python3 \"\"\" Dewey Brain Pull \u2014 Google Drive \u2192 Inbox \u2192 Router \u2192 3-Way Sync =============================================================",
     "internal_key": "internal:000-General/dewey_brain_pull.py"
   },
@@ -123,10 +123,10 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 2366412,
-    "modified": "2026-09-20T06:01:31.286563",
-    "hash": "22932883e584ee36ce80ac43032a264364630addd43eb1a48ef56d957ffbafcd",
-    "description": "[   {     \"title\": \"access_requests.json\",     \"section\": \"000-General\",     \"dewey\": \"000\",     \"dewey_desc\": \"General\",     \"file\": \"000-General/acc",
+    "size": 2420807,
+    "modified": "2026-09-20T08:24:29.900665",
+    "hash": "72def612f8a0a2e58cc639de990934349b2d5538c2308da6a36dfe002378ec9e",
+    "description": "[   {     \"title\": \"README.md\",     \"section\": \"000-General\",     \"dewey\": \"000\",     \"dewey_desc\": \"General\",     \"file\": \"000-General/README.md\",   ",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
   {
@@ -162,9 +162,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_inbox_router.py",
     "type": "code",
-    "size": 15196,
-    "modified": "2026-06-26T07:03:45.313815",
-    "hash": "5dbb13fe8dd9ef2e98b93a8fa43d2f35ac3e22f3bbd807fc60092d1762b50397",
+    "size": 15752,
+    "modified": "2026-09-20T08:25:00.252134",
+    "hash": "7d4342fd0ef6cc7abb230b3a2bbddae8fafeae342e67dbb3fc1d87a28693addb",
     "description": "#!/usr/bin/env python3 \"\"\" Dewey Inbox Router \u2014 Two-tier classification + 3-way mirror sync. =========================================================",
     "internal_key": "internal:000-General/dewey_inbox_router.py"
   },
@@ -240,9 +240,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_sync.py",
     "type": "code",
-    "size": 14038,
-    "modified": "2026-09-15T14:16:32.168207",
-    "hash": "84a1ae02c37b442497d010877b4ffc73efef7e5d8d0176d4be76b68f3657ca39",
+    "size": 14274,
+    "modified": "2026-09-20T08:21:16.928916",
+    "hash": "af9e851fc8de7a4f133a7c6e456b24bc7889b5e9ef43476dd85763e7efbf2956",
     "description": "#!/usr/bin/env python3 \"\"\" Dewey 3-Way Mirror Sync Pipeline ================================= Internal Drive (Body) \u2192 Google Drive (Brain) \u2192 GitHub (A",
     "internal_key": "internal:000-General/dewey_sync.py"
   },
@@ -1203,7 +1203,7 @@
     "file": "003-Computing_Science/Servers/hostgator_email.md",
     "type": "text",
     "size": 833,
-    "modified": "2026-06-23T17:24:45.811196",
+    "modified": "2026-09-20T07:01:37.173968",
     "hash": "72b62bf3c400405a169d4b0676f2163d3f5affd00bae4eae4bcb756d552f7609",
     "description": "# Service: Blacktech HostGator Business Email  ## SMTP (Outgoing)  - Host: `mail.blacktechsolutionscorp.com` - Port: `587` - Encryption: `STARTTLS` - ",
     "internal_key": "internal:003-Computing_Science/Servers/hostgator_email.md"
@@ -1337,6 +1337,84 @@
     "hash": "cca5156cd0e00dd684e18808c8d1efd0a5fae4279a241c8284f7ea5473180260",
     "description": "# Web3 Sovereignty \u2014 Ken Shilling Presentation  **Source:** Video call screenshot (Jun 29, 2026) **Presenter:** Ken Shilling **Topic:** Web3 Sovereign",
     "internal_key": "internal:003-Computing_Science/AI_Research/web3-sovereignty-ken-shilling-notes.md"
+  },
+  {
+    "title": "INDEX.md",
+    "section": "100-Philosophy",
+    "dewey": "100",
+    "dewey_desc": "Philosophy",
+    "file": "100-Philosophy/INDEX.md",
+    "type": "text",
+    "size": 231,
+    "modified": "2026-09-20T08:27:55.221636",
+    "hash": "32d482645146dd9470d6fc150ab5eca28b229ac3c134e4d9b8bef68358826708",
+    "description": "# 100-Philosophy  > Philosophy, Psychology, Ethics \u2014 personal development, mindset, leadership principles  ## Contents  *This section is ready for fil",
+    "internal_key": "internal:100-Philosophy/INDEX.md"
+  },
+  {
+    "title": "INDEX__200-Religion.md",
+    "section": "200-Religion",
+    "dewey": "200",
+    "dewey_desc": "Religion",
+    "file": "200-Religion/INDEX__200-Religion.md",
+    "type": "text",
+    "size": 222,
+    "modified": "2026-09-20T08:27:57.053614",
+    "hash": "7c117df28abdcd7f735001dc928e73fe869b06b89c78ff5fd9e2b492bc6e695a",
+    "description": "# 200-Religion  > Religion, Spirituality, Mythology \u2014 faith, belief systems, spiritual practices  ## Contents  *This section is ready for files. Add d",
+    "internal_key": "internal:200-Religion/INDEX__200-Religion.md"
+  },
+  {
+    "title": "INDEX__300-Social_Sciences.md",
+    "section": "300-Social_Sciences",
+    "dewey": "300",
+    "dewey_desc": "Social Sciences",
+    "file": "300-Social_Sciences/INDEX__300-Social_Sciences.md",
+    "type": "text",
+    "size": 219,
+    "modified": "2026-09-20T08:27:58.929592",
+    "hash": "94555cc70dbd8b5022f543bb9409bc6941794b1d2394cf26537623a96185862b",
+    "description": "# 300-Social Sciences  > Social Sciences \u2014 community, economics, law, education, SSBN network  ## Contents  *This section is ready for files. Add docu",
+    "internal_key": "internal:300-Social_Sciences/INDEX__300-Social_Sciences.md"
+  },
+  {
+    "title": "vendors.json",
+    "section": "300-Social_Sciences",
+    "dewey": "300",
+    "dewey_desc": "Social Sciences",
+    "file": "300-Social_Sciences/vendors.json",
+    "type": "data",
+    "size": 14722,
+    "modified": "2026-09-20T08:28:07.301494",
+    "hash": "3e29eed7bc19636b1170945789862e7790237649e45db26b55e8994dd5b870b6",
+    "description": "[   {     \"id\": \"v-001\",     \"name\": \"20A Duplex Outlet\",     \"partNumber\": \"\",     \"vendor\": \"Home Depot\",     \"category\": \"Devices\",     \"unit\": \"ea",
+    "internal_key": "internal:300-Social_Sciences/vendors.json"
+  },
+  {
+    "title": "INDEX__400-Language.md",
+    "section": "400-Language",
+    "dewey": "400",
+    "dewey_desc": "Language",
+    "file": "400-Language/INDEX__400-Language.md",
+    "type": "text",
+    "size": 225,
+    "modified": "2026-09-20T08:28:00.841569",
+    "hash": "a918011b4274af0e6d4cd4dbb8731637aa87edad4e1fd2fd2b397279bbf6b8c9",
+    "description": "# 400-Language  > Language, Linguistics, Communication \u2014 scripts, templates, brand voice, messaging  ## Contents  *This section is ready for files. Ad",
+    "internal_key": "internal:400-Language/INDEX__400-Language.md"
+  },
+  {
+    "title": "INDEX__500-Science.md",
+    "section": "500-Science",
+    "dewey": "500",
+    "dewey_desc": "Science",
+    "file": "500-Science/INDEX__500-Science.md",
+    "type": "text",
+    "size": 221,
+    "modified": "2026-09-20T08:28:04.193530",
+    "hash": "a2e3eae3418a088f321ce4f2f6212d84eda1b0227378bf0e8e619881bf98266f",
+    "description": "# 500-Science  > Pure Science \u2014 mathematics, physics, chemistry, biology, environmental science  ## Contents  *This section is ready for files. Add do",
+    "internal_key": "internal:500-Science/INDEX__500-Science.md"
   },
   {
     "title": "dewey-blockchain-report.html",
@@ -1506,6 +1584,19 @@
     "hash": "921a8d861483df166c3b0fa16243c652f8638a7d569bd9b6de2958ac64afb602",
     "description": "(binary/encrypted)",
     "internal_key": "internal:620-ComEd_Standard_Offering/measure-fact-sheets/CS26-14_Measure-Fact-Sheet_Outdoor-Lighting_V5_COBRANDED.pdf"
+  },
+  {
+    "title": "INDEX__640-Household_Favorites.md",
+    "section": "640-Household_Favorites",
+    "dewey": "640",
+    "dewey_desc": "Household Favorites",
+    "file": "640-Household_Favorites/INDEX__640-Household_Favorites.md",
+    "type": "text",
+    "size": 629,
+    "modified": "2026-09-20T08:28:09.229472",
+    "hash": "6fa6a23967d8f7885e92da3c9d6afacbaad3697e1678dd6af8e6d6d17f4dd56c",
+    "description": "# \ud83c\udfe0 My Favorites > Everything here is a favorite. Just find it.  ## \ud83e\udd6b Canned Goods - Green Beans \u2014 Pantry - Corn \u2014 Pantry - Black Beans \u2014 Pantry - Tun",
+    "internal_key": "internal:640-Household_Favorites/INDEX__640-Household_Favorites.md"
   },
   {
     "title": "200-day-money-plan.md",
@@ -2431,6 +2522,19 @@
     "internal_key": "internal:657-Accounting_Finance/Crypto_Wallet_Vault.md"
   },
   {
+    "title": "hostgator_email.md",
+    "section": "657-Accounting_Finance",
+    "dewey": "657",
+    "dewey_desc": "Accounting & Finance",
+    "file": "657-Accounting_Finance/hostgator_email.md",
+    "type": "text",
+    "size": 833,
+    "modified": "2026-09-20T08:28:06.097508",
+    "hash": "72b62bf3c400405a169d4b0676f2163d3f5affd00bae4eae4bcb756d552f7609",
+    "description": "# Service: Blacktech HostGator Business Email  ## SMTP (Outgoing)  - Host: `mail.blacktechsolutionscorp.com` - Port: `587` - Encryption: `STARTTLS` - ",
+    "internal_key": "internal:657-Accounting_Finance/hostgator_email.md"
+  },
+  {
     "title": "passcode_vault.enc",
     "section": "657-Accounting_Finance",
     "dewey": "657",
@@ -3263,19 +3367,6 @@
     "internal_key": "internal:690-Building_Construction/transactions/CTX-9CF7789B_contract.pdf"
   },
   {
-    "title": "contract-invoice-template-DUPLICATE-20260920-070354.html",
-    "section": "690-Building_Construction",
-    "dewey": "690",
-    "dewey_desc": "Construction",
-    "file": "690-Building_Construction/contract-invoice-template-DUPLICATE-20260920-070354.html",
-    "type": "web",
-    "size": 15641,
-    "modified": "2026-09-20T07:01:27.029945",
-    "hash": "174edcf369eabf4b5b871cb5225f999746545804f4e4a217738c118aa82d856c",
-    "description": "<!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>Blacktech",
-    "internal_key": "internal:690-Building_Construction/contract-invoice-template-DUPLICATE-20260920-070354.html"
-  },
-  {
     "title": "contract-invoice-template.html",
     "section": "690-Building_Construction",
     "dewey": "690",
@@ -3302,6 +3393,19 @@
     "internal_key": "internal:690-Building_Construction/federal_contractors/index.md"
   },
   {
+    "title": "INDEX__691-Building_Materials.md",
+    "section": "691-Building_Materials",
+    "dewey": "691",
+    "dewey_desc": "Building Materials",
+    "file": "691-Building_Materials/INDEX__691-Building_Materials.md",
+    "type": "text",
+    "size": 30,
+    "modified": "2026-09-20T08:28:18.537365",
+    "hash": "965b45327181ad8200f07d330c027b32c3384200c074703ba5f5b35a882139b1",
+    "description": "# 691 \u2014 Building Materials",
+    "internal_key": "internal:691-Building_Materials/INDEX__691-Building_Materials.md"
+  },
+  {
     "title": "LEDone_2026_Q2_products.json",
     "section": "691-Building_Materials",
     "dewey": "691",
@@ -3322,7 +3426,7 @@
     "file": "691-Building_Materials/dewey_catalog_archive_2026-06-17-DUPLICATE-20260920-070354.json",
     "type": "data",
     "size": 11454727,
-    "modified": "2026-09-20T07:01:15.941920",
+    "modified": "2026-09-20T08:28:21.925327",
     "hash": "b82e57a05acc83e6da2c91ee67b4c2fd0328a0297ace8b7e4ad8b131268a6735",
     "description": "[   {     \"title\": \"hood token logo\",     \"dewey\": \"000\",     \"dewey_desc\": \"General/Computer Science\",     \"file\": \"hood_token_logo.png\",     \"type\":",
     "internal_key": "internal:691-Building_Materials/dewey_catalog_archive_2026-06-17-DUPLICATE-20260920-070354.json"
@@ -3354,6 +3458,19 @@
     "internal_key": "internal:691-Building_Materials/tdg_outreach_templates.md"
   },
   {
+    "title": "vendors.json",
+    "section": "691-Building_Materials",
+    "dewey": "691",
+    "dewey_desc": "Building Materials",
+    "file": "691-Building_Materials/vendors.json",
+    "type": "data",
+    "size": 14722,
+    "modified": "2026-09-20T07:01:39.937974",
+    "hash": "3e29eed7bc19636b1170945789862e7790237649e45db26b55e8994dd5b870b6",
+    "description": "[   {     \"id\": \"v-001\",     \"name\": \"20A Duplex Outlet\",     \"partNumber\": \"\",     \"vendor\": \"Home Depot\",     \"category\": \"Devices\",     \"unit\": \"ea",
+    "internal_key": "internal:691-Building_Materials/vendors.json"
+  },
+  {
     "title": "8_to_10_Checklist.md",
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
@@ -3365,6 +3482,19 @@
     "hash": "c2f5d5b6b1ee0da56404209116be8354b36d33e0209545ee18598b20a386e112",
     "description": "# \ud83c\udfaf 8\u219210 CHECKLIST \u2014 Blacktech Systems Hardening  **Your current score: 8/10**   **Goal: 10/10 \u2014 Bulletproof, Self-Healing, Enterprise-Grade**  **Last",
     "internal_key": "internal:692-Auxiliary_Practices/8_to_10_Checklist.md"
+  },
+  {
+    "title": "BSC-SOW-2026-001.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-001.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:01:59.146018",
+    "hash": "d5b451b6a0921be4ba70dbc80c8b4dd0e9dd582c6c5d37c1a12c5670a3c05efc",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-001**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-06-27 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-001.md"
   },
   {
     "title": "BSC-SOW-2026-001.md",
@@ -3384,6 +3514,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-002.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:00.194020",
+    "hash": "57b4c563c97a7d2813255b7d20b095d7405b53f2eacabe475959b2cadab3e755",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-002**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-06-28 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-002.md"
+  },
+  {
+    "title": "BSC-SOW-2026-002.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-002.md",
     "type": "text",
     "size": 830,
@@ -3391,6 +3534,19 @@
     "hash": "57b4c563c97a7d2813255b7d20b095d7405b53f2eacabe475959b2cadab3e755",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-002**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-06-28 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-002.md"
+  },
+  {
+    "title": "BSC-SOW-2026-003.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-003.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:01.230023",
+    "hash": "c4da267efdaf1b8a4212f4c1f5f71fd35c166e2c8c215951715b4dc36cdfa06a",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-003**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-06-29 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-003.md"
   },
   {
     "title": "BSC-SOW-2026-003.md",
@@ -3410,6 +3566,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-004.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:02.214025",
+    "hash": "1801581ca032b9203a9c2816811f3ce11ac8a7540b835d6f020a306383fe7147",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-004**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-06-30 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-004.md"
+  },
+  {
+    "title": "BSC-SOW-2026-004.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-004.md",
     "type": "text",
     "size": 830,
@@ -3417,6 +3586,19 @@
     "hash": "1801581ca032b9203a9c2816811f3ce11ac8a7540b835d6f020a306383fe7147",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-004**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-06-30 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-004.md"
+  },
+  {
+    "title": "BSC-SOW-2026-005.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-005.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:03.262028",
+    "hash": "0743d352a2103ce88ef4428640f7cc2a566d48a82684321ffa8acd443d18f3f7",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-005**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-01 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-005.md"
   },
   {
     "title": "BSC-SOW-2026-005.md",
@@ -3436,6 +3618,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-006.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:04.310030",
+    "hash": "01aa611dc1fd06fdf3493d9806e9331945ddb08e6ce96fc90115191cd2ce30a4",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-006**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-02 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-006.md"
+  },
+  {
+    "title": "BSC-SOW-2026-006.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-006.md",
     "type": "text",
     "size": 830,
@@ -3443,6 +3638,19 @@
     "hash": "01aa611dc1fd06fdf3493d9806e9331945ddb08e6ce96fc90115191cd2ce30a4",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-006**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-02 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-006.md"
+  },
+  {
+    "title": "BSC-SOW-2026-007.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-007.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:05.334032",
+    "hash": "078113d7558b70eae8c39fcccbfad89a9410e7a043c34f301ad6059c09f73d53",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-007**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-03 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-007.md"
   },
   {
     "title": "BSC-SOW-2026-007.md",
@@ -3462,6 +3670,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-008.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:06.346035",
+    "hash": "f7d209d38113c0ef6a228fdb1ece253f2d619945d1d8f3c2b041b82bd251b0b6",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-008**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-04 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-008.md"
+  },
+  {
+    "title": "BSC-SOW-2026-008.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-008.md",
     "type": "text",
     "size": 830,
@@ -3469,6 +3690,19 @@
     "hash": "f7d209d38113c0ef6a228fdb1ece253f2d619945d1d8f3c2b041b82bd251b0b6",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-008**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-04 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-008.md"
+  },
+  {
+    "title": "BSC-SOW-2026-009.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-009.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:07.354037",
+    "hash": "59e449f1b5bf9605b5de8f7e0a969aceafa3cf18d825d15ffd9864373025214f",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-009**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-05 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-009.md"
   },
   {
     "title": "BSC-SOW-2026-009.md",
@@ -3488,6 +3722,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-010.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:08.462039",
+    "hash": "26ee33c5080be3ad0e22cf89a961f2c450c5c8293d90eed51f625ce0f5c3bb5b",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-010**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-06 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-010.md"
+  },
+  {
+    "title": "BSC-SOW-2026-010.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-010.md",
     "type": "text",
     "size": 830,
@@ -3495,6 +3742,19 @@
     "hash": "26ee33c5080be3ad0e22cf89a961f2c450c5c8293d90eed51f625ce0f5c3bb5b",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-010**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-06 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-010.md"
+  },
+  {
+    "title": "BSC-SOW-2026-011.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-011.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:09.510042",
+    "hash": "f1540f9bf5bf75e9777cfc01fd1108f4b74bb391aae350bd622f85ecee4d595e",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-011**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-07 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-011.md"
   },
   {
     "title": "BSC-SOW-2026-011.md",
@@ -3514,6 +3774,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-012.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:10.570044",
+    "hash": "2a80ac471a299a1699c3e93ef0752ffea268f953f910466e29eab3f53740e1bb",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-012**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-08 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-012.md"
+  },
+  {
+    "title": "BSC-SOW-2026-012.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-012.md",
     "type": "text",
     "size": 830,
@@ -3521,6 +3794,19 @@
     "hash": "2a80ac471a299a1699c3e93ef0752ffea268f953f910466e29eab3f53740e1bb",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-012**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-08 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-012.md"
+  },
+  {
+    "title": "BSC-SOW-2026-013.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-013.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:12.014048",
+    "hash": "516a711484d7b721e8cbd846d06d5203c86fa5f2938db7afdb5ccbdbbf8d74ee",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-013**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-09 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-013.md"
   },
   {
     "title": "BSC-SOW-2026-013.md",
@@ -3540,6 +3826,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-014.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:13.146050",
+    "hash": "be958bc0947abab5e89615540ac74bbd6f31532bc5f29f308c3700c414fc11fd",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-014**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-10 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-014.md"
+  },
+  {
+    "title": "BSC-SOW-2026-014.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-014.md",
     "type": "text",
     "size": 830,
@@ -3547,6 +3846,19 @@
     "hash": "be958bc0947abab5e89615540ac74bbd6f31532bc5f29f308c3700c414fc11fd",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-014**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-10 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-014.md"
+  },
+  {
+    "title": "BSC-SOW-2026-015.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-015.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:14.482054",
+    "hash": "e902ebb7fff490171a5fcf827ec2379fabd6f1d13f82c2c85dae6d2a35e9ea55",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-015**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-11 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-015.md"
   },
   {
     "title": "BSC-SOW-2026-015.md",
@@ -3566,6 +3878,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-016.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:15.566056",
+    "hash": "12c3c2ece5471b75e75d25bdbd7245249c0d2a08a524ecc676dfef0ec8715227",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-016**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-12 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-016.md"
+  },
+  {
+    "title": "BSC-SOW-2026-016.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-016.md",
     "type": "text",
     "size": 830,
@@ -3573,6 +3898,19 @@
     "hash": "12c3c2ece5471b75e75d25bdbd7245249c0d2a08a524ecc676dfef0ec8715227",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-016**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-12 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-016.md"
+  },
+  {
+    "title": "BSC-SOW-2026-017.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-017.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:16.930059",
+    "hash": "6981676c44d42c531804eea5e2465c859874a82d0ff76160f9fa73fcf3a3e479",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-017**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-13 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-017.md"
   },
   {
     "title": "BSC-SOW-2026-017.md",
@@ -3592,6 +3930,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-018.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:18.290062",
+    "hash": "5fe8bf1d054a4122214e5ea9e7ab226f0e270721b62930d05420e3c21f38ff7e",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-018**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-14 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-018.md"
+  },
+  {
+    "title": "BSC-SOW-2026-018.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-018.md",
     "type": "text",
     "size": 830,
@@ -3599,6 +3950,19 @@
     "hash": "5fe8bf1d054a4122214e5ea9e7ab226f0e270721b62930d05420e3c21f38ff7e",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-018**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-14 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-018.md"
+  },
+  {
+    "title": "BSC-SOW-2026-019.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-019.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:19.386065",
+    "hash": "d5268c61a0aac92912c2ffb715ec8e007dc89267736f545d80cdda63736dfbde",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-019**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-15 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-019.md"
   },
   {
     "title": "BSC-SOW-2026-019.md",
@@ -3618,6 +3982,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-020.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:21.150069",
+    "hash": "b574c69d60115c1a412c520fc33467f76e2bd3a6ca4c8e33b3756fbdbb1ceb97",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-020**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-16 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-020.md"
+  },
+  {
+    "title": "BSC-SOW-2026-020.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-020.md",
     "type": "text",
     "size": 830,
@@ -3625,6 +4002,19 @@
     "hash": "b574c69d60115c1a412c520fc33467f76e2bd3a6ca4c8e33b3756fbdbb1ceb97",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-020**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-16 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-020.md"
+  },
+  {
+    "title": "BSC-SOW-2026-021.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-021.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:22.574072",
+    "hash": "d5fcd0ce1b60f3a87d21ab7374ca4f62d8ea0ac139947f6c2e2ef68b0e2548eb",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-021**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-17 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-021.md"
   },
   {
     "title": "BSC-SOW-2026-021.md",
@@ -3644,6 +4034,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-022.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:24.130076",
+    "hash": "5b495c2b843705c4071f2f0bbef46a83502372e90ecd09e21f7438b09ed9f693",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-022**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-18 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-022.md"
+  },
+  {
+    "title": "BSC-SOW-2026-022.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-022.md",
     "type": "text",
     "size": 830,
@@ -3651,6 +4054,19 @@
     "hash": "5b495c2b843705c4071f2f0bbef46a83502372e90ecd09e21f7438b09ed9f693",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-022**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-18 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-022.md"
+  },
+  {
+    "title": "BSC-SOW-2026-023.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-023.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:25.222079",
+    "hash": "3960bd1222e90918df1ee723b1ce5952086c4f101d19dfd57d19b1eb30adcd31",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-023**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-19 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-023.md"
   },
   {
     "title": "BSC-SOW-2026-023.md",
@@ -3670,6 +4086,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-024.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:26.586082",
+    "hash": "78715088eee0856fd71c676e62cc21e5afcff6a09ef0daf468e74bd9d3244752",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-024**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-20 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-024.md"
+  },
+  {
+    "title": "BSC-SOW-2026-024.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-024.md",
     "type": "text",
     "size": 830,
@@ -3677,6 +4106,19 @@
     "hash": "78715088eee0856fd71c676e62cc21e5afcff6a09ef0daf468e74bd9d3244752",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-024**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-20 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-024.md"
+  },
+  {
+    "title": "BSC-SOW-2026-025.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-025.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:27.918085",
+    "hash": "6c966236c6f65a101be93f5266bf27bc055c171ef6353b19251b989734f7a49a",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-025**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-21 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-025.md"
   },
   {
     "title": "BSC-SOW-2026-025.md",
@@ -3696,6 +4138,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-026.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:29.058088",
+    "hash": "076afb90a02a19cf10ddc4ac1f36303c056bb3fe12d13d49c0e987c083123026",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-026**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-22 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-026.md"
+  },
+  {
+    "title": "BSC-SOW-2026-026.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-026.md",
     "type": "text",
     "size": 830,
@@ -3703,6 +4158,19 @@
     "hash": "076afb90a02a19cf10ddc4ac1f36303c056bb3fe12d13d49c0e987c083123026",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-026**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-22 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-026.md"
+  },
+  {
+    "title": "BSC-SOW-2026-027.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-027.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:30.126090",
+    "hash": "d3dcf118346826eb761c99dd856e29806db1a646c322daa3326ee620b72e51d1",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-027**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-23 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-027.md"
   },
   {
     "title": "BSC-SOW-2026-027.md",
@@ -3722,6 +4190,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-028.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:31.482093",
+    "hash": "ee5ab0019bb25832b74e4081df8996fd989d05ddbbbf418e7bf4a9b43994bbc3",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-028**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-24 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-028.md"
+  },
+  {
+    "title": "BSC-SOW-2026-028.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-028.md",
     "type": "text",
     "size": 830,
@@ -3729,6 +4210,19 @@
     "hash": "ee5ab0019bb25832b74e4081df8996fd989d05ddbbbf418e7bf4a9b43994bbc3",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-028**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-24 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-028.md"
+  },
+  {
+    "title": "BSC-SOW-2026-029.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-029.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:32.574096",
+    "hash": "1b80dbcb2901bc32d7bf9f86171e995781bbeb1baaea9bf842c9b5866bb4347e",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-029**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-25 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-029.md"
   },
   {
     "title": "BSC-SOW-2026-029.md",
@@ -3748,6 +4242,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-030.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:33.606098",
+    "hash": "b21da1314ba92e248c31f7918f782a401105bd0300ba61bc5f7b3d3f16370b59",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-030**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-26 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-030.md"
+  },
+  {
+    "title": "BSC-SOW-2026-030.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-030.md",
     "type": "text",
     "size": 830,
@@ -3755,6 +4262,19 @@
     "hash": "b21da1314ba92e248c31f7918f782a401105bd0300ba61bc5f7b3d3f16370b59",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-030**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-26 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-030.md"
+  },
+  {
+    "title": "BSC-SOW-2026-031.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-031.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:34.658101",
+    "hash": "0938a9aa9477612afc76bce4c3c09c26be82c2af1ce803e30814c30e40665b7d",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-031**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-27 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-031.md"
   },
   {
     "title": "BSC-SOW-2026-031.md",
@@ -3774,6 +4294,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-032.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:35.782104",
+    "hash": "c7d85f3716cc3c3a4a79b9eac38df798bce9e0958ba19f332b00ea62a79cd397",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-032**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-28 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-032.md"
+  },
+  {
+    "title": "BSC-SOW-2026-032.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-032.md",
     "type": "text",
     "size": 830,
@@ -3781,6 +4314,19 @@
     "hash": "c7d85f3716cc3c3a4a79b9eac38df798bce9e0958ba19f332b00ea62a79cd397",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-032**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-28 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-032.md"
+  },
+  {
+    "title": "BSC-SOW-2026-033.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-033.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:36.822106",
+    "hash": "374e2b4f055a38143b56cdde3b44419cb63c117ee91fc2a1f36dda92d8dee824",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-033**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-29 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-033.md"
   },
   {
     "title": "BSC-SOW-2026-033.md",
@@ -3800,6 +4346,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-034.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:37.830108",
+    "hash": "d679fe9775ecd78cb589e5975dee12286f6e65da3b6dabafe2b5c35866022c1d",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-034**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-30 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-034.md"
+  },
+  {
+    "title": "BSC-SOW-2026-034.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-034.md",
     "type": "text",
     "size": 830,
@@ -3807,6 +4366,19 @@
     "hash": "d679fe9775ecd78cb589e5975dee12286f6e65da3b6dabafe2b5c35866022c1d",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-034**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-30 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-034.md"
+  },
+  {
+    "title": "BSC-SOW-2026-035.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-035.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:38.838111",
+    "hash": "f8c028edd607f50158a41a4bacca35e6383bcdc6dbfd237dac25dde807fe93d1",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-035**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-07-31 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-035.md"
   },
   {
     "title": "BSC-SOW-2026-035.md",
@@ -3826,6 +4398,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-036.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:40.414114",
+    "hash": "3844b369533c53ed4a2effbd545921adcd013112aee1cb5c0e11f93ad9f45648",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-036**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-01 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-036.md"
+  },
+  {
+    "title": "BSC-SOW-2026-036.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-036.md",
     "type": "text",
     "size": 830,
@@ -3833,6 +4418,19 @@
     "hash": "3844b369533c53ed4a2effbd545921adcd013112aee1cb5c0e11f93ad9f45648",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-036**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-01 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-036.md"
+  },
+  {
+    "title": "BSC-SOW-2026-037.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-037.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:41.482117",
+    "hash": "03cd3f22eb733d119757453fe05550cb9ec17448fec25b88cd39003f939696c7",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-037**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-02 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-037.md"
   },
   {
     "title": "BSC-SOW-2026-037.md",
@@ -3852,6 +4450,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-038.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:42.518120",
+    "hash": "c4c7ae6cdbd283d032229df0fd6a62682517c22fe3489a681cb380c62d60c96c",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-038**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-03 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-038.md"
+  },
+  {
+    "title": "BSC-SOW-2026-038.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-038.md",
     "type": "text",
     "size": 830,
@@ -3859,6 +4470,19 @@
     "hash": "c4c7ae6cdbd283d032229df0fd6a62682517c22fe3489a681cb380c62d60c96c",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-038**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-03 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-038.md"
+  },
+  {
+    "title": "BSC-SOW-2026-039.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-039.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:44.062123",
+    "hash": "2ef38c8683164fce3e249e377e82c90099c2e3c5cd9ce6773f7f7dc4335611ce",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-039**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-04 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-039.md"
   },
   {
     "title": "BSC-SOW-2026-039.md",
@@ -3878,6 +4502,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-040.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:45.062125",
+    "hash": "d96dc5911785de95427b82f4c15d22742211ff8575db941484e2d4062ee1ac8b",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-040**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-05 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-040.md"
+  },
+  {
+    "title": "BSC-SOW-2026-040.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-040.md",
     "type": "text",
     "size": 830,
@@ -3885,6 +4522,19 @@
     "hash": "d96dc5911785de95427b82f4c15d22742211ff8575db941484e2d4062ee1ac8b",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-040**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-05 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-040.md"
+  },
+  {
+    "title": "BSC-SOW-2026-041.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-041.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:46.098128",
+    "hash": "d57eb20b115e2413c8b29d34f864259cb4a21f34e6bb0e07cbfbb2333d3903e9",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-041**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-06 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-041.md"
   },
   {
     "title": "BSC-SOW-2026-041.md",
@@ -3904,6 +4554,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-042.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:47.122130",
+    "hash": "b7f09f7e79d204216d04ef22def94bdaf38c525fef35eb98924fd8c639b45ca1",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-042**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-07 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-042.md"
+  },
+  {
+    "title": "BSC-SOW-2026-042.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-042.md",
     "type": "text",
     "size": 830,
@@ -3911,6 +4574,19 @@
     "hash": "b7f09f7e79d204216d04ef22def94bdaf38c525fef35eb98924fd8c639b45ca1",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-042**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-07 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-042.md"
+  },
+  {
+    "title": "BSC-SOW-2026-043.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-043.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:48.446134",
+    "hash": "8d8831c350f97e58bbca6f97378c8c3e8ce93caf5754ed9652e9bb2e2bff148c",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-043**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-08 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-043.md"
   },
   {
     "title": "BSC-SOW-2026-043.md",
@@ -3930,6 +4606,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-044.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:49.450136",
+    "hash": "cc58c79c8f83529b4f982cd7df40c2395f2cafa6956ec009729560497b04711a",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-044**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-09 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-044.md"
+  },
+  {
+    "title": "BSC-SOW-2026-044.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-044.md",
     "type": "text",
     "size": 830,
@@ -3937,6 +4626,19 @@
     "hash": "cc58c79c8f83529b4f982cd7df40c2395f2cafa6956ec009729560497b04711a",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-044**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-09 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-044.md"
+  },
+  {
+    "title": "BSC-SOW-2026-045.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-045.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:50.854139",
+    "hash": "d7cbc505efb0971465125850030c4c63a30de5e65439ef01cb197e3b1686a478",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-045**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-10 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-045.md"
   },
   {
     "title": "BSC-SOW-2026-045.md",
@@ -3956,6 +4658,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-046.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:51.926142",
+    "hash": "01004700886ab342acd53a51662e46dfaf014f028bd009c4145f8f4f9f2a7cae",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-046**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-11 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-046.md"
+  },
+  {
+    "title": "BSC-SOW-2026-046.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-046.md",
     "type": "text",
     "size": 830,
@@ -3963,6 +4678,19 @@
     "hash": "01004700886ab342acd53a51662e46dfaf014f028bd009c4145f8f4f9f2a7cae",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-046**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-11 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-046.md"
+  },
+  {
+    "title": "BSC-SOW-2026-047.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-047.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:52.914144",
+    "hash": "10e571a6a50b5c03da8b9611f71f7391f4725e2636abbe9a6bc1cd3c83227a9a",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-047**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-12 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-047.md"
   },
   {
     "title": "BSC-SOW-2026-047.md",
@@ -3982,6 +4710,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-048.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:53.958147",
+    "hash": "a372317bfc2d2fbd832747c7794940176f0057277592e6cd7d914f7e7625b25d",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-048**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-13 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-048.md"
+  },
+  {
+    "title": "BSC-SOW-2026-048.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-048.md",
     "type": "text",
     "size": 830,
@@ -3989,6 +4730,19 @@
     "hash": "a372317bfc2d2fbd832747c7794940176f0057277592e6cd7d914f7e7625b25d",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-048**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-13 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-048.md"
+  },
+  {
+    "title": "BSC-SOW-2026-049.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-049.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:55.118150",
+    "hash": "f63a1157a8a8c51e76f07f7b413a1580fc7f92d33e6cc5c0f189a5a526ad2ad4",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-049**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-14 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-049.md"
   },
   {
     "title": "BSC-SOW-2026-049.md",
@@ -4008,6 +4762,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-050.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:56.194152",
+    "hash": "ea4236db24fdeb22d93e9d4c6b39e261ce4baae34479a1d5575805323bd6ea36",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-050**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-15 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-050.md"
+  },
+  {
+    "title": "BSC-SOW-2026-050.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-050.md",
     "type": "text",
     "size": 830,
@@ -4015,6 +4782,19 @@
     "hash": "ea4236db24fdeb22d93e9d4c6b39e261ce4baae34479a1d5575805323bd6ea36",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-050**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-15 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-050.md"
+  },
+  {
+    "title": "BSC-SOW-2026-051.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-051.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:57.322155",
+    "hash": "7fb85bdde3a11e91e5db5a1dcd70b092ec4c3b2026c0f8d8130b876b038b9acf",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-051**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-16 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-051.md"
   },
   {
     "title": "BSC-SOW-2026-051.md",
@@ -4034,6 +4814,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-052.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:58.750158",
+    "hash": "9def538bc76ed906e091d365dc3974a37c0d38d3f0a45b6bcfd04df3ac3ec82c",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-052**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-17 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-052.md"
+  },
+  {
+    "title": "BSC-SOW-2026-052.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-052.md",
     "type": "text",
     "size": 830,
@@ -4041,6 +4834,19 @@
     "hash": "9def538bc76ed906e091d365dc3974a37c0d38d3f0a45b6bcfd04df3ac3ec82c",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-052**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-17 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-052.md"
+  },
+  {
+    "title": "BSC-SOW-2026-053.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-053.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:59.838161",
+    "hash": "fe53588058e62ffc3d29b2340875a80f9a4a0a702917fb801934ce8e732f530b",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-053**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-18 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-053.md"
   },
   {
     "title": "BSC-SOW-2026-053.md",
@@ -4060,6 +4866,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-054.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:01.370165",
+    "hash": "c4015c0fc45506454590142575df3d3e007ba736e71218ffe07bd6a70634094d",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-054**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-19 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-054.md"
+  },
+  {
+    "title": "BSC-SOW-2026-054.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-054.md",
     "type": "text",
     "size": 830,
@@ -4067,6 +4886,19 @@
     "hash": "c4015c0fc45506454590142575df3d3e007ba736e71218ffe07bd6a70634094d",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-054**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-19 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-054.md"
+  },
+  {
+    "title": "BSC-SOW-2026-055.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-055.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:02.590168",
+    "hash": "5cfac067f981345a4078adcc14333ff252ed47d8ebeb37a9493d3a3cdd7830aa",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-055**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-20 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-055.md"
   },
   {
     "title": "BSC-SOW-2026-055.md",
@@ -4086,6 +4918,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-056.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:03.718170",
+    "hash": "1df57401e865f908e83b075ebd35b525619498bb49d7a759d49da82c0b95aaf4",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-056**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-21 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-056.md"
+  },
+  {
+    "title": "BSC-SOW-2026-056.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-056.md",
     "type": "text",
     "size": 830,
@@ -4093,6 +4938,19 @@
     "hash": "1df57401e865f908e83b075ebd35b525619498bb49d7a759d49da82c0b95aaf4",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-056**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-21 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-056.md"
+  },
+  {
+    "title": "BSC-SOW-2026-057.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-057.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:04.914173",
+    "hash": "60edb0df517fd332670b4df6bd8bedb2b221187bbf276673df663b658d3c8a55",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-057**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-22 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-057.md"
   },
   {
     "title": "BSC-SOW-2026-057.md",
@@ -4112,6 +4970,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-058.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:05.970176",
+    "hash": "88f327d71d5988340d97c20b4426a9f653757a92d78a021fb7777c6f35e726a4",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-058**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-23 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-058.md"
+  },
+  {
+    "title": "BSC-SOW-2026-058.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-058.md",
     "type": "text",
     "size": 830,
@@ -4119,6 +4990,19 @@
     "hash": "88f327d71d5988340d97c20b4426a9f653757a92d78a021fb7777c6f35e726a4",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-058**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-23 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-058.md"
+  },
+  {
+    "title": "BSC-SOW-2026-059.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-059.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:07.114178",
+    "hash": "d8bdf1eb631f8ca5288c8b8562f642e78b635846f081db67d66b9e6b1643fd6d",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-059**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-24 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-059.md"
   },
   {
     "title": "BSC-SOW-2026-059.md",
@@ -4138,6 +5022,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-060.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:08.234181",
+    "hash": "12a54b7fb5709c65d44def11ed262b2f40c7cdcb717796b31bb88031d6035d6d",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-060**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-25 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-060.md"
+  },
+  {
+    "title": "BSC-SOW-2026-060.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-060.md",
     "type": "text",
     "size": 830,
@@ -4145,6 +5042,19 @@
     "hash": "12a54b7fb5709c65d44def11ed262b2f40c7cdcb717796b31bb88031d6035d6d",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-060**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-25 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-060.md"
+  },
+  {
+    "title": "BSC-SOW-2026-061.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-061.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:09.350184",
+    "hash": "b1cd290e36d7e0e93d8b56a7d60ba28926e06d845c3717e8d20395a9afe93aea",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-061**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-26 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-061.md"
   },
   {
     "title": "BSC-SOW-2026-061.md",
@@ -4164,6 +5074,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-062.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:10.498187",
+    "hash": "ad225d92959f8ae6208fc54bd2b100ea458a7203811966e638360e8f4002eea5",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-062**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-27 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-062.md"
+  },
+  {
+    "title": "BSC-SOW-2026-062.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-062.md",
     "type": "text",
     "size": 830,
@@ -4171,6 +5094,19 @@
     "hash": "ad225d92959f8ae6208fc54bd2b100ea458a7203811966e638360e8f4002eea5",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-062**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-27 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-062.md"
+  },
+  {
+    "title": "BSC-SOW-2026-063.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-063.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:11.638189",
+    "hash": "ba31be7c1232527bf3d7e1b33c173c8563686bb52808d254055caadbae631ce7",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-063**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-28 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-063.md"
   },
   {
     "title": "BSC-SOW-2026-063.md",
@@ -4190,6 +5126,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-064.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:12.882192",
+    "hash": "46b6da7111f7d6eeaf3fe415f3ac1e2a8db9116e3b75bda6b4558306c22dbf29",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-064**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-29 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-064.md"
+  },
+  {
+    "title": "BSC-SOW-2026-064.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-064.md",
     "type": "text",
     "size": 830,
@@ -4197,6 +5146,19 @@
     "hash": "46b6da7111f7d6eeaf3fe415f3ac1e2a8db9116e3b75bda6b4558306c22dbf29",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-064**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-29 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-064.md"
+  },
+  {
+    "title": "BSC-SOW-2026-065.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-065.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:13.926195",
+    "hash": "0312296e741c41fcb6b887c5275c63d68cfac2a792462949eda7d4f40e2f82f7",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-065**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-30 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-065.md"
   },
   {
     "title": "BSC-SOW-2026-065.md",
@@ -4216,6 +5178,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-066.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:14.942197",
+    "hash": "078ca47887655f8828233bfea10ca848eaaefa57d4abc348d5cd4192d1e5e714",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-066**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-31 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-066.md"
+  },
+  {
+    "title": "BSC-SOW-2026-066.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-066.md",
     "type": "text",
     "size": 830,
@@ -4223,6 +5198,19 @@
     "hash": "078ca47887655f8828233bfea10ca848eaaefa57d4abc348d5cd4192d1e5e714",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-066**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-08-31 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-066.md"
+  },
+  {
+    "title": "BSC-SOW-2026-067.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-067.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:15.974200",
+    "hash": "6734314afdcb002dc746b202dd737ffe77786c746bf26268cac4b3369b99515a",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-067**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-01 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-067.md"
   },
   {
     "title": "BSC-SOW-2026-067.md",
@@ -4242,6 +5230,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-068.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:17.846204",
+    "hash": "0ec864a06c7cc87d1637c827af16c7ae7c2cdeb403a7a82e452060c7de66ff96",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-068**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-02 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-068.md"
+  },
+  {
+    "title": "BSC-SOW-2026-068.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-068.md",
     "type": "text",
     "size": 830,
@@ -4249,6 +5250,19 @@
     "hash": "0ec864a06c7cc87d1637c827af16c7ae7c2cdeb403a7a82e452060c7de66ff96",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-068**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-02 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-068.md"
+  },
+  {
+    "title": "BSC-SOW-2026-069.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-069.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:19.030207",
+    "hash": "6a889ddac526d5c84dc2d622ab3fdbca84187faaebccb7e858e394614ddecd0b",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-069**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-03 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-069.md"
   },
   {
     "title": "BSC-SOW-2026-069.md",
@@ -4268,6 +5282,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-070.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:20.150210",
+    "hash": "69cba9af11d7c2128c8c1f9c099c7363fd952991ccb1c6d630acf404ae6a3d8d",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-070**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-04 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-070.md"
+  },
+  {
+    "title": "BSC-SOW-2026-070.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-070.md",
     "type": "text",
     "size": 830,
@@ -4275,6 +5302,19 @@
     "hash": "69cba9af11d7c2128c8c1f9c099c7363fd952991ccb1c6d630acf404ae6a3d8d",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-070**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-04 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-070.md"
+  },
+  {
+    "title": "BSC-SOW-2026-071.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-071.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:21.302213",
+    "hash": "60260ca86862c2ece59406f0e1eddb43592fb7954073dd62f871c05d6cf623d9",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-071**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-05 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-071.md"
   },
   {
     "title": "BSC-SOW-2026-071.md",
@@ -4294,6 +5334,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-072.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:22.458216",
+    "hash": "108d572b21bccea91829b2175ea475ab1ab56e246c103b3d07a20038fa27b366",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-072**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-06 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-072.md"
+  },
+  {
+    "title": "BSC-SOW-2026-072.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-072.md",
     "type": "text",
     "size": 830,
@@ -4301,6 +5354,19 @@
     "hash": "108d572b21bccea91829b2175ea475ab1ab56e246c103b3d07a20038fa27b366",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-072**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-06 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-072.md"
+  },
+  {
+    "title": "BSC-SOW-2026-073.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-073.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:23.454218",
+    "hash": "36739a4de3eef052abe915bef1a63ebf089b280b0c1b5f29dbc7ddab976d4727",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-073**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-07 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-073.md"
   },
   {
     "title": "BSC-SOW-2026-073.md",
@@ -4320,6 +5386,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-074.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:24.526221",
+    "hash": "a0c5c26f6bce16a8e2b1872c66c25476a44d1866ceee574406bcc02a4dffede5",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-074**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-08 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-074.md"
+  },
+  {
+    "title": "BSC-SOW-2026-074.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-074.md",
     "type": "text",
     "size": 830,
@@ -4327,6 +5406,19 @@
     "hash": "a0c5c26f6bce16a8e2b1872c66c25476a44d1866ceee574406bcc02a4dffede5",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-074**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-08 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-074.md"
+  },
+  {
+    "title": "BSC-SOW-2026-075.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-075.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:26.602226",
+    "hash": "fd6c4a613d0057d16403df104d7cc4888bbcf8f80be305d3508e98e0533db694",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-075**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-09 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-075.md"
   },
   {
     "title": "BSC-SOW-2026-075.md",
@@ -4346,6 +5438,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-076.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:27.846229",
+    "hash": "2200c9294b26a7e89fea2c0d9132193da53fca4184dd5cce9c28fbde61cbe333",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-076**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-10 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-076.md"
+  },
+  {
+    "title": "BSC-SOW-2026-076.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-076.md",
     "type": "text",
     "size": 830,
@@ -4353,6 +5458,19 @@
     "hash": "2200c9294b26a7e89fea2c0d9132193da53fca4184dd5cce9c28fbde61cbe333",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-076**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-10 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-076.md"
+  },
+  {
+    "title": "BSC-SOW-2026-077.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-077.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:28.926231",
+    "hash": "eae4d1f30813be89256adb385bf20a16ea600edb8596f7545a72e52d66041f07",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-077**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-11 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-077.md"
   },
   {
     "title": "BSC-SOW-2026-077.md",
@@ -4372,6 +5490,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-078.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:29.998234",
+    "hash": "cf4da4e24bb9502c307e8e07f5f24d16c9a8348dd239f67663b8c54245ebf39a",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-078**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-12 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-078.md"
+  },
+  {
+    "title": "BSC-SOW-2026-078.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-078.md",
     "type": "text",
     "size": 830,
@@ -4379,6 +5510,19 @@
     "hash": "cf4da4e24bb9502c307e8e07f5f24d16c9a8348dd239f67663b8c54245ebf39a",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-078**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-12 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-078.md"
+  },
+  {
+    "title": "BSC-SOW-2026-079.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-079.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:31.038237",
+    "hash": "c9dcf57d5d848d02935a7b90bf965eaa8c200f5e474c0f8aae043d7420667788",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-079**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-13 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-079.md"
   },
   {
     "title": "BSC-SOW-2026-079.md",
@@ -4398,6 +5542,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-080.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:32.042239",
+    "hash": "6f4a2048fabeda72d0a657b97e3f3c7e22a0afd777c83f835f6edba2ccd4bd92",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-080**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-14 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-080.md"
+  },
+  {
+    "title": "BSC-SOW-2026-080.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-080.md",
     "type": "text",
     "size": 830,
@@ -4405,6 +5562,19 @@
     "hash": "6f4a2048fabeda72d0a657b97e3f3c7e22a0afd777c83f835f6edba2ccd4bd92",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-080**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-14 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-080.md"
+  },
+  {
+    "title": "BSC-SOW-2026-081.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-081.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:33.526243",
+    "hash": "6ff7f9ce1ab05a64a74ab3eb334afed3b0f91370cb4b02dd699dfe55970a796b",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-081**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-15 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-081.md"
   },
   {
     "title": "BSC-SOW-2026-081.md",
@@ -4424,6 +5594,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-082.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:34.614245",
+    "hash": "d38e0eae8919c48a986bd85ab6f64a976167d6a73d519d7524952db76ff32f4c",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-082**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-16 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-082.md"
+  },
+  {
+    "title": "BSC-SOW-2026-082.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-082.md",
     "type": "text",
     "size": 830,
@@ -4431,6 +5614,19 @@
     "hash": "d38e0eae8919c48a986bd85ab6f64a976167d6a73d519d7524952db76ff32f4c",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-082**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-16 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-082.md"
+  },
+  {
+    "title": "BSC-SOW-2026-083.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-083.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:35.734248",
+    "hash": "fcfc599be5e9f22aa6b2e81d21ecac5fb6c62652eb273e0318575a5f4161d75a",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-083**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-17 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-083.md"
   },
   {
     "title": "BSC-SOW-2026-083.md",
@@ -4450,6 +5646,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-084.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:36.802251",
+    "hash": "90efacd97cbeb2bae4db9eaa63f4ac15f42bc06ea1fbc850043463076d6f585c",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-084**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-18 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-084.md"
+  },
+  {
+    "title": "BSC-SOW-2026-084.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-084.md",
     "type": "text",
     "size": 830,
@@ -4457,6 +5666,19 @@
     "hash": "90efacd97cbeb2bae4db9eaa63f4ac15f42bc06ea1fbc850043463076d6f585c",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-084**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-18 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-084.md"
+  },
+  {
+    "title": "BSC-SOW-2026-085.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-085.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:37.826253",
+    "hash": "c226cd1167493c91aa0f6b15d18b6badb74ed02dd489f7d8def211e8f82e9e39",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-085**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-19 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-085.md"
   },
   {
     "title": "BSC-SOW-2026-085.md",
@@ -4476,6 +5698,19 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-086.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:38.870256",
+    "hash": "8080287c55d40ed7bf067a602591f605ba726d651f7b2572430f8f114097802c",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-086**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-20 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-086.md"
+  },
+  {
+    "title": "BSC-SOW-2026-086.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-086.md",
     "type": "text",
     "size": 830,
@@ -4483,6 +5718,19 @@
     "hash": "8080287c55d40ed7bf067a602591f605ba726d651f7b2572430f8f114097802c",
     "description": "# STATEMENT OF WORK **BSC-SOW-2026-086**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-20 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-086.md"
+  },
+  {
+    "title": "INDEX__692-Auxiliary_Practices.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/INDEX__692-Auxiliary_Practices.md",
+    "type": "text",
+    "size": 31,
+    "modified": "2026-09-20T08:28:23.945304",
+    "hash": "f7a4c15003b640faec8c03397b6fd49f073deb751d8e071a7527b6f3f90f0637",
+    "description": "# 692 \u2014 Auxiliary Practices",
+    "internal_key": "internal:692-Auxiliary_Practices/INDEX__692-Auxiliary_Practices.md"
   },
   {
     "title": "flashcard_system.html",
@@ -4522,6 +5770,32 @@
     "hash": "09dce32f9cac17e10894fc812dd88963f622bb6470c47be223d40363e70b1119",
     "description": "# BLACKTECH ENERGY MARKETING FOUNDATION PLAN ## Blacktech Solutions Corp + Think Energy + All Weather Specialist **Date:** May 17, 2026 **Prepared for",
     "internal_key": "internal:696-Utilities/BLACKTECH_MARKETING_FOUNDATION_PLAN.md"
+  },
+  {
+    "title": "COMPREHENSIVE_WORK_BUDGET.md",
+    "section": "696-Utilities",
+    "dewey": "696",
+    "dewey_desc": "Utilities",
+    "file": "696-Utilities/COMPREHENSIVE_WORK_BUDGET.md",
+    "type": "text",
+    "size": 13126,
+    "modified": "2026-09-20T07:03:45.754273",
+    "hash": "e0e978411c3bafe06f1dca00d3e39c8fb6df26e1c4c28c3827c1298773cc44ea",
+    "description": "# COMPREHENSIVE WORK BUDGET ## Blacktech Solutions Corp + Think Energy + All Weather Specialist + Sia Storage **Prepared:** May 17, 2026 **For:** Derr",
+    "internal_key": "internal:696-Utilities/COMPREHENSIVE_WORK_BUDGET.md"
+  },
+  {
+    "title": "INDEX__696-Utilities.md",
+    "section": "696-Utilities",
+    "dewey": "696",
+    "dewey_desc": "Utilities",
+    "file": "696-Utilities/INDEX__696-Utilities.md",
+    "type": "text",
+    "size": 21,
+    "modified": "2026-09-20T08:28:25.737284",
+    "hash": "684796cfab35b975fba9019b173b5609dc4881488e8ec178a9f3a49e7e691921",
+    "description": "# 696 \u2014 Utilities",
+    "internal_key": "internal:696-Utilities/INDEX__696-Utilities.md"
   },
   {
     "title": "LCP_Tracker.md",
@@ -4600,6 +5874,32 @@
     "hash": "b2f38c12b6a17cb06ad13c901d647c4f10e42cbf2fa82e10ef969620470816ba",
     "description": "(binary/encrypted)",
     "internal_key": "internal:696-Utilities/local_flyer_preview-1.png"
+  },
+  {
+    "title": "INDEX.md",
+    "section": "697-HVAC",
+    "dewey": "697",
+    "dewey_desc": "HVAC",
+    "file": "697-HVAC/INDEX.md",
+    "type": "text",
+    "size": 16,
+    "modified": "2026-09-20T07:03:53.530292",
+    "hash": "bf85d13197053fc0ec39e6b260b42f42baf1571a51beefe84e1be2610c550f68",
+    "description": "# 697 \u2014 HVAC",
+    "internal_key": "internal:697-HVAC/INDEX.md"
+  },
+  {
+    "title": "INDEX__700-Arts_Recreation.md",
+    "section": "700-Arts_Recreation",
+    "dewey": "700",
+    "dewey_desc": "Arts",
+    "file": "700-Arts_Recreation/INDEX__700-Arts_Recreation.md",
+    "type": "text",
+    "size": 225,
+    "modified": "2026-09-20T08:28:11.889441",
+    "hash": "b935740731afa1f3217fde31a3fedf3646a5b17182d1336df47780955c8d3df2",
+    "description": "# 700-Arts Recreation  > Arts, Recreation, Entertainment \u2014 design, music, gaming, creative projects  ## Contents  *This section is ready for files. Ad",
+    "internal_key": "internal:700-Arts_Recreation/INDEX__700-Arts_Recreation.md"
   },
   {
     "title": "hood_logo_gen.html",
@@ -4717,6 +6017,32 @@
     "hash": "9822dcb7f43a70a518a9e24f639f405092c1d64ddecf385357a8ab9506fc2dff",
     "description": "(binary/encrypted)",
     "internal_key": "internal:700-Arts_Recreation/library_ai_flyer_preview.png"
+  },
+  {
+    "title": "INDEX__800-Literature.md",
+    "section": "800-Literature",
+    "dewey": "800",
+    "dewey_desc": "Literature",
+    "file": "800-Literature/INDEX__800-Literature.md",
+    "type": "text",
+    "size": 225,
+    "modified": "2026-09-20T08:28:14.173415",
+    "hash": "3dadddb123f0ad3a4cfe75c7def4002113cd0e7870cb6d9f90daae96ff12c720",
+    "description": "# 800-Literature  > Literature, Writing, Rhetoric \u2014 blogs, articles, books, documentation standards  ## Contents  *This section is ready for files. Ad",
+    "internal_key": "internal:800-Literature/INDEX__800-Literature.md"
+  },
+  {
+    "title": "INDEX__900-History_Geography.md",
+    "section": "900-History_Geography",
+    "dewey": "900",
+    "dewey_desc": "History & Geography",
+    "file": "900-History_Geography/INDEX__900-History_Geography.md",
+    "type": "text",
+    "size": 233,
+    "modified": "2026-09-20T08:28:16.053394",
+    "hash": "92fd4541bdace5565244f52b5a452341c7a18ecf732da75a30042f399f617948",
+    "description": "# 900-History Geography  > History, Geography, Biography \u2014 company history, project timelines, travel, maps  ## Contents  *This section is ready for f",
+    "internal_key": "internal:900-History_Geography/INDEX__900-History_Geography.md"
   },
   {
     "title": "README.md",
@@ -4979,15 +6305,28 @@
     "internal_key": "internal:999-Decisions_Logs/2026-06-16-system-cleanup.md"
   },
   {
+    "title": "8_to_10_Checklist.md",
+    "section": "999-Decisions_Logs",
+    "dewey": "999",
+    "dewey_desc": "Decisions & Logs",
+    "file": "999-Decisions_Logs/8_to_10_Checklist.md",
+    "type": "text",
+    "size": 6053,
+    "modified": "2026-09-20T07:01:53.814006",
+    "hash": "c2f5d5b6b1ee0da56404209116be8354b36d33e0209545ee18598b20a386e112",
+    "description": "# \ud83c\udfaf 8\u219210 CHECKLIST \u2014 Blacktech Systems Hardening  **Your current score: 8/10**   **Goal: 10/10 \u2014 Bulletproof, Self-Healing, Enterprise-Grade**  **Last",
+    "internal_key": "internal:999-Decisions_Logs/8_to_10_Checklist.md"
+  },
+  {
     "title": "change_history.md",
     "section": "999-Decisions_Logs",
     "dewey": "999",
     "dewey_desc": "Decisions & Logs",
     "file": "999-Decisions_Logs/change_history.md",
     "type": "text",
-    "size": 12412,
-    "modified": "2026-09-20T07:03:55.074296",
-    "hash": "15768805aba70a5800dbfcef3e136b695d7352cd3b60651d33a0075ff33cbb10",
+    "size": 16146,
+    "modified": "2026-09-20T08:29:48.384437",
+    "hash": "93c45889eebbe7e9db5ae36f34f2884793c4a5e92e6da88d7add0f4c7257c53a",
     "description": "- [2026-06-26 07:04:07] Inbox route [\ud83d\udd11 keyword 'contract']: contract-invoice-template.html \u2192 690-Building_Construction (SHA256: 174edcf369ea...) - [20",
     "internal_key": "internal:999-Decisions_Logs/change_history.md"
   },
@@ -27794,19 +29133,6 @@
     "internal_key": "internal:_archive/Dewey Library/000-General/dewey_dashboard.py"
   },
   {
-    "title": "dewey_inbox_router.cpython-311.pyc",
-    "section": "_archive",
-    "dewey": "_archive",
-    "dewey_desc": "Unknown",
-    "file": "_archive/Dewey Brain/000-General/dewey_inbox_router.cpython-311.pyc",
-    "type": "file",
-    "size": 20365,
-    "modified": "2026-06-18T08:01:06.542000",
-    "hash": "6eef8b53a924e1ccc9c80caeaf95b3af50a31667be280047afdb82904d0a861e",
-    "description": "(binary/encrypted)",
-    "internal_key": "internal:_archive/Dewey Brain/000-General/dewey_inbox_router.cpython-311.pyc"
-  },
-  {
     "title": "dewey_inbox_router.py",
     "section": "_archive",
     "dewey": "_archive",
@@ -41195,19 +42521,6 @@
     "hash": "de093241879145cacd0497c131b8bb9d50c5b7c228379fd95977301bd18f72cc",
     "description": "from itertools import chain  from .ast import AtRule, Declaration, ParseError, QualifiedRule from .tokenizer import parse_component_value_list   def _",
     "internal_key": "internal:_archive/Dewey Brain/000-General/Backups/2026-06-14_020001/scripts/lib/tinycss2/parser.py"
-  },
-  {
-    "title": "passcode_vault.cpython-311.pyc",
-    "section": "_archive",
-    "dewey": "_archive",
-    "dewey_desc": "Unknown",
-    "file": "_archive/Dewey Brain/000-General/passcode_vault.cpython-311.pyc",
-    "type": "file",
-    "size": 6793,
-    "modified": "2026-06-18T08:01:23.024000",
-    "hash": "0cb1d755d4f54d712dacc7d442d9fed00bac1467d49f622775ead99d9a995389",
-    "description": "(binary/encrypted)",
-    "internal_key": "internal:_archive/Dewey Brain/000-General/passcode_vault.cpython-311.pyc"
   },
   {
     "title": "passcode_vault.enc",

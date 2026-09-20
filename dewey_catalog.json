@@ -1,5 +1,16 @@
 [
   {
+    "title": "README.md",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/README.md",
+    "type": "text",
+    "size": 1837,
+    "modified": "2026-09-20T07:01:11.225909",
+    "internal_key": "internal:000-General/README.md"
+  },
+  {
     "title": "access_requests.json",
     "section": "000-General",
     "dewey": "000",
@@ -44,25 +55,14 @@
     "internal_key": "internal:000-General/dewey-constitutional.md"
   },
   {
-    "title": "dewey_blockchain.cpython-311.pyc",
-    "section": "000-General",
-    "dewey": "000",
-    "dewey_desc": "General",
-    "file": "000-General/__pycache__/dewey_blockchain.cpython-311.pyc",
-    "type": "file",
-    "size": 16421,
-    "modified": "2026-09-19T04:11:26.296406",
-    "internal_key": "internal:000-General/__pycache__/dewey_blockchain.cpython-311.pyc"
-  },
-  {
     "title": "dewey_blockchain.json",
     "section": "000-General",
     "dewey": "000",
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 1819767,
-    "modified": "2026-09-20T07:03:54.982296",
+    "size": 1888570,
+    "modified": "2026-09-20T08:29:48.352437",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
   {
@@ -94,8 +94,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_brain_pull.py",
     "type": "code",
-    "size": 8739,
-    "modified": "2026-06-26T07:00:59.504417",
+    "size": 9722,
+    "modified": "2026-09-20T08:25:44.711413",
     "internal_key": "internal:000-General/dewey_brain_pull.py"
   },
   {
@@ -105,8 +105,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 2366412,
-    "modified": "2026-09-20T06:01:31.286563",
+    "size": 2420807,
+    "modified": "2026-09-20T08:24:29.900665",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
   {
@@ -138,8 +138,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_inbox_router.py",
     "type": "code",
-    "size": 15196,
-    "modified": "2026-06-26T07:03:45.313815",
+    "size": 15752,
+    "modified": "2026-09-20T08:25:00.252134",
     "internal_key": "internal:000-General/dewey_inbox_router.py"
   },
   {
@@ -204,8 +204,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_sync.py",
     "type": "code",
-    "size": 14038,
-    "modified": "2026-09-15T14:16:32.168207",
+    "size": 14274,
+    "modified": "2026-09-20T08:21:16.928916",
     "internal_key": "internal:000-General/dewey_sync.py"
   },
   {
@@ -1019,7 +1019,7 @@
     "file": "003-Computing_Science/Servers/hostgator_email.md",
     "type": "text",
     "size": 833,
-    "modified": "2026-06-23T17:24:45.811196",
+    "modified": "2026-09-20T07:01:37.173968",
     "internal_key": "internal:003-Computing_Science/Servers/hostgator_email.md"
   },
   {
@@ -1131,6 +1131,72 @@
     "size": 1624,
     "modified": "2026-06-29T22:04:27.710981",
     "internal_key": "internal:003-Computing_Science/AI_Research/web3-sovereignty-ken-shilling-notes.md"
+  },
+  {
+    "title": "INDEX.md",
+    "section": "100-Philosophy",
+    "dewey": "100",
+    "dewey_desc": "Philosophy",
+    "file": "100-Philosophy/INDEX.md",
+    "type": "text",
+    "size": 231,
+    "modified": "2026-09-20T08:27:55.221636",
+    "internal_key": "internal:100-Philosophy/INDEX.md"
+  },
+  {
+    "title": "INDEX__200-Religion.md",
+    "section": "200-Religion",
+    "dewey": "200",
+    "dewey_desc": "Religion",
+    "file": "200-Religion/INDEX__200-Religion.md",
+    "type": "text",
+    "size": 222,
+    "modified": "2026-09-20T08:27:57.053614",
+    "internal_key": "internal:200-Religion/INDEX__200-Religion.md"
+  },
+  {
+    "title": "INDEX__300-Social_Sciences.md",
+    "section": "300-Social_Sciences",
+    "dewey": "300",
+    "dewey_desc": "Social Sciences",
+    "file": "300-Social_Sciences/INDEX__300-Social_Sciences.md",
+    "type": "text",
+    "size": 219,
+    "modified": "2026-09-20T08:27:58.929592",
+    "internal_key": "internal:300-Social_Sciences/INDEX__300-Social_Sciences.md"
+  },
+  {
+    "title": "vendors.json",
+    "section": "300-Social_Sciences",
+    "dewey": "300",
+    "dewey_desc": "Social Sciences",
+    "file": "300-Social_Sciences/vendors.json",
+    "type": "data",
+    "size": 14722,
+    "modified": "2026-09-20T08:28:07.301494",
+    "internal_key": "internal:300-Social_Sciences/vendors.json"
+  },
+  {
+    "title": "INDEX__400-Language.md",
+    "section": "400-Language",
+    "dewey": "400",
+    "dewey_desc": "Language",
+    "file": "400-Language/INDEX__400-Language.md",
+    "type": "text",
+    "size": 225,
+    "modified": "2026-09-20T08:28:00.841569",
+    "internal_key": "internal:400-Language/INDEX__400-Language.md"
+  },
+  {
+    "title": "INDEX__500-Science.md",
+    "section": "500-Science",
+    "dewey": "500",
+    "dewey_desc": "Science",
+    "file": "500-Science/INDEX__500-Science.md",
+    "type": "text",
+    "size": 221,
+    "modified": "2026-09-20T08:28:04.193530",
+    "internal_key": "internal:500-Science/INDEX__500-Science.md"
   },
   {
     "title": "dewey-blockchain-report.html",
@@ -1274,6 +1340,17 @@
     "size": 2710618,
     "modified": "2026-07-08T01:07:04.467343",
     "internal_key": "internal:620-ComEd_Standard_Offering/measure-fact-sheets/CS26-14_Measure-Fact-Sheet_Outdoor-Lighting_V5_COBRANDED.pdf"
+  },
+  {
+    "title": "INDEX__640-Household_Favorites.md",
+    "section": "640-Household_Favorites",
+    "dewey": "640",
+    "dewey_desc": "Household Favorites",
+    "file": "640-Household_Favorites/INDEX__640-Household_Favorites.md",
+    "type": "text",
+    "size": 629,
+    "modified": "2026-09-20T08:28:09.229472",
+    "internal_key": "internal:640-Household_Favorites/INDEX__640-Household_Favorites.md"
   },
   {
     "title": "200-day-money-plan.md",
@@ -2057,6 +2134,17 @@
     "internal_key": "internal:657-Accounting_Finance/Crypto_Wallet_Vault.md"
   },
   {
+    "title": "hostgator_email.md",
+    "section": "657-Accounting_Finance",
+    "dewey": "657",
+    "dewey_desc": "Accounting & Finance",
+    "file": "657-Accounting_Finance/hostgator_email.md",
+    "type": "text",
+    "size": 833,
+    "modified": "2026-09-20T08:28:06.097508",
+    "internal_key": "internal:657-Accounting_Finance/hostgator_email.md"
+  },
+  {
     "title": "passcode_vault.enc",
     "section": "657-Accounting_Finance",
     "dewey": "657",
@@ -2761,17 +2849,6 @@
     "internal_key": "internal:690-Building_Construction/transactions/CTX-9CF7789B_contract.pdf"
   },
   {
-    "title": "contract-invoice-template-DUPLICATE-20260920-070354.html",
-    "section": "690-Building_Construction",
-    "dewey": "690",
-    "dewey_desc": "Construction",
-    "file": "690-Building_Construction/contract-invoice-template-DUPLICATE-20260920-070354.html",
-    "type": "web",
-    "size": 15641,
-    "modified": "2026-09-20T07:01:27.029945",
-    "internal_key": "internal:690-Building_Construction/contract-invoice-template-DUPLICATE-20260920-070354.html"
-  },
-  {
     "title": "contract-invoice-template.html",
     "section": "690-Building_Construction",
     "dewey": "690",
@@ -2794,6 +2871,17 @@
     "internal_key": "internal:690-Building_Construction/federal_contractors/index.md"
   },
   {
+    "title": "INDEX__691-Building_Materials.md",
+    "section": "691-Building_Materials",
+    "dewey": "691",
+    "dewey_desc": "Building Materials",
+    "file": "691-Building_Materials/INDEX__691-Building_Materials.md",
+    "type": "text",
+    "size": 30,
+    "modified": "2026-09-20T08:28:18.537365",
+    "internal_key": "internal:691-Building_Materials/INDEX__691-Building_Materials.md"
+  },
+  {
     "title": "LEDone_2026_Q2_products.json",
     "section": "691-Building_Materials",
     "dewey": "691",
@@ -2812,7 +2900,7 @@
     "file": "691-Building_Materials/dewey_catalog_archive_2026-06-17-DUPLICATE-20260920-070354.json",
     "type": "data",
     "size": 11454727,
-    "modified": "2026-09-20T07:01:15.941920",
+    "modified": "2026-09-20T08:28:21.925327",
     "internal_key": "internal:691-Building_Materials/dewey_catalog_archive_2026-06-17-DUPLICATE-20260920-070354.json"
   },
   {
@@ -2838,6 +2926,17 @@
     "internal_key": "internal:691-Building_Materials/tdg_outreach_templates.md"
   },
   {
+    "title": "vendors.json",
+    "section": "691-Building_Materials",
+    "dewey": "691",
+    "dewey_desc": "Building Materials",
+    "file": "691-Building_Materials/vendors.json",
+    "type": "data",
+    "size": 14722,
+    "modified": "2026-09-20T07:01:39.937974",
+    "internal_key": "internal:691-Building_Materials/vendors.json"
+  },
+  {
     "title": "8_to_10_Checklist.md",
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
@@ -2847,6 +2946,17 @@
     "size": 6053,
     "modified": "2026-06-26T07:02:49.693366",
     "internal_key": "internal:692-Auxiliary_Practices/8_to_10_Checklist.md"
+  },
+  {
+    "title": "BSC-SOW-2026-001.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-001.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:01:59.146018",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-001.md"
   },
   {
     "title": "BSC-SOW-2026-001.md",
@@ -2864,11 +2974,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-002.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:00.194020",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-002.md"
+  },
+  {
+    "title": "BSC-SOW-2026-002.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-002.md",
     "type": "text",
     "size": 830,
     "modified": "2026-06-28T02:00:11.326278",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-002.md"
+  },
+  {
+    "title": "BSC-SOW-2026-003.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-003.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:01.230023",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-003.md"
   },
   {
     "title": "BSC-SOW-2026-003.md",
@@ -2886,11 +3018,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-004.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:02.214025",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-004.md"
+  },
+  {
+    "title": "BSC-SOW-2026-004.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-004.md",
     "type": "text",
     "size": 830,
     "modified": "2026-06-30T02:00:21.575807",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-004.md"
+  },
+  {
+    "title": "BSC-SOW-2026-005.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-005.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:03.262028",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-005.md"
   },
   {
     "title": "BSC-SOW-2026-005.md",
@@ -2908,11 +3062,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-006.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:04.310030",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-006.md"
+  },
+  {
+    "title": "BSC-SOW-2026-006.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-006.md",
     "type": "text",
     "size": 830,
     "modified": "2026-07-02T02:00:09.690126",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-006.md"
+  },
+  {
+    "title": "BSC-SOW-2026-007.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-007.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:05.334032",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-007.md"
   },
   {
     "title": "BSC-SOW-2026-007.md",
@@ -2930,11 +3106,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-008.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:06.346035",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-008.md"
+  },
+  {
+    "title": "BSC-SOW-2026-008.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-008.md",
     "type": "text",
     "size": 830,
     "modified": "2026-07-04T02:00:08.173913",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-008.md"
+  },
+  {
+    "title": "BSC-SOW-2026-009.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-009.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:07.354037",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-009.md"
   },
   {
     "title": "BSC-SOW-2026-009.md",
@@ -2952,11 +3150,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-010.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:08.462039",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-010.md"
+  },
+  {
+    "title": "BSC-SOW-2026-010.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-010.md",
     "type": "text",
     "size": 830,
     "modified": "2026-07-06T02:01:00.769637",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-010.md"
+  },
+  {
+    "title": "BSC-SOW-2026-011.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-011.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:09.510042",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-011.md"
   },
   {
     "title": "BSC-SOW-2026-011.md",
@@ -2974,11 +3194,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-012.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:10.570044",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-012.md"
+  },
+  {
+    "title": "BSC-SOW-2026-012.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-012.md",
     "type": "text",
     "size": 830,
     "modified": "2026-07-08T02:00:34.245672",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-012.md"
+  },
+  {
+    "title": "BSC-SOW-2026-013.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-013.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:12.014048",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-013.md"
   },
   {
     "title": "BSC-SOW-2026-013.md",
@@ -2996,11 +3238,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-014.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:13.146050",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-014.md"
+  },
+  {
+    "title": "BSC-SOW-2026-014.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-014.md",
     "type": "text",
     "size": 830,
     "modified": "2026-07-10T02:06:07.102363",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-014.md"
+  },
+  {
+    "title": "BSC-SOW-2026-015.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-015.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:14.482054",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-015.md"
   },
   {
     "title": "BSC-SOW-2026-015.md",
@@ -3018,11 +3282,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-016.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:15.566056",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-016.md"
+  },
+  {
+    "title": "BSC-SOW-2026-016.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-016.md",
     "type": "text",
     "size": 830,
     "modified": "2026-07-12T02:00:59.722736",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-016.md"
+  },
+  {
+    "title": "BSC-SOW-2026-017.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-017.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:16.930059",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-017.md"
   },
   {
     "title": "BSC-SOW-2026-017.md",
@@ -3040,11 +3326,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-018.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:18.290062",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-018.md"
+  },
+  {
+    "title": "BSC-SOW-2026-018.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-018.md",
     "type": "text",
     "size": 830,
     "modified": "2026-07-14T02:00:25.059035",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-018.md"
+  },
+  {
+    "title": "BSC-SOW-2026-019.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-019.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:19.386065",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-019.md"
   },
   {
     "title": "BSC-SOW-2026-019.md",
@@ -3062,11 +3370,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-020.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:21.150069",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-020.md"
+  },
+  {
+    "title": "BSC-SOW-2026-020.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-020.md",
     "type": "text",
     "size": 830,
     "modified": "2026-07-16T02:00:09.115504",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-020.md"
+  },
+  {
+    "title": "BSC-SOW-2026-021.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-021.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:22.574072",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-021.md"
   },
   {
     "title": "BSC-SOW-2026-021.md",
@@ -3084,11 +3414,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-022.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:24.130076",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-022.md"
+  },
+  {
+    "title": "BSC-SOW-2026-022.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-022.md",
     "type": "text",
     "size": 830,
     "modified": "2026-07-18T02:00:27.251477",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-022.md"
+  },
+  {
+    "title": "BSC-SOW-2026-023.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-023.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:25.222079",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-023.md"
   },
   {
     "title": "BSC-SOW-2026-023.md",
@@ -3106,11 +3458,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-024.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:26.586082",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-024.md"
+  },
+  {
+    "title": "BSC-SOW-2026-024.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-024.md",
     "type": "text",
     "size": 830,
     "modified": "2026-07-20T02:05:32.939551",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-024.md"
+  },
+  {
+    "title": "BSC-SOW-2026-025.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-025.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:27.918085",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-025.md"
   },
   {
     "title": "BSC-SOW-2026-025.md",
@@ -3128,11 +3502,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-026.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:29.058088",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-026.md"
+  },
+  {
+    "title": "BSC-SOW-2026-026.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-026.md",
     "type": "text",
     "size": 830,
     "modified": "2026-07-22T02:04:25.991163",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-026.md"
+  },
+  {
+    "title": "BSC-SOW-2026-027.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-027.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:30.126090",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-027.md"
   },
   {
     "title": "BSC-SOW-2026-027.md",
@@ -3150,11 +3546,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-028.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:31.482093",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-028.md"
+  },
+  {
+    "title": "BSC-SOW-2026-028.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-028.md",
     "type": "text",
     "size": 830,
     "modified": "2026-07-24T02:02:01.133362",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-028.md"
+  },
+  {
+    "title": "BSC-SOW-2026-029.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-029.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:32.574096",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-029.md"
   },
   {
     "title": "BSC-SOW-2026-029.md",
@@ -3172,11 +3590,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-030.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:33.606098",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-030.md"
+  },
+  {
+    "title": "BSC-SOW-2026-030.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-030.md",
     "type": "text",
     "size": 830,
     "modified": "2026-07-26T02:10:50.565073",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-030.md"
+  },
+  {
+    "title": "BSC-SOW-2026-031.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-031.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:34.658101",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-031.md"
   },
   {
     "title": "BSC-SOW-2026-031.md",
@@ -3194,11 +3634,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-032.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:35.782104",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-032.md"
+  },
+  {
+    "title": "BSC-SOW-2026-032.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-032.md",
     "type": "text",
     "size": 830,
     "modified": "2026-07-28T02:10:23.063050",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-032.md"
+  },
+  {
+    "title": "BSC-SOW-2026-033.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-033.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:36.822106",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-033.md"
   },
   {
     "title": "BSC-SOW-2026-033.md",
@@ -3216,11 +3678,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-034.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:37.830108",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-034.md"
+  },
+  {
+    "title": "BSC-SOW-2026-034.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-034.md",
     "type": "text",
     "size": 830,
     "modified": "2026-07-30T02:03:14.794866",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-034.md"
+  },
+  {
+    "title": "BSC-SOW-2026-035.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-035.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:38.838111",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-035.md"
   },
   {
     "title": "BSC-SOW-2026-035.md",
@@ -3238,11 +3722,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-036.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:40.414114",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-036.md"
+  },
+  {
+    "title": "BSC-SOW-2026-036.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-036.md",
     "type": "text",
     "size": 830,
     "modified": "2026-08-01T02:00:47.120848",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-036.md"
+  },
+  {
+    "title": "BSC-SOW-2026-037.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-037.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:41.482117",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-037.md"
   },
   {
     "title": "BSC-SOW-2026-037.md",
@@ -3260,11 +3766,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-038.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:42.518120",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-038.md"
+  },
+  {
+    "title": "BSC-SOW-2026-038.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-038.md",
     "type": "text",
     "size": 830,
     "modified": "2026-08-03T02:00:35.850403",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-038.md"
+  },
+  {
+    "title": "BSC-SOW-2026-039.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-039.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:44.062123",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-039.md"
   },
   {
     "title": "BSC-SOW-2026-039.md",
@@ -3282,11 +3810,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-040.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:45.062125",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-040.md"
+  },
+  {
+    "title": "BSC-SOW-2026-040.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-040.md",
     "type": "text",
     "size": 830,
     "modified": "2026-08-05T02:00:49.632212",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-040.md"
+  },
+  {
+    "title": "BSC-SOW-2026-041.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-041.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:46.098128",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-041.md"
   },
   {
     "title": "BSC-SOW-2026-041.md",
@@ -3304,11 +3854,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-042.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:47.122130",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-042.md"
+  },
+  {
+    "title": "BSC-SOW-2026-042.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-042.md",
     "type": "text",
     "size": 830,
     "modified": "2026-08-07T02:00:56.078317",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-042.md"
+  },
+  {
+    "title": "BSC-SOW-2026-043.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-043.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:48.446134",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-043.md"
   },
   {
     "title": "BSC-SOW-2026-043.md",
@@ -3326,11 +3898,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-044.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:49.450136",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-044.md"
+  },
+  {
+    "title": "BSC-SOW-2026-044.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-044.md",
     "type": "text",
     "size": 830,
     "modified": "2026-08-09T02:00:11.875775",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-044.md"
+  },
+  {
+    "title": "BSC-SOW-2026-045.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-045.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:50.854139",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-045.md"
   },
   {
     "title": "BSC-SOW-2026-045.md",
@@ -3348,11 +3942,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-046.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:51.926142",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-046.md"
+  },
+  {
+    "title": "BSC-SOW-2026-046.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-046.md",
     "type": "text",
     "size": 830,
     "modified": "2026-08-11T02:00:47.167917",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-046.md"
+  },
+  {
+    "title": "BSC-SOW-2026-047.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-047.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:52.914144",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-047.md"
   },
   {
     "title": "BSC-SOW-2026-047.md",
@@ -3370,11 +3986,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-048.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:53.958147",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-048.md"
+  },
+  {
+    "title": "BSC-SOW-2026-048.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-048.md",
     "type": "text",
     "size": 830,
     "modified": "2026-08-13T02:01:00.669380",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-048.md"
+  },
+  {
+    "title": "BSC-SOW-2026-049.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-049.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:55.118150",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-049.md"
   },
   {
     "title": "BSC-SOW-2026-049.md",
@@ -3392,11 +4030,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-050.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:56.194152",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-050.md"
+  },
+  {
+    "title": "BSC-SOW-2026-050.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-050.md",
     "type": "text",
     "size": 830,
     "modified": "2026-08-15T02:00:24.899010",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-050.md"
+  },
+  {
+    "title": "BSC-SOW-2026-051.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-051.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:57.322155",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-051.md"
   },
   {
     "title": "BSC-SOW-2026-051.md",
@@ -3414,11 +4074,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-052.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:58.750158",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-052.md"
+  },
+  {
+    "title": "BSC-SOW-2026-052.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-052.md",
     "type": "text",
     "size": 830,
     "modified": "2026-08-17T02:00:46.777658",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-052.md"
+  },
+  {
+    "title": "BSC-SOW-2026-053.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-053.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:02:59.838161",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-053.md"
   },
   {
     "title": "BSC-SOW-2026-053.md",
@@ -3436,11 +4118,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-054.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:01.370165",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-054.md"
+  },
+  {
+    "title": "BSC-SOW-2026-054.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-054.md",
     "type": "text",
     "size": 830,
     "modified": "2026-08-19T02:00:57.953739",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-054.md"
+  },
+  {
+    "title": "BSC-SOW-2026-055.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-055.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:02.590168",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-055.md"
   },
   {
     "title": "BSC-SOW-2026-055.md",
@@ -3458,11 +4162,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-056.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:03.718170",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-056.md"
+  },
+  {
+    "title": "BSC-SOW-2026-056.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-056.md",
     "type": "text",
     "size": 830,
     "modified": "2026-08-21T02:00:17.482512",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-056.md"
+  },
+  {
+    "title": "BSC-SOW-2026-057.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-057.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:04.914173",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-057.md"
   },
   {
     "title": "BSC-SOW-2026-057.md",
@@ -3480,11 +4206,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-058.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:05.970176",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-058.md"
+  },
+  {
+    "title": "BSC-SOW-2026-058.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-058.md",
     "type": "text",
     "size": 830,
     "modified": "2026-08-23T02:00:09.588453",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-058.md"
+  },
+  {
+    "title": "BSC-SOW-2026-059.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-059.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:07.114178",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-059.md"
   },
   {
     "title": "BSC-SOW-2026-059.md",
@@ -3502,11 +4250,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-060.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:08.234181",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-060.md"
+  },
+  {
+    "title": "BSC-SOW-2026-060.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-060.md",
     "type": "text",
     "size": 830,
     "modified": "2026-08-25T02:00:29.451265",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-060.md"
+  },
+  {
+    "title": "BSC-SOW-2026-061.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-061.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:09.350184",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-061.md"
   },
   {
     "title": "BSC-SOW-2026-061.md",
@@ -3524,11 +4294,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-062.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:10.498187",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-062.md"
+  },
+  {
+    "title": "BSC-SOW-2026-062.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-062.md",
     "type": "text",
     "size": 830,
     "modified": "2026-08-27T02:00:34.010693",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-062.md"
+  },
+  {
+    "title": "BSC-SOW-2026-063.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-063.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:11.638189",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-063.md"
   },
   {
     "title": "BSC-SOW-2026-063.md",
@@ -3546,11 +4338,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-064.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:12.882192",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-064.md"
+  },
+  {
+    "title": "BSC-SOW-2026-064.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-064.md",
     "type": "text",
     "size": 830,
     "modified": "2026-08-29T02:00:53.772237",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-064.md"
+  },
+  {
+    "title": "BSC-SOW-2026-065.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-065.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:13.926195",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-065.md"
   },
   {
     "title": "BSC-SOW-2026-065.md",
@@ -3568,11 +4382,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-066.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:14.942197",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-066.md"
+  },
+  {
+    "title": "BSC-SOW-2026-066.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-066.md",
     "type": "text",
     "size": 830,
     "modified": "2026-08-31T02:01:02.052098",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-066.md"
+  },
+  {
+    "title": "BSC-SOW-2026-067.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-067.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:15.974200",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-067.md"
   },
   {
     "title": "BSC-SOW-2026-067.md",
@@ -3590,11 +4426,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-068.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:17.846204",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-068.md"
+  },
+  {
+    "title": "BSC-SOW-2026-068.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-068.md",
     "type": "text",
     "size": 830,
     "modified": "2026-09-02T02:00:15.985995",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-068.md"
+  },
+  {
+    "title": "BSC-SOW-2026-069.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-069.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:19.030207",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-069.md"
   },
   {
     "title": "BSC-SOW-2026-069.md",
@@ -3612,11 +4470,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-070.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:20.150210",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-070.md"
+  },
+  {
+    "title": "BSC-SOW-2026-070.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-070.md",
     "type": "text",
     "size": 830,
     "modified": "2026-09-04T02:01:03.556398",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-070.md"
+  },
+  {
+    "title": "BSC-SOW-2026-071.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-071.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:21.302213",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-071.md"
   },
   {
     "title": "BSC-SOW-2026-071.md",
@@ -3634,11 +4514,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-072.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:22.458216",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-072.md"
+  },
+  {
+    "title": "BSC-SOW-2026-072.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-072.md",
     "type": "text",
     "size": 830,
     "modified": "2026-09-06T02:00:45.683529",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-072.md"
+  },
+  {
+    "title": "BSC-SOW-2026-073.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-073.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:23.454218",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-073.md"
   },
   {
     "title": "BSC-SOW-2026-073.md",
@@ -3656,11 +4558,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-074.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:24.526221",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-074.md"
+  },
+  {
+    "title": "BSC-SOW-2026-074.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-074.md",
     "type": "text",
     "size": 830,
     "modified": "2026-09-08T02:00:59.044312",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-074.md"
+  },
+  {
+    "title": "BSC-SOW-2026-075.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-075.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:26.602226",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-075.md"
   },
   {
     "title": "BSC-SOW-2026-075.md",
@@ -3678,11 +4602,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-076.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:27.846229",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-076.md"
+  },
+  {
+    "title": "BSC-SOW-2026-076.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-076.md",
     "type": "text",
     "size": 830,
     "modified": "2026-09-10T02:00:40.976790",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-076.md"
+  },
+  {
+    "title": "BSC-SOW-2026-077.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-077.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:28.926231",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-077.md"
   },
   {
     "title": "BSC-SOW-2026-077.md",
@@ -3700,11 +4646,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-078.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:29.998234",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-078.md"
+  },
+  {
+    "title": "BSC-SOW-2026-078.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-078.md",
     "type": "text",
     "size": 830,
     "modified": "2026-09-12T02:01:02.802767",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-078.md"
+  },
+  {
+    "title": "BSC-SOW-2026-079.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-079.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:31.038237",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-079.md"
   },
   {
     "title": "BSC-SOW-2026-079.md",
@@ -3722,11 +4690,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-080.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:32.042239",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-080.md"
+  },
+  {
+    "title": "BSC-SOW-2026-080.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-080.md",
     "type": "text",
     "size": 830,
     "modified": "2026-09-14T02:01:10.905652",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-080.md"
+  },
+  {
+    "title": "BSC-SOW-2026-081.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-081.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:33.526243",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-081.md"
   },
   {
     "title": "BSC-SOW-2026-081.md",
@@ -3744,11 +4734,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-082.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:34.614245",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-082.md"
+  },
+  {
+    "title": "BSC-SOW-2026-082.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-082.md",
     "type": "text",
     "size": 830,
     "modified": "2026-09-16T02:02:50.615299",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-082.md"
+  },
+  {
+    "title": "BSC-SOW-2026-083.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-083.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:35.734248",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-083.md"
   },
   {
     "title": "BSC-SOW-2026-083.md",
@@ -3766,11 +4778,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-084.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:36.802251",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-084.md"
+  },
+  {
+    "title": "BSC-SOW-2026-084.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-084.md",
     "type": "text",
     "size": 830,
     "modified": "2026-09-18T02:00:12.864640",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-084.md"
+  },
+  {
+    "title": "BSC-SOW-2026-085.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-085.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:37.826253",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-085.md"
   },
   {
     "title": "BSC-SOW-2026-085.md",
@@ -3788,11 +4822,33 @@
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/BSC-SOW-2026-086.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T07:03:38.870256",
+    "internal_key": "internal:692-Auxiliary_Practices/BSC-SOW-2026-086.md"
+  },
+  {
+    "title": "BSC-SOW-2026-086.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
     "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-086.md",
     "type": "text",
     "size": 830,
     "modified": "2026-09-20T02:00:14.697652",
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-086.md"
+  },
+  {
+    "title": "INDEX__692-Auxiliary_Practices.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/INDEX__692-Auxiliary_Practices.md",
+    "type": "text",
+    "size": 31,
+    "modified": "2026-09-20T08:28:23.945304",
+    "internal_key": "internal:692-Auxiliary_Practices/INDEX__692-Auxiliary_Practices.md"
   },
   {
     "title": "flashcard_system.html",
@@ -3826,6 +4882,28 @@
     "size": 11509,
     "modified": "2026-06-26T07:03:01.797466",
     "internal_key": "internal:696-Utilities/BLACKTECH_MARKETING_FOUNDATION_PLAN.md"
+  },
+  {
+    "title": "COMPREHENSIVE_WORK_BUDGET.md",
+    "section": "696-Utilities",
+    "dewey": "696",
+    "dewey_desc": "Utilities",
+    "file": "696-Utilities/COMPREHENSIVE_WORK_BUDGET.md",
+    "type": "text",
+    "size": 13126,
+    "modified": "2026-09-20T07:03:45.754273",
+    "internal_key": "internal:696-Utilities/COMPREHENSIVE_WORK_BUDGET.md"
+  },
+  {
+    "title": "INDEX__696-Utilities.md",
+    "section": "696-Utilities",
+    "dewey": "696",
+    "dewey_desc": "Utilities",
+    "file": "696-Utilities/INDEX__696-Utilities.md",
+    "type": "text",
+    "size": 21,
+    "modified": "2026-09-20T08:28:25.737284",
+    "internal_key": "internal:696-Utilities/INDEX__696-Utilities.md"
   },
   {
     "title": "LCP_Tracker.md",
@@ -3892,6 +4970,28 @@
     "size": 110619,
     "modified": "2026-07-12T21:02:56.405668",
     "internal_key": "internal:696-Utilities/local_flyer_preview-1.png"
+  },
+  {
+    "title": "INDEX.md",
+    "section": "697-HVAC",
+    "dewey": "697",
+    "dewey_desc": "HVAC",
+    "file": "697-HVAC/INDEX.md",
+    "type": "text",
+    "size": 16,
+    "modified": "2026-09-20T07:03:53.530292",
+    "internal_key": "internal:697-HVAC/INDEX.md"
+  },
+  {
+    "title": "INDEX__700-Arts_Recreation.md",
+    "section": "700-Arts_Recreation",
+    "dewey": "700",
+    "dewey_desc": "Arts",
+    "file": "700-Arts_Recreation/INDEX__700-Arts_Recreation.md",
+    "type": "text",
+    "size": 225,
+    "modified": "2026-09-20T08:28:11.889441",
+    "internal_key": "internal:700-Arts_Recreation/INDEX__700-Arts_Recreation.md"
   },
   {
     "title": "hood_logo_gen.html",
@@ -3991,6 +5091,28 @@
     "size": 279383,
     "modified": "2026-07-20T21:31:40.743594",
     "internal_key": "internal:700-Arts_Recreation/library_ai_flyer_preview.png"
+  },
+  {
+    "title": "INDEX__800-Literature.md",
+    "section": "800-Literature",
+    "dewey": "800",
+    "dewey_desc": "Literature",
+    "file": "800-Literature/INDEX__800-Literature.md",
+    "type": "text",
+    "size": 225,
+    "modified": "2026-09-20T08:28:14.173415",
+    "internal_key": "internal:800-Literature/INDEX__800-Literature.md"
+  },
+  {
+    "title": "INDEX__900-History_Geography.md",
+    "section": "900-History_Geography",
+    "dewey": "900",
+    "dewey_desc": "History & Geography",
+    "file": "900-History_Geography/INDEX__900-History_Geography.md",
+    "type": "text",
+    "size": 233,
+    "modified": "2026-09-20T08:28:16.053394",
+    "internal_key": "internal:900-History_Geography/INDEX__900-History_Geography.md"
   },
   {
     "title": "README.md",
@@ -4213,14 +5335,25 @@
     "internal_key": "internal:999-Decisions_Logs/2026-06-16-system-cleanup.md"
   },
   {
+    "title": "8_to_10_Checklist.md",
+    "section": "999-Decisions_Logs",
+    "dewey": "999",
+    "dewey_desc": "Decisions & Logs",
+    "file": "999-Decisions_Logs/8_to_10_Checklist.md",
+    "type": "text",
+    "size": 6053,
+    "modified": "2026-09-20T07:01:53.814006",
+    "internal_key": "internal:999-Decisions_Logs/8_to_10_Checklist.md"
+  },
+  {
     "title": "change_history.md",
     "section": "999-Decisions_Logs",
     "dewey": "999",
     "dewey_desc": "Decisions & Logs",
     "file": "999-Decisions_Logs/change_history.md",
     "type": "text",
-    "size": 12412,
-    "modified": "2026-09-20T07:03:55.074296",
+    "size": 16146,
+    "modified": "2026-09-20T08:29:48.384437",
     "internal_key": "internal:999-Decisions_Logs/change_history.md"
   },
   {
@@ -23518,17 +24651,6 @@
     "internal_key": "internal:_archive/Dewey Library/000-General/dewey_dashboard.py"
   },
   {
-    "title": "dewey_inbox_router.cpython-311.pyc",
-    "section": "_archive",
-    "dewey": "_archive",
-    "dewey_desc": "Unknown",
-    "file": "_archive/Dewey Brain/000-General/dewey_inbox_router.cpython-311.pyc",
-    "type": "file",
-    "size": 20365,
-    "modified": "2026-06-18T08:01:06.542000",
-    "internal_key": "internal:_archive/Dewey Brain/000-General/dewey_inbox_router.cpython-311.pyc"
-  },
-  {
     "title": "dewey_inbox_router.py",
     "section": "_archive",
     "dewey": "_archive",
@@ -34857,17 +35979,6 @@
     "size": 19071,
     "modified": "2026-06-09T14:01:54.600000",
     "internal_key": "internal:_archive/Dewey Brain/000-General/Backups/2026-06-14_020001/scripts/lib/tinycss2/parser.py"
-  },
-  {
-    "title": "passcode_vault.cpython-311.pyc",
-    "section": "_archive",
-    "dewey": "_archive",
-    "dewey_desc": "Unknown",
-    "file": "_archive/Dewey Brain/000-General/passcode_vault.cpython-311.pyc",
-    "type": "file",
-    "size": 6793,
-    "modified": "2026-06-18T08:01:23.024000",
-    "internal_key": "internal:_archive/Dewey Brain/000-General/passcode_vault.cpython-311.pyc"
   },
   {
     "title": "passcode_vault.enc",

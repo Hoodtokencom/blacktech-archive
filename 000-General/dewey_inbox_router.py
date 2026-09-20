@@ -32,8 +32,8 @@ BLOCKCHAIN = f"python3 {BODY_DIR}/000-General/dewey_blockchain.py"
 # ── AI fallback config (local Ollama) ──────────────────────────────
 AI_ENABLED = True          # Set False to disable AI fallback entirely
 AI_BASE_URL = "http://localhost:11434/v1"
-AI_MODEL = "deepseek-r1:7b"   # Local model on Pi
-AI_TIMEOUT = 30               # Seconds before giving up on AI call
+AI_MODEL = "bt-worker:latest"  # qwen2.5:3b — deepseek-r1:7b NOT installed (404); qwen3 empty via /v1 (think ignored)
+AI_TIMEOUT = 90               # Cold Ollama model load can take 60s+; 30s caused false "timed out"
 
 # ── Tier 1: Keyword → Dewey section mapping ────────────────────────
 # Matched by word-boundary prefix (e.g., "est_" → 692, "contract-" → 690)
@@ -304,13 +304,22 @@ def scan_and_route(dry_run=False, do_sync=True, use_ai=True):
         destination_dir = os.path.join(BODY_DIR, target_folder)
         destination_path = os.path.join(destination_dir, filename)
 
-        # Check for duplicate
+        # Check for duplicate — identical content is a no-op, NOT a new file.
+        # (Renaming to -DUPLICATE- every run littered the brain with copies.)
         if os.path.exists(destination_path):
+            try:
+                same = file_hash(source_path) == file_hash(destination_path)
+            except Exception:
+                same = False
+            if same:
+                print(f"↩  SKIP (identical copy already in {target_folder}/): {filename}")
+                skipped += 1
+                continue
             ts = datetime.now().strftime('%Y%m%d-%H%M%S')
             stem, ext = os.path.splitext(filename)
-            new_name = f"{stem}-DUPLICATE-{ts}{ext}"
+            new_name = f"{stem}-DIFFERS-{ts}{ext}"
             destination_path = os.path.join(destination_dir, new_name)
-            print(f"⚠  DUPLICATE: {filename} → renamed to {new_name}")
+            print(f"⚠  SAME NAME, DIFFERENT CONTENT: {filename} → {new_name}")
 
         if dry_run:
             print(f"🧪 WOULD ROUTE [{tier}]: {filename} → {target_folder}/")

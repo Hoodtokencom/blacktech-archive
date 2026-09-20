@@ -87,9 +87,17 @@ def list_body_files(section_dir):
     return files
 
 
-def download_file(file_id, name, dest_dir):
-    """Download a Drive file to dest_dir. Returns True on success."""
+def download_file(file_id, name, dest_dir, section_dir=None):
+    """Download a Drive file to dest_dir. Returns True on success.
+
+    The inbox is FLAT, but every section ships its own INDEX.md — a plain
+    os.path.join(dest_dir, name) silently OVERWROTE the earlier ones, losing
+    13 of 14 INDEX.md files on the Sept 20 pull. Namespace on collision.
+    """
     dest = os.path.join(dest_dir, name)
+    if os.path.exists(dest) and (not section_dir or section_dir not in name):
+        stem, ext = os.path.splitext(name)
+        dest = os.path.join(dest_dir, f"{stem}__{section_dir}{ext}")
     cmd = f'{GAPI} drive download {file_id} --output "{dest}"'
     stdout, code = run_cmd(cmd, timeout=120)
     if code == 0 and os.path.exists(dest):
@@ -153,6 +161,14 @@ def main():
 
         # Get Drive files
         drive_files = list_drive_files(folder_id)
+        # Folders are not downloadable as files — they landed in the inbox as
+        # 0-byte placeholders and had to be cleaned out after every pull.
+        folders = [f for f in drive_files
+                   if f.get("mimeType") == "application/vnd.google-apps.folder"]
+        drive_files = [f for f in drive_files
+                       if f.get("mimeType") != "application/vnd.google-apps.folder"]
+        if folders:
+            print(f"  📁 {section_dir} — {len(folders)} subfolder(s) skipped (not downloadable)")
         drive_names = {f["name"] for f in drive_files}
 
         # Get Body files
@@ -178,7 +194,7 @@ def main():
             print(f"      • {name}  [{mime}]  (id: {fid})")
 
             if not dry_run and not status_only:
-                if download_file(fid, name, INBOX_DIR):
+                if download_file(fid, name, INBOX_DIR, section_dir):
                     total_downloaded += 1
                     new_files.append((name, section_dir, section_num))
                     log_change(f"Downloaded {name} from Drive ({section_dir}) → inbox")
