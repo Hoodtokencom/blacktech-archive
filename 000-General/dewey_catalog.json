@@ -32,9 +32,9 @@
     "dewey_desc": "General",
     "file": "000-General/blockchain.json",
     "type": "data",
-    "size": 47694,
-    "modified": "2026-09-19T02:00:11.232185",
-    "hash": "ab52e78a5c6c1feebca4be3042f0387e4581223364b4fb14024b8a7510b5e89b",
+    "size": 48255,
+    "modified": "2026-09-20T02:00:14.697652",
+    "hash": "410ba16bb3ba03c69a65aa641553a2bf1fbb0ec91f07e87a037f22d3eb4c02e6",
     "description": "{   \"chain\": [     {       \"index\": 0,       \"timestamp\": \"2026-06-27T02:00:25.875036\",       \"type\": \"CREATE\",       \"data\": {         \"action\": \"SOW",
     "internal_key": "internal:000-General/blockchain.json"
   },
@@ -71,9 +71,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 1762269,
-    "modified": "2026-09-19T06:01:42.571957",
-    "hash": "6edec27c9ac8fb99aa886ae6f2e7e0168d7300d8047ac0b1254217eb3a4be661",
+    "size": 1819767,
+    "modified": "2026-09-20T07:03:54.982296",
+    "hash": "e6d460f7cea11fb09d9d8a4e1ba52517f6fbcbbe59ae3ce0f055ded449eaef6c",
     "description": "[   {     \"index\": 0,     \"timestamp\": \"2026-06-23T00:00:00\",     \"action\": \"GENESIS\",     \"file\": \"\",     \"section\": \"000\",     \"dewey_class\": \"000\",",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
@@ -123,9 +123,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 2365786,
-    "modified": "2026-09-19T06:01:28.015947",
-    "hash": "30e70750e67724e7d7eb64067437c9764ffb09f8a61bed655c15e5dc817b868a",
+    "size": 2366412,
+    "modified": "2026-09-20T06:01:31.286563",
+    "hash": "22932883e584ee36ce80ac43032a264364630addd43eb1a48ef56d957ffbafcd",
     "description": "[   {     \"title\": \"access_requests.json\",     \"section\": \"000-General\",     \"dewey\": \"000\",     \"dewey_desc\": \"General\",     \"file\": \"000-General/acc",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
@@ -136,9 +136,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_code_changelog.json",
     "type": "data",
-    "size": 24150,
-    "modified": "2026-09-19T04:11:48.072559",
-    "hash": "1878d02c235bb44e55307eb725eed6bee48dafeca3f39680d41a8a6d94f1155c",
+    "size": 42873,
+    "modified": "2026-09-19T09:50:28.588953",
+    "hash": "31088404b5eab47ab5396cba132c136010cd2fce1c2decaf2fa5a88bc5301a80",
     "description": "[   {     \"id\": 1,     \"timestamp\": \"2026-06-17T13:42:18.705287+00:00\",     \"who\": \"system\",     \"file\": \"/home/allenai/blacktech_brain/000-General/de",
     "internal_key": "internal:000-General/dewey_code_changelog.json"
   },
@@ -254,7 +254,7 @@
     "file": "000-General/dewey_trash_log.json",
     "type": "data",
     "size": 164239,
-    "modified": "2026-09-19T03:00:15.430297",
+    "modified": "2026-09-20T03:00:16.593676",
     "hash": "eb4763ef8e99f7378b5a7a3a25d22c657b43892fc70a2575a66ab94fb7cc347a",
     "description": "[   {     \"file\": \"697-HVAC/INDEX.md\",     \"deleted_at\": \"2026-06-25T11:31:36.366572\",     \"purge_due\": \"2026-08-09T11:31:36.366595\",     \"status\": \"p",
     "internal_key": "internal:000-General/dewey_trash_log.json"
@@ -3263,6 +3263,19 @@
     "internal_key": "internal:690-Building_Construction/transactions/CTX-9CF7789B_contract.pdf"
   },
   {
+    "title": "contract-invoice-template-DUPLICATE-20260920-070354.html",
+    "section": "690-Building_Construction",
+    "dewey": "690",
+    "dewey_desc": "Construction",
+    "file": "690-Building_Construction/contract-invoice-template-DUPLICATE-20260920-070354.html",
+    "type": "web",
+    "size": 15641,
+    "modified": "2026-09-20T07:01:27.029945",
+    "hash": "174edcf369eabf4b5b871cb5225f999746545804f4e4a217738c118aa82d856c",
+    "description": "<!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>Blacktech",
+    "internal_key": "internal:690-Building_Construction/contract-invoice-template-DUPLICATE-20260920-070354.html"
+  },
+  {
     "title": "contract-invoice-template.html",
     "section": "690-Building_Construction",
     "dewey": "690",
@@ -3300,6 +3313,19 @@
     "hash": "ebb1ea149d59e7628965fa0ecd15805242078615a2a88961d5da2fd10d6b49d3",
     "description": "[   {     \"item_num\": \"AO0428-415\",     \"sku\": \"LOC-AO0428-415\",     \"display_name\": \"Knuckle mount for LOC-FL\",     \"storedisplayname\": \"Trunnion for",
     "internal_key": "internal:691-Building_Materials/LEDone_2026_Q2_products.json"
+  },
+  {
+    "title": "dewey_catalog_archive_2026-06-17-DUPLICATE-20260920-070354.json",
+    "section": "691-Building_Materials",
+    "dewey": "691",
+    "dewey_desc": "Building Materials",
+    "file": "691-Building_Materials/dewey_catalog_archive_2026-06-17-DUPLICATE-20260920-070354.json",
+    "type": "data",
+    "size": 11454727,
+    "modified": "2026-09-20T07:01:15.941920",
+    "hash": "b82e57a05acc83e6da2c91ee67b4c2fd0328a0297ace8b7e4ad8b131268a6735",
+    "description": "[   {     \"title\": \"hood token logo\",     \"dewey\": \"000\",     \"dewey_desc\": \"General/Computer Science\",     \"file\": \"hood_token_logo.png\",     \"type\":",
+    "internal_key": "internal:691-Building_Materials/dewey_catalog_archive_2026-06-17-DUPLICATE-20260920-070354.json"
   },
   {
     "title": "dewey_catalog_archive_2026-06-17.json",
@@ -4446,6 +4472,19 @@
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-085.md"
   },
   {
+    "title": "BSC-SOW-2026-086.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-086.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T02:00:14.697652",
+    "hash": "8080287c55d40ed7bf067a602591f605ba726d651f7b2572430f8f114097802c",
+    "description": "# STATEMENT OF WORK **BSC-SOW-2026-086**  ---  **Client:** 8_to_10_Checklist **Date:** 2026-09-20 **Source:** 8_to_10_Checklist.md  ---  ## 1. Project",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-086.md"
+  },
+  {
     "title": "flashcard_system.html",
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
@@ -4946,9 +4985,9 @@
     "dewey_desc": "Decisions & Logs",
     "file": "999-Decisions_Logs/change_history.md",
     "type": "text",
-    "size": 303,
-    "modified": "2026-06-26T07:04:07.189986",
-    "hash": "e161808c82ec8269c77b512676295cdde9dcef13cfe495a6b058a8e3758919de",
+    "size": 12412,
+    "modified": "2026-09-20T07:03:55.074296",
+    "hash": "15768805aba70a5800dbfcef3e136b695d7352cd3b60651d33a0075ff33cbb10",
     "description": "- [2026-06-26 07:04:07] Inbox route [\ud83d\udd11 keyword 'contract']: contract-invoice-template.html \u2192 690-Building_Construction (SHA256: 174edcf369ea...) - [20",
     "internal_key": "internal:999-Decisions_Logs/change_history.md"
   },

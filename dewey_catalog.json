@@ -28,8 +28,8 @@
     "dewey_desc": "General",
     "file": "000-General/blockchain.json",
     "type": "data",
-    "size": 45450,
-    "modified": "2026-09-15T02:00:30.453818",
+    "size": 48255,
+    "modified": "2026-09-20T02:00:14.697652",
     "internal_key": "internal:000-General/blockchain.json"
   },
   {
@@ -44,14 +44,25 @@
     "internal_key": "internal:000-General/dewey-constitutional.md"
   },
   {
+    "title": "dewey_blockchain.cpython-311.pyc",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/__pycache__/dewey_blockchain.cpython-311.pyc",
+    "type": "file",
+    "size": 16421,
+    "modified": "2026-09-19T04:11:26.296406",
+    "internal_key": "internal:000-General/__pycache__/dewey_blockchain.cpython-311.pyc"
+  },
+  {
     "title": "dewey_blockchain.json",
     "section": "000-General",
     "dewey": "000",
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 1740076,
-    "modified": "2026-09-15T14:16:50.928280",
+    "size": 1819767,
+    "modified": "2026-09-20T07:03:54.982296",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
   {
@@ -61,8 +72,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.py",
     "type": "code",
-    "size": 9865,
-    "modified": "2026-06-26T06:02:25.738865",
+    "size": 11393,
+    "modified": "2026-09-19T04:11:20.120362",
     "internal_key": "internal:000-General/dewey_blockchain.py"
   },
   {
@@ -94,8 +105,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 2361451,
-    "modified": "2026-09-15T14:16:45.084257",
+    "size": 2366412,
+    "modified": "2026-09-20T06:01:31.286563",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
   {
@@ -105,8 +116,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_code_changelog.json",
     "type": "data",
-    "size": 22026,
-    "modified": "2026-06-26T07:01:20.988609",
+    "size": 42873,
+    "modified": "2026-09-19T09:50:28.588953",
     "internal_key": "internal:000-General/dewey_code_changelog.json"
   },
   {
@@ -205,7 +216,7 @@
     "file": "000-General/dewey_trash_log.json",
     "type": "data",
     "size": 164239,
-    "modified": "2026-09-15T03:00:32.517051",
+    "modified": "2026-09-20T03:00:16.593676",
     "internal_key": "internal:000-General/dewey_trash_log.json"
   },
   {
@@ -2112,6 +2123,28 @@
     "internal_key": "internal:657-Accounting_Finance/rich_dad_velocity_of_money_ocr.txt"
   },
   {
+    "title": "rich_dad_velocity_of_money_summary.md",
+    "section": "657-Accounting_Finance",
+    "dewey": "657",
+    "dewey_desc": "Accounting & Finance",
+    "file": "657-Accounting_Finance/rich_dad_velocity_of_money_summary.md",
+    "type": "text",
+    "size": 2548,
+    "modified": "2026-09-15T14:19:24.936953",
+    "internal_key": "internal:657-Accounting_Finance/rich_dad_velocity_of_money_summary.md"
+  },
+  {
+    "title": "velocity_to_ibc_10_homes.md",
+    "section": "657-Accounting_Finance",
+    "dewey": "657",
+    "dewey_desc": "Accounting & Finance",
+    "file": "657-Accounting_Finance/velocity_to_ibc_10_homes.md",
+    "type": "text",
+    "size": 3365,
+    "modified": "2026-09-15T14:20:40.583506",
+    "internal_key": "internal:657-Accounting_Finance/velocity_to_ibc_10_homes.md"
+  },
+  {
     "title": "AI_Consulting_Campaign.md",
     "section": "658-Marketing_Sales",
     "dewey": "658",
@@ -2728,6 +2761,17 @@
     "internal_key": "internal:690-Building_Construction/transactions/CTX-9CF7789B_contract.pdf"
   },
   {
+    "title": "contract-invoice-template-DUPLICATE-20260920-070354.html",
+    "section": "690-Building_Construction",
+    "dewey": "690",
+    "dewey_desc": "Construction",
+    "file": "690-Building_Construction/contract-invoice-template-DUPLICATE-20260920-070354.html",
+    "type": "web",
+    "size": 15641,
+    "modified": "2026-09-20T07:01:27.029945",
+    "internal_key": "internal:690-Building_Construction/contract-invoice-template-DUPLICATE-20260920-070354.html"
+  },
+  {
     "title": "contract-invoice-template.html",
     "section": "690-Building_Construction",
     "dewey": "690",
@@ -2759,6 +2803,17 @@
     "size": 285432,
     "modified": "2026-06-30T08:14:24.789500",
     "internal_key": "internal:691-Building_Materials/LEDone_2026_Q2_products.json"
+  },
+  {
+    "title": "dewey_catalog_archive_2026-06-17-DUPLICATE-20260920-070354.json",
+    "section": "691-Building_Materials",
+    "dewey": "691",
+    "dewey_desc": "Building Materials",
+    "file": "691-Building_Materials/dewey_catalog_archive_2026-06-17-DUPLICATE-20260920-070354.json",
+    "type": "data",
+    "size": 11454727,
+    "modified": "2026-09-20T07:01:15.941920",
+    "internal_key": "internal:691-Building_Materials/dewey_catalog_archive_2026-06-17-DUPLICATE-20260920-070354.json"
   },
   {
     "title": "dewey_catalog_archive_2026-06-17.json",
@@ -3685,6 +3740,61 @@
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-081.md"
   },
   {
+    "title": "BSC-SOW-2026-082.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-082.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-16T02:02:50.615299",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-082.md"
+  },
+  {
+    "title": "BSC-SOW-2026-083.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-083.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-17T02:00:44.146457",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-083.md"
+  },
+  {
+    "title": "BSC-SOW-2026-084.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-084.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-18T02:00:12.864640",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-084.md"
+  },
+  {
+    "title": "BSC-SOW-2026-085.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-085.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-19T02:00:11.228185",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-085.md"
+  },
+  {
+    "title": "BSC-SOW-2026-086.md",
+    "section": "692-Auxiliary_Practices",
+    "dewey": "692",
+    "dewey_desc": "Auxiliary Practices",
+    "file": "692-Auxiliary_Practices/sow/BSC-SOW-2026-086.md",
+    "type": "text",
+    "size": 830,
+    "modified": "2026-09-20T02:00:14.697652",
+    "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-086.md"
+  },
+  {
     "title": "flashcard_system.html",
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
@@ -4109,8 +4219,8 @@
     "dewey_desc": "Decisions & Logs",
     "file": "999-Decisions_Logs/change_history.md",
     "type": "text",
-    "size": 303,
-    "modified": "2026-06-26T07:04:07.189986",
+    "size": 12412,
+    "modified": "2026-09-20T07:03:55.074296",
     "internal_key": "internal:999-Decisions_Logs/change_history.md"
   },
   {
