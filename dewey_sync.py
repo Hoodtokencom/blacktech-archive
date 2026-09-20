@@ -347,14 +347,23 @@ if __name__ == "__main__":
         print(f"   No changes")
     
     # Sync to Google Drive
-    if "--catalog" not in sys.argv:
+    # --drive = Drive only; --github = GitHub only; neither = full sync.
+    # (The docstring always promised --github but the flag was never parsed,
+    # so "dewey_sync.py --drive --github" silently skipped GitHub entirely.)
+    do_drive = "--github" not in sys.argv
+    do_github = "--drive" not in sys.argv
+    if "--drive" in sys.argv or "--github" in sys.argv:
+        do_drive = "--drive" in sys.argv
+        do_github = "--github" in sys.argv
+
+    if "--catalog" not in sys.argv and do_drive:
         print(f"\n☁️  Google Drive sync:")
         drive_results = sync_to_drive(entries, changes)
         for r in drive_results:
             print(r)
     
     # Sync to GitHub
-    if "--catalog" not in sys.argv and "--drive" not in sys.argv:
+    if "--catalog" not in sys.argv and do_github:
         print(f"\n📦 GitHub sync:")
         gh_results = sync_to_github(entries)
         for r in gh_results:
