@@ -12,7 +12,7 @@ Usage:
   python3 dewey_sync.py --status      — Show mirror status
 """
 
-import json, os, sys, subprocess, hashlib
+import json, os, re, sys, subprocess, hashlib
 from datetime import datetime
 
 BRAIN = "/home/allenai/blacktech_brain"
@@ -221,12 +221,21 @@ def sync_to_github(entries):
     # ── PRUNE: drop archive dirs that no longer exist in the brain ──
     # Without this, a renamed/removed section folder lives in the archive
     # forever and keeps resurrecting stale paths in every snapshot.
+    # NEVER prune these: archive-only dirs whose content has no brain counterpart.
+    # `backups/` holds dated snapshots (dewey_catalog_*.json, dewey_security_*.py,
+    # dewey_server_*.py) pushed by the 30-day backup job — the skill is explicit
+    # that backup content must SURVIVE syncs. Only ever prune real Dewey section
+    # dirs (3-digit prefix), so a renamed/removed section still can't linger.
+    PRUNE_PROTECTED = {"backups", "trash", "trash_files", ".git", ".github", "scripts", "tools"}
     pruned = []
     for name in os.listdir(GITHUB_REPO):
-        if name in (".git",):
+        if name in PRUNE_PROTECTED:
             continue
         dst = os.path.join(GITHUB_REPO, name)
         if not os.path.isdir(dst):
+            continue
+        # Only a Dewey section (NNN-Name) is eligible for pruning.
+        if not re.match(r"^\d{3}-", name):
             continue
         if not os.path.isdir(os.path.join(BRAIN, name)):
             shutil.rmtree(dst)
