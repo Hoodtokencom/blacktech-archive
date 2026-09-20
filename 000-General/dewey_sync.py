@@ -228,19 +228,41 @@ def sync_to_github(entries):
                     if os.path.getsize(fpath) > 104857600:
                         os.remove(fpath)
     
-    # Git commit and push
+    # Git commit and push.
+    # Timeouts are generous: a full snapshot is ~3700 files, and a local Pi
+    # needs longer than the old 10s/30s budget to stage, commit and upload.
+    # The push is retried once — transient DNS/network blips on the Pi are
+    # common and a retry turns a red sync into a green one.
     os.chdir(GITHUB_REPO)
-    subprocess.run("git add -A", shell=True, capture_output=True, timeout=10)
-    
+    try:
+        subprocess.run("git add -A", shell=True, capture_output=True, timeout=180)
+    except subprocess.TimeoutExpired:
+        return ["🔴 GitHub 'git add' timed out after 180s"]
+
     ts = datetime.now().strftime("%Y-%m-%d %H:%M")
     commit_msg = f"🗑️ Dewey Archive: {ts} — {len(entries)} files, {len(sections)} sections (45-day safety net)"
-    subprocess.run(f"git commit -m '{commit_msg}'", shell=True, capture_output=True, timeout=10)
-    
-    push = subprocess.run("git push origin main 2>&1", shell=True, capture_output=True, text=True, timeout=30)
-    if push.returncode == 0:
-        return [f"🟢 GitHub Archive: pushed — {len(entries)} files ({len(sections)} sections)"]
-    else:
-        return [f"🔴 GitHub push failed: {push.stderr[:200]}"]
+    try:
+        subprocess.run(f"git commit -m '{commit_msg}'", shell=True, capture_output=True, timeout=180)
+    except subprocess.TimeoutExpired:
+        return ["🔴 GitHub 'git commit' timed out after 180s"]
+
+    push = None
+    for attempt in (1, 2):
+        try:
+            push = subprocess.run("git push origin main 2>&1", shell=True,
+                                  capture_output=True, text=True, timeout=600)
+            if push.returncode == 0:
+                note = f"🟢 GitHub Archive: pushed — {len(entries)} files ({len(sections)} sections)"
+                if attempt > 1:
+                    note += f" (attempt {attempt})"
+                return [note]
+        except subprocess.TimeoutExpired:
+            push = None
+            return ["🔴 GitHub push timed out after 600s — run 'git push' manually in "
+                    f"{GITHUB_REPO}"]
+    # `2>&1` merges stderr into stdout, so report STDOUT (stderr is always empty here).
+    err = ((push.stdout or "") + (push.stderr or "")).strip()[:300]
+    return [f"🔴 GitHub push failed (rc={push.returncode}): {err}"]
 
 def show_status():
     """Show mirror status across all three systems."""

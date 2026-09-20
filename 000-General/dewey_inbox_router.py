@@ -57,22 +57,85 @@ DEWEY_MAP = {
     "catalog":  "691-Building_Materials",     # Parts catalogs
     "receipt":  "657-Accounting_Finance",     # Receipts
     "ledger":   "657-Accounting_Finance",     # Ledgers
+    "religion": "200-Religion",                # Faith/ministry docs
+    "faith":    "200-Religion",                # Faith/ministry docs
+    "sermon":   "200-Religion",                # Sermons, teaching notes
+    "scripture":"200-Religion",                # Scripture study
+    "ministry": "200-Religion",                # Ministry program docs
 }
+
+# ── Tier 1.5: Content markers (deterministic, before the AI guess) ──
+# The 3B local model misroutes fuzzy topics (e.g. tithing -> 100). These
+# high-precision markers short-circuit it when the FILENAME gave no clue.
+# Order matters: first pattern that hits wins.
+CONTENT_MAP = [
+    ("200-Religion", r"\b(tith(e|es|ing)|stewardship|sermons?|scriptures?|"
+                     r"parables?|worship|prayer|congregation|ministry|"
+                     r"bible|gospel|blessing|faith)\b"),
+    ("697-HVAC",     r"\b(hvac|furnace|chiller|boiler|thermostat|ductwork|"
+                     r"air condition\w*|refrigerant|condenser|heat pump)\b"),
+    ("696-Utilities",r"\b(comed|utilit(y|ies)|kwh|kilowatt|electric bill|"
+                     r"smart meter|auto[- ]?save|supply charge|delivery charge)\b"),
+    ("692-Auxiliary_Practices",
+                     r"\b(statement of work|estimates?|bids?|proposals?|"
+                     r"scope of work|change order)\b"),
+    ("657-Accounting_Finance",
+                     r"\b(invoices?|payroll|receipts?|ledgers?|1099|w-9|"
+                     r"profit (and|&) loss|balance sheet)\b"),
+    ("691-Building_Materials",
+                     r"\b(vendor list|supplier list|parts catalog|"
+                     r"material list|bill of materials)\b"),
+    # ── Below: sections the flat 3-digit codes can't express ──
+    # (the AI prompt + dewey_to_folder() only know 3-digit codes, so these
+    #  subfolders were unreachable until CONTENT_MAP named them.)
+    ("003-Computing_Science",
+                     r"\b(server|hostgator|nginx|cron|systemd|ssh|git repo|"
+                     r"api key|docker|vm|backup script|firewall|dns)\b"),
+    ("650-Management_Business",
+                     r"\b(management|operations|kpi|org chart|hiring|onboarding|"
+                     r"job description|performance review|strateg(y|ies)|"
+                     r"standard operating procedure|sop)\b"),
+    ("658-Marketing_Sales",
+                     r"\b(marketing|sales funnel|lead gen|ad campaign|branding|"
+                     r"social media post|seo|customer acquisition|pitch deck)\b"),
+    ("600-Wealth_Precious_Metals",
+                     r"\b(silver|gold bullion|precious metal|bullion|"
+                     r"coin dealer|troy ounce|spot price|melt value)\b"),
+    ("620-ComEd_Standard_Offering",
+                     r"\b(standard offering|rate class|capacity charge|"
+                     r"residential supply rate|electricity procurement)\b"),
+    ("910-Regional_Data",
+                     r"\b(census|zip code|zIP[- ]?\d|demographic|population|"
+                     r"regional data|market data by (city|state|zip))\b"),
+    # ── Broad topics LAST — specific markers above must win ──
+    ("600-Technology",
+                     r"\b(software|hardware|raspberry pi|ollama|llm|ai model|"
+                     r"python script|database|networking|automation|"
+                     r"blockchain|ipfs|codebase)\b"),
+    ("300-Social_Sciences",
+                     r"\b(community|nonprofit|law|legal|policy|government|"
+                     r"civic|outreach|volunteer|ssbn|member|tenant rights)\b"),
+]
 
 # ── Tier 2: AI classification prompt ───────────────────────────────
 AI_CLASSIFY_PROMPT = """You are the Blacktech Dewey Decimal classifier.
 Analyze this file content and return ONLY the 3-digit Dewey code.
 
 Available codes:
-  000 - General, catalogs, blockchain, pipeline
+  000 - General, uncategorized, miscellaneous notes that fit nothing else
+  003 - Computing: servers, hosting, scripts, networking, backups
   100 - Philosophy, mindset, leadership
   200 - Religion, faith
   300 - Social sciences, law, community, SSBN
   400 - Language, templates, brand voice
   500 - Science, math, systems architecture, schematics
-  600 - Technology, servers, Pi infrastructure
+  600 - Technology, software, hardware, Pi infrastructure
+  601 - Wealth: silver, gold, precious metals, bullion
+  620 - ComEd standard offering, rate classes, procurement
   640 - Household favorites
+  650 - Management: operations, KPIs, hiring, SOPs
   657 - Accounting, payroll, invoices, passcodes
+  658 - Marketing, sales, funnels, branding, lead gen
   690 - Construction contracts, approvals
   691 - Building materials, supplier catalogs
   692 - Estimates, bids, proposals, specs
@@ -81,6 +144,7 @@ Available codes:
   700 - Arts, design, music
   800 - Literature, blogs, articles
   900 - History, project timelines
+  910 - Regional data: census, zip codes, demographics
   999 - Decisions log, change history
 
 Respond with ONLY the 3-digit number. No explanation.
@@ -130,6 +194,31 @@ def match_keyword(filename):
             dewey_num = folder.split("-")[0]
             return dewey_num, folder, keyword
 
+    return None, None, None
+
+def match_content(file_path):
+    """
+    Tier 1.5: Deterministic content-marker match (no AI).
+    Used only when the FILENAME gave no keyword clue. High-precision terms
+    beat the 3B model, which misroutes fuzzy topics (tithing -> 100).
+    Returns (dewey_number, section_folder, marker) or (None, None, None).
+    """
+    ext = os.path.splitext(file_path)[1].lower()
+    if ext in {'.pdf', '.jpg', '.jpeg', '.png', '.gif', '.mp4', '.mp3',
+               '.xlsx', '.docx', '.zip', '.gz', '.enc', '.salt', '.db'}:
+        return None, None, None
+    try:
+        with open(file_path, 'r', errors='ignore') as f:
+            head = f.read(3000).lower()
+    except Exception:
+        return None, None, None
+    if not head.strip():
+        return None, None, None
+
+    for folder, pattern in CONTENT_MAP:
+        m = re.search(pattern, head, re.IGNORECASE)
+        if m:
+            return folder.split("-")[0], folder, m.group(0)
     return None, None, None
 
 def ai_classify_file(file_path):
@@ -202,14 +291,19 @@ def dewey_to_folder(dewey_code):
     """Map a Dewey number to the actual folder name in BODY_DIR."""
     mapping = {
         "000": "000-General",
+        "003": "003-Computing_Science",
         "100": "100-Philosophy",
         "200": "200-Religion",
         "300": "300-Social_Sciences",
         "400": "400-Language",
         "500": "500-Science",
         "600": "600-Technology",
+        "601": "600-Wealth_Precious_Metals",
+        "620": "620-ComEd_Standard_Offering",
         "640": "640-Household_Favorites",
+        "650": "650-Management_Business",
         "657": "657-Accounting_Finance",
+        "658": "658-Marketing_Sales",
         "690": "690-Building_Construction",
         "691": "691-Building_Materials",
         "692": "692-Auxiliary_Practices",
@@ -218,8 +312,12 @@ def dewey_to_folder(dewey_code):
         "700": "700-Arts_Recreation",
         "800": "800-Literature",
         "900": "900-History_Geography",
+        "910": "910-Regional_Data",
         "999": "999-Decisions_Logs",
     }
+    # Accept a full folder name too (CONTENT_MAP returns folder names).
+    if dewey_code in mapping.values():
+        return dewey_code
     return mapping.get(dewey_code, "000-General")
 
 def sync_mirrors():
@@ -278,12 +376,28 @@ def scan_and_route(dry_run=False, do_sync=True, use_ai=True):
     for filename in files:
         source_path = os.path.join(INBOX_DIR, filename)
 
-        # ── Tier 1: Keyword match ──
-        dewey_num, target_folder, keyword = match_keyword(filename)
-
-        if dewey_num:
-            tier = f"🔑 keyword '{keyword}'"
+        # ── Tier 0: Section provenance suffix (`INDEX__696-Utilities.md`) ──
+        # The puller namespaces same-named files from different sections; honor it
+        # so a section's own INDEX.md goes home instead of being AI-guessed.
+        section_hint = os.path.splitext(filename)[0].split("__")[-1]
+        target_folder = ""
+        tier = ""
+        if "__" in filename and os.path.isdir(os.path.join(BODY_DIR, section_hint)):
+            target_folder = section_hint
+            dewey_num = section_hint.split("-")[0]
+            tier = f"🏷️ section tag '{section_hint}'"
         else:
+            # ── Tier 1: Keyword match ──
+            dewey_num, target_folder, keyword = match_keyword(filename)
+            if dewey_num:
+                tier = f"🔑 keyword '{keyword}'"
+            else:
+                # ── Tier 1.5: Content markers (deterministic, pre-AI) ──
+                dewey_num, target_folder, marker = match_content(source_path)
+                if dewey_num:
+                    tier = f"📄 content marker '{marker}'"
+
+        if not target_folder and not dewey_num:
             # ── Tier 2: AI fallback ──
             if AI_ENABLED:
                 print(f"🤖 AI classifying: {filename}...")
@@ -302,7 +416,15 @@ def scan_and_route(dry_run=False, do_sync=True, use_ai=True):
                 continue
 
         destination_dir = os.path.join(BODY_DIR, target_folder)
-        destination_path = os.path.join(destination_dir, filename)
+        # Strip the puller's `__<section>` provenance suffix — the destination
+        # folder already disambiguates, so files keep their original names.
+        landing_name = filename
+        if "__" in filename:
+            stem, ext = os.path.splitext(filename)
+            head, sep, tail = stem.rpartition("__")
+            if sep and tail == target_folder:
+                landing_name = head + ext
+        destination_path = os.path.join(destination_dir, landing_name)
 
         # Check for duplicate — identical content is a no-op, NOT a new file.
         # (Renaming to -DUPLICATE- every run littered the brain with copies.)

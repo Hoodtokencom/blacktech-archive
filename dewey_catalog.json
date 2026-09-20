@@ -61,8 +61,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 1888570,
-    "modified": "2026-09-20T08:29:48.352437",
+    "size": 1915594,
+    "modified": "2026-09-20T08:46:03.576653",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
   {
@@ -105,8 +105,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 2420807,
-    "modified": "2026-09-20T08:24:29.900665",
+    "size": 2428454,
+    "modified": "2026-09-20T08:45:56.136660",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
   {
@@ -138,8 +138,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_inbox_router.py",
     "type": "code",
-    "size": 15752,
-    "modified": "2026-09-20T08:25:00.252134",
+    "size": 22332,
+    "modified": "2026-09-20T08:45:21.580694",
     "internal_key": "internal:000-General/dewey_inbox_router.py"
   },
   {
@@ -204,8 +204,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_sync.py",
     "type": "code",
-    "size": 14274,
-    "modified": "2026-09-20T08:21:16.928916",
+    "size": 15361,
+    "modified": "2026-09-20T08:46:49.044615",
     "internal_key": "internal:000-General/dewey_sync.py"
   },
   {
@@ -1144,26 +1144,26 @@
     "internal_key": "internal:100-Philosophy/INDEX.md"
   },
   {
-    "title": "INDEX__200-Religion.md",
+    "title": "INDEX.md",
     "section": "200-Religion",
     "dewey": "200",
     "dewey_desc": "Religion",
-    "file": "200-Religion/INDEX__200-Religion.md",
+    "file": "200-Religion/INDEX.md",
     "type": "text",
     "size": 222,
     "modified": "2026-09-20T08:27:57.053614",
-    "internal_key": "internal:200-Religion/INDEX__200-Religion.md"
+    "internal_key": "internal:200-Religion/INDEX.md"
   },
   {
-    "title": "INDEX__300-Social_Sciences.md",
+    "title": "INDEX.md",
     "section": "300-Social_Sciences",
     "dewey": "300",
     "dewey_desc": "Social Sciences",
-    "file": "300-Social_Sciences/INDEX__300-Social_Sciences.md",
+    "file": "300-Social_Sciences/INDEX.md",
     "type": "text",
     "size": 219,
     "modified": "2026-09-20T08:27:58.929592",
-    "internal_key": "internal:300-Social_Sciences/INDEX__300-Social_Sciences.md"
+    "internal_key": "internal:300-Social_Sciences/INDEX.md"
   },
   {
     "title": "vendors.json",
@@ -1177,26 +1177,26 @@
     "internal_key": "internal:300-Social_Sciences/vendors.json"
   },
   {
-    "title": "INDEX__400-Language.md",
+    "title": "INDEX.md",
     "section": "400-Language",
     "dewey": "400",
     "dewey_desc": "Language",
-    "file": "400-Language/INDEX__400-Language.md",
+    "file": "400-Language/INDEX.md",
     "type": "text",
     "size": 225,
     "modified": "2026-09-20T08:28:00.841569",
-    "internal_key": "internal:400-Language/INDEX__400-Language.md"
+    "internal_key": "internal:400-Language/INDEX.md"
   },
   {
-    "title": "INDEX__500-Science.md",
+    "title": "INDEX.md",
     "section": "500-Science",
     "dewey": "500",
     "dewey_desc": "Science",
-    "file": "500-Science/INDEX__500-Science.md",
+    "file": "500-Science/INDEX.md",
     "type": "text",
     "size": 221,
     "modified": "2026-09-20T08:28:04.193530",
-    "internal_key": "internal:500-Science/INDEX__500-Science.md"
+    "internal_key": "internal:500-Science/INDEX.md"
   },
   {
     "title": "dewey-blockchain-report.html",
@@ -1342,15 +1342,15 @@
     "internal_key": "internal:620-ComEd_Standard_Offering/measure-fact-sheets/CS26-14_Measure-Fact-Sheet_Outdoor-Lighting_V5_COBRANDED.pdf"
   },
   {
-    "title": "INDEX__640-Household_Favorites.md",
+    "title": "INDEX.md",
     "section": "640-Household_Favorites",
     "dewey": "640",
     "dewey_desc": "Household Favorites",
-    "file": "640-Household_Favorites/INDEX__640-Household_Favorites.md",
+    "file": "640-Household_Favorites/INDEX.md",
     "type": "text",
     "size": 629,
     "modified": "2026-09-20T08:28:09.229472",
-    "internal_key": "internal:640-Household_Favorites/INDEX__640-Household_Favorites.md"
+    "internal_key": "internal:640-Household_Favorites/INDEX.md"
   },
   {
     "title": "200-day-money-plan.md",
@@ -2871,15 +2871,15 @@
     "internal_key": "internal:690-Building_Construction/federal_contractors/index.md"
   },
   {
-    "title": "INDEX__691-Building_Materials.md",
+    "title": "INDEX.md",
     "section": "691-Building_Materials",
     "dewey": "691",
     "dewey_desc": "Building Materials",
-    "file": "691-Building_Materials/INDEX__691-Building_Materials.md",
+    "file": "691-Building_Materials/INDEX.md",
     "type": "text",
     "size": 30,
     "modified": "2026-09-20T08:28:18.537365",
-    "internal_key": "internal:691-Building_Materials/INDEX__691-Building_Materials.md"
+    "internal_key": "internal:691-Building_Materials/INDEX.md"
   },
   {
     "title": "LEDone_2026_Q2_products.json",
@@ -2891,17 +2891,6 @@
     "size": 285432,
     "modified": "2026-06-30T08:14:24.789500",
     "internal_key": "internal:691-Building_Materials/LEDone_2026_Q2_products.json"
-  },
-  {
-    "title": "dewey_catalog_archive_2026-06-17-DUPLICATE-20260920-070354.json",
-    "section": "691-Building_Materials",
-    "dewey": "691",
-    "dewey_desc": "Building Materials",
-    "file": "691-Building_Materials/dewey_catalog_archive_2026-06-17-DUPLICATE-20260920-070354.json",
-    "type": "data",
-    "size": 11454727,
-    "modified": "2026-09-20T08:28:21.925327",
-    "internal_key": "internal:691-Building_Materials/dewey_catalog_archive_2026-06-17-DUPLICATE-20260920-070354.json"
   },
   {
     "title": "dewey_catalog_archive_2026-06-17.json",
@@ -4840,15 +4829,15 @@
     "internal_key": "internal:692-Auxiliary_Practices/sow/BSC-SOW-2026-086.md"
   },
   {
-    "title": "INDEX__692-Auxiliary_Practices.md",
+    "title": "INDEX.md",
     "section": "692-Auxiliary_Practices",
     "dewey": "692",
     "dewey_desc": "Auxiliary Practices",
-    "file": "692-Auxiliary_Practices/INDEX__692-Auxiliary_Practices.md",
+    "file": "692-Auxiliary_Practices/INDEX.md",
     "type": "text",
     "size": 31,
     "modified": "2026-09-20T08:28:23.945304",
-    "internal_key": "internal:692-Auxiliary_Practices/INDEX__692-Auxiliary_Practices.md"
+    "internal_key": "internal:692-Auxiliary_Practices/INDEX.md"
   },
   {
     "title": "flashcard_system.html",
@@ -4895,15 +4884,15 @@
     "internal_key": "internal:696-Utilities/COMPREHENSIVE_WORK_BUDGET.md"
   },
   {
-    "title": "INDEX__696-Utilities.md",
+    "title": "INDEX.md",
     "section": "696-Utilities",
     "dewey": "696",
     "dewey_desc": "Utilities",
-    "file": "696-Utilities/INDEX__696-Utilities.md",
+    "file": "696-Utilities/INDEX.md",
     "type": "text",
     "size": 21,
     "modified": "2026-09-20T08:28:25.737284",
-    "internal_key": "internal:696-Utilities/INDEX__696-Utilities.md"
+    "internal_key": "internal:696-Utilities/INDEX.md"
   },
   {
     "title": "LCP_Tracker.md",
@@ -4983,15 +4972,15 @@
     "internal_key": "internal:697-HVAC/INDEX.md"
   },
   {
-    "title": "INDEX__700-Arts_Recreation.md",
+    "title": "INDEX.md",
     "section": "700-Arts_Recreation",
     "dewey": "700",
     "dewey_desc": "Arts",
-    "file": "700-Arts_Recreation/INDEX__700-Arts_Recreation.md",
+    "file": "700-Arts_Recreation/INDEX.md",
     "type": "text",
     "size": 225,
     "modified": "2026-09-20T08:28:11.889441",
-    "internal_key": "internal:700-Arts_Recreation/INDEX__700-Arts_Recreation.md"
+    "internal_key": "internal:700-Arts_Recreation/INDEX.md"
   },
   {
     "title": "hood_logo_gen.html",
@@ -5093,26 +5082,26 @@
     "internal_key": "internal:700-Arts_Recreation/library_ai_flyer_preview.png"
   },
   {
-    "title": "INDEX__800-Literature.md",
+    "title": "INDEX.md",
     "section": "800-Literature",
     "dewey": "800",
     "dewey_desc": "Literature",
-    "file": "800-Literature/INDEX__800-Literature.md",
+    "file": "800-Literature/INDEX.md",
     "type": "text",
     "size": 225,
     "modified": "2026-09-20T08:28:14.173415",
-    "internal_key": "internal:800-Literature/INDEX__800-Literature.md"
+    "internal_key": "internal:800-Literature/INDEX.md"
   },
   {
-    "title": "INDEX__900-History_Geography.md",
+    "title": "INDEX.md",
     "section": "900-History_Geography",
     "dewey": "900",
     "dewey_desc": "History & Geography",
-    "file": "900-History_Geography/INDEX__900-History_Geography.md",
+    "file": "900-History_Geography/INDEX.md",
     "type": "text",
     "size": 233,
     "modified": "2026-09-20T08:28:16.053394",
-    "internal_key": "internal:900-History_Geography/INDEX__900-History_Geography.md"
+    "internal_key": "internal:900-History_Geography/INDEX.md"
   },
   {
     "title": "README.md",
