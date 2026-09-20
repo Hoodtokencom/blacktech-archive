@@ -54,10 +54,11 @@ TIER_THRESHOLDS = [
     (250,  "master",   "👑", "Full vault access — Derrell-equivalent"),
 ]
 
-# Tier → sections that unlock at that tier
+# Tier → sections that unlock at that tier. 920/930 were removed: no such
+# folders exist, so they granted access to nothing.
 TIER_SECTIONS = {
     "public":   ["000", "100", "400", "700", "900", "999"],
-    "key":      ["300", "500", "600", "620", "800", "910", "920", "930"],
+    "key":      ["300", "500", "600", "620", "800", "910"],
     "approval": ["650", "690"],
     "vault":    ["200", "657"],  # can see names, not contents
     "master":   ["200", "657"],  # full access

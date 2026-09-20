@@ -29,26 +29,12 @@ ROUTER = os.path.join(BRAIN_DIR, "000-General", "dewey_inbox_router.py")
 BLOCKCHAIN = f"python3 {BRAIN_DIR}/000-General/dewey_blockchain.py"
 CHANGE_LOG = os.path.join(BRAIN_DIR, "999-Decisions_Logs", "change_history.md")
 
-# ── Google Drive folder IDs (mirrors dewey_sync.py DRIVE_FOLDERS) ──
-DRIVE_FOLDERS = {
-    "000-General": "1iTbhx4Z509FRe0f1IUr98vvsQ-k2LH2Y",
-    "100-Philosophy": "10-ISAnwVb-KuOrUz-YJvuvgaMBjfciJ-",
-    "200-Religion": "1ZdajMN6QbLSU5s2T0mcepDAXcrGizOCv",
-    "300-Social_Sciences": "1jFCRmP-SJFF19_ZTnrB65Z11KAjUby27",
-    "400-Language": "1r_JqN2EqZrVB6pyWoYbLtgI16JAXz0W5",
-    "500-Science": "1wiI7HMW7YDawBLlMluC-PLjuwjsgr-1d",
-    "600-Technology": "1MUeahJmJ2MApRp_3Oqqt28iHaFArlDb7",
-    "640-Household_Favorites": "1LPqXyggWUkmvLCUzqqJp_4gDBJbtGbS8",
-    "657-Accounting_Finance": "1n0s_WdzrOKQLxcRhxahh5dlMS-ZslyeV",
-    "700-Arts_Recreation": "173QcDBFQ0DHqI9uuATUmKr7rDuHC4Rxl",
-    "800-Literature": "13KcU3vGRc8LuVMq7x4Q8ZETb2-FJHPSk",
-    "900-History_Geography": "17rTzX9WK-7o6uqdMT2OXqcMX5XeS1ZIj",
-    "999-Decisions_Logs": "1UXERaufqG88H2Dtq1GjTEfLX7zpfWedx",
-    "691-Building_Materials": "1ANvkl8Ch41m_ZGF-riMYR1T2t4qwe2vN",
-    "692-Auxiliary_Practices": "17d8iYEnE1xtGQpz2a4eNLUilDSi7WXkd",
-    "696-Utilities": "1iTnImXhY8cvuet3MBEEyBGpiyV6A_1oH",
-    "697-HVAC": "1108yebvK8GxxxoLdnNRG6TXMZHkkmv3u",
-}
+# ── Section definitions: SINGLE SOURCE OF TRUTH ─────────────────────
+# Do NOT hardcode a section list here. Edit dewey_manifest.json instead.
+sys.path.insert(0, os.path.join(BRAIN_DIR, "000-General"))
+from dewey_manifest import drive_folders as _drive_folders
+
+DRIVE_FOLDERS = _drive_folders()   # {folder_name: drive_folder_id}
 
 
 def run_cmd(cmd, timeout=60):

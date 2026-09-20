@@ -1,0 +1,400 @@
+{
+  "version": 1,
+  "generated": "2026-09-20",
+  "invariants": [
+    "The folder tree is the shelf: where a file physically lives.",
+    "dewey_catalog.json is the card catalog: REBUILT from the tree each sync.",
+    "dewey_blockchain.json is the accession ledger: append-only, NEVER rebuilt.",
+    "Sections are defined HERE ONLY. No script may hardcode a section list.",
+    "regex order matters: first match wins, so specific shelves come first.",
+    "filename_rules order matters: first keyword match wins (est_* beats mat_*)."
+  ],
+  "sections": [
+    {
+      "code": "200",
+      "codes": [
+        "200"
+      ],
+      "folder": "200-Religion",
+      "name": "Religion",
+      "description": "Religion, faith",
+      "drive_id": "1ZdajMN6QbLSU5s2T0mcepDAXcrGizOCv",
+      "regex": "\\b(tith(e|es|ing)|stewardship|sermons?|scriptures?|parables?|worship|prayer|congregation|ministry|bible|gospel|blessing|faith)\\b",
+      "order": 1
+    },
+    {
+      "code": "697",
+      "codes": [
+        "697"
+      ],
+      "folder": "697-HVAC",
+      "name": "HVAC",
+      "description": "HVAC, heating, cooling, ventilation",
+      "drive_id": "1108yebvK8GxxxoLdnNRG6TXMZHkkmv3u",
+      "regex": "\\b(hvac|furnace|chiller|boiler|thermostat|ductwork|air condition\\w*|refrigerant|condenser|heat pump)\\b",
+      "order": 2
+    },
+    {
+      "code": "696",
+      "codes": [
+        "696"
+      ],
+      "folder": "696-Utilities",
+      "name": "Utilities",
+      "description": "Utilities, electrical work",
+      "drive_id": "1iTnImXhY8cvuet3MBEEyBGpiyV6A_1oH",
+      "regex": "\\b(comed|utilit(y|ies)|kwh|kilowatt|electric bill|smart meter|auto[- ]?save|supply charge|delivery charge)\\b",
+      "order": 3
+    },
+    {
+      "code": "692",
+      "codes": [
+        "692"
+      ],
+      "folder": "692-Auxiliary_Practices",
+      "name": "Auxiliary Practices",
+      "description": "Estimates, bids, proposals, specs",
+      "drive_id": "17d8iYEnE1xtGQpz2a4eNLUilDSi7WXkd",
+      "regex": "\\b(statement of work|estimates?|bids?|proposals?|scope of work|change order)\\b",
+      "order": 4
+    },
+    {
+      "code": "657",
+      "codes": [
+        "657"
+      ],
+      "folder": "657-Accounting_Finance",
+      "name": "Accounting & Finance",
+      "description": "Accounting, payroll, invoices, passcodes",
+      "drive_id": "1n0s_WdzrOKQLxcRhxahh5dlMS-ZslyeV",
+      "regex": "\\b(invoices?|payroll|receipts?|ledgers?|1099|w-9|profit (and|&) loss|balance sheet)\\b",
+      "order": 5
+    },
+    {
+      "code": "691",
+      "codes": [
+        "691"
+      ],
+      "folder": "691-Building_Materials",
+      "name": "Building Materials",
+      "description": "Building materials, supplier catalogs",
+      "drive_id": "1ANvkl8Ch41m_ZGF-riMYR1T2t4qwe2vN",
+      "regex": "\\b(vendor list|supplier list|parts catalog|material list|bill of materials)\\b",
+      "order": 6
+    },
+    {
+      "code": "003",
+      "codes": [
+        "003"
+      ],
+      "folder": "003-Computing_Science",
+      "name": "Computing Science",
+      "description": "Computing: servers, hosting, scripts, networking, backups",
+      "drive_id": "1xOTolQ7FFGZJZYAmO6vlvrdEU7DFiiTR",
+      "regex": "\\b(server|hostgator|nginx|cron|systemd|ssh|git repo|api key|docker|vm|backup script|firewall|dns)\\b",
+      "order": 7
+    },
+    {
+      "code": "650",
+      "codes": [
+        "650"
+      ],
+      "folder": "650-Management_Business",
+      "name": "Management & Business",
+      "description": "Management: operations, KPIs, hiring, SOPs",
+      "drive_id": "1xAf9lUgRvaWrh9pGdGe2_pf-H3nuzzj3",
+      "regex": "\\b(management|operations|kpi|org chart|hiring|onboarding|job description|performance review|strateg(y|ies)|standard operating procedure|sop)\\b",
+      "order": 8
+    },
+    {
+      "code": "658",
+      "codes": [
+        "658"
+      ],
+      "folder": "658-Marketing_Sales",
+      "name": "Marketing & Sales",
+      "description": "Marketing, sales, funnels, branding, lead gen",
+      "drive_id": "19PSJLMJkeHIOs1surerrp8jiMAhA4Z39",
+      "regex": "\\b(marketing|sales funnel|lead gen|ad campaign|branding|social media post|seo|customer acquisition|pitch deck)\\b",
+      "order": 9
+    },
+    {
+      "code": "601",
+      "codes": [
+        "601"
+      ],
+      "folder": "600-Wealth_Precious_Metals",
+      "name": "Wealth & Precious Metals",
+      "description": "Wealth: silver, gold, precious metals, bullion",
+      "drive_id": "1y9ILDomjHGNrijhwCADJHFen55A4Ptgn",
+      "regex": "\\b(silver|gold bullion|precious metal|bullion|coin dealer|troy ounce|spot price|melt value)\\b",
+      "order": 10
+    },
+    {
+      "code": "620",
+      "codes": [
+        "620"
+      ],
+      "folder": "620-ComEd_Standard_Offering",
+      "name": "ComEd Standard Offering",
+      "description": "ComEd standard offering, rate classes, procurement",
+      "drive_id": "15iO3SA3AuLumVukhqqsJ79KwVZWoopJn",
+      "regex": "\\b(standard offering|rate class|capacity charge|residential supply rate|electricity procurement)\\b",
+      "order": 11
+    },
+    {
+      "code": "910",
+      "codes": [
+        "910"
+      ],
+      "folder": "910-Regional_Data",
+      "name": "Regional Data",
+      "description": "Regional data: census, zip codes, demographics",
+      "drive_id": "1iy0XAKqWmnjYlZnWrinAvTJAy72a68-7",
+      "regex": "\\b(census|zip code|zIP[- ]?\\d|demographic|population|regional data|market data by (city|state|zip))\\b",
+      "order": 12
+    },
+    {
+      "code": "600",
+      "codes": [
+        "600"
+      ],
+      "folder": "600-Technology",
+      "name": "Technology",
+      "description": "Technology, software, hardware, Pi infrastructure",
+      "drive_id": "1MUeahJmJ2MApRp_3Oqqt28iHaFArlDb7",
+      "regex": "\\b(software|hardware|raspberry pi|ollama|llm|ai model|python script|database|networking|automation|blockchain|ipfs|codebase)\\b",
+      "order": 13
+    },
+    {
+      "code": "300",
+      "codes": [
+        "300"
+      ],
+      "folder": "300-Social_Sciences",
+      "name": "Social Sciences",
+      "description": "Social sciences, law, community, SSBN",
+      "drive_id": "1jFCRmP-SJFF19_ZTnrB65Z11KAjUby27",
+      "regex": "\\b(community|nonprofit|law|legal|policy|government|civic|outreach|volunteer|ssbn|member|tenant rights)\\b",
+      "order": 14
+    },
+    {
+      "code": "000",
+      "codes": [
+        "000"
+      ],
+      "folder": "000-General",
+      "name": "General",
+      "description": "General, uncategorized, miscellaneous notes that fit nothing else",
+      "drive_id": "1iTbhx4Z509FRe0f1IUr98vvsQ-k2LH2Y",
+      "regex": "",
+      "order": 15
+    },
+    {
+      "code": "100",
+      "codes": [
+        "100"
+      ],
+      "folder": "100-Philosophy",
+      "name": "Philosophy",
+      "description": "Philosophy, mindset, leadership",
+      "drive_id": "10-ISAnwVb-KuOrUz-YJvuvgaMBjfciJ-",
+      "regex": "",
+      "order": 16
+    },
+    {
+      "code": "400",
+      "codes": [
+        "400"
+      ],
+      "folder": "400-Language",
+      "name": "Language",
+      "description": "Language, templates, brand voice",
+      "drive_id": "1r_JqN2EqZrVB6pyWoYbLtgI16JAXz0W5",
+      "regex": "",
+      "order": 17
+    },
+    {
+      "code": "500",
+      "codes": [
+        "500"
+      ],
+      "folder": "500-Science",
+      "name": "Science",
+      "description": "Science, math, systems architecture, schematics",
+      "drive_id": "1wiI7HMW7YDawBLlMluC-PLjuwjsgr-1d",
+      "regex": "",
+      "order": 18
+    },
+    {
+      "code": "640",
+      "codes": [
+        "640"
+      ],
+      "folder": "640-Household_Favorites",
+      "name": "Household Favorites",
+      "description": "Household favorites",
+      "drive_id": "1LPqXyggWUkmvLCUzqqJp_4gDBJbtGbS8",
+      "regex": "",
+      "order": 19
+    },
+    {
+      "code": "690",
+      "codes": [
+        "690"
+      ],
+      "folder": "690-Building_Construction",
+      "name": "Building & Construction",
+      "description": "Construction contracts, approvals",
+      "drive_id": "1hmlXFnyZDo26NzcHMve3OYApzo5tXNXV",
+      "regex": "",
+      "order": 20
+    },
+    {
+      "code": "700",
+      "codes": [
+        "700"
+      ],
+      "folder": "700-Arts_Recreation",
+      "name": "Arts & Recreation",
+      "description": "Arts, design, music",
+      "drive_id": "173QcDBFQ0DHqI9uuATUmKr7rDuHC4Rxl",
+      "regex": "",
+      "order": 21
+    },
+    {
+      "code": "800",
+      "codes": [
+        "800"
+      ],
+      "folder": "800-Literature",
+      "name": "Literature",
+      "description": "Literature, blogs, articles",
+      "drive_id": "13KcU3vGRc8LuVMq7x4Q8ZETb2-FJHPSk",
+      "regex": "",
+      "order": 22
+    },
+    {
+      "code": "900",
+      "codes": [
+        "900"
+      ],
+      "folder": "900-History_Geography",
+      "name": "History & Geography",
+      "description": "History, project timelines",
+      "drive_id": "17rTzX9WK-7o6uqdMT2OXqcMX5XeS1ZIj",
+      "regex": "",
+      "order": 23
+    },
+    {
+      "code": "999",
+      "codes": [
+        "999"
+      ],
+      "folder": "999-Decisions_Logs",
+      "name": "Decisions & Logs",
+      "description": "Decisions log, change history",
+      "drive_id": "1UXERaufqG88H2Dtq1GjTEfLX7zpfWedx",
+      "regex": "",
+      "order": 24
+    }
+  ],
+  "filename_rules": [
+    [
+      "est",
+      "692-Auxiliary_Practices"
+    ],
+    [
+      "contract",
+      "690-Building_Construction"
+    ],
+    [
+      "elec",
+      "696-Utilities"
+    ],
+    [
+      "hvac",
+      "697-HVAC"
+    ],
+    [
+      "mat",
+      "691-Building_Materials"
+    ],
+    [
+      "inv",
+      "657-Accounting_Finance"
+    ],
+    [
+      "payroll",
+      "657-Accounting_Finance"
+    ],
+    [
+      "proposal",
+      "692-Auxiliary_Practices"
+    ],
+    [
+      "bid",
+      "692-Auxiliary_Practices"
+    ],
+    [
+      "spec",
+      "692-Auxiliary_Practices"
+    ],
+    [
+      "panel",
+      "696-Utilities"
+    ],
+    [
+      "wiring",
+      "696-Utilities"
+    ],
+    [
+      "duct",
+      "697-HVAC"
+    ],
+    [
+      "boiler",
+      "697-HVAC"
+    ],
+    [
+      "chiller",
+      "697-HVAC"
+    ],
+    [
+      "supplier",
+      "691-Building_Materials"
+    ],
+    [
+      "catalog",
+      "691-Building_Materials"
+    ],
+    [
+      "receipt",
+      "657-Accounting_Finance"
+    ],
+    [
+      "ledger",
+      "657-Accounting_Finance"
+    ],
+    [
+      "religion",
+      "200-Religion"
+    ],
+    [
+      "faith",
+      "200-Religion"
+    ],
+    [
+      "sermon",
+      "200-Religion"
+    ],
+    [
+      "scripture",
+      "200-Religion"
+    ],
+    [
+      "ministry",
+      "200-Religion"
+    ]
+  ]
+}

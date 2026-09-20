@@ -43,28 +43,15 @@ GITHUB_ARCHIVE_REPO = "https://github.com/Hoodtokencom/blacktech-archive.git"
 GITHUB_ARCHIVE_DIR = "/home/allenai/blacktech_archive"
 GDRIVE_BRAIN_PATH = "Blacktech_Drive/6-Operations/Brain"
 
-# ── Dewey Section Map ─────────────────────────────────────────────
-DEWEY_MAP = {
-    "000": "General — Index, tools, catalog",
-    "100": "Philosophy — Mission, values, principles",
-    "200": "Religion — Faith, trust docs, church",
-    "300": "Social Sciences — SSBN, community, team",
-    "400": "Language — Style guide, terminology",
-    "500": "Science — Electrical theory, LCP rates",
-    "600": "Technology — Pi, servers, HostGator",
-    "620": "Engineering — NEC code, specs",
-    "650": "Management — SOPs, contracts, HR, legal",
-    "657": "Accounting — Passcodes, QBO, payroll",
-    "690": "Construction — Estimates, permits, materials",
-    "700": "Arts — Brand, logos, colors, templates",
-    "800": "Literature — Proposals, newsletters",
-    "900": "History — Timeline, milestones",
-    "910": "Travel — Job sites, zip code maps",
-    "920": "Biography — Contacts, subcontractors",
-    "930": "Archaeology — Old projects, lessons learned",
-    "999": "Decisions — Change log, decision history",
-    "INTERNAL": "Internal Drive — Files not yet cataloged in Brain",
-}
+# ── Dewey Section Map: loaded from dewey_manifest.json (single source) ──
+# Was hardcoded here with stale labels (620 "Engineering", 910 "Travel") and
+# two dead codes (920 Biography / 930 Archaeology) that have no folder.
+sys.path.insert(0, os.path.join(BRAIN_ROOT, "000-General"))
+from dewey_manifest import load as _manifest_load
+
+DEWEY_MAP = {r["code"]: f'{r["name"]} — {r["description"]}'
+             for r in _manifest_load()}
+DEWEY_MAP["INTERNAL"] = "Internal Drive — Files not yet cataloged in Brain"
 
 
 def load_catalog():

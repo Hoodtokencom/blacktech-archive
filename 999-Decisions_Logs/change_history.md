@@ -140,3 +140,7 @@
 - [2026-09-20 08:29:10] Inbox route [🔑 keyword 'catalog']: dewey_catalog_archive_2026-06-17-DUPLICATE-20260920-070354.json → 691-Building_Materials (SHA256: b82e57a05acc...)
 - [2026-09-20 08:29:22] Inbox route [🤖 AI → 657]: hostgator_email.md → 657-Accounting_Finance (SHA256: 72b62bf3c400...)
 - [2026-09-20 08:29:48] Inbox route [🤖 AI → 300]: vendors.json → 300-Social_Sciences (SHA256: 3e29eed7bc19...)
+- [2026-09-20 11:28:16] Inbox route [🤖 AI → 003]: probe_alg_notes_9931.md → 003-Computing_Science (SHA256: 6a47748f058c...)
+- [2026-09-20 11:28:18] Inbox route [🤖 AI → 003]: probe_computing_science_notes.md → 003-Computing_Science (SHA256: 09d1ed5bebf8...)
+- [2026-09-20 11:28:19] Inbox route [📄 content marker 'marketing']: probe_marketing_sales_campaign_brief.md → 658-Marketing_Sales (SHA256: 47e839ae173f...)
+- [2026-09-20 11:28:19] Inbox route [📄 content marker 'zip code']: probe_regional_zip_map.md → 910-Regional_Data (SHA256: 661e69e4ce87...)

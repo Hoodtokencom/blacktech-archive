@@ -20,37 +20,15 @@ GAPI = f"python {BRAIN}/../.hermes/profiles/derrell-black/skills/productivity/go
 GITHUB_REPO = "/home/allenai/blacktech_archive"
 BLOCKCHAIN = f"python3 {BRAIN}/000-General/dewey_blockchain.py"
 
-# ── Google Drive folder IDs ─────────────────────────────────────────
-DRIVE_FOLDERS = {
-    "000-General": "1iTbhx4Z509FRe0f1IUr98vvsQ-k2LH2Y",
-    "100-Philosophy": "10-ISAnwVb-KuOrUz-YJvuvgaMBjfciJ-",
-    "200-Religion": "1ZdajMN6QbLSU5s2T0mcepDAXcrGizOCv",
-    "300-Social_Sciences": "1jFCRmP-SJFF19_ZTnrB65Z11KAjUby27",
-    "400-Language": "1r_JqN2EqZrVB6pyWoYbLtgI16JAXz0W5",
-    "500-Science": "1wiI7HMW7YDawBLlMluC-PLjuwjsgr-1d",
-    "600-Technology": "1MUeahJmJ2MApRp_3Oqqt28iHaFArlDb7",
-    "640-Household_Favorites": "1LPqXyggWUkmvLCUzqqJp_4gDBJbtGbS8",
-    "657-Accounting_Finance": "1n0s_WdzrOKQLxcRhxahh5dlMS-ZslyeV",
-    "700-Arts_Recreation": "173QcDBFQ0DHqI9uuATUmKr7rDuHC4Rxl",
-    "800-Literature": "13KcU3vGRc8LuVMq7x4Q8ZETb2-FJHPSk",
-    "900-History_Geography": "17rTzX9WK-7o6uqdMT2OXqcMX5XeS1ZIj",
-    "999-Decisions_Logs": "1UXERaufqG88H2Dtq1GjTEfLX7zpfWedx",
-    "691-Building_Materials": "1ANvkl8Ch41m_ZGF-riMYR1T2t4qwe2vN",
-    "692-Auxiliary_Practices": "17d8iYEnE1xtGQpz2a4eNLUilDSi7WXkd",
-    "696-Utilities": "1iTnImXhY8cvuet3MBEEyBGpiyV6A_1oH",
-    "697-HVAC": "1108yebvK8GxxxoLdnNRG6TXMZHkkmv3u"
-}
+# ── Section definitions: SINGLE SOURCE OF TRUTH ─────────────────────
+# Do NOT hardcode a section list here. Edit dewey_manifest.json instead —
+# every script (sync, pull, router, pipeline) reads it through this module.
+sys.path.insert(0, os.path.join(BRAIN, "000-General"))
+from dewey_manifest import drive_folders as _drive_folders
+from dewey_manifest import sections as _sections
 
-SECTIONS = {
-    "000": "General", "100": "Philosophy", "200": "Religion",
-    "300": "Social Sciences", "400": "Language", "500": "Science",
-    "600": "Technology", "620": "Engineering", "640": "Household Favorites",
-    "650": "Management & Business", "657": "Accounting & Finance",
-    "690": "Construction", "691": "Building Materials", "692": "Auxiliary Practices",
-    "696": "Utilities", "697": "HVAC", "700": "Arts", "800": "Literature",
-    "900": "History & Geography", "910": "Travel", "920": "Biography",
-    "930": "Genealogy", "999": "Decisions & Logs"
-}
+DRIVE_FOLDERS = _drive_folders()   # {folder_name: drive_folder_id}
+SECTIONS = _sections()             # {dewey_code: display name}
 
 def file_hash(path):
     """SHA256 of file contents."""

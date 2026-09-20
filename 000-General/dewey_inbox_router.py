@@ -29,6 +29,14 @@ BODY_DIR = "/home/allenai/blacktech_brain"
 SYNC_SCRIPT = os.path.join(BODY_DIR, "000-General", "dewey_sync.py")
 BLOCKCHAIN = f"python3 {BODY_DIR}/000-General/dewey_blockchain.py"
 
+# ── Section definitions: SINGLE SOURCE OF TRUTH ─────────────────────
+# Do NOT hardcode a section list here. Edit dewey_manifest.json instead —
+# sync, pull, router and pipeline all read it through this module.
+sys.path.insert(0, os.path.join(BODY_DIR, "000-General"))
+from dewey_manifest import (content_map, ai_code_list, code_to_folder,
+                            filename_rules as _filename_rules,
+                            ai_codes as _ai_codes)
+
 # ── AI fallback config (local Ollama) ──────────────────────────────
 AI_ENABLED = True          # Set False to disable AI fallback entirely
 AI_BASE_URL = "http://localhost:11434/v1"
@@ -37,122 +45,29 @@ AI_TIMEOUT = 90               # Cold Ollama model load can take 60s+; 30s caused
 
 # ── Tier 1: Keyword → Dewey section mapping ────────────────────────
 # Matched by word-boundary prefix (e.g., "est_" → 692, "contract-" → 690)
-DEWEY_MAP = {
-    "est":      "692-Auxiliary_Practices",   # Estimates, bids, proposals
-    "contract": "690-Building_Construction",  # Contracts
-    "elec":     "696-Utilities",              # Electrical work docs
-    "hvac":     "697-HVAC",                   # Heating/cooling docs
-    "mat":      "691-Building_Materials",     # Material lists, parts
-    "inv":      "657-Accounting_Finance",     # Invoices
-    "payroll":  "657-Accounting_Finance",     # Payroll docs
-    "proposal": "692-Auxiliary_Practices",    # Proposals (same as estimates)
-    "bid":      "692-Auxiliary_Practices",    # Bids
-    "spec":     "692-Auxiliary_Practices",    # Specifications
-    "panel":    "696-Utilities",              # Panel schedules
-    "wiring":   "696-Utilities",              # Wiring diagrams
-    "duct":     "697-HVAC",                   # Ductwork
-    "boiler":   "697-HVAC",                   # Boiler docs
-    "chiller":  "697-HVAC",                   # Chiller docs
-    "supplier": "691-Building_Materials",     # Supplier lists
-    "catalog":  "691-Building_Materials",     # Parts catalogs
-    "receipt":  "657-Accounting_Finance",     # Receipts
-    "ledger":   "657-Accounting_Finance",     # Ledgers
-    "religion": "200-Religion",                # Faith/ministry docs
-    "faith":    "200-Religion",                # Faith/ministry docs
-    "sermon":   "200-Religion",                # Sermons, teaching notes
-    "scripture":"200-Religion",                # Scripture study
-    "ministry": "200-Religion",                # Ministry program docs
-}
+# Tier 1 keyword → folder, in the manifest's EXACT precedence order
+# (first keyword match wins, so est_* beats mat_*).
+DEWEY_MAP = dict(_filename_rules())
 
 # ── Tier 1.5: Content markers (deterministic, before the AI guess) ──
 # The 3B local model misroutes fuzzy topics (e.g. tithing -> 100). These
 # high-precision markers short-circuit it when the FILENAME gave no clue.
 # Order matters: first pattern that hits wins.
-CONTENT_MAP = [
-    ("200-Religion", r"\b(tith(e|es|ing)|stewardship|sermons?|scriptures?|"
-                     r"parables?|worship|prayer|congregation|ministry|"
-                     r"bible|gospel|blessing|faith)\b"),
-    ("697-HVAC",     r"\b(hvac|furnace|chiller|boiler|thermostat|ductwork|"
-                     r"air condition\w*|refrigerant|condenser|heat pump)\b"),
-    ("696-Utilities",r"\b(comed|utilit(y|ies)|kwh|kilowatt|electric bill|"
-                     r"smart meter|auto[- ]?save|supply charge|delivery charge)\b"),
-    ("692-Auxiliary_Practices",
-                     r"\b(statement of work|estimates?|bids?|proposals?|"
-                     r"scope of work|change order)\b"),
-    ("657-Accounting_Finance",
-                     r"\b(invoices?|payroll|receipts?|ledgers?|1099|w-9|"
-                     r"profit (and|&) loss|balance sheet)\b"),
-    ("691-Building_Materials",
-                     r"\b(vendor list|supplier list|parts catalog|"
-                     r"material list|bill of materials)\b"),
-    # ── Below: sections the flat 3-digit codes can't express ──
-    # (the AI prompt + dewey_to_folder() only know 3-digit codes, so these
-    #  subfolders were unreachable until CONTENT_MAP named them.)
-    ("003-Computing_Science",
-                     r"\b(server|hostgator|nginx|cron|systemd|ssh|git repo|"
-                     r"api key|docker|vm|backup script|firewall|dns)\b"),
-    ("650-Management_Business",
-                     r"\b(management|operations|kpi|org chart|hiring|onboarding|"
-                     r"job description|performance review|strateg(y|ies)|"
-                     r"standard operating procedure|sop)\b"),
-    ("658-Marketing_Sales",
-                     r"\b(marketing|sales funnel|lead gen|ad campaign|branding|"
-                     r"social media post|seo|customer acquisition|pitch deck)\b"),
-    ("600-Wealth_Precious_Metals",
-                     r"\b(silver|gold bullion|precious metal|bullion|"
-                     r"coin dealer|troy ounce|spot price|melt value)\b"),
-    ("620-ComEd_Standard_Offering",
-                     r"\b(standard offering|rate class|capacity charge|"
-                     r"residential supply rate|electricity procurement)\b"),
-    ("910-Regional_Data",
-                     r"\b(census|zip code|zIP[- ]?\d|demographic|population|"
-                     r"regional data|market data by (city|state|zip))\b"),
-    # ── Broad topics LAST — specific markers above must win ──
-    ("600-Technology",
-                     r"\b(software|hardware|raspberry pi|ollama|llm|ai model|"
-                     r"python script|database|networking|automation|"
-                     r"blockchain|ipfs|codebase)\b"),
-    ("300-Social_Sciences",
-                     r"\b(community|nonprofit|law|legal|policy|government|"
-                     r"civic|outreach|volunteer|ssbn|member|tenant rights)\b"),
-]
+CONTENT_MAP = content_map()   # [(folder_name, regex_string)] — order preserved
 
 # ── Tier 2: AI classification prompt ───────────────────────────────
-AI_CLASSIFY_PROMPT = """You are the Blacktech Dewey Decimal classifier.
+AI_CLASSIFY_PROMPT = ("""You are the Blacktech Dewey Decimal classifier.
 Analyze this file content and return ONLY the 3-digit Dewey code.
 
 Available codes:
-  000 - General, uncategorized, miscellaneous notes that fit nothing else
-  003 - Computing: servers, hosting, scripts, networking, backups
-  100 - Philosophy, mindset, leadership
-  200 - Religion, faith
-  300 - Social sciences, law, community, SSBN
-  400 - Language, templates, brand voice
-  500 - Science, math, systems architecture, schematics
-  600 - Technology, software, hardware, Pi infrastructure
-  601 - Wealth: silver, gold, precious metals, bullion
-  620 - ComEd standard offering, rate classes, procurement
-  640 - Household favorites
-  650 - Management: operations, KPIs, hiring, SOPs
-  657 - Accounting, payroll, invoices, passcodes
-  658 - Marketing, sales, funnels, branding, lead gen
-  690 - Construction contracts, approvals
-  691 - Building materials, supplier catalogs
-  692 - Estimates, bids, proposals, specs
-  696 - Utilities, electrical work
-  697 - HVAC, heating, cooling, ventilation
-  700 - Arts, design, music
-  800 - Literature, blogs, articles
-  900 - History, project timelines
-  910 - Regional data: census, zip codes, demographics
-  999 - Decisions log, change history
+""" + ai_code_list() + """
 
 Respond with ONLY the 3-digit number. No explanation.
 
 Content:
 \"\"\"
 {content}
-\"\"\""""
+\"\"\"""")
 
 # ── Helpers ────────────────────────────────────────────────────────
 
@@ -274,9 +189,9 @@ def ai_classify_file(file_path):
 
         raw = result["choices"][0]["message"]["content"].strip()
 
-        # Extract 3-digit code from response
-        match = re.search(r'\b(000|100|200|300|400|500|600|640|657|'
-                          r'690|691|692|696|697|700|800|900|999)\b', raw)
+        # Extract 3-digit code from the response. Accept EVERY code the prompt
+        # offers — the old hardcoded list silently dropped 003/601/620/650/658/910.
+        match = re.search(r'\b(' + '|'.join(_ai_codes()) + r')\b', raw)
         if match:
             return match.group(0)
         else:
@@ -288,33 +203,12 @@ def ai_classify_file(file_path):
         return None
 
 def dewey_to_folder(dewey_code):
-    """Map a Dewey number to the actual folder name in BODY_DIR."""
-    mapping = {
-        "000": "000-General",
-        "003": "003-Computing_Science",
-        "100": "100-Philosophy",
-        "200": "200-Religion",
-        "300": "300-Social_Sciences",
-        "400": "400-Language",
-        "500": "500-Science",
-        "600": "600-Technology",
-        "601": "600-Wealth_Precious_Metals",
-        "620": "620-ComEd_Standard_Offering",
-        "640": "640-Household_Favorites",
-        "650": "650-Management_Business",
-        "657": "657-Accounting_Finance",
-        "658": "658-Marketing_Sales",
-        "690": "690-Building_Construction",
-        "691": "691-Building_Materials",
-        "692": "692-Auxiliary_Practices",
-        "696": "696-Utilities",
-        "697": "697-HVAC",
-        "700": "700-Arts_Recreation",
-        "800": "800-Literature",
-        "900": "900-History_Geography",
-        "910": "910-Regional_Data",
-        "999": "999-Decisions_Logs",
-    }
+    """Map a Dewey number to the actual folder name in BODY_DIR.
+
+    Reads the manifest's code→folder map (single source of truth). Falls back
+    to 000-General for unknown codes, as before.
+    """
+    mapping = code_to_folder()
     # Accept a full folder name too (CONTENT_MAP returns folder names).
     if dewey_code in mapping.values():
         return dewey_code
