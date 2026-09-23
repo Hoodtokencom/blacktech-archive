@@ -1,0 +1,107 @@
+{
+  "trust_name": "Blacktech Solutions Business Trust",
+  "entity_type": "Business Trust",
+  "jurisdiction_state": "Delaware",
+  "parties": [
+    {
+      "name": "Derrell A. Black",
+      "role": "Grantor/Settlor",
+      "address": "14076 Lincoln Ave, Dolton, IL 60419",
+      "tax_id": null,
+      "relationship": ""
+    },
+    {
+      "name": "Derrell A. Black",
+      "role": "Primary Trustee",
+      "address": "14076 Lincoln Ave, Dolton, IL 60419",
+      "tax_id": null,
+      "relationship": ""
+    }
+  ],
+  "schedule_a_assets": [
+    {
+      "asset_description": "Progressive Commercial Auto Policy \u2014 2017 Ford Transit Connect, VIN NM0LS7E76H1312315, $1M CSL + Comp/Collision (owned by Blacktech Solutions Corp)",
+      "initial_value_usd": 3040.0,
+      "asset_type": "Insurance"
+    },
+    {
+      "asset_description": "Transamerica IUL Insurance Policy $1M",
+      "initial_value_usd": 1000000.0,
+      "asset_type": "Life Insurance"
+    },
+    {
+      "asset_description": "100% Shareholding of Blacktech Solutions Corp (S Corporation) \u2014 Trust as QSST shareholder",
+      "initial_value_usd": 0.0,
+      "asset_type": "Corporate Stock"
+    },
+    {
+      "asset_description": "RelayFi Business Banking Account \u2014 Blacktech Solutions Corp",
+      "initial_value_usd": 0.0,
+      "asset_type": "Bank Account"
+    },
+    {
+      "asset_description": "WinTrust Business Checking Account \u2014 Blacktech Solutions Corp",
+      "initial_value_usd": 0.0,
+      "asset_type": "Bank Account"
+    },
+    {
+      "asset_description": "2017 Ford Transit Connect Work Truck (VIN NM0LS7E76H1312315) \u2014 Debt/Liability",
+      "initial_value_usd": 15000.0,
+      "asset_type": "Vehicle Debt"
+    },
+    {
+      "asset_description": "SBA Loan \u2014 $74000 Debt, $320/month",
+      "initial_value_usd": 74000.0,
+      "asset_type": "Loan Debt"
+    },
+    {
+      "asset_description": "Charles Schwab Business Investment Account \u2014 Blacktech Solutions Corp",
+      "initial_value_usd": 0.0,
+      "asset_type": "Investment Account"
+    },
+    {
+      "asset_description": "Charles Schwab Custodial Investment Account #1 \u2014 Blacktech Solutions Corp",
+      "initial_value_usd": 0.0,
+      "asset_type": "Investment Account"
+    },
+    {
+      "asset_description": "Charles Schwab Custodial Investment Account #2 \u2014 Blacktech Solutions Corp",
+      "initial_value_usd": 0.0,
+      "asset_type": "Investment Account"
+    },
+    {
+      "asset_description": "Charles Schwab Investment Account #4 \u2014 Blacktech Solutions Corp",
+      "initial_value_usd": 0.0,
+      "asset_type": "Investment Account"
+    }
+  ],
+  "beneficiaries": [
+    {
+      "name": "Black Family Legacy Trust",
+      "relationship": "Family Trust",
+      "role": "Sole Beneficiary",
+      "share_percentage": 100.0
+    }
+  ],
+  "is_irrevocable": true,
+  "requires_notarization": true,
+  "execution_date": null,
+  "status": "review",
+  "associated_llc_or_corp": "Blacktech Solutions Corp",
+  "commercial_purpose": "To hold 100% shares of Blacktech Solutions Corp (S Corporation), manage commercial liabilities, and distribute income to sole beneficiary (Black Family Legacy Trust) via QSST election under IRC \u00a71361.",
+  "is_delaware_statutory_trust": true,
+  "registered_agent": "Harvard Business Services, Inc.",
+  "registered_agent_cost_annual": 50.0,
+  "franchise_tax_annual": 400.0,
+  "certificate_filing_fee": 500.0,
+  "created_at": "2026-06-23T13:55:32.068516",
+  "updated_at": "2026-07-22T18:12:56.747857",
+  "factory_output": {
+    "filled_text": "/home/allenai/blacktech_brain/650-Management_Business/trusts/output/BSC-T-BUS-20260722-filled.txt",
+    "html": "/home/allenai/blacktech_brain/650-Management_Business/trusts/output/BSC-T-BUS-20260722.html",
+    "pdf": "/home/allenai/blacktech_brain/650-Management_Business/trusts/output/BSC-T-BUS-20260722.pdf",
+    "template_pdf": "/home/allenai/blacktech_brain/650-Management_Business/trusts/output/BSC-T-BUS-template.pdf",
+    "generated": "20260722"
+  },
+  "total_beneficiary_shares": 100.0
+}

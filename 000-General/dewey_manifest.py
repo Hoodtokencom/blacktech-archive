@@ -59,6 +59,15 @@ def code_to_folder():
     return {c: r["folder"] for r in load() for c in r.get("codes", [])}
 
 
+def known_codes():
+    """Every section code the manifest recognises (e.g. {'000','003','620','690',...}).
+
+    Use this to VALIDATE codes written elsewhere (policy maps, access tiers): a code
+    not in here points at nothing and fails silently at runtime.
+    """
+    return set(code_to_folder())
+
+
 def folder_names():
     """Canonical section folder names, in order."""
     return [r["folder"] for r in load()]

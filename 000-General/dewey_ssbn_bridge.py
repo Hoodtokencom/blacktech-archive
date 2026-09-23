@@ -45,6 +45,14 @@ SECURITY_SCRIPT = f"{BRAIN_ROOT}/000-General/dewey_security.py"
 BLOCKCHAIN_SCRIPT = f"{BRAIN_ROOT}/000-General/dewey_blockchain.py"
 BRIDGE_LOG = f"{BRAIN_ROOT}/000-General/dewey_ssbn_bridge_log.json"
 
+# Section truth comes from the manifest, never a local copy.
+sys.path.insert(0, os.path.join(BRAIN_ROOT, "000-General"))
+from dewey_manifest import code_to_folder as _code_to_folder  # noqa: E402
+from dewey_manifest import known_codes as _known_codes        # noqa: E402
+
+# Every code the manifest knows, longest-first so "620" wins over "600".
+SECTION_CODES = sorted(_known_codes(), key=lambda c: (-len(c), c))
+
 # ── Token → Tier Map ────────────────────────────────────────────────
 TIER_THRESHOLDS = [
     (0,    "public",   "🟢", "Browse Brain catalog only"),
@@ -128,8 +136,7 @@ def get_dewey_section(key):
     path = key.replace("internal:", "").replace("internal://", "")
     parts = path.split("/")
     for part in parts:
-        for section in ["000", "100", "200", "300", "400", "500", "600", "620",
-                        "650", "657", "690", "700", "800", "900", "910", "920", "930", "999"]:
+        for section in SECTION_CODES:
             if part.startswith(section):
                 return section
     return "INTERNAL"

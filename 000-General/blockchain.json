@@ -1203,6 +1203,3744 @@
       },
       "hash": "ff06dc3ef35a03aa688e6c21d1959465a43d0bf0517eb973b09a9dd397288ea1",
       "prev_hash": "c488849dd39353047458192f189cf69e516d2dffdfeddba5887d88b9fd31534e"
+    },
+    {
+      "index": 86,
+      "timestamp": "2026-09-21T02:00:20.424428",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-087",
+        "source": "BSC-SOW-2026-032.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-087.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "8e992b9031f2b6257cb2bc26628af86bb379098e8a101f2cb3ed4a72ca6e13fb",
+      "prev_hash": "ff06dc3ef35a03aa688e6c21d1959465a43d0bf0517eb973b09a9dd397288ea1"
+    },
+    {
+      "index": 87,
+      "timestamp": "2026-09-21T02:00:20.427030",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-088",
+        "source": "BSC-SOW-2026-048.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-088.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "36496189a3ce5dd2f9fb398f3868e4a9df78ce45b5f7eec31452f100341cf8fa",
+      "prev_hash": "8e992b9031f2b6257cb2bc26628af86bb379098e8a101f2cb3ed4a72ca6e13fb"
+    },
+    {
+      "index": 88,
+      "timestamp": "2026-09-21T02:00:20.429481",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-089",
+        "source": "BSC-SOW-2026-080.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-089.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "f319e657f332286cc8065fa6c588a822c2d1854cf587435c7488a2aea5bfc65a",
+      "prev_hash": "36496189a3ce5dd2f9fb398f3868e4a9df78ce45b5f7eec31452f100341cf8fa"
+    },
+    {
+      "index": 89,
+      "timestamp": "2026-09-21T02:00:20.432018",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-090",
+        "source": "BSC-SOW-2026-061.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-090.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "389b62d8b0251ae8ad1e44dd40e7efce508354c3d0fdebb86fe48dcee21b9e59",
+      "prev_hash": "f319e657f332286cc8065fa6c588a822c2d1854cf587435c7488a2aea5bfc65a"
+    },
+    {
+      "index": 90,
+      "timestamp": "2026-09-21T02:00:20.434646",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-091",
+        "source": "BSC-SOW-2026-081.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-091.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "6b8becff78f6c638a716985698c02639970c2a42e70e5db643ea1261165f1ee0",
+      "prev_hash": "389b62d8b0251ae8ad1e44dd40e7efce508354c3d0fdebb86fe48dcee21b9e59"
+    },
+    {
+      "index": 91,
+      "timestamp": "2026-09-21T02:00:20.444960",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-092",
+        "source": "BSC-SOW-2026-057.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-092.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "e49f59ad62ef198ee701e96a8825c2eced1376363e644a51d075f4e11f62e49b",
+      "prev_hash": "6b8becff78f6c638a716985698c02639970c2a42e70e5db643ea1261165f1ee0"
+    },
+    {
+      "index": 92,
+      "timestamp": "2026-09-21T02:00:20.455675",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-093",
+        "source": "BSC-SOW-2026-027.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-093.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "50a8cd1239594e0dd672d34d32c3aaf6b09e9bbc2c2ed9d56edb22959a8c9498",
+      "prev_hash": "e49f59ad62ef198ee701e96a8825c2eced1376363e644a51d075f4e11f62e49b"
+    },
+    {
+      "index": 93,
+      "timestamp": "2026-09-21T02:00:20.464377",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-094",
+        "source": "BSC-SOW-2026-067.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-094.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "321e588ed024901b18bac2b1fea8d9fbc8967a6b4877648f73d113bbea7a9361",
+      "prev_hash": "50a8cd1239594e0dd672d34d32c3aaf6b09e9bbc2c2ed9d56edb22959a8c9498"
+    },
+    {
+      "index": 94,
+      "timestamp": "2026-09-21T02:00:20.466830",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-095",
+        "source": "BSC-SOW-2026-005.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-095.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "f5eb2df3c3e9135503e86d41fa89cad7cabeb8a1498dc978a57f7ee10245903a",
+      "prev_hash": "321e588ed024901b18bac2b1fea8d9fbc8967a6b4877648f73d113bbea7a9361"
+    },
+    {
+      "index": 95,
+      "timestamp": "2026-09-21T02:00:20.469771",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-096",
+        "source": "BSC-SOW-2026-042.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-096.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "5a462fbb7802fd45120a48589f7ac98fafbc8a742b5302b2757ed9c5da09f1d4",
+      "prev_hash": "f5eb2df3c3e9135503e86d41fa89cad7cabeb8a1498dc978a57f7ee10245903a"
+    },
+    {
+      "index": 96,
+      "timestamp": "2026-09-21T02:00:20.474742",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-097",
+        "source": "BSC-SOW-2026-002.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-097.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "fd6a1b9e6b6b1da9a2935f46e58de2be8e4b2ce44b315b8b3dc286b351e43ff6",
+      "prev_hash": "5a462fbb7802fd45120a48589f7ac98fafbc8a742b5302b2757ed9c5da09f1d4"
+    },
+    {
+      "index": 97,
+      "timestamp": "2026-09-21T02:00:20.477604",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-098",
+        "source": "BSC-SOW-2026-026.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-098.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "8bfe92ac90edb590315b1f1146a97842bb4c2cb41d322740015d73fa10e2bc25",
+      "prev_hash": "fd6a1b9e6b6b1da9a2935f46e58de2be8e4b2ce44b315b8b3dc286b351e43ff6"
+    },
+    {
+      "index": 98,
+      "timestamp": "2026-09-21T02:00:20.480522",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-099",
+        "source": "BSC-SOW-2026-034.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-099.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "2867456e7fc710308553d1ff0d23e4645ed25d750e96b783f9ea6a4bf9be3fcd",
+      "prev_hash": "8bfe92ac90edb590315b1f1146a97842bb4c2cb41d322740015d73fa10e2bc25"
+    },
+    {
+      "index": 99,
+      "timestamp": "2026-09-21T02:00:20.483224",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-100",
+        "source": "8_to_10_Checklist.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-100.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "d541765242142b57c8a375c6978de859ff7e165a7bff667f5e0e8b5e24694b88",
+      "prev_hash": "2867456e7fc710308553d1ff0d23e4645ed25d750e96b783f9ea6a4bf9be3fcd"
+    },
+    {
+      "index": 100,
+      "timestamp": "2026-09-21T02:00:20.487166",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-101",
+        "source": "BSC-SOW-2026-018.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-101.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "1e0ba3123e3f19e86f544cfdda986d5a9bd9203595a97e55144e0e9aea054346",
+      "prev_hash": "d541765242142b57c8a375c6978de859ff7e165a7bff667f5e0e8b5e24694b88"
+    },
+    {
+      "index": 101,
+      "timestamp": "2026-09-21T02:00:20.490072",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-102",
+        "source": "BSC-SOW-2026-001.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-102.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "44050be752bc80bd1ea617c92d9c05cd048af970ce7e8d7b07494f796338bf7b",
+      "prev_hash": "1e0ba3123e3f19e86f544cfdda986d5a9bd9203595a97e55144e0e9aea054346"
+    },
+    {
+      "index": 102,
+      "timestamp": "2026-09-21T02:00:20.494846",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-103",
+        "source": "BSC-SOW-2026-033.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-103.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "4344e7c417c1bb9f19c646c54cc06ae0c9d8a6e470be9a28c75bd8f9ac39cc18",
+      "prev_hash": "44050be752bc80bd1ea617c92d9c05cd048af970ce7e8d7b07494f796338bf7b"
+    },
+    {
+      "index": 103,
+      "timestamp": "2026-09-21T02:00:20.499545",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-104",
+        "source": "BSC-SOW-2026-049.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-104.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "9029299004213b8fae84b99431d10bed191528398d3b3b273ae055353a5a050a",
+      "prev_hash": "4344e7c417c1bb9f19c646c54cc06ae0c9d8a6e470be9a28c75bd8f9ac39cc18"
+    },
+    {
+      "index": 104,
+      "timestamp": "2026-09-21T02:00:20.502777",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-105",
+        "source": "BSC-SOW-2026-076.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-105.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "b1cdd9197805ee4d2c65407c3c7a71d209c7148c4bb45502b6e56a53b22c86da",
+      "prev_hash": "9029299004213b8fae84b99431d10bed191528398d3b3b273ae055353a5a050a"
+    },
+    {
+      "index": 105,
+      "timestamp": "2026-09-21T02:00:20.506245",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-106",
+        "source": "BSC-SOW-2026-025.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-106.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "6bc0e690c29fb1d6d9a718616751544bd585c795b02a5f72bf7164a90cef1b28",
+      "prev_hash": "b1cdd9197805ee4d2c65407c3c7a71d209c7148c4bb45502b6e56a53b22c86da"
+    },
+    {
+      "index": 106,
+      "timestamp": "2026-09-21T02:00:20.509514",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-107",
+        "source": "BSC-SOW-2026-013.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-107.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "a09619f25d1a1c302bdcfea61ac88b13b16be4454b0235701d83b29c36ae1e48",
+      "prev_hash": "6bc0e690c29fb1d6d9a718616751544bd585c795b02a5f72bf7164a90cef1b28"
+    },
+    {
+      "index": 107,
+      "timestamp": "2026-09-21T02:00:20.512603",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-108",
+        "source": "BSC-SOW-2026-079.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-108.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "9ba061f39f7a3bf5bbfaba9a8a959841cb89a43b5c8c6e9ee3f080557831b938",
+      "prev_hash": "a09619f25d1a1c302bdcfea61ac88b13b16be4454b0235701d83b29c36ae1e48"
+    },
+    {
+      "index": 108,
+      "timestamp": "2026-09-21T02:00:20.517384",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-109",
+        "source": "BSC-SOW-2026-044.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-109.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "4fe75fe33f4e9880fe2de486dfd946510d1ea2cf4bc6f56c86a8531b0e26a06d",
+      "prev_hash": "9ba061f39f7a3bf5bbfaba9a8a959841cb89a43b5c8c6e9ee3f080557831b938"
+    },
+    {
+      "index": 109,
+      "timestamp": "2026-09-21T02:00:20.520524",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-110",
+        "source": "BSC-SOW-2026-083.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-110.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "77c5e8fa931fef9be398aac3eade10f081c272a6d6ae0ca573ffd3452590a88b",
+      "prev_hash": "4fe75fe33f4e9880fe2de486dfd946510d1ea2cf4bc6f56c86a8531b0e26a06d"
+    },
+    {
+      "index": 110,
+      "timestamp": "2026-09-21T02:00:20.523709",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-111",
+        "source": "BSC-SOW-2026-028.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-111.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "40b5f406a87e7cb30dcf71a3439ea43ff76d42851b06f8974547284b03821b5a",
+      "prev_hash": "77c5e8fa931fef9be398aac3eade10f081c272a6d6ae0ca573ffd3452590a88b"
+    },
+    {
+      "index": 111,
+      "timestamp": "2026-09-21T02:00:20.526917",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-112",
+        "source": "BSC-SOW-2026-040.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-112.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "a17bea463c6898f80836cbea973e9216c8ee21f44d4b4f5f49b5207a1b90e81c",
+      "prev_hash": "40b5f406a87e7cb30dcf71a3439ea43ff76d42851b06f8974547284b03821b5a"
+    },
+    {
+      "index": 112,
+      "timestamp": "2026-09-21T02:00:20.530099",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-113",
+        "source": "BSC-SOW-2026-059.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-113.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "b9be193bbf85df527cc419590259749c810d9d81fbdfb430382d667e70133e3f",
+      "prev_hash": "a17bea463c6898f80836cbea973e9216c8ee21f44d4b4f5f49b5207a1b90e81c"
+    },
+    {
+      "index": 113,
+      "timestamp": "2026-09-21T02:00:20.533395",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-114",
+        "source": "BSC-SOW-2026-085.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-114.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "af111863982013893692f4b514cb5533ec03d380ca7d8b00d526e6eecf77cafd",
+      "prev_hash": "b9be193bbf85df527cc419590259749c810d9d81fbdfb430382d667e70133e3f"
+    },
+    {
+      "index": 114,
+      "timestamp": "2026-09-21T02:00:20.537662",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-115",
+        "source": "BSC-SOW-2026-017.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-115.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "bc365661a8dc984acd5cf393589e07fef384304c1043d168814e848ceab155df",
+      "prev_hash": "af111863982013893692f4b514cb5533ec03d380ca7d8b00d526e6eecf77cafd"
+    },
+    {
+      "index": 115,
+      "timestamp": "2026-09-21T02:00:20.541070",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-116",
+        "source": "BSC-SOW-2026-007.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-116.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "ca1dcccf8d61591e5e1ecf07d98c4bf0b1e3ac27489764a7870299fff4168bbb",
+      "prev_hash": "bc365661a8dc984acd5cf393589e07fef384304c1043d168814e848ceab155df"
+    },
+    {
+      "index": 116,
+      "timestamp": "2026-09-21T02:00:20.544589",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-117",
+        "source": "BSC-SOW-2026-038.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-117.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "d64c112205b6bb6028b717754eba2ed29f1d2c84e5dec031c18a6a2a15925119",
+      "prev_hash": "ca1dcccf8d61591e5e1ecf07d98c4bf0b1e3ac27489764a7870299fff4168bbb"
+    },
+    {
+      "index": 117,
+      "timestamp": "2026-09-21T02:00:20.548303",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-118",
+        "source": "BSC-SOW-2026-008.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-118.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "9b3b95afe08d7ef1afcebe46de2b3589daae24e2badc4d3dc30fb6b6bd1ed155",
+      "prev_hash": "d64c112205b6bb6028b717754eba2ed29f1d2c84e5dec031c18a6a2a15925119"
+    },
+    {
+      "index": 118,
+      "timestamp": "2026-09-21T02:00:20.551640",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-119",
+        "source": "BSC-SOW-2026-058.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-119.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "afa8088c4af47d156e0e02e4bcc13a0b1977501402999f90f5fa4a71bcf213c1",
+      "prev_hash": "9b3b95afe08d7ef1afcebe46de2b3589daae24e2badc4d3dc30fb6b6bd1ed155"
+    },
+    {
+      "index": 119,
+      "timestamp": "2026-09-21T02:00:20.558418",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-120",
+        "source": "BSC-SOW-2026-077.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-120.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "d6d0efa72f925d27311c19a3f872a2bcdb4316d147537eb0c17c27be9c642e06",
+      "prev_hash": "afa8088c4af47d156e0e02e4bcc13a0b1977501402999f90f5fa4a71bcf213c1"
+    },
+    {
+      "index": 120,
+      "timestamp": "2026-09-21T02:00:20.565546",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-121",
+        "source": "BSC-SOW-2026-075.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-121.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "a8f87a1d857d71bda97ac4c9f9aa571b0bdbd5a64bd982671d1c6c83467ebfee",
+      "prev_hash": "d6d0efa72f925d27311c19a3f872a2bcdb4316d147537eb0c17c27be9c642e06"
+    },
+    {
+      "index": 121,
+      "timestamp": "2026-09-21T02:00:20.574409",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-122",
+        "source": "BSC-SOW-2026-063.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-122.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "f38138062dbc490308ee61672b6b1b9a43958a9064944ce9e90843b484cd8f97",
+      "prev_hash": "a8f87a1d857d71bda97ac4c9f9aa571b0bdbd5a64bd982671d1c6c83467ebfee"
+    },
+    {
+      "index": 122,
+      "timestamp": "2026-09-21T02:00:20.584386",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-123",
+        "source": "BSC-SOW-2026-054.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-123.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "e2b8e784627963ecf55319be319d07cbab14769648806f2516ac38fa3e5e670f",
+      "prev_hash": "f38138062dbc490308ee61672b6b1b9a43958a9064944ce9e90843b484cd8f97"
+    },
+    {
+      "index": 123,
+      "timestamp": "2026-09-21T02:00:20.589067",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-124",
+        "source": "BSC-SOW-2026-046.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-124.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "45bfe0a9bd79860ec23d455f6977e089b4185bc4acb45aed63b610de8fc43e31",
+      "prev_hash": "e2b8e784627963ecf55319be319d07cbab14769648806f2516ac38fa3e5e670f"
+    },
+    {
+      "index": 124,
+      "timestamp": "2026-09-21T02:00:20.596074",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-125",
+        "source": "BSC-SOW-2026-021.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-125.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "bca7ba9892a15ba9a4857b9fe17297f5bc7af7cb93d2a9322d2cd78fb55ff96f",
+      "prev_hash": "45bfe0a9bd79860ec23d455f6977e089b4185bc4acb45aed63b610de8fc43e31"
+    },
+    {
+      "index": 125,
+      "timestamp": "2026-09-21T02:00:20.599383",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-126",
+        "source": "BSC-SOW-2026-015.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-126.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "904158b804915e861699bb90b56a63c16853c61aa9d0c525a44359d871e616a9",
+      "prev_hash": "bca7ba9892a15ba9a4857b9fe17297f5bc7af7cb93d2a9322d2cd78fb55ff96f"
+    },
+    {
+      "index": 126,
+      "timestamp": "2026-09-21T02:00:20.606027",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-127",
+        "source": "BSC-SOW-2026-064.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-127.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "be81d56d7498bad387fc7a287e43c6f47f788d0c13ab6880c51d635ae09f366b",
+      "prev_hash": "904158b804915e861699bb90b56a63c16853c61aa9d0c525a44359d871e616a9"
+    },
+    {
+      "index": 127,
+      "timestamp": "2026-09-21T02:00:20.612704",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-128",
+        "source": "BSC-SOW-2026-053.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-128.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "67dae5d01ee8b7f96f75b00f143634e7476bfe60a9f1c9a99c818a73f95ce847",
+      "prev_hash": "be81d56d7498bad387fc7a287e43c6f47f788d0c13ab6880c51d635ae09f366b"
+    },
+    {
+      "index": 128,
+      "timestamp": "2026-09-21T02:00:20.619549",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-129",
+        "source": "BSC-SOW-2026-036.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-129.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "f61ac2137d30ddd44a37bfbce3f9d7fe8785ebbec5087830d265eed0ce1b8d40",
+      "prev_hash": "67dae5d01ee8b7f96f75b00f143634e7476bfe60a9f1c9a99c818a73f95ce847"
+    },
+    {
+      "index": 129,
+      "timestamp": "2026-09-21T02:00:20.622942",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-130",
+        "source": "BSC-SOW-2026-011.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-130.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "47bcb4a73abc1fd652555b9b369239c5cf87ebec5caf5341fe3e0a593414b842",
+      "prev_hash": "f61ac2137d30ddd44a37bfbce3f9d7fe8785ebbec5087830d265eed0ce1b8d40"
+    },
+    {
+      "index": 130,
+      "timestamp": "2026-09-21T02:00:20.629470",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-131",
+        "source": "BSC-SOW-2026-037.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-131.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "ae8fdb1aca976ddf2c56663f9ba6a586b57ddc1f9693d1a51a4e76c8a5eaaf70",
+      "prev_hash": "47bcb4a73abc1fd652555b9b369239c5cf87ebec5caf5341fe3e0a593414b842"
+    },
+    {
+      "index": 131,
+      "timestamp": "2026-09-21T02:00:20.641404",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-132",
+        "source": "BSC-SOW-2026-012.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-132.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "19bc9f60a1aff118bed413c0f996d54d214913f392a66896277d4288e8be5160",
+      "prev_hash": "ae8fdb1aca976ddf2c56663f9ba6a586b57ddc1f9693d1a51a4e76c8a5eaaf70"
+    },
+    {
+      "index": 132,
+      "timestamp": "2026-09-21T02:00:20.658228",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-133",
+        "source": "BSC-SOW-2026-056.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-133.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "152e30a2d011961adc44079c5b409b3f8029733f7a0f94bd04cf768209c7db9f",
+      "prev_hash": "19bc9f60a1aff118bed413c0f996d54d214913f392a66896277d4288e8be5160"
+    },
+    {
+      "index": 133,
+      "timestamp": "2026-09-21T02:00:20.661787",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-134",
+        "source": "BSC-SOW-2026-003.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-134.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "5807dedd60d2080626b136f92c1300e63502ca9298f1c5da874dbf16203dcfd0",
+      "prev_hash": "152e30a2d011961adc44079c5b409b3f8029733f7a0f94bd04cf768209c7db9f"
+    },
+    {
+      "index": 134,
+      "timestamp": "2026-09-21T02:00:20.669570",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-135",
+        "source": "BSC-SOW-2026-082.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-135.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "5e8c72a0debab408e5460ccb2049d72519ce0d53344cc95444963af94086d034",
+      "prev_hash": "5807dedd60d2080626b136f92c1300e63502ca9298f1c5da874dbf16203dcfd0"
+    },
+    {
+      "index": 135,
+      "timestamp": "2026-09-21T02:00:20.677511",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-136",
+        "source": "BSC-SOW-2026-016.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-136.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "f2938da0438615b9899cdf31d0a90374699f45cab1428c491d9d97a56adc7a90",
+      "prev_hash": "5e8c72a0debab408e5460ccb2049d72519ce0d53344cc95444963af94086d034"
+    },
+    {
+      "index": 136,
+      "timestamp": "2026-09-21T02:00:20.684443",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-137",
+        "source": "BSC-SOW-2026-009.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-137.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "dadb25148c54617d72bc6c8d14128c16d7aa0431b2a3b770689ed5a7241a3ca7",
+      "prev_hash": "f2938da0438615b9899cdf31d0a90374699f45cab1428c491d9d97a56adc7a90"
+    },
+    {
+      "index": 137,
+      "timestamp": "2026-09-21T02:00:20.698671",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-138",
+        "source": "BSC-SOW-2026-052.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-138.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "ca284c558fa93586584404266c49920cdb3d39e887fa9bd99b4fe43a0494eff7",
+      "prev_hash": "dadb25148c54617d72bc6c8d14128c16d7aa0431b2a3b770689ed5a7241a3ca7"
+    },
+    {
+      "index": 138,
+      "timestamp": "2026-09-21T02:00:20.707197",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-139",
+        "source": "BSC-SOW-2026-086.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-139.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "33853be4f5e1d4574fa81b69ad45d5d3f5ee98f859614893e54bb6990e3b2e61",
+      "prev_hash": "ca284c558fa93586584404266c49920cdb3d39e887fa9bd99b4fe43a0494eff7"
+    },
+    {
+      "index": 139,
+      "timestamp": "2026-09-21T02:00:20.719664",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-140",
+        "source": "BSC-SOW-2026-065.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-140.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "b6d7b57e15c735b55431d27e0e519b8f368bff49a7f046f7495291a7eccc3ad1",
+      "prev_hash": "33853be4f5e1d4574fa81b69ad45d5d3f5ee98f859614893e54bb6990e3b2e61"
+    },
+    {
+      "index": 140,
+      "timestamp": "2026-09-21T02:00:20.734442",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-141",
+        "source": "BSC-SOW-2026-010.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-141.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "5afba1eab3ab74045d0236c4e873e7decfd4b855b3713634e32c17f5cf9021b9",
+      "prev_hash": "b6d7b57e15c735b55431d27e0e519b8f368bff49a7f046f7495291a7eccc3ad1"
+    },
+    {
+      "index": 141,
+      "timestamp": "2026-09-21T02:00:20.737859",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-142",
+        "source": "BSC-SOW-2026-047.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-142.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "be06cb83340cc4625c18a087326b3d2f34551a5eef696c0d2b946ff508138ef8",
+      "prev_hash": "5afba1eab3ab74045d0236c4e873e7decfd4b855b3713634e32c17f5cf9021b9"
+    },
+    {
+      "index": 142,
+      "timestamp": "2026-09-21T02:00:20.751263",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-143",
+        "source": "BSC-SOW-2026-035.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-143.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "96bc664e82cf73333a095674cb51e8b4620762f71eea2b9018df050fa83e5d87",
+      "prev_hash": "be06cb83340cc4625c18a087326b3d2f34551a5eef696c0d2b946ff508138ef8"
+    },
+    {
+      "index": 143,
+      "timestamp": "2026-09-21T02:00:20.754915",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-144",
+        "source": "BSC-SOW-2026-045.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-144.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "637c1eb3fc895345749b9b78feff9fba5cc97afe36883a32e6497849033b785f",
+      "prev_hash": "96bc664e82cf73333a095674cb51e8b4620762f71eea2b9018df050fa83e5d87"
+    },
+    {
+      "index": 144,
+      "timestamp": "2026-09-21T02:00:20.764226",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-145",
+        "source": "BSC-SOW-2026-043.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-145.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "bbd271d322222ed0e954e26b3b0197aff15660861b8bd348735f2f1356b96417",
+      "prev_hash": "637c1eb3fc895345749b9b78feff9fba5cc97afe36883a32e6497849033b785f"
+    },
+    {
+      "index": 145,
+      "timestamp": "2026-09-21T02:00:20.771360",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-146",
+        "source": "BSC-SOW-2026-004.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-146.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "e851c3d064fb5c45f79e6c7a82e609b2e3b60e74ef52ac3b4b99a215d59da9a2",
+      "prev_hash": "bbd271d322222ed0e954e26b3b0197aff15660861b8bd348735f2f1356b96417"
+    },
+    {
+      "index": 146,
+      "timestamp": "2026-09-21T02:00:20.783133",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-147",
+        "source": "BSC-SOW-2026-060.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-147.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "4c67821d6e9ae31a10047e77d2bdf23f847d51532aeb99db08f906f25e76f743",
+      "prev_hash": "e851c3d064fb5c45f79e6c7a82e609b2e3b60e74ef52ac3b4b99a215d59da9a2"
+    },
+    {
+      "index": 147,
+      "timestamp": "2026-09-21T02:00:20.786586",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-148",
+        "source": "BSC-SOW-2026-029.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-148.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "8e6365d0a44da8ece662825fc8a7dcf59b09805f244e7b90338a12f3a5c126c2",
+      "prev_hash": "4c67821d6e9ae31a10047e77d2bdf23f847d51532aeb99db08f906f25e76f743"
+    },
+    {
+      "index": 148,
+      "timestamp": "2026-09-21T02:00:20.793979",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-149",
+        "source": "BSC-SOW-2026-071.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-149.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "efdc93c72fa72113a97ba3021f6ee6307a46e577dff91859726e87cfde923ee2",
+      "prev_hash": "8e6365d0a44da8ece662825fc8a7dcf59b09805f244e7b90338a12f3a5c126c2"
+    },
+    {
+      "index": 149,
+      "timestamp": "2026-09-21T02:00:20.797888",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-150",
+        "source": "BSC-SOW-2026-023.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-150.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "04bcfcdcb9ed37110e420f3d85d353b97d2a2af6309e1af4de04d758da57943f",
+      "prev_hash": "efdc93c72fa72113a97ba3021f6ee6307a46e577dff91859726e87cfde923ee2"
+    },
+    {
+      "index": 150,
+      "timestamp": "2026-09-21T02:00:20.811841",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-151",
+        "source": "BSC-SOW-2026-041.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-151.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "5d81b37675dd377b94e7cb65192f21f95dd578cc418969637fab442fea0e173b",
+      "prev_hash": "04bcfcdcb9ed37110e420f3d85d353b97d2a2af6309e1af4de04d758da57943f"
+    },
+    {
+      "index": 151,
+      "timestamp": "2026-09-21T02:00:20.819849",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-152",
+        "source": "INDEX.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-152.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "bdb471012d3bd799f05ce6630535c350d158f711ff355d72db0fc4db40845403",
+      "prev_hash": "5d81b37675dd377b94e7cb65192f21f95dd578cc418969637fab442fea0e173b"
+    },
+    {
+      "index": 152,
+      "timestamp": "2026-09-21T02:00:20.823387",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-153",
+        "source": "BSC-SOW-2026-069.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-153.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "9b1d03e61441406199b25a109dc8a9aa4f0fd7c3b1b19f36f6ac8074f3b6d1ce",
+      "prev_hash": "bdb471012d3bd799f05ce6630535c350d158f711ff355d72db0fc4db40845403"
+    },
+    {
+      "index": 153,
+      "timestamp": "2026-09-21T02:00:20.830631",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-154",
+        "source": "BSC-SOW-2026-039.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-154.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "d99b3efafc9158e050b88ad4ad5889dc6cf997dd7e7f638bbf8cc7979157628b",
+      "prev_hash": "9b1d03e61441406199b25a109dc8a9aa4f0fd7c3b1b19f36f6ac8074f3b6d1ce"
+    },
+    {
+      "index": 154,
+      "timestamp": "2026-09-21T02:00:20.842452",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-155",
+        "source": "BSC-SOW-2026-072.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-155.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "bfdf62c49e164d2b7478a6f7f5020b15dd1076df885746b439e7f406a5a4e539",
+      "prev_hash": "d99b3efafc9158e050b88ad4ad5889dc6cf997dd7e7f638bbf8cc7979157628b"
+    },
+    {
+      "index": 155,
+      "timestamp": "2026-09-21T02:00:20.846353",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-156",
+        "source": "BSC-SOW-2026-062.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-156.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "7d8e92b7acf4badfea444dd07e3d2b9619d0c2ba5dd8f55c52271bbe044e4656",
+      "prev_hash": "bfdf62c49e164d2b7478a6f7f5020b15dd1076df885746b439e7f406a5a4e539"
+    },
+    {
+      "index": 156,
+      "timestamp": "2026-09-21T02:00:20.854078",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-157",
+        "source": "BSC-SOW-2026-019.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-157.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "9dda89b4050dc8e44fe74a9aca9e160dfc1841d4bffb360f663f42f5914783a4",
+      "prev_hash": "7d8e92b7acf4badfea444dd07e3d2b9619d0c2ba5dd8f55c52271bbe044e4656"
+    },
+    {
+      "index": 157,
+      "timestamp": "2026-09-21T02:00:20.861571",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-158",
+        "source": "BSC-SOW-2026-051.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-158.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "90c638323964528e756b25afa761ed44538a36f43c4771088d34e721f55a7c21",
+      "prev_hash": "9dda89b4050dc8e44fe74a9aca9e160dfc1841d4bffb360f663f42f5914783a4"
+    },
+    {
+      "index": 158,
+      "timestamp": "2026-09-21T02:00:20.869359",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-159",
+        "source": "BSC-SOW-2026-055.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-159.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "e3891b25f5d05dffadd4946bbea25c7d07a4d228f8c2c78959cb52f26b706f3b",
+      "prev_hash": "90c638323964528e756b25afa761ed44538a36f43c4771088d34e721f55a7c21"
+    },
+    {
+      "index": 159,
+      "timestamp": "2026-09-21T02:00:20.873370",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-160",
+        "source": "BSC-SOW-2026-068.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-160.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "6a82054479a498a4bd304dec1f20584dd3ca8569e4fd8b29bd5a38c51ea85c00",
+      "prev_hash": "e3891b25f5d05dffadd4946bbea25c7d07a4d228f8c2c78959cb52f26b706f3b"
+    },
+    {
+      "index": 160,
+      "timestamp": "2026-09-21T02:00:20.880624",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-161",
+        "source": "BSC-SOW-2026-084.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-161.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "0929b3b46deaaf37bb6a4d3a5234140fdb00fdb3982781a37c644e0ddffdc254",
+      "prev_hash": "6a82054479a498a4bd304dec1f20584dd3ca8569e4fd8b29bd5a38c51ea85c00"
+    },
+    {
+      "index": 161,
+      "timestamp": "2026-09-21T02:00:20.888092",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-162",
+        "source": "BSC-SOW-2026-020.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-162.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "1e89c1c202e9b00d2d8a5fd1bdfdfa415e40ace1dc549ffe18aa085a3e828574",
+      "prev_hash": "0929b3b46deaaf37bb6a4d3a5234140fdb00fdb3982781a37c644e0ddffdc254"
+    },
+    {
+      "index": 162,
+      "timestamp": "2026-09-21T02:00:20.895427",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-163",
+        "source": "BSC-SOW-2026-024.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-163.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "1ad618b1432233a6c28cd0032d65d9f27e8622d993bd7c9534a4d1c6f3b5bce3",
+      "prev_hash": "1e89c1c202e9b00d2d8a5fd1bdfdfa415e40ace1dc549ffe18aa085a3e828574"
+    },
+    {
+      "index": 163,
+      "timestamp": "2026-09-21T02:00:20.902947",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-164",
+        "source": "BSC-SOW-2026-031.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-164.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "0852a96015f56d23c389c0fe10c8a98ca30d6ed46a3802f0b7cc451c0963f1be",
+      "prev_hash": "1ad618b1432233a6c28cd0032d65d9f27e8622d993bd7c9534a4d1c6f3b5bce3"
+    },
+    {
+      "index": 164,
+      "timestamp": "2026-09-21T02:00:20.907129",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-165",
+        "source": "BSC-SOW-2026-073.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-165.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "c7ae08381dffd87c3c147e9af8d3ae754c86e793ed94daf33d924ef281151f53",
+      "prev_hash": "0852a96015f56d23c389c0fe10c8a98ca30d6ed46a3802f0b7cc451c0963f1be"
+    },
+    {
+      "index": 165,
+      "timestamp": "2026-09-21T02:00:20.911224",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-166",
+        "source": "BSC-SOW-2026-006.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-166.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "13365504310428f1d74c5b1e81e21eafe0d58f8bca77b1bd2c17fb909b1be24f",
+      "prev_hash": "c7ae08381dffd87c3c147e9af8d3ae754c86e793ed94daf33d924ef281151f53"
+    },
+    {
+      "index": 166,
+      "timestamp": "2026-09-21T02:00:20.915347",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-167",
+        "source": "BSC-SOW-2026-030.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-167.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "0afe2f8f9f47ea027e5dc1ae4bca56542c83f11c214bf13a3038086bb0a13e65",
+      "prev_hash": "13365504310428f1d74c5b1e81e21eafe0d58f8bca77b1bd2c17fb909b1be24f"
+    },
+    {
+      "index": 167,
+      "timestamp": "2026-09-21T02:00:20.919505",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-168",
+        "source": "BSC-SOW-2026-070.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-168.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "3b9c73c648dad2fca0bf0a94800af8f29a577d20082b2f69d36eac2f37da847e",
+      "prev_hash": "0afe2f8f9f47ea027e5dc1ae4bca56542c83f11c214bf13a3038086bb0a13e65"
+    },
+    {
+      "index": 168,
+      "timestamp": "2026-09-21T02:00:20.923757",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-169",
+        "source": "BSC-SOW-2026-014.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-169.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "4eb61b765ce5215e0b01c08a0da8c58bc804330d2ddc933a954bb14d6c0280c9",
+      "prev_hash": "3b9c73c648dad2fca0bf0a94800af8f29a577d20082b2f69d36eac2f37da847e"
+    },
+    {
+      "index": 169,
+      "timestamp": "2026-09-21T02:00:20.929355",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-170",
+        "source": "BSC-SOW-2026-074.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-170.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "a69135ee7e453be707c033a30a373b1ad3e89ba87010ca1e3652578c2a1145e4",
+      "prev_hash": "4eb61b765ce5215e0b01c08a0da8c58bc804330d2ddc933a954bb14d6c0280c9"
+    },
+    {
+      "index": 170,
+      "timestamp": "2026-09-21T02:00:20.936655",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-171",
+        "source": "BSC-SOW-2026-066.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-171.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "748273a8c7bbcc0ee77740a82993d57f2c7e530fe529699d71b3b77d4280937a",
+      "prev_hash": "a69135ee7e453be707c033a30a373b1ad3e89ba87010ca1e3652578c2a1145e4"
+    },
+    {
+      "index": 171,
+      "timestamp": "2026-09-21T02:00:20.946634",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-172",
+        "source": "BSC-SOW-2026-022.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-172.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "85496dd5ce5c061abc182bae613d03a4ef04c932d69f3a6089dac55e6f71772f",
+      "prev_hash": "748273a8c7bbcc0ee77740a82993d57f2c7e530fe529699d71b3b77d4280937a"
+    },
+    {
+      "index": 172,
+      "timestamp": "2026-09-21T02:00:20.955211",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-173",
+        "source": "BSC-SOW-2026-050.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-173.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "2559983066b067e7f3ee4ee992c4020de16091e8f43ae1a7bdc71434bf5f1802",
+      "prev_hash": "85496dd5ce5c061abc182bae613d03a4ef04c932d69f3a6089dac55e6f71772f"
+    },
+    {
+      "index": 173,
+      "timestamp": "2026-09-21T02:00:20.963602",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-174",
+        "source": "BSC-SOW-2026-078.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-174.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "1507d51e181c5a044a535dc63045f2f1e31bb88ed08fcbeaaebae621c1c351fd",
+      "prev_hash": "2559983066b067e7f3ee4ee992c4020de16091e8f43ae1a7bdc71434bf5f1802"
+    },
+    {
+      "index": 174,
+      "timestamp": "2026-09-22T02:00:28.852257",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-175",
+        "source": "BSC-SOW-2026-132.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-175.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "a9925295b0794e30f45047cc7c54284be72453baefdd93a31a95f7c294cb6d78",
+      "prev_hash": "1507d51e181c5a044a535dc63045f2f1e31bb88ed08fcbeaaebae621c1c351fd"
+    },
+    {
+      "index": 175,
+      "timestamp": "2026-09-22T02:00:28.856497",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-176",
+        "source": "BSC-SOW-2026-097.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-176.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "27607deb9094b421cb1df1845c0d6c8ab4b662c5910afd567180d89314b2ecde",
+      "prev_hash": "a9925295b0794e30f45047cc7c54284be72453baefdd93a31a95f7c294cb6d78"
+    },
+    {
+      "index": 176,
+      "timestamp": "2026-09-22T02:00:28.864158",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-177",
+        "source": "BSC-SOW-2026-098.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-177.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "e9592a518c606ba9f12d721c7d71dce513fc52557ecce3adecdc0bcbc7fef502",
+      "prev_hash": "27607deb9094b421cb1df1845c0d6c8ab4b662c5910afd567180d89314b2ecde"
+    },
+    {
+      "index": 177,
+      "timestamp": "2026-09-22T02:00:28.872351",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-178",
+        "source": "BSC-SOW-2026-032.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-178.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "00fa9ceb19357effce7c0e5610eabe756e75d351db3f49c39c0c6fd6d873cc16",
+      "prev_hash": "e9592a518c606ba9f12d721c7d71dce513fc52557ecce3adecdc0bcbc7fef502"
+    },
+    {
+      "index": 178,
+      "timestamp": "2026-09-22T02:00:28.876566",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-179",
+        "source": "BSC-SOW-2026-048.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-179.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "a007854ed96b47483a921bcc55fd6bba25ec26981fd12e53b3fb18cecea50e9b",
+      "prev_hash": "00fa9ceb19357effce7c0e5610eabe756e75d351db3f49c39c0c6fd6d873cc16"
+    },
+    {
+      "index": 179,
+      "timestamp": "2026-09-22T02:00:28.881412",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-180",
+        "source": "BSC-SOW-2026-080.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-180.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "ef2a4bbf2eb3ab70b2c567fa184bc34deb1c1fb6da8301918e29b692b8dd456e",
+      "prev_hash": "a007854ed96b47483a921bcc55fd6bba25ec26981fd12e53b3fb18cecea50e9b"
+    },
+    {
+      "index": 180,
+      "timestamp": "2026-09-22T02:00:28.890890",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-181",
+        "source": "BSC-SOW-2026-112.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-181.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "f4a5327dbecbde1bea1b426f905a66524ee52905bf25ce046671f510045610c0",
+      "prev_hash": "ef2a4bbf2eb3ab70b2c567fa184bc34deb1c1fb6da8301918e29b692b8dd456e"
+    },
+    {
+      "index": 181,
+      "timestamp": "2026-09-22T02:00:28.895143",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-182",
+        "source": "BSC-SOW-2026-172.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-182.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "ec215ef155d2ffa7b04757b181c425023b082d018fa65136fb2041ce6bb3c0ab",
+      "prev_hash": "f4a5327dbecbde1bea1b426f905a66524ee52905bf25ce046671f510045610c0"
+    },
+    {
+      "index": 182,
+      "timestamp": "2026-09-22T02:00:28.905871",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-183",
+        "source": "BSC-SOW-2026-061.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-183.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "84f8d96deda02e5863d486d933d1ed7e155f6bfc55fc83989a85923e49f44d6d",
+      "prev_hash": "ec215ef155d2ffa7b04757b181c425023b082d018fa65136fb2041ce6bb3c0ab"
+    },
+    {
+      "index": 183,
+      "timestamp": "2026-09-22T02:00:28.910772",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-184",
+        "source": "BSC-SOW-2026-081.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-184.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "c6739029cef7393d3ef01c0accf33333da1b5cce7a77e8ca7c64905579619f92",
+      "prev_hash": "84f8d96deda02e5863d486d933d1ed7e155f6bfc55fc83989a85923e49f44d6d"
+    },
+    {
+      "index": 184,
+      "timestamp": "2026-09-22T02:00:28.918848",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-185",
+        "source": "BSC-SOW-2026-129.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-185.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "b9f8662f47f3bc9387b6110bbe5f42c2d77d7c508a06659995cb49f05e2341ae",
+      "prev_hash": "c6739029cef7393d3ef01c0accf33333da1b5cce7a77e8ca7c64905579619f92"
+    },
+    {
+      "index": 185,
+      "timestamp": "2026-09-22T02:00:28.930749",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-186",
+        "source": "BSC-SOW-2026-145.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-186.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "ef6a41fe532bddf66f036faf85a6921777ebcdc41c67ba816c94d33099e56a18",
+      "prev_hash": "b9f8662f47f3bc9387b6110bbe5f42c2d77d7c508a06659995cb49f05e2341ae"
+    },
+    {
+      "index": 186,
+      "timestamp": "2026-09-22T02:00:28.946658",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-187",
+        "source": "BSC-SOW-2026-057.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-187.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "8e2b53ecb1843feae9c66590b28384a6aed3e878b2fd01b1e90d1b52b4e1461f",
+      "prev_hash": "ef6a41fe532bddf66f036faf85a6921777ebcdc41c67ba816c94d33099e56a18"
+    },
+    {
+      "index": 187,
+      "timestamp": "2026-09-22T02:00:28.953550",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-188",
+        "source": "Full_Automation_Stack.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-188.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "216c058cca38421cfa6f349fffb8b27e578cb42b457a55d4b857e6d9c93b7759",
+      "prev_hash": "8e2b53ecb1843feae9c66590b28384a6aed3e878b2fd01b1e90d1b52b4e1461f"
+    },
+    {
+      "index": 188,
+      "timestamp": "2026-09-22T02:00:28.965050",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-189",
+        "source": "BSC-SOW-2026-027.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-189.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "dabe369162eb3b8dc05ad13cf27535a577fbae35ed7036e764e66deeee64980b",
+      "prev_hash": "216c058cca38421cfa6f349fffb8b27e578cb42b457a55d4b857e6d9c93b7759"
+    },
+    {
+      "index": 189,
+      "timestamp": "2026-09-22T02:00:28.970899",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-190",
+        "source": "BSC-SOW-2026-134.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-190.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "f27f86f9d3eb9ccab8cc4430ab33fa28a283a7b99cc65dd1a85c27c49f8aca9e",
+      "prev_hash": "dabe369162eb3b8dc05ad13cf27535a577fbae35ed7036e764e66deeee64980b"
+    },
+    {
+      "index": 190,
+      "timestamp": "2026-09-22T02:00:28.977582",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-191",
+        "source": "BSC-SOW-2026-113.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-191.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "589e28a620c90fb626dec50ba243664e043769b47cd04a67db434e52b247ca0e",
+      "prev_hash": "f27f86f9d3eb9ccab8cc4430ab33fa28a283a7b99cc65dd1a85c27c49f8aca9e"
+    },
+    {
+      "index": 191,
+      "timestamp": "2026-09-22T02:00:28.986785",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-192",
+        "source": "BSC-SOW-2026-139.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-192.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "007095a4609e56f34052d5f2942e4ad59ae8d1a36b2800201a2d91b685133cec",
+      "prev_hash": "589e28a620c90fb626dec50ba243664e043769b47cd04a67db434e52b247ca0e"
+    },
+    {
+      "index": 192,
+      "timestamp": "2026-09-22T02:00:28.994405",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-193",
+        "source": "BSC-SOW-2026-159.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-193.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "b882c4679c810f715278106a63a1b7cd51ce30aec7aa2212c03a44f665ae5a42",
+      "prev_hash": "007095a4609e56f34052d5f2942e4ad59ae8d1a36b2800201a2d91b685133cec"
+    },
+    {
+      "index": 193,
+      "timestamp": "2026-09-22T02:00:29.003317",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-194",
+        "source": "BSC-SOW-2026-067.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-194.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "f53e893543a5be148ced4df665a3823bcd021ba9a65c125a6bcac85903ea6509",
+      "prev_hash": "b882c4679c810f715278106a63a1b7cd51ce30aec7aa2212c03a44f665ae5a42"
+    },
+    {
+      "index": 194,
+      "timestamp": "2026-09-22T02:00:29.008355",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-195",
+        "source": "BSC-SOW-2026-005.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-195.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "8abbeb3f98dbf938b18186078fe437eee4c663f94076f30b24a620dc50c6830c",
+      "prev_hash": "f53e893543a5be148ced4df665a3823bcd021ba9a65c125a6bcac85903ea6509"
+    },
+    {
+      "index": 195,
+      "timestamp": "2026-09-22T02:00:29.013334",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-196",
+        "source": "BSC-SOW-2026-042.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-196.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "63fc93e2e24d9b399f5fe16f943844e093e77c1d31f4a785365704ffdc9dacee",
+      "prev_hash": "8abbeb3f98dbf938b18186078fe437eee4c663f94076f30b24a620dc50c6830c"
+    },
+    {
+      "index": 196,
+      "timestamp": "2026-09-22T02:00:29.036441",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-197",
+        "source": "BSC-SOW-2026-002.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-197.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "09ea061eade7c8239e5ca57043fcc56db37d7567ec895e8b16aa38ab9db6c01c",
+      "prev_hash": "63fc93e2e24d9b399f5fe16f943844e093e77c1d31f4a785365704ffdc9dacee"
+    },
+    {
+      "index": 197,
+      "timestamp": "2026-09-22T02:00:29.052194",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-198",
+        "source": "BSC-SOW-2026-026.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-198.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "c81dbb4eeba4224a656840c7ee09d89b4031dc35b7573f77a313870e38c2ed6a",
+      "prev_hash": "09ea061eade7c8239e5ca57043fcc56db37d7567ec895e8b16aa38ab9db6c01c"
+    },
+    {
+      "index": 198,
+      "timestamp": "2026-09-22T02:00:29.065966",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-199",
+        "source": "BSC-SOW-2026-034.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-199.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "e3f67b9741d64d6c404ee97663370ee7e21cf2ade93bcf1ff5311aa06389dcc4",
+      "prev_hash": "c81dbb4eeba4224a656840c7ee09d89b4031dc35b7573f77a313870e38c2ed6a"
+    },
+    {
+      "index": 199,
+      "timestamp": "2026-09-22T02:00:29.071448",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-200",
+        "source": "8_to_10_Checklist.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-200.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "bf5d5833d3c5c95d71b1e34efbce446d9feb8437571df28d0282f442f6579841",
+      "prev_hash": "e3f67b9741d64d6c404ee97663370ee7e21cf2ade93bcf1ff5311aa06389dcc4"
+    },
+    {
+      "index": 200,
+      "timestamp": "2026-09-22T02:00:29.083374",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-201",
+        "source": "BSC-SOW-2026-018.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-201.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "268d9e57ad9bb1e6dba1d5679d99e0e60b74f68596651d082f9c9ee31134564d",
+      "prev_hash": "bf5d5833d3c5c95d71b1e34efbce446d9feb8437571df28d0282f442f6579841"
+    },
+    {
+      "index": 201,
+      "timestamp": "2026-09-22T02:00:29.092442",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-202",
+        "source": "BSC-SOW-2026-001.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-202.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "6817d97555fd2051a733ce457be6f655f333b3d8eea4105a7c87be0ccbb49620",
+      "prev_hash": "268d9e57ad9bb1e6dba1d5679d99e0e60b74f68596651d082f9c9ee31134564d"
+    },
+    {
+      "index": 202,
+      "timestamp": "2026-09-22T02:00:29.100953",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-203",
+        "source": "BSC-SOW-2026-033.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-203.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "9058919426657f7bed4040971113df4662a141f83877fb9709be5506e9aa53ee",
+      "prev_hash": "6817d97555fd2051a733ce457be6f655f333b3d8eea4105a7c87be0ccbb49620"
+    },
+    {
+      "index": 203,
+      "timestamp": "2026-09-22T02:00:29.106209",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-204",
+        "source": "BSC-SOW-2026-049.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-204.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "df1450ed50a227e03a9ddce87ef770338225249c0401e96095c818237dcf6eec",
+      "prev_hash": "9058919426657f7bed4040971113df4662a141f83877fb9709be5506e9aa53ee"
+    },
+    {
+      "index": 204,
+      "timestamp": "2026-09-22T02:00:29.115171",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-205",
+        "source": "BSC-SOW-2026-076.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-205.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "77114731dad3a158212993cd8ffc5e5c222f6b7a320307e91e4d744bf5e72ffc",
+      "prev_hash": "df1450ed50a227e03a9ddce87ef770338225249c0401e96095c818237dcf6eec"
+    },
+    {
+      "index": 205,
+      "timestamp": "2026-09-22T02:00:29.124018",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-206",
+        "source": "BSC-SOW-2026-025.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-206.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "089a2b0c5fc2717cc46326a854f48416f270d5125fa49a0c2c584ac8dd6a7891",
+      "prev_hash": "77114731dad3a158212993cd8ffc5e5c222f6b7a320307e91e4d744bf5e72ffc"
+    },
+    {
+      "index": 206,
+      "timestamp": "2026-09-22T02:00:29.132539",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-207",
+        "source": "BSC-SOW-2026-094.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-207.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "1d35e43eb4d1b5daebe0d797a6e7977f8d32889181b55cc56ee3669784cb62ae",
+      "prev_hash": "089a2b0c5fc2717cc46326a854f48416f270d5125fa49a0c2c584ac8dd6a7891"
+    },
+    {
+      "index": 207,
+      "timestamp": "2026-09-22T02:00:29.142178",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-208",
+        "source": "BSC-SOW-2026-142.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-208.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "5fa97725b2a3b6afc351245fc0482a1d5172495e884824dab994029063829f46",
+      "prev_hash": "1d35e43eb4d1b5daebe0d797a6e7977f8d32889181b55cc56ee3669784cb62ae"
+    },
+    {
+      "index": 208,
+      "timestamp": "2026-09-22T02:00:29.150810",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-209",
+        "source": "BSC-SOW-2026-091.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-209.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "f88afc9ad09f2fb0effaa57e4a04a1c1148b88e019650236f657683bc10d60da",
+      "prev_hash": "5fa97725b2a3b6afc351245fc0482a1d5172495e884824dab994029063829f46"
+    },
+    {
+      "index": 209,
+      "timestamp": "2026-09-22T02:00:29.159836",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-210",
+        "source": "BSC-SOW-2026-127.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-210.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "f11b2f64b614ad68773bc8a97814856d4025327dd736976f15628b80de258077",
+      "prev_hash": "f88afc9ad09f2fb0effaa57e4a04a1c1148b88e019650236f657683bc10d60da"
+    },
+    {
+      "index": 210,
+      "timestamp": "2026-09-22T02:00:29.175659",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-211",
+        "source": "BSC-SOW-2026-013.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-211.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "3775cc968821f26950d8de45eb912a7af5910c07f6a5a1d9fafde2871601186c",
+      "prev_hash": "f11b2f64b614ad68773bc8a97814856d4025327dd736976f15628b80de258077"
+    },
+    {
+      "index": 211,
+      "timestamp": "2026-09-22T02:00:29.185134",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-212",
+        "source": "BSC-SOW-2026-151.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-212.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "8b151f211b27b908ca7eaa092ce5c8931c9356a3b1db67e0552d49eb447dd625",
+      "prev_hash": "3775cc968821f26950d8de45eb912a7af5910c07f6a5a1d9fafde2871601186c"
+    },
+    {
+      "index": 212,
+      "timestamp": "2026-09-22T02:00:29.194445",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-213",
+        "source": "BSC-SOW-2026-079.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-213.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "d083e3344a1142f81115be3f3f486b102f5f322753f1c7cb8153af75251e4760",
+      "prev_hash": "8b151f211b27b908ca7eaa092ce5c8931c9356a3b1db67e0552d49eb447dd625"
+    },
+    {
+      "index": 213,
+      "timestamp": "2026-09-22T02:00:29.204171",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-214",
+        "source": "BSC-SOW-2026-044.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-214.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "84538bf49751522dd2c185dd44afe61346a4fd7855aeec385b5824f1d5adc745",
+      "prev_hash": "d083e3344a1142f81115be3f3f486b102f5f322753f1c7cb8153af75251e4760"
+    },
+    {
+      "index": 214,
+      "timestamp": "2026-09-22T02:00:29.212846",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-215",
+        "source": "BSC-SOW-2026-083.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-215.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "b0245772a948cce4059774e5140319d81efacf5565bd012f5d53019c183866b0",
+      "prev_hash": "84538bf49751522dd2c185dd44afe61346a4fd7855aeec385b5824f1d5adc745"
+    },
+    {
+      "index": 215,
+      "timestamp": "2026-09-22T02:00:29.224631",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-216",
+        "source": "BSC-SOW-2026-028.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-216.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "a63461e60a29b8140db05a7ad27cedf124afbae8fda2c3acde5c89b86afb2129",
+      "prev_hash": "b0245772a948cce4059774e5140319d81efacf5565bd012f5d53019c183866b0"
+    },
+    {
+      "index": 216,
+      "timestamp": "2026-09-22T02:00:29.238473",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-217",
+        "source": "BSC-SOW-2026-040.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-217.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "e71dd84880d5d413ec0cca29825b0a37c768e6457a41e0e5366c3a0c5c1aaf4f",
+      "prev_hash": "a63461e60a29b8140db05a7ad27cedf124afbae8fda2c3acde5c89b86afb2129"
+    },
+    {
+      "index": 217,
+      "timestamp": "2026-09-22T02:00:29.248399",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-218",
+        "source": "BSC-SOW-2026-090.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-218.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "e4860c9b47242bb24916174242e67a4930829da1c2d3de834afd2adb8b88479c",
+      "prev_hash": "e71dd84880d5d413ec0cca29825b0a37c768e6457a41e0e5366c3a0c5c1aaf4f"
+    },
+    {
+      "index": 218,
+      "timestamp": "2026-09-22T02:00:29.259002",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-219",
+        "source": "BSC-SOW-2026-104.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-219.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "9a2ecf5d5ca36868065e35403ab6e303f145aafcf227cef49168ad21d3684da8",
+      "prev_hash": "e4860c9b47242bb24916174242e67a4930829da1c2d3de834afd2adb8b88479c"
+    },
+    {
+      "index": 219,
+      "timestamp": "2026-09-22T02:00:29.268893",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-220",
+        "source": "BSC-SOW-2026-059.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-220.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "f5ec192fccd98418ac304f70ec577f1d9d3974840c98624c78cddbe713596049",
+      "prev_hash": "9a2ecf5d5ca36868065e35403ab6e303f145aafcf227cef49168ad21d3684da8"
+    },
+    {
+      "index": 220,
+      "timestamp": "2026-09-22T02:00:29.282793",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-221",
+        "source": "BSC-SOW-2026-167.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-221.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "2c3190513bcbd42a322c7bc66c749915b73971105a4ba0766e281f25779747e0",
+      "prev_hash": "f5ec192fccd98418ac304f70ec577f1d9d3974840c98624c78cddbe713596049"
+    },
+    {
+      "index": 221,
+      "timestamp": "2026-09-22T02:00:29.290417",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-222",
+        "source": "BSC-SOW-2026-163.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-222.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "4b26d3f001dcc6c6f12d66be24610af9987cdd57edd0953c0f0b1bacf2b011ff",
+      "prev_hash": "2c3190513bcbd42a322c7bc66c749915b73971105a4ba0766e281f25779747e0"
+    },
+    {
+      "index": 222,
+      "timestamp": "2026-09-22T02:00:29.296215",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-223",
+        "source": "BSC-SOW-2026-085.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-223.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "41fe36b1514bd528eb473974bab3b7da9daa18a463df70378103c9d70446b404",
+      "prev_hash": "4b26d3f001dcc6c6f12d66be24610af9987cdd57edd0953c0f0b1bacf2b011ff"
+    },
+    {
+      "index": 223,
+      "timestamp": "2026-09-22T02:00:29.303494",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-224",
+        "source": "BSC-SOW-2026-116.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-224.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "7e834eb0a8f5f7a8c1949387643e58c9d8315a16d3991f4f867233551dac537a",
+      "prev_hash": "41fe36b1514bd528eb473974bab3b7da9daa18a463df70378103c9d70446b404"
+    },
+    {
+      "index": 224,
+      "timestamp": "2026-09-22T02:00:29.310363",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-225",
+        "source": "BSC-SOW-2026-117.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-225.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "ddde839328459903a67a8e2703e6e8f86220c28a4505676a8f054a14cd0a085f",
+      "prev_hash": "7e834eb0a8f5f7a8c1949387643e58c9d8315a16d3991f4f867233551dac537a"
+    },
+    {
+      "index": 225,
+      "timestamp": "2026-09-22T02:00:29.316913",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-226",
+        "source": "BSC-SOW-2026-143.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-226.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "6627ba5fa5d99d6c252e064978c76f26307e94efd6fecf2221c0027d9335e7e5",
+      "prev_hash": "ddde839328459903a67a8e2703e6e8f86220c28a4505676a8f054a14cd0a085f"
+    },
+    {
+      "index": 226,
+      "timestamp": "2026-09-22T02:00:29.322615",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-227",
+        "source": "BSC-SOW-2026-122.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-227.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "c5a9d157c1dfd894f73888429b64a5b73cfcacac00dc0540190036b0588b0bfb",
+      "prev_hash": "6627ba5fa5d99d6c252e064978c76f26307e94efd6fecf2221c0027d9335e7e5"
+    },
+    {
+      "index": 227,
+      "timestamp": "2026-09-22T02:00:29.349455",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-228",
+        "source": "BSC-SOW-2026-017.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-228.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "1b3d824798b16c43598188160047d5fa05e03bf1895f0f9f40245efa71f35b74",
+      "prev_hash": "c5a9d157c1dfd894f73888429b64a5b73cfcacac00dc0540190036b0588b0bfb"
+    },
+    {
+      "index": 228,
+      "timestamp": "2026-09-22T02:00:29.360667",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-229",
+        "source": "BSC-SOW-2026-130.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-229.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "f48037852be1765e5714b5817439c66eef78e6ada91e37292e86bca634fd0f32",
+      "prev_hash": "1b3d824798b16c43598188160047d5fa05e03bf1895f0f9f40245efa71f35b74"
+    },
+    {
+      "index": 229,
+      "timestamp": "2026-09-22T02:00:29.393659",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-230",
+        "source": "BSC-SOW-2026-007.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-230.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "4409b4277d43c8332f78b7a4e2e47a878209674de72d00f26fae71c7a36ba13b",
+      "prev_hash": "f48037852be1765e5714b5817439c66eef78e6ada91e37292e86bca634fd0f32"
+    },
+    {
+      "index": 230,
+      "timestamp": "2026-09-22T02:00:29.399721",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-231",
+        "source": "Dream-Team-Bid-Strategy.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-231.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "9d33093135ad59757f3ba3c7127fe82bdb6f65e09b19847712057baf6ddd4238",
+      "prev_hash": "4409b4277d43c8332f78b7a4e2e47a878209674de72d00f26fae71c7a36ba13b"
+    },
+    {
+      "index": 231,
+      "timestamp": "2026-09-22T02:00:29.410519",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-232",
+        "source": "BSC-SOW-2026-125.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-232.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "d7ed7866bd89feb630328088192abe69145bd28e7c8c0180ef3d4c2f735469fc",
+      "prev_hash": "9d33093135ad59757f3ba3c7127fe82bdb6f65e09b19847712057baf6ddd4238"
+    },
+    {
+      "index": 232,
+      "timestamp": "2026-09-22T02:00:29.420141",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-233",
+        "source": "BSC-SOW-2026-118.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-233.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "bbb98b23af2a45338b3315dfcef5a6a04799c8808b08f3fd9f9669920190e779",
+      "prev_hash": "d7ed7866bd89feb630328088192abe69145bd28e7c8c0180ef3d4c2f735469fc"
+    },
+    {
+      "index": 233,
+      "timestamp": "2026-09-22T02:00:29.430889",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-234",
+        "source": "BSC-SOW-2026-146.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-234.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "601c3d0319e49ebfc4763e3d33dff1e13051ff7407b7be802510e1501f201f31",
+      "prev_hash": "bbb98b23af2a45338b3315dfcef5a6a04799c8808b08f3fd9f9669920190e779"
+    },
+    {
+      "index": 234,
+      "timestamp": "2026-09-22T02:00:29.440075",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-235",
+        "source": "BSC-SOW-2026-038.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-235.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "0af625015571abba056d9619e5d176ad38e3fc9b06c7177780b3ce272a2b4fee",
+      "prev_hash": "601c3d0319e49ebfc4763e3d33dff1e13051ff7407b7be802510e1501f201f31"
+    },
+    {
+      "index": 235,
+      "timestamp": "2026-09-22T02:00:29.450663",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-236",
+        "source": "BSC-SOW-2026-008.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-236.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "be09b54cfd4abe08543f118fd61a94eb156d231af60d7dec1fe36dd371f7ea80",
+      "prev_hash": "0af625015571abba056d9619e5d176ad38e3fc9b06c7177780b3ce272a2b4fee"
+    },
+    {
+      "index": 236,
+      "timestamp": "2026-09-22T02:00:29.458249",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-237",
+        "source": "BSC-SOW-2026-058.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-237.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "20e333244dd7f7aedfc1521a8fd32dd6cb5e9f3599b76ab5055c0e7c3b3b24e5",
+      "prev_hash": "be09b54cfd4abe08543f118fd61a94eb156d231af60d7dec1fe36dd371f7ea80"
+    },
+    {
+      "index": 237,
+      "timestamp": "2026-09-22T02:00:29.468893",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-238",
+        "source": "BSC-SOW-2026-077.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-238.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "88e82e1f0df797dab78615d2a837aaf334a9a4188b06a451be0982aa1ed23929",
+      "prev_hash": "20e333244dd7f7aedfc1521a8fd32dd6cb5e9f3599b76ab5055c0e7c3b3b24e5"
+    },
+    {
+      "index": 238,
+      "timestamp": "2026-09-22T02:00:29.478061",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-239",
+        "source": "BSC-SOW-2026-075.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-239.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "9f726cfed830d01ea2b2a283d64aec4da1ba10362636051f555249721c8bcbb2",
+      "prev_hash": "88e82e1f0df797dab78615d2a837aaf334a9a4188b06a451be0982aa1ed23929"
+    },
+    {
+      "index": 239,
+      "timestamp": "2026-09-22T02:00:29.487915",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-240",
+        "source": "BSC-SOW-2026-133.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-240.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "947f6ff754badf0ca35dbbe199208616b16e493bfe2e9fa3aba4833796a52c9f",
+      "prev_hash": "9f726cfed830d01ea2b2a283d64aec4da1ba10362636051f555249721c8bcbb2"
+    },
+    {
+      "index": 240,
+      "timestamp": "2026-09-22T02:00:29.497191",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-241",
+        "source": "BSC-SOW-2026-136.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-241.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "553eb71fe547ebbdf4c4c4167b47fa77cd668d4c288c8e44fc544ae99a857110",
+      "prev_hash": "947f6ff754badf0ca35dbbe199208616b16e493bfe2e9fa3aba4833796a52c9f"
+    },
+    {
+      "index": 241,
+      "timestamp": "2026-09-22T02:00:29.506915",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-242",
+        "source": "BSC-SOW-2026-108.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-242.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "2e51fbd393a6ab683a99d18077b26e0e2757b74554ffcd55db2fd92bb32082fb",
+      "prev_hash": "553eb71fe547ebbdf4c4c4167b47fa77cd668d4c288c8e44fc544ae99a857110"
+    },
+    {
+      "index": 242,
+      "timestamp": "2026-09-22T02:00:29.513045",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-243",
+        "source": "BSC-SOW-2026-063.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-243.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "daeac02c923e90b0813d72251f73199bde9254541830816d762370ab95a989c2",
+      "prev_hash": "2e51fbd393a6ab683a99d18077b26e0e2757b74554ffcd55db2fd92bb32082fb"
+    },
+    {
+      "index": 243,
+      "timestamp": "2026-09-22T02:00:29.519216",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-244",
+        "source": "BSC-SOW-2026-054.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-244.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "8066c4f615a5b3dcd8d0e4fdfeed7ae6d34a6e1fca1231a275dd9f136008f3f4",
+      "prev_hash": "daeac02c923e90b0813d72251f73199bde9254541830816d762370ab95a989c2"
+    },
+    {
+      "index": 244,
+      "timestamp": "2026-09-22T02:00:29.525695",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-245",
+        "source": "BSC-SOW-2026-155.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-245.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "3bcc473a8a7c2914ab538f6c91e24e0ca60ffe00798a9a8f9b3cdc3bcb888778",
+      "prev_hash": "8066c4f615a5b3dcd8d0e4fdfeed7ae6d34a6e1fca1231a275dd9f136008f3f4"
+    },
+    {
+      "index": 245,
+      "timestamp": "2026-09-22T02:00:29.531813",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-246",
+        "source": "BSC-SOW-2026-046.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-246.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "903775b5547e0ce3947c4dde5218c8bf935afd0b90a95845d0e5f60f1e447579",
+      "prev_hash": "3bcc473a8a7c2914ab538f6c91e24e0ca60ffe00798a9a8f9b3cdc3bcb888778"
+    },
+    {
+      "index": 246,
+      "timestamp": "2026-09-22T02:00:29.540307",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-247",
+        "source": "BSC-SOW-2026-158.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-247.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "bc3c82250dc7e90bc4b2e0d7f62d3f5de08bfa3682c5aaf988b32cc8f0df97c4",
+      "prev_hash": "903775b5547e0ce3947c4dde5218c8bf935afd0b90a95845d0e5f60f1e447579"
+    },
+    {
+      "index": 247,
+      "timestamp": "2026-09-22T02:00:29.549581",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-248",
+        "source": "BSC-SOW-2026-149.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-248.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "c6d660fa6162e59419028b1502bd6c3c938bde06b000fb5de15d41be2b5a1d55",
+      "prev_hash": "bc3c82250dc7e90bc4b2e0d7f62d3f5de08bfa3682c5aaf988b32cc8f0df97c4"
+    },
+    {
+      "index": 248,
+      "timestamp": "2026-09-22T02:00:29.560640",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-249",
+        "source": "BSC-SOW-2026-154.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-249.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "b52d4318141978bf808739d52678ab2047a9925f4ee3dc21a445ea604888e74a",
+      "prev_hash": "c6d660fa6162e59419028b1502bd6c3c938bde06b000fb5de15d41be2b5a1d55"
+    },
+    {
+      "index": 249,
+      "timestamp": "2026-09-22T02:00:29.571099",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-250",
+        "source": "BSC-SOW-2026-021.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-250.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "7e757df3be20d7b2c6d73c20a1fcd81ee6a3a8d8abb0f0491a0ddae9f001ca25",
+      "prev_hash": "b52d4318141978bf808739d52678ab2047a9925f4ee3dc21a445ea604888e74a"
+    },
+    {
+      "index": 250,
+      "timestamp": "2026-09-22T02:00:29.581113",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-251",
+        "source": "BSC-SOW-2026-015.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-251.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "f0e56dd997b54432c55163df8c248d8811ef121634ce1798f03719ea99fca5ac",
+      "prev_hash": "7e757df3be20d7b2c6d73c20a1fcd81ee6a3a8d8abb0f0491a0ddae9f001ca25"
+    },
+    {
+      "index": 251,
+      "timestamp": "2026-09-22T02:00:29.591863",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-252",
+        "source": "BSC-SOW-2026-064.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-252.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "6e2744f8fbd8f7bf0534e5dd82d06421d6988ee11dc16fc83f4bf730ab78d86b",
+      "prev_hash": "f0e56dd997b54432c55163df8c248d8811ef121634ce1798f03719ea99fca5ac"
+    },
+    {
+      "index": 252,
+      "timestamp": "2026-09-22T02:00:29.602224",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-253",
+        "source": "BSC-SOW-2026-128.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-253.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "4e5eabfa890db3b829a1755efa057871c0d0bb90f5ddebcc90683b5500881d71",
+      "prev_hash": "6e2744f8fbd8f7bf0534e5dd82d06421d6988ee11dc16fc83f4bf730ab78d86b"
+    },
+    {
+      "index": 253,
+      "timestamp": "2026-09-22T02:00:29.612202",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-254",
+        "source": "BSC-SOW-2026-123.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-254.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "02561ac7f16ff647de56386170d6e3d6d9bc4185d6b56a5c1c10825ad4bb09b8",
+      "prev_hash": "4e5eabfa890db3b829a1755efa057871c0d0bb90f5ddebcc90683b5500881d71"
+    },
+    {
+      "index": 254,
+      "timestamp": "2026-09-22T02:00:29.621288",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-255",
+        "source": "BSC-SOW-2026-141.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-255.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "809062dc6d6a129c9b592b3ade788b70e7c5c2ede7ae4f7736300d12926dd18c",
+      "prev_hash": "02561ac7f16ff647de56386170d6e3d6d9bc4185d6b56a5c1c10825ad4bb09b8"
+    },
+    {
+      "index": 255,
+      "timestamp": "2026-09-22T02:00:29.631767",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-256",
+        "source": "BSC-SOW-2026-053.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-256.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "ef32138544e995b7203ca570e1844b7f7223c14377fdf95ccea63524a0e94cf6",
+      "prev_hash": "809062dc6d6a129c9b592b3ade788b70e7c5c2ede7ae4f7736300d12926dd18c"
+    },
+    {
+      "index": 256,
+      "timestamp": "2026-09-22T02:00:29.642358",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-257",
+        "source": "BSC-SOW-2026-036.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-257.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "4abeb75a06f992ec16a960e5916d987b2f0170ea115e86cb912c32c733b1fa2f",
+      "prev_hash": "ef32138544e995b7203ca570e1844b7f7223c14377fdf95ccea63524a0e94cf6"
+    },
+    {
+      "index": 257,
+      "timestamp": "2026-09-22T02:00:29.652513",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-258",
+        "source": "BSC-SOW-2026-092.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-258.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "c78f8c423f5ff28c4687e8e5ac2490daf3db9673381112fb4a238ba012e5076e",
+      "prev_hash": "4abeb75a06f992ec16a960e5916d987b2f0170ea115e86cb912c32c733b1fa2f"
+    },
+    {
+      "index": 258,
+      "timestamp": "2026-09-22T02:00:29.663034",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-259",
+        "source": "BSC-SOW-2026-095.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-259.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "57544afb86ddd187a2a8adf963a2e6dafcae3dcaaa9cedf3302efa95f364b562",
+      "prev_hash": "c78f8c423f5ff28c4687e8e5ac2490daf3db9673381112fb4a238ba012e5076e"
+    },
+    {
+      "index": 259,
+      "timestamp": "2026-09-22T02:00:29.673504",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-260",
+        "source": "BSC-SOW-2026-011.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-260.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "fee99c7eec41924492fa89e72435005b688e5999b52aa22d73652aec56dea4c8",
+      "prev_hash": "57544afb86ddd187a2a8adf963a2e6dafcae3dcaaa9cedf3302efa95f364b562"
+    },
+    {
+      "index": 260,
+      "timestamp": "2026-09-22T02:00:29.683280",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-261",
+        "source": "decentralization-migration-plan.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-261.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "ef106151372e50791c9c8cb1aadfa1de8071b98d7f896eb4d0823301fe0cc6ca",
+      "prev_hash": "fee99c7eec41924492fa89e72435005b688e5999b52aa22d73652aec56dea4c8"
+    },
+    {
+      "index": 261,
+      "timestamp": "2026-09-22T02:00:29.698606",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-262",
+        "source": "BSC-SOW-2026-115.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-262.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "1e833520fde5b9d85e007a95f938bfbece38f4ecdcce875eaed7a2b3c4aa2af1",
+      "prev_hash": "ef106151372e50791c9c8cb1aadfa1de8071b98d7f896eb4d0823301fe0cc6ca"
+    },
+    {
+      "index": 262,
+      "timestamp": "2026-09-22T02:00:29.704688",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-263",
+        "source": "BSC-SOW-2026-037.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-263.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "090259caba0103dbb8d61ceaa69bfc3b023239e53c8b1aa5c32d9501de5b6ec2",
+      "prev_hash": "1e833520fde5b9d85e007a95f938bfbece38f4ecdcce875eaed7a2b3c4aa2af1"
+    },
+    {
+      "index": 263,
+      "timestamp": "2026-09-22T02:00:29.715148",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-264",
+        "source": "BSC-SOW-2026-107.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-264.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "73a24a02e927a1de2c6248873850fac0abe109085d6a009f9182acf0a377a592",
+      "prev_hash": "090259caba0103dbb8d61ceaa69bfc3b023239e53c8b1aa5c32d9501de5b6ec2"
+    },
+    {
+      "index": 264,
+      "timestamp": "2026-09-22T02:00:29.724971",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-265",
+        "source": "BSC-SOW-2026-012.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-265.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "f85d01b15e33426a2c09c94524427e60aefb9e4eead242f178601657ca7979dc",
+      "prev_hash": "73a24a02e927a1de2c6248873850fac0abe109085d6a009f9182acf0a377a592"
+    },
+    {
+      "index": 265,
+      "timestamp": "2026-09-22T02:00:29.735290",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-266",
+        "source": "BSC-SOW-2026-056.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-266.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "2c348134d316027f6a79442a88ebdd15f0b20b939b8572c89c2bbfa338b3204a",
+      "prev_hash": "f85d01b15e33426a2c09c94524427e60aefb9e4eead242f178601657ca7979dc"
+    },
+    {
+      "index": 266,
+      "timestamp": "2026-09-22T02:00:29.745371",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-267",
+        "source": "BSC-SOW-2026-003.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-267.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "8259a1f202b610b1d937941e7ac36cc957f968b78493e5056c44ac039e9902b2",
+      "prev_hash": "2c348134d316027f6a79442a88ebdd15f0b20b939b8572c89c2bbfa338b3204a"
+    },
+    {
+      "index": 267,
+      "timestamp": "2026-09-22T02:00:29.754402",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-268",
+        "source": "BSC-SOW-2026-111.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-268.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "ff3dd1815c74b27f69b0264578c239f1d95fa8617596c71b5f1307539fe84219",
+      "prev_hash": "8259a1f202b610b1d937941e7ac36cc957f968b78493e5056c44ac039e9902b2"
+    },
+    {
+      "index": 268,
+      "timestamp": "2026-09-22T02:00:29.764900",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-269",
+        "source": "BSC-SOW-2026-082.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-269.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "a2e1038414cf67992cf6d3c88b122a54d609c89daa7c592a1c2dd524f323c88b",
+      "prev_hash": "ff3dd1815c74b27f69b0264578c239f1d95fa8617596c71b5f1307539fe84219"
+    },
+    {
+      "index": 269,
+      "timestamp": "2026-09-22T02:00:29.772406",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-270",
+        "source": "BSC-SOW-2026-099.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-270.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "b44b5ccc2f7e1115a95abe7e5596780affd594c42624ea916a98e9256c007417",
+      "prev_hash": "a2e1038414cf67992cf6d3c88b122a54d609c89daa7c592a1c2dd524f323c88b"
+    },
+    {
+      "index": 270,
+      "timestamp": "2026-09-22T02:00:29.781029",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-271",
+        "source": "BSC-SOW-2026-119.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-271.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "04ab089f763bace978d0f851e7f91b665ebd8092fa7d2a8e2ce534c707cb862b",
+      "prev_hash": "b44b5ccc2f7e1115a95abe7e5596780affd594c42624ea916a98e9256c007417"
+    },
+    {
+      "index": 271,
+      "timestamp": "2026-09-22T02:00:29.788701",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-272",
+        "source": "BSC-SOW-2026-173.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-272.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "97595255f7c890d2ddb31fb348af43041b4ccf417ad1d05e58734d681da74885",
+      "prev_hash": "04ab089f763bace978d0f851e7f91b665ebd8092fa7d2a8e2ce534c707cb862b"
+    },
+    {
+      "index": 272,
+      "timestamp": "2026-09-22T02:00:29.796204",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-273",
+        "source": "BSC-SOW-2026-016.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-273.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "cf874b511b573cbf036db241653733358ddeb31420122ba918c3722a7e8777bd",
+      "prev_hash": "97595255f7c890d2ddb31fb348af43041b4ccf417ad1d05e58734d681da74885"
+    },
+    {
+      "index": 273,
+      "timestamp": "2026-09-22T02:00:29.803408",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-274",
+        "source": "BSC-SOW-2026-009.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-274.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "47a795a54ec9969be741384890dbc6a32240fe2527381aa8cdb2bd7f4d026991",
+      "prev_hash": "cf874b511b573cbf036db241653733358ddeb31420122ba918c3722a7e8777bd"
+    },
+    {
+      "index": 274,
+      "timestamp": "2026-09-22T02:00:29.811584",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-275",
+        "source": "BSC-SOW-2026-093.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-275.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "a4e52c14655d6beb500751b8cd8085900fb4e97c793690579c41ac7ead65005e",
+      "prev_hash": "47a795a54ec9969be741384890dbc6a32240fe2527381aa8cdb2bd7f4d026991"
+    },
+    {
+      "index": 275,
+      "timestamp": "2026-09-22T02:00:29.818942",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-276",
+        "source": "BSC-SOW-2026-102.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-276.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "e023332b7a4b27002ea6ff86146aa047abf28d5dd5ff18fe013d4c5359b54647",
+      "prev_hash": "a4e52c14655d6beb500751b8cd8085900fb4e97c793690579c41ac7ead65005e"
+    },
+    {
+      "index": 276,
+      "timestamp": "2026-09-22T02:00:29.826465",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-277",
+        "source": "BSC-SOW-2026-052.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-277.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "a699282c51c026a0316a67df86117488b6560b4b7f9b87ed6086ed9a29a35599",
+      "prev_hash": "e023332b7a4b27002ea6ff86146aa047abf28d5dd5ff18fe013d4c5359b54647"
+    },
+    {
+      "index": 277,
+      "timestamp": "2026-09-22T02:00:29.834070",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-278",
+        "source": "BSC-SOW-2026-086.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-278.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "d1c7b709732f5da0079b1ba49b0d1a1518e6da7d0d9ecf81921384ff2a6b51f4",
+      "prev_hash": "a699282c51c026a0316a67df86117488b6560b4b7f9b87ed6086ed9a29a35599"
+    },
+    {
+      "index": 278,
+      "timestamp": "2026-09-22T02:00:29.841537",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-279",
+        "source": "BSC-SOW-2026-096.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-279.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "2ef11ecd1e8419c5a61defa7ec4822fc8bfd517c98c578843b0d15af493c67b0",
+      "prev_hash": "d1c7b709732f5da0079b1ba49b0d1a1518e6da7d0d9ecf81921384ff2a6b51f4"
+    },
+    {
+      "index": 279,
+      "timestamp": "2026-09-22T02:00:29.850480",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-280",
+        "source": "BSC-SOW-2026-160.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-280.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "3acb160541d6e0cdea0e6222cccf7ba2e1f80ffb526180fd25e3f9fa5ab18626",
+      "prev_hash": "2ef11ecd1e8419c5a61defa7ec4822fc8bfd517c98c578843b0d15af493c67b0"
+    },
+    {
+      "index": 280,
+      "timestamp": "2026-09-22T02:00:29.858082",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-281",
+        "source": "BSC-SOW-2026-065.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-281.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "68bdf7a0ffaebf3fa574780244084364c8734aa9fe2e266d919054d0cbbcb546",
+      "prev_hash": "3acb160541d6e0cdea0e6222cccf7ba2e1f80ffb526180fd25e3f9fa5ab18626"
+    },
+    {
+      "index": 281,
+      "timestamp": "2026-09-22T02:00:29.884061",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-282",
+        "source": "BSC-SOW-2026-150.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-282.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "c48617abf220de3247cd9cb9e5050ff617081e371560c98683714044619f406f",
+      "prev_hash": "68bdf7a0ffaebf3fa574780244084364c8734aa9fe2e266d919054d0cbbcb546"
+    },
+    {
+      "index": 282,
+      "timestamp": "2026-09-22T02:00:29.904415",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-283",
+        "source": "BSC-SOW-2026-131.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-283.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "325623e541e7dbb6272e46ea0af6bce4bc22d9b34ae587c7b38321315a694b0a",
+      "prev_hash": "c48617abf220de3247cd9cb9e5050ff617081e371560c98683714044619f406f"
+    },
+    {
+      "index": 283,
+      "timestamp": "2026-09-22T02:00:29.911994",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-284",
+        "source": "BSC-SOW-2026-010.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-284.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "60ce3e41196755ac6985ff2a0c358ece084b57f57a0b44375c9176070004be6d",
+      "prev_hash": "325623e541e7dbb6272e46ea0af6bce4bc22d9b34ae587c7b38321315a694b0a"
+    },
+    {
+      "index": 284,
+      "timestamp": "2026-09-22T02:00:29.919139",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-285",
+        "source": "BSC-SOW-2026-047.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-285.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "28574c1590dc09bc40be1d3e19afe524192ffd50bda68435e4539f592ccee5c9",
+      "prev_hash": "60ce3e41196755ac6985ff2a0c358ece084b57f57a0b44375c9176070004be6d"
+    },
+    {
+      "index": 285,
+      "timestamp": "2026-09-22T02:00:29.926192",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-286",
+        "source": "BSC-SOW-2026-035.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-286.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "f4499a73f4d5cdfd295246bfc7bedb58e2d7b474c2929b1c0029a95a08dcac79",
+      "prev_hash": "28574c1590dc09bc40be1d3e19afe524192ffd50bda68435e4539f592ccee5c9"
+    },
+    {
+      "index": 286,
+      "timestamp": "2026-09-22T02:00:29.933352",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-287",
+        "source": "BSC-SOW-2026-156.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-287.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "7f8037e5945e56a8c8597f595f86056930152b720afa0f0a080d7a8ec221cf26",
+      "prev_hash": "f4499a73f4d5cdfd295246bfc7bedb58e2d7b474c2929b1c0029a95a08dcac79"
+    },
+    {
+      "index": 287,
+      "timestamp": "2026-09-22T02:00:29.941537",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-288",
+        "source": "BSC-SOW-2026-045.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-288.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "793e5fcf249a465dfdcd2ad4d08f2c6359cacfe35d393563b1b096169884a298",
+      "prev_hash": "7f8037e5945e56a8c8597f595f86056930152b720afa0f0a080d7a8ec221cf26"
+    },
+    {
+      "index": 288,
+      "timestamp": "2026-09-22T02:00:29.948927",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-289",
+        "source": "BSC-SOW-2026-043.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-289.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "6831d5cd5c33fb2c3b95d066b464d9ba523da186bec5e1e4750b011ebdb063da",
+      "prev_hash": "793e5fcf249a465dfdcd2ad4d08f2c6359cacfe35d393563b1b096169884a298"
+    },
+    {
+      "index": 289,
+      "timestamp": "2026-09-22T02:00:29.957290",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-290",
+        "source": "BSC-SOW-2026-004.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-290.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "6469fbb1b790d54d48f3e4de9c1512c75f7e9d434461df93bd71bb9f588ac406",
+      "prev_hash": "6831d5cd5c33fb2c3b95d066b464d9ba523da186bec5e1e4750b011ebdb063da"
+    },
+    {
+      "index": 290,
+      "timestamp": "2026-09-22T02:00:29.964650",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-291",
+        "source": "BSC-SOW-2026-060.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-291.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "c7c7f3c3c76146d21b5b00b368e580fa24a0e9a219b8830df15d1359a491e11e",
+      "prev_hash": "6469fbb1b790d54d48f3e4de9c1512c75f7e9d434461df93bd71bb9f588ac406"
+    },
+    {
+      "index": 291,
+      "timestamp": "2026-09-22T02:00:29.972394",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-292",
+        "source": "BSC-SOW-2026-170.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-292.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "741eefcbf8c33863002134746b19f6e03cd9f4a3615196749688f2bb9ed2ca68",
+      "prev_hash": "c7c7f3c3c76146d21b5b00b368e580fa24a0e9a219b8830df15d1359a491e11e"
+    },
+    {
+      "index": 292,
+      "timestamp": "2026-09-22T02:00:29.980503",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-293",
+        "source": "BSC-SOW-2026-089.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-293.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "83d8c77e6775d9436b22ec4571a75cff9d15bd7c374184c0aae55903a27f45d9",
+      "prev_hash": "741eefcbf8c33863002134746b19f6e03cd9f4a3615196749688f2bb9ed2ca68"
+    },
+    {
+      "index": 293,
+      "timestamp": "2026-09-22T02:00:29.988592",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-294",
+        "source": "BSC-SOW-2026-126.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-294.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "5c67ef47aa0574cdb59ae2da0be2b5d4a72b38f370f8df22c76c57080b6f2267",
+      "prev_hash": "83d8c77e6775d9436b22ec4571a75cff9d15bd7c374184c0aae55903a27f45d9"
+    },
+    {
+      "index": 294,
+      "timestamp": "2026-09-22T02:00:29.996707",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-295",
+        "source": "BSC-SOW-2026-144.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-295.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "7fd19362433fc846dbe3fdc54177d03abfd45b638bfe0b38e5ef5e1f477697a0",
+      "prev_hash": "5c67ef47aa0574cdb59ae2da0be2b5d4a72b38f370f8df22c76c57080b6f2267"
+    },
+    {
+      "index": 295,
+      "timestamp": "2026-09-22T02:00:30.005906",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-296",
+        "source": "BSC-SOW-2026-029.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-296.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "641729b9c32eb64b047cca0186f0ca4aff5cf027f481a1660c42bce9d33028c4",
+      "prev_hash": "7fd19362433fc846dbe3fdc54177d03abfd45b638bfe0b38e5ef5e1f477697a0"
+    },
+    {
+      "index": 296,
+      "timestamp": "2026-09-22T02:00:30.013267",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-297",
+        "source": "BSC-SOW-2026-161.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-297.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "f7cd4d81d9657a8e806e2b0455cb875d6e6003e4ef1322997dd3d9f050072b28",
+      "prev_hash": "641729b9c32eb64b047cca0186f0ca4aff5cf027f481a1660c42bce9d33028c4"
+    },
+    {
+      "index": 297,
+      "timestamp": "2026-09-22T02:00:30.021080",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-298",
+        "source": "BSC-SOW-2026-138.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-298.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "34bf894dbe4de727bdb8dbf92a6219cc34f69290ec9c187bf961a992e5c15626",
+      "prev_hash": "f7cd4d81d9657a8e806e2b0455cb875d6e6003e4ef1322997dd3d9f050072b28"
+    },
+    {
+      "index": 298,
+      "timestamp": "2026-09-22T02:00:30.028932",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-299",
+        "source": "BSC-SOW-2026-071.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-299.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "e7d42444c921e2374fa6a6db93d5a2e012355f5c81276a3790fee55ab0b7d5dc",
+      "prev_hash": "34bf894dbe4de727bdb8dbf92a6219cc34f69290ec9c187bf961a992e5c15626"
+    },
+    {
+      "index": 299,
+      "timestamp": "2026-09-22T02:00:30.037247",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-300",
+        "source": "BSC-SOW-2026-023.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-300.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "b8e455f6b1d1053f8be598db6b8c36e796cec33cf0fba9e89fd15c554a6e9ae7",
+      "prev_hash": "e7d42444c921e2374fa6a6db93d5a2e012355f5c81276a3790fee55ab0b7d5dc"
+    },
+    {
+      "index": 300,
+      "timestamp": "2026-09-22T02:00:30.045355",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-301",
+        "source": "BSC-SOW-2026-041.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-301.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "24386044e0ee2a0f4cc92321756e43da3b59f4a1ea12253285acb1f3d6fd28b3",
+      "prev_hash": "b8e455f6b1d1053f8be598db6b8c36e796cec33cf0fba9e89fd15c554a6e9ae7"
+    },
+    {
+      "index": 301,
+      "timestamp": "2026-09-22T02:00:30.056677",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-302",
+        "source": "INDEX.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-302.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "f72d20ffb600b9ff86472e38715c05fdf0d5f6b340210b73675707940acb6355",
+      "prev_hash": "24386044e0ee2a0f4cc92321756e43da3b59f4a1ea12253285acb1f3d6fd28b3"
+    },
+    {
+      "index": 302,
+      "timestamp": "2026-09-22T02:00:30.068652",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-303",
+        "source": "BSC-SOW-2026-069.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-303.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "ae402ca3b29c4591b4b64bc6a2bd0a8a135e2a1e6032c1c0056566650d619763",
+      "prev_hash": "f72d20ffb600b9ff86472e38715c05fdf0d5f6b340210b73675707940acb6355"
+    },
+    {
+      "index": 303,
+      "timestamp": "2026-09-22T02:00:30.080074",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-304",
+        "source": "BSC-SOW-2026-101.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-304.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "d72d9a04c5f5cc800cd9ce955e4777e65d6df5172b8e4916feb28646db244a2c",
+      "prev_hash": "ae402ca3b29c4591b4b64bc6a2bd0a8a135e2a1e6032c1c0056566650d619763"
+    },
+    {
+      "index": 304,
+      "timestamp": "2026-09-22T02:00:30.091710",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-305",
+        "source": "BSC-SOW-2026-110.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-305.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "93f6b85a7af643adcab0610c53b6953dcf7605cb99d5436f5525f17a907bd8f7",
+      "prev_hash": "d72d9a04c5f5cc800cd9ce955e4777e65d6df5172b8e4916feb28646db244a2c"
+    },
+    {
+      "index": 305,
+      "timestamp": "2026-09-22T02:00:30.103123",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-306",
+        "source": "BSC-SOW-2026-039.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-306.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "7600a397d3071ed1b4b95d93b65123e7aa2c1769a59be9f47258850b6c9bbda7",
+      "prev_hash": "93f6b85a7af643adcab0610c53b6953dcf7605cb99d5436f5525f17a907bd8f7"
+    },
+    {
+      "index": 306,
+      "timestamp": "2026-09-22T02:00:30.114636",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-307",
+        "source": "BSC-SOW-2026-072.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-307.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "b33d47cb960ae963c616801b9889a6c06f2dab6900e1c0fca7b7e8ac9a4701cb",
+      "prev_hash": "7600a397d3071ed1b4b95d93b65123e7aa2c1769a59be9f47258850b6c9bbda7"
+    },
+    {
+      "index": 307,
+      "timestamp": "2026-09-22T02:00:30.127224",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-308",
+        "source": "BSC-SOW-2026-169.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-308.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "e77b0f37851048c6f4d5868cab687637b9f4d03d3b44878fa134ef4764b1f321",
+      "prev_hash": "b33d47cb960ae963c616801b9889a6c06f2dab6900e1c0fca7b7e8ac9a4701cb"
+    },
+    {
+      "index": 308,
+      "timestamp": "2026-09-22T02:00:30.140287",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-309",
+        "source": "BSC-SOW-2026-062.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-309.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "d5dc0665ae933876e42f15050170bc69060208865fed2dc01a491e53099f0d93",
+      "prev_hash": "e77b0f37851048c6f4d5868cab687637b9f4d03d3b44878fa134ef4764b1f321"
+    },
+    {
+      "index": 309,
+      "timestamp": "2026-09-22T02:00:30.152432",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-310",
+        "source": "BSC-SOW-2026-100.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-310.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "ea36e529fd65dbb7b7a4722a24bf2a119d1c1608d0fb5e007144b17feecc49f2",
+      "prev_hash": "d5dc0665ae933876e42f15050170bc69060208865fed2dc01a491e53099f0d93"
+    },
+    {
+      "index": 310,
+      "timestamp": "2026-09-22T02:00:30.165342",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-311",
+        "source": "BSC-SOW-2026-019.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-311.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "ae27444ceacd1b6a94bab02422e3eafe268eb7b2abd73e6a113ed5c1e82d4c5b",
+      "prev_hash": "ea36e529fd65dbb7b7a4722a24bf2a119d1c1608d0fb5e007144b17feecc49f2"
+    },
+    {
+      "index": 311,
+      "timestamp": "2026-09-22T02:00:30.177863",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-312",
+        "source": "BSC-SOW-2026-051.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-312.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "a511a8f995cb7c7eec76633735212f3dbb8f0041f14ff26a68e2a310e9039e3e",
+      "prev_hash": "ae27444ceacd1b6a94bab02422e3eafe268eb7b2abd73e6a113ed5c1e82d4c5b"
+    },
+    {
+      "index": 312,
+      "timestamp": "2026-09-22T02:00:30.189564",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-313",
+        "source": "BSC-SOW-2026-121.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-313.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "020bbf95e497070e5fd2906339cb292ca240dd64cd9b2887502da89c5eda2b7a",
+      "prev_hash": "a511a8f995cb7c7eec76633735212f3dbb8f0041f14ff26a68e2a310e9039e3e"
+    },
+    {
+      "index": 313,
+      "timestamp": "2026-09-22T02:00:30.201976",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-314",
+        "source": "BSC-SOW-2026-087.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-314.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "aafaaaf5cc424c27b718897602e833b9b90a9f666673b36975c36afe486f7784",
+      "prev_hash": "020bbf95e497070e5fd2906339cb292ca240dd64cd9b2887502da89c5eda2b7a"
+    },
+    {
+      "index": 314,
+      "timestamp": "2026-09-22T02:00:30.217364",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-315",
+        "source": "BSC-SOW-2026-055.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-315.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "b85d202f17d84a3a1a1d6c1aec34477e6b2456af53c9e9c10792f895b0c3c5ae",
+      "prev_hash": "aafaaaf5cc424c27b718897602e833b9b90a9f666673b36975c36afe486f7784"
+    },
+    {
+      "index": 315,
+      "timestamp": "2026-09-22T02:00:30.228405",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-316",
+        "source": "BSC-SOW-2026-135.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-316.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "dd37bf35d093760156dd08c628568289abb10cfbf048481d691e1a2e01056a6f",
+      "prev_hash": "b85d202f17d84a3a1a1d6c1aec34477e6b2456af53c9e9c10792f895b0c3c5ae"
+    },
+    {
+      "index": 316,
+      "timestamp": "2026-09-22T02:00:30.240450",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-317",
+        "source": "BSC-SOW-2026-068.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-317.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "ac1f302b0f770df98d9f597f4f3d201b70ff4b0930562ebef90e7be06a60d52d",
+      "prev_hash": "dd37bf35d093760156dd08c628568289abb10cfbf048481d691e1a2e01056a6f"
+    },
+    {
+      "index": 317,
+      "timestamp": "2026-09-22T02:00:30.254302",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-318",
+        "source": "BSC-SOW-2026-120.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-318.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "89b82bdb19c2cabd47432176501cfa86fb3f1806231ac1a6a4c7a6aaead9557a",
+      "prev_hash": "ac1f302b0f770df98d9f597f4f3d201b70ff4b0930562ebef90e7be06a60d52d"
+    },
+    {
+      "index": 318,
+      "timestamp": "2026-09-22T02:00:30.266661",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-319",
+        "source": "BSC-SOW-2026-124.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-319.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "4a9c9a27d2014c40150a6ed83513276516e0573c148bbe91d6ff08b494976798",
+      "prev_hash": "89b82bdb19c2cabd47432176501cfa86fb3f1806231ac1a6a4c7a6aaead9557a"
+    },
+    {
+      "index": 319,
+      "timestamp": "2026-09-22T02:00:30.278806",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-320",
+        "source": "BSC-SOW-2026-174.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-320.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "43e772c8fb8b9d7af04cd8352199541de9ae7ad5c8223a96d4986196bc5a8212",
+      "prev_hash": "4a9c9a27d2014c40150a6ed83513276516e0573c148bbe91d6ff08b494976798"
+    },
+    {
+      "index": 320,
+      "timestamp": "2026-09-22T02:00:30.291874",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-321",
+        "source": "BSC-SOW-2026-088.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-321.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "f6ae2c086f93877bdcbe846fc4ec40b6aca43d0804101a95d5bc6c8320531793",
+      "prev_hash": "43e772c8fb8b9d7af04cd8352199541de9ae7ad5c8223a96d4986196bc5a8212"
+    },
+    {
+      "index": 321,
+      "timestamp": "2026-09-22T02:00:30.303957",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-322",
+        "source": "BSC-SOW-2026-157.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-322.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "ab7b300ed05ffe48743014fbab6c1c8db790798d2581f0327ca14de9b1002e1f",
+      "prev_hash": "f6ae2c086f93877bdcbe846fc4ec40b6aca43d0804101a95d5bc6c8320531793"
+    },
+    {
+      "index": 322,
+      "timestamp": "2026-09-22T02:00:30.317919",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-323",
+        "source": "BSC-SOW-2026-084.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-323.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "8c3cc335d445c4716c3b6f2de412505e4e0c94f73877b38ae430d789de928058",
+      "prev_hash": "ab7b300ed05ffe48743014fbab6c1c8db790798d2581f0327ca14de9b1002e1f"
+    },
+    {
+      "index": 323,
+      "timestamp": "2026-09-22T02:00:30.331492",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-324",
+        "source": "BSC-SOW-2026-140.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-324.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "f78762e122e23d0e8f235c014e68d4407fc4b47d7c32da43ab86ae349383e198",
+      "prev_hash": "8c3cc335d445c4716c3b6f2de412505e4e0c94f73877b38ae430d789de928058"
+    },
+    {
+      "index": 324,
+      "timestamp": "2026-09-22T02:00:30.344005",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-325",
+        "source": "BSC-SOW-2026-020.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-325.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "5edd862a61d09e5443533c290fd4d785c1e343650b3a73b112d5a47093942efd",
+      "prev_hash": "f78762e122e23d0e8f235c014e68d4407fc4b47d7c32da43ab86ae349383e198"
+    },
+    {
+      "index": 325,
+      "timestamp": "2026-09-22T02:00:30.356202",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-326",
+        "source": "BSC-SOW-2026-024.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-326.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "c6ad9b2bc776a87aa69961468c37917ec92c176cb4d3d5bcb20584e4c377c816",
+      "prev_hash": "5edd862a61d09e5443533c290fd4d785c1e343650b3a73b112d5a47093942efd"
+    },
+    {
+      "index": 326,
+      "timestamp": "2026-09-22T02:00:30.368385",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-327",
+        "source": "BSC-SOW-2026-031.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-327.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "a09352d34c9a68c39bfe4d998382f13a6594f0fb29cb711cbf63b299623e3937",
+      "prev_hash": "c6ad9b2bc776a87aa69961468c37917ec92c176cb4d3d5bcb20584e4c377c816"
+    },
+    {
+      "index": 327,
+      "timestamp": "2026-09-22T02:00:30.380835",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-328",
+        "source": "BSC-SOW-2026-073.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-328.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "b98d15e4bab5b3cc4d504b9f5b7d4e85df36efe9a96e6b8cb8abf90cae4f9d6a",
+      "prev_hash": "a09352d34c9a68c39bfe4d998382f13a6594f0fb29cb711cbf63b299623e3937"
+    },
+    {
+      "index": 328,
+      "timestamp": "2026-09-22T02:00:30.393140",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-329",
+        "source": "BSC-SOW-2026-164.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-329.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "1cdb49a79d9f58bfa70d44ff3b311363fbd335639dde1978526d92b9c8949cc7",
+      "prev_hash": "b98d15e4bab5b3cc4d504b9f5b7d4e85df36efe9a96e6b8cb8abf90cae4f9d6a"
+    },
+    {
+      "index": 329,
+      "timestamp": "2026-09-22T02:00:30.405847",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-330",
+        "source": "BSC-SOW-2026-006.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-330.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "5660996a69931330b4ad5a330bf5247b1cdf8af8adb93668526881e8df797506",
+      "prev_hash": "1cdb49a79d9f58bfa70d44ff3b311363fbd335639dde1978526d92b9c8949cc7"
+    },
+    {
+      "index": 330,
+      "timestamp": "2026-09-22T02:00:30.418151",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-331",
+        "source": "BSC-SOW-2026-030.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-331.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "4255834003032c03f97769f156c8887c30fcdfd70b531584e0c316e6ee157041",
+      "prev_hash": "5660996a69931330b4ad5a330bf5247b1cdf8af8adb93668526881e8df797506"
+    },
+    {
+      "index": 331,
+      "timestamp": "2026-09-22T02:00:30.431819",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-332",
+        "source": "BSC-SOW-2026-070.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-332.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "f6dac67f0f28545a94d169c86d2cfa225a75a39aa95db988dc85f541b698a4d3",
+      "prev_hash": "4255834003032c03f97769f156c8887c30fcdfd70b531584e0c316e6ee157041"
+    },
+    {
+      "index": 332,
+      "timestamp": "2026-09-22T02:00:30.447621",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-333",
+        "source": "BSC-SOW-2026-153.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-333.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "f5be65952532376c1c7668112117de0a62446359139fbeafac7df14f516cda7a",
+      "prev_hash": "f6dac67f0f28545a94d169c86d2cfa225a75a39aa95db988dc85f541b698a4d3"
+    },
+    {
+      "index": 333,
+      "timestamp": "2026-09-22T02:00:30.464148",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-334",
+        "source": "BSC-SOW-2026-105.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-334.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "beaf0b034f184ecd7b9509001655ef8c32ac38aa54b04fa1637d081340ac4a90",
+      "prev_hash": "f5be65952532376c1c7668112117de0a62446359139fbeafac7df14f516cda7a"
+    },
+    {
+      "index": 334,
+      "timestamp": "2026-09-22T02:00:30.477864",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-335",
+        "source": "BSC-SOW-2026-162.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-335.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "08a379526c4113cfcb56b5c6d036a2f52420d27fa3004cf0899c2f5050c5a589",
+      "prev_hash": "beaf0b034f184ecd7b9509001655ef8c32ac38aa54b04fa1637d081340ac4a90"
+    },
+    {
+      "index": 335,
+      "timestamp": "2026-09-22T02:00:30.490393",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-336",
+        "source": "BSC-SOW-2026-137.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-336.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "5d9dfccacb64a1df0789bc579e511104361c780a52595eaef1de0b1d84b5f6b7",
+      "prev_hash": "08a379526c4113cfcb56b5c6d036a2f52420d27fa3004cf0899c2f5050c5a589"
+    },
+    {
+      "index": 336,
+      "timestamp": "2026-09-22T02:00:30.502881",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-337",
+        "source": "BSC-SOW-2026-168.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-337.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "564e91d118dd7fae028edf9153224c1530f5e87d5b212bf4e79160852456fec3",
+      "prev_hash": "5d9dfccacb64a1df0789bc579e511104361c780a52595eaef1de0b1d84b5f6b7"
+    },
+    {
+      "index": 337,
+      "timestamp": "2026-09-22T02:00:30.515740",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-338",
+        "source": "BSC-SOW-2026-014.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-338.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "45e0a8f8498fbb54ce88a5bf7c7068bc2db7c5e5a3a8348bf697fc71e2adeb94",
+      "prev_hash": "564e91d118dd7fae028edf9153224c1530f5e87d5b212bf4e79160852456fec3"
+    },
+    {
+      "index": 338,
+      "timestamp": "2026-09-22T02:00:30.528081",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-339",
+        "source": "BSC-SOW-2026-074.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-339.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "95d1e08a542ca955b5edcd1b861638495320d30500e0443e89d3534155e4d07c",
+      "prev_hash": "45e0a8f8498fbb54ce88a5bf7c7068bc2db7c5e5a3a8348bf697fc71e2adeb94"
+    },
+    {
+      "index": 339,
+      "timestamp": "2026-09-22T02:00:30.545816",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-340",
+        "source": "BSC-SOW-2026-147.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-340.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "8c53d998f741136538e397f1b09ca7ebb755cd0e36af07757191bb8c8df3e569",
+      "prev_hash": "95d1e08a542ca955b5edcd1b861638495320d30500e0443e89d3534155e4d07c"
+    },
+    {
+      "index": 340,
+      "timestamp": "2026-09-22T02:00:30.554215",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-341",
+        "source": "BSC-SOW-2026-171.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-341.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "e7d0cf4c44a6fbf8ff49e64227a94de3e400889e771c1873bb482f6552214927",
+      "prev_hash": "8c53d998f741136538e397f1b09ca7ebb755cd0e36af07757191bb8c8df3e569"
+    },
+    {
+      "index": 341,
+      "timestamp": "2026-09-22T02:00:30.566196",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-342",
+        "source": "BSC-SOW-2026-165.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-342.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "fadbab195d10c1fb45e912ea62d51c06805e0e1b1994af05373c4e39ad963ca5",
+      "prev_hash": "e7d0cf4c44a6fbf8ff49e64227a94de3e400889e771c1873bb482f6552214927"
+    },
+    {
+      "index": 342,
+      "timestamp": "2026-09-22T02:00:30.578194",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-343",
+        "source": "BSC-SOW-2026-066.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-343.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "019dd5d4fc3b46c7dd07a7ebfdf1cba41caf17244ccac1388123e46e64aa9b5e",
+      "prev_hash": "fadbab195d10c1fb45e912ea62d51c06805e0e1b1994af05373c4e39ad963ca5"
+    },
+    {
+      "index": 343,
+      "timestamp": "2026-09-22T02:00:30.591487",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-344",
+        "source": "BSC-SOW-2026-166.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-344.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "0700a315c71ecd2ea0e61072d8badad7a55081f0cc002a82079fe2233e4a41cf",
+      "prev_hash": "019dd5d4fc3b46c7dd07a7ebfdf1cba41caf17244ccac1388123e46e64aa9b5e"
+    },
+    {
+      "index": 344,
+      "timestamp": "2026-09-22T02:00:30.604722",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-345",
+        "source": "BSC-SOW-2026-152.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-345.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "ee600c3ca802370dbf1f9dba4e4838d53e131d82b0073e5f730e35d1cc40ba94",
+      "prev_hash": "0700a315c71ecd2ea0e61072d8badad7a55081f0cc002a82079fe2233e4a41cf"
+    },
+    {
+      "index": 345,
+      "timestamp": "2026-09-22T02:00:30.617200",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-346",
+        "source": "BSC-SOW-2026-022.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-346.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "89a4391c4f163f19fae891663823bc83593077cf024d14958d46b138e730a94f",
+      "prev_hash": "ee600c3ca802370dbf1f9dba4e4838d53e131d82b0073e5f730e35d1cc40ba94"
+    },
+    {
+      "index": 346,
+      "timestamp": "2026-09-22T02:00:30.629373",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-347",
+        "source": "BSC-SOW-2026-148.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-347.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "4b8fecbac1fa2e2f3a50368fbbf8c9e5b30e14f5bbca8542d2514d31039e6018",
+      "prev_hash": "89a4391c4f163f19fae891663823bc83593077cf024d14958d46b138e730a94f"
+    },
+    {
+      "index": 347,
+      "timestamp": "2026-09-22T02:00:30.641773",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-348",
+        "source": "BSC-SOW-2026-114.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-348.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "64d0496f8bf4fb1236373dd0c757ae3c5d1b1732fbebbf6d978cd8f46e97e170",
+      "prev_hash": "4b8fecbac1fa2e2f3a50368fbbf8c9e5b30e14f5bbca8542d2514d31039e6018"
+    },
+    {
+      "index": 348,
+      "timestamp": "2026-09-22T02:00:30.655895",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-349",
+        "source": "BSC-SOW-2026-050.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-349.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "a13686042f7c50fb01be79533a92c254446f44d1294409c58b442c07fa7fca5d",
+      "prev_hash": "64d0496f8bf4fb1236373dd0c757ae3c5d1b1732fbebbf6d978cd8f46e97e170"
+    },
+    {
+      "index": 349,
+      "timestamp": "2026-09-22T02:00:30.667931",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-350",
+        "source": "BSC-SOW-2026-078.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-350.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "9c7d9f233b84703daac778498f07daef7e23587d3549d7c5dca517031980f187",
+      "prev_hash": "a13686042f7c50fb01be79533a92c254446f44d1294409c58b442c07fa7fca5d"
+    },
+    {
+      "index": 350,
+      "timestamp": "2026-09-22T02:00:30.680066",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-351",
+        "source": "BSC-SOW-2026-109.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-351.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "6942bc8df8887e7869a386a39455e4d539d18f12c583c3e91055e4540f3c19a3",
+      "prev_hash": "9c7d9f233b84703daac778498f07daef7e23587d3549d7c5dca517031980f187"
+    },
+    {
+      "index": 351,
+      "timestamp": "2026-09-22T02:00:30.693848",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-352",
+        "source": "BSC-SOW-2026-103.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-352.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "d1125032e575f254cadc05e3953471ec30d268d1fc23bdc319160626be9a0e7c",
+      "prev_hash": "6942bc8df8887e7869a386a39455e4d539d18f12c583c3e91055e4540f3c19a3"
+    },
+    {
+      "index": 352,
+      "timestamp": "2026-09-22T02:00:30.706927",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-353",
+        "source": "BSC-SOW-2026-106.md",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-353.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "71dd556fdbe67fc519db5748eb5a44dce726ed1dbe51aee369d9c6a4876517b5",
+      "prev_hash": "d1125032e575f254cadc05e3953471ec30d268d1fc23bdc319160626be9a0e7c"
     }
   ]
 }

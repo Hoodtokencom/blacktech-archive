@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SE Exam — 131 Top Repeat Questions</title>
+<style>
+:root {
+  --bg: #0a0a0f;
+  --card-bg: #141420;
+  --card-border: #2a2a3a;
+  --accent: #f59e0b;
+  --accent2: #3b82f6;
+  --green: #22c55e;
+  --red: #ef4444;
+  --text: #e5e5e5;
+  --text2: #9ca3af;
+  --text3: #6b7280;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0a0a0f 100%);
+  border-bottom: 1px solid var(--card-border);
+  padding: 16px 20px;
+  position: sticky; top: 0; z-index: 100;
+}
+.header-top {
+  display: flex; align-items: center; justify-content: space-between;
+}
+.logo {
+  display: flex; align-items: center; gap: 10px;
+}
+.logo-icon {
+  width: 36px; height: 36px; background: var(--accent);
+  border-radius: 8px; display: flex; align-items: center; justify-content: center;
+  font-weight: 900; font-size: 18px; color: #000;
+}
+.logo-text h1 { font-size: 16px; font-weight: 700; color: var(--text); }
+.logo-text p { font-size: 11px; color: var(--text3); margin-top: 1px; }
+.stats-row {
+  display: flex; gap: 12px; align-items: center;
+}
+.stat-box {
+  text-align: center; padding: 4px 12px;
+  background: rgba(255,255,255,0.05); border-radius: 6px;
+}
+.stat-box .num { font-size: 16px; font-weight: 700; }
+.stat-box .lbl { font-size: 9px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; }
+.stat-box.accent .num { color: var(--accent); }
+.stat-box.green .num { color: var(--green); }
+.stat-box.blue .num { color: var(--accent2); }
+
+/* Controls */
+.controls {
+  padding: 10px 20px; display: flex; gap: 8px; flex-wrap: wrap;
+  border-bottom: 1px solid var(--card-border);
+  background: var(--bg);
+}
+.btn {
+  padding: 6px 14px; border-radius: 6px; border: 1px solid var(--card-border);
+  background: var(--card-bg); color: var(--text2); font-size: 12px; cursor: pointer;
+  transition: all 0.15s;
+}
+.btn:hover { border-color: var(--accent); color: var(--text); }
+.btn.active { background: var(--accent); color: #000; border-color: var(--accent); font-weight: 600; }
+
+/* Progress bar */
+.progress-bar {
+  height: 3px; background: var(--card-border); position: relative;
+}
+.progress-fill {
+  height: 100%; background: linear-gradient(90deg, var(--accent), var(--green));
+  transition: width 0.3s; border-radius: 0 2px 2px 0;
+}
+
+/* Card area */
+.card-area {
+  display: flex; justify-content: center; padding: 24px 16px;
+  min-height: calc(100vh - 200px);
+}
+.card-container {
+  width: 100%; max-width: 600px;
+}
+
+/* Flashcard */
+.flashcard {
+  perspective: 1000px; width: 100%; height: 380px; cursor: pointer;
+}
+.flashcard-inner {
+  position: relative; width: 100%; height: 100%;
+  transition: transform 0.5s; transform-style: preserve-3d;
+}
+.flashcard.flipped .flashcard-inner { transform: rotateY(180deg); }
+.flashcard-front, .flashcard-back {
+  position: absolute; width: 100%; height: 100%;
+  backface-visibility: hidden; border-radius: 16px; overflow: hidden;
+  border: 1px solid var(--card-border);
+  display: flex; flex-direction: column;
+}
+.flashcard-front {
+  background: linear-gradient(145deg, #1a1a30, #141420);
+}
+.flashcard-back {
+  background: linear-gradient(145deg, #0f2010, #141420);
+  transform: rotateY(180deg);
+}
+.card-header {
+  padding: 12px 16px; display: flex; justify-content: space-between; align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.card-num {
+  font-size: 11px; color: var(--text3); font-weight: 600;
+  background: rgba(255,255,255,0.05); padding: 3px 8px; border-radius: 4px;
+}
+.card-topic {
+  font-size: 11px; color: var(--accent); font-weight: 600;
+  background: rgba(245,158,11,0.1); padding: 3px 8px; border-radius: 4px;
+}
+.card-ref {
+  font-size: 10px; color: var(--accent2); font-weight: 500;
+  background: rgba(59,130,246,0.1); padding: 3px 8px; border-radius: 4px;
+}
+.card-body {
+  flex: 1; display: flex; align-items: center; justify-content: center;
+  padding: 20px 24px; text-align: center;
+}
+.card-body h2 {
+  font-size: 17px; line-height: 1.5; font-weight: 500;
+}
+.card-body .answer {
+  font-size: 14px; line-height: 1.7; font-weight: 400;
+  text-align: left; width: 100%;
+}
+.card-body .answer ul { padding-left: 20px; }
+.card-body .answer li { margin-bottom: 4px; }
+.card-body .answer .highlight { color: var(--accent); font-weight: 600; }
+.card-body .answer .blue { color: var(--accent2); font-weight: 600; }
+.card-footer {
+  padding: 10px 16px; text-align: center;
+  font-size: 11px; color: var(--text3);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Navigation */
+.nav-area {
+  padding: 0 16px 20px; display: flex; gap: 8px;
+  justify-content: center; align-items: center; max-width: 600px; margin: 0 auto;
+}
+.nav-btn {
+  padding: 12px 24px; border-radius: 10px; border: 1px solid var(--card-border);
+  background: var(--card-bg); color: var(--text); font-size: 14px; cursor: pointer;
+  transition: all 0.15s; min-width: 80px;
+}
+.nav-btn:hover { border-color: var(--accent); }
+.nav-btn.primary { background: var(--accent); color: #000; border-color: var(--accent); font-weight: 600; }
+.nav-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+.card-jump {
+  display: flex; align-items: center; gap: 6px;
+}
+.card-jump input {
+  width: 50px; padding: 8px; border-radius: 6px;
+  border: 1px solid var(--card-border); background: var(--card-bg);
+  color: var(--text); text-align: center; font-size: 14px;
+}
+.card-jump span { font-size: 12px; color: var(--text3); }
+.jump-btn {
+  padding: 8px 12px; border-radius: 6px; background: var(--accent);
+  color: #000; border: none; font-weight: 600; cursor: pointer; font-size: 12px;
+}
+
+/* Category filter */
+.cat-grid {
+  padding: 10px 16px 6px; display: none; flex-wrap: wrap; gap: 4px;
+  max-width: 600px; margin: 0 auto;
+}
+.cat-grid.show { display: flex; }
+.cat-chip {
+  padding: 4px 10px; border-radius: 12px; font-size: 11px;
+  background: rgba(255,255,255,0.05); color: var(--text3); cursor: pointer;
+  border: 1px solid transparent; transition: all 0.15s;
+}
+.cat-chip:hover { color: var(--text); border-color: var(--card-border); }
+.cat-chip.active { background: var(--accent); color: #000; border-color: var(--accent); font-weight: 600; }
+
+/* Shuffle indicator */
+.shuffle-badge {
+  font-size: 10px; color: var(--green); margin-left: 8px;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .flashcard { height: 420px; }
+  .card-body h2 { font-size: 15px; }
+  .card-body .answer { font-size: 13px; }
+  .stats-row { gap: 6px; }
+  .stat-box { padding: 4px 8px; }
+  .stat-box .num { font-size: 14px; }
+}
+
+/* List view mode */
+.list-toggle { margin-left: auto; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-top">
+    <div class="logo">
+      <div class="logo-icon">⚡</div>
+      <div class="logo-text">
+        <h1>SE Top Repeat</h1>
+        <p>Supervising Electrician Exam — 131 Flashcards</p>
+      </div>
+    </div>
+    <div class="stats-row">
+      <div class="stat-box accent"><div class="num" id="sCardNum">1</div><div class="lbl">Card</div></div>
+      <div class="stat-box green"><div class="num" id="sCorrect">0</div><div class="lbl">✓ Knew</div></div>
+      <div class="stat-box blue"><div class="num" id="sSeen">0</div><div class="lbl">Seen</div></div>
+      <button class="btn" onclick="toggleInfo()" style="margin-left:8px;font-size:16px;padding:6px 10px;">ℹ️</button>
+    </div>
+  </div>
+</div>
+
+<div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+
+<div class="controls">
+  <button class="btn" id="btnAll" onclick="setFilter('all')">All</button>
+  <button class="btn" id="btnCat" onclick="toggleCats()">Categories ▾</button>
+  <button class="btn" id="btnShuffle" onclick="toggleShuffle()">Shuffle</button>
+  <button class="btn" id="btnReset" onclick="resetProgress()">Reset</button>
+</div>
+
+<div class="cat-grid" id="catGrid"></div>
+
+<div class="card-area">
+  <div class="card-container">
+    <div class="flashcard" id="flashcard" onclick="flipCard()">
+      <div class="flashcard-inner">
+        <div class="flashcard-front">
+          <div class="card-header">
+            <span class="card-num" id="cardNum">Q1</span>
+            <span class="card-topic" id="cardTopic">Theory</span>
+            <span class="card-ref" id="cardRef"></span>
+          </div>
+          <div class="card-body">
+            <h2 id="cardQuestion">Loading...</h2>
+          </div>
+          <div class="card-footer">Tap to flip</div>
+        </div>
+        <div class="flashcard-back">
+          <div class="card-header">
+            <span class="card-num" id="cardNumB">Q1</span>
+            <span class="card-topic" id="cardTopicB">Answer</span>
+            <span class="card-ref" id="cardRefB"></span>
+          </div>
+          <div class="card-body">
+            <div class="answer" id="cardAnswer">Loading...</div>
+          </div>
+          <div class="card-footer">Tap to flip back</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="nav-area">
+  <button class="nav-btn" id="btnPrev" onclick="prevCard()">← Prev</button>
+  <button class="nav-btn primary" id="btnKnew" onclick="markKnown()">✓ Knew It</button>
+  <button class="nav-btn" id="btnNext" onclick="nextCard()">Next →</button>
+  <div class="card-jump">
+    <input type="number" id="jumpInput" min="1" max="131" placeholder="#">
+    <button class="jump-btn" onclick="jumpTo()">Go</button>
+  </div>
+</div>
+
+<!-- Info Modal -->
+<div class="info-overlay" id="infoOverlay" onclick="toggleInfo()">
+  <div class="info-modal" onclick="event.stopPropagation()">
+    <div class="info-header">
+      <span>ℹ️ About This Deck</span>
+      <button class="info-close" onclick="toggleInfo()">✕</button>
+    </div>
+    <div class="info-body">
+      <p><b>Supervising Electrician Exam — Top 131 Repeat Questions</b></p>
+      <p>Flashcard deck covering the most frequently tested topics on the City of Chicago Supervising Electrician license exam. Covers NEC code articles, Chicago municipal code amendments, load calculations, motor circuits, hazardous locations, and special occupancies.</p>
+      <p><b>32 categories</b> including Theory, GFCI, Grounding, Ampacity, Motors, Hazardous Locations, Pools, Fire Pumps, and Chapter 9 Tables.</p>
+      <p><b>How to use:</b> Tap a card to flip. Hit <b>✓ Knew It</b> to track mastery. Use <b>Categories</b> to filter by topic or <b>Shuffle</b> to randomize. Press <b>K</b> as a shortcut for "Knew It".</p>
+      <p style="color:var(--text3);font-size:12px;margin-top:12px;">Built by Blacktech Solutions Corp — Dewey Brain 003-Computing_Science</p>
+    </div>
+  </div>
+</div>
+
+<style>
+.info-overlay {
+  display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+  background:rgba(0,0,0,0.7); z-index:200; justify-content:center; align-items:center;
+}
+.info-overlay.open { display:flex; }
+.info-modal {
+  background:var(--card-bg); border:1px solid var(--card-border); border-radius:16px;
+  max-width:420px; width:90%; padding:0; overflow:hidden;
+}
+.info-header {
+  display:flex; justify-content:space-between; align-items:center;
+  padding:16px 20px; border-bottom:1px solid var(--card-border);
+  font-weight:700; font-size:16px;
+}
+.info-close {
+  background:none; border:none; color:var(--text3); font-size:20px; cursor:pointer; padding:4px 8px;
+}
+.info-body { padding:20px; }
+.info-body p { margin-bottom:12px; line-height:1.6; color:var(--text2); }
+.info-body p:first-child { color:var(--text); }
+</style>
+
+<script>
+const CARDS = [
+  // === THEORY & FUNDAMENTALS ===
+  {id:1,cat:"Theory",ref:"Art. 100",q:"What does Henry's measure?",a:"<b>Inductance</b>"},
+  {id:2,cat:"Theory",ref:"",q:"What material is considered the best conductor?",a:"<b>Silver</b>"},
+  {id:3,cat:"Theory",ref:"",q:"What is the formula for Power Factor?",a:"Power Factor = <b>True Watts ÷ Apparent Power (VA)</b><br><br>Ex: 10A × 220V = 2,200 VA<br>1,870W ÷ 2,200VA = <b>0.85 (85%)</b>"},
+  {id:4,cat:"Theory",ref:"",q:"What is Impedance in an AC circuit?",a:"The total <b>resistance</b> in an AC circuit.<br><br>Substitute <b>Z</b> for R in Ohm's Law when solving for impedance."},
+  {id:5,cat:"Safety",ref:"Lockout/Tagout",q:"How long can you keep a lockout on?",a:"<b>Not overnight</b>"},
+  {id:6,cat:"Safety",ref:"Lockout/Tagout",q:"Who can remove a lock from a locked disconnect?",a:"<b>Only the person who put it on.</b>"},
+  // === PERMITS & CODES ===
+  {id:7,cat:"Permits",ref:"600.27/600.28",q:"When do you need engineered drawings for a sign?",a:"Signs erected <b>entirely above the roof</b> of a building."},
+  {id:8,cat:"Permits",ref:"13-12-040",q:"What is the Chicago Municipal Code supplement package fee?",a:"<b>$1,000</b>"},
+  {id:9,cat:"Permits",ref:"13-12-060",q:"What code covers architecture drawing noncompliance fines?",a:"Fines in accordance with <b>13-12-060</b>"},
+  {id:10,cat:"Permits",ref:"13-12-370",q:"What is required when an EC applies for a permit?",a:"Permit must be signed by the <b>Supervising Electrician</b>."},
+  {id:11,cat:"Enforcement",ref:"13-12-400",q:"What is NOT the responsibility of an AHJ?",a:"Enforcing infractions that weren't corrected within <b>10-15 days</b>."},
+  {id:12,cat:"Permits",ref:"13-12-490",q:"What permit is required for frequent electrical alterations?",a:"<b>Monthly Permit</b>"},
+  {id:13,cat:"Permits",ref:"13-12-610",q:"What timeframe does a Maintenance Permit cover?",a:"<b>Each calendar month, for that month only.</b>"},
+  {id:14,cat:"Public Way",ref:"13-20-555",q:"What is required when erecting a sign over a public way?",a:"• A <b>public way use permit</b> is required<br>• Requires authorized sign from the <b>Department of Transportation</b>"},
+  {id:15,cat:"Permits",ref:"13-20-560",q:"If a sign permit is denied, what can the applicant do?",a:"Request a <b>written interpretation</b> of why it was denied."},
+  // === DEFINITIONS & MARKINGS ===
+  {id:16,cat:"Definitions",ref:"Art. 100",q:"What is the definition of an 'Enclosure'?",a:"The case or housing of apparatus, or the fence/walls surrounding an installation, to <b>prevent accidental contact with energized parts</b> or protect equipment from physical damage."},
+  {id:17,cat:"Splices",ref:"110.14(B)",q:"What is the requirement for soldered splices?",a:"Must first be spliced/joined to be <b>mechanically and electrically secure WITHOUT solder</b>, then soldered."},
+  {id:18,cat:"Marking",ref:"110.15",q:"What color marks the high-leg of a 4-wire delta system?",a:"<b>ORANGE</b>"},
+  {id:19,cat:"Marking",ref:"110.16",q:"Where are arc flash hazard warning labels required?",a:"For other than <b>dwelling units</b>."},
+  {id:20,cat:"Equipment",ref:"110.21(A)(2)",q:"What identification must accompany reconditioned equipment?",a:"• Name/trademark of organization responsible<br>• <b>Date of reconditioning</b><br>• Marked as '<b>reconditioned</b>'<br><br>Approval cannot be based solely on original listing."},
+  {id:21,cat:"Disconnects",ref:"110.25",q:"What are the design requirements for a Lockable Disconnecting Means?",a:"Must be lockable in the <b>OPEN</b> position.<br><br>Locking provisions must remain in place <b>with or without the lock installed</b>."},
+  {id:22,cat:"Enclosures",ref:"Table 110.28",q:"Which enclosure types are rated 'Watertight' and 'Temporary Submersion'?",a:"Watertight: Types <b>4, 4X, 6, 6P</b><br>Temporary Submersion: Types <b>6, 6P</b>"},
+  // === CONDUCTORS & WIRING ===
+  {id:23,cat:"Grounded Conductors",ref:"200.10",q:"For screw shell devices, which terminal and lead color is the grounded conductor?",a:"Terminal: connected to the <b>screw shell</b><br>Lead: <b>White or Gray</b> finish"},
+  {id:24,cat:"DC Branch Circuits",ref:"210.5(C)(2)",q:"How must ungrounded conductors (4 AWG+) on DC systems >60V be identified?",a:"By <b>polarity</b> at all termination, connection, and splice points — using marking tape, tagging, or other approved means."},
+  {id:25,cat:"Voltage Caps",ref:"210.6",q:"What is the voltage limit for residential luminaires and cord-and-plug loads ≤1440 VA?",a:"<b>120 Volts</b>, nominal"},
+  {id:26,cat:"GFCI",ref:"210.8(A)(10)",q:"What dwelling areas require GFCI protection?",a:"<b>Laundry areas</b>"},
+  {id:27,cat:"GFCI",ref:"210.8(A)(6)+(7), 210.52(C)",q:"What are the kitchen sink receptacle location rules?",a:"Reference <b>Figure 210.52(C)(1)</b> for measurement start point."},
+  {id:28,cat:"GFCI",ref:"210.52(D)",q:"What are the bathroom sink receptacle distance requirements?",a:"Within <b>3 feet</b> of the outside edge of each basin.<br><br>Not more than <b>12 inches below</b> the top of the basin/countertop."},
+  {id:29,cat:"Balcony",ref:"210.8(A)(3), 210.52(E)(3)",q:"What are the balcony/deck/porch receptacle requirements?",a:"• At least <b>1 receptacle</b> accessible from balcony/deck/porch<br>• Not more than <b>6½ ft above</b> walking surface<br>• <b>No sq. ft. requirement</b> — intent is holiday lighting, avoiding extension cords"},
+  {id:30,cat:"Lampholders",ref:"210.21(A)",q:"What rating is required for lampholders on circuits over 20A?",a:"Must be <b>heavy-duty type</b>:<br>• Not less than <b>600W</b> (admedium type)<br>• Not less than <b>750W</b> (any other type)"},
+  {id:31,cat:"Spacing",ref:"210.52(A)(1)",q:"What is the maximum wall spacing for receptacles?",a:"No point measured horizontally along the floor line shall be more than <b>6 feet</b> from a receptacle outlet."},
+  {id:32,cat:"Garage",ref:"210.52(G)(1)",q:"What is the garage receptacle requirement for dwellings?",a:"At least <b>one receptacle outlet per vehicle bay</b>."},
+  {id:33,cat:"Closet Lighting",ref:"210.70(A)(2)(5)",q:"What are the closet lighting requirements per CEC amendment?",a:"Wall switch-controlled lighting <b>mandatory</b> in clothes closets and closets over <b>25 sq ft</b>.<br><br><b>NO PULL CHAINS</b> — permanently installed only."},
+  {id:34,cat:"Sink Lighting",ref:"210.70(A)(2)(6)",q:"When is a switched lighting outlet required above a sink/basin?",a:"When the room or area is greater than <b>64 square feet</b>."},
+  {id:35,cat:"DC Color",ref:"210.5(C)(1), 215.12(C)(2), 712.25",q:"Which DC polarity conductor gets black tape?",a:"<b>Negative polarity</b>"},
+  {id:36,cat:"Loads",ref:"220.18(B)",q:"How do you calculate loads for ballast/transformer/LED driver circuits?",a:"Based on the <b>total ampere ratings</b> of such units, NOT on the total watts of the lamps."},
+  // === RANGE & SERVICE CALCULATIONS ===
+  {id:37,cat:"Range Demand",ref:"Table 220.55",q:"How do you calculate range service/feeder demand?",a:"1. (kW − 12) × <b>5%</b> = percentage increase<br>2. Find Column C demand for number of appliances<br>3. Multiply by (1 + percentage)<br>4. Grounded conductor = result × <b>70%</b> (per 220.61)"},
+  {id:38,cat:"Feeder Neutrals",ref:"220.61(B)",q:"What is the 2-phase neutral reduction for 200A service?",a:"<b>70%</b>"},
+  {id:39,cat:"Festoon",ref:"225.6(B)",q:"What are the festoon lighting conductor and messenger requirements?",a:"Minimum: <b>12 AWG</b> (unless supported by messenger wires)<br>Messenger required: All spans exceeding <b>40 feet</b>"},
+  {id:40,cat:"Service Entry",ref:"230.70(A)",q:"What is the max distance from entry point to service disconnect?",a:"Not exceeding <b>5 feet</b>.<br>If raceway exceeds 5 ft, must conform to 230.6 (concrete encased)."},
+  {id:41,cat:"High Rise",ref:"230.70(A)(5)",q:"What are the fire-rating and lighting rules for high-rise electrical rooms?",a:"Main Service Room: <b>3-hour</b> fire rating<br>Tenant Service Room: <b>2-hour</b> fire rating<br><br>Illumination: Required, <b>NOT sensor-controlled</b>, manual toggle switch only."},
+  {id:42,cat:"Access",ref:"230.72(C)",q:"What access is required for service disconnects in multi-occupancy buildings?",a:"Each occupant shall have <b>access to their own</b> service disconnecting means."},
+  // === GROUNDING & BONDING ===
+  {id:43,cat:"Bonding",ref:"250.28(B)",q:"What identifies a main/system bonding jumper that is a screw only?",a:"The screw shall be identified with a <b>green finish</b> visible with the screw installed."},
+  {id:44,cat:"Grounding",ref:"250.30(5)",q:"How is the GEC sized for a single separately derived system?",a:"Sized per <b>Table 250.66</b>.<br>Connects grounded conductor to GEC per 250.30(A)(4) or 250.68(C)(1)-(2)."},
+  {id:45,cat:"Generators",ref:"250.34(A)(1)",q:"When is a portable generator exempt from grounding electrode requirements?",a:"When: (1) Generator supplies only equipment <b>mounted on or cord/plug-connected</b> through receptacles on the generator<br>(2) Non-current-carrying metal parts and EGC terminals are <b>connected to the generator frame</b>"},
+  {id:46,cat:"Grounding",ref:"250.58(A)-(C)",q:"What are the common ground (Hogan) requirements for high-rise?",a:"• Sized per <b>Table 250.66</b><br>• Min: <b>4/0 AWG</b> in 1½\" metal raceway<br>• Max: <b>500 kcmil</b> in 1½\" metal raceway<br>• Must be <b>continuous</b> entire length<br>• Splices: listed irreversible compression or exothermic welding<br>• Taps: busbars ≥ ¼\" × 2\"<br>• All splices/taps in approved bonded metal junction box"},
+  {id:47,cat:"DC Systems",ref:"250.167(A)-(C)",q:"What are the DC ground-fault detection requirements?",a:"<b>Required</b> for ungrounded systems<br><b>Permitted</b> for grounded systems<br><br>DC systems must be legibly marked to indicate grounding type at the dc source or first disconnecting means."},
+  // === SPD & RACEWAYS ===
+  {id:48,cat:"SPDs",ref:"285.24(A)",q:"Where are Type 2 SPDs connected?",a:"Anywhere on the <b>load side</b> of a service disconnect overcurrent device."},
+  {id:49,cat:"Roof Installations",ref:"300.4(E)",q:"What is the minimum clearance below roof decking for cables/raceways?",a:"Not less than <b>1½ inches</b> from the lowest surface of roof decking to the top of cable/raceway/box."},
+  {id:50,cat:"Expansion",ref:"300.7(A)+(B)",q:"What are the requirements for conduits with different temperatures?",a:"• Fill with approved material (<b>duct seal</b>) to prevent warm air circulation<br>• Explosionproof seal NOT required for this purpose<br>• Provide expansion/deflection fittings for thermal expansion/contraction<br>• 250.98: expansion joints must be <b>electrically continuous</b> via bonding jumpers"},
+  {id:51,cat:"Plenums",ref:"300.22(C)",q:"What wiring methods are permitted in plenums (Other Spaces for Environmental Air)?",a:"EMT, IMC, RMC<br>Gland nut = <b>compression fittings</b><br>Flexible metallic tubing = <b>plenflex</b><br>Boxes = <b>no holes and gaskets</b><br>Light fixtures = <b>stamped or labeled CCEA</b><br><br>Exception: Integral fan systems specifically identified for such use.<br>Raised floors: per 300.22(C) and 645.5(E)."},
+  // === AMPACITY & CONDUCTORS ===
+  {id:52,cat:"Ampacity",ref:"310.15(B)(2)(a)",q:"What is the ambient temp correction for a 90°C conductor at 104°F?",a:"<b>0.91</b>"},
+  {id:53,cat:"Raceways",ref:"310.15(B)(3)(a)",q:"What is the max number of current-carrying conductors in a raceway?",a:"<b>No more than 9</b> current-carrying conductors."},
+  {id:54,cat:"Ampacity",ref:"310.15(B)(16)",q:"What table covers ampacity of SA conductors?",a:"<b>Table 310.15(B)(16)</b>"},
+  {id:55,cat:"Ampacity",ref:"310.15(B)(17)",q:"How do you derate open air conductors above 30°C?",a:"Apply <b>temperature correction factors from 310.15(B)(2)(a)</b> to Table 310.15(B)(17) values."},
+  {id:56,cat:"Conductors",ref:"Table 310.104(A)",q:"What are the insulation/covering specs for RHW?",a:"Insulation: <b>Flame-retardant, moisture-resistant thermoset</b><br>Outer covering: <b>Moisture-resistant, flame-retardant, nonmetallic</b>"},
+  {id:57,cat:"Wire Bending",ref:"Table 312.6(A)",q:"What is the wire bending space for 8 AWG and 6 AWG?",a:"<b>1½ inches</b>"},
+  // === BOXES & RACEWAY FILL ===
+  {id:58,cat:"Enclosures",ref:"312.10(B)",q:"What is the minimum sheet steel thickness for cabinets?",a:"Not less than <b>0.053 inches</b> coated."},
+  {id:59,cat:"Box Fill",ref:"Table 314.16",q:"How many #14 conductors fit in a 4×1½\" square box?",a:"<b>9</b> conductors"},
+  {id:60,cat:"Box Fill",ref:"Table 314.16",q:"Which holds more: 4×1¼\" round/octagonal (#18) vs 4×1½\" square (#10)?",a:"<b>Both hold the same number.</b>"},
+  {id:61,cat:"Bending Radius",ref:"320.24",q:"What is the bending radius for Type AC cable?",a:"Inner edge radius shall not be less than <b>5 times the diameter</b> of the cable."},
+  {id:62,cat:"Bending Radius",ref:"332.24",q:"What is the bending radius for MI cable ≤¾\" and >¾\"?",a:"≤¾\" external diameter: <b>5×</b> the diameter<br>>¾\" but ≤1\": <b>10×</b> the diameter"},
+  {id:63,cat:"Conduit Support",ref:"342.30, 344.30",q:"What are the support requirements for IMC and RMC?",a:"<b>3 feet</b> from a box."},
+  {id:64,cat:"FMC Fill",ref:"Table 348.22",q:"What determines max conductor fill in ½\" FMC?",a:"<b>Table 348.22</b> — different values for inside vs. outside fittings, per Table 1 Chapter 9."},
+  {id:65,cat:"FMC",ref:"348.22",q:"What limits conductor count in FMC?",a:"Shall not exceed the <b>percentage fill in Table 1, Chapter 9</b>."},
+  {id:66,cat:"PVC Support",ref:"Table 352.30",q:"What are the PVC (non-metallic rigid) conduit support requirements?",a:"Per <b>Table 352.30</b> — specific support spacing for non-metallic rigid conduit."},
+  // === FLEXIBLE CORDS & SWITCHES ===
+  {id:67,cat:"Flexible Cords",ref:"Table 400.4",q:"What key facts from Table 400.4 should you know?",a:"• <b>#4</b>: elevator cable voltage rating<br>• <b>#7</b>: permitted for theater stages<br>• <b>#8</b>: equipment grounding conductor ONLY<br>• <b>#9</b>: 'W' suffix = wet locations & sunlight resistant<br>• <b>#11</b>: TPT/TST max 8 ft, appliance ≤50W, extreme flexibility essential"},
+  {id:68,cat:"Cord Ampacity",ref:"Table 400.5(A)(1)",q:"How do you use the flexible cord ampacity table?",a:"<b>Column A</b>: 3 current-carrying conductors<br><b>Column B</b>: 2 current-carrying conductors<br><br>Note: Column A has ampacity for 20 AWG elevator cable.<br>Know the difference between 3-conductor vs 2-conductor cord with #10 AWG."},
+  {id:69,cat:"Knife Switches",ref:"404.13(A)",q:"When must knife switches be used only as isolating switches?",a:"Over <b>1200A at 250V or less</b>, or over <b>1000A at 251-1000V</b>.<br>Must NOT be opened under load."},
+  {id:70,cat:"Knife Switches",ref:"404.26",q:"What auxiliary contacts are required for 600-1000V knife switches?",a:"<b>Auxiliary contacts</b> of renewable or quick-break type (or equivalent) on all knife switches rated 600-1000V designed for breaking current over 200A."},
+  {id:71,cat:"Receptacles",ref:"406.12",q:"Where are tamper-resistant receptacles required?",a:"All 15- and 20-ampere receptacles in <b>CHILD CARE FACILITIES</b>."},
+  {id:72,cat:"Luminaires",ref:"410.106(A)-(C)",q:"What are the luminaire requirements for clothes closets?",a:"Use <b>410.106(A)-(C)</b> to determine if fixture type is correctly located (ceiling vs wall above door) with proper clearance to storage."},
+  {id:73,cat:"Lampholders",ref:"410.97",q:"What is the temperature limit for lampholders near combustible material?",a:"Combustible material shall not exceed <b>90°C (194°F)</b>."},
+  {id:74,cat:"Disconnecting Means",ref:"410.130(G)(1)",q:"What are the disconnecting means requirements for fluorescent luminaires?",a:"In indoor locations other than dwellings, <b>fluorescent luminaires with double-ended lamps and ballasts</b> that can be serviced in place shall have a disconnecting means internal or external to each luminaire."},
+  // === MOTORS & EQUIPMENT ===
+  {id:75,cat:"Motors",ref:"Table 430.248/430.250",q:"How do you find FLC for a motor?",a:"Most questions reference <b>SYNCHRONOUS</b> type — use <b>Table 430.250</b>.<br><br>Ex: 60HP, 230V = 123 FLC<br><br>If Power Factor 0.90 given: take <b>90% of table value</b>."},
+  {id:76,cat:"AC Protection",ref:"440.65",q:"What protection is NOT required for room air conditioners?",a:"<b>GFCI protection is NOT required.</b>"},
+  {id:77,cat:"Generators",ref:"445.20",q:"What GFCI requirements for portable generators ≤15kW?",a:"GFCI for <b>PERSONNEL protection</b> (4-6mA standard GFCI)."},
+  {id:78,cat:"Transformers",ref:"Table 450.3(B)",q:"What does Table 450.3(B) cover?",a:"Sizing for both <b>primary and secondary</b> transformer protection."},
+  {id:79,cat:"Capacitors",ref:"460.6(A)",q:"What is the capacitor discharge requirement?",a:"<b>50V or less within 1 minute.</b>"},
+  {id:80,cat:"Hazardous",ref:"501.15(B)(2)",q:"What are the Class I, Division 2 seal requirements?",a:"Conduit seal required in <b>each conduit run</b> leaving a Class I, Div 2 location.<br><br>Seal fitting may be on <b>either side within 10 ft</b> of boundary.<br>Must minimize gas/vapor communication beyond the seal."},
+  {id:81,cat:"Hazardous",ref:"502.125(A)-(B)",q:"What motor/generator types for Class II locations?",a:"<b>Division 1:</b><br>• Identified for the location<br>• Totally enclosed pipe-ventilated<br><br><b>Division 2:</b><br>• Totally enclosed nonventilated<br>• Totally enclosed pipe-ventilated<br>• Totally enclosed water-air-cooled<br>• Totally enclosed fan-cooled<br>• Dust-ignitionproof<br><br><b>PAY ATTENTION to which division!</b> Most questions reference Division 1."},
+  {id:82,cat:"Hazardous",ref:"503.115",q:"What enclosure type for Class III, Division 1 and 2?",a:"<b>Dusttight</b> enclosures"},
+  {id:83,cat:"Hazardous",ref:"Figure 516.4",q:"What does Figure 516.4 classify?",a:"<b>Spray Application</b> — open container area classification based on distance from drum."},
+  // === SPECIAL OCCUPANCIES ===
+  {id:84,cat:"Healthcare",ref:"517.19(C)(1)",q:"How many receptacles are required in an operating room?",a:"Minimum <b>36 receptacles</b>."},
+  {id:85,cat:"Theaters",ref:"520.42",q:"What insulation rating for fixed stage equipment conductors?",a:"Not less than <b>125°C</b>.<br>Applies to portable strip lights and connector strips."},
+  {id:86,cat:"Theaters",ref:"520.53(A)",q:"What pilot light requirements for portable switchboards on stage?",a:"A pilot light shall be provided for <b>each ungrounded conductor</b> feeding the switchboard.<br><br>Note: Different from 520.61 — watch the wording."},
+  // === MOBILE HOMES & SIGNS ===
+  {id:87,cat:"Mobile Homes",ref:"570.10(A)",q:"What is the minimum service for altered/remodeled mobile homes?",a:"<b>60 amperes</b> minimum."},
+  {id:88,cat:"Mobile Homes",ref:"570.10(A)-(I)",q:"What is required for a top floor ≤4 stories being remodeled?",a:"Usually combines (A) + (I):<br><b>60A service AND Carbon monoxide detectors</b>"},
+  {id:89,cat:"Mobile Homes",ref:"570.10(C)",q:"What are the branch lighting circuit requirements for existing dwellings?",a:"One <b>15A general lighting branch circuit</b> for every <b>500 sq ft</b>.<br>May also supply general use receptacle outlets."},
+  {id:90,cat:"Mobile Homes",ref:"570.11",q:"What are the ½\" FMC rules for existing dwellings?",a:"• May extend general lighting/appliance circuits ≤20A<br>• FMC and MC cable extensions: between existing outlet and <b>2 new outlets</b><br>• Permitted in lengths up to <b>25 ft</b><br>• Conductor fill per Table 570.11"},
+  {id:91,cat:"Temporary",ref:"590.4(H)",q:"What protection for temporary installations through doorways?",a:"Where passing through doorways or pinch points, <b>protection shall be provided to avoid damage</b>."},
+  {id:92,cat:"Signs",ref:"600.5(A)-(C)",q:"What are the sign branch circuit requirements?",a:"(A) <b>Individual branch circuit</b> ≥ 20A, no other load<br>(B) Neon: up to 30A; Other signs: up to 20A<br>(C) Signs/transformer enclosures may serve as pull/junction boxes for adjacent signs"},
+  {id:93,cat:"Signs",ref:"600.6",q:"What are the sign disconnect requirements?",a:"<b>Externally operable switch or circuit breaker</b> that opens all ungrounded conductors and controls no other loads."},
+  {id:94,cat:"Office",ref:"605.6",q:"What are the requirements for office furnishing lighting equipment?",a:"Shall be <b>listed, labeled, and identified</b> for use with office furnishings, complying with 605.6(A), (B), and (C).<br>Note: (B) covers connection requirements — one question on this."},
+  // === CRANES, ELEVATORS, WELDERS ===
+  {id:95,cat:"Cranes",ref:"610.11(C)",q:"What are the flexible connection requirements for crane/hoist motors?",a:"Most questions address <b>flexible connections to motors</b> and similar equipment. Know other parts of Article 610."},
+  {id:96,cat:"Elevators",ref:"620.11(A)",q:"What are the hoistway door interlock wiring requirements?",a:"Conductors shall be <b>Type SF or equivalent</b>.<br>Flame retardant and suitable for temperatures <b>≥ 200°C</b>."},
+  {id:97,cat:"Elevators",ref:"620.41(2)",q:"How are traveling cables supported at hoistway/counterweight ends?",a:"By looping the cables around supports for unsupported lengths <b>less than 100 ft</b>."},
+  {id:98,cat:"Welders",ref:"Article 630",q:"What are the overcurrent protection rules for electric/resistance welders?",a:"630.32(A): Rated or set at <b>not more than 300%</b> of rated primary current.<br><br>630.13: Disconnecting means for each arc welder not equipped with integral disconnect."},
+  {id:99,cat:"Audio",ref:"640.21(A)",q:"What are the power supply cord requirements for permanent audio systems?",a:"Cords shall be <b>suitable for the use</b> and permitted where interchange, maintenance, or repair is facilitated through a power supply cord."},
+  // === X-RAY & POOLS ===
+  {id:100,cat:"X-Ray",ref:"660.1",q:"What is the scope of Article 660 (X-Ray Equipment)?",a:"All X-ray equipment for <b>NONMEDICAL or NONDENTAL</b> use, any frequency or voltage."},
+  {id:101,cat:"X-Ray",ref:"660.4(A)",q:"How can X-ray equipment under 30A be supplied?",a:"Through a <b>suitable attachment plug cap and hard-service cable or cord</b>."},
+  {id:102,cat:"X-Ray",ref:"660.6(A)",q:"What is the branch circuit conductor rating for X-ray equipment?",a:"Not less than <b>50% of the momentary rating</b> or <b>100% of the long-time rating</b>, whichever is greater."},
+  {id:103,cat:"X-Ray",ref:"660.24",q:"What are the independent control requirements for X-ray equipment?",a:"Each piece or group operating from the same high-voltage circuit shall have its own <b>high voltage switch or equivalent disconnecting means</b>."},
+  {id:104,cat:"Swimming Pools",ref:"680.2",q:"What is the definition of stationary swimming pool equipment?",a:"Equipment that is <b>not moved from one place to another</b> in normal use."},
+  {id:105,cat:"Swimming Pools",ref:"680.2",q:"What are the Low Voltage Contact Limits?",a:"1. <b>15V RMS</b> for sinusoidal AC<br>2. <b>21.2V peak</b> for nonsinusoidal AC<br>3. <b>30V</b> for continuous DC<br>4. <b>12.4V peak</b> for DC interrupted at 10-200 Hz"},
+  {id:106,cat:"Swimming Pools",ref:"680.22-680.24",q:"Where can low-voltage pool lights and transformers be located?",a:"Low voltage lights: permitted <b>less than 5 ft</b> from inside pool walls.<br><br>Flush deck box for transformer (680.24(A)(2)(C)):<br>1. Approved potting compound to prevent moisture<br>2. Located <b>≥ 4 ft from inside pool wall</b>"},
+  {id:107,cat:"Swimming Pools",ref:"680.23(A)(2)",q:"What type of transformer for underwater luminaires?",a:"Isolated winding type with <b>ungrounded secondary</b> and grounded metal barrier between windings, OR approved <b>double insulation</b> between primary and secondary."},
+  {id:108,cat:"DC Systems",ref:"685.12",q:"What is the grounding rule for two-wire DC circuits?",a:"Two-wire DC circuits shall be <b>permitted to be ungrounded</b>."},
+  // === FIRE PUMPS & EMERGENCY ===
+  {id:109,cat:"Fire Pumps",ref:"695.3",q:"What are the fire pump power source requirements?",a:"Primary power: <b>separate, independent service</b> with no disconnect other than at the fire pump controller, from:<br>1. Utility power<br>2. On-site generation"},
+  {id:110,cat:"Fire Pumps",ref:"695.6(B)",q:"What are the fire pump circuit conductor installation requirements?",a:"<b>2 inches of concrete</b> or enclosed construction dedicated to fire pump circuits with <b>minimum 2-hour fire resistance rating</b>."},
+  {id:111,cat:"Fire Pumps",ref:"695.7(A)+(B)",q:"What are the fire pump voltage drop limits?",a:"<b>Starting:</b> Not more than 15% below normal controller-rated voltage<br><br><b>Running:</b> Not more than 5% below motor voltage rating at 115% of full load current"},
+  {id:112,cat:"Emergency Systems",ref:"Table 700.5",q:"What emergency system type is required for schools?",a:"School with over <b>100 disabled kids = Type II</b><br>School auditoriums with fixed seats and without fixed seats = <b>Type II</b>"},
+  {id:113,cat:"Emergency Systems",ref:"700.7(B)(2) Ex.2",q:"What usage type is required for aisle cords?",a:"<b>Extra hard usage</b>"},
+  {id:114,cat:"Standby",ref:"702.4(B)+702.5",q:"What are the transfer switch requirements for optional standby systems?",a:"Per <b>Article 702</b> — transfer switch requirements for optional standby systems."},
+  // === LOW VOLTAGE & COMMUNICATIONS ===
+  {id:115,cat:"Class 2 Circuits",ref:"Article 725",q:"What is a Class 2 circuit?",a:"Wiring between the load side of a Class 2 power source and connected equipment. Provides <b>fire initiation safety and electric shock protection</b> due to power limitations.<br><br>Power sources per 725.121(A)(1)-(5):<br>1. Listed Class 2 or 3 transformer<br>2. Listed Class 2 or 3 power supply<br>3. Other listed equipment marked Class 2 or 3<br>4. Listed A/V/IT/comms/industrial limited-power circuits<br>5. Dry cell battery ≤30V, capacity ≤ series No. 6 carbon zinc cells"},
+  {id:116,cat:"Communications",ref:"800.44(A)",q:"What are the communications wire/cable rules on poles?",a:"(1) Below electric light/power conductors where practicable<br>(2) Shall not attach to cross-arm carrying power<br>(3) Minimum separation: <b>12 inches</b>"},
+  {id:117,cat:"Communications",ref:"800.44(B)",q:"What is the vertical clearance for comm cables above roofs?",a:"Not less than <b>8 feet</b> from all points of roofs.<br>Watch the exceptions!"},
+  {id:118,cat:"Communications",ref:"800.50(C)",q:"What are the requirements for comm circuits entering buildings?",a:"Through <b>noncombustible, nonabsorbent insulating bushing</b> or <b>metal raceway</b>.<br><br>Bushing not required if: (1) metal-sheathed cable, (2) masonry, (3) meets 800.50(A) with omitted fuses, (4) extending from grounded metallic sheath cable.<br><br>Raceways/bushings slope upward, or form <b>drip loops</b>."},
+  {id:119,cat:"Antennas",ref:"Article 810",q:"If you see 'Lead-in conductor' on the exam, which article?",a:"<b>Article 810</b><br>Key sections: 810.6, 810.17, 810.18, 810.52"},
+  {id:120,cat:"Antennas",ref:"810.11",q:"What span allows soft/medium drawn copper lead-in conductors?",a:"<b>Less than 35 feet</b> between points of support."},
+  {id:121,cat:"Antennas",ref:"Table 810.16(A)",q:"What size conductor for a 75' outdoor antenna span with copper-clad steel?",a:"<b>17 AWG</b>"},
+  // === COAXIAL CABLE ===
+  {id:122,cat:"Coaxial",ref:"Article 820",q:"What are the coaxial cable requirements for residential installation?",a:"<b>Protected from physical damage</b>."},
+  {id:123,cat:"Coaxial",ref:"820.44(E)",q:"What are the coaxial cable separation requirements outside buildings?",a:"(E)(1): At least <b>4 inches</b> from electric light, power, Class 1, or non-power-limited fire alarm conductors<br><br>(E)(3): At least <b>6 feet</b> from lightning conductors where practicable"},
+  {id:124,cat:"Coaxial",ref:"820.48",q:"What are the rules for unlisted coaxial cables entering buildings?",a:"Permitted in non-riser/plenum spaces where:<br>• Length within building ≤ <b>50 ft</b> from entrance<br>• Enters from outside and terminated at a <b>grounding block</b>"},
+  {id:125,cat:"Coaxial",ref:"820.93 + 820.100",q:"What are the coaxial cable protection and grounding requirements?",a:"<b>820.93(C):</b> Listed primary protector as close as practicable to entrance point.<br><br><b>820.100(A)(3):</b> Bonding/GEC not smaller than #14 AWG, capacity ≥ outer sheath, ≤ #6 AWG.<br><b>820.100(A)(4):</b> In 1-2 family dwellings, ≤ <b>20 ft</b>.<br><b>820.100(A)(5):</b> Run in <b>straight line</b> as practicable.<br><b>820.100(A)(6):</b> Metal raceway both ends bonded to contained conductor."},
+  {id:126,cat:"Coaxial",ref:"820.133(A)(2)",q:"What is the coaxial cable separation from power conductors INSIDE buildings?",a:"At least <b>2 inches</b> from electric light, power, Class 1, non-power-limited fire alarm, or medium-power network-powered broadband circuits."},
+  // === CHAPTER 9 TABLES ===
+  {id:127,cat:"Conduit Bends",ref:"Ch. 9 Table 2",q:"What are the bend radii from Chapter 9 Table 2?",a:"One-shot bend radius of 3\" rigid = <b>13\"</b><br>Other bends radius of 1½\" rigid = <b>8\"</b>"},
+  {id:128,cat:"Conduit Sizing",ref:"Ch. 9 Tables 4 & 5",q:"How do you size EMT for given conductors?",a:"Example: (3) #8 THHW = <b>¾\" EMT</b><br>Use Table 4 for conduit dimensions, Table 5 for conductor dimensions."},
+  {id:129,cat:"Conduit",ref:"Ch. 9 Table 4",q:"What does Table 4 provide for EMT?",a:"<b>Nominal Internal Diameter</b> for each trade size."},
+  {id:130,cat:"Conductors",ref:"Ch. 9 Table 5A",q:"What does Table 5A cover?",a:"<b>Compact conductor properties</b>.<br>Ex: 4/0 THWN compact stranded ≈ 0.645\" diameter.<br>Note: difference between approximate diameter vs. approximate area."},
+  {id:131,cat:"Conductors",ref:"Ch. 9 Table 8",q:"What does Chapter 9 Table 8 cover?",a:"<b>Conductor Properties — Bare Conductors</b>"},
+  {id:132,cat:"Conductors",ref:"Ch. 9 Table 9",q:"What does Chapter 9 Table 9 cover?",a:"<b>3-phase, 600V, 75°C, AC resistance in conduit</b>.<br>Ex: Copper uncoated 750 kcmil in aluminum conduit = <b>0.024 Ω/1000ft</b>"},
+];
+
+// Categories
+const CATEGORIES = [...new Set(CARDS.map(c => c.cat))].sort();
+
+// State
+let currentIndex = 0;
+let known = new Set();
+let seen = new Set();
+let isFlipped = false;
+let isShuffled = false;
+let activeFilter = 'all';
+let displayOrder = [...Array(CARDS.length).keys()];
+
+const $ = id => document.getElementById(id);
+
+function getFilteredCards() {
+  if (activeFilter === 'all') return displayOrder;
+  return displayOrder.filter(i => CARDS[i].cat === activeFilter);
+}
+
+function updateStats() {
+  const filtered = getFilteredCards();
+  $('sCardNum').textContent = currentIndex + 1;
+  $('sCorrect').textContent = known.size;
+  $('sSeen').textContent = seen.size;
+  $('progressFill').style.width = (seen.size / CARDS.length * 100) + '%';
+}
+
+function renderCard() {
+  const filtered = getFilteredCards();
+  if (filtered.length === 0) { $('cardQuestion').textContent = 'No cards in this category'; return; }
+  if (currentIndex >= filtered.length) currentIndex = filtered.length - 1;
+  if (currentIndex < 0) currentIndex = 0;
+  
+  const card = CARDS[filtered[currentIndex]];
+  isFlipped = false;
+  $('flashcard').classList.remove('flipped');
+  
+  $('cardNum').textContent = `Q${card.id}`;
+  $('cardTopic').textContent = card.cat;
+  $('cardRef').textContent = card.ref;
+  $('cardQuestion').innerHTML = card.q;
+  $('cardNumB').textContent = `A${card.id}`;
+  $('cardTopicB').textContent = 'Answer';
+  $('cardRefB').textContent = card.ref;
+  $('cardAnswer').innerHTML = card.a;
+  
+  seen.add(filtered[currentIndex]);
+  updateStats();
+  
+  // Update button states
+  $('btnPrev').disabled = currentIndex === 0;
+  $('btnKnew').textContent = known.has(filtered[currentIndex]) ? '✓ Known' : '✓ Knew It';
+}
+
+function flipCard() {
+  isFlipped = !isFlipped;
+  $('flashcard').classList.toggle('flipped', isFlipped);
+}
+
+function nextCard() {
+  const filtered = getFilteredCards();
+  if (currentIndex < filtered.length - 1) { currentIndex++; renderCard(); }
+}
+
+function prevCard() {
+  if (currentIndex > 0) { currentIndex--; renderCard(); }
+}
+
+function markKnown() {
+  const filtered = getFilteredCards();
+  const idx = filtered[currentIndex];
+  if (known.has(idx)) { known.delete(idx); } else { known.add(idx); }
+  renderCard();
+}
+
+function jumpTo() {
+  const num = parseInt($('jumpInput').value);
+  if (isNaN(num)) return;
+  const filtered = getFilteredCards();
+  const found = filtered.findIndex(i => CARDS[i].id === num);
+  if (found >= 0) { currentIndex = found; renderCard(); }
+}
+
+function setFilter(cat) {
+  activeFilter = cat;
+  currentIndex = 0;
+  document.querySelectorAll('.controls .btn').forEach(b => b.classList.remove('active'));
+  if (cat === 'all') $('btnAll').classList.add('active');
+  document.querySelectorAll('.cat-chip').forEach(c => {
+    c.classList.toggle('active', c.dataset.cat === cat);
+  });
+  renderCard();
+}
+
+function toggleCats() {
+  const grid = $('catGrid');
+  grid.classList.toggle('show');
+}
+
+function toggleShuffle() {
+  isShuffled = !isShuffled;
+  if (isShuffled) {
+    for (let i = displayOrder.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [displayOrder[i], displayOrder[j]] = [displayOrder[j], displayOrder[i]];
+    }
+  } else {
+    displayOrder = [...Array(CARDS.length).keys()];
+  }
+  currentIndex = 0;
+  $('btnShuffle').classList.toggle('active', isShuffled);
+  renderCard();
+}
+
+function resetProgress() {
+  known.clear(); seen.clear(); currentIndex = 0;
+  updateStats(); renderCard();
+}
+
+// Build category chips
+function buildCats() {
+  const grid = $('catGrid');
+  CATEGORIES.forEach(cat => {
+    const chip = document.createElement('div');
+    chip.className = 'cat-chip';
+    chip.dataset.cat = cat;
+    chip.textContent = cat;
+    chip.onclick = () => setFilter(cat);
+    grid.appendChild(chip);
+  });
+}
+
+// Keyboard navigation
+document.addEventListener('keydown', e => {
+  if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); flipCard(); }
+  if (e.key === 'ArrowRight') nextCard();
+  if (e.key === 'ArrowLeft') prevCard();
+  if (e.key === 'k' || e.key === 'K') markKnown();
+});
+
+// Swipe support
+let touchStartX = 0;
+document.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; });
+document.addEventListener('touchend', e => {
+  const diff = e.changedTouches[0].clientX - touchStartX;
+  if (Math.abs(diff) > 50) {
+    if (diff < 0) nextCard(); else prevCard();
+  }
+});
+
+// Init
+buildCats();
+renderCard();
+</script>
+</body>
+</html>

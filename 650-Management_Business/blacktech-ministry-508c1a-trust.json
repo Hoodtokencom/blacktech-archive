@@ -1,0 +1,54 @@
+{
+  "trust_name": "Blacktech Ministry 508(c)(1)(A) Trust",
+  "entity_type": "508c1a Ministry Trust",
+  "jurisdiction_state": "Delaware",
+  "parties": [
+    {
+      "name": "Derrell A. Black",
+      "role": "Grantor/Settlor",
+      "address": "14076 Lincoln Ave, Dolton, IL 60419",
+      "tax_id": null,
+      "relationship": ""
+    },
+    {
+      "name": "Derrell A. Black",
+      "role": "Primary Trustee",
+      "address": "14076 Lincoln Ave, Dolton, IL 60419",
+      "tax_id": null,
+      "relationship": ""
+    }
+  ],
+  "schedule_a_assets": [
+    {
+      "asset_description": "Donations and Charitable Contributions",
+      "initial_value_usd": 0.0,
+      "asset_type": "Donations"
+    }
+  ],
+  "beneficiaries": [
+    {
+      "name": "Black Family Legacy Trust",
+      "relationship": "Family Trust",
+      "role": "Sole Beneficiary",
+      "share_percentage": 100.0
+    }
+  ],
+  "is_irrevocable": true,
+  "requires_notarization": true,
+  "execution_date": null,
+  "status": "review",
+  "section_508c1a_compliant": true,
+  "religious_or_charitable_purpose": "Religious, educational, and community development ministry serving the South Side of Chicago and surrounding areas.",
+  "registered_agent": "Harvard Business Services, Inc.",
+  "registered_agent_cost_annual": 50.0,
+  "created_at": "2026-06-23T13:55:32.069046",
+  "updated_at": "2026-06-23T15:06:35.114317",
+  "factory_output": {
+    "filled_text": "/home/allenai/blacktech_brain/650-Management_Business/trusts/output/BSC-T-MIN-20260623-filled.txt",
+    "html": "/home/allenai/blacktech_brain/650-Management_Business/trusts/output/BSC-T-MIN-20260623.html",
+    "pdf": "/home/allenai/blacktech_brain/650-Management_Business/trusts/output/BSC-T-MIN-20260623.pdf",
+    "template_pdf": "/home/allenai/blacktech_brain/650-Management_Business/trusts/output/BSC-T-MIN-template.pdf",
+    "generated": "20260623"
+  },
+  "total_beneficiary_shares": 100.0
+}

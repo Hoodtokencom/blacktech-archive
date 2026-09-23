@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page { size: letter; margin: 0.75in; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: #e0e0e0; background: #0a0a0f; line-height: 1.6; }
+  
+  .cover { text-align: center; padding: 1.5in 0.5in; background: linear-gradient(135deg, #0a0a0f 0%, #141420 50%, #1a1a2e 100%); page-break-after: always; }
+  .cover h1 { font-size: 48pt; color: #f59e0b; margin-bottom: 10pt; text-transform: uppercase; letter-spacing: 4px; }
+  .cover .subtitle { font-size: 14pt; color: #22c55e; margin-bottom: 30pt; letter-spacing: 2px; }
+  .cover .url { font-size: 18pt; color: #f59e0b; background: #141420; padding: 12pt 30pt; border-radius: 8pt; display: inline-block; margin: 20pt 0; }
+  .cover .tagline { font-size: 11pt; color: #888; margin-top: 40pt; }
+  
+  .content { padding: 0.1in 0; }
+  h2 { color: #f59e0b; font-size: 16pt; border-bottom: 2px solid #f59e0b; padding-bottom: 4pt; margin: 18pt 0 8pt 0; }
+  h3 { color: #22c55e; font-size: 12pt; margin: 12pt 0 4pt 0; }
+  p, li { font-size: 9.5pt; margin-bottom: 4pt; }
+  ul { padding-left: 18pt; }
+  ul li { margin-bottom: 3pt; }
+  
+  .code-block { background: #1a1a2e; border: 1px solid #333; border-left: 3px solid #f59e0b; padding: 8pt 12pt; margin: 6pt 0 10pt 0; font-family: 'Courier New', monospace; font-size: 8pt; color: #22c55e; white-space: pre-wrap; word-break: break-all; }
+  
+  .info-box { background: #141420; border: 1px solid #f59e0b; border-radius: 6pt; padding: 10pt 14pt; margin: 8pt 0; }
+  .info-box .label { color: #f59e0b; font-weight: bold; font-size: 9pt; }
+  .info-box .value { color: #e0e0e0; font-size: 9pt; }
+  
+  table { width: 100%; border-collapse: collapse; margin: 8pt 0; font-size: 9pt; }
+  th { background: #141420; color: #f59e0b; padding: 6pt 8pt; text-align: left; border: 1px solid #333; }
+  td { padding: 5pt 8pt; border: 1px solid #333; color: #e0e0e0; }
+  tr:nth-child(even) td { background: #0d0d1a; }
+  
+  .warning { background: #2a1a00; border: 1px solid #f59e0b; border-radius: 4pt; padding: 8pt 12pt; margin: 8pt 0; }
+  .warning::before { content: "⚠ "; color: #f59e0b; font-weight: bold; }
+  
+  .footer { text-align: center; color: #555; font-size: 8pt; margin-top: 30pt; padding-top: 10pt; border-top: 1px solid #333; }
+</style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover">
+  <div style="font-size:72pt; margin-bottom:10pt;">🎬</div>
+  <h1>Blacktech TV</h1>
+  <div class="subtitle">PEERTUBE COMMAND GUIDE</div>
+  <div class="url">tv.blacktechsolutionscorp.com</div>
+  <div class="tagline">Self-Hosted • Federated • Uncensorable<br>Energy • Technology • Community</div>
+  <div style="margin-top: 40pt; font-size: 10pt; color: #666;">
+    Blacktech Solutions Corp<br>
+    Last Updated: June 2026
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+
+<h2>📋 Quick Reference</h2>
+<table>
+  <tr><th>Action</th><th>Where</th></tr>
+  <tr><td>Watch videos</td><td>tv.blacktechsolutionscorp.com</td></tr>
+  <tr><td>Admin panel</td><td>Login → Administration</td></tr>
+  <tr><td>Upload video</td><td>➕ Publish → Add a video</td></tr>
+  <tr><td>Create channel</td><td>My library → ➕ Add channel</td></tr>
+  <tr><td>Add users</td><td>Administration → Users</td></tr>
+  <tr><td>Change branding</td><td>Administration → Configuration</td></tr>
+  <tr><td>Change avatar/banner</td><td>API (see below)</td></tr>
+  <tr><td>Federation</td><td>Administration → Configuration → Federation</td></tr>
+</table>
+
+<h2>🔑 Login Credentials</h2>
+<div class="info-box">
+  <div class="label">URL</div>
+  <div class="value">https://tv.blacktechsolutionscorp.com</div>
+  <div class="label" style="margin-top:6pt;">Username</div>
+  <div class="value">root</div>
+  <div class="label" style="margin-top:6pt;">Password</div>
+  <div class="value">BlacktechTV2026!</div>
+  <div class="label" style="margin-top:6pt;">Docker Compose Path</div>
+  <div class="value">/home/allenai/peertube/</div>
+</div>
+
+<h2>📤 Upload a Video (Web UI)</h2>
+<ol>
+  <li>Go to tv.blacktechsolutionscorp.com and <strong>Login</strong></li>
+  <li>Click <strong>➕ Publish</strong> (top menu) → <strong>Add a video</strong></li>
+  <li>Drag/drop or click to select your video file</li>
+  <li>Fill in:
+    <ul>
+      <li><strong>Title</strong> — name of the video</li>
+      <li><strong>Channel</strong> — pick root_channel (default) or create new ones</li>
+      <li><strong>Privacy</strong> — Public, Unlisted, or Private</li>
+      <li><strong>Category</strong> — Science &amp; Technology (15)</li>
+      <li><strong>Description</strong> — SEO text, links, hashtags</li>
+    </ul>
+  </li>
+  <li>Click <strong>Publish</strong> — PeerTube auto-transcodes to multiple resolutions</li>
+</ol>
+
+<h2>📤 Upload a Video (API)</h2>
+<div class="code-block"># Step 1: Get auth token
+cd /home/allenai/peertube
+docker compose exec -T peertube curl -s -X POST \
+  'http://localhost:9000/api/v1/users/token' \
+  -d 'client_id=dmy7ml8bmyc2pind0uam8m2kf2r6stv6&amp;client_secret=NIoaI3NU9YZ2f25SPjnJrelv5bXq3fOY&amp;grant_type=password&amp;response_type=code&amp;username=root&amp;password=BlacktechTV2026!' \
+  | python3 -c "import sys,json; open('/tmp/pt_token.txt','w').write(json.load(sys.stdin)['access_token'])"
+
+# Step 2: Copy video to container
+docker cp /path/to/video.mp4 peertube:/tmp/upload.mp4
+
+# Step 3: Upload
+TOKEN=$(cat /tmp/pt_token.txt)
+docker compose exec -T peertube curl -s -X POST \
+  http://localhost:9000/api/v1/videos/upload \
+  -H "Authorization: Bearer $TOKEN" \
+  -F "videofile=@/tmp/upload.mp4;type=video/mp4" \
+  -F "channelId=1" \
+  -F "name=Video Title" \
+  -F "privacy=1"</div>
+
+<h2>📺 Create a Channel</h2>
+<ol>
+  <li>Login → click your avatar (top right) → <strong>My library</strong></li>
+  <li>Click <strong>➕ Add channel</strong></li>
+  <li>Name it (e.g., energy-tips, electrical-work, behind-the-scenes)</li>
+  <li>Each channel gets its own URL: tv.blacktechsolutionscorp.com/video-channels/YOUR_CHANNEL</li>
+</ol>
+
+<h2>👤 Create Additional Users</h2>
+<ol>
+  <li>Login as admin → <strong>Administration</strong> → <strong>Users</strong> → <strong>➕ Add user</strong></li>
+  <li>Set username, email, password, role (User, Moderator, Admin)</li>
+  <li>Use for team members, content creators, etc.</li>
+</ol>
+
+<h2>🎨 Upload Avatar / Banner (API)</h2>
+<div class="warning">Use POST (not PUT) to the /pick endpoints. Field names are avatarfile and bannerfile.</div>
+<div class="code-block"># Get token (see above), then use Python http.client inside container
+# POST /api/v1/config/instance-avatar/pick  → field: avatarfile
+# POST /api/v1/config/instance-banner/pick   → field: bannerfile
+# Token must be read from file (shell interpolation truncates it)</div>
+
+<h2>🌐 Federation (Follow Other Instances)</h2>
+<ol>
+  <li>Admin → <strong>Configuration</strong> → <strong>Federation</strong></li>
+  <li>Add follows: videos.danksquad.org, tube.tchncs.de, peertube.social</li>
+  <li>Your videos also appear in their feeds = more reach</li>
+</ol>
+
+<h2>🔌 Embed Videos Anywhere</h2>
+<p>Every video has an <strong>Embed</strong> tab — click <strong>Share</strong> → <strong>Embed</strong> — paste the iframe into:</p>
+<ul>
+  <li>Blacktech website</li>
+  <li>Social media posts</li>
+  <li>Email newsletters</li>
+  <li>Proposals and estimates</li>
+</ul>
+
+<h2>🔴 Live Streaming</h2>
+<ol>
+  <li>Admin → <strong>Configuration</strong> → <strong>Live streams</strong> → Enable</li>
+  <li>Create a live video → get RTMP push URL</li>
+  <li>Stream from OBS, phone, or any RTMP source</li>
+</ol>
+
+<h2>🛠️ Maintenance Commands</h2>
+<div class="code-block"># Restart PeerTube
+cd /home/allenai/peertube &amp;&amp; docker compose restart peertube
+
+# Check status
+docker compose ps
+
+# View logs
+docker compose logs peertube --tail 50
+
+# Reset admin password
+docker compose exec peertube node dist/scripts/reset-password.js -u root
+# Then type new password
+
+# Update PeerTube
+docker compose pull &amp;&amp; docker compose up -d
+
+# Change instance description
+docker cp /path/to/local-production.json peertube:/config/local-production.json
+docker restart peertube</div>
+
+<h2>⚙️ OAuth Credentials (API)</h2>
+<div class="info-box">
+  <div class="label">Client ID</div>
+  <div class="value">dmy7ml8bmyc2pind0uam8m2kf2r6stv6</div>
+  <div class="label" style="margin-top:6pt;">Client Secret</div>
+  <div class="value">NIoaI3NU9YZ2f25SPjnJrelv5bXq3fOY</div>
+</div>
+
+<div class="footer">
+  Blacktech Solutions Corp — tv.blacktechsolutionscorp.com<br>
+  Self-hosted on Raspberry Pi 5 • Powered by PeerTube • Federated via ActivityPub
+</div>
+
+</div>
+</body>
+</html>

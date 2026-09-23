@@ -10,7 +10,8 @@
     "file": "000-General/README.md",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366605",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-09-21T03:00:27.538999"
   },
   {
     "file": "100-Philosophy/INDEX.md",
@@ -153,7 +154,8 @@
     "file": "696-Utilities/INDEX.md",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366661",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-09-21T03:00:27.538999"
   },
   {
     "file": "640-Household_Favorites/INDEX.md",
@@ -201,19 +203,22 @@
     "file": "691-Building_Materials/INDEX.md",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366679",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-09-21T03:00:27.538999"
   },
   {
     "file": "500-Science/INDEX.md",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366691",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-09-21T03:00:27.538999"
   },
   {
     "file": "692-Auxiliary_Practices/INDEX.md",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366694",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-09-21T03:00:27.538999"
   },
   {
     "file": "900-History_Geography/INDEX.md",
@@ -254,7 +259,8 @@
     "file": "000-General/__pycache__/dewey_inbox_router.cpython-311.pyc",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366709",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-09-21T03:00:27.538999"
   },
   {
     "file": "000-General/dewey_blockchain.py",
@@ -302,7 +308,8 @@
     "file": "600-Technology/hostgator_email.md",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366727",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-09-22T03:00:28.365869"
   },
   {
     "file": "000-General/dewey_sync.py",
@@ -315,7 +322,8 @@
     "file": "700-Arts_Recreation/INDEX.md",
     "deleted_at": "2026-06-25T11:31:36.366572",
     "purge_due": "2026-08-09T11:31:36.366732",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-09-21T03:00:27.538999"
   },
   {
     "file": "000-General/__pycache__/passcode_vault.cpython-311.pyc",
@@ -327,13 +335,15 @@
     "file": "003-Computing_Science/blacktech_tv_logo_seahawks.html",
     "deleted_at": "2026-06-27T03:00:27.266350",
     "purge_due": "2026-08-11T03:00:27.266378",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-09-22T03:00:28.365869"
   },
   {
     "file": "003-Computing_Science/blacktech_tv_command_guide.pdf",
     "deleted_at": "2026-06-27T03:00:27.266350",
     "purge_due": "2026-08-11T03:00:27.266389",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-09-22T03:00:28.365869"
   },
   {
     "file": "003-Computing_Science/servers/bluewednesday_server.py",
@@ -351,7 +361,8 @@
     "file": "003-Computing_Science/blacktech_tv_banner_seahawks.png",
     "deleted_at": "2026-06-27T03:00:27.266350",
     "purge_due": "2026-08-11T03:00:27.266397",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-09-22T03:00:28.365869"
   },
   {
     "file": "003-Computing_Science/dashboards/bfn.html",
@@ -381,7 +392,8 @@
     "file": "003-Computing_Science/blacktech_tv_banner_bright.png",
     "deleted_at": "2026-06-27T03:00:27.266350",
     "purge_due": "2026-08-11T03:00:27.266416",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-09-22T03:00:28.365869"
   },
   {
     "file": "003-Computing_Science/servers/comed_server.py",
@@ -399,7 +411,8 @@
     "file": "003-Computing_Science/blacktech_tv_avatar_seahawks.png",
     "deleted_at": "2026-06-27T03:00:27.266350",
     "purge_due": "2026-08-11T03:00:27.266424",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-09-22T03:00:28.365869"
   },
   {
     "file": "003-Computing_Science/dashboards/energy_board.html",
@@ -411,7 +424,8 @@
     "file": "003-Computing_Science/blacktech_tv_logo.html",
     "deleted_at": "2026-06-27T03:00:27.266350",
     "purge_due": "2026-08-11T03:00:27.266429",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-09-22T03:00:28.365869"
   },
   {
     "file": "003-Computing_Science/dashboards/electrification_schematic.html",
@@ -423,7 +437,8 @@
     "file": "003-Computing_Science/blacktech_tv_avatar_bright.png",
     "deleted_at": "2026-06-27T03:00:27.266350",
     "purge_due": "2026-08-11T03:00:27.266434",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-09-22T03:00:28.365869"
   },
   {
     "file": "003-Computing_Science/servers/finance_server.py",
@@ -435,7 +450,8 @@
     "file": "003-Computing_Science/blacktech_tv_intro.mp4",
     "deleted_at": "2026-06-27T03:00:27.266350",
     "purge_due": "2026-08-11T03:00:27.266439",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-09-22T03:00:28.365869"
   },
   {
     "file": "003-Computing_Science/dashboards/blacktech-agent-network.html",
@@ -447,7 +463,8 @@
     "file": "003-Computing_Science/blacktech_tv_logo_bright.html",
     "deleted_at": "2026-06-27T03:00:27.266350",
     "purge_due": "2026-08-11T03:00:27.266444",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-09-22T03:00:28.365869"
   },
   {
     "file": "003-Computing_Science/servers/energy_board_server.py",
@@ -507,7 +524,8 @@
     "file": "003-Computing_Science/blacktech_tv_guide.html",
     "deleted_at": "2026-06-27T03:00:27.266350",
     "purge_due": "2026-08-11T03:00:27.266471",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-09-22T03:00:28.365869"
   },
   {
     "file": "003-Computing_Science/dashboards/money_budget_clean.html",
@@ -519,7 +537,8 @@
     "file": "003-Computing_Science/hostgator_email.md",
     "deleted_at": "2026-06-27T03:00:27.266350",
     "purge_due": "2026-08-11T03:00:27.266476",
-    "status": "pending"
+    "status": "restored",
+    "restored_at": "2026-09-22T03:00:28.365869"
   },
   {
     "file": "003-Computing_Science/dashboards/index.html",

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Three Platforms — Blacktech Solutions</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #0a0a0f; font-family: 'Segoe UI', Arial, sans-serif; }
+
+  .page {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 0 auto;
+    background: #141420;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* HEADER BAND */
+  .header {
+    background: linear-gradient(135deg, #002244 0%, #003366 60%, #004080 100%);
+    padding: 32px 40px 24px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -40px; left: -40px; right: -40px; bottom: -40px;
+    background: radial-gradient(ellipse at 50% 0%, #1e90ff22 0%, transparent 70%);
+  }
+  .header .logo-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 16px;
+  }
+  .logo-box {
+    width: 80px; height: 70px;
+    background: url('/media/allenai/Expansion/Blacktech_Drive/Home_Backup/Blacktech_Reports/Photos/blacktech_logo.jpg') center center no-repeat;
+    background-size: contain;
+    background-color: #141420;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+  .header h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #69BE28;
+    letter-spacing: 3px;
+    line-height: 1.1;
+    text-align: left;
+  }
+  .header h1 span { color: #fff; display: block; font-size: 0.9rem; letter-spacing: 4px; font-weight: 400; margin-bottom: 2px; }
+
+  .headline {
+    background: #69BE28;
+    color: #002244;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .sub-headline {
+    background: #002244;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 8px 40px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  /* INTRO */
+  .intro {
+    padding: 22px 40px 10px;
+    border-bottom: 2px solid #1a3a1a;
+  }
+  .intro p {
+    font-size: 0.92rem;
+    color: #e2e8f0;
+    line-height: 1.7;
+    text-align: center;
+    max-width: 6in;
+    margin: 0 auto;
+  }
+  .intro strong { color: #f59e0b; }
+
+  /* PLATFORM CARDS */
+  .platforms {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    padding: 22px 40px;
+  }
+  .platform-card {
+    border: 2px solid #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #1a1a2e;
+    display: flex;
+    flex-direction: column;
+  }
+  .platform-header {
+    padding: 14px 12px;
+    text-align: center;
+  }
+  .platform-header.livevue {
+    background: linear-gradient(135deg, #002244 0%, #001a33 100%);
+    border-bottom: 3px solid #69BE28;
+  }
+  .platform-header.instavue {
+    background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+    border-bottom: 3px solid #69BE28;
+  }
+  .platform-header.academy {
+    background: linear-gradient(135deg, #1a0a2e 0%, #2a1a4e 100%);
+    border-bottom: 3px solid #f59e0b;
+  }
+  .platform-header h3 {
+    font-size: 1.15rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+  }
+  .platform-header.livevue h3 { color: #fff; }
+  .platform-header.livevue h3 span { color: #69BE28; }
+  .platform-header.instavue h3 { color: #fff; }
+  .platform-header.instavue h3 span { color: #69BE28; }
+  .platform-header.academy h3 { color: #fff; }
+  .platform-header.academy h3 span { color: #f59e0b; }
+  .platform-header p {
+    font-size: 0.62rem;
+    color: #90b8d4;
+    margin-top: 4px;
+    letter-spacing: 1px;
+  }
+  .platform-body {
+    padding: 14px 12px;
+    flex: 1;
+  }
+  .platform-body .p-icon { font-size: 1.8rem; text-align: center; margin-bottom: 6px; }
+  .platform-body h4 { font-size: 0.72rem; font-weight: 900; color: #f59e0b; margin-bottom: 6px; letter-spacing: 1px; }
+  .platform-body ul { list-style: none; }
+  .platform-body ul li {
+    font-size: 0.65rem;
+    color: #e2e8f0;
+    padding: 3px 0;
+    border-bottom: 1px solid #1e293b;
+    line-height: 1.4;
+  }
+  .platform-body ul li:last-child { border-bottom: none; }
+  .platform-body ul li::before { content: '✓ '; color: #69BE28; font-weight: 900; }
+  .platform-link {
+    display: block;
+    text-align: center;
+    color: #002244;
+    font-size: 0.72rem;
+    font-weight: 900;
+    padding: 8px;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+  .platform-link.green { background: #69BE28; }
+  .platform-link.amber { background: #f59e0b; }
+
+  /* QR PLACEHOLDER */
+  .qr-section {
+    padding: 0 40px 18px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  .qr-box {
+    text-align: center;
+    background: #0f172a;
+    border: 1.5px solid #1e293b;
+    border-radius: 10px;
+    padding: 12px;
+  }
+  .qr-box .qr-label { font-size: 0.6rem; font-weight: 900; color: #f59e0b; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px; }
+  .qr-box .qr-url { font-size: 0.62rem; color: #69BE28; font-weight: 700; margin-top: 4px; }
+
+  /* WHY SECTION */
+  .section { padding: 18px 40px; }
+  .section-title {
+    font-size: 0.72rem;
+    font-weight: 900;
+    color: #f59e0b;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-left: 4px solid #69BE28;
+    padding-left: 10px;
+    margin-bottom: 14px;
+  }
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .feature {
+    border: 2px solid #1e293b;
+    border-radius: 10px;
+    padding: 14px;
+    background: #1a1a2e;
+    text-align: center;
+  }
+  .feature .f-icon { font-size: 1.8rem; margin-bottom: 6px; }
+  .feature h5 { font-size: 0.72rem; font-weight: 900; color: #f59e0b; margin-bottom: 4px; }
+  .feature p { font-size: 0.65rem; color: #94a3b8; line-height: 1.5; }
+
+  /* CTA FOOTER */
+  .cta {
+    background: linear-gradient(135deg, #002244 0%, #001a33 100%);
+    padding: 22px 40px;
+    text-align: center;
+    margin-top: auto;
+  }
+  .cta h3 { font-size: 1.2rem; font-weight: 900; color: #69BE28; margin-bottom: 6px; letter-spacing: 2px; }
+  .cta p { font-size: 0.82rem; color: #90b8d4; margin-bottom: 14px; }
+  .cta-row { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+  .cta-item {
+    background: #1a1a2e;
+    padding: 10px 14px;
+    text-align: center;
+    min-width: 130px;
+  }
+  .cta-item .ci-label { font-size: 0.58rem; font-weight: 900; color: #f59e0b; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 3px; }
+  .cta-item .ci-val { font-size: 0.82rem; font-weight: 800; color: #e2e8f0; }
+
+  .disclaimer {
+    text-align: center;
+    font-size: 0.6rem;
+    color: #7090a0;
+    padding: 8px 40px;
+    background: #001428;
+  }
+
+  @media print {
+    body { background: #0a0a0f; }
+    .page { width: 100%; min-height: auto; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo-row">
+      <div class="logo-box"></div>
+      <h1>
+        <span>BLACKTECH SOLUTIONS CORP</span>
+        OUR PLATFORMS
+      </h1>
+    </div>
+  </div>
+
+  <div class="headline">📺 Watch · 📱 Connect · 🎓 Learn</div>
+  <div class="sub-headline">Three Platforms · One Community · Built by Blacktech</div>
+
+  <!-- INTRO -->
+  <div class="intro">
+    <p>
+      Blacktech Solutions Corp powers <strong>three community platforms</strong> — LiveVue for video content, InstaVue for local networking, and Blacktech Academy for energy education. All free, self-hosted, and built to uplift our community.
+    </p>
+  </div>
+
+  <!-- PLATFORM CARDS -->
+  <div class="platforms">
+
+    <!-- LiveVue -->
+    <div class="platform-card">
+      <div class="platform-header livevue">
+        <h3>Live<span>Vue</span></h3>
+        <p>VIDEO STREAMING</p>
+      </div>
+      <div class="platform-body">
+        <div class="p-icon">📺</div>
+        <h4>WATCH & LEARN</h4>
+        <ul>
+          <li>Self-hosted video (like YouTube, ours)</li>
+          <li>Energy education & tutorials</li>
+          <li>Electrification walkthroughs</li>
+          <li>Community updates</li>
+          <li>No ads · No tracking</li>
+          <li>Support creators via CashApp</li>
+        </ul>
+      </div>
+      <a class="platform-link green" href="https://tv.blacktechsolutionscorp.com">▶ WATCH NOW</a>
+    </div>
+
+    <!-- InstaVue -->
+    <div class="platform-card">
+      <div class="platform-header instavue">
+        <h3>Insta<span>Vue</span></h3>
+        <p>LOCAL NETWORK</p>
+      </div>
+      <div class="platform-body">
+        <div class="p-icon">📱</div>
+        <h4>CONNECT LOCALLY</h4>
+        <ul>
+          <li>Local business directory</li>
+          <li>Photo feed (like Instagram)</li>
+          <li>Connect with South Side</li>
+          <li>Post jobs, services, products</li>
+          <li>Build your network</li>
+          <li>Dark & light themes</li>
+        </ul>
+      </div>
+      <a class="platform-link green" href="https://network.blacktechsolutionscorp.com">🔗 JOIN NOW</a>
+    </div>
+
+    <!-- Academy -->
+    <div class="platform-card">
+      <div class="platform-header academy">
+        <h3>Blacktech <span>Academy</span></h3>
+        <p>ENERGY EDUCATION</p>
+      </div>
+      <div class="platform-body">
+        <div class="p-icon">🎓</div>
+        <h4>GET CERTIFIED</h4>
+        <ul>
+          <li>Energy advisor training</li>
+          <li>ComEd program courses</li>
+          <li>Electrification 101</li>
+          <li>Solar & battery basics</li>
+          <li>HVAC fundamentals</li>
+          <li>Free signup · Learn at your pace</li>
+        </ul>
+      </div>
+      <a class="platform-link amber" href="https://academy.blacktechsolutionscorp.com">🎓 ENROLL NOW</a>
+    </div>
+
+  </div>
+
+  <!-- QR CODES -->
+  <div class="qr-section">
+    <div class="qr-box">
+      <div class="qr-label">📺 LiveVue</div>
+      <div style="width:90px;height:90px;background:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.55rem;color:#002244;font-weight:900;text-align:center;">tv.blacktech<br/>solutionscorp.com</div>
+      <div class="qr-url">tv.blacktechsolutionscorp.com</div>
+    </div>
+    <div class="qr-box">
+      <div class="qr-label">📱 InstaVue</div>
+      <div style="width:90px;height:90px;background:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.55rem;color:#002244;font-weight:900;text-align:center;">network.blacktech<br/>solutionscorp.com</div>
+      <div class="qr-url">network.blacktechsolutionscorp.com</div>
+    </div>
+    <div class="qr-box">
+      <div class="qr-label">🎓 Academy</div>
+      <div style="width:90px;height:90px;background:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:0.55rem;color:#002244;font-weight:900;text-align:center;">academy.blacktech<br/>solutionscorp.com</div>
+      <div class="qr-url">academy.blacktechsolutionscorp.com</div>
+    </div>
+  </div>
+
+  <!-- WHY -->
+  <div class="section" style="padding-top:8px;">
+    <div class="section-title">Why Our Platforms?</div>
+    <div class="features-grid">
+      <div class="feature">
+        <div class="f-icon">🔒</div>
+        <h5>NO TRACKING</h5>
+        <p>Your data stays on our servers. No corporate surveillance, no ad targeting.</p>
+      </div>
+      <div class="feature">
+        <div class="f-icon">💚</div>
+        <h5>COMMUNITY FIRST</h5>
+        <p>Built for the South Side. Support local creators and businesses directly.</p>
+      </div>
+      <div class="feature">
+        <div class="f-icon">📡</div>
+        <h5>SELF-HOSTED</h5>
+        <p>Run on our own infrastructure. No platform shutdowns, no censorship.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">
+    <h3>🚀 JOIN THE COMMUNITY</h3>
+    <p>Free to use · No account needed to watch · Sign up to learn & post</p>
+    <div class="cta-row">
+      <div class="cta-item">
+        <div class="ci-label">📺 Watch</div>
+        <div class="ci-val">tv.blacktechsolutionscorp.com</div>
+      </div>
+      <div class="cta-item">
+        <div class="ci-label">📱 Network</div>
+        <div class="ci-val">network.blacktechsolutionscorp.com</div>
+      </div>
+      <div class="cta-item">
+        <div class="ci-label">🎓 Learn</div>
+        <div class="ci-val">academy.blacktechsolutionscorp.com</div>
+      </div>
+      <div class="cta-item">
+        <div class="ci-label">📞 Contact</div>
+        <div class="ci-val">(312) 965-2782</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    Blacktech Solutions Corp · Self-Hosted Community Platforms · Chicagoland, IL ·
+    LiveVue powered by PeerTube · InstaVue built for SSBN · Academy for energy education
+  </div>
+
+</div>
+</body>
+</html>

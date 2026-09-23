@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blacktech TV Logo — Seahawks Edition</title>
+<style>
+body { margin:0; background:#0a0a0f; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; font-family:system-ui,sans-serif; color:#e2e8f0; gap:40px; padding:40px 20px; }
+.logo-card { background:#141420; border:1px solid #1e293b; border-radius:24px; padding:48px; text-align:center; box-shadow:0 4px 24px rgba(0,0,0,0.4); }
+h2 { color:#6b7280; font-size:14px; text-transform:uppercase; letter-spacing:2px; margin-bottom:24px; font-weight:400; }
+</style>
+</head>
+<body>
+
+<!-- AVATAR — Seahawks -->
+<div class="logo-card">
+  <h2>Avatar — Seahawks Colors</h2>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="256" height="256">
+    <defs>
+      <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#002244"/>
+        <stop offset="100%" style="stop-color:#0a1628"/>
+      </linearGradient>
+      <linearGradient id="playG2" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#69BE28"/>
+        <stop offset="100%" style="stop-color:#00B140"/>
+      </linearGradient>
+      <filter id="glow2">
+        <feGaussianBlur stdDeviation="10" result="coloredBlur"/>
+        <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+    <!-- Rounded Square Background — Navy -->
+    <rect x="16" y="16" width="480" height="480" rx="96" fill="url(#bgGrad)" stroke="#69BE28" stroke-width="8"/>
+    <!-- Inner glow ring -->
+    <rect x="28" y="28" width="456" height="456" rx="88" fill="none" stroke="#69BE28" stroke-width="2" opacity="0.4"/>
+    <!-- TV Screen -->
+    <rect x="80" y="90" width="352" height="260" rx="32" fill="#001a33" stroke="#A5ACAF" stroke-width="4"/>
+    <!-- Screen highlight -->
+    <rect x="84" y="94" width="344" height="80" rx="28" fill="#002244" opacity="0.5"/>
+    <!-- Play Triangle — Action Green with glow -->
+    <polygon points="210,155 210,285 310,220" fill="url(#playG2)" filter="url(#glow2)"/>
+    <!-- Signal Waves — lime green -->
+    <path d="M160,168 Q220,138 280,168" stroke="#69BE28" stroke-width="5" fill="none" opacity="0.8"/>
+    <path d="M140,148 Q220,108 300,148" stroke="#69BE28" stroke-width="3.5" fill="none" opacity="0.5"/>
+    <path d="M122,130 Q220,78 318,130" stroke="#69BE28" stroke-width="2.5" fill="none" opacity="0.3"/>
+    <!-- Stand — Wolf Gray -->
+    <rect x="200" y="355" width="112" height="16" rx="8" fill="#A5ACAF"/>
+    <rect x="170" y="371" width="172" height="12" rx="6" fill="#8B9299"/>
+    <!-- Power LED — bright green -->
+    <circle cx="120" cy="320" r="8" fill="#69BE28"/>
+    <circle cx="120" cy="320" r="14" fill="#69BE28" opacity="0.3"/>
+    <!-- BT text — white -->
+    <text x="256" y="455" font-family="'Segoe UI',system-ui,sans-serif" font-size="60" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="10">BT</text>
+  </svg>
+</div>
+
+<!-- BANNER — Seahawks -->
+<div class="logo-card">
+  <h2>Banner — Seahawks Colors (White BG)</h2>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="600" height="160">
+    <defs>
+      <linearGradient id="playG3" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#69BE28"/>
+        <stop offset="100%" style="stop-color:#00B140"/>
+      </linearGradient>
+      <linearGradient id="screenG3" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#002244"/>
+        <stop offset="100%" style="stop-color:#001a33"/>
+      </linearGradient>
+    </defs>
+    <!-- White Background -->
+    <rect x="0" y="0" width="600" height="160" rx="16" fill="#ffffff"/>
+    <!-- Navy accent stripe -->
+    <rect x="0" y="0" width="600" height="6" rx="3" fill="#002244"/>
+    <!-- TV Icon -->
+    <rect x="24" y="28" width="100" height="72" rx="10" fill="url(#screenG3)" stroke="#69BE28" stroke-width="2.5"/>
+    <rect x="32" y="36" width="84" height="52" rx="6" fill="#001a33"/>
+    <polygon points="54,44 54,78 80,61" fill="url(#playG3)"/>
+    <path d="M42,52 Q56,42 68,52" stroke="#69BE28" stroke-width="2" fill="none" opacity="0.7"/>
+    <path d="M36,46 Q56,32 76,46" stroke="#69BE28" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <rect x="52" y="101" width="30" height="5" rx="2.5" fill="#A5ACAF"/>
+    <rect x="42" y="106" width="48" height="4" rx="2" fill="#D1D5DB"/>
+    <circle cx="38" cy="92" r="2.5" fill="#69BE28"/>
+    <!-- Text — Navy -->
+    <text x="144" y="72" font-family="'Segoe UI',system-ui,sans-serif" font-size="48" font-weight="900" fill="#002244" letter-spacing="-1">BLACKTECH</text>
+    <rect x="144" y="82" width="310" height="3" rx="1.5" fill="url(#playG3)"/>
+    <!-- TV — Action Green -->
+    <text x="144" y="128" font-family="'Segoe UI',system-ui,sans-serif" font-size="56" font-weight="900" fill="#00B140" letter-spacing="6">TV</text>
+  </svg>
+</div>
+
+<!-- PRIMARY — Seahawks Dark -->
+<div class="logo-card" style="background:#002244;">
+  <h2 style="color:#A5ACAF;">Primary — Seahawks Navy</h2>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+    <defs>
+      <linearGradient id="playGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#69BE28"/>
+        <stop offset="100%" style="stop-color:#00B140"/>
+      </linearGradient>
+      <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#002244"/>
+        <stop offset="100%" style="stop-color:#001a33"/>
+      </linearGradient>
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+        <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+    <!-- TV Monitor Body -->
+    <rect x="20" y="20" width="160" height="120" rx="16" fill="url(#screenGrad)" stroke="#69BE28" stroke-width="3"/>
+    <!-- Screen Inner -->
+    <rect x="32" y="32" width="136" height="88" rx="8" fill="#001530"/>
+    <!-- Play Button -->
+    <polygon points="82,48 82,104 122,76" fill="url(#playGrad)" filter="url(#glow)"/>
+    <!-- Signal Waves -->
+    <path d="M55,56 Q68,44 82,56" stroke="#69BE28" stroke-width="2.5" fill="none" opacity="0.8"/>
+    <path d="M48,48 Q68,32 88,48" stroke="#69BE28" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M42,40 Q68,20 94,40" stroke="#69BE28" stroke-width="1.5" fill="none" opacity="0.3"/>
+    <!-- Stand -->
+    <rect x="75" y="142" width="50" height="8" rx="4" fill="#A5ACAF"/>
+    <rect x="60" y="150" width="80" height="6" rx="3" fill="#8B9299"/>
+    <!-- Power LED -->
+    <circle cx="44" cy="128" r="3" fill="#69BE28"/>
+    <circle cx="44" cy="128" r="6" fill="#69BE28" opacity="0.3"/>
+    <!-- Text: BLACKTECH -->
+    <text x="200" y="70" font-family="'Segoe UI',system-ui,sans-serif" font-size="56" font-weight="900" fill="#FFFFFF" letter-spacing="-2">BLACKTECH</text>
+    <!-- Accent underline -->
+    <rect x="200" y="82" width="370" height="4" rx="2" fill="url(#playGrad)"/>
+    <!-- Text: TV -->
+    <text x="200" y="138" font-family="'Segoe UI',system-ui,sans-serif" font-size="72" font-weight="900" fill="url(#playGrad)" letter-spacing="8">TV</text>
+  </svg>
+</div>
+
+<div style="margin-top:20px; text-align:center;">
+  <p style="color:#6b7280; font-size:13px;">Blacktech TV Logo Kit — Seattle Seahawks Edition</p>
+  <p style="color:#475569; font-size:11px;">College Navy #002244 • Action Green #69BE28/#00B140 • Wolf Gray #A5ACAF</p>
+</div>
+
+</body>
+</html>

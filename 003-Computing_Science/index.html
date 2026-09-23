@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#002244">
+<title>Blacktech Command Center</title>
+<style>
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { height: 100%; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #002244;
+  color: #fff;
+  margin: 0;
+  padding: 0.75rem;
+  line-height: 1.4;
+}
+.header {
+  text-align: center;
+  margin-bottom: 1.25rem;
+  padding-top: 0.5rem;
+}
+.header h1 {
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #69BE28;
+  text-transform: uppercase;
+}
+.header p {
+  font-size: 0.8rem;
+  color: #A5ACAF;
+  margin: 0.2rem 0 0;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.badge-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+  flex-wrap: wrap;
+}
+.badge {
+  font-size: 0.65rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 99px;
+  background: #001a33;
+  color: #A5ACAF;
+  border: 1px solid #003366;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.badge.active { color: #69BE28; border-color: #69BE2855; background: #001f00; }
+.badge.warn   { color: #fbbf24; border-color: #fbbf2433; }
+.badge.off    { color: #ef4444; border-color: #ef444433; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.65rem;
+  margin: 0 auto 1rem;
+}
+/* iPad / tablet — 3 columns */
+@media (min-width: 600px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+  body { padding: 1.25rem 2rem; }
+  .header h1 { font-size: 1.8rem; }
+}
+/* Large tablet / desktop — 4 columns */
+@media (min-width: 900px) {
+  .grid { grid-template-columns: repeat(4, 1fr); }
+  body { padding: 1.5rem 3rem; max-width: 1100px; margin: 0 auto; }
+}
+.tile {
+  background: #001a33;
+  border-radius: 14px;
+  padding: 1rem 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  transition: transform 0.08s, background 0.15s;
+  border: 1px solid #003366;
+  cursor: pointer;
+  min-height: 90px;
+  justify-content: center;
+}
+.tile:active { transform: scale(0.96); background: #002a55; }
+.tile.active { border-color: #69BE2866; background: #001a0a; }
+.tile.warn   { border-color: #fbbf2455; background: #1f190d; }
+.tile.offline{ border-color: #ef444455; background: #1a0505; opacity: 0.75; }
+.tile .icon  { font-size: 1.6rem; line-height: 1; }
+.tile .label { font-size: 0.78rem; font-weight: 700; color: #ffffff; }
+.tile .port  { font-size: 0.6rem; color: #A5ACAF; margin-top: -0.1rem; }
+.tile .status{ font-size: 0.6rem; color: #A5ACAF; text-transform: uppercase; letter-spacing: 0.04em; }
+.tile.active .status  { color: #69BE28; }
+.tile.warn   .status  { color: #fbbf24; }
+.tile.offline .status { color: #ef4444; }
+.section {
+  margin-bottom: 1rem;
+}
+.section-title {
+  font-size: 0.7rem;
+  color: #69BE28;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  border-bottom: 1px solid #003366;
+  padding-bottom: 0.3rem;
+}
+.quick-links {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+.quick-links a {
+  background: #001a33;
+  color: #A5ACAF;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.72rem;
+  border: 1px solid #003366;
+  transition: color 0.15s, border-color 0.15s;
+}
+.quick-links a:hover { color: #69BE28; border-color: #69BE2866; }
+.footer {
+  text-align: center;
+  font-size: 0.6rem;
+  color: #A5ACAF;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  opacity: 0.6;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>⚡ Blacktech Command Center</h1>
+  <p>Blacktech Solutions Corp</p>
+  <div class="badge-row" id="badgeRow">
+    <span class="badge">Pipeline: Checking…</span>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Core Agents</div>
+  <div class="grid" id="coreGrid">
+    <a class="tile active" id="tile-auto" href="//auto.blacktechsolutionscorp.com" target="_blank">
+      <div class="icon">⚡</div>
+      <div class="label">n8n Auto</div>
+      <div class="port">Port 5678</div>
+      <div class="status" data-check="5678">Checking…</div>
+    </a>
+
+
+    <a class="tile active" href="//bill.blacktechsolutionscorp.com" id="tile-bill" target="_blank">
+      <div class="icon">⚡</div>
+      <div class="label">Think Energy Leads</div>
+      <div class="port">Port 8088</div>
+      <div class="status" data-check="8088">Checking…</div>
+    </a>
+    <a class="tile active" href="https://get.thinkenergy.com/BTSENERGY" target="_blank" style="display:flex;flex-direction:column;align-items:center;padding:12px;">
+      <div class="icon">🔋</div>
+      <div class="label">Enroll — Think Energy</div>
+      <div class="status" style="color:#00ff99;font-size:11px;">BTSENERGY</div>
+    </a>
+    <a class="tile active" href="#" onclick="alert('Dual-Model Pipeline: Claude Executive + Phi 3 Cleaning Machine.')">
+      <div class="icon">🧼</div>
+      <div class="label">AI Pipeline</div>
+      <div class="port">Local Only</div>
+      <div class="status">Phi 3 Ready</div>
+    </a>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Services</div>
+  <div class="grid" id="svcGrid">
+    <a class="tile active" href="//jobs.blacktechsolutionscorp.com" id="tile-jobs" target="_blank">
+      <div class="icon">🏢</div>
+      <div class="label">CRM / Lead Portal</div>
+      <div class="port">Port 8092</div>
+      <div class="status" data-check="8092">Checking…</div>
+    </a>
+    <a class="tile active" href="//board.blacktechsolutionscorp.com" id="tile-board" target="_blank">
+      <div class="icon">📋</div>
+      <div class="label">Energy Experts Board</div>
+      <div class="port">Port 8080</div>
+      <div class="status" data-check="8080">Checking…</div>
+    </a>
+    <a class="tile active" href="//files.blacktechsolutionscorp.com" id="tile-files" target="_blank">
+      <div class="icon">📁</div>
+      <div class="label">File Manager</div>
+      <div class="port">Port 8081</div>
+      <div class="status" data-check="8081">Checking…</div>
+    </a>
+    <a class="tile active" href="//money.blacktechsolutionscorp.com" id="tile-money" target="_blank">
+      <div class="icon">💸</div>
+      <div class="label">Money / Budget</div>
+      <div class="status">LIVE</div>
+    </a>
+    <a class="tile active" href="//blue.blacktechsolutionscorp.com" id="tile-blue" target="_blank">
+      <div class="icon">🌀</div>
+      <div class="label">BFN / Blue Wed</div>
+      <div class="port">Port 8094</div>
+      <div class="status" data-check="8094">Checking…</div>
+    </a>
+    <a class="tile active" href="//comed.blacktechsolutionscorp.com/dashboard" id="tile-comed" target="_blank">
+      <div class="icon">⚡</div>
+      <div class="label">ComEd EESP</div>
+      <div class="port">Port 8095</div>
+      <div class="status" data-check="8095">Checking…</div>
+    </a>
+    <div class="tile" onclick="restartBFN()" style="cursor:pointer;">
+      <div class="icon">🔄</div>
+      <div class="label">Restart BFN</div>
+      <div class="port">Clear Cache</div>
+      <div class="status" id="restart-status">Tap to restart</div>
+    </div>
+    <div class="tile" onclick="manualRefresh()" style="cursor:pointer;" id="tile-refresh">
+      <div class="icon">🔃</div>
+      <div class="label">Refresh All</div>
+      <div class="port">Check Status</div>
+      <div class="status" id="refresh-status">Tap to refresh</div>
+    </div>
+
+
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Quick Links</div>
+  <div class="quick-links">
+    <a href="https://console.anthropic.com/" target="_blank">Anthropic</a>
+    <a href="https://www.comed.com/" target="_blank">ComEd</a>
+    <a href="https://openrouter.ai/" target="_blank">OpenRouter</a>
+    <a href="#" onclick="alert('MetaMask → mobile app')">MetaMask</a>
+  </div>
+</div>
+
+<div class="footer">
+  Blacktech Solutions Corp · Pi 5 · Cloudflare Tunnel
+</div>
+
+<!-- SEARCH BAR -->
+<div id="search-bar" style="position:fixed;bottom:0;left:0;right:0;background:#001a33;padding:10px 12px;border-top:2px solid #69BE28;z-index:999;">
+  <div style="display:flex;gap:8px;align-items:center;max-width:600px;margin:0 auto;">
+    <span style="font-size:18px;">🔍</span>
+    <input id="searchInput" type="search" placeholder="Search jobs, invoices, contacts..." autocomplete="off"
+      style="flex:1;background:#002244;color:#fff;border:1.5px solid #69BE28;border-radius:8px;padding:8px 12px;font-size:14px;outline:none;"
+      oninput="doSearch(this.value)" />
+    <button onclick="document.getElementById('searchInput').value='';document.getElementById('searchResults').innerHTML='';document.getElementById('searchResults').style.display='none';"
+      style="background:none;border:none;color:#A5ACAF;font-size:18px;cursor:pointer;">✕</button>
+  </div>
+  <div id="searchResults" style="display:none;max-width:600px;margin:8px auto 0;background:#002244;border:1px solid #69BE28;border-radius:8px;overflow:hidden;max-height:280px;overflow-y:auto;"></div>
+</div>
+
+<!-- push content up so search bar doesn't overlap footer -->
+<div style="height:70px;"></div>
+
+<script>
+/* ── Restart BFN Server ── */
+async function restartBFN() {
+  const btn = document.getElementById('restart-status');
+  btn.textContent = '⏳ Restarting…';
+  try {
+    const r = await fetch('/api/restart-bfn', { method: 'POST' });
+    const d = await r.json();
+    if (d.ok) {
+      btn.textContent = '✅ Restarted!';
+      setTimeout(() => btn.textContent = 'Tap to restart', 4000);
+    } else {
+      btn.textContent = '❌ Failed';
+      setTimeout(() => btn.textContent = 'Tap to restart', 3000);
+    }
+  } catch(e) {
+    btn.textContent = '❌ Error';
+    setTimeout(() => btn.textContent = 'Tap to restart', 3000);
+  }
+}
+
+/* ── Status heartbeat — server-side /health to avoid CORS ── */
+async function checkTile(el) {
+  const port = el.dataset.check;
+  if (!port) return;
+  const tile = el.closest('.tile');
+  try {
+    const r = await fetch(`/health?port=${port}`, { cache: 'no-store' });
+    const d = await r.json();
+    if (d.status === 'online') {
+      el.textContent = `Live (${d.ms}ms)`;
+      tile.classList.add('active');
+      tile.classList.remove('offline','warn');
+    } else {
+      el.textContent = 'Offline';
+      tile.classList.add('offline');
+      tile.classList.remove('active','warn');
+    }
+  } catch(e) {
+    el.textContent = 'Offline';
+    tile.classList.add('offline');
+    tile.classList.remove('active','warn');
+  }
+}
+
+function refreshAll() {
+  document.querySelectorAll('[data-check]').forEach(checkTile);
+}
+refreshAll();
+setInterval(refreshAll, 15000);
+
+/* ── Back Button Trap — keep user on Command Center ── */
+history.pushState(null, '', window.location.href);
+window.addEventListener('popstate', function() {
+  history.pushState(null, '', window.location.href);
+});
+
+function manualRefresh() {
+  const btn = document.getElementById('refresh-status');
+  const tile = document.getElementById('tile-refresh');
+  btn.textContent = '⏳ Refreshing…';
+  tile.style.borderColor = '#fbbf24';
+  refreshAll();
+  setTimeout(() => {
+    btn.textContent = '✅ Done!';
+    tile.style.borderColor = '';
+    setTimeout(() => { btn.textContent = 'Tap to refresh'; }, 2500);
+  }, 1200);
+}
+
+/* ── SEARCH ── */
+let _searchData = null;
+async function loadSearchData() {
+  if (_searchData) return _searchData;
+  try {
+    const [jobsRes, invRes] = await Promise.all([
+      fetch('http://money.blacktechsolutionscorp.com/api/jobs', { cache: 'no-store' }),
+      fetch('http://money.blacktechsolutionscorp.com/api/invoices', { cache: 'no-store' })
+    ]);
+    const jobs = await jobsRes.json();
+    const invoices = await invRes.json();
+    _searchData = { jobs, invoices };
+  } catch(e) { _searchData = { jobs: [], invoices: [] }; }
+  return _searchData;
+}
+
+async function doSearch(q) {
+  const box = document.getElementById('searchResults');
+  if (!q || q.length < 2) { box.style.display='none'; box.innerHTML=''; return; }
+  const { jobs, invoices } = await loadSearchData();
+  const term = q.toLowerCase();
+  let results = [];
+
+  jobs.forEach(j => {
+    if ([j.customer, j.id, j.address, j.scope, j.status, j.email, j.phone].join(' ').toLowerCase().includes(term)) {
+      results.push({ icon:'💼', label: `${j.customer || j.id}`, sub: `${j.address || ''} · ${j.status || ''} · $${(j.amount||0).toLocaleString()}`, link:'http://money.blacktechsolutionscorp.com' });
+    }
+  });
+
+  invoices.forEach(inv => {
+    if ([inv.num, inv.customer, inv.address, inv.job, inv.status].join(' ').toLowerCase().includes(term)) {
+      const total = (inv.lines||[]).reduce((s,l)=>s+(l.qty||0)*(l.rate||0),0);
+      results.push({ icon:'🧾', label:`Invoice #${inv.num} — ${inv.customer}`, sub:`${inv.date||''} · Due ${inv.due||''} · $${total.toLocaleString('en-US',{minimumFractionDigits:2})} · ${inv.status||''}`, link:'http://money.blacktechsolutionscorp.com#invoices' });
+    }
+  });
+
+  if (!results.length) {
+    box.innerHTML = '<div style="padding:12px 16px;color:#A5ACAF;font-size:13px;">No results found</div>';
+  } else {
+    box.innerHTML = results.map(r =>
+      `<a href="${r.link}" target="_blank" style="display:block;padding:10px 16px;border-bottom:1px solid #001a33;text-decoration:none;color:#fff;">
+        <div style="font-size:14px;font-weight:bold;">${r.icon} ${r.label}</div>
+        <div style="font-size:11px;color:#A5ACAF;margin-top:2px;">${r.sub}</div>
+      </a>`
+    ).join('');
+  }
+  box.style.display = 'block';
+}
+
+(async function pipelineBadge() {
+  const badge = document.querySelector('#badgeRow span');
+  try {
+    const r = await fetch('/health?port=11434', { cache: 'no-store' });
+    const d = await r.json();
+    if (d.status === 'online') {
+      badge.textContent = 'Phi 3: Online';
+      badge.classList.add('active');
+    } else {
+      badge.textContent = 'Phi 3: Offline';
+      badge.classList.add('off');
+    }
+  } catch(e) {
+    badge.textContent = 'Phi 3: Offline';
+    badge.classList.add('off');
+  }
+})();
+</script>
+
+<!-- ── Local / Remote Auto-Detect ── -->
+<script>
+const LOCAL_IP   = '10.0.0.100';
+const LOCAL_BASE = `http://${LOCAL_IP}`;
+const CF_BASE    = 'blacktechsolutionscorp.com';
+
+// Map tile ID → [local port, cloudflare subdomain]
+const TILE_MAP = {
+  'tile-auto':    [5678,  'auto'],
+  'tile-bill':    [8088,  'bill'],
+  'tile-jobs':    [8092,  'jobs'],
+  'tile-board':   [8080,  'board'],
+  'tile-files':   [8081,  'files'],
+  'tile-finance': [8093,  'finance'],
+  'tile-money':   [8091,  'money'],
+  'tile-blue':    [8094,  'blue'],
+  'tile-comed':   [8095,  'comed'],
+};
+
+// Show indicator in header
+function showNetworkBadge(isLocal){
+  const badge = document.createElement('div');
+  badge.style.cssText = `
+    position:fixed;top:10px;right:12px;z-index:999;
+    background:${isLocal?'#22c55e':'#00aaff'};
+    color:#000;font-size:0.62rem;font-weight:700;
+    padding:3px 10px;border-radius:20px;letter-spacing:.04em;
+  `;
+  badge.textContent = isLocal ? '🏠 LOCAL' : '🌐 REMOTE';
+  document.body.appendChild(badge);
+}
+
+// Try to reach the Pi locally
+async function detectNetwork(){
+  try {
+    const r = await fetch(`${LOCAL_BASE}:8090/health?port=8090`, {
+      signal: AbortSignal.timeout(1500)
+    });
+    if(r.ok){
+      applyLocalURLs();
+      showNetworkBadge(true);
+      return;
+    }
+  } catch(e){}
+  // Fallback — already on Cloudflare URLs
+  showNetworkBadge(false);
+}
+
+function applyLocalURLs(){
+  Object.entries(TILE_MAP).forEach(([id, [port, sub]])=>{
+    const el = document.getElementById(id);
+    if(el) el.href = `${LOCAL_BASE}:${port}`;
+  });
+  // Also update search API calls
+  window._localMode = true;
+}
+
+detectNetwork();
+</script>
+
+</body>
+</html>

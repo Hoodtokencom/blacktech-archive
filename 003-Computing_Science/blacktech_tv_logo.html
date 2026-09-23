@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blacktech TV Logo</title>
+<style>
+body { margin:0; background:#0a0a0f; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; font-family:system-ui,sans-serif; color:#fff; gap:40px; }
+.logo-card { background:#141420; border:1px solid #2a2a3a; border-radius:24px; padding:48px; text-align:center; }
+h2 { color:#6b7280; font-size:14px; text-transform:uppercase; letter-spacing:2px; margin-bottom:24px; font-weight:400; }
+</style>
+</head>
+<body>
+
+<div class="logo-card">
+  <h2>Primary Logo — Dark Background</h2>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+    <defs>
+      <linearGradient id="playGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#f59e0b"/>
+        <stop offset="100%" style="stop-color:#d97706"/>
+      </linearGradient>
+      <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#1e293b"/>
+        <stop offset="100%" style="stop-color:#0f172a"/>
+      </linearGradient>
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+        <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+    <!-- TV Monitor Body -->
+    <rect x="20" y="20" width="160" height="120" rx="16" fill="url(#screenGrad)" stroke="#f59e0b" stroke-width="3"/>
+    <!-- Screen Inner -->
+    <rect x="32" y="32" width="136" height="88" rx="8" fill="#0a0a1a"/>
+    <!-- Play Button -->
+    <polygon points="82,52 82,100 118,76" fill="url(#playGrad)" filter="url(#glow)"/>
+    <!-- Signal Waves -->
+    <path d="M55,60 Q68,48 82,60" stroke="#f59e0b" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M48,52 Q68,36 88,52" stroke="#f59e0b" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <path d="M42,44 Q68,24 94,44" stroke="#f59e0b" stroke-width="1" fill="none" opacity="0.25"/>
+    <!-- Stand -->
+    <rect x="75" y="142" width="50" height="8" rx="4" fill="#334155"/>
+    <rect x="60" y="150" width="80" height="6" rx="3" fill="#475569"/>
+    <!-- Power LED -->
+    <circle cx="44" cy="128" r="3" fill="#22c55e"/>
+    <!-- Text: BLACKTECH -->
+    <text x="200" y="70" font-family="'Segoe UI',system-ui,sans-serif" font-size="56" font-weight="900" fill="#e5e5e5" letter-spacing="-2">BLACKTECH</text>
+    <!-- Accent underline -->
+    <rect x="200" y="82" width="370" height="4" rx="2" fill="url(#playGrad)"/>
+    <!-- Text: TV -->
+    <text x="200" y="138" font-family="'Segoe UI',system-ui,sans-serif" font-size="72" font-weight="900" fill="url(#playGrad)" letter-spacing="8">TV</text>
+  </svg>
+</div>
+
+<div class="logo-card">
+  <h2>Icon Only — Avatar/Favicon</h2>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="256" height="256">
+    <defs>
+      <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#141420"/>
+        <stop offset="100%" style="stop-color:#0a0a0f"/>
+      </linearGradient>
+      <linearGradient id="playG2" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#f59e0b"/>
+        <stop offset="100%" style="stop-color:#d97706"/>
+      </linearGradient>
+      <filter id="glow2">
+        <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+        <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+    <!-- Rounded Square Background -->
+    <rect x="16" y="16" width="480" height="480" rx="96" fill="url(#bgGrad)" stroke="#f59e0b" stroke-width="8"/>
+    <!-- TV Screen -->
+    <rect x="80" y="90" width="352" height="260" rx="32" fill="#0a0a1a" stroke="#2a2a3a" stroke-width="4"/>
+    <!-- Play Triangle -->
+    <polygon points="210,160 210,280 300,220" fill="url(#playG2)" filter="url(#glow2)"/>
+    <!-- Signal Waves -->
+    <path d="M165,170 Q220,145 270,170" stroke="#f59e0b" stroke-width="4" fill="none" opacity="0.6"/>
+    <path d="M145,150 Q220,115 295,150" stroke="#f59e0b" stroke-width="3" fill="none" opacity="0.35"/>
+    <!-- Stand -->
+    <rect x="200" y="355" width="112" height="16" rx="8" fill="#334155"/>
+    <rect x="170" y="371" width="172" height="12" rx="6" fill="#475569"/>
+    <!-- Power LED -->
+    <circle cx="120" cy="320" r="8" fill="#22c55e"/>
+    <!-- BT text at bottom -->
+    <text x="256" y="450" font-family="'Segoe UI',system-ui,sans-serif" font-size="56" font-weight="900" fill="#e5e5e5" text-anchor="middle" letter-spacing="8">BT</text>
+  </svg>
+</div>
+
+<div class="logo-card">
+  <h2>Horizontal Banner — Light/White Version</h2>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 160" width="600" height="160">
+    <defs>
+      <linearGradient id="playG3" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#f59e0b"/>
+        <stop offset="100%" style="stop-color:#d97706"/>
+      </linearGradient>
+      <linearGradient id="screenG3" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#1e293b"/>
+        <stop offset="100%" style="stop-color:#0f172a"/>
+      </linearGradient>
+    </defs>
+    <!-- White Background -->
+    <rect x="0" y="0" width="600" height="160" rx="16" fill="#ffffff"/>
+    <!-- TV Icon -->
+    <rect x="24" y="28" width="100" height="72" rx="10" fill="url(#screenG3)" stroke="#f59e0b" stroke-width="2.5"/>
+    <rect x="32" y="36" width="84" height="52" rx="6" fill="#0a0a1a"/>
+    <polygon points="54,44 54,78 80,61" fill="url(#playG3)"/>
+    <path d="M42,52 Q56,42 68,52" stroke="#f59e0b" stroke-width="1.5" fill="none" opacity="0.5"/>
+    <rect x="52" y="101" width="30" height="5" rx="2.5" fill="#94a3b8"/>
+    <rect x="42" y="106" width="48" height="4" rx="2" fill="#cbd5e1"/>
+    <circle cx="38" cy="92" r="2" fill="#22c55e"/>
+    <!-- Text -->
+    <text x="144" y="72" font-family="'Segoe UI',system-ui,sans-serif" font-size="48" font-weight="900" fill="#0f172a" letter-spacing="-1">BLACKTECH</text>
+    <rect x="144" y="82" width="310" height="3" rx="1.5" fill="url(#playG3)"/>
+    <text x="144" y="128" font-family="'Segoe UI',system-ui,sans-serif" font-size="56" font-weight="900" fill="#f59e0b" letter-spacing="6">TV</text>
+  </svg>
+</div>
+
+<div style="margin-top:20px; text-align:center;">
+  <p style="color:#6b7280; font-size:13px;">Blacktech TV Logo Kit — 3 Variations</p>
+  <p style="color:#475569; font-size:11px;">Primary (dark) • Icon (avatar) • Horizontal (light)</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Electrification Pipeline — Blacktech Solutions</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #07111f; color: #fff; font-family: 'Segoe UI', Arial, sans-serif; min-height: 100vh; }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, #07111f 0%, #0d2a0d 50%, #07111f 100%);
+    border-bottom: 3px solid #69BE28;
+    padding: 18px 16px 14px;
+    text-align: center;
+  }
+  .header h1 { font-size: 1.6rem; font-weight: 900; color: #69BE28; letter-spacing: 3px; }
+  .header .sub { font-size: 0.78rem; color: #90b890; margin-top: 4px; letter-spacing: 2px; }
+
+  /* TABS */
+  .tabs { display: flex; flex-wrap: wrap; background: #050e18; border-bottom: 2px solid #1a3a1a; }
+  .tab { flex: 1; min-width: 120px; padding: 11px 8px; text-align: center; font-size: 0.72rem; font-weight: 700; color: #69BE28; cursor: pointer; border-bottom: 3px solid transparent; transition: all 0.2s; white-space: nowrap; }
+  .tab.active { color: #fff; border-bottom-color: #69BE28; background: #0d2a0d; }
+  .tab:hover { background: #0d1a0d; }
+
+  /* SECTIONS */
+  .section { display: none; padding: 14px 12px; }
+  .section.active { display: block; }
+
+  /* PIPELINE FLOW */
+  .pipeline { display: flex; flex-direction: column; align-items: center; gap: 0; padding: 10px 0; }
+  .stage {
+    background: #0d1f0d;
+    border: 2px solid #69BE28;
+    border-radius: 14px;
+    padding: 14px 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+  }
+  .stage.blue { border-color: #1e90ff; background: #0d1a3a; }
+  .stage.gold { border-color: #f59e0b; background: #1a1200; }
+  .stage.red { border-color: #e53935; background: #1a0d0d; }
+  .stage h3 { font-size: 1rem; font-weight: 900; color: #69BE28; margin-bottom: 4px; }
+  .stage.blue h3 { color: #1e90ff; }
+  .stage.gold h3 { color: #f59e0b; }
+  .stage.red h3 { color: #e53935; }
+  .stage p { font-size: 0.78rem; color: #a0c8a0; line-height: 1.5; }
+  .stage.blue p { color: #90b8d4; }
+  .stage.gold p { color: #d4a060; }
+  .arrow { font-size: 1.6rem; color: #69BE28; margin: 4px 0; line-height: 1; }
+  .arrow.blue { color: #1e90ff; }
+
+  /* TRADE BRANCHES */
+  .branches { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; width: 100%; max-width: 700px; margin: 0 auto; }
+  .branch-card {
+    background: #0d1a0d;
+    border: 2px solid #69BE28;
+    border-radius: 12px;
+    padding: 14px 10px;
+    text-align: center;
+  }
+  .branch-card.hvac { border-color: #00bcd4; background: #001a1f; }
+  .branch-card.weather { border-color: #f59e0b; background: #1a1000; }
+  .branch-card.battery { border-color: #fbbf24; background: #1a0f00; border-width: 2px; }
+  .branch-card.plumbing { border-color: #38bdf8; background: #001a2a; }
+  .branch-icon { font-size: 2rem; margin-bottom: 6px; }
+  .branch-card h4 { font-size: 0.82rem; font-weight: 900; color: #69BE28; margin-bottom: 6px; }
+  .branch-card.hvac h4 { color: #00bcd4; }
+  .branch-card.weather h4 { color: #f59e0b; }
+  .branch-card.battery h4 { color: #fbbf24; }
+  .branch-card.plumbing h4 { color: #38bdf8; }
+  .branch-card ul { list-style: none; text-align: left; }
+  .branch-card ul li { font-size: 0.72rem; color: #90b890; padding: 3px 0; border-bottom: 1px solid #1a2a1a; }
+  .branch-card.hvac ul li { color: #80c8d0; border-bottom-color: #0a2a30; }
+  .branch-card.weather ul li { color: #d4a060; border-bottom-color: #2a1a00; }
+  .branch-card ul li:last-child { border-bottom: none; }
+
+  /* DOCS BOX */
+  .docs-box {
+    background: #0a1a0a;
+    border: 2px solid #69BE28;
+    border-radius: 14px;
+    padding: 16px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .docs-box h3 { font-size: 0.9rem; font-weight: 900; color: #69BE28; margin-bottom: 12px; letter-spacing: 1px; }
+  .doc-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: #071407;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid #1a3a1a;
+  }
+  .doc-row:hover { border-color: #69BE28; background: #0d2a0d; }
+  .doc-row .doc-icon { font-size: 1.4rem; }
+  .doc-row .doc-info { flex: 1; }
+  .doc-row .doc-name { font-size: 0.82rem; font-weight: 700; color: #fff; }
+  .doc-row .doc-desc { font-size: 0.68rem; color: #70a070; margin-top: 2px; }
+  .doc-row .doc-status { font-size: 0.65rem; font-weight: 800; border-radius: 8px; padding: 2px 8px; }
+  .doc-status.ready { background: #1b5e20; color: #a5d6a7; }
+  .doc-status.pending { background: #e65100; color: #ffcc80; }
+  .doc-status.required { background: #1a237e; color: #90caf9; }
+
+  /* LEAD FORM */
+  .lead-form { background: #0d1a0d; border: 2px solid #69BE28; border-radius: 14px; padding: 16px; margin-bottom: 14px; }
+  .lead-form h3 { font-size: 0.9rem; font-weight: 900; color: #69BE28; margin-bottom: 12px; }
+  .form-group { margin-bottom: 10px; }
+  .form-group label { display: block; font-size: 0.68rem; font-weight: 700; color: #69BE28; letter-spacing: 1px; margin-bottom: 4px; }
+  .form-group input, .form-group select, .form-group textarea {
+    width: 100%; background: #050e18; border: 1px solid #1a3a1a; border-radius: 8px;
+    color: #fff; padding: 9px 10px; font-size: 0.82rem; outline: none;
+  }
+  .form-group input:focus, .form-group select:focus { border-color: #69BE28; }
+  .form-group select option { background: #07111f; }
+
+  /* CHECKLIST */
+  .checklist { background: #0d1a0d; border: 2px solid #69BE28; border-radius: 14px; padding: 16px; margin-bottom: 12px; }
+  .checklist h3 { font-size: 0.9rem; font-weight: 900; color: #69BE28; margin-bottom: 12px; }
+  .check-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px; background: #071407; border-radius: 8px; margin-bottom: 6px;
+    border: 1px solid #1a3a1a; cursor: pointer;
+  }
+  .check-item.done { border-color: #2e7d32; background: #0a1f0a; }
+  .check-item .chk { width: 22px; height: 22px; border-radius: 6px; border: 2px solid #69BE28; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; flex-shrink: 0; }
+  .check-item.done .chk { background: #2e7d32; border-color: #2e7d32; }
+  .check-item .chk-label { font-size: 0.82rem; color: #fff; }
+  .check-item.done .chk-label { color: #69BE28; }
+  .check-item .chk-sub { font-size: 0.68rem; color: #70a070; margin-top: 2px; }
+
+  /* TRACKER TABLE */
+  .tracker-card { background: #0d1a0d; border: 2px solid #69BE28; border-radius: 14px; padding: 14px; margin-bottom: 12px; }
+  .tracker-card h3 { font-size: 0.9rem; font-weight: 900; color: #69BE28; margin-bottom: 12px; }
+  .job-row { background: #071407; border: 1px solid #1a3a1a; border-radius: 10px; padding: 12px; margin-bottom: 8px; }
+  .job-row-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; }
+  .job-name { font-size: 0.88rem; font-weight: 700; color: #fff; }
+  .job-addr { font-size: 0.7rem; color: #70a070; margin-top: 2px; }
+  .badge { font-size: 0.62rem; font-weight: 800; border-radius: 8px; padding: 3px 10px; white-space: nowrap; }
+  .badge.lead { background: #1a237e; color: #90caf9; }
+  .badge.contract { background: #4a1a00; color: #ffcc80; }
+  .badge.active { background: #0d2a0d; color: #69BE28; border: 1px solid #69BE28; }
+  .badge.complete { background: #1b5e20; color: #a5d6a7; }
+  .trade-pills { display: flex; gap: 5px; flex-wrap: wrap; }
+  .pill { font-size: 0.6rem; font-weight: 700; border-radius: 6px; padding: 2px 8px; }
+  .pill.elec { background: #1565c0; color: #fff; }
+  .pill.hvac { background: #006064; color: #fff; }
+  .pill.wx { background: #4a3000; color: #ffcc80; }
+  .pill.battery { background: #7c4a00; color: #fbbf24; }
+  .pill.plumbing { background: #0a2a3a; color: #38bdf8; }
+
+  /* BUTTONS */
+  .btn { display: block; width: 100%; padding: 12px; border-radius: 10px; border: none; font-size: 0.85rem; font-weight: 800; cursor: pointer; letter-spacing: 1px; margin-top: 10px; }
+  .btn-green { background: linear-gradient(135deg, #1b5e20, #69BE28); color: #fff; }
+  .btn-blue { background: linear-gradient(135deg, #1565c0, #1e90ff); color: #fff; }
+  .btn:active { opacity: 0.8; }
+
+  /* SECTION TITLE */
+  .sec-title { font-size: 0.9rem; font-weight: 900; color: #69BE28; border-left: 3px solid #69BE28; padding-left: 10px; margin-bottom: 12px; letter-spacing: 1px; }
+
+  /* TOAST */
+  .toast { position: fixed; bottom: 70px; left: 50%; transform: translateX(-50%); background: #1b5e20; color: #fff; padding: 10px 20px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; z-index: 200; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
+  .toast.show { opacity: 1; }
+
+  /* MOBILE */
+  @media (max-width: 480px) {
+    .branches { grid-template-columns: 1fr; }
+    .tabs { display: grid; grid-template-columns: repeat(3, 1fr); }
+    .tab { font-size: 0.6rem; padding: 9px 4px; white-space: normal; line-height: 1.2; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <h1>⚡ ELECTRIFICATION PIPELINE</h1>
+  <div class="sub">BLACKTECH SOLUTIONS CORP · COMED CUSTOMER WORKFLOW</div>
+</div>
+
+<!-- TABS -->
+<div class="tabs">
+  <div class="tab active" onclick="showTab('flow')">🔄 Flow</div>
+  <div class="tab" onclick="showTab('leads')">📋 Leads</div>
+  <div class="tab" onclick="showTab('trades')">🔧 Trades</div>
+  <div class="tab" onclick="showTab('docs')">📄 Docs</div>
+  <div class="tab" onclick="showTab('tracker')">📊 Tracker</div>
+  <div class="tab" onclick="showTab('checklist')">✅ Checklist</div>
+</div>
+
+<!-- ── FLOW TAB ── -->
+<div id="tab-flow" class="section active">
+  <div class="pipeline">
+    <!-- STEP 0: SALE / MARKETING -->
+    <div class="stage" style="border-color:#a855f7; background:#1a0020;">
+      <h3 style="color:#a855f7;">🎯 SALE / MARKETING</h3>
+      <p style="color:#c084fc;">Door-to-door · Referrals · Community events · Social media outreach</p>
+    </div>
+    <div style="background:#120018; border:1px solid #7e22ce; border-radius:10px; padding:10px 16px; width:100%; max-width:500px; margin:4px auto; text-align:left;">
+      <div style="font-size:0.62rem; color:#a855f7; font-weight:900; letter-spacing:2px; margin-bottom:6px;">INCLUDES</div>
+      <div style="font-size:0.75rem; color:#c084fc; line-height:2;">
+        📋 Sign Up Forms &nbsp;·&nbsp; 🚪 Door-to-Door &nbsp;·&nbsp; 📣 Community Events &nbsp;·&nbsp; 📱 Social Media
+      </div>
+    </div>
+    <div class="arrow" style="color:#a855f7;">↓</div>
+
+    <!-- STEP 1: COMED CUSTOMER -->
+    <div class="row-with-note">
+    <div class="stage blue">
+      <h3>① COMED CUSTOMER</h3>
+      <p>ComEd residential or commercial customer<br/>enters the pipeline — lead captured</p>
+    </div>
+    <div class="arrow blue">↓</div>
+    <div style="background:#0d1a3a; border:1px solid #1e90ff; border-radius:10px; padding:8px 16px; font-size:0.72rem; color:#90caf9; text-align:center; max-width:300px;">
+      📝 <strong>Lead Captured</strong>
+    </div>
+    <div class="arrow blue">↓</div>
+
+    <!-- STEP 1.5: IMPLEMENTATION / RESOURCE INNOVATION PORTAL -->
+    <div class="stage" style="border-color:#06b6d4; background:#001828; max-width:500px;">
+      <h3 style="color:#06b6d4;">🗂️ IMPLEMENTATION</h3>
+      <div style="font-size:0.68rem; font-weight:800; color:#67e8f9; letter-spacing:2px; margin-bottom:6px;">RESOURCE INNOVATION PORTAL</div>
+      <p style="color:#67e8f9;">Central portal where all paperwork is stored, tracked, and accessed by the team</p>
+    </div>
+    <div style="background:#001520; border:1px solid #0e7490; border-radius:10px; padding:10px 16px; width:100%; max-width:500px; text-align:left; margin:4px auto;">
+      <div style="font-size:0.62rem; color:#06b6d4; font-weight:900; letter-spacing:2px; margin-bottom:6px;">📁 PAPERWORK STORED HERE</div>
+      <div style="font-size:0.75rem; color:#67e8f9; line-height:2;">
+        📋 Sign Up Forms &nbsp;·&nbsp; 📝 Contract Documents &nbsp;·&nbsp; ⚖️ Lien Waivers &nbsp;·&nbsp; 📊 LCP Tracker &nbsp;·&nbsp; 🧾 Invoices
+      </div>
+    </div>
+    <div class="arrow" style="color:#06b6d4;">↓</div>
+
+    <!-- STEP 2: CONTRACT ENGAGEMENT -->
+    <div class="stage blue">
+      <h3>② CONTRACT ENGAGEMENT</h3>
+      <p>Walkthrough for Electrification Assessment<br/>Schedule on-site visit · Evaluate scope</p>
+    </div>
+    <div class="arrow blue">↓</div>
+    <div style="background:#0d1a3a; border:1px solid #1e90ff; border-radius:10px; padding:8px 16px; font-size:0.72rem; color:#90caf9; text-align:center; max-width:300px;">
+      🚶 <strong>Walk Through for Electrification</strong>
+    </div>
+    <div class="arrow">↓</div>
+
+    <!-- STEP 3 — CONTRACTOR BRANCHES -->
+    <div class="stage">
+      <h3>③ CONTRACTOR DEPLOYMENT</h3>
+      <p>Five trade branches activated based on scope</p>
+    </div>
+    <div class="arrow">↓</div>
+
+    <!-- TRADE BRANCHES -->
+    <div class="branches">
+      <div class="branch-card">
+        <div class="branch-icon">⚡</div>
+        <h4>ELECTRICAL</h4>
+        <ul>
+          <li>Electrical Infrastructure</li>
+          <li>Electrical Water Heat Pump</li>
+          <li>Panel Upgrades</li>
+          <li>Circuit Installation</li>
+        </ul>
+      </div>
+      <div class="branch-card hvac">
+        <div class="branch-icon">🌡️</div>
+        <h4>HVAC</h4>
+        <ul>
+          <li>Heat Pump Installation</li>
+          <li>Air Handler Setup</li>
+          <li>Duct Assessment</li>
+          <li>System Testing</li>
+        </ul>
+      </div>
+      <div class="branch-card weather">
+        <div class="branch-icon">🏠</div>
+        <h4>WEATHERIZATION</h4>
+        <ul>
+          <li>Sealing of the Home</li>
+          <li>Insulation Assessment</li>
+          <li>Air Sealing</li>
+          <li>Energy Audit</li>
+        </ul>
+      </div>
+      <div class="branch-card battery">
+        <div class="branch-icon">🔋</div>
+        <h4>THINK ENERGY — BATTERY</h4>
+        <ul>
+          <li>EcoFlow Battery Installation</li>
+          <li>Home Battery Backup Setup</li>
+          <li>Virtual Power Plant Enrollment</li>
+          <li>Energy Independence Consult</li>
+        </ul>
+      </div>
+      <div class="branch-card plumbing">
+        <div class="branch-icon">🔧</div>
+        <h4>PLUMBING</h4>
+        <ul>
+          <li>Heat Pump Water Heater Install</li>
+          <li>Water Line Connections</li>
+          <li>Drain & Pressure Relief Lines</li>
+          <li>Permit & Inspection Ready</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="arrow">↓</div>
+
+    <!-- STEP 4 — PAYMENT & DOCS -->
+    <div class="stage gold">
+      <h3>④ PAYMENT & DOCUMENTATION</h3>
+      <p>All paperwork generated and collected at closeout</p>
+    </div>
+    <div class="arrow" style="color:#f59e0b;">↓</div>
+
+    <div style="background:#1a1200; border:2px solid #f59e0b; border-radius:14px; padding:14px; width:100%; max-width:500px;">
+      <div style="font-size:0.72rem; color:#f59e0b; font-weight:900; letter-spacing:1px; margin-bottom:10px;">📋 REQUIRED AT CLOSEOUT</div>
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <div style="background:#0a0800; border-radius:8px; padding:8px 12px; font-size:0.8rem; color:#fcd34d; border:1px solid #4a3000;">📝 Contract Paperwork</div>
+        <div style="background:#0a0800; border-radius:8px; padding:8px 12px; font-size:0.8rem; color:#fcd34d; border:1px solid #4a3000;">📋 Sign Up Forms</div>
+        <div style="background:#0a0800; border-radius:8px; padding:8px 12px; font-size:0.8rem; color:#fcd34d; border:1px solid #4a3000;">🧾 Invoice</div>
+        <div style="background:#0a0800; border-radius:8px; padding:8px 12px; font-size:0.8rem; color:#fcd34d; border:1px solid #4a3000;">⚖️ Lien Waiver</div>
+        <div style="background:#0a0800; border-radius:8px; padding:8px 12px; font-size:0.8rem; color:#fcd34d; border:1px solid #4a3000;">📊 LCP Tracker</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── LEADS TAB ── -->
+<div id="tab-leads" class="section">
+  <div class="sec-title">➕ New Lead — ComEd Customer Sign Up</div>
+  <div class="lead-form">
+    <h3>📋 Lead Information</h3>
+    <div class="form-group">
+      <label>CUSTOMER NAME</label>
+      <input type="text" id="lead-name" placeholder="Full name"/>
+    </div>
+    <div class="form-group">
+      <label>ADDRESS</label>
+      <input type="text" id="lead-addr" placeholder="Street address"/>
+    </div>
+    <div class="form-group">
+      <label>CITY / ZIP</label>
+      <input type="text" id="lead-city" placeholder="Chicago, IL 60628"/>
+    </div>
+    <div class="form-group">
+      <label>PHONE</label>
+      <input type="tel" id="lead-phone" placeholder="(312) 000-0000"/>
+    </div>
+    <div class="form-group">
+      <label>EMAIL</label>
+      <input type="email" id="lead-email" placeholder="email@example.com"/>
+    </div>
+    <div class="form-group">
+      <label>SERVICES NEEDED</label>
+      <select id="lead-services" multiple style="height:110px;">
+        <option value="electrical">⚡ Electrical</option>
+        <option value="hvac">🌡️ HVAC / Heat Pump</option>
+        <option value="weatherization">🏠 Weatherization</option>
+        <option value="battery">🔋 Think Energy — Battery Storage</option>
+        <option value="plumbing">🔧 Plumbing — Heat Pump Water Heater</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>NOTES</label>
+      <textarea id="lead-notes" rows="3" placeholder="Walk through notes, special conditions..."></textarea>
+    </div>
+    <button class="btn btn-green" onclick="saveLead()">➕ Add Lead to Pipeline</button>
+  </div>
+
+  <div class="sec-title" style="margin-top:16px;">📋 Active Leads</div>
+  <div id="leads-list"><div style="text-align:center; color:#70a070; font-size:0.8rem; padding:20px;">No leads yet. Add one above.</div></div>
+</div>
+
+<!-- ── TRADES TAB ── -->
+<div id="tab-trades" class="section">
+  <div class="sec-title">🔧 Trade Scope Reference</div>
+
+  <div style="background:#0d1a0d; border:2px solid #69BE28; border-radius:14px; padding:14px; margin-bottom:12px;">
+    <div style="font-size:0.9rem; font-weight:900; color:#69BE28; margin-bottom:10px;">⚡ ELECTRICAL</div>
+    <div style="font-size:0.78rem; color:#a0c8a0; line-height:1.8;">
+      • Electrical Infrastructure (panel, service, wiring)<br/>
+      • Electrical Water Heat Pump installation<br/>
+      • EV-ready circuits<br/>
+      • Load management controllers<br/>
+      • 60A disconnects & raceways<br/>
+      • Heater strip circuits
+    </div>
+  </div>
+
+  <div style="background:#001a1f; border:2px solid #00bcd4; border-radius:14px; padding:14px; margin-bottom:12px;">
+    <div style="font-size:0.9rem; font-weight:900; color:#00bcd4; margin-bottom:10px;">🌡️ HVAC</div>
+    <div style="font-size:0.78rem; color:#80c8d0; line-height:1.8;">
+      • Heat Pump installation (central & mini-split)<br/>
+      • Air handler setup<br/>
+      • Ductwork assessment & sealing<br/>
+      • Refrigerant line sets<br/>
+      • Thermostat & controls<br/>
+      • System commissioning & testing
+    </div>
+  </div>
+
+  <div style="background:#1a1000; border:2px solid #f59e0b; border-radius:14px; padding:14px; margin-bottom:12px;">
+    <div style="font-size:0.9rem; font-weight:900; color:#f59e0b; margin-bottom:10px;">🏠 WEATHERIZATION</div>
+    <div style="font-size:0.78rem; color:#d4a060; line-height:1.8;">
+      • Sealing of the home (air sealing)<br/>
+      • Insulation — attic, walls, basement<br/>
+      • Window & door sealing<br/>
+      • Energy audit & blower door test<br/>
+      • Vapor barrier installation<br/>
+      • Crawl space encapsulation
+    </div>
+  </div>
+
+  <div style="background:#1a0f00; border:2px solid #fbbf24; border-radius:14px; padding:14px; margin-bottom:12px;">
+    <div style="font-size:0.9rem; font-weight:900; color:#fbbf24; margin-bottom:10px;">🔋 THINK ENERGY — BATTERY STORAGE</div>
+    <div style="font-size:0.78rem; color:#fde68a; line-height:1.8;">
+      • EcoFlow home battery installation<br/>
+      • Home battery backup system setup<br/>
+      • Virtual Power Plant (VPP) enrollment<br/>
+      • ComEd bill reduction via battery storage<br/>
+      • Energy independence consultation<br/>
+      • Think Energy advisor sign-up: <strong>get.thinkenergy.com/BTSENERGY</strong>
+    </div>
+  </div>
+
+  <div style="background:#001a2a; border:2px solid #38bdf8; border-radius:14px; padding:14px; margin-bottom:12px;">
+    <div style="font-size:0.9rem; font-weight:900; color:#38bdf8; margin-bottom:10px;">🔧 PLUMBING</div>
+    <div style="font-size:0.78rem; color:#bae6fd; line-height:1.8;">
+      • Heat Pump Water Heater installation<br/>
+      • Water supply line connections<br/>
+      • Drain & pressure relief line routing<br/>
+      • Expansion tank installation<br/>
+      • Permit pull & inspection readiness<br/>
+      • Coordination with electrical rough-in
+    </div>
+  </div>
+
+  <div style="background:#1a0d0d; border:2px solid #e53935; border-radius:14px; padding:14px;">
+    <div style="font-size:0.9rem; font-weight:900; color:#e53935; margin-bottom:10px;">💰 PAYMENT STRUCTURE</div>
+    <div style="font-size:0.78rem; color:#ef9a9a; line-height:1.8;">
+      • Deposit: 30% upon contract signing<br/>
+      • Progress: 40% at rough-in completion<br/>
+      • Final: 30% upon final inspection & closeout<br/>
+      • Accepted: Zelle · Check · ACH Transfer
+    </div>
+  </div>
+</div>
+
+<!-- ── DOCS TAB ── -->
+<div id="tab-docs" class="section">
+  <div class="sec-title">📄 Required Documents — Per Job</div>
+  <div class="docs-box">
+    <h3>📋 CLOSEOUT PACKAGE</h3>
+
+    <div class="doc-row">
+      <div class="doc-icon">📝</div>
+      <div class="doc-info">
+        <div class="doc-name">Contract Paperwork</div>
+        <div class="doc-desc">Signed scope of work + terms agreement</div>
+      </div>
+      <div class="doc-status required">REQUIRED</div>
+    </div>
+
+    <div class="doc-row">
+      <div class="doc-icon">📋</div>
+      <div class="doc-info">
+        <div class="doc-name">Sign Up Forms</div>
+        <div class="doc-desc">ComEd electrification program enrollment</div>
+      </div>
+      <div class="doc-status required">REQUIRED</div>
+    </div>
+
+    <div class="doc-row">
+      <div class="doc-icon">🧾</div>
+      <div class="doc-info">
+        <div class="doc-name">Invoice</div>
+        <div class="doc-desc">Final invoice — all trades combined</div>
+      </div>
+      <div class="doc-status required">REQUIRED</div>
+    </div>
+
+    <div class="doc-row">
+      <div class="doc-icon">⚖️</div>
+      <div class="doc-info">
+        <div class="doc-name">Lien Waiver</div>
+        <div class="doc-desc">Illinois Final Unconditional Lien Waiver</div>
+      </div>
+      <div class="doc-status required">REQUIRED</div>
+    </div>
+
+    <div class="doc-row">
+      <div class="doc-icon">📊</div>
+      <div class="doc-info">
+        <div class="doc-name">LCP Tracker</div>
+        <div class="doc-desc">Labor Compliance Program tracking sheet</div>
+      </div>
+      <div class="doc-status required">REQUIRED</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ── TRACKER TAB ── -->
+<div id="tab-tracker" class="section">
+  <div class="sec-title">📊 Job Tracker</div>
+  <div class="tracker-card">
+    <h3>ACTIVE JOBS</h3>
+    <div id="tracker-list"><div style="text-align:center; color:#70a070; font-size:0.8rem; padding:20px;">No jobs yet. Add leads to populate tracker.</div></div>
+  </div>
+</div>
+
+<!-- ── CHECKLIST TAB ── -->
+<div id="tab-checklist" class="section">
+  <div class="sec-title">✅ Job Closeout Checklist</div>
+  <div class="checklist">
+    <h3>PER-JOB CLOSEOUT STEPS</h3>
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="chk"></div>
+      <div>
+        <div class="chk-label">Lead signed up & info captured</div>
+        <div class="chk-sub">Name, address, phone, email, services needed</div>
+      </div>
+    </div>
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="chk"></div>
+      <div>
+        <div class="chk-label">Walk through completed</div>
+        <div class="chk-sub">On-site electrification assessment done</div>
+      </div>
+    </div>
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="chk"></div>
+      <div>
+        <div class="chk-label">Contract paperwork signed</div>
+        <div class="chk-sub">Scope of work agreed & signed by customer</div>
+      </div>
+    </div>
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="chk"></div>
+      <div>
+        <div class="chk-label">Deposit collected (30%)</div>
+        <div class="chk-sub">Via Zelle, check, or ACH</div>
+      </div>
+    </div>
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="chk"></div>
+      <div>
+        <div class="chk-label">Electrical work complete</div>
+        <div class="chk-sub">Infrastructure + water heat pump installed</div>
+      </div>
+    </div>
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="chk"></div>
+      <div>
+        <div class="chk-label">HVAC / Heat pump installed</div>
+        <div class="chk-sub">System commissioned and tested</div>
+      </div>
+    </div>
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="chk"></div>
+      <div>
+        <div class="chk-label">Plumbing — Heat pump water heater installed</div>
+        <div class="chk-sub">Water lines, drain, pressure relief, expansion tank complete</div>
+      </div>
+    </div>
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="chk"></div>
+      <div>
+        <div class="chk-label">Weatherization complete</div>
+        <div class="chk-sub">Home sealed, insulation done</div>
+      </div>
+    </div>
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="chk"></div>
+      <div>
+        <div class="chk-label">Invoice generated & sent</div>
+        <div class="chk-sub">Final invoice emailed to customer</div>
+      </div>
+    </div>
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="chk"></div>
+      <div>
+        <div class="chk-label">Lien waiver signed</div>
+        <div class="chk-sub">Illinois Final Unconditional Lien Waiver</div>
+      </div>
+    </div>
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="chk"></div>
+      <div>
+        <div class="chk-label">LCP Tracker submitted</div>
+        <div class="chk-sub">Labor Compliance Program tracking complete</div>
+      </div>
+    </div>
+    <div class="check-item" onclick="toggleCheck(this)">
+      <div class="chk"></div>
+      <div>
+        <div class="chk-label">Final payment collected</div>
+        <div class="chk-sub">Full balance cleared</div>
+      </div>
+    </div>
+    <button class="btn btn-green" onclick="resetChecklist()">🔄 Reset Checklist</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// TAB SWITCHING
+function showTab(name) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  event.target.classList.add('active');
+  if (name === 'tracker') renderTracker();
+  if (name === 'leads') renderLeads();
+}
+
+// TOAST
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+// LEAD STORAGE
+function getLeads() { return JSON.parse(localStorage.getItem('epi_leads') || '[]'); }
+function saveLeads(d) { localStorage.setItem('epi_leads', JSON.stringify(d)); }
+
+function saveLead() {
+  const name = document.getElementById('lead-name').value.trim();
+  const addr = document.getElementById('lead-addr').value.trim();
+  if (!name || !addr) { toast('❌ Name and address required'); return; }
+  const sel = document.getElementById('lead-services');
+  const services = [...sel.selectedOptions].map(o => o.value);
+  const lead = {
+    id: Date.now(),
+    name, addr,
+    city: document.getElementById('lead-city').value.trim(),
+    phone: document.getElementById('lead-phone').value.trim(),
+    email: document.getElementById('lead-email').value.trim(),
+    services,
+    notes: document.getElementById('lead-notes').value.trim(),
+    status: 'lead',
+    date: new Date().toLocaleDateString()
+  };
+  const leads = getLeads();
+  leads.unshift(lead);
+  saveLeads(leads);
+  renderLeads();
+  renderTracker();
+  // clear form
+  ['lead-name','lead-addr','lead-city','lead-phone','lead-email','lead-notes'].forEach(id => document.getElementById(id).value = '');
+  toast('✅ Lead added!');
+}
+
+function renderLeads() {
+  const leads = getLeads();
+  const el = document.getElementById('leads-list');
+  if (!leads.length) { el.innerHTML = '<div style="text-align:center;color:#70a070;font-size:0.8rem;padding:20px;">No leads yet.</div>'; return; }
+  const statusColors = { lead:'#1a237e|#90caf9', contract:'#4a1a00|#ffcc80', active:'#0d2a0d|#69BE28', complete:'#1b5e20|#a5d6a7' };
+  const tradeLabels = { electrical:'⚡ Electrical', hvac:'🌡️ HVAC', weatherization:'🏠 Weatherization' };
+  el.innerHTML = leads.map(l => {
+    const [bg,fg] = (statusColors[l.status]||'#1a237e|#90caf9').split('|');
+    const pills = (l.services||[]).map(s => `<span style="background:#1a3a1a;color:#69BE28;font-size:0.62rem;border-radius:6px;padding:2px 7px;font-weight:700;">${tradeLabels[s]||s}</span>`).join(' ');
+    const statuses = ['lead','contract','active','complete'];
+    const opts = statuses.map(s => `<option value="${s}" ${l.status===s?'selected':''}>${s.toUpperCase()}</option>`).join('');
+    return `<div class="job-row">
+      <div class="job-row-top">
+        <div>
+          <div class="job-name">${l.name}</div>
+          <div class="job-addr">📍 ${l.addr}${l.city ? ', '+l.city : ''}</div>
+          ${l.phone ? `<div style="font-size:0.68rem;color:#70a070;margin-top:2px;">📞 ${l.phone}</div>` : ''}
+        </div>
+        <select onchange="updateLeadStatus(${l.id}, this.value)" style="background:#050e18;border:1px solid #1a3a1a;color:#69BE28;border-radius:6px;font-size:0.65rem;padding:3px 6px;font-weight:700;">${opts}</select>
+      </div>
+      <div style="margin-top:6px;">${pills}</div>
+      ${l.notes ? `<div style="margin-top:6px;font-size:0.68rem;color:#70a070;font-style:italic;">${l.notes}</div>` : ''}
+      <div style="font-size:0.62rem;color:#406040;margin-top:4px;">Added: ${l.date}</div>
+    </div>`;
+  }).join('');
+}
+
+function updateLeadStatus(id, status) {
+  const leads = getLeads();
+  const l = leads.find(x => x.id === id);
+  if (l) { l.status = status; saveLeads(leads); renderLeads(); renderTracker(); toast('✅ Status updated'); }
+}
+
+function renderTracker() {
+  const leads = getLeads();
+  const el = document.getElementById('tracker-list');
+  if (!el) return;
+  if (!leads.length) { el.innerHTML = '<div style="text-align:center;color:#70a070;font-size:0.8rem;padding:20px;">No jobs yet.</div>'; return; }
+  const tradeLabels = { electrical:'⚡ Electrical', hvac:'🌡️ HVAC', weatherization:'🏠 Weatherization', battery:'🔋 Battery', plumbing:'🔧 Plumbing' };
+  const pillColors = { electrical:'elec', hvac:'hvac', weatherization:'wx', battery:'battery', plumbing:'plumbing' };
+  el.innerHTML = leads.map(l => {
+    const pills = (l.services||[]).map(s => `<span class="pill ${pillColors[s]||'elec'}">${tradeLabels[s]||s}</span>`).join('');
+    return `<div class="job-row">
+      <div class="job-row-top">
+        <div>
+          <div class="job-name">${l.name}</div>
+          <div class="job-addr">📍 ${l.addr}</div>
+        </div>
+        <span class="badge ${l.status}">${l.status.toUpperCase()}</span>
+      </div>
+      <div class="trade-pills" style="margin-top:6px;">${pills}</div>
+    </div>`;
+  }).join('');
+}
+
+// CHECKLIST
+function toggleCheck(el) {
+  el.classList.toggle('done');
+  el.querySelector('.chk').textContent = el.classList.contains('done') ? '✓' : '';
+}
+function resetChecklist() {
+  document.querySelectorAll('.check-item').forEach(el => {
+    el.classList.remove('done');
+    el.querySelector('.chk').textContent = '';
+  });
+  toast('🔄 Checklist reset');
+}
+</script>
+</body>
+</html>
