@@ -4392,5 +4392,35 @@
     "deleted_at": "2026-09-11T03:01:01.413288",
     "purge_due": "2026-10-26T03:01:01.413331",
     "status": "pending"
+  },
+  {
+    "file": "000-General/__pycache__/dewey_ssbn_bridge.cpython-311.pyc",
+    "deleted_at": "2026-10-11T03:00:37.679790",
+    "purge_due": "2026-11-25T03:00:37.679806",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/__pycache__/dewey_pipeline.cpython-311.pyc",
+    "deleted_at": "2026-10-11T03:00:37.679790",
+    "purge_due": "2026-11-25T03:00:37.679817",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/__pycache__/dewey_manifest.cpython-311.pyc",
+    "deleted_at": "2026-10-11T03:00:37.679790",
+    "purge_due": "2026-11-25T03:00:37.679823",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/__pycache__/dewey_sync.cpython-311.pyc",
+    "deleted_at": "2026-10-11T03:00:37.679790",
+    "purge_due": "2026-11-25T03:00:37.679827",
+    "status": "pending"
+  },
+  {
+    "file": "000-General/__pycache__/dewey_brain_pull.cpython-311.pyc",
+    "deleted_at": "2026-10-11T03:00:37.679790",
+    "purge_due": "2026-11-25T03:00:37.679830",
+    "status": "pending"
   }
 ]
