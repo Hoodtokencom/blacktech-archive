@@ -2321,5 +2321,43 @@
     },
     "trigger": "scheduled-check (auto)",
     "blockchain_block": null
+  },
+  {
+    "id": 109,
+    "timestamp": "2026-10-11T11:00:07.986465+00:00",
+    "who": "cron-integrity",
+    "file": "/home/allenai/blacktech_brain/000-General/dewey_trash_log.json",
+    "action": "MODIFY",
+    "hash_before": "fb5387656f1ce5e55bdcd5d1583c053a180d45aea991905a9144833985a644a8",
+    "hash_after": "aea4f8b72c18f485e3bde9f6249fc85503c210f751fdca18373187e384c28263",
+    "diff_summary": {
+      "lines_added": 4426,
+      "lines_removed": 0,
+      "filesize_before": 0,
+      "filesize_after": 166230,
+      "key_changes": [
+        "File has 4426 lines, 166230 bytes"
+      ]
+    },
+    "trigger": "scheduled-check",
+    "blockchain_block": null
+  },
+  {
+    "id": 110,
+    "timestamp": "2026-10-11T11:00:08.040188+00:00",
+    "who": "cron-integrity",
+    "file": "/home/allenai/blacktech_brain/000-General/dewey_code_changelog.json",
+    "action": "MODIFY",
+    "hash_before": "64537661d863fbfb4056e98d493bc1b5d94b3936ff6e15b579eeb798ef1f1bc8",
+    "hash_after": "21c7d40bca9c9339afff397741c36a1ba6d251e53a7d5eb09e44de3c74912d3c",
+    "diff_summary": {
+      "lines_added": 20,
+      "lines_removed": 0,
+      "filesize_before": 0,
+      "filesize_after": 77221,
+      "key_changes": []
+    },
+    "trigger": "scheduled-check (auto)",
+    "blockchain_block": null
   }
 ]
