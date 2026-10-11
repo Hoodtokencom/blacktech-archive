@@ -94,10 +94,19 @@ def load_chain():
         return json.load(f)
 
 def save_chain(chain):
-    """Save the blockchain to disk."""
+    """Save the blockchain to disk — ATOMICALLY.
+
+    2026-10-11 lesson: this used to json.dump directly onto CHAIN_FILE. A
+    process killed mid-write (the Sept 23 brain-pull kill) truncated the
+    ledger mid-block and left 3.4MB of unparseable JSON — every subsequent
+    log attempt failed SILENTLY for 18 days. tmp + os.replace makes the
+    replacement atomic: a kill can no longer corrupt the chain file.
+    """
     os.makedirs(os.path.dirname(CHAIN_FILE), exist_ok=True)
-    with open(CHAIN_FILE, "w") as f:
+    tmp = CHAIN_FILE + ".tmp"
+    with open(tmp, "w") as f:
         json.dump(chain, f, indent=2)
+    os.replace(tmp, CHAIN_FILE)
 
 def genesis_block():
     """Create the first block — the origin of the chain."""

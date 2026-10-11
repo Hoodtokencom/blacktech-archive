@@ -162,11 +162,24 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
+    "size": 3701059,
+    "modified": "2026-10-11T09:02:59.628153",
+    "hash": "d90c3275e62b1a1483ab0523cbf09dc000f789fb2599f09d5c83b7ca9ccb91f7",
+    "description": "[   {     \"index\": 0,     \"timestamp\": \"2026-06-23T00:00:00\",     \"action\": \"GENESIS\",     \"file\": \"\",     \"section\": \"000\",     \"dewey_class\": \"000\",",
+    "internal_key": "internal:000-General/dewey_blockchain.json"
+  },
+  {
+    "title": "dewey_blockchain.json.corrupt-20261011-090211.bak",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/dewey_blockchain.json.corrupt-20261011-090211.bak",
+    "type": "file",
     "size": 3440229,
     "modified": "2026-09-24T07:05:56.952782",
     "hash": "8f8ba48a9bee363baa65183272adf9fb779e7298ba1e26cc6e8883feed9f7fdc",
     "description": "[   {     \"index\": 0,     \"timestamp\": \"2026-06-23T00:00:00\",     \"action\": \"GENESIS\",     \"file\": \"\",     \"section\": \"000\",     \"dewey_class\": \"000\",",
-    "internal_key": "internal:000-General/dewey_blockchain.json"
+    "internal_key": "internal:000-General/dewey_blockchain.json.corrupt-20261011-090211.bak"
   },
   {
     "title": "dewey_blockchain.py",
@@ -175,9 +188,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.py",
     "type": "code",
-    "size": 11393,
-    "modified": "2026-09-19T04:11:20.120362",
-    "hash": "48ccca6e50b9f3efad5525fcc77ec9a61cd461f716adda1cc7f173f7d201ce68",
+    "size": 11834,
+    "modified": "2026-10-11T09:02:26.167979",
+    "hash": "874febe21a17a9df0e249b2576722e29ed59d5701e2c7bd5a8dafe06d9c86907",
     "description": "#!/usr/bin/env python3 \"\"\" Dewey Blockchain Logger \u2014 Immutable Real-Time Audit Trail ========================================================= Every f",
     "internal_key": "internal:000-General/dewey_blockchain.py"
   },
@@ -214,9 +227,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 4022841,
-    "modified": "2026-10-11T08:44:44.849693",
-    "hash": "ec26922b27b0ce467486d45f7ae890bc8a1faf661e17e15354b63c3b7b17f79a",
+    "size": 4082843,
+    "modified": "2026-10-11T08:55:41.033813",
+    "hash": "130286405d0f041c5d85a4af80f61aeea182b57c223d1e2105037a56d9e92b8a",
     "description": "[   {     \"title\": \"BSC-T-FAM-20260623.html\",     \"section\": \"000-General\",     \"dewey\": \"000\",     \"dewey_desc\": \"General\",     \"file\": \"000-General/",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },

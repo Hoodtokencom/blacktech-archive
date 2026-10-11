@@ -138,9 +138,20 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
+    "size": 3701059,
+    "modified": "2026-10-11T09:02:59.628153",
+    "internal_key": "internal:000-General/dewey_blockchain.json"
+  },
+  {
+    "title": "dewey_blockchain.json.corrupt-20261011-090211.bak",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/dewey_blockchain.json.corrupt-20261011-090211.bak",
+    "type": "file",
     "size": 3440229,
     "modified": "2026-09-24T07:05:56.952782",
-    "internal_key": "internal:000-General/dewey_blockchain.json"
+    "internal_key": "internal:000-General/dewey_blockchain.json.corrupt-20261011-090211.bak"
   },
   {
     "title": "dewey_blockchain.py",
@@ -149,8 +160,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.py",
     "type": "code",
-    "size": 11393,
-    "modified": "2026-09-19T04:11:20.120362",
+    "size": 11834,
+    "modified": "2026-10-11T09:02:26.167979",
     "internal_key": "internal:000-General/dewey_blockchain.py"
   },
   {
@@ -182,8 +193,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 4022841,
-    "modified": "2026-10-11T08:44:44.849693",
+    "size": 4082843,
+    "modified": "2026-10-11T08:55:41.033813",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
   {
