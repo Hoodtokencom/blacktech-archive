@@ -16,7 +16,20 @@ import json, os, re, sys, subprocess, hashlib
 from datetime import datetime
 
 BRAIN = "/home/allenai/blacktech_brain"
-GAPI = f"python {BRAIN}/../.hermes/profiles/derrell-black/skills/productivity/google-workspace/scripts/google_api.py"
+# Interpreter that can import googleapiclient — NEVER a bare `python`. With no `python`
+# on PATH the Drive calls return nothing, and a silent "nothing to upload" is worse than
+# an error (same landmine class as the pull's false-green listing).
+GAPI_PY = sys.executable
+if subprocess.run([GAPI_PY, "-c", "import googleapiclient"],
+                  capture_output=True).returncode != 0:
+    _venv = "/home/allenai/.hermes/hermes-agent/venv/bin/python"
+    if os.path.exists(_venv) and subprocess.run([_venv, "-c", "import googleapiclient"],
+                                                capture_output=True).returncode == 0:
+        GAPI_PY = _venv
+    else:
+        print("❌ No interpreter with googleapiclient available — refusing to run blind.")
+        sys.exit(3)
+GAPI = f"{GAPI_PY} {BRAIN}/../.hermes/profiles/derrell-black/skills/productivity/google-workspace/scripts/google_api.py"
 GITHUB_REPO = "/home/allenai/blacktech_archive"
 BLOCKCHAIN = f"python3 {BRAIN}/000-General/dewey_blockchain.py"
 
@@ -46,7 +59,17 @@ def scan_brain():
         # Drive files (no overwrite), creating endless duplicate copies.
         dirs[:] = [d for d in dirs if d != '__pycache__']
         for f in files:
-            if f.startswith('.') or f.endswith('.pyc'):
+            # dewey_blockchain.py writes chain.json atomically (chain.json.tmp then
+            # rename); indexing that transient file made every run flag a phantom
+            # NEW entry and fail the Drive upload for it. The puller already skips
+            # .tmp — this scanner must too.
+            if f.startswith('.') or f.endswith('.pyc') or f.endswith('.tmp'):
+                continue
+            # Never push a puller collision artifact ('<stem>__<section><ext>') up to
+            # Drive. The router strips that suffix on the way into Body, so the name is
+            # not content — a Drive copy re-downloads forever as a no-op duplicate.
+            _stem, _ext = os.path.splitext(f)
+            if "__" in _stem and os.path.isdir(os.path.join(BRAIN, _stem.rpartition("__")[2])):
                 continue
             full = os.path.join(root, f)
             rel = os.path.relpath(full, BRAIN)
@@ -144,7 +167,11 @@ def sync_to_drive(entries, changes=None):
         try:
             data = json.loads(result.stdout)
             status = data.get('status', 'error')
-            results.append(f"  {'🟢' if status == 'uploaded' else '🔴'} {e['file']}: {status}")
+            # 'updated' = Drive-side same-name overwrite (google_api.py line ~657),
+            # every bit as successful as 'uploaded'. Treating it as failure made
+            # healthy re-uploads report 🔴 FAILED.
+            ok = status in ('uploaded', 'updated')
+            results.append(f"  {'🟢' if ok else '🔴'} {e['file']}: {status}")
         except:
             results.append(f"  🔴 {e['file']}: FAILED")
     

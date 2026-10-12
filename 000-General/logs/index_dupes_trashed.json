@@ -1,0 +1,95 @@
+{
+ "when": "2026-10-11T09:29:50-0500",
+ "verdicts": {
+  "INDEX__200-Religion.md": "IDENTICAL",
+  "INDEX__696-Utilities.md": "IDENTICAL",
+  "INDEX__692-Auxiliary_Practices.md": "IDENTICAL",
+  "INDEX__691-Building_Materials.md": "IDENTICAL",
+  "INDEX__300-Social_Sciences.md": "IDENTICAL",
+  "INDEX__400-Language.md": "IDENTICAL",
+  "INDEX__500-Science.md": "IDENTICAL",
+  "INDEX__640-Household_Favorites.md": "IDENTICAL",
+  "INDEX__700-Arts_Recreation.md": "IDENTICAL",
+  "INDEX__800-Literature.md": "IDENTICAL",
+  "INDEX__900-History_Geography.md": "IDENTICAL"
+ },
+ "trashed": [
+  {
+   "section": "200-Religion",
+   "name": "INDEX__200-Religion.md",
+   "id": "1V_zpxGIC-clVSa7sZXG1Hvl4JrNA266c",
+   "md5": "bb830df0b884b42abc6b1db661ba8087",
+   "trashed_verified": true
+  },
+  {
+   "section": "696-Utilities",
+   "name": "INDEX__696-Utilities.md",
+   "id": "1qiGWjMuJ6b7AvzzGjSZNXVu76DbkCbfx",
+   "md5": "7e7463ed0f32502d988f55cb7c1873ff",
+   "trashed_verified": true
+  },
+  {
+   "section": "692-Auxiliary_Practices",
+   "name": "INDEX__692-Auxiliary_Practices.md",
+   "id": "1PhuLoMn0c5IrgMEN06ziD2Ba1Tav0xGz",
+   "md5": "3504d543771a2c0c899822392ef0da31",
+   "trashed_verified": true
+  },
+  {
+   "section": "691-Building_Materials",
+   "name": "INDEX__691-Building_Materials.md",
+   "id": "1dnTXe9CzSJF2MVcFBYHpnE-FC9XKK2_0",
+   "md5": "ff3f42465f00f6a33bcd776746fed5ba",
+   "trashed_verified": true
+  },
+  {
+   "section": "300-Social_Sciences",
+   "name": "INDEX__300-Social_Sciences.md",
+   "id": "1Oj6BKKBly1OS6PSVhb8Ws3uW7JsooQTt",
+   "md5": "6b6717864e3fbb569ef0fc00c6552a0e",
+   "trashed_verified": true
+  },
+  {
+   "section": "400-Language",
+   "name": "INDEX__400-Language.md",
+   "id": "1GLcf0ly8qy6HV0_-eXujOUUQHkqwi0zt",
+   "md5": "91f02743581eeb58792dcb5b10341c3f",
+   "trashed_verified": true
+  },
+  {
+   "section": "500-Science",
+   "name": "INDEX__500-Science.md",
+   "id": "1LAym6izQSw0a0To6g1rmZZaCHZUF4IRW",
+   "md5": "19ddbe3abecd745f37b75981ceb64139",
+   "trashed_verified": true
+  },
+  {
+   "section": "640-Household_Favorites",
+   "name": "INDEX__640-Household_Favorites.md",
+   "id": "1a2yuZvRA-62Pt1zc_yM6HauVqQLMkr4s",
+   "md5": "5e01b6dd17f12f32217ae0a5bd3293c0",
+   "trashed_verified": true
+  },
+  {
+   "section": "700-Arts_Recreation",
+   "name": "INDEX__700-Arts_Recreation.md",
+   "id": "1T1Z9bulrIB2RCH0kixEs9iE0D4wJz1za",
+   "md5": "9832a3120f46bd0ac8c8336d20ada008",
+   "trashed_verified": true
+  },
+  {
+   "section": "800-Literature",
+   "name": "INDEX__800-Literature.md",
+   "id": "19y6ayRBcGaMo9GF8M2ulESfSLmLVWaRA",
+   "md5": "a9e3bdacd9c0c3f591da42288b95e9c1",
+   "trashed_verified": true
+  },
+  {
+   "section": "900-History_Geography",
+   "name": "INDEX__900-History_Geography.md",
+   "id": "14ZbhWhfR2mm7mk0cafmufla9D9HW8anr",
+   "md5": "9ea92a8447ff8a4b1ef6844a17d13367",
+   "trashed_verified": true
+  }
+ ]
+}

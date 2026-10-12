@@ -11,5 +11,9 @@ if [ ! -d "$BODY/000-General" ]; then
 fi
 
 # Sync Pi Brain → Body Library (exFAT-safe flags)
-rsync -av --no-perms --no-owner --no-group --checksum "$BRAIN/" "$BODY/"
+# --exclude: dewey_blockchain.py writes chain.json via a transient .tmp
+# (tmp+rename atomic write); without the exclude, rsync copies that
+# half-written staging file to Body as a junk 0-byte leftover.
+rsync -av --no-perms --no-owner --no-group --checksum \
+      --exclude='*.tmp' --exclude='*.part' --exclude='__pycache__/' "$BRAIN/" "$BODY/"
 echo "✅ Dewey Brain → Body sync complete: $(date)"
