@@ -5068,3 +5068,1134 @@
 - [2026-10-12 07:29:40] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2574.md → 692-Auxiliary_Practices (SHA256: b89a1879de35...)
 - [2026-10-12 07:29:40] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2575.md → 692-Auxiliary_Practices (SHA256: 6ddb1620056c...)
 - [2026-10-12 07:29:41] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2578.md → 692-Auxiliary_Practices (SHA256: cc50ea915d6e...)
+- [2026-10-13 07:01:29] Brain Pull: Downloaded BSC-SOW-2026-2581.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:30] Brain Pull: Downloaded BSC-SOW-2026-2584.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:31] Brain Pull: Downloaded BSC-SOW-2026-2588.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:33] Brain Pull: Downloaded BSC-SOW-2026-2589.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:35] Brain Pull: Downloaded BSC-SOW-2026-2591.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:36] Brain Pull: Downloaded BSC-SOW-2026-2596.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:39] Brain Pull: Downloaded BSC-SOW-2026-2599.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:40] Brain Pull: Downloaded BSC-SOW-2026-2603.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:41] Brain Pull: Downloaded BSC-SOW-2026-2618.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:42] Brain Pull: Downloaded BSC-SOW-2026-2622.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:44] Brain Pull: Downloaded BSC-SOW-2026-2629.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:45] Brain Pull: Downloaded BSC-SOW-2026-2631.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:47] Brain Pull: Downloaded BSC-SOW-2026-2641.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:48] Brain Pull: Downloaded BSC-SOW-2026-2643.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:49] Brain Pull: Downloaded BSC-SOW-2026-2644.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:50] Brain Pull: Downloaded BSC-SOW-2026-2649.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:52] Brain Pull: Downloaded BSC-SOW-2026-2659.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:53] Brain Pull: Downloaded BSC-SOW-2026-2662.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:54] Brain Pull: Downloaded BSC-SOW-2026-2663.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:55] Brain Pull: Downloaded BSC-SOW-2026-2667.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:56] Brain Pull: Downloaded BSC-SOW-2026-2668.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:58] Brain Pull: Downloaded BSC-SOW-2026-2671.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:01:59] Brain Pull: Downloaded BSC-SOW-2026-2676.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:00] Brain Pull: Downloaded BSC-SOW-2026-2682.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:01] Brain Pull: Downloaded BSC-SOW-2026-2696.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:03] Brain Pull: Downloaded BSC-SOW-2026-2712.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:04] Brain Pull: Downloaded BSC-SOW-2026-2714.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:05] Brain Pull: Downloaded BSC-SOW-2026-2727.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:07] Brain Pull: Downloaded BSC-SOW-2026-2730.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:09] Brain Pull: Downloaded BSC-SOW-2026-2734.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:10] Brain Pull: Downloaded BSC-SOW-2026-2743.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:11] Brain Pull: Downloaded BSC-SOW-2026-2751.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:12] Brain Pull: Downloaded BSC-SOW-2026-2752.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:14] Brain Pull: Downloaded BSC-SOW-2026-2764.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:15] Brain Pull: Downloaded BSC-SOW-2026-2779.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:16] Brain Pull: Downloaded BSC-SOW-2026-2780.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:18] Brain Pull: Downloaded BSC-SOW-2026-2785.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:20] Brain Pull: Downloaded BSC-SOW-2026-2786.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:21] Brain Pull: Downloaded BSC-SOW-2026-2787.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:23] Brain Pull: Downloaded BSC-SOW-2026-2790.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:24] Brain Pull: Downloaded BSC-SOW-2026-2793.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:26] Brain Pull: Downloaded BSC-SOW-2026-2796.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:27] Brain Pull: Downloaded BSC-SOW-2026-2799.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:28] Brain Pull: Downloaded BSC-SOW-2026-2803.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:29] Brain Pull: Downloaded BSC-SOW-2026-2804.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:31] Brain Pull: Downloaded BSC-SOW-2026-2808.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:32] Brain Pull: Downloaded BSC-SOW-2026-2812.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:33] Brain Pull: Downloaded BSC-SOW-2026-2813.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:34] Brain Pull: Downloaded BSC-SOW-2026-2820.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:36] Brain Pull: Downloaded BSC-SOW-2026-2836.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:37] Brain Pull: Downloaded BSC-SOW-2026-2841.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:38] Brain Pull: Downloaded BSC-SOW-2026-2850.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:39] Brain Pull: Downloaded BSC-SOW-2026-2853.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:41] Brain Pull: Downloaded BSC-SOW-2026-2855.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:44] Brain Pull: Downloaded BSC-SOW-2026-2858.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:45] Brain Pull: Downloaded BSC-SOW-2026-2871.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:47] Brain Pull: Downloaded BSC-SOW-2026-2885.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:49] Brain Pull: Downloaded BSC-SOW-2026-2893.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:50] Brain Pull: Downloaded BSC-SOW-2026-2894.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:51] Brain Pull: Downloaded BSC-SOW-2026-2896.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:52] Brain Pull: Downloaded BSC-SOW-2026-2902.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:54] Brain Pull: Downloaded BSC-SOW-2026-2921.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:55] Brain Pull: Downloaded BSC-SOW-2026-2928.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:57] Brain Pull: Downloaded BSC-SOW-2026-2937.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:58] Brain Pull: Downloaded BSC-SOW-2026-2944.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:02:59] Brain Pull: Downloaded BSC-SOW-2026-2951.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:00] Brain Pull: Downloaded BSC-SOW-2026-2952.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:02] Brain Pull: Downloaded BSC-SOW-2026-2953.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:03] Brain Pull: Downloaded BSC-SOW-2026-2960.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:04] Brain Pull: Downloaded BSC-SOW-2026-2964.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:07] Brain Pull: Downloaded BSC-SOW-2026-2969.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:08] Brain Pull: Downloaded BSC-SOW-2026-2975.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:09] Brain Pull: Downloaded BSC-SOW-2026-2977.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:11] Brain Pull: Downloaded BSC-SOW-2026-2987.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:12] Brain Pull: Downloaded BSC-SOW-2026-2994.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:13] Brain Pull: Downloaded BSC-SOW-2026-3000.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:14] Brain Pull: Downloaded BSC-SOW-2026-3005.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:16] Brain Pull: Downloaded BSC-SOW-2026-3006.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:17] Brain Pull: Downloaded BSC-SOW-2026-3012.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:18] Brain Pull: Downloaded BSC-SOW-2026-3014.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:20] Brain Pull: Downloaded BSC-SOW-2026-3017.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:21] Brain Pull: Downloaded BSC-SOW-2026-3021.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:22] Brain Pull: Downloaded BSC-SOW-2026-3023.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:24] Brain Pull: Downloaded BSC-SOW-2026-3027.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:25] Brain Pull: Downloaded BSC-SOW-2026-3028.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:27] Brain Pull: Downloaded BSC-SOW-2026-3031.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:28] Brain Pull: Downloaded BSC-SOW-2026-3035.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:30] Brain Pull: Downloaded BSC-SOW-2026-3060.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:31] Brain Pull: Downloaded BSC-SOW-2026-3068.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:33] Brain Pull: Downloaded BSC-SOW-2026-3072.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:34] Brain Pull: Downloaded BSC-SOW-2026-3074.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:35] Brain Pull: Downloaded BSC-SOW-2026-3085.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:37] Brain Pull: Downloaded BSC-SOW-2026-3086.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:38] Brain Pull: Downloaded BSC-SOW-2026-3090.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:40] Brain Pull: Downloaded BSC-SOW-2026-3096.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:41] Brain Pull: Downloaded BSC-SOW-2026-3100.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:42] Brain Pull: Downloaded BSC-SOW-2026-3118.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:43] Brain Pull: Downloaded BSC-SOW-2026-3119.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:44] Brain Pull: Downloaded BSC-SOW-2026-3121.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:46] Brain Pull: Downloaded BSC-SOW-2026-3125.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:47] Brain Pull: Downloaded BSC-SOW-2026-3134.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:48] Brain Pull: Downloaded BSC-SOW-2026-3137.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:50] Brain Pull: Downloaded BSC-SOW-2026-3139.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:51] Brain Pull: Downloaded BSC-SOW-2026-3140.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:52] Brain Pull: Downloaded BSC-SOW-2026-3146.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:54] Brain Pull: Downloaded BSC-SOW-2026-3152.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:55] Brain Pull: Downloaded BSC-SOW-2026-3157.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:56] Brain Pull: Downloaded BSC-SOW-2026-3168.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:57] Brain Pull: Downloaded BSC-SOW-2026-3185.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:03:59] Brain Pull: Downloaded BSC-SOW-2026-3194.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:01] Brain Pull: Downloaded BSC-SOW-2026-3196.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:02] Brain Pull: Downloaded BSC-SOW-2026-3197.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:04] Brain Pull: Downloaded BSC-SOW-2026-3205.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:05] Brain Pull: Downloaded BSC-SOW-2026-3210.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:07] Brain Pull: Downloaded BSC-SOW-2026-3211.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:08] Brain Pull: Downloaded BSC-SOW-2026-3219.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:09] Brain Pull: Downloaded BSC-SOW-2026-3224.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:10] Brain Pull: Downloaded BSC-SOW-2026-3225.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:12] Brain Pull: Downloaded BSC-SOW-2026-3228.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:13] Brain Pull: Downloaded BSC-SOW-2026-3229.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:14] Brain Pull: Downloaded BSC-SOW-2026-3234.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:15] Brain Pull: Downloaded BSC-SOW-2026-3246.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:17] Brain Pull: Downloaded BSC-SOW-2026-3257.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:18] Brain Pull: Downloaded BSC-SOW-2026-3259.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:19] Brain Pull: Downloaded BSC-SOW-2026-3260.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:20] Brain Pull: Downloaded BSC-SOW-2026-3262.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:22] Brain Pull: Downloaded BSC-SOW-2026-3268.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:23] Brain Pull: Downloaded BSC-SOW-2026-3284.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:24] Brain Pull: Downloaded BSC-SOW-2026-3297.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:26] Brain Pull: Downloaded BSC-SOW-2026-3298.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:28] Brain Pull: Downloaded BSC-SOW-2026-3304.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:29] Brain Pull: Downloaded BSC-SOW-2026-3310.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:30] Brain Pull: Downloaded BSC-SOW-2026-3318.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:32] Brain Pull: Downloaded BSC-SOW-2026-3319.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:34] Brain Pull: Downloaded BSC-SOW-2026-3330.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:35] Brain Pull: Downloaded BSC-SOW-2026-3332.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:36] Brain Pull: Downloaded BSC-SOW-2026-3343.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:38] Brain Pull: Downloaded BSC-SOW-2026-3345.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:39] Brain Pull: Downloaded BSC-SOW-2026-3346.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:40] Brain Pull: Downloaded BSC-SOW-2026-3351.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:41] Brain Pull: Downloaded BSC-SOW-2026-3352.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:43] Brain Pull: Downloaded BSC-SOW-2026-3361.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:44] Brain Pull: Downloaded BSC-SOW-2026-3370.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:45] Brain Pull: Downloaded BSC-SOW-2026-3372.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:46] Brain Pull: Downloaded BSC-SOW-2026-3374.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:48] Brain Pull: Downloaded BSC-SOW-2026-3378.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:49] Brain Pull: Downloaded BSC-SOW-2026-3384.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:51] Brain Pull: Downloaded BSC-SOW-2026-3387.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:52] Brain Pull: Downloaded BSC-SOW-2026-3397.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:54] Brain Pull: Downloaded BSC-SOW-2026-3402.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:55] Brain Pull: Downloaded BSC-SOW-2026-3408.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:56] Brain Pull: Downloaded BSC-SOW-2026-3409.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:57] Brain Pull: Downloaded BSC-SOW-2026-3414.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:04:59] Brain Pull: Downloaded BSC-SOW-2026-3432.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:00] Brain Pull: Downloaded BSC-SOW-2026-3433.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:03] Brain Pull: Downloaded BSC-SOW-2026-3438.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:04] Brain Pull: Downloaded BSC-SOW-2026-3440.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:06] Brain Pull: Downloaded BSC-SOW-2026-3445.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:07] Brain Pull: Downloaded BSC-SOW-2026-3446.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:08] Brain Pull: Downloaded BSC-SOW-2026-3449.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:09] Brain Pull: Downloaded BSC-SOW-2026-3454.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:11] Brain Pull: Downloaded BSC-SOW-2026-3455.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:12] Brain Pull: Downloaded BSC-SOW-2026-3459.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:13] Brain Pull: Downloaded BSC-SOW-2026-3461.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:15] Brain Pull: Downloaded BSC-SOW-2026-3464.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:16] Brain Pull: Downloaded BSC-SOW-2026-3473.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:17] Brain Pull: Downloaded BSC-SOW-2026-3477.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:19] Brain Pull: Downloaded BSC-SOW-2026-3482.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:20] Brain Pull: Downloaded BSC-SOW-2026-3485.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:21] Brain Pull: Downloaded BSC-SOW-2026-3490.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:23] Brain Pull: Downloaded BSC-SOW-2026-3493.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:24] Brain Pull: Downloaded BSC-SOW-2026-3495.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:25] Brain Pull: Downloaded BSC-SOW-2026-3496.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:26] Brain Pull: Downloaded BSC-SOW-2026-3498.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:28] Brain Pull: Downloaded BSC-SOW-2026-3500.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:29] Brain Pull: Downloaded BSC-SOW-2026-3501.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:31] Brain Pull: Downloaded BSC-SOW-2026-3504.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:32] Brain Pull: Downloaded BSC-SOW-2026-3513.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:34] Brain Pull: Downloaded BSC-SOW-2026-3515.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:35] Brain Pull: Downloaded BSC-SOW-2026-3520.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:37] Brain Pull: Downloaded BSC-SOW-2026-3524.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:38] Brain Pull: Downloaded BSC-SOW-2026-3534.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:40] Brain Pull: Downloaded BSC-SOW-2026-3539.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:41] Brain Pull: Downloaded BSC-SOW-2026-3553.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:42] Brain Pull: Downloaded BSC-SOW-2026-3570.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:44] Brain Pull: Downloaded BSC-SOW-2026-3587.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:46] Brain Pull: Downloaded BSC-SOW-2026-3590.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:47] Brain Pull: Downloaded BSC-SOW-2026-3596.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:49] Brain Pull: Downloaded BSC-SOW-2026-3597.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:50] Brain Pull: Downloaded BSC-SOW-2026-3598.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:52] Brain Pull: Downloaded BSC-SOW-2026-3599.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:53] Brain Pull: Downloaded BSC-SOW-2026-3600.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:55] Brain Pull: Downloaded BSC-SOW-2026-3603.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:56] Brain Pull: Downloaded BSC-SOW-2026-3604.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:57] Brain Pull: Downloaded BSC-SOW-2026-3606.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:05:59] Brain Pull: Downloaded BSC-SOW-2026-3617.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:00] Brain Pull: Downloaded BSC-SOW-2026-3622.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:01] Brain Pull: Downloaded BSC-SOW-2026-3626.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:02] Brain Pull: Downloaded BSC-SOW-2026-3628.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:04] Brain Pull: Downloaded BSC-SOW-2026-3629.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:05] Brain Pull: Downloaded BSC-SOW-2026-3644.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:06] Brain Pull: Downloaded BSC-SOW-2026-3646.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:08] Brain Pull: Downloaded BSC-SOW-2026-3647.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:10] Brain Pull: Downloaded BSC-SOW-2026-3648.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:11] Brain Pull: Downloaded BSC-SOW-2026-3650.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:12] Brain Pull: Downloaded BSC-SOW-2026-3653.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:14] Brain Pull: Downloaded BSC-SOW-2026-3661.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:15] Brain Pull: Downloaded BSC-SOW-2026-3666.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:17] Brain Pull: Downloaded BSC-SOW-2026-3671.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:19] Brain Pull: Downloaded BSC-SOW-2026-3672.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:20] Brain Pull: Downloaded BSC-SOW-2026-3673.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:22] Brain Pull: Downloaded BSC-SOW-2026-3675.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:23] Brain Pull: Downloaded BSC-SOW-2026-3681.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:24] Brain Pull: Downloaded BSC-SOW-2026-3690.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:25] Brain Pull: Downloaded BSC-SOW-2026-3695.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:26] Brain Pull: Downloaded BSC-SOW-2026-3697.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:29] Brain Pull: Downloaded BSC-SOW-2026-3703.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:31] Brain Pull: Downloaded BSC-SOW-2026-3707.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:32] Brain Pull: Downloaded BSC-SOW-2026-3731.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:34] Brain Pull: Downloaded BSC-SOW-2026-3732.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:35] Brain Pull: Downloaded BSC-SOW-2026-3734.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:36] Brain Pull: Downloaded BSC-SOW-2026-3746.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:38] Brain Pull: Downloaded BSC-SOW-2026-3747.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:39] Brain Pull: Downloaded BSC-SOW-2026-3754.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:41] Brain Pull: Downloaded BSC-SOW-2026-3755.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:42] Brain Pull: Downloaded BSC-SOW-2026-3756.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:44] Brain Pull: Downloaded BSC-SOW-2026-3761.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:45] Brain Pull: Downloaded BSC-SOW-2026-3763.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:46] Brain Pull: Downloaded BSC-SOW-2026-3771.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:47] Brain Pull: Downloaded BSC-SOW-2026-3774.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:49] Brain Pull: Downloaded BSC-SOW-2026-3776.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:52] Brain Pull: Downloaded BSC-SOW-2026-3779.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:53] Brain Pull: Downloaded BSC-SOW-2026-3785.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:54] Brain Pull: Downloaded BSC-SOW-2026-3790.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:55] Brain Pull: Downloaded BSC-SOW-2026-3791.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:57] Brain Pull: Downloaded BSC-SOW-2026-3795.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:58] Brain Pull: Downloaded BSC-SOW-2026-3796.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:06:59] Brain Pull: Downloaded BSC-SOW-2026-3797.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:01] Brain Pull: Downloaded BSC-SOW-2026-3812.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:03] Brain Pull: Downloaded BSC-SOW-2026-3816.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:04] Brain Pull: Downloaded BSC-SOW-2026-3828.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:05] Brain Pull: Downloaded BSC-SOW-2026-3830.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:06] Brain Pull: Downloaded BSC-SOW-2026-3835.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:07] Brain Pull: Downloaded BSC-SOW-2026-3839.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:09] Brain Pull: Downloaded BSC-SOW-2026-3844.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:10] Brain Pull: Downloaded BSC-SOW-2026-3854.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:11] Brain Pull: Downloaded BSC-SOW-2026-3863.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:12] Brain Pull: Downloaded BSC-SOW-2026-3870.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:14] Brain Pull: Downloaded BSC-SOW-2026-3879.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:15] Brain Pull: Downloaded BSC-SOW-2026-3882.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:16] Brain Pull: Downloaded BSC-SOW-2026-3887.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:18] Brain Pull: Downloaded BSC-SOW-2026-3889.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:19] Brain Pull: Downloaded BSC-SOW-2026-3890.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:20] Brain Pull: Downloaded BSC-SOW-2026-3894.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:22] Brain Pull: Downloaded BSC-SOW-2026-3895.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:24] Brain Pull: Downloaded BSC-SOW-2026-3898.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:25] Brain Pull: Downloaded BSC-SOW-2026-3899.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:27] Brain Pull: Downloaded BSC-SOW-2026-3902.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:28] Brain Pull: Downloaded BSC-SOW-2026-3908.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:29] Brain Pull: Downloaded BSC-SOW-2026-3913.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:31] Brain Pull: Downloaded BSC-SOW-2026-3916.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:32] Brain Pull: Downloaded BSC-SOW-2026-3926.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:33] Brain Pull: Downloaded BSC-SOW-2026-3930.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:34] Brain Pull: Downloaded BSC-SOW-2026-3935.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:36] Brain Pull: Downloaded BSC-SOW-2026-3937.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:37] Brain Pull: Downloaded BSC-SOW-2026-3939.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:38] Brain Pull: Downloaded BSC-SOW-2026-3950.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:40] Brain Pull: Downloaded BSC-SOW-2026-3952.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:42] Brain Pull: Downloaded BSC-SOW-2026-3953.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:43] Brain Pull: Downloaded BSC-SOW-2026-3960.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:44] Brain Pull: Downloaded BSC-SOW-2026-3962.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:45] Brain Pull: Downloaded BSC-SOW-2026-3963.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:47] Brain Pull: Downloaded BSC-SOW-2026-3976.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:48] Brain Pull: Downloaded BSC-SOW-2026-3980.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:50] Brain Pull: Downloaded BSC-SOW-2026-3992.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:52] Brain Pull: Downloaded BSC-SOW-2026-3997.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:54] Brain Pull: Downloaded BSC-SOW-2026-3998.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:55] Brain Pull: Downloaded BSC-SOW-2026-4009.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:56] Brain Pull: Downloaded BSC-SOW-2026-4010.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:58] Brain Pull: Downloaded BSC-SOW-2026-4012.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:07:59] Brain Pull: Downloaded BSC-SOW-2026-4013.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:00] Brain Pull: Downloaded BSC-SOW-2026-4016.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:01] Brain Pull: Downloaded BSC-SOW-2026-4017.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:03] Brain Pull: Downloaded BSC-SOW-2026-4021.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:04] Brain Pull: Downloaded BSC-SOW-2026-4038.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:09] Brain Pull: Downloaded BSC-SOW-2026-4042.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:11] Brain Pull: Downloaded BSC-SOW-2026-4044.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:12] Brain Pull: Downloaded BSC-SOW-2026-4051.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:13] Brain Pull: Downloaded BSC-SOW-2026-4053.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:14] Brain Pull: Downloaded BSC-SOW-2026-4057.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:16] Brain Pull: Downloaded BSC-SOW-2026-4058.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:17] Brain Pull: Downloaded BSC-SOW-2026-4060.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:19] Brain Pull: Downloaded BSC-SOW-2026-4081.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:21] Brain Pull: Downloaded BSC-SOW-2026-4082.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:22] Brain Pull: Downloaded BSC-SOW-2026-4097.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:24] Brain Pull: Downloaded BSC-SOW-2026-4103.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:25] Brain Pull: Downloaded BSC-SOW-2026-4109.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:27] Brain Pull: Downloaded BSC-SOW-2026-4118.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:28] Brain Pull: Downloaded BSC-SOW-2026-4127.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:29] Brain Pull: Downloaded BSC-SOW-2026-4134.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:30] Brain Pull: Downloaded BSC-SOW-2026-4140.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:31] Brain Pull: Downloaded BSC-SOW-2026-4157.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:33] Brain Pull: Downloaded BSC-SOW-2026-4163.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:35] Brain Pull: Downloaded BSC-SOW-2026-4167.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:36] Brain Pull: Downloaded BSC-SOW-2026-4168.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:37] Brain Pull: Downloaded BSC-SOW-2026-4169.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:40] Brain Pull: Downloaded BSC-SOW-2026-4180.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:41] Brain Pull: Downloaded BSC-SOW-2026-4189.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:42] Brain Pull: Downloaded BSC-SOW-2026-4191.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:44] Brain Pull: Downloaded BSC-SOW-2026-4212.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:46] Brain Pull: Downloaded BSC-SOW-2026-4214.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:47] Brain Pull: Downloaded BSC-SOW-2026-4219.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:48] Brain Pull: Downloaded BSC-SOW-2026-4220.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:50] Brain Pull: Downloaded BSC-SOW-2026-4222.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:51] Brain Pull: Downloaded BSC-SOW-2026-4228.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:52] Brain Pull: Downloaded BSC-SOW-2026-4231.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:54] Brain Pull: Downloaded BSC-SOW-2026-4238.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:55] Brain Pull: Downloaded BSC-SOW-2026-4244.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:57] Brain Pull: Downloaded BSC-SOW-2026-4246.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:08:59] Brain Pull: Downloaded BSC-SOW-2026-4249.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:00] Brain Pull: Downloaded BSC-SOW-2026-4264.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:01] Brain Pull: Downloaded BSC-SOW-2026-4268.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:02] Brain Pull: Downloaded BSC-SOW-2026-4272.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:03] Brain Pull: Downloaded BSC-SOW-2026-4275.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:05] Brain Pull: Downloaded BSC-SOW-2026-4277.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:06] Brain Pull: Downloaded BSC-SOW-2026-4278.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:08] Brain Pull: Downloaded BSC-SOW-2026-4281.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:09] Brain Pull: Downloaded BSC-SOW-2026-4283.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:10] Brain Pull: Downloaded BSC-SOW-2026-4285.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:11] Brain Pull: Downloaded BSC-SOW-2026-4288.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:12] Brain Pull: Downloaded BSC-SOW-2026-4295.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:14] Brain Pull: Downloaded BSC-SOW-2026-4297.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:16] Brain Pull: Downloaded BSC-SOW-2026-4306.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:18] Brain Pull: Downloaded BSC-SOW-2026-4309.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:19] Brain Pull: Downloaded BSC-SOW-2026-4316.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:20] Brain Pull: Downloaded BSC-SOW-2026-4320.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:21] Brain Pull: Downloaded BSC-SOW-2026-4326.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:23] Brain Pull: Downloaded BSC-SOW-2026-4335.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:24] Brain Pull: Downloaded BSC-SOW-2026-4343.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:26] Brain Pull: Downloaded BSC-SOW-2026-4344.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:27] Brain Pull: Downloaded BSC-SOW-2026-4351.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:28] Brain Pull: Downloaded BSC-SOW-2026-4352.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:30] Brain Pull: Downloaded BSC-SOW-2026-4356.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:31] Brain Pull: Downloaded BSC-SOW-2026-4360.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:32] Brain Pull: Downloaded BSC-SOW-2026-4363.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:33] Brain Pull: Downloaded BSC-SOW-2026-4371.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:34] Brain Pull: Downloaded BSC-SOW-2026-4375.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:36] Brain Pull: Downloaded BSC-SOW-2026-4380.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:39] Brain Pull: Downloaded BSC-SOW-2026-4398.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:41] Brain Pull: Downloaded BSC-SOW-2026-4401.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:42] Brain Pull: Downloaded BSC-SOW-2026-4402.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:43] Brain Pull: Downloaded BSC-SOW-2026-4408.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:44] Brain Pull: Downloaded BSC-SOW-2026-4424.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:45] Brain Pull: Downloaded BSC-SOW-2026-4426.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:47] Brain Pull: Downloaded BSC-SOW-2026-4435.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:48] Brain Pull: Downloaded BSC-SOW-2026-4442.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:50] Brain Pull: Downloaded BSC-SOW-2026-4443.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:52] Brain Pull: Downloaded BSC-SOW-2026-4446.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:53] Brain Pull: Downloaded BSC-SOW-2026-4447.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:54] Brain Pull: Downloaded BSC-SOW-2026-4450.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:56] Brain Pull: Downloaded BSC-SOW-2026-4461.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:57] Brain Pull: Downloaded BSC-SOW-2026-4469.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:09:58] Brain Pull: Downloaded BSC-SOW-2026-4472.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:00] Brain Pull: Downloaded BSC-SOW-2026-4474.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:01] Brain Pull: Downloaded BSC-SOW-2026-4478.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:02] Brain Pull: Downloaded BSC-SOW-2026-4487.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:03] Brain Pull: Downloaded BSC-SOW-2026-4490.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:05] Brain Pull: Downloaded BSC-SOW-2026-4491.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:06] Brain Pull: Downloaded BSC-SOW-2026-4494.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:08] Brain Pull: Downloaded BSC-SOW-2026-4495.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:10] Brain Pull: Downloaded BSC-SOW-2026-4497.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:12] Brain Pull: Downloaded BSC-SOW-2026-4500.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:13] Brain Pull: Downloaded BSC-SOW-2026-4505.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:18] Brain Pull: Downloaded BSC-SOW-2026-4507.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:19] Brain Pull: Downloaded BSC-SOW-2026-4512.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:21] Brain Pull: Downloaded BSC-SOW-2026-4531.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:22] Brain Pull: Downloaded BSC-SOW-2026-4535.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:23] Brain Pull: Downloaded BSC-SOW-2026-4544.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:25] Brain Pull: Downloaded BSC-SOW-2026-4555.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:26] Brain Pull: Downloaded BSC-SOW-2026-4561.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:28] Brain Pull: Downloaded BSC-SOW-2026-4568.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:29] Brain Pull: Downloaded BSC-SOW-2026-4571.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:31] Brain Pull: Downloaded BSC-SOW-2026-4572.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:32] Brain Pull: Downloaded BSC-SOW-2026-4583.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:33] Brain Pull: Downloaded BSC-SOW-2026-4586.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:34] Brain Pull: Downloaded BSC-SOW-2026-4591.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:35] Brain Pull: Downloaded BSC-SOW-2026-4597.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:37] Brain Pull: Downloaded BSC-SOW-2026-4608.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:38] Brain Pull: Downloaded BSC-SOW-2026-4611.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:40] Brain Pull: Downloaded BSC-SOW-2026-4615.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:41] Brain Pull: Downloaded BSC-SOW-2026-4616.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:43] Brain Pull: Downloaded BSC-SOW-2026-4624.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:44] Brain Pull: Downloaded BSC-SOW-2026-4626.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:46] Brain Pull: Downloaded BSC-SOW-2026-4627.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:48] Brain Pull: Downloaded BSC-SOW-2026-4635.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:49] Brain Pull: Downloaded BSC-SOW-2026-4638.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:51] Brain Pull: Downloaded BSC-SOW-2026-4639.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:53] Brain Pull: Downloaded BSC-SOW-2026-4644.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:54] Brain Pull: Downloaded BSC-SOW-2026-4645.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:56] Brain Pull: Downloaded BSC-SOW-2026-4647.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:57] Brain Pull: Downloaded BSC-SOW-2026-4649.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:10:58] Brain Pull: Downloaded BSC-SOW-2026-4657.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:00] Brain Pull: Downloaded BSC-SOW-2026-4669.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:01] Brain Pull: Downloaded BSC-SOW-2026-4685.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:02] Brain Pull: Downloaded BSC-SOW-2026-4687.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:03] Brain Pull: Downloaded BSC-SOW-2026-4688.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:05] Brain Pull: Downloaded BSC-SOW-2026-4695.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:06] Brain Pull: Downloaded BSC-SOW-2026-4715.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:08] Brain Pull: Downloaded BSC-SOW-2026-4721.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:09] Brain Pull: Downloaded BSC-SOW-2026-4723.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:10] Brain Pull: Downloaded BSC-SOW-2026-4724.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:11] Brain Pull: Downloaded BSC-SOW-2026-4734.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:13] Brain Pull: Downloaded BSC-SOW-2026-4736.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:15] Brain Pull: Downloaded BSC-SOW-2026-4741.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:16] Brain Pull: Downloaded BSC-SOW-2026-4753.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:17] Brain Pull: Downloaded BSC-SOW-2026-4759.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:19] Brain Pull: Downloaded BSC-SOW-2026-4773.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:20] Brain Pull: Downloaded BSC-SOW-2026-4775.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:22] Brain Pull: Downloaded BSC-SOW-2026-4781.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:23] Brain Pull: Downloaded BSC-SOW-2026-4785.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:24] Brain Pull: Downloaded BSC-SOW-2026-4808.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:27] Brain Pull: Downloaded BSC-SOW-2026-4815.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:28] Brain Pull: Downloaded BSC-SOW-2026-4819.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:30] Brain Pull: Downloaded BSC-SOW-2026-4820.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:32] Brain Pull: Downloaded BSC-SOW-2026-4823.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:34] Brain Pull: Downloaded BSC-SOW-2026-4838.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:35] Brain Pull: Downloaded BSC-SOW-2026-4850.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:37] Brain Pull: Downloaded BSC-SOW-2026-4851.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:38] Brain Pull: Downloaded BSC-SOW-2026-4882.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:40] Brain Pull: Downloaded BSC-SOW-2026-4886.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:41] Brain Pull: Downloaded BSC-SOW-2026-4888.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:42] Brain Pull: Downloaded BSC-SOW-2026-4895.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:43] Brain Pull: Downloaded BSC-SOW-2026-4902.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:45] Brain Pull: Downloaded BSC-SOW-2026-4904.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:46] Brain Pull: Downloaded BSC-SOW-2026-4912.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:47] Brain Pull: Downloaded BSC-SOW-2026-4915.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:48] Brain Pull: Downloaded BSC-SOW-2026-4917.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:50] Brain Pull: Downloaded BSC-SOW-2026-4919.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:51] Brain Pull: Downloaded BSC-SOW-2026-4928.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:52] Brain Pull: Downloaded BSC-SOW-2026-4935.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:54] Brain Pull: Downloaded BSC-SOW-2026-4936.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:55] Brain Pull: Downloaded BSC-SOW-2026-4943.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:56] Brain Pull: Downloaded BSC-SOW-2026-4944.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:58] Brain Pull: Downloaded BSC-SOW-2026-4951.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:11:59] Brain Pull: Downloaded BSC-SOW-2026-4969.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:01] Brain Pull: Downloaded BSC-SOW-2026-4973.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:02] Brain Pull: Downloaded BSC-SOW-2026-4978.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:03] Brain Pull: Downloaded BSC-SOW-2026-4979.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:05] Brain Pull: Downloaded BSC-SOW-2026-4987.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:06] Brain Pull: Downloaded BSC-SOW-2026-4989.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:08] Brain Pull: Downloaded BSC-SOW-2026-4993.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:09] Brain Pull: Downloaded BSC-SOW-2026-4995.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:11] Brain Pull: Downloaded BSC-SOW-2026-4998.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:12] Brain Pull: Downloaded BSC-SOW-2026-5002.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:14] Brain Pull: Downloaded BSC-SOW-2026-5003.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:16] Brain Pull: Downloaded BSC-SOW-2026-5008.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:17] Brain Pull: Downloaded BSC-SOW-2026-5009.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:18] Brain Pull: Downloaded BSC-SOW-2026-5010.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:20] Brain Pull: Downloaded BSC-SOW-2026-5016.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:21] Brain Pull: Downloaded BSC-SOW-2026-5017.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:22] Brain Pull: Downloaded BSC-SOW-2026-5020.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:24] Brain Pull: Downloaded BSC-SOW-2026-5022.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:26] Brain Pull: Downloaded BSC-SOW-2026-5025.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:27] Brain Pull: Downloaded BSC-SOW-2026-5032.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:29] Brain Pull: Downloaded BSC-SOW-2026-5033.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:30] Brain Pull: Downloaded BSC-SOW-2026-5034.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:32] Brain Pull: Downloaded BSC-SOW-2026-5044.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:33] Brain Pull: Downloaded BSC-SOW-2026-5061.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:34] Brain Pull: Downloaded BSC-SOW-2026-5069.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:36] Brain Pull: Downloaded BSC-SOW-2026-5072.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:37] Brain Pull: Downloaded BSC-SOW-2026-5076.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:38] Brain Pull: Downloaded BSC-SOW-2026-5080.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:39] Brain Pull: Downloaded BSC-SOW-2026-5082.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:40] Brain Pull: Downloaded BSC-SOW-2026-5086.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:42] Brain Pull: Downloaded BSC-SOW-2026-5088.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:43] Brain Pull: Downloaded BSC-SOW-2026-5091.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:44] Brain Pull: Downloaded BSC-SOW-2026-5093.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:46] Brain Pull: Downloaded BSC-SOW-2026-5108.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:47] Brain Pull: Downloaded BSC-SOW-2026-5124.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:48] Brain Pull: Downloaded BSC-SOW-2026-5126.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:50] Brain Pull: Downloaded BSC-SOW-2026-5127.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:51] Brain Pull: Downloaded BSC-SOW-2026-5138.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:53] Brain Pull: Downloaded BSC-SOW-2026-5140.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:54] Brain Pull: Downloaded BSC-SOW-2026-5141.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:55] Brain Pull: Downloaded BSC-SOW-2026-5144.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:58] Brain Pull: Downloaded BSC-SOW-2026-5150.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:12:59] Brain Pull: Downloaded BSC-SOW-2026-5155.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:01] Brain Pull: Downloaded BSC-SOW-2026-5156.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:02] Brain Pull: Downloaded BSC-SOW-2026-5159.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:03] Brain Pull: Downloaded BSC-SOW-2026-5160.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:05] Brain Pull: Downloaded BSC-SOW-2026-5163.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:06] Brain Pull: Downloaded BSC-SOW-2026-5169.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:08] Brain Pull: Downloaded BSC-SOW-2026-5173.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:09] Brain Pull: Downloaded BSC-SOW-2026-5200.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:11] Brain Pull: Downloaded BSC-SOW-2026-5201.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:12] Brain Pull: Downloaded BSC-SOW-2026-5206.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:14] Brain Pull: Downloaded BSC-SOW-2026-5210.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:15] Brain Pull: Downloaded BSC-SOW-2026-5219.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:17] Brain Pull: Downloaded BSC-SOW-2026-5221.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:19] Brain Pull: Downloaded BSC-SOW-2026-5222.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:20] Brain Pull: Downloaded BSC-SOW-2026-5225.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:22] Brain Pull: Downloaded BSC-SOW-2026-5226.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:24] Brain Pull: Downloaded BSC-SOW-2026-5228.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:25] Brain Pull: Downloaded BSC-SOW-2026-5236.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:27] Brain Pull: Downloaded BSC-SOW-2026-5244.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:28] Brain Pull: Downloaded BSC-SOW-2026-5245.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:29] Brain Pull: Downloaded BSC-SOW-2026-5246.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:31] Brain Pull: Downloaded BSC-SOW-2026-5251.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:33] Brain Pull: Downloaded BSC-SOW-2026-5266.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:35] Brain Pull: Downloaded BSC-SOW-2026-5267.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:37] Brain Pull: Downloaded BSC-SOW-2026-5272.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:39] Brain Pull: Downloaded BSC-SOW-2026-5278.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:40] Brain Pull: Downloaded BSC-SOW-2026-5279.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:43] Brain Pull: Downloaded BSC-SOW-2026-5282.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:45] Brain Pull: Downloaded BSC-SOW-2026-5284.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:47] Brain Pull: Downloaded BSC-SOW-2026-5286.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:48] Brain Pull: Downloaded BSC-SOW-2026-5292.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:49] Brain Pull: Downloaded BSC-SOW-2026-5295.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:51] Brain Pull: Downloaded BSC-SOW-2026-5298.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:52] Brain Pull: Downloaded BSC-SOW-2026-5304.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:53] Brain Pull: Downloaded BSC-SOW-2026-5312.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:55] Brain Pull: Downloaded BSC-SOW-2026-5315.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:56] Brain Pull: Downloaded BSC-SOW-2026-5318.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:57] Brain Pull: Downloaded BSC-SOW-2026-5325.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:13:58] Brain Pull: Downloaded BSC-SOW-2026-5326.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:00] Brain Pull: Downloaded BSC-SOW-2026-5329.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:01] Brain Pull: Downloaded BSC-SOW-2026-5335.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:02] Brain Pull: Downloaded BSC-SOW-2026-5343.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:03] Brain Pull: Downloaded BSC-SOW-2026-5344.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:04] Brain Pull: Downloaded BSC-SOW-2026-5348.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:06] Brain Pull: Downloaded BSC-SOW-2026-5349.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:07] Brain Pull: Downloaded BSC-SOW-2026-5358.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:08] Brain Pull: Downloaded BSC-SOW-2026-5364.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:10] Brain Pull: Downloaded BSC-SOW-2026-5371.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:11] Brain Pull: Downloaded BSC-SOW-2026-5375.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:13] Brain Pull: Downloaded BSC-SOW-2026-5378.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:15] Brain Pull: Downloaded BSC-SOW-2026-5391.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:16] Brain Pull: Downloaded BSC-SOW-2026-5393.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:18] Brain Pull: Downloaded BSC-SOW-2026-5397.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:19] Brain Pull: Downloaded BSC-SOW-2026-5400.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:21] Brain Pull: Downloaded BSC-SOW-2026-5402.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:23] Brain Pull: Downloaded BSC-SOW-2026-5404.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:25] Brain Pull: Downloaded BSC-SOW-2026-5405.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:26] Brain Pull: Downloaded BSC-SOW-2026-5407.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:27] Brain Pull: Downloaded BSC-SOW-2026-5408.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:28] Brain Pull: Downloaded BSC-SOW-2026-5409.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:30] Brain Pull: Downloaded BSC-SOW-2026-5415.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:31] Brain Pull: Downloaded BSC-SOW-2026-5423.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:33] Brain Pull: Downloaded BSC-SOW-2026-5426.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:34] Brain Pull: Downloaded BSC-SOW-2026-5439.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:36] Brain Pull: Downloaded BSC-SOW-2026-5445.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:38] Brain Pull: Downloaded BSC-SOW-2026-5448.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:40] Brain Pull: Downloaded BSC-SOW-2026-5459.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:42] Brain Pull: Downloaded BSC-SOW-2026-5470.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:43] Brain Pull: Downloaded BSC-SOW-2026-5479.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:45] Brain Pull: Downloaded BSC-SOW-2026-5486.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:46] Brain Pull: Downloaded BSC-SOW-2026-5488.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:47] Brain Pull: Downloaded BSC-SOW-2026-5499.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:49] Brain Pull: Downloaded BSC-SOW-2026-5507.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:50] Brain Pull: Downloaded BSC-SOW-2026-5509.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:51] Brain Pull: Downloaded BSC-SOW-2026-5514.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:52] Brain Pull: Downloaded BSC-SOW-2026-5518.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:54] Brain Pull: Downloaded BSC-SOW-2026-5525.md from Drive (692-Auxiliary_Practices) → inbox
+- [2026-10-13 07:14:57] Brain Pull: Downloaded derrell_black_ai_consulting_resume.html from Drive (003-Computing_Science) → inbox
+- [2026-10-13 07:14:59] Brain Pull: Downloaded derrell_black_ai_consulting_resume.pdf from Drive (003-Computing_Science) → inbox
+- [2026-10-13 07:15:07] Brain Pull: Downloaded index_dupes_trashed.json from Drive (000-General) → inbox
+- [2026-10-13 07:15:15] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2581.md → 692-Auxiliary_Practices (SHA256: 58fcb2cf5df1...)
+- [2026-10-13 07:15:15] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2584.md → 692-Auxiliary_Practices (SHA256: f7dbfec34211...)
+- [2026-10-13 07:15:16] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2588.md → 692-Auxiliary_Practices (SHA256: 984905b8b277...)
+- [2026-10-13 07:15:16] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2589.md → 692-Auxiliary_Practices (SHA256: e4dcf28e89ae...)
+- [2026-10-13 07:15:17] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2591.md → 692-Auxiliary_Practices (SHA256: eb05404a6186...)
+- [2026-10-13 07:15:17] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2596.md → 692-Auxiliary_Practices (SHA256: c5ae4c34e8a8...)
+- [2026-10-13 07:15:18] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2599.md → 692-Auxiliary_Practices (SHA256: e95e0539f555...)
+- [2026-10-13 07:15:18] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2603.md → 692-Auxiliary_Practices (SHA256: cd0af072161f...)
+- [2026-10-13 07:15:18] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2618.md → 692-Auxiliary_Practices (SHA256: 57c4de0c5f48...)
+- [2026-10-13 07:15:19] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2622.md → 692-Auxiliary_Practices (SHA256: 74824f48fbfd...)
+- [2026-10-13 07:15:19] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2629.md → 692-Auxiliary_Practices (SHA256: 02e1ac7848ba...)
+- [2026-10-13 07:15:19] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2631.md → 692-Auxiliary_Practices (SHA256: bc934235d325...)
+- [2026-10-13 07:15:20] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2641.md → 692-Auxiliary_Practices (SHA256: ac657832709c...)
+- [2026-10-13 07:15:20] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2643.md → 692-Auxiliary_Practices (SHA256: 7417edab48af...)
+- [2026-10-13 07:15:20] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2644.md → 692-Auxiliary_Practices (SHA256: 57947bf9664e...)
+- [2026-10-13 07:15:21] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2649.md → 692-Auxiliary_Practices (SHA256: ff640e29c256...)
+- [2026-10-13 07:15:21] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2659.md → 692-Auxiliary_Practices (SHA256: da48428cc21c...)
+- [2026-10-13 07:15:21] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2662.md → 692-Auxiliary_Practices (SHA256: 97b05ee3862d...)
+- [2026-10-13 07:15:22] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2663.md → 692-Auxiliary_Practices (SHA256: cf1cb2ea764d...)
+- [2026-10-13 07:15:23] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2667.md → 692-Auxiliary_Practices (SHA256: 79e3e2d89f99...)
+- [2026-10-13 07:15:23] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2668.md → 692-Auxiliary_Practices (SHA256: bd40ec13446d...)
+- [2026-10-13 07:15:24] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2671.md → 692-Auxiliary_Practices (SHA256: d61f3e00ca39...)
+- [2026-10-13 07:15:24] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2676.md → 692-Auxiliary_Practices (SHA256: 9102d4abb778...)
+- [2026-10-13 07:15:24] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2682.md → 692-Auxiliary_Practices (SHA256: 8e0aeacd4c3f...)
+- [2026-10-13 07:15:25] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2696.md → 692-Auxiliary_Practices (SHA256: 7eb2f7b5529a...)
+- [2026-10-13 07:15:26] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2712.md → 692-Auxiliary_Practices (SHA256: 2c792335dbed...)
+- [2026-10-13 07:15:26] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2714.md → 692-Auxiliary_Practices (SHA256: a7f62d9b604c...)
+- [2026-10-13 07:15:26] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2727.md → 692-Auxiliary_Practices (SHA256: 64eb4bc690a9...)
+- [2026-10-13 07:15:27] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2730.md → 692-Auxiliary_Practices (SHA256: 82d47ed9a2c4...)
+- [2026-10-13 07:15:27] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2734.md → 692-Auxiliary_Practices (SHA256: 6af2e6fe0663...)
+- [2026-10-13 07:15:28] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2743.md → 692-Auxiliary_Practices (SHA256: 3c8c1eaa9e6b...)
+- [2026-10-13 07:15:29] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2751.md → 692-Auxiliary_Practices (SHA256: ffd1fcd1b40a...)
+- [2026-10-13 07:15:29] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2752.md → 692-Auxiliary_Practices (SHA256: e24f40a8ea28...)
+- [2026-10-13 07:15:29] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2764.md → 692-Auxiliary_Practices (SHA256: 317d1591b2ea...)
+- [2026-10-13 07:15:30] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2779.md → 692-Auxiliary_Practices (SHA256: 252a95e2c482...)
+- [2026-10-13 07:15:31] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2780.md → 692-Auxiliary_Practices (SHA256: 8405325a2aed...)
+- [2026-10-13 07:15:31] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2785.md → 692-Auxiliary_Practices (SHA256: 039b790c627a...)
+- [2026-10-13 07:15:32] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2786.md → 692-Auxiliary_Practices (SHA256: 75bab0a55c7a...)
+- [2026-10-13 07:15:32] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2787.md → 692-Auxiliary_Practices (SHA256: 28f1597ed964...)
+- [2026-10-13 07:15:33] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2790.md → 692-Auxiliary_Practices (SHA256: 586831aaaf53...)
+- [2026-10-13 07:15:33] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2793.md → 692-Auxiliary_Practices (SHA256: 4b688cde0ed0...)
+- [2026-10-13 07:15:34] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2796.md → 692-Auxiliary_Practices (SHA256: 0a8cce87c0d0...)
+- [2026-10-13 07:15:34] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2799.md → 692-Auxiliary_Practices (SHA256: d263236ef035...)
+- [2026-10-13 07:15:35] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2803.md → 692-Auxiliary_Practices (SHA256: ac1207b1fbf0...)
+- [2026-10-13 07:15:36] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2804.md → 692-Auxiliary_Practices (SHA256: 0eadbde897ca...)
+- [2026-10-13 07:15:36] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2808.md → 692-Auxiliary_Practices (SHA256: 23913c14a658...)
+- [2026-10-13 07:15:37] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2812.md → 692-Auxiliary_Practices (SHA256: 5c8faee7e185...)
+- [2026-10-13 07:15:37] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2813.md → 692-Auxiliary_Practices (SHA256: e25a317e5a4a...)
+- [2026-10-13 07:15:37] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2820.md → 692-Auxiliary_Practices (SHA256: f99753fd12ea...)
+- [2026-10-13 07:15:38] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2836.md → 692-Auxiliary_Practices (SHA256: 896bd8596f03...)
+- [2026-10-13 07:15:39] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2841.md → 692-Auxiliary_Practices (SHA256: b9af515d1b24...)
+- [2026-10-13 07:15:40] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2850.md → 692-Auxiliary_Practices (SHA256: 4471a4c66d19...)
+- [2026-10-13 07:15:41] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2853.md → 692-Auxiliary_Practices (SHA256: 664d5199f27d...)
+- [2026-10-13 07:15:41] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2855.md → 692-Auxiliary_Practices (SHA256: c8a36402f444...)
+- [2026-10-13 07:15:41] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2858.md → 692-Auxiliary_Practices (SHA256: 7a91fe4047ae...)
+- [2026-10-13 07:15:42] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2871.md → 692-Auxiliary_Practices (SHA256: f5834c1d2b07...)
+- [2026-10-13 07:15:43] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2885.md → 692-Auxiliary_Practices (SHA256: a728a2a3772d...)
+- [2026-10-13 07:15:43] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2893.md → 692-Auxiliary_Practices (SHA256: 702b846d6576...)
+- [2026-10-13 07:15:43] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2894.md → 692-Auxiliary_Practices (SHA256: bb6d993be359...)
+- [2026-10-13 07:15:44] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2896.md → 692-Auxiliary_Practices (SHA256: b1cb6ae95582...)
+- [2026-10-13 07:15:44] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2902.md → 692-Auxiliary_Practices (SHA256: 675cb97b05cc...)
+- [2026-10-13 07:15:44] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2921.md → 692-Auxiliary_Practices (SHA256: 1fb56d58d313...)
+- [2026-10-13 07:15:45] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2928.md → 692-Auxiliary_Practices (SHA256: 1ccea9a3a8e9...)
+- [2026-10-13 07:15:45] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2937.md → 692-Auxiliary_Practices (SHA256: 842bb122161f...)
+- [2026-10-13 07:15:45] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2944.md → 692-Auxiliary_Practices (SHA256: 1dc607734cfd...)
+- [2026-10-13 07:15:46] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2951.md → 692-Auxiliary_Practices (SHA256: 1cd5d50c759f...)
+- [2026-10-13 07:15:46] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2952.md → 692-Auxiliary_Practices (SHA256: 4cb8442b8376...)
+- [2026-10-13 07:15:47] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2953.md → 692-Auxiliary_Practices (SHA256: af0360b28652...)
+- [2026-10-13 07:15:47] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2960.md → 692-Auxiliary_Practices (SHA256: 337cffd63f71...)
+- [2026-10-13 07:15:48] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2964.md → 692-Auxiliary_Practices (SHA256: 8b4db082fa4e...)
+- [2026-10-13 07:15:48] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2969.md → 692-Auxiliary_Practices (SHA256: 53c568ef54c0...)
+- [2026-10-13 07:15:48] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2975.md → 692-Auxiliary_Practices (SHA256: bc71d1e3c6a1...)
+- [2026-10-13 07:15:49] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2977.md → 692-Auxiliary_Practices (SHA256: 673492875a7a...)
+- [2026-10-13 07:15:49] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2987.md → 692-Auxiliary_Practices (SHA256: 7fae537ef8a2...)
+- [2026-10-13 07:15:50] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-2994.md → 692-Auxiliary_Practices (SHA256: 50d0f4b439f6...)
+- [2026-10-13 07:15:50] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3000.md → 692-Auxiliary_Practices (SHA256: 2821e7934457...)
+- [2026-10-13 07:15:51] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3005.md → 692-Auxiliary_Practices (SHA256: 151b4acd0bdb...)
+- [2026-10-13 07:15:51] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3006.md → 692-Auxiliary_Practices (SHA256: e5d5ca1e8e5b...)
+- [2026-10-13 07:15:52] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3012.md → 692-Auxiliary_Practices (SHA256: 74c37bb6dffc...)
+- [2026-10-13 07:15:52] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3014.md → 692-Auxiliary_Practices (SHA256: fde834b4115f...)
+- [2026-10-13 07:15:53] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3017.md → 692-Auxiliary_Practices (SHA256: 2c4efd17487b...)
+- [2026-10-13 07:15:54] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3021.md → 692-Auxiliary_Practices (SHA256: 13fd0848b802...)
+- [2026-10-13 07:15:54] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3023.md → 692-Auxiliary_Practices (SHA256: e65f8d1976db...)
+- [2026-10-13 07:15:54] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3027.md → 692-Auxiliary_Practices (SHA256: 3daf085a8730...)
+- [2026-10-13 07:15:55] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3028.md → 692-Auxiliary_Practices (SHA256: 814c5b060268...)
+- [2026-10-13 07:15:56] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3031.md → 692-Auxiliary_Practices (SHA256: 5e4f12eb1439...)
+- [2026-10-13 07:15:56] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3035.md → 692-Auxiliary_Practices (SHA256: 1360e3090eb1...)
+- [2026-10-13 07:15:57] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3060.md → 692-Auxiliary_Practices (SHA256: eedb11d53a78...)
+- [2026-10-13 07:15:57] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3068.md → 692-Auxiliary_Practices (SHA256: c9421f5b7e83...)
+- [2026-10-13 07:15:58] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3072.md → 692-Auxiliary_Practices (SHA256: 850af4cfd58e...)
+- [2026-10-13 07:15:58] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3074.md → 692-Auxiliary_Practices (SHA256: e1819ed57c7b...)
+- [2026-10-13 07:15:59] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3085.md → 692-Auxiliary_Practices (SHA256: a305f15a270a...)
+- [2026-10-13 07:15:59] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3086.md → 692-Auxiliary_Practices (SHA256: 2a5d06e2766b...)
+- [2026-10-13 07:15:59] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3090.md → 692-Auxiliary_Practices (SHA256: 830f8e5879ff...)
+- [2026-10-13 07:16:00] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3096.md → 692-Auxiliary_Practices (SHA256: ab6c06fb0e6f...)
+- [2026-10-13 07:16:01] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3100.md → 692-Auxiliary_Practices (SHA256: 3e9ae132267b...)
+- [2026-10-13 07:16:01] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3118.md → 692-Auxiliary_Practices (SHA256: 33ae3d16dc6a...)
+- [2026-10-13 07:16:01] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3119.md → 692-Auxiliary_Practices (SHA256: 27c29b030703...)
+- [2026-10-13 07:16:02] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3121.md → 692-Auxiliary_Practices (SHA256: 2b58fd711efd...)
+- [2026-10-13 07:16:03] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3125.md → 692-Auxiliary_Practices (SHA256: ed77d717949e...)
+- [2026-10-13 07:16:03] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3134.md → 692-Auxiliary_Practices (SHA256: 955a4166cd32...)
+- [2026-10-13 07:16:04] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3137.md → 692-Auxiliary_Practices (SHA256: 09afff39d700...)
+- [2026-10-13 07:16:05] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3139.md → 692-Auxiliary_Practices (SHA256: 090d701cc335...)
+- [2026-10-13 07:16:05] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3140.md → 692-Auxiliary_Practices (SHA256: 1aefcee633cd...)
+- [2026-10-13 07:16:06] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3146.md → 692-Auxiliary_Practices (SHA256: 80345abb80d4...)
+- [2026-10-13 07:16:06] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3152.md → 692-Auxiliary_Practices (SHA256: e1cf58126cd6...)
+- [2026-10-13 07:16:06] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3157.md → 692-Auxiliary_Practices (SHA256: 29188b312c32...)
+- [2026-10-13 07:16:07] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3168.md → 692-Auxiliary_Practices (SHA256: 20dfe297a383...)
+- [2026-10-13 07:16:08] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3185.md → 692-Auxiliary_Practices (SHA256: c8cdff752a75...)
+- [2026-10-13 07:16:08] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3194.md → 692-Auxiliary_Practices (SHA256: caf2ad30e435...)
+- [2026-10-13 07:16:08] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3196.md → 692-Auxiliary_Practices (SHA256: 304bc4e0ca4d...)
+- [2026-10-13 07:16:09] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3197.md → 692-Auxiliary_Practices (SHA256: 0f3f48e6cbbc...)
+- [2026-10-13 07:16:10] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3205.md → 692-Auxiliary_Practices (SHA256: 7c8123d1c67b...)
+- [2026-10-13 07:16:10] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3210.md → 692-Auxiliary_Practices (SHA256: b555f950aee2...)
+- [2026-10-13 07:16:11] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3211.md → 692-Auxiliary_Practices (SHA256: f80d23d96a5e...)
+- [2026-10-13 07:16:11] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3219.md → 692-Auxiliary_Practices (SHA256: dbb3e222001c...)
+- [2026-10-13 07:16:12] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3224.md → 692-Auxiliary_Practices (SHA256: 0f57fadb8bfc...)
+- [2026-10-13 07:16:12] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3225.md → 692-Auxiliary_Practices (SHA256: 62d2011b7ac3...)
+- [2026-10-13 07:16:12] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3228.md → 692-Auxiliary_Practices (SHA256: fd172cbf7239...)
+- [2026-10-13 07:16:13] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3229.md → 692-Auxiliary_Practices (SHA256: 6f1b3385ad8d...)
+- [2026-10-13 07:16:14] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3234.md → 692-Auxiliary_Practices (SHA256: 74f74a356090...)
+- [2026-10-13 07:16:14] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3246.md → 692-Auxiliary_Practices (SHA256: 8aa8a495dca4...)
+- [2026-10-13 07:16:15] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3257.md → 692-Auxiliary_Practices (SHA256: cff700229e3e...)
+- [2026-10-13 07:16:15] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3259.md → 692-Auxiliary_Practices (SHA256: 12f6a1ccb319...)
+- [2026-10-13 07:16:15] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3260.md → 692-Auxiliary_Practices (SHA256: 243eadbaee12...)
+- [2026-10-13 07:16:16] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3262.md → 692-Auxiliary_Practices (SHA256: b85b92e9d4eb...)
+- [2026-10-13 07:16:17] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3268.md → 692-Auxiliary_Practices (SHA256: 1d123c9cb77b...)
+- [2026-10-13 07:16:17] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3284.md → 692-Auxiliary_Practices (SHA256: f4c73c30200a...)
+- [2026-10-13 07:16:17] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3297.md → 692-Auxiliary_Practices (SHA256: b3e5c015e23e...)
+- [2026-10-13 07:16:18] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3298.md → 692-Auxiliary_Practices (SHA256: cde710ffea8c...)
+- [2026-10-13 07:16:18] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3304.md → 692-Auxiliary_Practices (SHA256: a83e42478222...)
+- [2026-10-13 07:16:18] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3310.md → 692-Auxiliary_Practices (SHA256: 372028c4762a...)
+- [2026-10-13 07:16:19] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3318.md → 692-Auxiliary_Practices (SHA256: ede4ad28f09c...)
+- [2026-10-13 07:16:19] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3319.md → 692-Auxiliary_Practices (SHA256: 44788356e609...)
+- [2026-10-13 07:16:19] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3330.md → 692-Auxiliary_Practices (SHA256: d729aa0259fe...)
+- [2026-10-13 07:16:20] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3332.md → 692-Auxiliary_Practices (SHA256: 34a88bb18b1d...)
+- [2026-10-13 07:16:20] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3343.md → 692-Auxiliary_Practices (SHA256: 34e2ef172321...)
+- [2026-10-13 07:16:21] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3345.md → 692-Auxiliary_Practices (SHA256: a2db9506a1d3...)
+- [2026-10-13 07:16:21] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3346.md → 692-Auxiliary_Practices (SHA256: 10871fe3bbcc...)
+- [2026-10-13 07:16:22] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3351.md → 692-Auxiliary_Practices (SHA256: 8cb3e4310f61...)
+- [2026-10-13 07:16:22] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3352.md → 692-Auxiliary_Practices (SHA256: 6da315baa283...)
+- [2026-10-13 07:16:22] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3361.md → 692-Auxiliary_Practices (SHA256: 005615e331e5...)
+- [2026-10-13 07:16:23] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3370.md → 692-Auxiliary_Practices (SHA256: 87ce84d6261a...)
+- [2026-10-13 07:16:24] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3372.md → 692-Auxiliary_Practices (SHA256: 4c30316e6770...)
+- [2026-10-13 07:16:24] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3374.md → 692-Auxiliary_Practices (SHA256: 1660e80aa7f3...)
+- [2026-10-13 07:16:24] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3378.md → 692-Auxiliary_Practices (SHA256: 89589b55c2ce...)
+- [2026-10-13 07:16:25] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3384.md → 692-Auxiliary_Practices (SHA256: 65b00be9e916...)
+- [2026-10-13 07:16:25] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3387.md → 692-Auxiliary_Practices (SHA256: 3e3e3e0cc53e...)
+- [2026-10-13 07:16:25] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3397.md → 692-Auxiliary_Practices (SHA256: d0cb87fa5290...)
+- [2026-10-13 07:16:26] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3402.md → 692-Auxiliary_Practices (SHA256: ebf8ab14b0ff...)
+- [2026-10-13 07:16:26] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3408.md → 692-Auxiliary_Practices (SHA256: 0cad7e6fb12c...)
+- [2026-10-13 07:16:26] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3409.md → 692-Auxiliary_Practices (SHA256: 9592423a4a93...)
+- [2026-10-13 07:16:27] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3414.md → 692-Auxiliary_Practices (SHA256: 40645de5df5a...)
+- [2026-10-13 07:16:27] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3432.md → 692-Auxiliary_Practices (SHA256: 6f5ff2a070cd...)
+- [2026-10-13 07:16:28] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3433.md → 692-Auxiliary_Practices (SHA256: 3c94eefbb001...)
+- [2026-10-13 07:16:28] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3438.md → 692-Auxiliary_Practices (SHA256: 94e37c9bd52b...)
+- [2026-10-13 07:16:29] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3440.md → 692-Auxiliary_Practices (SHA256: 7d480f31542b...)
+- [2026-10-13 07:16:30] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3445.md → 692-Auxiliary_Practices (SHA256: 5fcc19bf524d...)
+- [2026-10-13 07:16:30] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3446.md → 692-Auxiliary_Practices (SHA256: 04e81373fc32...)
+- [2026-10-13 07:16:30] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3449.md → 692-Auxiliary_Practices (SHA256: 075350fda2c1...)
+- [2026-10-13 07:16:31] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3454.md → 692-Auxiliary_Practices (SHA256: 6d0a6fed2a5b...)
+- [2026-10-13 07:16:32] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3455.md → 692-Auxiliary_Practices (SHA256: 1da1a1830ad6...)
+- [2026-10-13 07:16:32] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3459.md → 692-Auxiliary_Practices (SHA256: 06cc0e813ec3...)
+- [2026-10-13 07:16:33] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3461.md → 692-Auxiliary_Practices (SHA256: 6d7e9d76e1f1...)
+- [2026-10-13 07:16:33] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3464.md → 692-Auxiliary_Practices (SHA256: e8261224c6f0...)
+- [2026-10-13 07:16:33] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3473.md → 692-Auxiliary_Practices (SHA256: f0ce54961f7e...)
+- [2026-10-13 07:16:34] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3477.md → 692-Auxiliary_Practices (SHA256: cd8c6bbf1b22...)
+- [2026-10-13 07:16:34] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3482.md → 692-Auxiliary_Practices (SHA256: 5c7d94d3197b...)
+- [2026-10-13 07:16:34] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3485.md → 692-Auxiliary_Practices (SHA256: eacccfdac122...)
+- [2026-10-13 07:16:35] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3490.md → 692-Auxiliary_Practices (SHA256: 0a1cf7162318...)
+- [2026-10-13 07:16:35] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3493.md → 692-Auxiliary_Practices (SHA256: 04bf620cd57b...)
+- [2026-10-13 07:16:35] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3495.md → 692-Auxiliary_Practices (SHA256: 7e139087cfef...)
+- [2026-10-13 07:16:36] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3496.md → 692-Auxiliary_Practices (SHA256: 22b717a73129...)
+- [2026-10-13 07:16:36] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3498.md → 692-Auxiliary_Practices (SHA256: 1008fe968e56...)
+- [2026-10-13 07:16:36] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3500.md → 692-Auxiliary_Practices (SHA256: 4f8f45327538...)
+- [2026-10-13 07:16:37] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3501.md → 692-Auxiliary_Practices (SHA256: 6556dd48a960...)
+- [2026-10-13 07:16:37] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3504.md → 692-Auxiliary_Practices (SHA256: 8bcf13a1ff6d...)
+- [2026-10-13 07:16:38] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3513.md → 692-Auxiliary_Practices (SHA256: 1bfe305b000c...)
+- [2026-10-13 07:16:38] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3515.md → 692-Auxiliary_Practices (SHA256: a0e663107119...)
+- [2026-10-13 07:16:39] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3520.md → 692-Auxiliary_Practices (SHA256: 2887ea754f43...)
+- [2026-10-13 07:16:40] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3524.md → 692-Auxiliary_Practices (SHA256: 968757470c7a...)
+- [2026-10-13 07:16:41] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3534.md → 692-Auxiliary_Practices (SHA256: 10480b056c42...)
+- [2026-10-13 07:16:41] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3539.md → 692-Auxiliary_Practices (SHA256: f0df08ec7b5f...)
+- [2026-10-13 07:16:42] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3553.md → 692-Auxiliary_Practices (SHA256: 5e442075f42f...)
+- [2026-10-13 07:16:42] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3570.md → 692-Auxiliary_Practices (SHA256: a78482a44cfa...)
+- [2026-10-13 07:16:42] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3587.md → 692-Auxiliary_Practices (SHA256: 5414ec76ecdf...)
+- [2026-10-13 07:16:42] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3590.md → 692-Auxiliary_Practices (SHA256: 56f9f3920a18...)
+- [2026-10-13 07:16:43] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3596.md → 692-Auxiliary_Practices (SHA256: 757424b8745b...)
+- [2026-10-13 07:16:43] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3597.md → 692-Auxiliary_Practices (SHA256: 1d865891a607...)
+- [2026-10-13 07:16:43] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3598.md → 692-Auxiliary_Practices (SHA256: 15635ddb7eea...)
+- [2026-10-13 07:16:44] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3599.md → 692-Auxiliary_Practices (SHA256: c2ba76152a92...)
+- [2026-10-13 07:16:44] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3600.md → 692-Auxiliary_Practices (SHA256: 03ce118db7a2...)
+- [2026-10-13 07:16:45] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3603.md → 692-Auxiliary_Practices (SHA256: 5c4307ba51e1...)
+- [2026-10-13 07:16:46] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3604.md → 692-Auxiliary_Practices (SHA256: 9381bb3b7d8f...)
+- [2026-10-13 07:16:46] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3606.md → 692-Auxiliary_Practices (SHA256: cd58c8f48be5...)
+- [2026-10-13 07:16:46] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3617.md → 692-Auxiliary_Practices (SHA256: aba81edf78d4...)
+- [2026-10-13 07:16:47] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3622.md → 692-Auxiliary_Practices (SHA256: 3183c3958fb1...)
+- [2026-10-13 07:16:47] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3626.md → 692-Auxiliary_Practices (SHA256: 715b9fafc0d7...)
+- [2026-10-13 07:16:48] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3628.md → 692-Auxiliary_Practices (SHA256: 1417671a6e5b...)
+- [2026-10-13 07:16:48] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3629.md → 692-Auxiliary_Practices (SHA256: 5648af9c95d9...)
+- [2026-10-13 07:16:49] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3644.md → 692-Auxiliary_Practices (SHA256: 290446e26207...)
+- [2026-10-13 07:16:50] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3646.md → 692-Auxiliary_Practices (SHA256: 41347dfaa011...)
+- [2026-10-13 07:16:50] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3647.md → 692-Auxiliary_Practices (SHA256: 45194ff3b208...)
+- [2026-10-13 07:16:50] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3648.md → 692-Auxiliary_Practices (SHA256: 06dafc387e64...)
+- [2026-10-13 07:16:51] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3650.md → 692-Auxiliary_Practices (SHA256: 04a96931e64d...)
+- [2026-10-13 07:16:51] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3653.md → 692-Auxiliary_Practices (SHA256: 61f267f908c0...)
+- [2026-10-13 07:16:51] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3661.md → 692-Auxiliary_Practices (SHA256: 189fd01ae256...)
+- [2026-10-13 07:16:52] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3666.md → 692-Auxiliary_Practices (SHA256: d6e9fdc67ad6...)
+- [2026-10-13 07:16:52] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3671.md → 692-Auxiliary_Practices (SHA256: e7aa342c9f73...)
+- [2026-10-13 07:16:52] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3672.md → 692-Auxiliary_Practices (SHA256: 338461cec173...)
+- [2026-10-13 07:16:53] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3673.md → 692-Auxiliary_Practices (SHA256: 03d48b4c943a...)
+- [2026-10-13 07:16:53] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3675.md → 692-Auxiliary_Practices (SHA256: f62631cf0a26...)
+- [2026-10-13 07:16:53] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3681.md → 692-Auxiliary_Practices (SHA256: c40d872c7399...)
+- [2026-10-13 07:16:54] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3690.md → 692-Auxiliary_Practices (SHA256: 102b4e6aabe8...)
+- [2026-10-13 07:16:55] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3695.md → 692-Auxiliary_Practices (SHA256: f752b82cf507...)
+- [2026-10-13 07:16:56] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3697.md → 692-Auxiliary_Practices (SHA256: fd9fbb125976...)
+- [2026-10-13 07:16:56] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3703.md → 692-Auxiliary_Practices (SHA256: 7c4351eb1a5c...)
+- [2026-10-13 07:16:57] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3707.md → 692-Auxiliary_Practices (SHA256: 24837e63cd77...)
+- [2026-10-13 07:16:57] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3731.md → 692-Auxiliary_Practices (SHA256: 87a30e454ab7...)
+- [2026-10-13 07:16:58] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3732.md → 692-Auxiliary_Practices (SHA256: c047eb905edf...)
+- [2026-10-13 07:16:58] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3734.md → 692-Auxiliary_Practices (SHA256: 24dcb600bc4f...)
+- [2026-10-13 07:16:59] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3746.md → 692-Auxiliary_Practices (SHA256: b2555dfc74da...)
+- [2026-10-13 07:16:59] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3747.md → 692-Auxiliary_Practices (SHA256: b9ed568b1e4d...)
+- [2026-10-13 07:17:00] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3754.md → 692-Auxiliary_Practices (SHA256: caf57c3c888a...)
+- [2026-10-13 07:17:00] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3755.md → 692-Auxiliary_Practices (SHA256: 402dee6c598b...)
+- [2026-10-13 07:17:00] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3756.md → 692-Auxiliary_Practices (SHA256: a5873064af32...)
+- [2026-10-13 07:17:01] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3761.md → 692-Auxiliary_Practices (SHA256: cc580d1105a9...)
+- [2026-10-13 07:17:01] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3763.md → 692-Auxiliary_Practices (SHA256: f0e53757ec6e...)
+- [2026-10-13 07:17:02] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3771.md → 692-Auxiliary_Practices (SHA256: 1c5b22df582b...)
+- [2026-10-13 07:17:02] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3774.md → 692-Auxiliary_Practices (SHA256: 6e398580c921...)
+- [2026-10-13 07:17:02] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3776.md → 692-Auxiliary_Practices (SHA256: a7012345a1e8...)
+- [2026-10-13 07:17:03] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3779.md → 692-Auxiliary_Practices (SHA256: b26aedc799f9...)
+- [2026-10-13 07:17:04] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3785.md → 692-Auxiliary_Practices (SHA256: 7bc284238892...)
+- [2026-10-13 07:17:04] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3790.md → 692-Auxiliary_Practices (SHA256: f18c555d512b...)
+- [2026-10-13 07:17:05] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3791.md → 692-Auxiliary_Practices (SHA256: c11a79d61019...)
+- [2026-10-13 07:17:05] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3795.md → 692-Auxiliary_Practices (SHA256: fc2639494f03...)
+- [2026-10-13 07:17:06] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3796.md → 692-Auxiliary_Practices (SHA256: 6ece4fcea54f...)
+- [2026-10-13 07:17:06] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3797.md → 692-Auxiliary_Practices (SHA256: cdb676a97e94...)
+- [2026-10-13 07:17:07] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3812.md → 692-Auxiliary_Practices (SHA256: 9664f2d68cc0...)
+- [2026-10-13 07:17:07] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3816.md → 692-Auxiliary_Practices (SHA256: 6570dca2f63a...)
+- [2026-10-13 07:17:07] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3828.md → 692-Auxiliary_Practices (SHA256: e943792f49b8...)
+- [2026-10-13 07:17:08] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3830.md → 692-Auxiliary_Practices (SHA256: 42dc76f8d073...)
+- [2026-10-13 07:17:08] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3835.md → 692-Auxiliary_Practices (SHA256: 671084926bb0...)
+- [2026-10-13 07:17:08] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3839.md → 692-Auxiliary_Practices (SHA256: 282172ca4f30...)
+- [2026-10-13 07:17:09] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3844.md → 692-Auxiliary_Practices (SHA256: c77c11337d20...)
+- [2026-10-13 07:17:09] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3854.md → 692-Auxiliary_Practices (SHA256: 47d47da3b371...)
+- [2026-10-13 07:17:09] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3863.md → 692-Auxiliary_Practices (SHA256: e6b7bb596fda...)
+- [2026-10-13 07:17:10] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3870.md → 692-Auxiliary_Practices (SHA256: b6b38f3232b3...)
+- [2026-10-13 07:17:11] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3879.md → 692-Auxiliary_Practices (SHA256: ed0a3355a4a1...)
+- [2026-10-13 07:17:11] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3882.md → 692-Auxiliary_Practices (SHA256: 82437ed75441...)
+- [2026-10-13 07:17:12] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3887.md → 692-Auxiliary_Practices (SHA256: f9a67019b462...)
+- [2026-10-13 07:17:12] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3889.md → 692-Auxiliary_Practices (SHA256: 07979319faa1...)
+- [2026-10-13 07:17:13] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3890.md → 692-Auxiliary_Practices (SHA256: 7424460b385f...)
+- [2026-10-13 07:17:13] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3894.md → 692-Auxiliary_Practices (SHA256: 7ee64fde49d7...)
+- [2026-10-13 07:17:13] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3895.md → 692-Auxiliary_Practices (SHA256: bd83f823c2c3...)
+- [2026-10-13 07:17:14] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3898.md → 692-Auxiliary_Practices (SHA256: ecc3b898b1fd...)
+- [2026-10-13 07:17:15] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3899.md → 692-Auxiliary_Practices (SHA256: 89e6e7bed7f8...)
+- [2026-10-13 07:17:15] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3902.md → 692-Auxiliary_Practices (SHA256: cde9984b2cdb...)
+- [2026-10-13 07:17:16] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3908.md → 692-Auxiliary_Practices (SHA256: 3b7d1884612f...)
+- [2026-10-13 07:17:17] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3913.md → 692-Auxiliary_Practices (SHA256: db8c871fc270...)
+- [2026-10-13 07:17:17] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3916.md → 692-Auxiliary_Practices (SHA256: 6d4926d97403...)
+- [2026-10-13 07:17:18] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3926.md → 692-Auxiliary_Practices (SHA256: 38125d72aa8c...)
+- [2026-10-13 07:17:18] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3930.md → 692-Auxiliary_Practices (SHA256: 199affd4eb72...)
+- [2026-10-13 07:17:18] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3935.md → 692-Auxiliary_Practices (SHA256: 53a6ad34ae21...)
+- [2026-10-13 07:17:19] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3937.md → 692-Auxiliary_Practices (SHA256: 3dfa902f99f3...)
+- [2026-10-13 07:17:19] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3939.md → 692-Auxiliary_Practices (SHA256: 95f57e9f3e67...)
+- [2026-10-13 07:17:20] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3950.md → 692-Auxiliary_Practices (SHA256: 2296c2a72d42...)
+- [2026-10-13 07:17:20] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3952.md → 692-Auxiliary_Practices (SHA256: 37173e6f14f0...)
+- [2026-10-13 07:17:21] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3953.md → 692-Auxiliary_Practices (SHA256: 9777ab16786a...)
+- [2026-10-13 07:17:21] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3960.md → 692-Auxiliary_Practices (SHA256: b937cf2360a7...)
+- [2026-10-13 07:17:22] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3962.md → 692-Auxiliary_Practices (SHA256: 51da777c5b9b...)
+- [2026-10-13 07:17:22] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3963.md → 692-Auxiliary_Practices (SHA256: 97c775300751...)
+- [2026-10-13 07:17:23] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3976.md → 692-Auxiliary_Practices (SHA256: 1453fb151e53...)
+- [2026-10-13 07:17:24] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3980.md → 692-Auxiliary_Practices (SHA256: 978393ea59b6...)
+- [2026-10-13 07:17:24] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3992.md → 692-Auxiliary_Practices (SHA256: ae9af622537d...)
+- [2026-10-13 07:17:24] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3997.md → 692-Auxiliary_Practices (SHA256: b0668a8ac46f...)
+- [2026-10-13 07:17:25] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-3998.md → 692-Auxiliary_Practices (SHA256: 17fd4e58f783...)
+- [2026-10-13 07:17:26] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4009.md → 692-Auxiliary_Practices (SHA256: 8a15631f038d...)
+- [2026-10-13 07:17:27] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4010.md → 692-Auxiliary_Practices (SHA256: 32618364e271...)
+- [2026-10-13 07:17:27] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4012.md → 692-Auxiliary_Practices (SHA256: 57c4d8613782...)
+- [2026-10-13 07:17:27] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4013.md → 692-Auxiliary_Practices (SHA256: 9180750224f6...)
+- [2026-10-13 07:17:28] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4016.md → 692-Auxiliary_Practices (SHA256: a250a6850934...)
+- [2026-10-13 07:17:28] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4017.md → 692-Auxiliary_Practices (SHA256: 9b3db560f743...)
+- [2026-10-13 07:17:29] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4021.md → 692-Auxiliary_Practices (SHA256: 8af64113b756...)
+- [2026-10-13 07:17:30] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4038.md → 692-Auxiliary_Practices (SHA256: 6051b0dc31fe...)
+- [2026-10-13 07:17:30] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4042.md → 692-Auxiliary_Practices (SHA256: 055320869b7f...)
+- [2026-10-13 07:17:31] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4044.md → 692-Auxiliary_Practices (SHA256: d8f16594645a...)
+- [2026-10-13 07:17:31] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4051.md → 692-Auxiliary_Practices (SHA256: f85e966aeecd...)
+- [2026-10-13 07:17:32] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4053.md → 692-Auxiliary_Practices (SHA256: 883831460bb2...)
+- [2026-10-13 07:17:32] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4057.md → 692-Auxiliary_Practices (SHA256: 0fd0f7f0edc2...)
+- [2026-10-13 07:17:32] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4058.md → 692-Auxiliary_Practices (SHA256: 1f0d31e75f18...)
+- [2026-10-13 07:17:33] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4060.md → 692-Auxiliary_Practices (SHA256: 9c7610b9ce07...)
+- [2026-10-13 07:17:33] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4081.md → 692-Auxiliary_Practices (SHA256: 20c4c9b42a32...)
+- [2026-10-13 07:17:34] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4082.md → 692-Auxiliary_Practices (SHA256: 729280896dc6...)
+- [2026-10-13 07:17:34] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4097.md → 692-Auxiliary_Practices (SHA256: c90be3f1d4d8...)
+- [2026-10-13 07:17:35] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4103.md → 692-Auxiliary_Practices (SHA256: 1eef28d55211...)
+- [2026-10-13 07:17:35] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4109.md → 692-Auxiliary_Practices (SHA256: bc005fd0c59a...)
+- [2026-10-13 07:17:36] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4118.md → 692-Auxiliary_Practices (SHA256: 403cc08af7f8...)
+- [2026-10-13 07:17:36] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4127.md → 692-Auxiliary_Practices (SHA256: 0416da346cdd...)
+- [2026-10-13 07:17:37] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4134.md → 692-Auxiliary_Practices (SHA256: 5689446b8dd0...)
+- [2026-10-13 07:17:37] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4140.md → 692-Auxiliary_Practices (SHA256: 9b8b50be3308...)
+- [2026-10-13 07:17:38] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4157.md → 692-Auxiliary_Practices (SHA256: 01056213a7dc...)
+- [2026-10-13 07:17:38] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4163.md → 692-Auxiliary_Practices (SHA256: 35e1ac73bf57...)
+- [2026-10-13 07:17:39] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4167.md → 692-Auxiliary_Practices (SHA256: 2fe59cec50f3...)
+- [2026-10-13 07:17:39] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4168.md → 692-Auxiliary_Practices (SHA256: f05316baee7f...)
+- [2026-10-13 07:17:39] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4169.md → 692-Auxiliary_Practices (SHA256: e231e7e80289...)
+- [2026-10-13 07:17:40] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4180.md → 692-Auxiliary_Practices (SHA256: b532c9c3bc84...)
+- [2026-10-13 07:17:40] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4189.md → 692-Auxiliary_Practices (SHA256: b1ece46bd3fb...)
+- [2026-10-13 07:17:40] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4191.md → 692-Auxiliary_Practices (SHA256: 0761afaaeece...)
+- [2026-10-13 07:17:41] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4212.md → 692-Auxiliary_Practices (SHA256: 0e2e1245a323...)
+- [2026-10-13 07:17:42] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4214.md → 692-Auxiliary_Practices (SHA256: 3aeadf69183a...)
+- [2026-10-13 07:17:42] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4219.md → 692-Auxiliary_Practices (SHA256: 6d8095b06346...)
+- [2026-10-13 07:17:43] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4220.md → 692-Auxiliary_Practices (SHA256: ca497ecf1f1c...)
+- [2026-10-13 07:17:43] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4222.md → 692-Auxiliary_Practices (SHA256: 2122695f8c95...)
+- [2026-10-13 07:17:44] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4228.md → 692-Auxiliary_Practices (SHA256: 5c81c6ec4194...)
+- [2026-10-13 07:17:44] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4231.md → 692-Auxiliary_Practices (SHA256: af4acd330ad1...)
+- [2026-10-13 07:17:45] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4238.md → 692-Auxiliary_Practices (SHA256: 307d835e97d5...)
+- [2026-10-13 07:17:46] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4244.md → 692-Auxiliary_Practices (SHA256: fa94c5c1f7f0...)
+- [2026-10-13 07:17:46] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4246.md → 692-Auxiliary_Practices (SHA256: 0869eb74bd10...)
+- [2026-10-13 07:17:46] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4249.md → 692-Auxiliary_Practices (SHA256: 01ab591984a7...)
+- [2026-10-13 07:17:47] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4264.md → 692-Auxiliary_Practices (SHA256: 782a9b5de3c1...)
+- [2026-10-13 07:17:47] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4268.md → 692-Auxiliary_Practices (SHA256: 23b0ef253dcf...)
+- [2026-10-13 07:17:47] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4272.md → 692-Auxiliary_Practices (SHA256: eabd8f3f189d...)
+- [2026-10-13 07:17:48] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4275.md → 692-Auxiliary_Practices (SHA256: 442a61bac4c0...)
+- [2026-10-13 07:17:48] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4277.md → 692-Auxiliary_Practices (SHA256: fe5008643a9b...)
+- [2026-10-13 07:17:48] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4278.md → 692-Auxiliary_Practices (SHA256: d931854daf67...)
+- [2026-10-13 07:17:49] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4281.md → 692-Auxiliary_Practices (SHA256: fa76cc9fa23a...)
+- [2026-10-13 07:17:49] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4283.md → 692-Auxiliary_Practices (SHA256: 875bac732e21...)
+- [2026-10-13 07:17:49] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4285.md → 692-Auxiliary_Practices (SHA256: 5135a7e51362...)
+- [2026-10-13 07:17:50] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4288.md → 692-Auxiliary_Practices (SHA256: 5222def53271...)
+- [2026-10-13 07:17:51] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4295.md → 692-Auxiliary_Practices (SHA256: c7e6b033deaf...)
+- [2026-10-13 07:17:51] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4297.md → 692-Auxiliary_Practices (SHA256: 7c210402b0c9...)
+- [2026-10-13 07:17:52] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4306.md → 692-Auxiliary_Practices (SHA256: e6a7587443d5...)
+- [2026-10-13 07:17:52] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4309.md → 692-Auxiliary_Practices (SHA256: 6a243fb09e3a...)
+- [2026-10-13 07:17:53] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4316.md → 692-Auxiliary_Practices (SHA256: 0d0d5df06112...)
+- [2026-10-13 07:17:53] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4320.md → 692-Auxiliary_Practices (SHA256: 6487bbbefe0c...)
+- [2026-10-13 07:17:54] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4326.md → 692-Auxiliary_Practices (SHA256: 60d74af84ae8...)
+- [2026-10-13 07:17:55] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4335.md → 692-Auxiliary_Practices (SHA256: a68a7bb5b849...)
+- [2026-10-13 07:17:55] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4343.md → 692-Auxiliary_Practices (SHA256: 6a12d50dddf1...)
+- [2026-10-13 07:17:55] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4344.md → 692-Auxiliary_Practices (SHA256: 9c5fc3b1f3fc...)
+- [2026-10-13 07:17:56] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4351.md → 692-Auxiliary_Practices (SHA256: 22938a907596...)
+- [2026-10-13 07:17:57] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4352.md → 692-Auxiliary_Practices (SHA256: bdb277414fcb...)
+- [2026-10-13 07:17:57] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4356.md → 692-Auxiliary_Practices (SHA256: 65297431af0c...)
+- [2026-10-13 07:17:58] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4360.md → 692-Auxiliary_Practices (SHA256: 8749d80d74a8...)
+- [2026-10-13 07:17:58] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4363.md → 692-Auxiliary_Practices (SHA256: f7ac40971545...)
+- [2026-10-13 07:17:58] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4371.md → 692-Auxiliary_Practices (SHA256: 355cc1bc612d...)
+- [2026-10-13 07:17:59] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4375.md → 692-Auxiliary_Practices (SHA256: de49a0131a1c...)
+- [2026-10-13 07:18:00] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4380.md → 692-Auxiliary_Practices (SHA256: 26e39f1782a7...)
+- [2026-10-13 07:18:00] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4398.md → 692-Auxiliary_Practices (SHA256: 31af9797e5e2...)
+- [2026-10-13 07:18:00] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4401.md → 692-Auxiliary_Practices (SHA256: 4ee81011cf9f...)
+- [2026-10-13 07:18:01] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4402.md → 692-Auxiliary_Practices (SHA256: 6c7e144611d6...)
+- [2026-10-13 07:18:01] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4408.md → 692-Auxiliary_Practices (SHA256: 4ddb772eb165...)
+- [2026-10-13 07:18:02] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4424.md → 692-Auxiliary_Practices (SHA256: 7ed0673929a6...)
+- [2026-10-13 07:18:02] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4426.md → 692-Auxiliary_Practices (SHA256: 333f8df54a24...)
+- [2026-10-13 07:18:03] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4435.md → 692-Auxiliary_Practices (SHA256: effc991540b6...)
+- [2026-10-13 07:18:04] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4442.md → 692-Auxiliary_Practices (SHA256: 1f3569873e27...)
+- [2026-10-13 07:18:04] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4443.md → 692-Auxiliary_Practices (SHA256: 1c03377620b0...)
+- [2026-10-13 07:18:04] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4446.md → 692-Auxiliary_Practices (SHA256: 615e330d6a08...)
+- [2026-10-13 07:18:05] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4447.md → 692-Auxiliary_Practices (SHA256: 28b6d4ef105f...)
+- [2026-10-13 07:18:05] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4450.md → 692-Auxiliary_Practices (SHA256: 9f6e1f8b90d3...)
+- [2026-10-13 07:18:05] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4461.md → 692-Auxiliary_Practices (SHA256: b997e97067f1...)
+- [2026-10-13 07:18:06] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4469.md → 692-Auxiliary_Practices (SHA256: 8c1eeb204cb9...)
+- [2026-10-13 07:18:07] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4472.md → 692-Auxiliary_Practices (SHA256: cd4ebba09082...)
+- [2026-10-13 07:18:07] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4474.md → 692-Auxiliary_Practices (SHA256: 3fd2c68c7242...)
+- [2026-10-13 07:18:08] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4478.md → 692-Auxiliary_Practices (SHA256: 594cb14ceea4...)
+- [2026-10-13 07:18:08] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4487.md → 692-Auxiliary_Practices (SHA256: 93fc657e3901...)
+- [2026-10-13 07:18:09] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4490.md → 692-Auxiliary_Practices (SHA256: 9611f820aefc...)
+- [2026-10-13 07:18:09] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4491.md → 692-Auxiliary_Practices (SHA256: b0b05f6998b2...)
+- [2026-10-13 07:18:10] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4494.md → 692-Auxiliary_Practices (SHA256: 27a2458ec97e...)
+- [2026-10-13 07:18:10] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4495.md → 692-Auxiliary_Practices (SHA256: 73a7d247e993...)
+- [2026-10-13 07:18:10] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4497.md → 692-Auxiliary_Practices (SHA256: 4feff4c2faef...)
+- [2026-10-13 07:18:11] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4500.md → 692-Auxiliary_Practices (SHA256: a05390a59270...)
+- [2026-10-13 07:18:11] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4505.md → 692-Auxiliary_Practices (SHA256: 9749bbebdd75...)
+- [2026-10-13 07:18:11] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4507.md → 692-Auxiliary_Practices (SHA256: 83ae15dbbcc7...)
+- [2026-10-13 07:18:12] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4512.md → 692-Auxiliary_Practices (SHA256: 2584cfb3fdc7...)
+- [2026-10-13 07:18:12] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4531.md → 692-Auxiliary_Practices (SHA256: 2bc409ffcbf2...)
+- [2026-10-13 07:18:12] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4535.md → 692-Auxiliary_Practices (SHA256: 4fc40ad2b712...)
+- [2026-10-13 07:18:13] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4544.md → 692-Auxiliary_Practices (SHA256: e4b43a4672f0...)
+- [2026-10-13 07:18:13] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4555.md → 692-Auxiliary_Practices (SHA256: 44b478dc16ee...)
+- [2026-10-13 07:18:13] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4561.md → 692-Auxiliary_Practices (SHA256: b46ab5fd84f6...)
+- [2026-10-13 07:18:14] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4568.md → 692-Auxiliary_Practices (SHA256: b2ac058c76f5...)
+- [2026-10-13 07:18:14] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4571.md → 692-Auxiliary_Practices (SHA256: 2812243379da...)
+- [2026-10-13 07:18:15] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4572.md → 692-Auxiliary_Practices (SHA256: 90bda7428ab0...)
+- [2026-10-13 07:18:15] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4583.md → 692-Auxiliary_Practices (SHA256: 442c66f49a2e...)
+- [2026-10-13 07:18:16] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4586.md → 692-Auxiliary_Practices (SHA256: 969482fec27f...)
+- [2026-10-13 07:18:16] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4591.md → 692-Auxiliary_Practices (SHA256: fa3337dc5b85...)
+- [2026-10-13 07:18:17] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4597.md → 692-Auxiliary_Practices (SHA256: c9f96b17b743...)
+- [2026-10-13 07:18:18] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4608.md → 692-Auxiliary_Practices (SHA256: 5e736491c0b3...)
+- [2026-10-13 07:18:18] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4611.md → 692-Auxiliary_Practices (SHA256: bcfcc25d5efb...)
+- [2026-10-13 07:18:19] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4615.md → 692-Auxiliary_Practices (SHA256: d17c8dbe311e...)
+- [2026-10-13 07:18:19] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4616.md → 692-Auxiliary_Practices (SHA256: 4a9ee66eb45f...)
+- [2026-10-13 07:18:20] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4624.md → 692-Auxiliary_Practices (SHA256: ebe6bff4d029...)
+- [2026-10-13 07:18:20] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4626.md → 692-Auxiliary_Practices (SHA256: 375fb8858aea...)
+- [2026-10-13 07:18:21] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4627.md → 692-Auxiliary_Practices (SHA256: af9cedb77158...)
+- [2026-10-13 07:18:21] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4635.md → 692-Auxiliary_Practices (SHA256: 80da17f03a80...)
+- [2026-10-13 07:18:21] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4638.md → 692-Auxiliary_Practices (SHA256: 312d004a05ae...)
+- [2026-10-13 07:18:22] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4639.md → 692-Auxiliary_Practices (SHA256: 216600890a58...)
+- [2026-10-13 07:18:23] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4644.md → 692-Auxiliary_Practices (SHA256: 28217e8078b4...)
+- [2026-10-13 07:18:23] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4645.md → 692-Auxiliary_Practices (SHA256: bdf70c177d11...)
+- [2026-10-13 07:18:24] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4647.md → 692-Auxiliary_Practices (SHA256: d79ebf09b13b...)
+- [2026-10-13 07:18:25] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4649.md → 692-Auxiliary_Practices (SHA256: f152086cd9cd...)
+- [2026-10-13 07:18:26] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4657.md → 692-Auxiliary_Practices (SHA256: c33de772f435...)
+- [2026-10-13 07:18:27] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4669.md → 692-Auxiliary_Practices (SHA256: 5b3bcddfde76...)
+- [2026-10-13 07:18:27] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4685.md → 692-Auxiliary_Practices (SHA256: 6def8bdba23f...)
+- [2026-10-13 07:18:27] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4687.md → 692-Auxiliary_Practices (SHA256: 1f3f8abecf6a...)
+- [2026-10-13 07:18:28] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4688.md → 692-Auxiliary_Practices (SHA256: b0b5ce633d0c...)
+- [2026-10-13 07:18:28] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4695.md → 692-Auxiliary_Practices (SHA256: eeeefeb61198...)
+- [2026-10-13 07:18:28] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4715.md → 692-Auxiliary_Practices (SHA256: 58f3a2687a84...)
+- [2026-10-13 07:18:29] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4721.md → 692-Auxiliary_Practices (SHA256: e1fdeb545a9c...)
+- [2026-10-13 07:18:29] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4723.md → 692-Auxiliary_Practices (SHA256: c2ed56c5a503...)
+- [2026-10-13 07:18:29] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4724.md → 692-Auxiliary_Practices (SHA256: 06ba39cff045...)
+- [2026-10-13 07:18:30] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4734.md → 692-Auxiliary_Practices (SHA256: c1652d392c4e...)
+- [2026-10-13 07:18:30] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4736.md → 692-Auxiliary_Practices (SHA256: 0e218fb082ef...)
+- [2026-10-13 07:18:31] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4741.md → 692-Auxiliary_Practices (SHA256: 8d3a2d793196...)
+- [2026-10-13 07:18:32] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4753.md → 692-Auxiliary_Practices (SHA256: dffbcd4f28c0...)
+- [2026-10-13 07:18:32] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4759.md → 692-Auxiliary_Practices (SHA256: f8cef6c12134...)
+- [2026-10-13 07:18:32] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4773.md → 692-Auxiliary_Practices (SHA256: 1148b448eb72...)
+- [2026-10-13 07:18:33] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4775.md → 692-Auxiliary_Practices (SHA256: a672bd4089ed...)
+- [2026-10-13 07:18:33] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4781.md → 692-Auxiliary_Practices (SHA256: 6f14b2adfff2...)
+- [2026-10-13 07:18:34] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4785.md → 692-Auxiliary_Practices (SHA256: 375f2c1f31f6...)
+- [2026-10-13 07:18:34] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4808.md → 692-Auxiliary_Practices (SHA256: 0afa1787aa44...)
+- [2026-10-13 07:18:35] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4815.md → 692-Auxiliary_Practices (SHA256: c95c124d67ca...)
+- [2026-10-13 07:18:35] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4819.md → 692-Auxiliary_Practices (SHA256: 24263dd29839...)
+- [2026-10-13 07:18:35] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4820.md → 692-Auxiliary_Practices (SHA256: b93ca6ce2e34...)
+- [2026-10-13 07:18:36] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4823.md → 692-Auxiliary_Practices (SHA256: 874b0feeec61...)
+- [2026-10-13 07:18:36] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4838.md → 692-Auxiliary_Practices (SHA256: 031e1019317e...)
+- [2026-10-13 07:18:36] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4850.md → 692-Auxiliary_Practices (SHA256: b2cb3a7bc927...)
+- [2026-10-13 07:18:37] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4851.md → 692-Auxiliary_Practices (SHA256: 26bc2a6cce3a...)
+- [2026-10-13 07:18:37] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4882.md → 692-Auxiliary_Practices (SHA256: d09b96e09f7a...)
+- [2026-10-13 07:18:37] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4886.md → 692-Auxiliary_Practices (SHA256: e3c46a070cf8...)
+- [2026-10-13 07:18:37] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4888.md → 692-Auxiliary_Practices (SHA256: 56c433904cbd...)
+- [2026-10-13 07:18:38] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4895.md → 692-Auxiliary_Practices (SHA256: a5211a723e60...)
+- [2026-10-13 07:18:38] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4902.md → 692-Auxiliary_Practices (SHA256: 2c92ce2f878b...)
+- [2026-10-13 07:18:38] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4904.md → 692-Auxiliary_Practices (SHA256: bb47b89411b3...)
+- [2026-10-13 07:18:39] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4912.md → 692-Auxiliary_Practices (SHA256: b5eb07373837...)
+- [2026-10-13 07:18:40] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4915.md → 692-Auxiliary_Practices (SHA256: faf2552031bb...)
+- [2026-10-13 07:18:41] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4917.md → 692-Auxiliary_Practices (SHA256: bc68e84db35d...)
+- [2026-10-13 07:18:41] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4919.md → 692-Auxiliary_Practices (SHA256: 556f579736f9...)
+- [2026-10-13 07:18:41] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4928.md → 692-Auxiliary_Practices (SHA256: 7eac402ae40e...)
+- [2026-10-13 07:18:42] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4935.md → 692-Auxiliary_Practices (SHA256: 6acfba2f15b4...)
+- [2026-10-13 07:18:42] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4936.md → 692-Auxiliary_Practices (SHA256: 55154b729030...)
+- [2026-10-13 07:18:43] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4943.md → 692-Auxiliary_Practices (SHA256: 330e8d520a04...)
+- [2026-10-13 07:18:43] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4944.md → 692-Auxiliary_Practices (SHA256: 07a77d4725f8...)
+- [2026-10-13 07:18:44] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4951.md → 692-Auxiliary_Practices (SHA256: fc4f3fbaaa16...)
+- [2026-10-13 07:18:44] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4969.md → 692-Auxiliary_Practices (SHA256: d2ec8a02bcb4...)
+- [2026-10-13 07:18:45] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4973.md → 692-Auxiliary_Practices (SHA256: 59a8a050ad75...)
+- [2026-10-13 07:18:46] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4978.md → 692-Auxiliary_Practices (SHA256: 2eec6655d674...)
+- [2026-10-13 07:18:46] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4979.md → 692-Auxiliary_Practices (SHA256: 4d596c304543...)
+- [2026-10-13 07:18:47] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4987.md → 692-Auxiliary_Practices (SHA256: 0db940763d41...)
+- [2026-10-13 07:18:47] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4989.md → 692-Auxiliary_Practices (SHA256: 325dfd30b062...)
+- [2026-10-13 07:18:48] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4993.md → 692-Auxiliary_Practices (SHA256: 02d89a05cf66...)
+- [2026-10-13 07:18:48] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4995.md → 692-Auxiliary_Practices (SHA256: 746a491102f6...)
+- [2026-10-13 07:18:49] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-4998.md → 692-Auxiliary_Practices (SHA256: 6bab59fe84f5...)
+- [2026-10-13 07:18:49] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5002.md → 692-Auxiliary_Practices (SHA256: fed8d1e195da...)
+- [2026-10-13 07:18:49] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5003.md → 692-Auxiliary_Practices (SHA256: d20df63abdc1...)
+- [2026-10-13 07:18:50] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5008.md → 692-Auxiliary_Practices (SHA256: c6aadf04db4c...)
+- [2026-10-13 07:18:51] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5009.md → 692-Auxiliary_Practices (SHA256: 4f7d340299fc...)
+- [2026-10-13 07:18:51] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5010.md → 692-Auxiliary_Practices (SHA256: ffc46f11d965...)
+- [2026-10-13 07:18:52] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5016.md → 692-Auxiliary_Practices (SHA256: 16f84b881e14...)
+- [2026-10-13 07:18:52] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5017.md → 692-Auxiliary_Practices (SHA256: d5947903a693...)
+- [2026-10-13 07:18:52] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5020.md → 692-Auxiliary_Practices (SHA256: d5823b8db3e6...)
+- [2026-10-13 07:18:53] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5022.md → 692-Auxiliary_Practices (SHA256: 1770c246d2e3...)
+- [2026-10-13 07:18:53] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5025.md → 692-Auxiliary_Practices (SHA256: 7db2c5e27017...)
+- [2026-10-13 07:18:54] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5032.md → 692-Auxiliary_Practices (SHA256: af224adc934f...)
+- [2026-10-13 07:18:54] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5033.md → 692-Auxiliary_Practices (SHA256: af23f493e101...)
+- [2026-10-13 07:18:55] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5034.md → 692-Auxiliary_Practices (SHA256: d27557a86629...)
+- [2026-10-13 07:18:55] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5044.md → 692-Auxiliary_Practices (SHA256: e99c4d43fe02...)
+- [2026-10-13 07:18:56] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5061.md → 692-Auxiliary_Practices (SHA256: f780c54687d1...)
+- [2026-10-13 07:18:56] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5069.md → 692-Auxiliary_Practices (SHA256: 36f7ddd3a725...)
+- [2026-10-13 07:18:57] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5072.md → 692-Auxiliary_Practices (SHA256: 59350b1b46ec...)
+- [2026-10-13 07:18:57] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5076.md → 692-Auxiliary_Practices (SHA256: 8bcd0502b70c...)
+- [2026-10-13 07:18:58] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5080.md → 692-Auxiliary_Practices (SHA256: 4151df5836c2...)
+- [2026-10-13 07:18:58] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5082.md → 692-Auxiliary_Practices (SHA256: 370d508711bb...)
+- [2026-10-13 07:18:58] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5086.md → 692-Auxiliary_Practices (SHA256: 6b110830c726...)
+- [2026-10-13 07:18:59] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5088.md → 692-Auxiliary_Practices (SHA256: a818b66d4264...)
+- [2026-10-13 07:18:59] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5091.md → 692-Auxiliary_Practices (SHA256: e06c4c882f25...)
+- [2026-10-13 07:19:00] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5093.md → 692-Auxiliary_Practices (SHA256: 0406e738fe0b...)
+- [2026-10-13 07:19:00] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5108.md → 692-Auxiliary_Practices (SHA256: 8a773a77e03f...)
+- [2026-10-13 07:19:01] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5124.md → 692-Auxiliary_Practices (SHA256: a420f7b2c69c...)
+- [2026-10-13 07:19:01] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5126.md → 692-Auxiliary_Practices (SHA256: c3b62783581f...)
+- [2026-10-13 07:19:01] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5127.md → 692-Auxiliary_Practices (SHA256: 291a5ccf6310...)
+- [2026-10-13 07:19:02] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5138.md → 692-Auxiliary_Practices (SHA256: 17130dff70db...)
+- [2026-10-13 07:19:03] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5140.md → 692-Auxiliary_Practices (SHA256: 1ef8899e8a78...)
+- [2026-10-13 07:19:03] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5141.md → 692-Auxiliary_Practices (SHA256: daf27d650ed2...)
+- [2026-10-13 07:19:04] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5144.md → 692-Auxiliary_Practices (SHA256: c8b2a23f30cc...)
+- [2026-10-13 07:19:04] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5150.md → 692-Auxiliary_Practices (SHA256: 1d1ffee3824f...)
+- [2026-10-13 07:19:05] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5155.md → 692-Auxiliary_Practices (SHA256: d4e2b62a50ba...)
+- [2026-10-13 07:19:05] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5156.md → 692-Auxiliary_Practices (SHA256: 447b6349fd51...)
+- [2026-10-13 07:19:06] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5159.md → 692-Auxiliary_Practices (SHA256: 6b354c101078...)
+- [2026-10-13 07:19:06] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5160.md → 692-Auxiliary_Practices (SHA256: ef6285e946fa...)
+- [2026-10-13 07:19:07] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5163.md → 692-Auxiliary_Practices (SHA256: 5396c0a083ab...)
+- [2026-10-13 07:19:07] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5169.md → 692-Auxiliary_Practices (SHA256: 19314f13a116...)
+- [2026-10-13 07:19:08] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5173.md → 692-Auxiliary_Practices (SHA256: 65211eb64363...)
+- [2026-10-13 07:19:09] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5200.md → 692-Auxiliary_Practices (SHA256: 74215c7f7cb9...)
+- [2026-10-13 07:19:09] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5201.md → 692-Auxiliary_Practices (SHA256: bab20f1ceb8c...)
+- [2026-10-13 07:19:10] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5206.md → 692-Auxiliary_Practices (SHA256: 272a796d07dd...)
+- [2026-10-13 07:19:10] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5210.md → 692-Auxiliary_Practices (SHA256: 3a4c2b6c25b5...)
+- [2026-10-13 07:19:10] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5219.md → 692-Auxiliary_Practices (SHA256: b4c0f886b052...)
+- [2026-10-13 07:19:11] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5221.md → 692-Auxiliary_Practices (SHA256: 00ba54e1f8f3...)
+- [2026-10-13 07:19:11] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5222.md → 692-Auxiliary_Practices (SHA256: 977ace00fb63...)
+- [2026-10-13 07:19:11] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5225.md → 692-Auxiliary_Practices (SHA256: 3c90295beb0a...)
+- [2026-10-13 07:19:12] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5226.md → 692-Auxiliary_Practices (SHA256: e24fd0ab1cc2...)
+- [2026-10-13 07:19:13] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5228.md → 692-Auxiliary_Practices (SHA256: d9f31efdc65b...)
+- [2026-10-13 07:19:13] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5236.md → 692-Auxiliary_Practices (SHA256: 5064d20b2fe0...)
+- [2026-10-13 07:19:14] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5244.md → 692-Auxiliary_Practices (SHA256: 0d3355d973dd...)
+- [2026-10-13 07:19:14] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5245.md → 692-Auxiliary_Practices (SHA256: fa010c2cd534...)
+- [2026-10-13 07:19:15] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5246.md → 692-Auxiliary_Practices (SHA256: 4376ca7280bf...)
+- [2026-10-13 07:19:15] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5251.md → 692-Auxiliary_Practices (SHA256: f24dcca0ce52...)
+- [2026-10-13 07:19:15] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5266.md → 692-Auxiliary_Practices (SHA256: 647cbda45475...)
+- [2026-10-13 07:19:16] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5267.md → 692-Auxiliary_Practices (SHA256: a5aa21081f4c...)
+- [2026-10-13 07:19:17] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5272.md → 692-Auxiliary_Practices (SHA256: c1a7f10fe2e1...)
+- [2026-10-13 07:19:17] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5278.md → 692-Auxiliary_Practices (SHA256: 964c9785aae8...)
+- [2026-10-13 07:19:18] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5279.md → 692-Auxiliary_Practices (SHA256: bf7b502002a4...)
+- [2026-10-13 07:19:19] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5282.md → 692-Auxiliary_Practices (SHA256: acb6d90c94c7...)
+- [2026-10-13 07:19:19] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5284.md → 692-Auxiliary_Practices (SHA256: dfcc6717e1d1...)
+- [2026-10-13 07:19:19] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5286.md → 692-Auxiliary_Practices (SHA256: b5b50630a3ad...)
+- [2026-10-13 07:19:20] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5292.md → 692-Auxiliary_Practices (SHA256: 09b64c3a536d...)
+- [2026-10-13 07:19:20] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5295.md → 692-Auxiliary_Practices (SHA256: 5b9ab64f0e76...)
+- [2026-10-13 07:19:21] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5298.md → 692-Auxiliary_Practices (SHA256: 1d09b50a037f...)
+- [2026-10-13 07:19:22] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5304.md → 692-Auxiliary_Practices (SHA256: 034f7406fc9c...)
+- [2026-10-13 07:19:22] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5312.md → 692-Auxiliary_Practices (SHA256: e22589d56454...)
+- [2026-10-13 07:19:23] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5315.md → 692-Auxiliary_Practices (SHA256: dc9e9929b0e9...)
+- [2026-10-13 07:19:23] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5318.md → 692-Auxiliary_Practices (SHA256: 1de70e8423f2...)
+- [2026-10-13 07:19:23] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5325.md → 692-Auxiliary_Practices (SHA256: bc055555ce60...)
+- [2026-10-13 07:19:24] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5326.md → 692-Auxiliary_Practices (SHA256: a3c4706c4831...)
+- [2026-10-13 07:19:24] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5329.md → 692-Auxiliary_Practices (SHA256: fa77c86b196b...)
+- [2026-10-13 07:19:25] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5335.md → 692-Auxiliary_Practices (SHA256: 3f6575270042...)
+- [2026-10-13 07:19:26] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5343.md → 692-Auxiliary_Practices (SHA256: a32933528d04...)
+- [2026-10-13 07:19:27] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5344.md → 692-Auxiliary_Practices (SHA256: 33e8ff30865a...)
+- [2026-10-13 07:19:27] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5348.md → 692-Auxiliary_Practices (SHA256: 10df622d3dfb...)
+- [2026-10-13 07:19:27] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5349.md → 692-Auxiliary_Practices (SHA256: 3e2a29c51e54...)
+- [2026-10-13 07:19:28] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5358.md → 692-Auxiliary_Practices (SHA256: ddf64e770556...)
+- [2026-10-13 07:19:28] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5364.md → 692-Auxiliary_Practices (SHA256: 22491bf437ab...)
+- [2026-10-13 07:19:29] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5371.md → 692-Auxiliary_Practices (SHA256: cee701fcdc27...)
+- [2026-10-13 07:19:29] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5375.md → 692-Auxiliary_Practices (SHA256: 6c1d6f1cb20e...)
+- [2026-10-13 07:19:29] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5378.md → 692-Auxiliary_Practices (SHA256: d9f74ca0552c...)
+- [2026-10-13 07:19:30] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5391.md → 692-Auxiliary_Practices (SHA256: 11cc230a57ae...)
+- [2026-10-13 07:19:30] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5393.md → 692-Auxiliary_Practices (SHA256: 1839083352b2...)
+- [2026-10-13 07:19:31] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5397.md → 692-Auxiliary_Practices (SHA256: 7e4ce01334ef...)
+- [2026-10-13 07:19:31] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5400.md → 692-Auxiliary_Practices (SHA256: 513f10505e48...)
+- [2026-10-13 07:19:32] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5402.md → 692-Auxiliary_Practices (SHA256: 827f7db3155b...)
+- [2026-10-13 07:19:32] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5404.md → 692-Auxiliary_Practices (SHA256: 084bf92a3e71...)
+- [2026-10-13 07:19:33] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5405.md → 692-Auxiliary_Practices (SHA256: b9707efdfa53...)
+- [2026-10-13 07:19:33] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5407.md → 692-Auxiliary_Practices (SHA256: ec862464e6e3...)
+- [2026-10-13 07:19:34] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5408.md → 692-Auxiliary_Practices (SHA256: c9c8640e7536...)
+- [2026-10-13 07:19:34] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5409.md → 692-Auxiliary_Practices (SHA256: 7d0302491c14...)
+- [2026-10-13 07:19:35] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5415.md → 692-Auxiliary_Practices (SHA256: 5411aab4da9d...)
+- [2026-10-13 07:19:35] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5423.md → 692-Auxiliary_Practices (SHA256: 60865940b3a2...)
+- [2026-10-13 07:19:35] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5426.md → 692-Auxiliary_Practices (SHA256: 31e0c26cdf80...)
+- [2026-10-13 07:19:36] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5439.md → 692-Auxiliary_Practices (SHA256: d7af6a13fb8e...)
+- [2026-10-13 07:19:36] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5445.md → 692-Auxiliary_Practices (SHA256: eff61292e558...)
+- [2026-10-13 07:19:36] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5448.md → 692-Auxiliary_Practices (SHA256: f1bbbda1f5da...)
+- [2026-10-13 07:19:37] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5459.md → 692-Auxiliary_Practices (SHA256: 7b3791cb7b55...)
+- [2026-10-13 07:19:38] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5470.md → 692-Auxiliary_Practices (SHA256: 530d3cefcfb1...)
+- [2026-10-13 07:19:38] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5479.md → 692-Auxiliary_Practices (SHA256: 70368211cc4d...)
+- [2026-10-13 07:19:39] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5486.md → 692-Auxiliary_Practices (SHA256: 627078d3870d...)
+- [2026-10-13 07:19:39] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5488.md → 692-Auxiliary_Practices (SHA256: f9b831fbf33a...)
+- [2026-10-13 07:19:40] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5499.md → 692-Auxiliary_Practices (SHA256: 73f2e16f0504...)
+- [2026-10-13 07:19:40] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5507.md → 692-Auxiliary_Practices (SHA256: 61c96e585b0a...)
+- [2026-10-13 07:19:41] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5509.md → 692-Auxiliary_Practices (SHA256: c85a79f1645c...)
+- [2026-10-13 07:19:41] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5514.md → 692-Auxiliary_Practices (SHA256: 690fbecef1fc...)
+- [2026-10-13 07:19:42] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5518.md → 692-Auxiliary_Practices (SHA256: 4d6d20a9e0f5...)
+- [2026-10-13 07:19:42] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5525.md → 692-Auxiliary_Practices (SHA256: e012cafd0699...)
+- [2026-10-13 07:21:17] Inbox route [🤖 AI → 000]: derrell_black_ai_consulting_resume.html → 000-General (SHA256: 0316df4820bf...)
+- [2026-10-13 07:21:18] Inbox route [📄 content marker 'utilities']: index_dupes_trashed.json → 696-Utilities (SHA256: 6a590b666a47...)

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Derrell Black — AI Consultant Resume</title>
+<style>
+  @page { margin: 0.5in; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* ── Header ── */
+  .header {
+    background: #002244;
+    color: #fff;
+    padding: 36px 40px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .header-text h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+  .header-text .title {
+    font-size: 14px;
+    color: #69BE28;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 4px;
+  }
+  .header-contact {
+    margin-left: auto;
+    text-align: right;
+    font-size: 12px;
+    color: #A5ACAF;
+    line-height: 1.7;
+  }
+  .header-contact a {
+    color: #69BE28;
+    text-decoration: none;
+  }
+
+  /* ── Layout ── */
+  .container {
+    display: flex;
+    gap: 0;
+    min-height: calc(100vh - 120px);
+  }
+  .sidebar {
+    width: 34%;
+    background: #f5f5f7;
+    padding: 24px 20px;
+  }
+  .main {
+    width: 66%;
+    padding: 24px 28px;
+  }
+
+  /* ── Sections ── */
+  .section { margin-bottom: 22px; }
+  .section-title {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #002244;
+    border-bottom: 2px solid #69BE28;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+  }
+
+  /* ── Profile ── */
+  .profile-text {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  /* ── Contact ── */
+  .contact-item {
+    font-size: 12px;
+    color: #333;
+    color: #002244;
+    margin-bottom: 6px;
+  }
+  .contact-item .label {
+    font-weight: 700;
+    color: #002244;
+  }
+
+  /* ── Skills ── */
+  .skills-list {
+    list-style: none;
+  }
+  .skills-list li {
+    font-size: 12px;
+    padding: 4px 0;
+    padding-left: 16px;
+    position: relative;
+  }
+  .skills-list li::before {
+    content: "▸";
+    color: #69BE28;
+    position: absolute;
+    left: 0;
+  }
+
+  /* ── Education ── */
+  .edu-item {
+    margin-bottom: 12px;
+  }
+  .edu-item .school {
+    font-size: 13px;
+    font-weight: 700;
+    color: #002244;
+  }
+  .edu-item .year {
+    font-size: 11px;
+    color: #A5ACAF;
+  }
+  .edu-item .degree {
+    font-size: 12px;
+    color: #333;
+  }
+
+  /* ── Experience ── */
+  .job {
+    margin-bottom: 20px;
+    padding-left: 18px;
+    border-left: 3px solid #f59e0b;
+  }
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+  }
+  .job-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #002244;
+  }
+  .job-dates {
+    font-size: 11px;
+    color: #A5ACAF;
+    font-weight: 600;
+  }
+  .job-company {
+    font-size: 12px;
+    font-weight: 600;
+    color: #69BE28;
+    margin-bottom: 6px;
+  }
+  .job-desc {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.5;
+  }
+  .job-desc ul {
+    margin-top: 6px;
+    padding-left: 18px;
+  }
+  .job-desc li {
+    margin-bottom: 3px;
+  }
+  .job-badge {
+    display: inline-block;
+    background: #69BE28;
+    color: #002244;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 1px 8px;
+    border-radius: 3px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+
+  /* ── Certifications ── */
+  .cert-item {
+    font-size: 12px;
+    padding: 3px 0;
+    padding-left: 16px;
+    position: relative;
+  }
+  .cert-item::before {
+    content: "✓";
+    color: #69BE28;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+  }
+  .cert-pending {
+    color: #999;
+    font-style: italic;
+  }
+
+  /* ── Projects ── */
+  .project {
+    margin-bottom: 14px;
+    padding-left: 18px;
+    border-left: 3px solid #22c55e;
+  }
+  .project-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #002244;
+    margin-bottom: 2px;
+  }
+  .project-desc {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.5;
+  }
+  .project-tech {
+    font-size: 11px;
+    color: #69BE28;
+    font-weight: 600;
+    margin-top: 3px;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    background: #002244;
+    color: #A5ACAF;
+    text-align: center;
+    padding: 12px;
+    font-size: 10px;
+  }
+  .footer .orange { color: #69BE28; }
+</style>
+</head>
+<body>
+
+<!-- ── Header ── -->
+<div class="header">
+  <div class="header-text">
+    <h1>DERRELL BLACK</h1>
+    <div class="title">AI Consultant · Automation Architect · Educator</div>
+  </div>
+  <div class="header-contact">
+    (312) 965-2782<br>
+    Derrellblack@BlacktechSolutionscorp.com<br>
+    Chicago, IL · Available Remote & On-Site
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- ── Sidebar ── -->
+  <div class="sidebar">
+
+    <div class="section">
+      <div class="section-title">Profile</div>
+      <div class="profile-text">
+        AI consultant and automation architect with hands-on experience building production AI systems on edge hardware. Founded an AI education academy with 8 courses spanning AI, blockchain, and crypto. Specialize in deploying LLM agents, automated workflows, and self-hosted infrastructure for small businesses.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Contact</div>
+      <div class="contact-item"><span class="label">Phone:</span> (312) 965-2782</div>
+      <div class="contact-item"><span class="label">Email:</span> Derrellblack@BlacktechSolutionscorp.com</div>
+      <div class="contact-item"><span class="label">Location:</span> Chicago, IL 60628</div>
+      <div class="contact-item"><span class="label">Availability:</span> Remote & On-Site</div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Technical Skills</div>
+      <ul class="skills-list">
+        <li>AI Agent Development (Hermes, OpenAI, Ollama)</li>
+        <li>LLM Integration & Prompt Engineering</li>
+        <li>Python · Bash · JavaScript · HTML/CSS</li>
+        <li>SQLite · PostgreSQL · API Development</li>
+        <li>Raspberry Pi / Edge Computing</li>
+        <li>Linux System Administration</li>
+        <li>Docker & Container Orchestration</li>
+        <li>Cloudflare Tunnels & DNS Management</li>
+        <li>Web3 / Blockchain (Solidity, Smart Contracts)</li>
+        <li>Video Generation & TTS Pipelines</li>
+        <li>Web Scraping & Data Pipelines</li>
+        <li>Cron Automation & Scheduled Workflows</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Certifications</div>
+      <div class="cert-item">ICC EESP — Energy Efficiency Service Provider</div>
+      <div class="cert-item">ICC EV — Electric Vehicle Charging</div>
+      <div class="cert-item">ICC DG — Distributed Generation</div>
+      <div class="cert-item">MBE Certified — Minority Business Enterprise</div>
+      <div class="cert-item cert-pending">Google AI Essentials (in progress)</div>
+      <div class="cert-item cert-pending">Microsoft Azure AI Fundamentals AI-900 (planned)</div>
+      <div class="cert-item cert-pending">DeepLearning.AI Specialization (planned)</div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Education</div>
+      <div class="edu-item">
+        <div class="school">Coyne American Institute</div>
+        <div class="year">1998</div>
+        <div class="degree">Electrical Maintenance</div>
+      </div>
+      <div class="edu-item">
+        <div class="school">NECA/IBEW 134 Technical Institute</div>
+        <div class="year">2010</div>
+        <div class="degree">Communication</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── Main ── -->
+  <div class="main">
+
+    <div class="section">
+      <div class="section-title">AI & Consulting Experience</div>
+
+      <!-- AI Consulting -->
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Independent AI Consultant <span class="job-badge">CURRENT</span></span>
+          <span class="job-dates">2025 — Present</span>
+        </div>
+        <div class="job-company">AI Infrastructure & Automation Consulting</div>
+        <div class="job-desc">
+          Design and deploy AI-powered automation systems for small businesses. Build self-hosted infrastructure on edge hardware (Raspberry Pi) that replaces costly SaaS subscriptions.
+          <ul>
+            <li>Deployed 25+ always-on services on a single Raspberry Pi with automated monitoring, restart, and alerting</li>
+            <li>Built AI agent system (Hermes) with 50+ automated workflows handling lead generation, invoicing, social media, and business operations</li>
+            <li>Created voiceover video generation pipeline using TTS + slideshow automation</li>
+            <li>Positioned consulting practice: "I built this for myself — here's what I can build for you"</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Academy -->
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Founder & Curriculum Director <span class="job-badge">CURRENT</span></span>
+          <span class="job-dates">2024 — Present</span>
+        </div>
+        <div class="job-company">AI Education Academy</div>
+        <div class="job-desc">
+          Founded an online AI education platform with 8 courses covering AI fundamentals, blockchain, cryptocurrency trading, and Web3 development. Built the entire platform from scratch — server, database, video pipeline, and course content.
+          <ul>
+            <li>Authored 8 courses with 30+ modules and 75+ video lessons</li>
+            <li>Built self-serve registration, progress tracking, and gamification (badges, token rewards)</li>
+            <li>Integrated blockchain token reward system for course completion</li>
+            <li>Distributed AI education flyers to public libraries for community outreach</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Energy + AI -->
+      <div class="job">
+        <div class="job-header">
+          <span class="job-title">Energy Advisor & Technology Lead</span>
+          <span class="job-dates">2021 — Present</span>
+        </div>
+        <div class="job-company">Energy Solutions · Think Energy Partner</div>
+        <div class="job-desc">
+          Combined 28+ years of electrical expertise with AI automation to modernize energy consulting. Built automated lead pipelines, contractor databases, and utility rebate calculators.
+          <ul>
+            <li>Built CRM with 3,489+ contractors, automated lead scoring, and dispatch board</li>
+            <li>Created automated lead generation across 6 sources (Nextdoor, Craigslist, ComEd, Apollo, DDG, BBB)</li>
+            <li>Deployed AI-powered bid monitoring system scanning government and commercial bid portals</li>
+            <li>Automated ComEd utility rebate calculations and energy savings estimates</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <div class="section-title">Key AI Projects</div>
+
+      <div class="project">
+        <div class="project-title">AI Agent Automation Platform</div>
+        <div class="project-desc">Production AI agent system running 50+ scheduled workflows: lead generation, social media posting, email monitoring, invoice generation, and business intelligence — all on edge hardware.</div>
+        <div class="project-tech">Python · Ollama · SQLite · Cron · Telegram API · Cloudflare</div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Command Center (25+ Services)</div>
+        <div class="project-desc">Unified web dashboard managing 25+ always-on services: CRM, dispatch board, academy, search engine, crypto trading platform, video pipeline, and automated monitoring.</div>
+        <div class="project-tech">Python · nginx · Cloudflare Tunnels · Docker · systemd</div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">AI Video Generation Pipeline</div>
+        <div class="project-desc">Automated slideshow + AI voiceover video creation pipeline. Converts scripts into narrated video presentations with background music, deployed to streaming platforms.</div>
+        <div class="project-tech">Python · Edge-TTS · ffmpeg · HTML/CSS · Chromium headless</div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Web3 Token System</div>
+        <div class="project-desc">Built a custom ERC-20 token with smart contracts on Sepolia/Base testnets. Integrated token rewards into education academy and trading platform.</div>
+        <div class="project-tech">Solidity · Web3.py · Smart Contracts · MetaMask · Python</div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Community Lead Generation Engine</div>
+        <div class="project-desc">Automated lead scraping across multiple sources (5,000+ church leads, 3,489 contractors), with qualification scoring and weekly digest delivery.</div>
+        <div class="project-tech">Python · Playwright/Camoufox · SQLite · Cloudflare bypass</div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ── Footer ── -->
+<div class="footer">
+  <span class="orange">AI CONSULTING & AUTOMATION</span> · Available for projects, training, and infrastructure consulting · (312) 965-2782
+</div>
+
+</body>
+</html>

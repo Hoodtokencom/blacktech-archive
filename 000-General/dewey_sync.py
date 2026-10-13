@@ -331,11 +331,68 @@ def show_status():
         count = sum(1 for e in entries if e['section'] == section)
         print(f"  {section}: {count} files")
 
+def audit_drive():
+    """Name-set audit: every cataloged local file must exist in its section's
+    Drive folder. The daily change-based upload has a known landmine: if a run
+    dies mid-upload, the catalog is already committed, so future runs see 'no
+    changes' and NEVER retry the stranded files (silent mirror debt — found
+    2026-10-13 with 2,931 files missing). This audit is the retry path.
+    Exit 0 = clean; exit 1 = gaps (prints them)."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("gapi_mod", os.path.join(
+        os.path.dirname(os.path.abspath(__file__)), "..", "..", ".hermes",
+        "profiles", "derrell-black", "skills", "productivity",
+        "google-workspace", "scripts", "google_api.py"))
+    gapi = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(gapi)
+    service = gapi.build_service("drive", "v3")
+
+    def drive_names(folder_id):
+        names, token = set(), None
+        while True:
+            resp = service.files().list(
+                q=f"'{folder_id}' in parents and mimeType != 'application/vnd.google-apps.folder'",
+                pageSize=1000, fields="nextPageToken, files(id, name)",
+                pageToken=token).execute()
+            names.update(f["name"] for f in resp.get("files", []))
+            token = resp.get("nextPageToken")
+            if not token:
+                return names
+
+    entries = scan_brain()
+    # group cataloged files by section, flat-name keyed (Drive mirror is flat)
+    by_section = {}
+    for e in entries:
+        by_section.setdefault(e["section"], {})[e["title"]] = e["file"]
+
+    total_missing = 0
+    for section, files in sorted(by_section.items()):
+        folder_id = DRIVE_FOLDERS.get(section)
+        if not folder_id:
+            continue  # sections without Drive folders are out of scope here
+        remote = drive_names(folder_id)
+        missing = [t for t in files if t not in remote]
+        if missing:
+            total_missing += len(missing)
+            print(f"🔴 {section}: {len(missing)} file(s) missing on Drive:")
+            for t in missing[:20]:
+                print(f"     - {files[t]}")
+            if len(missing) > 20:
+                print(f"     ... and {len(missing) - 20} more")
+        else:
+            print(f"🟢 {section}: {len(files)} file(s) mirrored")
+    print(f"\nAUDIT: {'CLEAN' if total_missing == 0 else str(total_missing) + ' MISSING'}")
+    return 0 if total_missing == 0 else 1
+
+
 # ── Main ────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     if "--status" in sys.argv:
         show_status()
         sys.exit(0)
+    if "--audit" in sys.argv:
+        print(f"🧠 Dewey Drive Audit — {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        sys.exit(audit_drive())
     
     print(f"🧠 Dewey Sync — {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print()
@@ -375,6 +432,12 @@ if __name__ == "__main__":
         drive_results = sync_to_drive(entries, changes)
         for r in drive_results:
             print(r)
+        failed_uploads = [r for r in drive_results if r.startswith("  🔴")]
+        if failed_uploads:
+            # A red upload must stop the line — a silent failure here is how
+            # 2,931 files of mirror debt accumulated unnoticed (2026-10-13).
+            print(f"\n❌ {len(failed_uploads)} Drive upload(s) FAILED — mirror is NOT current.")
+            sys.exit(2)
     
     # Sync to GitHub
     if "--catalog" not in sys.argv and do_github:
