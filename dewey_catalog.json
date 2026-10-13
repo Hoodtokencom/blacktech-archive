@@ -121,17 +121,6 @@
     "internal_key": "internal:000-General/deployment.json"
   },
   {
-    "title": "derrell_black_ai_consulting_resume.html",
-    "section": "000-General",
-    "dewey": "000",
-    "dewey_desc": "General",
-    "file": "000-General/derrell_black_ai_consulting_resume.html",
-    "type": "web",
-    "size": 13493,
-    "modified": "2026-10-13T07:14:57.514347",
-    "internal_key": "internal:000-General/derrell_black_ai_consulting_resume.html"
-  },
-  {
     "title": "dewey-constitutional.md",
     "section": "000-General",
     "dewey": "000",
@@ -149,8 +138,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 6093501,
-    "modified": "2026-10-13T07:26:18.463250",
+    "size": 6096625,
+    "modified": "2026-10-13T07:32:01.265766",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
   {
@@ -205,7 +194,7 @@
     "file": "000-General/dewey_catalog.json",
     "type": "data",
     "size": 7564599,
-    "modified": "2026-10-13T07:22:28.149664",
+    "modified": "2026-10-13T07:28:27.000176",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
   {
@@ -383,6 +372,17 @@
     "size": 15971,
     "modified": "2026-09-21T07:04:12.659234",
     "internal_key": "internal:000-General/index.html"
+  },
+  {
+    "title": "index_dupes_trashed.json",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/index_dupes_trashed.json",
+    "type": "data",
+    "size": 2852,
+    "modified": "2026-10-13T07:15:07.382430",
+    "internal_key": "internal:000-General/index_dupes_trashed.json"
   },
   {
     "title": "index_dupes_trashed.json",
@@ -95876,17 +95876,6 @@
     "internal_key": "internal:696-Utilities/hood-token-investment-trust.json"
   },
   {
-    "title": "index_dupes_trashed.json",
-    "section": "696-Utilities",
-    "dewey": "696",
-    "dewey_desc": "Utilities",
-    "file": "696-Utilities/index_dupes_trashed.json",
-    "type": "data",
-    "size": 2852,
-    "modified": "2026-10-13T07:15:07.382430",
-    "internal_key": "internal:696-Utilities/index_dupes_trashed.json"
-  },
-  {
     "title": "local_flyer_battery_backup.html",
     "section": "696-Utilities",
     "dewey": "696",
@@ -96355,8 +96344,8 @@
     "dewey_desc": "Decisions & Logs",
     "file": "999-Decisions_Logs/change_history.md",
     "type": "text",
-    "size": 844789,
-    "modified": "2026-10-13T07:21:18.345209",
+    "size": 845456,
+    "modified": "2026-10-13T07:32:01.393767",
     "internal_key": "internal:999-Decisions_Logs/change_history.md"
   },
   {

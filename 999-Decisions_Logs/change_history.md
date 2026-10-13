@@ -6199,3 +6199,7 @@
 - [2026-10-13 07:19:42] Inbox route [📄 content marker 'statement of work']: BSC-SOW-2026-5525.md → 692-Auxiliary_Practices (SHA256: e012cafd0699...)
 - [2026-10-13 07:21:17] Inbox route [🤖 AI → 000]: derrell_black_ai_consulting_resume.html → 000-General (SHA256: 0316df4820bf...)
 - [2026-10-13 07:21:18] Inbox route [📄 content marker 'utilities']: index_dupes_trashed.json → 696-Utilities (SHA256: 6a590b666a47...)
+- [2026-10-13 07:31:40] Brain Pull: Moved index_dupes_trashed.json from 696-Utilities to 000-General (matches Drive home; router keyword-tier had misfiled it)
+- [2026-10-13 07:31:41] Brain Pull: Removed 000-General/derrell_black_ai_consulting_resume.html (byte-identical to 658-Marketing_Sales canonical; AI-tier misroute)
+- [2026-10-13 07:31:41] Brain Pull: Cleared inbox derrell_black_ai_consulting_resume.pdf (byte-identical to 658-Marketing_Sales canonical)
+- [2026-10-13 07:32:01] Brain Pull: Trashed Drive 003-Computing_Science/derrell_black_ai_consulting_resume.html + .pdf (cross-section dupes of 658-Marketing_Sales canonicals; would re-download every pull)

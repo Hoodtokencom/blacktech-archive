@@ -143,19 +143,6 @@
     "internal_key": "internal:000-General/deployment.json"
   },
   {
-    "title": "derrell_black_ai_consulting_resume.html",
-    "section": "000-General",
-    "dewey": "000",
-    "dewey_desc": "General",
-    "file": "000-General/derrell_black_ai_consulting_resume.html",
-    "type": "web",
-    "size": 13493,
-    "modified": "2026-10-13T07:14:57.514347",
-    "hash": "0316df4820bf0ed7ebb1dc93c0e07000b1e24aba2fa67129e1ad9f4b3c4c49b7",
-    "description": "<!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <title>Derrell B",
-    "internal_key": "internal:000-General/derrell_black_ai_consulting_resume.html"
-  },
-  {
     "title": "dewey-constitutional.md",
     "section": "000-General",
     "dewey": "000",
@@ -175,9 +162,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 6093501,
-    "modified": "2026-10-13T07:26:18.463250",
-    "hash": "ca03ecefef6e90e64bb1959658f9f28d5bf18b416ac947421db4bbf45cb9c920",
+    "size": 6096625,
+    "modified": "2026-10-13T07:32:01.265766",
+    "hash": "8cd1ea72b3c7d06210023ba9a1ce0d0a947ef600e67718bdb90a3074aa983a54",
     "description": "[   {     \"index\": 0,     \"timestamp\": \"2026-06-23T00:00:00\",     \"action\": \"GENESIS\",     \"file\": \"\",     \"section\": \"000\",     \"dewey_class\": \"000\",",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
@@ -241,8 +228,8 @@
     "file": "000-General/dewey_catalog.json",
     "type": "data",
     "size": 7564599,
-    "modified": "2026-10-13T07:22:28.149664",
-    "hash": "4470979e23b12f9dcd72cd5601b1188741553f987943473f296cf21e309416ec",
+    "modified": "2026-10-13T07:28:27.000176",
+    "hash": "7155b1a632aedd3170cf28b1a180336842981e1f9752105e49f1a293218f6f38",
     "description": "[   {     \"title\": \"BSC-T-FAM-20260623.html\",     \"section\": \"000-General\",     \"dewey\": \"000\",     \"dewey_desc\": \"General\",     \"file\": \"000-General/",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
@@ -453,6 +440,19 @@
     "hash": "f8e580c2b41c6ad56c938f7603a322b737b7bdd6c36386e8886eb8da77b0bb16",
     "description": "<!DOCTYPE html> <html lang=\"en\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0",
     "internal_key": "internal:000-General/index.html"
+  },
+  {
+    "title": "index_dupes_trashed.json",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/index_dupes_trashed.json",
+    "type": "data",
+    "size": 2852,
+    "modified": "2026-10-13T07:15:07.382430",
+    "hash": "6a590b666a478b3cfd03191bfd234727c4808cad3bf771af10a3ab3b08ce2565",
+    "description": "{  \"when\": \"2026-10-11T09:29:50-0500\",  \"verdicts\": {   \"INDEX__200-Religion.md\": \"IDENTICAL\",   \"INDEX__696-Utilities.md\": \"IDENTICAL\",   \"INDEX__692",
+    "internal_key": "internal:000-General/index_dupes_trashed.json"
   },
   {
     "title": "index_dupes_trashed.json",
@@ -113308,19 +113308,6 @@
     "internal_key": "internal:696-Utilities/hood-token-investment-trust.json"
   },
   {
-    "title": "index_dupes_trashed.json",
-    "section": "696-Utilities",
-    "dewey": "696",
-    "dewey_desc": "Utilities",
-    "file": "696-Utilities/index_dupes_trashed.json",
-    "type": "data",
-    "size": 2852,
-    "modified": "2026-10-13T07:15:07.382430",
-    "hash": "6a590b666a478b3cfd03191bfd234727c4808cad3bf771af10a3ab3b08ce2565",
-    "description": "{  \"when\": \"2026-10-11T09:29:50-0500\",  \"verdicts\": {   \"INDEX__200-Religion.md\": \"IDENTICAL\",   \"INDEX__696-Utilities.md\": \"IDENTICAL\",   \"INDEX__692",
-    "internal_key": "internal:696-Utilities/index_dupes_trashed.json"
-  },
-  {
     "title": "local_flyer_battery_backup.html",
     "section": "696-Utilities",
     "dewey": "696",
@@ -113873,9 +113860,9 @@
     "dewey_desc": "Decisions & Logs",
     "file": "999-Decisions_Logs/change_history.md",
     "type": "text",
-    "size": 844789,
-    "modified": "2026-10-13T07:21:18.345209",
-    "hash": "35ba0b7e8232ef0c5471f63eff09201dae00cc5142c81f2bd5df68ed72dc042e",
+    "size": 845456,
+    "modified": "2026-10-13T07:32:01.393767",
+    "hash": "e8768ac8cd4267091b0f53630286d265f815135b73af44d5d8929323b14a4d50",
     "description": "- [2026-06-26 07:04:07] Inbox route [\ud83d\udd11 keyword 'contract']: contract-invoice-template.html \u2192 690-Building_Construction (SHA256: 174edcf369ea...) - [20",
     "internal_key": "internal:999-Decisions_Logs/change_history.md"
   },
