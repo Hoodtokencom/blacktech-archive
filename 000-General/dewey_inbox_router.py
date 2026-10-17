@@ -41,7 +41,10 @@ from dewey_manifest import (content_map, ai_code_list, code_to_folder,
 AI_ENABLED = True          # Set False to disable AI fallback entirely
 AI_BASE_URL = "http://localhost:11434/v1"
 AI_MODEL = "bt-worker:latest"  # qwen2.5:3b — deepseek-r1:7b NOT installed (404); qwen3 empty via /v1 (think ignored)
-AI_TIMEOUT = 90               # Cold Ollama model load can take 60s+; 30s caused false "timed out"
+AI_TIMEOUT = 240               # Skill rule: keep the AI tier generous (180s+).
+                              # Measured 2026-10-15: bt-worker cold classify of one
+                              # 15KB SOW html took 92.2s — the old 90s ceiling timed
+                              # it out and left the file UNMATCHED in the inbox.
 
 # ── Tier 1: Keyword → Dewey section mapping ────────────────────────
 # Matched by word-boundary prefix (e.g., "est_" → 692, "contract-" → 690)

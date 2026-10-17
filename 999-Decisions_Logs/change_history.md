@@ -6203,3 +6203,7 @@
 - [2026-10-13 07:31:41] Brain Pull: Removed 000-General/derrell_black_ai_consulting_resume.html (byte-identical to 658-Marketing_Sales canonical; AI-tier misroute)
 - [2026-10-13 07:31:41] Brain Pull: Cleared inbox derrell_black_ai_consulting_resume.pdf (byte-identical to 658-Marketing_Sales canonical)
 - [2026-10-13 07:32:01] Brain Pull: Trashed Drive 003-Computing_Science/derrell_black_ai_consulting_resume.html + .pdf (cross-section dupes of 658-Marketing_Sales canonicals; would re-download every pull)
+- [2026-10-15 07:01:31] Brain Pull: Downloaded BSC-SOW-2026-SCH001.html from Drive (690-Building_Construction) → inbox
+- [2026-10-15 07:01:33] Brain Pull: Downloaded BSC-SOW-2026-SCH001.pdf from Drive (690-Building_Construction) → inbox
+- [2026-10-17 07:00:51] Brain Pull: Downloaded INDEX.md from Drive (697-HVAC) → inbox
+- [2026-10-17 07:01:08] Inbox route [📄 content marker 'hvac']: INDEX.md → 697-HVAC (SHA256: bf85d1319705...)

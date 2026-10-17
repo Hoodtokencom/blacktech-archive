@@ -405,14 +405,18 @@ if __name__ == "__main__":
         for c in changes:
             print(c)
             # Log each change to the blockchain
+            # All change prefixes ("  + NEW: ", "  ~ MOD: ", "  - DEL: ") are
+            # exactly 9 chars. The old c[5:] slice captured "EW: <path>" /
+            # "OD: <path>" / "EL: <path>" — 4,935 ledger blocks since June
+            # carry the bogus "EW: " prefix (trigger=sync). Slice 9, not 5.
             if c.startswith("  + "):
-                fpath = os.path.join(BRAIN, c[5:].strip())
+                fpath = os.path.join(BRAIN, c[9:].strip())
                 subprocess.run(f"{BLOCKCHAIN} log CREATE '{fpath}' --trigger sync", shell=True, capture_output=True, timeout=5)
             elif c.startswith("  ~ "):
-                fpath = os.path.join(BRAIN, c[5:].strip())
+                fpath = os.path.join(BRAIN, c[9:].strip())
                 subprocess.run(f"{BLOCKCHAIN} log MODIFY '{fpath}' --trigger sync", shell=True, capture_output=True, timeout=5)
             elif c.startswith("  - "):
-                fpath = c[5:].strip()  # deleted file — no full path available
+                fpath = c[9:].strip()  # deleted file — no full path available
                 subprocess.run(f"{BLOCKCHAIN} log DELETE '{fpath}' --trigger sync", shell=True, capture_output=True, timeout=5)
     else:
         print(f"   No changes")

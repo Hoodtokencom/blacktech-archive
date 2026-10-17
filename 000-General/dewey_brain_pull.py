@@ -124,14 +124,24 @@ def list_drive_files(folder_id):
 
 
 def list_body_files(section_dir):
-    """List all filenames in a Body section directory."""
+    """List all filenames in a Body section directory — RECURSIVELY.
+
+    The sync flattens subfolder content to the Drive section ROOT
+    (sync_to_drive uploads every file to DRIVE_FOLDERS[section]), so a file
+    filed in Body at 690/jobs/<Job>/ sat on Drive at the 690 root and
+    name-diffed as 'new' on EVERY pull — a daily re-download loop (the
+    2026-10-15 BSC-SOW-2026-SCH001 pair). A file present in a Body SUBFOLDER
+    is present in Body; count it so the root diff can't resurrect it.
+    """
     section_path = os.path.join(BRAIN_DIR, section_dir)
     if not os.path.isdir(section_path):
         return set()
     files = set()
-    for f in os.listdir(section_path):
-        full = os.path.join(section_path, f)
-        if os.path.isfile(full) and not f.startswith('.'):
+    for root, dirs, fnames in os.walk(section_path):
+        dirs[:] = [d for d in dirs if d != '__pycache__']
+        for f in fnames:
+            if f.startswith('.') or f.endswith(('.pyc', '.tmp', '.part')):
+                continue
             files.add(f)
     return files
 

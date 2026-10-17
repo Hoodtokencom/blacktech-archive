@@ -138,8 +138,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 6096625,
-    "modified": "2026-10-13T07:32:01.265766",
+    "size": 6127321,
+    "modified": "2026-10-17T07:01:08.029889",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
   {
@@ -182,8 +182,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_brain_pull.py",
     "type": "code",
-    "size": 15661,
-    "modified": "2026-10-12T06:15:07.733378",
+    "size": 16208,
+    "modified": "2026-10-15T07:26:58.941641",
     "internal_key": "internal:000-General/dewey_brain_pull.py"
   },
   {
@@ -193,8 +193,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 7564599,
-    "modified": "2026-10-13T07:28:27.000176",
+    "size": 7564875,
+    "modified": "2026-10-17T06:15:52.943777",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
   {
@@ -215,8 +215,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_code_changelog.json",
     "type": "data",
-    "size": 93795,
-    "modified": "2026-10-12T12:00:31.820828",
+    "size": 115882,
+    "modified": "2026-10-17T06:00:05.168603",
     "internal_key": "internal:000-General/dewey_code_changelog.json"
   },
   {
@@ -237,8 +237,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_inbox_router.py",
     "type": "code",
-    "size": 16852,
-    "modified": "2026-09-20T11:28:05.236806",
+    "size": 17085,
+    "modified": "2026-10-15T07:27:06.209692",
     "internal_key": "internal:000-General/dewey_inbox_router.py"
   },
   {
@@ -259,8 +259,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_manifest.json",
     "type": "data",
-    "size": 10537,
-    "modified": "2026-09-20T10:51:43.766913",
+    "size": 10595,
+    "modified": "2026-10-15T07:29:37.066741",
     "internal_key": "internal:000-General/dewey_manifest.json"
   },
   {
@@ -325,8 +325,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_sync.py",
     "type": "code",
-    "size": 20697,
-    "modified": "2026-10-13T06:43:16.399552",
+    "size": 21003,
+    "modified": "2026-10-15T07:26:58.941641",
     "internal_key": "internal:000-General/dewey_sync.py"
   },
   {
@@ -336,8 +336,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_trash_log.json",
     "type": "data",
-    "size": 166380,
-    "modified": "2026-10-13T03:00:14.978014",
+    "size": 167677,
+    "modified": "2026-10-17T03:00:25.054058",
     "internal_key": "internal:000-General/dewey_trash_log.json"
   },
   {
@@ -5168,6 +5168,28 @@
     "size": 11540,
     "modified": "2026-06-28T15:45:10.737566",
     "internal_key": "internal:690-Building_Construction/60628_churches.txt"
+  },
+  {
+    "title": "BSC-SOW-2026-SCH001.html",
+    "section": "690-Building_Construction",
+    "dewey": "690",
+    "dewey_desc": "Building & Construction",
+    "file": "690-Building_Construction/jobs/10N_Martingale_Schaumburg_Telecom/BSC-SOW-2026-SCH001.html",
+    "type": "web",
+    "size": 15029,
+    "modified": "2026-10-14T07:33:05.876402",
+    "internal_key": "internal:690-Building_Construction/jobs/10N_Martingale_Schaumburg_Telecom/BSC-SOW-2026-SCH001.html"
+  },
+  {
+    "title": "BSC-SOW-2026-SCH001.pdf",
+    "section": "690-Building_Construction",
+    "dewey": "690",
+    "dewey_desc": "Building & Construction",
+    "file": "690-Building_Construction/jobs/10N_Martingale_Schaumburg_Telecom/BSC-SOW-2026-SCH001.pdf",
+    "type": "pdf",
+    "size": 57032,
+    "modified": "2026-10-14T07:33:05.876402",
+    "internal_key": "internal:690-Building_Construction/jobs/10N_Martingale_Schaumburg_Telecom/BSC-SOW-2026-SCH001.pdf"
   },
   {
     "title": "Blacktech_SadTalker_v2.ipynb",
@@ -95927,7 +95949,7 @@
     "file": "697-HVAC/INDEX.md",
     "type": "text",
     "size": 16,
-    "modified": "2026-09-20T07:03:53.530292",
+    "modified": "2026-10-17T07:00:51.285717",
     "internal_key": "internal:697-HVAC/INDEX.md"
   },
   {
@@ -96344,8 +96366,8 @@
     "dewey_desc": "Decisions & Logs",
     "file": "999-Decisions_Logs/change_history.md",
     "type": "text",
-    "size": 845456,
-    "modified": "2026-10-13T07:32:01.393767",
+    "size": 845899,
+    "modified": "2026-10-17T07:01:08.725896",
     "internal_key": "internal:999-Decisions_Logs/change_history.md"
   },
   {
@@ -110568,7 +110590,7 @@
     "file": "_archive/Dewey Brain/000-General/Backups/2026-06-14_020001/data/blacktech_core.db-shm",
     "type": "file",
     "size": 32768,
-    "modified": "2026-10-13T07:05:05.605263",
+    "modified": "2026-10-16T19:53:16.195977",
     "internal_key": "internal:_archive/Dewey Brain/000-General/Backups/2026-06-14_020001/data/blacktech_core.db-shm"
   },
   {
@@ -110579,7 +110601,7 @@
     "file": "_archive/Blacktech Solutions Corp/_Pi_Backup/data/blacktech_core.db-shm",
     "type": "file",
     "size": 32768,
-    "modified": "2026-10-13T07:05:05.617263",
+    "modified": "2026-10-16T19:53:16.335979",
     "internal_key": "internal:_archive/Blacktech Solutions Corp/_Pi_Backup/data/blacktech_core.db-shm"
   },
   {
@@ -115782,7 +115804,7 @@
     "file": "_archive/Dewey Brain/000-General/Backups/2026-06-14_020001/data/field_tracker.db-shm",
     "type": "file",
     "size": 32768,
-    "modified": "2026-10-13T07:05:05.605263",
+    "modified": "2026-10-16T19:53:16.195977",
     "internal_key": "internal:_archive/Dewey Brain/000-General/Backups/2026-06-14_020001/data/field_tracker.db-shm"
   },
   {
@@ -115793,7 +115815,7 @@
     "file": "_archive/Blacktech Solutions Corp/_Pi_Backup/data/field_tracker.db-shm",
     "type": "file",
     "size": 32768,
-    "modified": "2026-10-13T07:05:05.613263",
+    "modified": "2026-10-16T19:53:16.331979",
     "internal_key": "internal:_archive/Blacktech Solutions Corp/_Pi_Backup/data/field_tracker.db-shm"
   },
   {

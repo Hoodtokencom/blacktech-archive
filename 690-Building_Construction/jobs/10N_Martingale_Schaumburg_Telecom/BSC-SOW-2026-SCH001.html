@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BSC-SOW-2026-SCH001 - Security Panel / Access Control Scope</title>
+<style>
+  @page { margin: 0.5in; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Helvetica Neue', Arial, sans-serif; color: #0a0a0f; font-size: 12px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .header { display: flex; justify-content: space-between; align-items: center; background: #002244; padding: 12px 20px; }
+  .header img { height: 60px; border-radius: 4px; background: #fff; padding: 3px; }
+  .doc-badge { text-align: right; color: #fff; }
+  .doc-badge .label { font-size: 9px; color: #A5ACAF; letter-spacing: 1px; }
+  .doc-badge .type { font-size: 16px; font-weight: 700; color: #69BE28; }
+  .doc-badge .num { font-size: 11px; color: #fff; }
+  .doc-badge .date { font-size: 10px; color: #A5ACAF; }
+  .section { margin-bottom: 14px; padding: 0 20px; }
+  .section-title { font-weight: bold; font-size: 11px; color: #002244; text-transform: uppercase; margin-bottom: 6px; border-bottom: 2px solid #69BE28; padding-bottom: 3px; }
+  .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 20px; }
+  .info-grid div { font-size: 11px; }
+  .info-grid .label { font-weight: bold; color: #002244; }
+  .info-grid .value { color: #333; }
+  .scope-block { margin: 0 20px 14px 20px; padding: 12px; background: #f9f9f5; border-left: 4px solid #69BE28; }
+  .scope-block h3 { font-size: 12px; margin-bottom: 8px; color: #002244; }
+  .scope-block ul { padding-left: 20px; }
+  .scope-block li { font-size: 11px; margin-bottom: 5px; line-height: 1.5; }
+  table.sched { width: 100%; border-collapse: collapse; margin-top: 4px; }
+  table.sched th { background: #002244; color: #fff; font-size: 10px; text-align: left; padding: 5px 8px; text-transform: uppercase; letter-spacing: .5px; }
+  table.sched td { font-size: 10.5px; padding: 5px 8px; border-bottom: 1px solid #dcdcdc; }
+  table.sched tr:nth-child(even) td { background: #f7f7f4; }
+  .notes { font-size: 10px; color: #555; line-height: 1.5; background: #fff8e1; border: 1px solid #f5a623; border-radius: 4px; padding: 10px; margin: 0 20px 14px 20px; }
+  .notes strong { color: #002244; }
+  .sig { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 0 20px 14px 20px; }
+  .sig div { border-top: 1px solid #999; padding-top: 4px; font-size: 9.5px; color: #555; }
+  .footer { background: #002244; color: #fff; text-align: center; font-size: 9px; padding: 10px 20px; }
+  .footer .green { color: #69BE28; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="data:image/jpeg;base64,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" alt="Blacktech">
+  <div class="doc-badge">
+    <div class="label">DOCUMENT</div>
+    <div class="type">SCOPE OF WORK</div>
+    <div class="num">BSC-SOW-2026-SCH001</div>
+    <div class="date">October 14, 2026</div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Project Information</div>
+  <div class="info-grid">
+    <div><span class="label">Site:</span> <span class="value">10 N Martingale Rd, Suite 650, Schaumburg, IL 60173</span></div>
+    <div><span class="label">Job No.:</span> <span class="value">26-495</span></div>
+    <div><span class="label">Work Type:</span> <span class="value">Security Panel &mdash; 4-Door Access Control</span></div>
+    <div><span class="label">Head-End:</span> <span class="value">4-door access control panel (smart hub)</span></div>
+    <div><span class="label">Door Positions:</span> <span class="value">Front &middot; Back &middot; TD</span></div>
+    <div><span class="label">Pricing:</span> <span class="value">Scope only &mdash; no pricing in this document</span></div>
+  </div>
+</div>
+
+<div class="scope-block">
+  <h3>Scope of Work &mdash; Security Panel / Access Control</h3>
+  <ul>
+    <li>Furnish and install 4-door access control head-end panel (smart hub) at the designated security location</li>
+    <li>Furnish and install card reader at each door position &mdash; Front, Back, TD</li>
+    <li>Pull and terminate reader cable &mdash; 18/4, no shield (S+) &mdash; one run per reader</li>
+    <li>Install door strike &mdash; low profile (LP) &mdash; on 18/4 cable (orange)</li>
+    <li>Install door contact on 22/2 cable (green)</li>
+    <li>Install maglock and request-to-exit (REX) on 22/4 cable (red), N/O, on the maglock door</li>
+    <li>Terminate, label, and test all field devices back at the panel</li>
+    <li>Verify port-to-door mapping &mdash; Port 1-1 = Front; Reader 2 = Back; Reader 3 = TD</li>
+    <li>Program credentials and door groups; demonstrate operation to the owner representative</li>
+    <li>Provide as-built wire schedule and test documentation at closeout</li>
+  </ul>
+</div>
+
+<div class="section">
+  <div class="section-title">Cable Schedule &mdash; Per Field Wiring Note</div>
+  <table class="sched">
+    <tr><th>Device</th><th>Cable</th><th>Notes</th></tr>
+    <tr><td>Card reader</td><td>18/4 &mdash; no shield (S+)</td><td>Front, Back, TD</td></tr>
+    <tr><td>Door strike (LP)</td><td>18/4 &mdash; orange</td><td>Strike door &mdash; separate door from maglock</td></tr>
+    <tr><td>Door contact</td><td>22/2 &mdash; green</td><td>Per door position</td></tr>
+    <tr><td>Maglock / REX</td><td>22/4 &mdash; red</td><td>N/O &mdash; maglock door</td></tr>
+    <tr><td>Panel ports</td><td>&mdash;</td><td>Port 1-1 = Front &middot; Reader 2 = Back &middot; Reader 3 = TD</td></tr>
+  </table>
+</div>
+
+<div class="notes">
+  <strong>Notes:</strong><br>
+  &bull; <strong>Scope only &mdash; no pricing included.</strong> Hardware quantities and pricing to be provided by the security vendor.<br>
+  &bull; Door strike and maglock are on <strong>separate doors</strong>.<br>
+  &bull; Door count, device quantities, and cable lengths to be confirmed against the approved door schedule and site conditions.<br>
+  &bull; Contractor to verify power source, cable pathway, and head-end location prior to rough-in.<br>
+  &bull; All low-voltage work performed by a licensed electrician (ICC EESP, EV, DG certified).<br>
+  &bull; Coordinate access and work hours with building management / owner representative.
+</div>
+
+<div class="section">
+  <div class="section-title">Acceptance</div>
+  <div class="sig">
+    <div>Blacktech Solutions Corp &mdash; Authorized Signature / Date</div>
+    <div>Owner / Representative &mdash; Signature / Date</div>
+  </div>
+</div>
+
+<div class="footer">
+  <span class="green">Blacktech Solutions Corp</span> &bull; 14076 Lincoln Ave, Dolton, IL 60419 &bull; 312-965-2782<br>
+  Licensed Electrical Contractor &bull; ICC EESP, EV, DG &bull; MBE Certified
+</div>
+
+</body>
+</html>
