@@ -77391,6 +77391,33 @@
       },
       "hash": "0ead1847027cbfc325e8849c73eddb2173259cfd9d3d85614f5fb55199cb2cb7",
       "prev_hash": "e8a30db42713de7492c348efdd7f2af8387cc88e7f7eeb62d76169f25bb9135a"
+    },
+    {
+      "index": 5528,
+      "timestamp": "2026-10-19T02:00:59.896961",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_GENERATED",
+        "sow_id": "BSC-SOW-2026-5529",
+        "source": ".estimate_followup_state.json",
+        "output": "/home/allenai/blacktech_brain/692-Auxiliary_Practices/sow/BSC-SOW-2026-5529.md",
+        "generated_by": "Qwen Legislative Agent"
+      },
+      "hash": "2b2b9bf082c11ebc35a85721dab55e37ee8205b0fcea99ede32ace526e3aac24",
+      "prev_hash": "0ead1847027cbfc325e8849c73eddb2173259cfd9d3d85614f5fb55199cb2cb7"
+    },
+    {
+      "index": 5529,
+      "timestamp": "2026-10-19T02:03:18.181137",
+      "type": "CREATE",
+      "data": {
+        "action": "SOW_VOIDED",
+        "sow_id": "BSC-SOW-2026-5529",
+        "reason": "False positive: generated from internal state file .estimate_followup_state.json (hidden dotfile, not a client order). File removed. Generator patched same-day to skip dotfiles + INTERNAL_IGNORE set.",
+        "corrected_by": "Qwen Legislative Agent (2026-10-19 run)"
+      },
+      "hash": "1d0641504b7db56c9dbaa5e5473b7b556b464eb531e61da9af37be6ce67c89c5",
+      "prev_hash": "2b2b9bf082c11ebc35a85721dab55e37ee8205b0fcea99ede32ace526e3aac24"
     }
   ]
 }

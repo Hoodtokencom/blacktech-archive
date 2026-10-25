@@ -1,0 +1,32 @@
+{
+ "last_run": "2026-10-24",
+ "run_log": {"2026-10-24": "clean — no new estimates/SOWs since 10-16; watch items not due; no new invoices; backlog unchanged"},
+ "reported_backlog": {
+  "date": "2026-10-18",
+  "stale_no_invoice": [
+   "BSC-E-2026-RCC001", "BSC-E-2026-TRU001", "BSC-E-2026-BIS001",
+   "BSC-E-2026-BIS002-A/B", "BSC-E-2026-COM001", "BSC-E-2026-PR001..004",
+   "BSC-E-2026-T8L001-A/B", "BSC-E-2026-WEN001-A/B", "BSC-E-2026-WEN002-A/B",
+   "BSC-E-2026-LAK001-A/B", "BSC-E-2026-HAL001-A/B", "BSC-E-2026-LPA-A/B",
+   "BSC-E-2026-LPA2-A/B", "BSC-E-2026-RHO001",
+   "BSC-E-2026-NET001-A/B (added 2026-10-21: issued 09/16, 35d no invoice, reported to Derrell)"
+  ],
+  "note": "Jun 25 - Sep 16 estimates with no PayBooks invoice. Reported 2026-10-18 (NET001 added 2026-10-21); do not re-flag unless status changes."
+ },
+ "watch": {
+  "BSC-E-2026-PDC001-A/B/C/INT": {"issued": "2026-10-13", "followup_due": "2026-10-27"},
+  "BSC-E-2026-PDC002-A/B": {"issued": "2026-10-16", "followup_due": "2026-10-30"}
+ },
+ "resolved": {
+  "BSC-E-2026-RHO002-A/B": {
+   "resolved": "2026-10-21",
+   "how": "Converted to BSC-INV-1361-R2 (ref BSC-E-2026-RHO002-A); removed from watch 2026-10-20 due date passed"
+  }
+ },
+ "unpaid_invoices": {
+  "asof": "2026-10-21",
+  "ids": ["1361 partial ($3,300 of $65,000)", "1350", "1357", "1358", "1359", "1360", "INV-2025-0001"],
+  "note": "All issued 2026-06; pre-date this tracker's remit. 1361-R2 revised 2026-10-12."
+ },
+ "false_positives_note": "BSC-E-2026-LON001..015 files are INVOICED docs mislabeled with BSC-E prefix (status=invoiced in PayBooks DB) — never treat as drafts."
+}
