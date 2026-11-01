@@ -1,6 +1,13 @@
 {
- "last_run": "2026-10-24",
- "run_log": {"2026-10-24": "clean — no new estimates/SOWs since 10-16; watch items not due; no new invoices; backlog unchanged"},
+ "last_run": "2026-10-31",
+ "run_log": {
+  "2026-10-31": "clean — no new files since 10-16 PDC002 (estimates) / 10-13 SOW-5528 (692 sow/); no new invoices (latest created INV-1348 Sep 6; no PDC/RHO002 estimate_id matches); PDC001 flagged 10-27 + PDC002 flagged 10-30, both status unchanged (no invoice), no re-flag; SCH001 (10-14) is a Scope-of-Work doc not an estimate (no Option B/total = by design, false positive); drafts in DB unchanged (June relics); backlog unchanged",
+  "2026-10-24": "clean — no new estimates/SOWs since 10-16; watch items not due; no new invoices; backlog unchanged",
+  "2026-10-25": "clean — no new estimates/SOWs since 10-13 (sow/ dir mtime 10-19, no new files); PDC001-C 'missing Option B' is a false positive (A/B/C set); watch items not due (PDC001 due 10-27, PDC002 due 10-30); backlog unchanged",
+  "2026-10-26": "clean — no new estimates since 10-16 PDC002 (only job-support docs: duct diagram xlsx 10-21, fire alarm workbook 10-23); no new bids in 692; no new invoices (latest created still INV-1348 Sep 6; 1361-R2 was a revision); PDC001 followup due TOMORROW 10-27 — flag then; backlog unchanged",
+  "2026-10-27": "FLAGGED PDC001 followup to Derrell (issued 10-13, 14 days elapsed, no invoice in PayBooks DB — latest created invoice still 1348/Sep 6); PDC002 not due until 10-30; no new estimates since 10-16 PDC002; no new bids in 692; backlog unchanged",
+  "2026-10-28": "clean — no new files since 10-16 PDC002 (find newer-than-10-27 = empty); PDC001 already flagged 10-27 (status unchanged, no re-flag); PDC002 due 10-30; PDC002-A/B verified have Option B + totals (6 total matches each); no new invoices (latest created still 1348/Sep 6); backlog unchanged",
+  "2026-10-29": "clean — no new estimates/bids since 10-16 PDC002; no new invoices (latest created INV-1348 Sep 6, no estimate_id matching PDC); PDC001 already flagged 10-27 status unchanged, no re-flag; PDC002 due TOMORROW 10-30 — flag then; drafts in DB unchanged (June relics); backlog unchanged"},
  "reported_backlog": {
   "date": "2026-10-18",
   "stale_no_invoice": [
@@ -14,8 +21,16 @@
   "note": "Jun 25 - Sep 16 estimates with no PayBooks invoice. Reported 2026-10-18 (NET001 added 2026-10-21); do not re-flag unless status changes."
  },
  "watch": {
-  "BSC-E-2026-PDC001-A/B/C/INT": {"issued": "2026-10-13", "followup_due": "2026-10-27"},
-  "BSC-E-2026-PDC002-A/B": {"issued": "2026-10-16", "followup_due": "2026-10-30"}
+  "BSC-E-2026-PDC001-A/B/C/INT": {
+   "issued": "2026-10-13",
+   "followup_due": "2026-10-27",
+   "status": "DUE 2026-10-27 — flagged to Derrell, awaiting followup/invoice"
+  },
+  "BSC-E-2026-PDC002-A/B": {
+   "issued": "2026-10-16",
+   "followup_due": "2026-10-30",
+   "status": "DUE 2026-10-30 — flagged to Derrell, awaiting followup/invoice"
+  }
  },
  "resolved": {
   "BSC-E-2026-RHO002-A/B": {

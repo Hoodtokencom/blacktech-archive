@@ -320,7 +320,7 @@ def cmd_sync():
         ["rclone", "sync", BRAIN_ROOT, f"gdrive:{GDRIVE_BRAIN_PATH}",
          "--exclude", "*.enc", "--exclude", "*.salt",
          "--exclude", "__pycache__/"],
-        capture_output=True, text=True, timeout=60
+        capture_output=True, text=True, timeout=7200
     )
     if result.returncode == 0:
         print(f"✅ Synced to Google Drive: {GDRIVE_BRAIN_PATH}")
