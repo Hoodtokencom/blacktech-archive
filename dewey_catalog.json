@@ -94,8 +94,8 @@
     "dewey_desc": "General",
     "file": "000-General/blockchain.json",
     "type": "data",
-    "size": 3116777,
-    "modified": "2026-10-13T02:11:28.187622",
+    "size": 3118009,
+    "modified": "2026-10-19T02:03:18.299960",
     "internal_key": "internal:000-General/blockchain.json"
   },
   {
@@ -138,8 +138,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 6127321,
-    "modified": "2026-10-17T07:01:08.029889",
+    "size": 6212609,
+    "modified": "2026-11-04T06:26:33.481606",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
   {
@@ -193,8 +193,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 7564875,
-    "modified": "2026-10-17T06:15:52.943777",
+    "size": 7563599,
+    "modified": "2026-11-04T06:26:16.830120",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
   {
@@ -215,8 +215,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_code_changelog.json",
     "type": "data",
-    "size": 115882,
-    "modified": "2026-10-17T06:00:05.168603",
+    "size": 157742,
+    "modified": "2026-11-03T12:01:03.185002",
     "internal_key": "internal:000-General/dewey_code_changelog.json"
   },
   {
@@ -229,6 +229,17 @@
     "size": 19771,
     "modified": "2026-06-26T07:01:22.208620",
     "internal_key": "internal:000-General/dewey_code_tracker.py"
+  },
+  {
+    "title": "dewey_drive_backfill.py",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/dewey_drive_backfill.py",
+    "type": "code",
+    "size": 8418,
+    "modified": "2026-11-04T06:20:00.906613",
+    "internal_key": "internal:000-General/dewey_drive_backfill.py"
   },
   {
     "title": "dewey_inbox_router.py",
@@ -281,8 +292,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_pipeline.py",
     "type": "code",
-    "size": 15540,
-    "modified": "2026-09-20T11:25:44.780084",
+    "size": 15542,
+    "modified": "2026-10-31T03:20:01.035557",
     "internal_key": "internal:000-General/dewey_pipeline.py"
   },
   {
@@ -336,8 +347,8 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_trash_log.json",
     "type": "data",
-    "size": 167677,
-    "modified": "2026-10-17T03:00:25.054058",
+    "size": 168743,
+    "modified": "2026-11-04T03:00:06.677344",
     "internal_key": "internal:000-General/dewey_trash_log.json"
   },
   {
@@ -2715,6 +2726,28 @@
     "size": 14722,
     "modified": "2026-06-30T07:13:56.263384",
     "internal_key": "internal:600-Technology/data/vendors.json"
+  },
+  {
+    "title": "Wealth_Path_2026-11-01.md",
+    "section": "600-Wealth_Precious_Metals",
+    "dewey": "600",
+    "dewey_desc": "Technology",
+    "file": "600-Wealth_Precious_Metals/Wealth_Path_2026-11-01.md",
+    "type": "text",
+    "size": 3970,
+    "modified": "2026-11-01T11:03:17.647174",
+    "internal_key": "internal:600-Wealth_Precious_Metals/Wealth_Path_2026-11-01.md"
+  },
+  {
+    "title": "Wealth_Path_2026-11-01.png",
+    "section": "600-Wealth_Precious_Metals",
+    "dewey": "600",
+    "dewey_desc": "Technology",
+    "file": "600-Wealth_Precious_Metals/Wealth_Path_2026-11-01.png",
+    "type": "file",
+    "size": 180662,
+    "modified": "2026-11-01T11:03:17.651174",
+    "internal_key": "internal:600-Wealth_Precious_Metals/Wealth_Path_2026-11-01.png"
   },
   {
     "title": "black-family-legacy-trust.json",
@@ -95975,17 +96008,6 @@
     "internal_key": "internal:697-HVAC/electrification_schematic.html"
   },
   {
-    "title": "index.md",
-    "section": "697-HVAC",
-    "dewey": "697",
-    "dewey_desc": "HVAC",
-    "file": "697-HVAC/index.md",
-    "type": "text",
-    "size": 1927,
-    "modified": "2026-09-21T07:11:42.546806",
-    "internal_key": "internal:697-HVAC/index.md"
-  },
-  {
     "title": "INDEX.md",
     "section": "700-Arts_Recreation",
     "dewey": "700",
@@ -96107,14 +96129,36 @@
     "internal_key": "internal:800-Literature/INDEX.md"
   },
   {
+    "title": "2026-10_project_history_report.md",
+    "section": "900-History_Geography",
+    "dewey": "900",
+    "dewey_desc": "History & Geography",
+    "file": "900-History_Geography/2026-10_project_history_report.md",
+    "type": "text",
+    "size": 1671,
+    "modified": "2026-10-25T11:01:27.164992",
+    "internal_key": "internal:900-History_Geography/2026-10_project_history_report.md"
+  },
+  {
+    "title": "2026-11_project_history_report.md",
+    "section": "900-History_Geography",
+    "dewey": "900",
+    "dewey_desc": "History & Geography",
+    "file": "900-History_Geography/2026-11_project_history_report.md",
+    "type": "text",
+    "size": 2371,
+    "modified": "2026-11-01T11:00:56.679388",
+    "internal_key": "internal:900-History_Geography/2026-11_project_history_report.md"
+  },
+  {
     "title": "INDEX.md",
     "section": "900-History_Geography",
     "dewey": "900",
     "dewey_desc": "History & Geography",
     "file": "900-History_Geography/INDEX.md",
     "type": "text",
-    "size": 233,
-    "modified": "2026-09-20T08:28:16.053394",
+    "size": 459,
+    "modified": "2026-11-01T11:00:57.907386",
     "internal_key": "internal:900-History_Geography/INDEX.md"
   },
   {
@@ -110583,50 +110627,6 @@
     "internal_key": "internal:_archive/Blacktech Solutions Corp/_Pi_Backup/data/blacktech_core.db"
   },
   {
-    "title": "blacktech_core.db-shm",
-    "section": "_archive",
-    "dewey": "_archive",
-    "dewey_desc": "Unknown",
-    "file": "_archive/Dewey Brain/000-General/Backups/2026-06-14_020001/data/blacktech_core.db-shm",
-    "type": "file",
-    "size": 32768,
-    "modified": "2026-10-16T19:53:16.195977",
-    "internal_key": "internal:_archive/Dewey Brain/000-General/Backups/2026-06-14_020001/data/blacktech_core.db-shm"
-  },
-  {
-    "title": "blacktech_core.db-shm",
-    "section": "_archive",
-    "dewey": "_archive",
-    "dewey_desc": "Unknown",
-    "file": "_archive/Blacktech Solutions Corp/_Pi_Backup/data/blacktech_core.db-shm",
-    "type": "file",
-    "size": 32768,
-    "modified": "2026-10-16T19:53:16.335979",
-    "internal_key": "internal:_archive/Blacktech Solutions Corp/_Pi_Backup/data/blacktech_core.db-shm"
-  },
-  {
-    "title": "blacktech_core.db-wal",
-    "section": "_archive",
-    "dewey": "_archive",
-    "dewey_desc": "Unknown",
-    "file": "_archive/Dewey Brain/000-General/Backups/2026-06-14_020001/data/blacktech_core.db-wal",
-    "type": "file",
-    "size": 0,
-    "modified": "2026-09-25T18:00:23.454052",
-    "internal_key": "internal:_archive/Dewey Brain/000-General/Backups/2026-06-14_020001/data/blacktech_core.db-wal"
-  },
-  {
-    "title": "blacktech_core.db-wal",
-    "section": "_archive",
-    "dewey": "_archive",
-    "dewey_desc": "Unknown",
-    "file": "_archive/Blacktech Solutions Corp/_Pi_Backup/data/blacktech_core.db-wal",
-    "type": "file",
-    "size": 0,
-    "modified": "2026-09-05T07:01:02.057527",
-    "internal_key": "internal:_archive/Blacktech Solutions Corp/_Pi_Backup/data/blacktech_core.db-wal"
-  },
-  {
     "title": "blacktech_logo.jpg",
     "section": "_archive",
     "dewey": "_archive",
@@ -115795,50 +115795,6 @@
     "size": 28672,
     "modified": "2026-06-16T06:32:48.631000",
     "internal_key": "internal:_archive/Blacktech Solutions Corp/_Pi_Backup/data/field_tracker.db"
-  },
-  {
-    "title": "field_tracker.db-shm",
-    "section": "_archive",
-    "dewey": "_archive",
-    "dewey_desc": "Unknown",
-    "file": "_archive/Dewey Brain/000-General/Backups/2026-06-14_020001/data/field_tracker.db-shm",
-    "type": "file",
-    "size": 32768,
-    "modified": "2026-10-16T19:53:16.195977",
-    "internal_key": "internal:_archive/Dewey Brain/000-General/Backups/2026-06-14_020001/data/field_tracker.db-shm"
-  },
-  {
-    "title": "field_tracker.db-shm",
-    "section": "_archive",
-    "dewey": "_archive",
-    "dewey_desc": "Unknown",
-    "file": "_archive/Blacktech Solutions Corp/_Pi_Backup/data/field_tracker.db-shm",
-    "type": "file",
-    "size": 32768,
-    "modified": "2026-10-16T19:53:16.331979",
-    "internal_key": "internal:_archive/Blacktech Solutions Corp/_Pi_Backup/data/field_tracker.db-shm"
-  },
-  {
-    "title": "field_tracker.db-wal",
-    "section": "_archive",
-    "dewey": "_archive",
-    "dewey_desc": "Unknown",
-    "file": "_archive/Dewey Brain/000-General/Backups/2026-06-14_020001/data/field_tracker.db-wal",
-    "type": "file",
-    "size": 0,
-    "modified": "2026-09-25T18:00:23.454052",
-    "internal_key": "internal:_archive/Dewey Brain/000-General/Backups/2026-06-14_020001/data/field_tracker.db-wal"
-  },
-  {
-    "title": "field_tracker.db-wal",
-    "section": "_archive",
-    "dewey": "_archive",
-    "dewey_desc": "Unknown",
-    "file": "_archive/Blacktech Solutions Corp/_Pi_Backup/data/field_tracker.db-wal",
-    "type": "file",
-    "size": 0,
-    "modified": "2026-09-25T18:00:23.458052",
-    "internal_key": "internal:_archive/Blacktech Solutions Corp/_Pi_Backup/data/field_tracker.db-wal"
   },
   {
     "title": "field_tracker.log",

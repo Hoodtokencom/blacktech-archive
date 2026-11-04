@@ -162,9 +162,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_blockchain.json",
     "type": "data",
-    "size": 6185677,
-    "modified": "2026-10-31T06:02:22.864013",
-    "hash": "6d107fa8c18e270ccffb8f1e77f415b4c24d7aa985ea650c16d4c8547cc8e9af",
+    "size": 6212609,
+    "modified": "2026-11-04T06:26:33.481606",
+    "hash": "6efa095585fe3bc7c13c7d59be75e6596e7d744c26b49c9fa59ed14f0f29e8bf",
     "description": "[   {     \"index\": 0,     \"timestamp\": \"2026-06-23T00:00:00\",     \"action\": \"GENESIS\",     \"file\": \"\",     \"section\": \"000\",     \"dewey_class\": \"000\",",
     "internal_key": "internal:000-General/dewey_blockchain.json"
   },
@@ -227,9 +227,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_catalog.json",
     "type": "data",
-    "size": 7561722,
-    "modified": "2026-10-31T06:02:08.516028",
-    "hash": "a02cc6d1291e1485fd0f3fa2f85bf50f482c9417d61fd1697195cdd08a5439d3",
+    "size": 7563599,
+    "modified": "2026-11-04T06:26:16.830120",
+    "hash": "91e3d448136cbd978ac2dcc6ad5cfc8b19220de016762578e02eacb5a42ea555",
     "description": "[   {     \"title\": \"BSC-T-FAM-20260623.html\",     \"section\": \"000-General\",     \"dewey\": \"000\",     \"dewey_desc\": \"General\",     \"file\": \"000-General/",
     "internal_key": "internal:000-General/dewey_catalog.json"
   },
@@ -253,9 +253,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_code_changelog.json",
     "type": "data",
-    "size": 145947,
-    "modified": "2026-10-31T06:00:24.492117",
-    "hash": "85c05a3b4f635a7f17538028bda41fb46bf52b9f864b4bc14fd36622fbbb7a30",
+    "size": 157742,
+    "modified": "2026-11-03T12:01:03.185002",
+    "hash": "fbefd5d21f5828ec889909e86a4b72ee77f493dbbbc67335b26bc0d1b0bd3897",
     "description": "[   {     \"id\": 1,     \"timestamp\": \"2026-06-17T13:42:18.705287+00:00\",     \"who\": \"system\",     \"file\": \"/home/allenai/blacktech_brain/000-General/de",
     "internal_key": "internal:000-General/dewey_code_changelog.json"
   },
@@ -271,6 +271,19 @@
     "hash": "74c111f152533bde3e54f26be4a277a96aac17566d4937e62ed81cbdf9f2a68d",
     "description": "#!/usr/bin/env python3 \"\"\" Dewey Code Tracker \u2014 Automatic Code Change Documentation ========================================================= Every co",
     "internal_key": "internal:000-General/dewey_code_tracker.py"
+  },
+  {
+    "title": "dewey_drive_backfill.py",
+    "section": "000-General",
+    "dewey": "000",
+    "dewey_desc": "General",
+    "file": "000-General/dewey_drive_backfill.py",
+    "type": "code",
+    "size": 8418,
+    "modified": "2026-11-04T06:20:00.906613",
+    "hash": "e592cfe49483858bb3a2d9f417077d0fa6e9a53610277edec5e0030813c31daf",
+    "description": "#!/usr/bin/env python3 \"\"\"Dewey Drive Mirror Backfill \u2014 repairs stranded mirror debt.  The daily change-based sync has a documented landmine (dewey_sy",
+    "internal_key": "internal:000-General/dewey_drive_backfill.py"
   },
   {
     "title": "dewey_inbox_router.py",
@@ -396,9 +409,9 @@
     "dewey_desc": "General",
     "file": "000-General/dewey_trash_log.json",
     "type": "data",
-    "size": 167677,
-    "modified": "2026-10-31T03:00:47.037993",
-    "hash": "6f128c7cb61eb31e92cc43d462c7a64f01d4a34b1294b37c41932aba1f18dea1",
+    "size": 168743,
+    "modified": "2026-11-04T03:00:06.677344",
+    "hash": "4ccd233769f4ea2fecf265a24c9c91a86b7edc3cd68407d20fd9a205f6a8bb05",
     "description": "[   {     \"file\": \"697-HVAC/INDEX.md\",     \"deleted_at\": \"2026-06-25T11:31:36.366572\",     \"purge_due\": \"2026-08-09T11:31:36.366595\",     \"status\": \"p",
     "internal_key": "internal:000-General/dewey_trash_log.json"
   },
@@ -3209,6 +3222,32 @@
     "hash": "3e29eed7bc19636b1170945789862e7790237649e45db26b55e8994dd5b870b6",
     "description": "[   {     \"id\": \"v-001\",     \"name\": \"20A Duplex Outlet\",     \"partNumber\": \"\",     \"vendor\": \"Home Depot\",     \"category\": \"Devices\",     \"unit\": \"ea",
     "internal_key": "internal:600-Technology/data/vendors.json"
+  },
+  {
+    "title": "Wealth_Path_2026-11-01.md",
+    "section": "600-Wealth_Precious_Metals",
+    "dewey": "600",
+    "dewey_desc": "Technology",
+    "file": "600-Wealth_Precious_Metals/Wealth_Path_2026-11-01.md",
+    "type": "text",
+    "size": 3970,
+    "modified": "2026-11-01T11:03:17.647174",
+    "hash": "5261bc8a96169c313cf38f59043481c241d1e4f9fdec58590459030f998f9598",
+    "description": "# THE WEALTH PATH \u2014 Derrell Black / Blacktech Solutions Corp _v2, Nov 1 2026 \u2014 corrected: the $1,500/mo goes into the insurance policy, not into savin",
+    "internal_key": "internal:600-Wealth_Precious_Metals/Wealth_Path_2026-11-01.md"
+  },
+  {
+    "title": "Wealth_Path_2026-11-01.png",
+    "section": "600-Wealth_Precious_Metals",
+    "dewey": "600",
+    "dewey_desc": "Technology",
+    "file": "600-Wealth_Precious_Metals/Wealth_Path_2026-11-01.png",
+    "type": "file",
+    "size": 180662,
+    "modified": "2026-11-01T11:03:17.651174",
+    "hash": "c3ee106d173cee4830d534181caa206249a1a32c137ed220500059622181bdc2",
+    "description": "(binary/encrypted)",
+    "internal_key": "internal:600-Wealth_Precious_Metals/Wealth_Path_2026-11-01.png"
   },
   {
     "title": "black-family-legacy-trust.json",
@@ -113425,19 +113464,6 @@
     "internal_key": "internal:697-HVAC/electrification_schematic.html"
   },
   {
-    "title": "index.md",
-    "section": "697-HVAC",
-    "dewey": "697",
-    "dewey_desc": "HVAC",
-    "file": "697-HVAC/index.md",
-    "type": "text",
-    "size": 1927,
-    "modified": "2026-09-21T07:11:42.546806",
-    "hash": "3fe2c6035e59010754978c855b042b03bebcf5f5e6ea78277c023d90e596dcf9",
-    "description": "# Federal Contractors Directory \u2014 MEP NAICS  **Last Updated:** 2026-06-23   **Source:** USASpending.gov API (open, no key required)   **NAICS:** 23821",
-    "internal_key": "internal:697-HVAC/index.md"
-  },
-  {
     "title": "INDEX.md",
     "section": "700-Arts_Recreation",
     "dewey": "700",
@@ -113594,16 +113620,29 @@
     "internal_key": "internal:900-History_Geography/2026-10_project_history_report.md"
   },
   {
+    "title": "2026-11_project_history_report.md",
+    "section": "900-History_Geography",
+    "dewey": "900",
+    "dewey_desc": "History & Geography",
+    "file": "900-History_Geography/2026-11_project_history_report.md",
+    "type": "text",
+    "size": 2371,
+    "modified": "2026-11-01T11:00:56.679388",
+    "hash": "196b76b799c02374fcb85a90f6e87b354cb8d13f122658d1f037f4bb569885d9",
+    "description": "# Project History Report \u2014 November 2026 (covers full October)  Generated: 2026-11-01 11:00 CST (weekly 900-History_Geography / Project Historian agen",
+    "internal_key": "internal:900-History_Geography/2026-11_project_history_report.md"
+  },
+  {
     "title": "INDEX.md",
     "section": "900-History_Geography",
     "dewey": "900",
     "dewey_desc": "History & Geography",
     "file": "900-History_Geography/INDEX.md",
     "type": "text",
-    "size": 233,
-    "modified": "2026-09-20T08:28:16.053394",
-    "hash": "92fd4541bdace5565244f52b5a452341c7a18ecf732da75a30042f399f617948",
-    "description": "# 900-History Geography  > History, Geography, Biography \u2014 company history, project timelines, travel, maps  ## Contents  *This section is ready for f",
+    "size": 459,
+    "modified": "2026-11-01T11:00:57.907386",
+    "hash": "e28786c5e8c1fab995088aa35784e688e41bd56af749f69de6163a5eb18aba47",
+    "description": "# 900-History Geography  > History, Geography, Biography \u2014 company history, project timelines, travel, maps  ## Contents  ## Project history reports (",
     "internal_key": "internal:900-History_Geography/INDEX.md"
   },
   {

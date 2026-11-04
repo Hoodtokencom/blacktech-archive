@@ -1,13 +1,16 @@
 {
- "last_run": "2026-10-31",
+ "last_run": "2026-11-03",
  "run_log": {
-  "2026-10-31": "clean — no new files since 10-16 PDC002 (estimates) / 10-13 SOW-5528 (692 sow/); no new invoices (latest created INV-1348 Sep 6; no PDC/RHO002 estimate_id matches); PDC001 flagged 10-27 + PDC002 flagged 10-30, both status unchanged (no invoice), no re-flag; SCH001 (10-14) is a Scope-of-Work doc not an estimate (no Option B/total = by design, false positive); drafts in DB unchanged (June relics); backlog unchanged",
+  "2026-11-03": "clean — no new files in estimates/ since 10-16 PDC002 (find newer-than-11-02 empty); no new SOWs in 692 (sow/ dir empty of new since 10-19); PayBooks DB re-verified: 31 invoices, none referencing PDC001/PDC002/SCH001, zero created/updated since 10-30; PDC001 flagged 10-27 + PDC002 flagged 10-30, both awaiting Derrell action, status unchanged, no re-flag; drafts unchanged (June relics + known false positives); backlog unchanged",
+  "2026-11-02": "clean — no new estimates since 10-16 PDC002 (only job-support docs: fire alarm workbook 10-23, duct schedule 10-21); no new bids/SOWs in 692 (newest file = this state file 11-01); PayBooks DB verified: 31 invoices, latest created still INV-1348 Feb 6, no invoice matching PDC001/PDC002/SCH001 estimate_ids; PDC001 flagged 10-27 + PDC002 flagged 10-30, both status unchanged, no re-flag; drafts unchanged (June relics + known false positives); backlog unchanged",
+  "2026-11-01": "clean — no new estimates since 10-16 PDC002 / no new SOWs since 10-13 5525 (only job-support xlsx 10-21/10-23); PayBooks DB verified: no invoice created/updated since 1361 edit 10-12 (latest created INV-1348 Sep 6; no estimate_id matches PDC001/PDC002); PDC001 flagged 10-27 + PDC002 flagged 10-30, both status unchanged (no invoice), no re-flag; drafts unchanged (June relics + known false positives); backlog unchanged",
   "2026-10-24": "clean — no new estimates/SOWs since 10-16; watch items not due; no new invoices; backlog unchanged",
-  "2026-10-25": "clean — no new estimates/SOWs since 10-13 (sow/ dir mtime 10-19, no new files); PDC001-C 'missing Option B' is a false positive (A/B/C set); watch items not due (PDC001 due 10-27, PDC002 due 10-30); backlog unchanged",
+  "2026-10-25": "clean — no new estimates since 10-13 (sow/ dir mtime 10-19, no new files); PDC001-C 'missing Option B' is a false positive (A/B/C set); watch items not due (PDC001 due 10-27, PDC002 due 10-30); backlog unchanged",
   "2026-10-26": "clean — no new estimates since 10-16 PDC002 (only job-support docs: duct diagram xlsx 10-21, fire alarm workbook 10-23); no new bids in 692; no new invoices (latest created still INV-1348 Sep 6; 1361-R2 was a revision); PDC001 followup due TOMORROW 10-27 — flag then; backlog unchanged",
   "2026-10-27": "FLAGGED PDC001 followup to Derrell (issued 10-13, 14 days elapsed, no invoice in PayBooks DB — latest created invoice still 1348/Sep 6); PDC002 not due until 10-30; no new estimates since 10-16 PDC002; no new bids in 692; backlog unchanged",
   "2026-10-28": "clean — no new files since 10-16 PDC002 (find newer-than-10-27 = empty); PDC001 already flagged 10-27 (status unchanged, no re-flag); PDC002 due 10-30; PDC002-A/B verified have Option B + totals (6 total matches each); no new invoices (latest created still 1348/Sep 6); backlog unchanged",
-  "2026-10-29": "clean — no new estimates/bids since 10-16 PDC002; no new invoices (latest created INV-1348 Sep 6, no estimate_id matching PDC); PDC001 already flagged 10-27 status unchanged, no re-flag; PDC002 due TOMORROW 10-30 — flag then; drafts in DB unchanged (June relics); backlog unchanged"},
+  "2026-10-29": "clean — no new estimates/bids since 10-16 PDC002; no new invoices (latest created INV-1348 Sep 6, no estimate_id matching PDC); PDC001 already flagged 10-27 status unchanged, no re-flag; PDC002 due TOMORROW 10-30 — flag then; drafts in DB unchanged (June relics); backlog unchanged"
+ },
  "reported_backlog": {
   "date": "2026-10-18",
   "stale_no_invoice": [
@@ -18,7 +21,7 @@
    "BSC-E-2026-LPA2-A/B", "BSC-E-2026-RHO001",
    "BSC-E-2026-NET001-A/B (added 2026-10-21: issued 09/16, 35d no invoice, reported to Derrell)"
   ],
-  "note": "Jun 25 - Sep 16 estimates with no PayBooks invoice. Reported 2026-10-18 (NET001 added 2026-10-21); do not re-flag unless status changes."
+  "note": "Jun 25 - Sep 16 estimates with no PayBooks invoice. Reported 2026-10-18 (NET001 added 2026-10-21); do not re-flag unless status changes. Do NOT include RHO002 (resolved 10-21 → INV-1361-R2)."
  },
  "watch": {
   "BSC-E-2026-PDC001-A/B/C/INT": {
