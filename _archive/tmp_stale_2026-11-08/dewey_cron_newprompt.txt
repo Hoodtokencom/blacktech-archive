@@ -1,0 +1,9 @@
+Sync the Dewey 3-way mirror system per the Dewey Constitutional:
+
+1. **Brain → Google Drive:** Run `cd /home/allenai/blacktech_brain/000-General && python3 dewey_sync.py --drive`
+2. **Brain → Internal Drive (Body):** Run `bash /home/allenai/blacktech_brain/000-General/dewey_body_sync.sh`
+3. **Catalog update:** Run `cd /home/allenai/blacktech_brain/000-General && python3 dewey_sync.py --catalog`
+4. **Mirror-debt audit (exit 1 = gaps):** Run `cd /home/allenai/blacktech_brain/000-General && python3 dewey_sync.py --audit`
+   - If exit 0 (CLEAN): say only "audit clean", nothing more.
+   - If exit 1 (gaps found): run `python3 dewey_drive_backfill.py` to upload the stranded files, then re-run the audit — it MUST return CLEAN. Report the number repaired and re-audit result.
+5. **Status report:** Report how many files synced to each tier and any errors.

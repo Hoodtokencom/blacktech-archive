@@ -1,0 +1,57 @@
+/home/allenai/.hermes/profiles/derrell-black/home/.local/lib/python3.11/site-packages/google/api_core/_python_version_support.py:255: FutureWarning: You are using a Python version (3.11.2) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2027-10-24). Please upgrade to the latest Python version, or at least Python 3.12, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+🧠 Dewey Drive Backfill — 2026-11-04 06:20:41
+
+📂 Gap scan (audit semantics):
+  🔴 000-General: 1 missing / 40 cataloged
+  🟢 003-Computing_Science: 0 missing / 80 cataloged
+  🟢 100-Philosophy: 0 missing / 3 cataloged
+  🟢 200-Religion: 0 missing / 7 cataloged
+  🔴 300-Social_Sciences: 10 missing / 14 cataloged
+  🟢 400-Language: 0 missing / 2 cataloged
+  🟢 500-Science: 0 missing / 5 cataloged
+  🟢 600-Technology: 0 missing / 20 cataloged
+  🟢 600-Wealth_Precious_Metals: 0 missing / 4 cataloged
+  🟢 620-ComEd_Standard_Offering: 0 missing / 6 cataloged
+  🔴 640-Household_Favorites: 1 missing / 2 cataloged
+  🟢 650-Management_Business: 0 missing / 72 cataloged
+  🟢 657-Accounting_Finance: 0 missing / 17 cataloged
+  🔴 658-Marketing_Sales: 36 missing / 48 cataloged
+  🟢 690-Building_Construction: 0 missing / 16 cataloged
+  🟢 691-Building_Materials: 0 missing / 7 cataloged
+  🔴 692-Auxiliary_Practices: 2860 missing / 5538 cataloged
+  🟢 696-Utilities: 0 missing / 19 cataloged
+  🔴 697-HVAC: 2 missing / 3 cataloged
+  🟢 700-Arts_Recreation: 0 missing / 10 cataloged
+  🟢 800-Literature: 0 missing / 1 cataloged
+  🔴 900-History_Geography: 1 missing / 3 cataloged
+  🟢 910-Regional_Data: 0 missing / 19 cataloged
+  🟢 999-Decisions_Logs: 0 missing / 4 cataloged
+
+Total missing: 2911 files, 9.4 MB
+
+☁️  Uploading with 10 workers...
+  250/2911 (11/s, 0 failed)
+  500/2911 (11/s, 0 failed)
+  750/2911 (11/s, 0 failed)
+  1000/2911 (11/s, 0 failed)
+  1250/2911 (11/s, 0 failed)
+  1500/2911 (12/s, 0 failed)
+  1750/2911 (12/s, 0 failed)
+  2000/2911 (12/s, 0 failed)
+  2250/2911 (12/s, 0 failed)
+  2500/2911 (12/s, 0 failed)
+  2750/2911 (12/s, 0 failed)
+
+Uploaded 2911 ok, 0 failed, in 249s (11.7 files/s)
+
+📊 Per-section result:
+  🟢 000-General: 1 uploaded
+  🟢 300-Social_Sciences: 10 uploaded
+  🟢 640-Household_Favorites: 1 uploaded
+  🟢 658-Marketing_Sales: 36 uploaded
+  🟢 692-Auxiliary_Practices: 2860 uploaded
+  🟢 697-HVAC: 2 uploaded
+  🟢 900-History_Geography: 1 uploaded
+
+✅ Backfill complete — 2911 files repaired to Drive.

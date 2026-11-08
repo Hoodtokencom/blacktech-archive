@@ -1,0 +1,59 @@
+/home/allenai/.hermes/profiles/derrell-black/home/.local/lib/python3.11/site-packages/google/api_core/_python_version_support.py:255: FutureWarning: You are using a Python version (3.11.2) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2027-10-24). Please upgrade to the latest Python version, or at least Python 3.12, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+🧠 Dewey Drive Backfill — 2026-11-04 06:20:33
+
+📂 Gap scan (audit semantics):
+  🔴 000-General: 1 missing / 40 cataloged
+  🟢 003-Computing_Science: 0 missing / 80 cataloged
+  🟢 100-Philosophy: 0 missing / 3 cataloged
+  🟢 200-Religion: 0 missing / 7 cataloged
+  🔴 300-Social_Sciences: 10 missing / 14 cataloged
+  🟢 400-Language: 0 missing / 2 cataloged
+  🟢 500-Science: 0 missing / 5 cataloged
+  🟢 600-Technology: 0 missing / 20 cataloged
+  🟢 600-Wealth_Precious_Metals: 0 missing / 4 cataloged
+  🟢 620-ComEd_Standard_Offering: 0 missing / 6 cataloged
+  🔴 640-Household_Favorites: 1 missing / 2 cataloged
+  🟢 650-Management_Business: 0 missing / 72 cataloged
+  🟢 657-Accounting_Finance: 0 missing / 17 cataloged
+  🔴 658-Marketing_Sales: 36 missing / 48 cataloged
+  🟢 690-Building_Construction: 0 missing / 16 cataloged
+  🟢 691-Building_Materials: 0 missing / 7 cataloged
+  🔴 692-Auxiliary_Practices: 2860 missing / 5538 cataloged
+  🟢 696-Utilities: 0 missing / 19 cataloged
+  🔴 697-HVAC: 2 missing / 3 cataloged
+  🟢 700-Arts_Recreation: 0 missing / 10 cataloged
+  🟢 800-Literature: 0 missing / 1 cataloged
+  🔴 900-History_Geography: 1 missing / 3 cataloged
+  🟢 910-Regional_Data: 0 missing / 19 cataloged
+  🟢 999-Decisions_Logs: 0 missing / 4 cataloged
+
+Total missing: 2911 files, 9.4 MB
+  would upload: 000-General/dewey_drive_backfill.py
+  would upload: 300-Social_Sciences/BSC-T-BUS-20260623.html
+  would upload: 300-Social_Sciences/BSC-T-FAM-20260722.html
+  would upload: 300-Social_Sciences/BSC-T-HOOD-20260722.html
+  would upload: 300-Social_Sciences/BSC-T-MIN-20260623.html
+  would upload: 300-Social_Sciences/bfn.html
+  would upload: 300-Social_Sciences/blacktech-solutions-business-trust.json
+  would upload: 300-Social_Sciences/blacktech_tv_guide.html
+  would upload: 300-Social_Sciences/cdfi_and_lenders_research.md
+  would upload: 300-Social_Sciences/energy_board.html
+  would upload: 300-Social_Sciences/outreach_emails.md
+  would upload: 640-Household_Favorites/email_ryan_klaus.txt
+  would upload: 658-Marketing_Sales/audio/comed_en_slide0.mp3
+  would upload: 658-Marketing_Sales/audio/comed_en_slide1.mp3
+  would upload: 658-Marketing_Sales/audio/comed_en_slide2.mp3
+  would upload: 658-Marketing_Sales/audio/comed_en_slide3.mp3
+  would upload: 658-Marketing_Sales/audio/comed_en_slide4.mp3
+  would upload: 658-Marketing_Sales/audio/comed_en_slide5.mp3
+  would upload: 658-Marketing_Sales/audio/comed_en_slide6.mp3
+  would upload: 658-Marketing_Sales/audio/comed_en_slide7.mp3
+  would upload: 658-Marketing_Sales/audio/comed_es_slide0.mp3
+  would upload: 658-Marketing_Sales/audio/comed_es_slide1.mp3
+  would upload: 658-Marketing_Sales/audio/comed_es_slide2.mp3
+  would upload: 658-Marketing_Sales/audio/comed_es_slide3.mp3
+  would upload: 658-Marketing_Sales/audio/comed_es_slide4.mp3
+  ... and 2886 more
+
+[DRY RUN] nothing uploaded.

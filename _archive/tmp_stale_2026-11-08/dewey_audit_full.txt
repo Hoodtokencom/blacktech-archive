@@ -1,0 +1,86 @@
+/home/allenai/.hermes/profiles/derrell-black/home/.local/lib/python3.11/site-packages/google/api_core/_python_version_support.py:255: FutureWarning: You are using a Python version (3.11.2) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2027-10-24). Please upgrade to the latest Python version, or at least Python 3.12, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+🧠 Dewey Drive Audit — 2026-11-04 06:16:05
+
+🟢 000-General: 39 file(s) mirrored
+🟢 003-Computing_Science: 80 file(s) mirrored
+🟢 100-Philosophy: 3 file(s) mirrored
+🟢 200-Religion: 7 file(s) mirrored
+🔴 300-Social_Sciences: 10 file(s) missing on Drive:
+     - 300-Social_Sciences/BSC-T-BUS-20260623.html
+     - 300-Social_Sciences/BSC-T-FAM-20260722.html
+     - 300-Social_Sciences/BSC-T-HOOD-20260722.html
+     - 300-Social_Sciences/BSC-T-MIN-20260623.html
+     - 300-Social_Sciences/bfn.html
+     - 300-Social_Sciences/blacktech-solutions-business-trust.json
+     - 300-Social_Sciences/blacktech_tv_guide.html
+     - 300-Social_Sciences/cdfi_and_lenders_research.md
+     - 300-Social_Sciences/energy_board.html
+     - 300-Social_Sciences/outreach_emails.md
+🟢 400-Language: 2 file(s) mirrored
+🟢 500-Science: 5 file(s) mirrored
+🟢 600-Technology: 20 file(s) mirrored
+🟢 600-Wealth_Precious_Metals: 4 file(s) mirrored
+🟢 620-ComEd_Standard_Offering: 6 file(s) mirrored
+🔴 640-Household_Favorites: 1 file(s) missing on Drive:
+     - 640-Household_Favorites/email_ryan_klaus.txt
+🟢 650-Management_Business: 72 file(s) mirrored
+🟢 657-Accounting_Finance: 17 file(s) mirrored
+🔴 658-Marketing_Sales: 36 file(s) missing on Drive:
+     - 658-Marketing_Sales/audio/comed_en_slide0.mp3
+     - 658-Marketing_Sales/audio/comed_en_slide1.mp3
+     - 658-Marketing_Sales/audio/comed_en_slide2.mp3
+     - 658-Marketing_Sales/audio/comed_en_slide3.mp3
+     - 658-Marketing_Sales/audio/comed_en_slide4.mp3
+     - 658-Marketing_Sales/audio/comed_en_slide5.mp3
+     - 658-Marketing_Sales/audio/comed_en_slide6.mp3
+     - 658-Marketing_Sales/audio/comed_en_slide7.mp3
+     - 658-Marketing_Sales/audio/comed_es_slide0.mp3
+     - 658-Marketing_Sales/audio/comed_es_slide1.mp3
+     - 658-Marketing_Sales/audio/comed_es_slide2.mp3
+     - 658-Marketing_Sales/audio/comed_es_slide3.mp3
+     - 658-Marketing_Sales/audio/comed_es_slide4.mp3
+     - 658-Marketing_Sales/audio/comed_es_slide5.mp3
+     - 658-Marketing_Sales/audio/comed_es_slide6.mp3
+     - 658-Marketing_Sales/audio/comed_es_slide7.mp3
+     - 658-Marketing_Sales/.netlify/netlify.toml
+     - 658-Marketing_Sales/ai_campaign_graphics/post1_pi_services.html
+     - 658-Marketing_Sales/ai_campaign_graphics/post2_stats_showcase.html
+     - 658-Marketing_Sales/ai_campaign_graphics/post3_cost_comparison.html
+     ... and 16 more
+🟢 690-Building_Construction: 16 file(s) mirrored
+🟢 691-Building_Materials: 7 file(s) mirrored
+🔴 692-Auxiliary_Practices: 2860 file(s) missing on Drive:
+     - 692-Auxiliary_Practices/sow/BSC-SOW-2026-1289.md
+     - 692-Auxiliary_Practices/sow/BSC-SOW-2026-1293.md
+     - 692-Auxiliary_Practices/sow/BSC-SOW-2026-1294.md
+     - 692-Auxiliary_Practices/sow/BSC-SOW-2026-1295.md
+     - 692-Auxiliary_Practices/sow/BSC-SOW-2026-1297.md
+     - 692-Auxiliary_Practices/sow/BSC-SOW-2026-1298.md
+     - 692-Auxiliary_Practices/sow/BSC-SOW-2026-1299.md
+     - 692-Auxiliary_Practices/sow/BSC-SOW-2026-1308.md
+     - 692-Auxiliary_Practices/sow/BSC-SOW-2026-1309.md
+     - 692-Auxiliary_Practices/sow/BSC-SOW-2026-1310.md
+     - 692-Auxiliary_Practices/sow/BSC-SOW-2026-1311.md
+     - 692-Auxiliary_Practices/sow/BSC-SOW-2026-1312.md
+     - 692-Auxiliary_Practices/sow/BSC-SOW-2026-1319.md
+     - 692-Auxiliary_Practices/sow/BSC-SOW-2026-1321.md
+     - 692-Auxiliary_Practices/sow/BSC-SOW-2026-1323.md
+     - 692-Auxiliary_Practices/sow/BSC-SOW-2026-1324.md
+     - 692-Auxiliary_Practices/sow/BSC-SOW-2026-1328.md
+     - 692-Auxiliary_Practices/sow/BSC-SOW-2026-1329.md
+     - 692-Auxiliary_Practices/sow/BSC-SOW-2026-1332.md
+     - 692-Auxiliary_Practices/sow/BSC-SOW-2026-1334.md
+     ... and 2840 more
+🟢 696-Utilities: 19 file(s) mirrored
+🔴 697-HVAC: 2 file(s) missing on Drive:
+     - 697-HVAC/electrification_pipeline.html
+     - 697-HVAC/electrification_schematic.html
+🟢 700-Arts_Recreation: 10 file(s) mirrored
+🟢 800-Literature: 1 file(s) mirrored
+🔴 900-History_Geography: 1 file(s) missing on Drive:
+     - 900-History_Geography/2026-11_project_history_report.md
+🟢 910-Regional_Data: 19 file(s) mirrored
+🟢 999-Decisions_Logs: 4 file(s) mirrored
+
+AUDIT: 2910 MISSING

@@ -4497,5 +4497,11 @@
     "deleted_at": "2026-11-02T03:00:45.546588",
     "purge_due": "2026-12-17T03:00:45.546620",
     "status": "pending"
+  },
+  {
+    "file": "000-General/__pycache__/dewey_drive_backfill.cpython-311.pyc",
+    "deleted_at": "2026-11-05T03:01:00.601093",
+    "purge_due": "2026-12-20T03:01:00.601114",
+    "status": "pending"
   }
 ]
